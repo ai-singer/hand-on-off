@@ -1,0 +1,71 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "image_text",
+  "discovery_role": "knowledge_distillation",
+  "creator": {
+    "id": "661279290000000003033582",
+    "name": "哆乐不加班",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo31lh5dgg9l85g5pgif4kgudc2b4nkdkg"
+  },
+  "post_id": "6a2a72d3000000001700ae6b",
+  "title": "财务会计常用的函数公式",
+  "text": "#办公技巧[话题]# #excel[话题]# #excel技巧[话题]# #财务会计[话题]# #Excel操作技巧[话题]# #excel[话题]# #excel函数[话题]# #财务干货[话题]#",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/6ccba428fb5755784736bc4f058f4a65/spectrum/1040g0k032194me6o74005pgif4kgudc2a4kklo8!nd_dft_wlteh_webp_3",
+      "width": 1086,
+      "height": 1448,
+      "file_id": "spectrum/1040g0k032194me6o74005pgif4kgudc2a4kklo8"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/fdb66a8cea43a04583364e2989ff24cd/spectrum/1040g0k032194me6o740g5pgif4kgudc2jjg11mo!nd_dft_wlteh_webp_3",
+      "width": 1086,
+      "height": 1448,
+      "file_id": "spectrum/1040g0k032194me6o740g5pgif4kgudc2jjg11mo"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/1122343249049889238394b3ec3a8019/spectrum/1040g0k032194me6o74105pgif4kgudc2kc0mikg!nd_dft_wlteh_webp_3",
+      "width": 1086,
+      "height": 1448,
+      "file_id": "spectrum/1040g0k032194me6o74105pgif4kgudc2kc0mikg"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/07dcdc727e01f72b77e694884679c233/spectrum/1040g0k032194me6o741g5pgif4kgudc25cgmo80!nd_dft_wlteh_webp_3",
+      "width": 1086,
+      "height": 1448,
+      "file_id": "spectrum/1040g0k032194me6o741g5pgif4kgudc25cgmo80"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/5d94626fab56f7d4e46791678ae95cb9/spectrum/1040g0k032194me6o74205pgif4kgudc2jm11p70!nd_dft_wlteh_webp_3",
+      "width": 1086,
+      "height": 1448,
+      "file_id": "spectrum/1040g0k032194me6o74205pgif4kgudc2jm11p70"
+    }
+  ],
+  "tags": [
+    "办公技巧",
+    "excel",
+    "excel技巧",
+    "财务会计",
+    "Excel操作技巧",
+    "excel",
+    "excel函数",
+    "财务干货"
+  ],
+  "metrics": {
+    "liked_count": "5346",
+    "collected_count": "6186",
+    "comment_count": "17",
+    "share_count": "513"
+  },
+  "account_factor": 1.0,
+  "adjusted_collected": 6186,
+  "content_signal_score": 70.68,
+  "material_tier": "A",
+  "topic_candidate": null,
+  "discovery_keyword": "财务知识干货",
+  "source_url": "https://www.xiaohongshu.com/explore/6a2a72d3000000001700ae6b",
+  "collected_at": "2026-09-22T03:45:31Z",
+  "raw_ref": "raw/xhs_finance_image_candidates.json"
+}
