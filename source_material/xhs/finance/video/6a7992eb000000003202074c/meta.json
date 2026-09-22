@@ -1,0 +1,43 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "video",
+  "discovery_role": "topic_discovery",
+  "creator": {
+    "id": "5abf90244eacab2c32c7c5e6",
+    "name": "小Lin说",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/616ee14936ede13faad1038e.jpg"
+  },
+  "post_id": "6a7992eb000000003202074c",
+  "title": "王健林现在怎么样了? 万达什么情况?",
+  "text": "#万达[话题]#  #王健林[话题]#",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221124/fd88192814f60633a964826ee4f38272/spectrum/1040g0k0323mbald0n0004a45h2829hf63jo3698!nd_dft_wlteh_webp_3",
+      "width": 1263,
+      "height": 1685,
+      "file_id": "spectrum/1040g0k0323mbald0n0004a45h2829hf63jo3698"
+    }
+  ],
+  "tags": [
+    "万达",
+    "王健林"
+  ],
+  "metrics": {
+    "liked_count": "3",
+    "collected_count": "8588",
+    "comment_count": "983",
+    "share_count": "6230"
+  },
+  "content_signal_score": 83.1,
+  "material_tier": "S",
+  "topic_candidate": {
+    "topic": "大型企业债务危机与重组机制",
+    "angle": "万达的债务危机与资产出售逻辑",
+    "mechanism": "企业债务结构、资产重组、股权转让机制",
+    "content_hook": "万达为什么卖卖卖？背后的债务逻辑是什么？"
+  },
+  "source_url": "https://www.xiaohongshu.com/explore/6a7992eb000000003202074c",
+  "collected_at": "2026-09-22T03:28:52Z",
+  "raw_ref": "raw/xhs_小Lin说_stage2_20260922.json"
+}
