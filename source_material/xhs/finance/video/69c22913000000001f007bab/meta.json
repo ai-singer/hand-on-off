@@ -1,0 +1,43 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "video",
+  "discovery_role": "topic_discovery",
+  "creator": {
+    "id": "5abf90244eacab2c32c7c5e6",
+    "name": "小Lin说",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/616ee14936ede13faad1038e.jpg"
+  },
+  "post_id": "69c22913000000001f007bab",
+  "title": "伊朗战争，和全球能源格局",
+  "text": "#能源[话题]# #我在小红书聊财经[话题]# @财经薯\n感谢服装支持：Sezane",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221125/97f60eb4100150f48026372e1ee763a9/spectrum/1040g34o31u39ih611q104a45h2829hf6k7mj7do!nd_dft_wlteh_webp_3",
+      "width": 1074,
+      "height": 1432,
+      "file_id": "spectrum/1040g34o31u39ih611q104a45h2829hf6k7mj7do"
+    }
+  ],
+  "tags": [
+    "能源",
+    "我在小红书聊财经"
+  ],
+  "metrics": {
+    "liked_count": "1",
+    "collected_count": "6128",
+    "comment_count": "382",
+    "share_count": "3602"
+  },
+  "content_signal_score": 76.72,
+  "material_tier": "A",
+  "topic_candidate": {
+    "topic": "地缘冲突与能源格局",
+    "angle": "战争如何重塑全球能源供应链",
+    "mechanism": "能源定价机制、地缘政治经济学",
+    "content_hook": "一场战争怎么影响油价和全球经济？"
+  },
+  "source_url": "https://www.xiaohongshu.com/explore/69c22913000000001f007bab",
+  "collected_at": "2026-09-22T03:28:52Z",
+  "raw_ref": "raw/xhs_小Lin说_stage2_20260922.json"
+}
