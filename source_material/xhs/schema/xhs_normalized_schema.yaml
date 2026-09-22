@@ -31,7 +31,7 @@ $schema:
 #   Language: zh (Chinese default)
 #
 # Static Frame Detection:
-#   Threshold: 3 seconds of visually identical frames
+#   Threshold: 1 second of visually identical frames
 #   Method: frame diff (SSIM or pixel diff)
 #   Capture: middle frame of static segment
 #   Output: JPEG, max 1280px wide
