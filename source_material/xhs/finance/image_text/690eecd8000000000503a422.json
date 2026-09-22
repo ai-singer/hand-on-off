@@ -1,0 +1,77 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "image_text",
+  "discovery_role": "knowledge_distillation",
+  "creator": {
+    "id": "688336cd000000001e03b3cf",
+    "name": "发财小番茄",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/1040g2jo324slvfuoi46g5q436r6nncufqn040dg"
+  },
+  "post_id": "690eecd8000000000503a422",
+  "title": "毫不夸张，姐的会计科目已经到了秒懂的程度",
+  "text": "🔥别再背会计科目啦，会计党的福音来啦，大白话帮你轻松搞定晦涩难懂的会计科目，每个都是秒懂！😍\n⛳备考初级、中级会计考试的必须要掌握的会计科目！\n⛳日常会计工作中实操也会经常用到的会计科目！\n#会计科目大白话[话题]##我是会计女孩[话题]##零基础学会计[话题]##会计[话题]##备考[话题]##初级会计证[话题]##财务干货[话题]##26初级会计[话题]#",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/6290d8c42b8bf138f7b8946233cf7938/notes_pre_post/1040g3k031ok8kv966m6g5q436r6nncufri36pho!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k031ok8kv966m6g5q436r6nncufri36pho"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/d05a75ff7a3f1eb91ea9ed10f0e9f029/notes_pre_post/1040g3k831ok8kvd706c05q436r6nncuftflfph8!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k831ok8kvd706c05q436r6nncuftflfph8"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/5fc7045925c5250be7bc13a42d762ac6/notes_pre_post/1040g3k831ok8kvd706cg5q436r6nncufg1dqke0!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k831ok8kvd706cg5q436r6nncufg1dqke0"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/6ee98757db58f1f215d948dc4a830c92/notes_pre_post/1040g3k031ok8kvas0gd05q436r6nncufe94edk0!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k031ok8kvas0gd05q436r6nncufe94edk0"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/4327acfcec5bed0700cd2fd451571b92/notes_pre_post/1040g3k831ok8kvd706bg5q436r6nncuf8r84t28!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k831ok8kvd706bg5q436r6nncuf8r84t28"
+    },
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221148/f5e92b8b3fdb902612b8e68690188460/notes_pre_post/1040g3k831ok8kvd706dg5q436r6nncufdrfohao!nd_dft_wlteh_webp_3",
+      "width": 1242,
+      "height": 1660,
+      "file_id": "notes_pre_post/1040g3k831ok8kvd706dg5q436r6nncufdrfohao"
+    }
+  ],
+  "tags": [
+    "会计科目大白话",
+    "我是会计女孩",
+    "零基础学会计",
+    "会计",
+    "备考",
+    "初级会计证",
+    "财务干货",
+    "26初级会计"
+  ],
+  "metrics": {
+    "liked_count": "1",
+    "collected_count": "9880",
+    "comment_count": "303",
+    "share_count": "990"
+  },
+  "account_factor": 1.0,
+  "adjusted_collected": 9880,
+  "content_signal_score": 73.7,
+  "material_tier": "S",
+  "topic_candidate": null,
+  "discovery_keyword": "财务知识干货",
+  "source_url": "https://www.xiaohongshu.com/explore/690eecd8000000000503a422",
+  "collected_at": "2026-09-22T03:45:31Z",
+  "raw_ref": "raw/xhs_finance_image_candidates.json"
+}
