@@ -1,20 +1,44 @@
 # XHS Source Schema
-# version: 2.0.0
+# version: 2.1.0
 # updated: 2026-09-22
 
 $schema:
   id: xhs_normalized_post
-  version: "2.0.0"
+  version: "2.1.0"
   platform: xiaohongshu
 
 # Storage Path Convention
 #
-# source_material/xhs/{category}/{type}/{note_id}.json
+# image_text:
+#   source_material/xhs/{category}/image_text/{note_id}.json
+#
+# video:
+#   source_material/xhs/{category}/video/{note_id}/
+#     ├── meta.json            笔记元数据 + 流量数据
+#     ├── transcript.json      完整字幕（含时间戳）
+#     └── frames/
+#         └── {timestamp}/
+#             ├── frame.jpg    静态图片帧
+#             └── transcript.json  该时间段对应字幕
 #
 # category: finance | travel | tech | lifestyle | general | ...
-# type:     video | image_text
+
+# ── Video Processing Rules ───────────────────────────────────────
+#
+# ASR:
+#   Engine: OpenAI Whisper (model=base)
+#   Priority: embedded subtitle (.srt/.vtt) > ASR
+#   Language: zh (Chinese default)
+#
+# Static Frame Detection:
+#   Threshold: 3 seconds of visually identical frames
+#   Method: frame diff (SSIM or pixel diff)
+#   Capture: middle frame of static segment
+#   Output: JPEG, max 1280px wide
 
 fields:
+
+  # ── Common Fields (image_text + video) ──────────────────────────
 
   platform:
     type: string
@@ -68,36 +92,12 @@ fields:
     type: string
     source: note_card.title
     required: false
-    notes: "部分笔记无独立标题，此时与 text 首行相同"
 
   text:
     type: string
     source: note_card.desc
     required: false
     notes: "完整正文，含换行符"
-
-  images:
-    type: array
-    items:
-      type: object
-      fields:
-        url:
-          type: string
-          source: "image_list[i].url_default ?? image_list[i].url_pre"
-          required: true
-        width:
-          type: integer
-          source: image_list[i].width
-          required: false
-        height:
-          type: integer
-          source: image_list[i].height
-          required: false
-        file_id:
-          type: string
-          source: image_list[i].file_id
-          required: false
-    required: false
 
   tags:
     type: array
@@ -128,22 +128,20 @@ fields:
     type: number
     required: false
     notes: |
-      依据 source_strategy.md 素材价值评分计算：
+      依据 source_strategy.md 素材价值评分：
       collected × 0.35 + share × 0.30 + comment_quality × 0.25 + liked × 0.10
-      由 normalize.py 写入，范围 0–100
+      使用 log1p 压缩，范围 0–100
 
   material_tier:
     type: string
     enum: ["S", "A", "B", "C", "unrated"]
     required: false
-    notes: |
-      素材优先级分级（依据 content_signal_score）：
-      S: 优先生产池 | A: 研究池 | B: 趋势观察 | C: 丢弃
+    notes: "S≥75 | A≥50 | B≥25 | C<25"
 
   topic_candidate:
     type: object
     required: false
-    notes: "仅 discovery_role=topic_discovery 时填写"
+    notes: "仅 discovery_role=topic_discovery 时填写，由 Research Agent 填充"
     fields:
       topic:
         type: string
@@ -160,15 +158,84 @@ fields:
     type: string
     required: true
     template: "https://www.xiaohongshu.com/explore/{post_id}"
-    notes: "由 post_id 构造，不从 API 直接获取"
 
   collected_at:
     type: string
     format: ISO8601
     required: true
-    notes: "采集时间，由 Collector 在写入时注入"
 
   raw_ref:
     type: string
     required: false
     notes: "指向 raw/ 目录下对应原始文件的相对路径，用于溯源"
+
+  # ── image_text Only ─────────────────────────────────────────────
+
+  images:
+    type: array
+    content_type_filter: image_text
+    items:
+      type: object
+      fields:
+        url:
+          type: string
+          source: "image_list[i].url_default ?? image_list[i].url_pre"
+          required: true
+        width:
+          type: integer
+        height:
+          type: integer
+        file_id:
+          type: string
+    required: false
+
+  # ── video Only ───────────────────────────────────────────────────
+  # video 类型使用目录结构存储，meta.json 不含 transcript 和 frames。
+  # 以下字段记录处理状态。
+
+  video_processing:
+    type: object
+    content_type_filter: video
+    required: false
+    fields:
+      status:
+        type: string
+        enum: ["pending", "transcribed", "frames_extracted", "complete"]
+        notes: "处理状态"
+      transcript_path:
+        type: string
+        notes: "相对路径：transcript.json"
+      frames_count:
+        type: integer
+        notes: "检测到的静态图片帧数量"
+      asr_engine:
+        type: string
+        notes: "使用的 ASR 引擎，如 whisper-base"
+      processed_at:
+        type: string
+        format: ISO8601
+
+# ── transcript.json Schema ───────────────────────────────────────
+#
+# [
+#   {
+#     "index": 1,
+#     "start": "00:00:03",
+#     "end": "00:00:07",
+#     "text": "字幕文本"
+#   },
+#   ...
+# ]
+
+# ── frames/{timestamp}/transcript.json Schema ────────────────────
+#
+# {
+#   "frame_time": "00:00:32",
+#   "segment_start": "00:00:30",
+#   "segment_end": "00:00:45",
+#   "segments": [
+#     { "index": 12, "start": "00:00:30", "end": "00:00:34", "text": "..." },
+#     { "index": 13, "start": "00:00:34", "end": "00:00:45", "text": "..." }
+#   ],
+#   "full_text": "拼接后的完整文本段落"
+# }
