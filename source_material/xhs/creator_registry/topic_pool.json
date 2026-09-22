@@ -1,0 +1,216 @@
+[
+  {
+    "note_id": "6833fdb40000000022006d6c",
+    "material_tier": "S",
+    "source_title": "全球最大IPO，宁德时代这是要干嘛？",
+    "metrics": {
+      "liked_count": "2",
+      "collected_count": "6260",
+      "comment_count": "354",
+      "share_count": "3779"
+    },
+    "topic": "企业IPO机制与资本战略",
+    "angle": "全球最大IPO背后的融资逻辑与资本布局",
+    "mechanism": "IPO资本运作、海外上市动机、股权结构",
+    "content_hook": "宁德时代为什么要在这时候上市？募资去哪了？",
+    "tags": [
+      "花60天学理财",
+      "财经知识"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/6833fdb40000000022006d6c",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "68eb6dfe0000000005030850",
+    "material_tier": "A",
+    "source_title": "美元暴跌的背后...",
+    "metrics": {
+      "liked_count": "20000",
+      "collected_count": "6173",
+      "comment_count": "438",
+      "share_count": "4848"
+    },
+    "topic": "美元周期与汇率机制",
+    "angle": "美元暴跌的结构性原因与传导路径",
+    "mechanism": "美元指数、货币政策、全球资本流动",
+    "content_hook": "美元跌了普通人有什么影响？",
+    "tags": [
+      "美元",
+      "扫雷掘金挑战赛"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/68eb6dfe0000000005030850",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "694e223c0000000022008b81",
+    "material_tier": "S",
+    "source_title": "\"十五五\" 规划里，藏了什么重点？",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "7862",
+      "comment_count": "277",
+      "share_count": "4062"
+    },
+    "topic": "国家五年规划解读",
+    "angle": "十五五规划的产业方向与政策信号",
+    "mechanism": "政策规划机制、产业布局逻辑",
+    "content_hook": "五年规划到底在规划什么？普通人怎么看懂它？",
+    "tags": [
+      "十五五规划"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/694e223c0000000022008b81",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "695f65d5000000001a02abb2",
+    "material_tier": "S",
+    "source_title": "市值511亿，全球大模型第一股诞生了…",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "6724",
+      "comment_count": "304",
+      "share_count": "4308"
+    },
+    "topic": "AI大模型产业资本化",
+    "angle": "大模型第一股上市背后的产业格局",
+    "mechanism": "AI商业化路径、上市逻辑、估值机制",
+    "content_hook": "大模型公司市值从哪来？怎么赚钱？",
+    "tags": [
+      "AI",
+      "AI大模型上市第一股",
+      "智谱ai"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/695f65d5000000001a02abb2",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "699b117b000000001a032fe4",
+    "material_tier": "A",
+    "source_title": "黄金白银大崩盘，谁是幕后推手？",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "6188",
+      "comment_count": "369",
+      "share_count": "4114"
+    },
+    "topic": "大宗商品价格机制",
+    "angle": "黄金白银崩盘的幕后推手与价格形成机制",
+    "mechanism": "期货市场、做空机制、资本操控逻辑",
+    "content_hook": "贵金属价格真的由供需决定吗？",
+    "tags": [
+      "我在小红书聊财经",
+      "黄金",
+      "白银"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/699b117b000000001a032fe4",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "69c22913000000001f007bab",
+    "material_tier": "A",
+    "source_title": "伊朗战争，和全球能源格局",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "6128",
+      "comment_count": "382",
+      "share_count": "3602"
+    },
+    "topic": "地缘冲突与能源格局",
+    "angle": "战争如何重塑全球能源供应链",
+    "mechanism": "能源定价机制、地缘政治经济学",
+    "content_hook": "一场战争怎么影响油价和全球经济？",
+    "tags": [
+      "能源",
+      "我在小红书聊财经"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/69c22913000000001f007bab",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "69cb6fae000000002200fbe1",
+    "material_tier": "A",
+    "source_title": "十五五开局，两会给中国经济划了哪些重点？",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "5746",
+      "comment_count": "144",
+      "share_count": "2268"
+    },
+    "topic": "两会经济政策解读",
+    "angle": "两会释放了哪些经济信号",
+    "mechanism": "政策信号解读、宏观调控机制",
+    "content_hook": "两会对普通人意味着什么？",
+    "tags": [
+      "RED新生代创作大赛",
+      "万物漫评",
+      "全国两会",
+      "我在小红书聊财经"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/69cb6fae000000002200fbe1",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "6a05a43d000000003502eae6",
+    "material_tier": "A",
+    "source_title": "资本是如何接连引爆多个国家的金融危机的？",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "5925",
+      "comment_count": "190",
+      "share_count": "1675"
+    },
+    "topic": "金融危机传导机制",
+    "angle": "资本如何连续引爆多国金融危机",
+    "mechanism": "货币攻击、资本流动、汇率崩溃链条",
+    "content_hook": "索罗斯是怎么打垮一个国家货币的？",
+    "tags": [
+      "1997亚洲金融危机",
+      "我在小红书聊财经"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/6a05a43d000000003502eae6",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "6a1a8f7b000000000803c844",
+    "material_tier": "S",
+    "source_title": "内存暴涨，谁在哭？谁在笑？",
+    "metrics": {
+      "liked_count": "1",
+      "collected_count": "7039",
+      "comment_count": "421",
+      "share_count": "4956"
+    },
+    "topic": "半导体产业周期与价格机制",
+    "angle": "内存暴涨背后的产业链博弈",
+    "mechanism": "芯片周期、产能垄断、价格操控逻辑",
+    "content_hook": "内存条为什么突然涨价？谁在控制价格？",
+    "tags": [
+      "我在小红书聊财经",
+      "内存",
+      "黑白调X7"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/6a1a8f7b000000000803c844",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  },
+  {
+    "note_id": "6a7992eb000000003202074c",
+    "material_tier": "S",
+    "source_title": "王健林现在怎么样了? 万达什么情况?",
+    "metrics": {
+      "liked_count": "3",
+      "collected_count": "8588",
+      "comment_count": "983",
+      "share_count": "6230"
+    },
+    "topic": "大型企业债务危机与重组机制",
+    "angle": "万达的债务危机与资产出售逻辑",
+    "mechanism": "企业债务结构、资产重组、股权转让机制",
+    "content_hook": "万达为什么卖卖卖？背后的债务逻辑是什么？",
+    "tags": [
+      "万达",
+      "王健林"
+    ],
+    "source_url": "https://www.xiaohongshu.com/explore/6a7992eb000000003202074c",
+    "extracted_at": "2026-09-22T04:12:22Z"
+  }
+]
