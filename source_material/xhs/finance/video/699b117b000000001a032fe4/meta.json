@@ -1,0 +1,44 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "video",
+  "discovery_role": "topic_discovery",
+  "creator": {
+    "id": "5abf90244eacab2c32c7c5e6",
+    "name": "小Lin说",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/616ee14936ede13faad1038e.jpg"
+  },
+  "post_id": "699b117b000000001a032fe4",
+  "title": "黄金白银大崩盘，谁是幕后推手？",
+  "text": "#我在小红书聊财经[话题]# @财经薯 #黄金[话题]# #白银[话题]#",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221125/32ea5680d306a0804a0275f8a4fa24e0/spectrum/1040g34o31st406kd58104a45h2829hf6m7b3g78!nd_dft_wlteh_webp_3",
+      "width": 1263,
+      "height": 1685,
+      "file_id": "spectrum/1040g34o31st406kd58104a45h2829hf6m7b3g78"
+    }
+  ],
+  "tags": [
+    "我在小红书聊财经",
+    "黄金",
+    "白银"
+  ],
+  "metrics": {
+    "liked_count": "1",
+    "collected_count": "6188",
+    "comment_count": "369",
+    "share_count": "4114"
+  },
+  "content_signal_score": 77.09,
+  "material_tier": "A",
+  "topic_candidate": {
+    "topic": "大宗商品价格机制",
+    "angle": "黄金白银崩盘的幕后推手与价格形成机制",
+    "mechanism": "期货市场、做空机制、资本操控逻辑",
+    "content_hook": "贵金属价格真的由供需决定吗？"
+  },
+  "source_url": "https://www.xiaohongshu.com/explore/699b117b000000001a032fe4",
+  "collected_at": "2026-09-22T03:28:52Z",
+  "raw_ref": "raw/xhs_小Lin说_stage2_20260922.json"
+}
