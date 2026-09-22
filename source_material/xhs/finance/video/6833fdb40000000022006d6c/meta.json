@@ -1,0 +1,43 @@
+{
+  "platform": "xiaohongshu",
+  "category": "finance",
+  "content_type": "video",
+  "discovery_role": "topic_discovery",
+  "creator": {
+    "id": "5abf90244eacab2c32c7c5e6",
+    "name": "小Lin说",
+    "avatar": "https://sns-avatar-qc.xhscdn.com/avatar/616ee14936ede13faad1038e.jpg"
+  },
+  "post_id": "6833fdb40000000022006d6c",
+  "title": "全球最大IPO，宁德时代这是要干嘛？",
+  "text": "﻿#花60天学理财[话题]#﻿ ﻿#财经知识[话题]#﻿\n感谢服装赞助：SHANG1 BY SHANGYI",
+  "images": [
+    {
+      "url": "http://sns-webpic-qc.xhscdn.com/202609221127/d41a9733296b5d89ffa076171c84d0d3/spectrum/1040g0k031huetiasj8004a45h2829hf69ofl60o!nd_dft_wlteh_webp_3",
+      "width": 1263,
+      "height": 1685,
+      "file_id": "spectrum/1040g0k031huetiasj8004a45h2829hf69ofl60o"
+    }
+  ],
+  "tags": [
+    "花60天学理财",
+    "财经知识"
+  ],
+  "metrics": {
+    "liked_count": "2",
+    "collected_count": "6260",
+    "comment_count": "354",
+    "share_count": "3779"
+  },
+  "content_signal_score": 77.19,
+  "material_tier": "S",
+  "topic_candidate": {
+    "topic": "企业IPO机制与资本战略",
+    "angle": "全球最大IPO背后的融资逻辑与资本布局",
+    "mechanism": "IPO资本运作、海外上市动机、股权结构",
+    "content_hook": "宁德时代为什么要在这时候上市？募资去哪了？"
+  },
+  "source_url": "https://www.xiaohongshu.com/explore/6833fdb40000000022006d6c",
+  "collected_at": "2026-09-22T03:28:52Z",
+  "raw_ref": "raw/xhs_小Lin说_stage2_20260922.json"
+}
