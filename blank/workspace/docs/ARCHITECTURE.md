@@ -27,15 +27,15 @@ video / document / data / image adapters
                     v
        UnifiedDistillationArtifact
                     |
-          +---------+---------+
-          |                   |
-          v                   v
- generation adapter     shared + domain
- (optional/injected)     quality checks
-          |                   |
-          +---------+---------+
                     v
-            workflow decision
+       shared + domain quality checks
+                    |
+                    v
+          QualityGateController
+             | PASS    | FAIL
+             v         v
+     generation adapter STOP/review
+     (optional/injected)
 ```
 
 There is no persisted “generic distillation result” followed by a second
@@ -92,12 +92,13 @@ Unknown enhancement fields fail explicitly.
 `GenerationAdapter` receives a validated artifact through `GenerationRequest`.
 The reference project deliberately supplies no model or publishing adapter, so
 deployments must document credentials, network behavior, timeouts, and side
-effects when they add one.
+effects when they add one. The adapter is invoked only through
+`QualityGateController` after a PASS decision.
 
 ## Extension model
 
-- Add domains by creating another plugin package and changing
-  `CREATOR_PLUGIN`; common code stays unchanged.
+- Add domains by creating another plugin package and changing the selected
+  module in runtime configuration; common code stays unchanged.
 - Add reusable operator capabilities as skill directories with a `SKILL.md`
   and `manifest.json`.
 - Add media/model integrations as adapters at input or generation boundaries.

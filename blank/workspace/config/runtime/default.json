@@ -1,0 +1,22 @@
+{
+  "instance": {
+    "name": "creator-agent-template"
+  },
+  "workflow": {
+    "default": "workflows/lobster/content_distillation.lobster"
+  },
+  "plugins": {
+    "enabled": [
+      "plugins.xiaolin_finance"
+    ],
+    "default": "plugins.xiaolin_finance"
+  },
+  "skills": {
+    "enabled": [
+      "source-ingestion",
+      "unified-distillation",
+      "quality-review"
+    ]
+  },
+  "version": "1.0.0"
+}

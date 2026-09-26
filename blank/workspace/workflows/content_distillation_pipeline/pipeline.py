@@ -7,7 +7,7 @@ from typing import Any, Iterable
 
 from core.models import RawSource
 from distillation_core import DistillationEngine
-from evaluation import evaluate_pipeline_output
+from evaluation import QualityGateController, evaluate_pipeline_output
 
 from .generation_interface import GenerationAdapter, GenerationRequest
 
@@ -26,9 +26,13 @@ class ContentDistillationPipeline:
         self,
         engine: DistillationEngine,
         generation_adapter: GenerationAdapter | None = None,
+        quality_gate_controller: QualityGateController | None = None,
     ) -> None:
         self._engine = engine
         self._generation_adapter = generation_adapter
+        self._quality_gate_controller = (
+            quality_gate_controller or QualityGateController()
+        )
 
     def run(
         self,
@@ -38,18 +42,21 @@ class ContentDistillationPipeline:
         generation_constraints: dict[str, Any] | None = None,
     ) -> PipelineResult:
         artifact = self._engine.distill(raw_sources)
-        generated_output = None
-        if self._generation_adapter is not None:
-            generated_output = self._generation_adapter.generate(
-                GenerationRequest(
-                    artifact=artifact,
-                    format_name=format_name,
-                    constraints=generation_constraints or {},
-                )
-            )
-        quality_report = evaluate_pipeline_output(artifact, generated_output)
+        quality_report = evaluate_pipeline_output(artifact, None)
+        gate_result = self._quality_gate_controller.decide(quality_report)
+        generation = self._quality_gate_controller.execute_generation(
+            gate_result,
+            self._generation_adapter,
+            GenerationRequest(
+                artifact=artifact,
+                format_name=format_name,
+                constraints=generation_constraints or {},
+            ),
+        )
+        final_quality_report = dict(gate_result.quality_report)
+        final_quality_report["generation_adapter_invoked"] = generation.invoked
         return PipelineResult(
             artifact=artifact,
-            generated_output=generated_output,
-            quality_report=quality_report,
+            generated_output=generation.output,
+            quality_report=final_quality_report,
         )

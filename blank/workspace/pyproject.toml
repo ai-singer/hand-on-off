@@ -11,14 +11,19 @@ dependencies = []
 
 [tool.setuptools]
 packages = [
+  "config",
+  "config.runtime",
   "core",
   "distillation_core",
   "evaluation",
   "plugin_interface",
   "plugins",
   "plugins.xiaolin_finance",
+  "skills",
+  "skills.openclaw",
   "workflows",
   "workflows.content_distillation_pipeline",
+  "workflows.lobster",
 ]
 
 [tool.pytest.ini_options]

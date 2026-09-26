@@ -8,8 +8,9 @@ that artifact to a generation adapter, and run quality checks.
 
 1. Read `SOUL.md`, `USER.md`, and `IDENTITY.md`.
 2. Read `docs/ARCHITECTURE.md` before changing framework boundaries.
-3. Select the Creator plugin through `CREATOR_PLUGIN`; do not add domain policy
-   to `core/` or `distillation_core/`.
+3. Select the Creator plugin through `config/runtime/default.json` or an
+   instance-owned runtime config; do not add domain policy to `core/` or
+   `distillation_core/`.
 4. Load only the skills required by the active workflow.
 
 ## Runtime contract
@@ -20,8 +21,8 @@ that artifact to a generation adapter, and run quality checks.
   artifact into a second domain-distillation pass.
 - Every run must return a value conforming to
   `schemas/unified_distillation_artifact.json`.
-- Content generation is an injected adapter and must not be embedded in the
-  distillation core.
+- Content generation is an injected adapter, must not be embedded in the
+  distillation core, and may run only after QualityGateController returns PASS.
 - External publication, paid actions, credential use, or production mutation
   require explicit user authorization.
 

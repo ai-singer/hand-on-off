@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "name": "unified-distillation",
+    "format": "openclaw-skill",
+    "adapter_for": "unified_distillation"
+  },
+  "version": "1.0.0",
+  "description": "Run one configured common-plus-Creator distillation and return a validated artifact.",
+  "entrypoint": "SKILL.md",
+  "dependencies": [
+    "internal/unified_distillation@1.0.0",
+    "source-ingestion@1.0.0"
+  ],
+  "runtime_requirements": {
+    "python": ">=3.11",
+    "bins": [
+      "python"
+    ],
+    "cwd": "workspace",
+    "runtime_config": "config/runtime/default.json"
+  },
+  "test": "python -m unittest tests.deployment.test_skill_adapters -v"
+}

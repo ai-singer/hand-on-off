@@ -15,6 +15,7 @@ environment-specific steps.
 - Python 3.11 or newer;
 - `tar` available on the packaging host;
 - a farm runtime able to expose the workspace Python modules;
+- the official Lobster plugin installed and allowed for the target agent;
 - production secrets stored outside this repository;
 - a selected plugin module, for example `plugins.xiaolin_finance`.
 
@@ -27,22 +28,78 @@ From `blank/workspace/`:
 ```powershell
 python -m unittest discover -s tests -v
 python -c "from core import load_plugin; print(load_plugin('plugins.xiaolin_finance').identity)"
+python -c "from config.runtime import load_runtime_config; print(load_runtime_config())"
+python -c "from skills.openclaw import discover_openclaw_skills; print(sorted(discover_openclaw_skills()))"
 ```
 
 Verify that neither `.env` nor `.openclaw/openclaw.json` exists in the source
 workspace. The packaging script rejects both paths.
 
-## Configuration
+## Runtime configuration
 
-Copy `.env.example` values into the farm's environment configuration rather
-than creating a committed `.env` file:
+`config/runtime/default.json` is the template runtime profile. An instance may
+select a different file with `CREATOR_RUNTIME_CONFIG` or the Lobster
+`runtime_config` argument.
 
-- `CREATOR_PLUGIN`: import path of the selected Creator plugin;
-- `CREATOR_SCHEMA_PATH`: shared artifact schema path;
-- `CREATOR_LOG_LEVEL`: deployment logging level.
+The profile owns:
+
+- `instance.name`;
+- `workflow.default`;
+- `plugins.enabled` and `plugins.default`;
+- `skills.enabled`;
+- the runtime profile `version`.
+
+To add a technology or education plugin later, add its module path to
+`plugins.enabled` and select it as `plugins.default`. No common-core edit is
+required.
 
 Model, search, OCR, transcription, storage, and publication credentials belong
 in the farm secret store and are consumed only by explicit adapters.
+
+## 龙虾部署结构
+
+### Workflow 映射
+
+`workflows/lobster/content_distillation.lobster` is the executable mapping.
+`workflows/lobster/node_contracts.json` records the name, purpose, input,
+output, dependency, and failure behavior for the same five nodes:
+
+~~~text
+source_input
+  -> unified_distillation
+  -> creator_plugin_enhancement checkpoint
+  -> quality_gate
+  -> content_generation handoff (PASS only)
+~~~
+
+The plugin checkpoint validates enhancement created inside the preceding
+single engine invocation; it does not run a second distillation pass.
+
+The final template node emits a `GenerationRequest` handoff. The blank
+framework deliberately does not supply a model or publishing implementation.
+
+### Skill 加载
+
+Existing framework Skills remain unchanged under `skills/<internal-name>/`.
+`skills/internal/catalog.json` maps those packages for the adapter layer.
+OpenClaw-compatible wrappers live under `skills/openclaw/` and use hyphenated
+names:
+
+- `source-ingestion`;
+- `unified-distillation`;
+- `quality-review`.
+
+Each wrapper declares metadata, version, description, entrypoint,
+dependencies, runtime requirements, and a focused test command. Verify native
+loading on the target instance with `openclaw skills list` or the equivalent
+farm preflight.
+
+### Quality Gate control
+
+`QualityGateController` is the only component allowed to invoke an injected
+generation adapter. A FAIL decision returns `review_required` and records
+`generation_adapter_invoked=false`. Lobster also guards the final step with
+`$quality_gate.json.can_continue`.
 
 ## Package
 
@@ -60,13 +117,15 @@ excluded; framework docs and plugin rule data remain included.
 
 1. Import the generated archive using the farm's approved workspace restore or
    instance creation flow.
-2. Set `CREATOR_PLUGIN` and non-secret runtime settings.
+2. Select and mount the instance-owned runtime profile; set
+   `CREATOR_RUNTIME_CONFIG` when it is not the packaged default.
 3. Attach only the input and generation adapters approved for that instance.
-4. Run a dry input through the pipeline with publication disabled.
-5. Confirm the artifact validates and that a `block` risk produces
-   `review_required`.
-6. Record the archive SHA-256 and plugin version in the release record.
-7. Activate generation or publication only after the deployment owner approves
+4. Run a dry input through the Lobster workflow with publication disabled.
+5. Confirm a safe input reaches the generation handoff.
+6. Confirm a `block` risk produces `review_required` and does not execute the
+   generation step.
+7. Record the archive SHA-256 and plugin/runtime versions in the release record.
+8. Activate generation or publication only after the deployment owner approves
    the adapter side effects.
 
 ## Rollback

@@ -1,0 +1,19 @@
+{
+  "skills": [
+    {
+      "name": "source_ingestion",
+      "path": "../source_ingestion",
+      "version": "1.0.0"
+    },
+    {
+      "name": "unified_distillation",
+      "path": "../unified_distillation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "quality_review",
+      "path": "../quality_review",
+      "version": "1.0.0"
+    }
+  ]
+}
