@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "name": "quality-review",
+    "format": "openclaw-skill",
+    "adapter_for": "quality_review"
+  },
+  "version": "1.0.0",
+  "description": "Enforce the pre-generation quality and risk gate for a unified artifact.",
+  "entrypoint": "SKILL.md",
+  "dependencies": [
+    "internal/quality_review@1.0.0",
+    "unified-distillation@1.0.0"
+  ],
+  "runtime_requirements": {
+    "python": ">=3.11",
+    "bins": [
+      "python"
+    ],
+    "cwd": "workspace",
+    "runtime_config": "config/runtime/default.json"
+  },
+  "test": "python -m unittest tests.deployment.test_skill_adapters -v"
+}

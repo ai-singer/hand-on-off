@@ -1,0 +1,58 @@
+{
+  "workflow": "creator-agent-content-distillation",
+  "nodes": [
+    {
+      "id": "source_input",
+      "name": "素材输入",
+      "purpose": "Normalize deployment input into RawSource records.",
+      "input": "LOBSTER_ARG_SOURCES_JSON",
+      "output": "RawSource envelope",
+      "dependency": [],
+      "failure_behavior": "Fail the workflow on malformed or unsupported source input."
+    },
+    {
+      "id": "unified_distillation",
+      "name": "统一蒸馏",
+      "purpose": "Run common extraction and the selected Creator plugin in one DistillationEngine invocation.",
+      "input": "RawSource envelope",
+      "output": "Unified Distillation Artifact envelope",
+      "dependency": [
+        "source_input"
+      ],
+      "failure_behavior": "Fail visibly on plugin loading, extraction, or shared Schema errors."
+    },
+    {
+      "id": "creator_plugin_enhancement",
+      "name": "Creator插件增强",
+      "purpose": "Verify the plugin enhancement already materialized inside the single unified distillation run; never run a second distillation pass.",
+      "input": "Unified Distillation Artifact envelope",
+      "output": "Plugin-verified artifact envelope",
+      "dependency": [
+        "unified_distillation"
+      ],
+      "failure_behavior": "Fail when artifact plugin identity differs from runtime configuration."
+    },
+    {
+      "id": "quality_gate",
+      "name": "Quality Gate",
+      "purpose": "Convert common, domain, and risk evaluation into an enforced PASS or FAIL decision.",
+      "input": "Plugin-verified artifact envelope",
+      "output": "Gate decision envelope",
+      "dependency": [
+        "creator_plugin_enhancement"
+      ],
+      "failure_behavior": "Return FAIL and prevent the generation condition from evaluating true."
+    },
+    {
+      "id": "content_generation",
+      "name": "内容生成",
+      "purpose": "Hand a gate-approved GenerationRequest to the deployment-provided generation adapter boundary.",
+      "input": "PASS gate decision envelope",
+      "output": "GenerationRequest handoff envelope",
+      "dependency": [
+        "quality_gate"
+      ],
+      "failure_behavior": "Skip on FAIL; fail visibly if invoked without a PASS decision."
+    }
+  ]
+}

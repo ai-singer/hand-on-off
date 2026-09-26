@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "name": "source-ingestion",
+    "format": "openclaw-skill",
+    "adapter_for": "source_ingestion"
+  },
+  "version": "1.0.0",
+  "description": "Normalize approved source payloads into Creator Agent RawSource records.",
+  "entrypoint": "SKILL.md",
+  "dependencies": [
+    "internal/source_ingestion@1.0.0"
+  ],
+  "runtime_requirements": {
+    "python": ">=3.11",
+    "bins": [
+      "python"
+    ],
+    "cwd": "workspace",
+    "runtime_config": "config/runtime/default.json"
+  },
+  "test": "python -m unittest tests.deployment.test_skill_adapters -v"
+}

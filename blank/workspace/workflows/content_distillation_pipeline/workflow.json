@@ -12,13 +12,14 @@
       "output": "schemas/unified_distillation_artifact.json"
     },
     {
-      "id": "content_generation_interface",
-      "optional": true,
-      "contract": "GenerationAdapter"
-    },
-    {
       "id": "quality_check",
       "contract": "evaluation.evaluate_pipeline_output"
+    },
+    {
+      "id": "content_generation_interface",
+      "optional": true,
+      "condition": "quality_check.status == pass",
+      "contract": "GenerationAdapter"
     }
   ]
 }
