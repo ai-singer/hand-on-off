@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "pass_score": 0.6,
+  "dimensions": {
+    "business_mechanism": {
+      "weight": 0.35,
+      "question": "Does the material explain causal commercial or economic mechanisms?"
+    },
+    "data_interpretation": {
+      "weight": 0.35,
+      "question": "Are metrics interpreted with context rather than repeated without meaning?"
+    },
+    "company_case": {
+      "weight": 0.3,
+      "question": "Are cases traceable and bounded by the available evidence?"
+    }
+  },
+  "hard_failures": ["direct investment instruction", "guaranteed return claim"]
+}

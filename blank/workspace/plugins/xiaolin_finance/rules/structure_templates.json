@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "templates": [
+    {
+      "template_id": "mechanism-evidence-case-risk",
+      "name": "Mechanism, evidence, case, and boundary",
+      "applies_when": ["finance explanation", "company analysis", "data interpretation"],
+      "sections": [
+        "question and scope",
+        "business or economic mechanism",
+        "data and evidence interpretation",
+        "company or market case",
+        "counter-evidence and risk boundary"
+      ],
+      "required_evidence": ["source reference", "time period for metrics", "uncertainty for forecasts"]
+    }
+  ]
+}

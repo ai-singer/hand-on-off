@@ -1,0 +1,7 @@
+{
+  "name": "quality_review",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "capabilities": ["evaluate-coverage", "apply-domain-rubric", "enforce-risk-gate"],
+  "test_command": "python -m unittest tests.test_framework.DistillationContractTests -v"
+}

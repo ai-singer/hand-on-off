@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://creator-agent.local/schemas/unified_distillation_artifact.json",
+  "title": "UnifiedDistillationArtifact",
+  "description": "The only persisted output of a coordinated common-plus-plugin distillation run.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_version",
+    "plugin",
+    "topic_candidate",
+    "content_template",
+    "knowledge_unit",
+    "style_pattern",
+    "domain_extension",
+    "risk_constraints",
+    "evaluation_result"
+  ],
+  "properties": {
+    "artifact_version": {
+      "type": "string"
+    },
+    "plugin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "version", "domain", "creator_target"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "domain": { "type": "string" },
+        "creator_target": { "type": "string" }
+      }
+    },
+    "topic_candidate": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "rationale", "source_ids", "confidence", "origin"],
+        "properties": {
+          "label": { "type": "string" },
+          "rationale": { "type": "string" },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "confidence": { "type": "number" },
+          "origin": { "type": "string" }
+        }
+      }
+    },
+    "content_template": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "sections", "source_ids", "origin"],
+        "properties": {
+          "name": { "type": "string" },
+          "sections": { "type": "array", "items": { "type": "string" } },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "origin": { "type": "string" }
+        }
+      }
+    },
+    "knowledge_unit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["statement", "evidence_refs", "confidence", "origin"],
+        "properties": {
+          "statement": { "type": "string" },
+          "evidence_refs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["source_id", "source_type"],
+              "properties": {
+                "source_id": { "type": "string" },
+                "source_type": {
+                  "type": "string",
+                  "enum": ["video", "document", "data", "image"]
+                }
+              }
+            }
+          },
+          "confidence": { "type": "number" },
+          "origin": { "type": "string" }
+        }
+      }
+    },
+    "style_pattern": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "attributes", "source_ids", "origin"],
+        "properties": {
+          "name": { "type": "string" },
+          "attributes": { "type": "array", "items": { "type": "string" } },
+          "source_ids": { "type": "array", "items": { "type": "string" } },
+          "origin": { "type": "string" }
+        }
+      }
+    },
+    "domain_extension": {
+      "type": "object"
+    },
+    "risk_constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "severity", "action", "message", "source_ids"],
+        "properties": {
+          "rule_id": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["info", "warning", "block"]
+          },
+          "action": {
+            "type": "string",
+            "enum": ["downrank", "require_evidence", "require_review", "block"]
+          },
+          "message": { "type": "string" },
+          "source_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "evaluation_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["common", "domain"],
+      "properties": {
+        "common": {
+          "type": "object",
+          "required": ["score", "checks", "passed"],
+          "properties": {
+            "score": { "type": "number" },
+            "checks": { "type": "object" },
+            "passed": { "type": "boolean" }
+          }
+        },
+        "domain": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "finance.business-mechanism",
+      "dimension": "business_mechanism",
+      "label": "Business mechanism",
+      "weight": 1.0,
+      "keywords": ["business model", "revenue", "cost", "margin", "商业模式", "收入", "成本", "利润率"],
+      "rationale": "Explain how value, revenue, costs, and incentives connect."
+    },
+    {
+      "id": "finance.data-interpretation",
+      "dimension": "data_interpretation",
+      "label": "Data interpretation",
+      "weight": 0.9,
+      "keywords": ["data", "growth rate", "cash flow", "ratio", "数据", "增长率", "现金流", "比率"],
+      "rationale": "Prefer interpretable data with units, periods, and comparisons."
+    },
+    {
+      "id": "finance.company-case",
+      "dimension": "company_case",
+      "label": "Company case",
+      "weight": 0.8,
+      "keywords": ["company", "enterprise", "earnings", "公司", "企业", "财报"],
+      "rationale": "Use company cases to make a mechanism concrete without generalizing beyond evidence."
+    }
+  ]
+}

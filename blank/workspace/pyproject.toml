@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "creator-agent-template"
+version = "0.1.0"
+description = "OpenClaw Creator Agent framework template instance"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+packages = [
+  "core",
+  "distillation_core",
+  "evaluation",
+  "plugin_interface",
+  "plugins",
+  "plugins.xiaolin_finance",
+  "workflows",
+  "workflows.content_distillation_pipeline",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

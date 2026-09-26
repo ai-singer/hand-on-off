@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XiaolinFinanceDomainExtension",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "plugin_identity",
+    "value_signals",
+    "filtered_claims",
+    "recommended_structure",
+    "common_signal_counts"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "plugin_identity": { "type": "object" },
+    "value_signals": { "type": "array" },
+    "filtered_claims": { "type": "array" },
+    "recommended_structure": { "type": "object" },
+    "common_signal_counts": { "type": "object" }
+  }
+}

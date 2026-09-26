@@ -1,0 +1,7 @@
+{
+  "name": "source_ingestion",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "capabilities": ["normalize-video", "normalize-document", "normalize-data", "normalize-image"],
+  "test_command": "python -m unittest tests.test_framework.SkillRegistryTests -v"
+}
