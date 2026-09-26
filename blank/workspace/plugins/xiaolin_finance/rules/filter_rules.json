@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "finance.investment-advice",
+      "severity": "block",
+      "action": "block",
+      "keywords": ["buy now", "sell now", "guaranteed return", "立即买入", "立即卖出", "稳赚"],
+      "message": "Direct investment instructions or guaranteed-return claims must not enter generated content."
+    },
+    {
+      "id": "finance.unsupported-prediction",
+      "severity": "warning",
+      "action": "require_evidence",
+      "keywords": ["will definitely", "certain to", "必然上涨", "肯定下跌", "一定会"],
+      "message": "Forecast language requires evidence, uncertainty, and explicit assumptions."
+    }
+  ]
+}

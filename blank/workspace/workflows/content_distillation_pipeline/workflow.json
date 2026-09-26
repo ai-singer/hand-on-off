@@ -1,0 +1,24 @@
+{
+  "name": "content_distillation_pipeline",
+  "version": "1.0.0",
+  "steps": [
+    {
+      "id": "source_input",
+      "contract": "core.models.RawSource[]"
+    },
+    {
+      "id": "single_distillation_run",
+      "contains": ["source_classification", "common_understanding", "creator_plugin_enhancement"],
+      "output": "schemas/unified_distillation_artifact.json"
+    },
+    {
+      "id": "content_generation_interface",
+      "optional": true,
+      "contract": "GenerationAdapter"
+    },
+    {
+      "id": "quality_check",
+      "contract": "evaluation.evaluate_pipeline_output"
+    }
+  ]
+}
