@@ -1,0 +1,25 @@
+{
+  "development_benchmark": "risk_evaluation.benchmark@50-cases",
+  "freeze_schema_version": "1.0.0",
+  "frozen_before_independent_benchmark": true,
+  "independent_benchmark": "risk_evaluation.independent_benchmark@100-cases",
+  "keyword_evaluator": "keyword-xiaolin-finance-v1",
+  "semantic_evaluator": "semantic-intent-v0",
+  "semantic_intent_categories": [
+    "emotional_manipulation",
+    "financial_guarantee",
+    "investment_advice",
+    "market_prediction",
+    "unverified_information"
+  ],
+  "semantic_patterns_hash": "0b3239979079dbbd573ef88d9d70fccb113fd1ac04a00ee6543effe40aea3641",
+  "semantic_signal_classes": [
+    "certainty_marker",
+    "directive",
+    "emotional_pressure",
+    "financial_object",
+    "future_marker",
+    "risk_negation",
+    "vague_source"
+  ]
+}
