@@ -1,0 +1,826 @@
+{
+  "attribution_error_reduction": 5,
+  "attribution_error_reduction_rate": 0.8333,
+  "attribution_groups": [
+    "B",
+    "C",
+    "D"
+  ],
+  "baseline": {
+    "accuracy": 0.5,
+    "attribution_cases": 12,
+    "attribution_errors": 6,
+    "cases": 12,
+    "correct": 6,
+    "f1": 0.6153,
+    "name": "baseline",
+    "outcomes": {
+      "fn": 5,
+      "fp": 0,
+      "tn": 3,
+      "tp": 4
+    },
+    "precision": 1.0,
+    "recall": 0.4444
+  },
+  "broken_cases": [],
+  "cases": 12,
+  "cases_detail": [
+    {
+      "added_categories": [
+        "investment_advice"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [
+        "unverified_information"
+      ],
+      "baseline_correct": false,
+      "baseline_outcome": "tp",
+      "case_id": "ATT-01",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [
+            "unverified_information"
+          ],
+          "dropped": [],
+          "evidence": [
+            "analysts",
+            "say"
+          ],
+          "is_authorial": false,
+          "kept": [
+            "unverified_information"
+          ],
+          "reason": "R2-third-party-quoted",
+          "rules": [
+            "R4-attribution-agnostic"
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Analysts say the sector is volatile this year.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "investment_advice"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "investment_advice"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "Buy this stock before the quarter ends.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "investment_advice"
+      ],
+      "experiment_categories": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "experiment_correct": false,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+      "transition": "different"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "baseline_outcome": "tp",
+      "case_id": "ATT-02",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "the company said",
+            "said"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "The company said costs were flat last quarter.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "market_prediction"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "market_prediction"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "The share price will certainly double next year.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "market_prediction"
+      ],
+      "experiment_categories": [
+        "market_prediction"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "The company said costs were flat last quarter. The share price will certainly double next year.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [
+        "financial_guarantee"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": false,
+      "baseline_outcome": "fn",
+      "case_id": "ATT-03",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "economists",
+            "forecast"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Economists forecast slower growth in Europe.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "financial_guarantee"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "financial_guarantee"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "This fund cannot lose money.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "experiment_categories": [
+        "financial_guarantee"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+      "transition": "fixed"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "baseline_outcome": "tp",
+      "case_id": "ATT-04",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "the board",
+            "said"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "The board said the timetable is unchanged.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "unverified_information"
+          ],
+          "dropped": [],
+          "evidence": [
+            "sources",
+            "say"
+          ],
+          "is_authorial": false,
+          "kept": [
+            "unverified_information"
+          ],
+          "reason": "R2-third-party-quoted",
+          "rules": [
+            "R4-attribution-agnostic"
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Sources say the company will be acquired.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "unverified_information"
+      ],
+      "experiment_categories": [
+        "unverified_information"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "The board said the timetable is unchanged. Sources say the company will be acquired.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [
+        "emotional_manipulation"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": false,
+      "baseline_outcome": "fn",
+      "case_id": "ATT-05",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "regulators",
+            "published"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Regulators published the revised disclosure rules.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "emotional_manipulation"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "emotional_manipulation"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "Do not miss this opportunity.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "experiment_categories": [
+        "emotional_manipulation"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "Regulators published the revised disclosure rules. Do not miss this opportunity.",
+      "transition": "fixed"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "baseline_outcome": "tp",
+      "case_id": "CTL-01",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [
+            "unverified_information"
+          ],
+          "dropped": [],
+          "evidence": [
+            "analysts",
+            "say"
+          ],
+          "is_authorial": false,
+          "kept": [
+            "unverified_information"
+          ],
+          "reason": "R2-third-party-quoted",
+          "rules": [
+            "R4-attribution-agnostic"
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Analysts say this fund cannot lose money.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "unverified_information"
+      ],
+      "experiment_categories": [
+        "unverified_information"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "B",
+      "group_name": "third_party_citation",
+      "text": "Analysts say this fund cannot lose money.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": true,
+      "baseline_outcome": "tn",
+      "case_id": "CTL-02",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "the newsletter",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "uncertain",
+          "statement_source": "third_party",
+          "text": "The newsletter recommends buying this stock.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [],
+      "experiment_categories": [],
+      "experiment_correct": true,
+      "experiment_outcome": "tn",
+      "group": "B",
+      "group_name": "third_party_citation",
+      "text": "The newsletter recommends buying this stock.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": true,
+      "baseline_outcome": "tn",
+      "case_id": "CTL-03",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "management",
+            "expects"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Management expects the share price to double.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [],
+      "experiment_categories": [],
+      "experiment_correct": true,
+      "experiment_outcome": "tn",
+      "group": "B",
+      "group_name": "third_party_citation",
+      "text": "Management expects the share price to double.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": true,
+      "baseline_outcome": "tn",
+      "case_id": "CTL-04",
+      "changed": false,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "a promoter",
+            "quotes",
+            "saying"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "The article quotes a promoter saying do not miss this opportunity.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [],
+      "experiment_categories": [],
+      "experiment_correct": true,
+      "experiment_outcome": "tn",
+      "group": "B",
+      "group_name": "third_party_citation",
+      "text": "The article quotes a promoter saying do not miss this opportunity.",
+      "transition": "unchanged"
+    },
+    {
+      "added_categories": [
+        "financial_guarantee"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": false,
+      "baseline_outcome": "fn",
+      "case_id": "NEW-01",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "said"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "",
+          "rules": [],
+          "speaker": "unknown",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "The regulator said the fund is sound.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "financial_guarantee"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "financial_guarantee"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "This fund cannot lose money.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "experiment_categories": [
+        "financial_guarantee"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "The regulator said the fund is sound. This fund cannot lose money.",
+      "transition": "fixed"
+    },
+    {
+      "added_categories": [
+        "investment_advice"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": false,
+      "baseline_outcome": "fn",
+      "case_id": "NEW-02",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [],
+          "reason": "",
+          "rules": [],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "A broker note praised the sector.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "investment_advice"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "investment_advice"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "Buy this stock before the quarter ends.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "investment_advice"
+      ],
+      "experiment_categories": [
+        "investment_advice"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "A broker note praised the sector. Buy this stock before the quarter ends.",
+      "transition": "fixed"
+    },
+    {
+      "added_categories": [
+        "financial_guarantee"
+      ],
+      "attribution_case": true,
+      "baseline_categories": [],
+      "baseline_correct": false,
+      "baseline_outcome": "fn",
+      "case_id": "NEW-03",
+      "changed": true,
+      "claims": [
+        {
+          "claim_id": "claim-001",
+          "detected": [],
+          "dropped": [],
+          "evidence": [
+            "officials",
+            "said"
+          ],
+          "is_authorial": false,
+          "kept": [],
+          "reason": "R2-third-party-quoted",
+          "rules": [],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "statement_source": "quoted",
+          "text": "Officials said the review continues.",
+          "weight_raised": false
+        },
+        {
+          "claim_id": "claim-002",
+          "detected": [
+            "financial_guarantee"
+          ],
+          "dropped": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker"
+          ],
+          "is_authorial": true,
+          "kept": [
+            "financial_guarantee"
+          ],
+          "reason": "",
+          "rules": [
+            "R6-baseline-verdict"
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "statement_source": "author",
+          "text": "The fund cannot lose money.",
+          "weight_raised": false
+        }
+      ],
+      "dropped_categories": [],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "experiment_categories": [
+        "financial_guarantee"
+      ],
+      "experiment_correct": true,
+      "experiment_outcome": "tp",
+      "group": "D",
+      "group_name": "mixed_claim",
+      "text": "Officials said the review continues. The fund cannot lose money.",
+      "transition": "fixed"
+    }
+  ],
+  "dataset_version": "v1",
+  "decision_difference_cases": [
+    "ATT-01",
+    "ATT-03",
+    "ATT-05",
+    "NEW-01",
+    "NEW-02",
+    "NEW-03"
+  ],
+  "decision_difference_count": 6,
+  "different_cases": [
+    "ATT-01"
+  ],
+  "experiment": {
+    "accuracy": 0.9167,
+    "attribution_cases": 12,
+    "attribution_errors": 1,
+    "cases": 12,
+    "correct": 11,
+    "f1": 1.0,
+    "name": "experiment",
+    "outcomes": {
+      "fn": 0,
+      "fp": 0,
+      "tn": 3,
+      "tp": 9
+    },
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "false_negative_change": -5,
+  "false_positive_change": 0,
+  "fixed_cases": [
+    "ATT-03",
+    "ATT-05",
+    "NEW-01",
+    "NEW-02",
+    "NEW-03"
+  ],
+  "group_names": {
+    "A": "author_risk",
+    "B": "third_party_citation",
+    "C": "author_rejection",
+    "D": "mixed_claim",
+    "E": "no_risk_education"
+  },
+  "note": "Errors are counted on exact category match; the false positive and false negative deltas are counted on whether anything was flagged, which is what a gate would act on.",
+  "per_group": {
+    "baseline": {
+      "mixed_claim": {
+        "cases": 8,
+        "correct": 2,
+        "false_negatives": 5,
+        "false_positives": 0
+      },
+      "third_party_citation": {
+        "cases": 4,
+        "correct": 4,
+        "false_negatives": 0,
+        "false_positives": 0
+      }
+    },
+    "experiment": {
+      "mixed_claim": {
+        "cases": 8,
+        "correct": 7,
+        "false_negatives": 0,
+        "false_positives": 0
+      },
+      "third_party_citation": {
+        "cases": 4,
+        "correct": 4,
+        "false_negatives": 0,
+        "false_positives": 0
+      }
+    }
+  },
+  "policy": "strict-rules"
+}

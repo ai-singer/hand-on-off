@@ -1,0 +1,908 @@
+{
+  "attribution_groups": [
+    "B",
+    "C",
+    "D"
+  ],
+  "case_count": 60,
+  "cases": [
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-01",
+      "note": "unconditional outcome",
+      "origin": "phase-8.3",
+      "text": "This fund cannot lose money."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-02",
+      "note": "plainest guarantee wording",
+      "origin": "phase-8.3",
+      "text": "This return is guaranteed."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-03",
+      "note": "directive plus object",
+      "origin": "phase-8.3",
+      "text": "You should buy this stock today."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-04",
+      "note": "directive plus object",
+      "origin": "phase-8.3",
+      "text": "Shift your savings into this fund."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-05",
+      "note": "author-voice certainty",
+      "origin": "phase-8.3",
+      "text": "The share price will certainly double next year."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-06",
+      "note": "author-voice certainty",
+      "origin": "phase-8.3",
+      "text": "Revenue will surely grow every quarter."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-07",
+      "note": "pressure on the reader",
+      "origin": "phase-8.3",
+      "text": "Do not miss this opportunity."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-08",
+      "note": "herd framing plus deadline",
+      "origin": "phase-8.3",
+      "text": "Everyone is buying and there is no time left."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-09",
+      "note": "uncheckable source",
+      "origin": "phase-8.3",
+      "text": "Sources say the company will be acquired."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-10",
+      "note": "uncheckable source",
+      "origin": "phase-8.3",
+      "text": "Insiders say the dividend is about to be cut."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-11",
+      "note": "author marker plus guarantee",
+      "origin": "phase-8.3",
+      "text": "We believe this fund cannot lose money."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-12",
+      "note": "author marker plus directive",
+      "origin": "phase-8.3",
+      "text": "Our analysis shows you should move your savings into this fund."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-13",
+      "note": "author marker plus certainty",
+      "origin": "phase-8.3",
+      "text": "I think the stock will certainly reach 500."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-14",
+      "note": "deadline pressure",
+      "origin": "phase-8.3",
+      "text": "Act now before it is too late."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "A",
+      "group_name": "author_risk",
+      "id": "A-15",
+      "note": "unattributable source",
+      "origin": "phase-8.3",
+      "text": "Rumour has it the merger is close."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-01",
+      "note": "unnamed collective: source is uncheckable",
+      "origin": "phase-8.3",
+      "text": "Analysts say this fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-02",
+      "note": "identifiable source: not the article's guarantee",
+      "origin": "phase-8.3",
+      "text": "The company said the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-03",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "According to the report, the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-04",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "A broker told clients the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-05",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "Management said the return is guaranteed."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-06",
+      "note": "identifiable source, no reporting verb v2 knows",
+      "origin": "phase-8.3",
+      "text": "The report states the stock will certainly double."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-07",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "Officials said the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-08",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "Commentators said the market will certainly crash."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-09",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "Economists forecast the stock will certainly double."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "B-10",
+      "note": "identifiable source",
+      "origin": "phase-8.3",
+      "text": "The newsletter recommends buying this stock."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-01",
+      "note": "rejection precedes the claim",
+      "origin": "phase-8.3",
+      "text": "We disagree with the view that this fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-02",
+      "note": "rejection precedes the claim",
+      "origin": "phase-8.3",
+      "text": "We disagree with the claim that the stock will certainly double."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-03",
+      "note": "doubt is a rejection",
+      "origin": "phase-8.3",
+      "text": "We doubt the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-04",
+      "note": "rejection leaves the sourcing risk standing",
+      "origin": "phase-8.3",
+      "text": "Analysts say the fund cannot lose money. However, we disagree."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-05",
+      "note": "reported claim then rejected",
+      "origin": "phase-8.3",
+      "text": "Experts expect the stock to rise. We are not convinced."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-06",
+      "note": "explicit non-endorsement",
+      "origin": "phase-8.3",
+      "text": "The marketing claims the fund cannot lose money. We do not endorse that."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-07",
+      "note": "quoted pressure then rejected",
+      "origin": "phase-8.3",
+      "text": "Do not miss this opportunity is what the advert says; we disagree."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-08",
+      "note": "rejection with a self-reference",
+      "origin": "phase-8.3",
+      "text": "This article rejects the idea that the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-09",
+      "note": "rejection without a first person",
+      "origin": "phase-8.3",
+      "text": "The claim that the stock will certainly double is incorrect."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "C",
+      "group_name": "author_rejection",
+      "id": "C-10",
+      "note": "hedged rejection",
+      "origin": "phase-8.3",
+      "text": "We are not convinced the fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-01",
+      "note": "Phase 8.1 failure shape",
+      "origin": "phase-8.3",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-02",
+      "note": "Phase 8.1 failure shape",
+      "origin": "phase-8.3",
+      "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-03",
+      "note": "Phase 8.1 failure shape",
+      "origin": "phase-8.3",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-04",
+      "note": "borrowed attribution plus prediction",
+      "origin": "phase-8.3",
+      "text": "The board said the timetable is unchanged. The share price will certainly double."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-05",
+      "note": "borrowed attribution plus directive",
+      "origin": "phase-8.3",
+      "text": "Officials said the review is ongoing. Shift your savings into this fund."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-06",
+      "note": "borrowed attribution plus guarantee",
+      "origin": "phase-8.3",
+      "text": "Commentators said the quarter was mixed. This return is guaranteed."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-07",
+      "note": "borrowed attribution plus pressure",
+      "origin": "phase-8.3",
+      "text": "The broker note described the sector. Act now before it is too late."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-08",
+      "note": "borrowed publication plus guarantee",
+      "origin": "phase-8.3",
+      "text": "The newsletter described the fund. This fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-09",
+      "note": "borrowed attribution plus author marker",
+      "origin": "phase-8.3",
+      "text": "Regulators published the rules. We believe this fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "D-10",
+      "note": "borrowed attribution plus directive",
+      "origin": "phase-8.3",
+      "text": "Analysts said the sector is volatile. You should buy this stock today."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-01",
+      "note": "neutral statement",
+      "origin": "phase-8.3",
+      "text": "The company reports its results in March."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-02",
+      "note": "definition",
+      "origin": "phase-8.3",
+      "text": "A price-to-earnings ratio compares price with earnings per share."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-03",
+      "note": "method guidance",
+      "origin": "phase-8.3",
+      "text": "Diversification spreads risk across assets."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-04",
+      "note": "conditional outcome",
+      "origin": "phase-8.3",
+      "text": "If rates fall, the stock may rise."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-05",
+      "note": "dramatic vocabulary, no reader pressure",
+      "origin": "phase-8.3",
+      "text": "Panic is spreading through the sector."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-06",
+      "note": "definition",
+      "origin": "phase-8.3",
+      "text": "Compounding means returns are earned on earlier returns."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-07",
+      "note": "neutral statement",
+      "origin": "phase-8.3",
+      "text": "The board meets on the second Tuesday of the month."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-08",
+      "note": "explanation",
+      "origin": "phase-8.3",
+      "text": "Interest rate changes affect bond prices inversely."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-09",
+      "note": "neutral statement",
+      "origin": "phase-8.3",
+      "text": "The fund's charges are set out in the prospectus."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-10",
+      "note": "neutral statement about coverage",
+      "origin": "phase-8.3",
+      "text": "Analysts' coverage of the sector has widened this year."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-11",
+      "note": "citation of a neutral fact",
+      "origin": "phase-8.3",
+      "text": "According to the prospectus, charges are capped."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-12",
+      "note": "definition",
+      "origin": "phase-8.3",
+      "text": "A benchmark is a standard against which performance is measured."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-13",
+      "note": "neutral statement",
+      "origin": "phase-8.3",
+      "text": "The audit covers the twelve months to December."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-14",
+      "note": "hedged, so not a prediction",
+      "origin": "phase-8.3",
+      "text": "The index will probably be rebalanced in June."
+    },
+    {
+      "attribution_case": false,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "E",
+      "group_name": "no_risk_education",
+      "id": "E-15",
+      "note": "negative guidance, not a guarantee",
+      "origin": "phase-8.3",
+      "text": "The marketing material should not be relied upon."
+    }
+  ],
+  "dataset": "attribution_experiment",
+  "groups": {
+    "A": {
+      "count": 15,
+      "name": "author_risk"
+    },
+    "B": {
+      "count": 10,
+      "name": "third_party_citation"
+    },
+    "C": {
+      "count": 10,
+      "name": "author_rejection"
+    },
+    "D": {
+      "count": 10,
+      "name": "mixed_claim"
+    },
+    "E": {
+      "count": 15,
+      "name": "no_risk_education"
+    }
+  },
+  "replay_case_count": 12,
+  "replay_cases": [
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "ATT-01",
+      "note": "ADV-ATT-01, recorded failure ADV-F013",
+      "origin": "phase-8.1",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "ATT-02",
+      "note": "ADV-ATT-02, passed by accident",
+      "origin": "phase-8.1",
+      "text": "The company said costs were flat last quarter. The share price will certainly double next year."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "ATT-03",
+      "note": "ADV-ATT-03, recorded failure ADV-F014",
+      "origin": "phase-8.1",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "ATT-04",
+      "note": "ADV-ATT-04, voice-agnostic target",
+      "origin": "phase-8.1",
+      "text": "The board said the timetable is unchanged. Sources say the company will be acquired."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "ATT-05",
+      "note": "ADV-ATT-05, recorded failure ADV-F015",
+      "origin": "phase-8.1",
+      "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "CTL-01",
+      "note": "ADV-CTL-01 control",
+      "origin": "phase-8.1",
+      "text": "Analysts say this fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "CTL-02",
+      "note": "ADV-CTL-02 control",
+      "origin": "phase-8.1",
+      "text": "The newsletter recommends buying this stock."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "CTL-03",
+      "note": "ADV-CTL-03 control",
+      "origin": "phase-8.1",
+      "text": "Management expects the share price to double."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "group": "B",
+      "group_name": "third_party_citation",
+      "id": "CTL-04",
+      "note": "ADV-CTL-04 control",
+      "origin": "phase-8.1",
+      "text": "The article quotes a promoter saying do not miss this opportunity."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "NEW-01",
+      "note": "fresh case of the same shape",
+      "origin": "phase-8.3",
+      "text": "The regulator said the fund is sound. This fund cannot lose money."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "NEW-02",
+      "note": "fresh case of the same shape",
+      "origin": "phase-8.3",
+      "text": "A broker note praised the sector. Buy this stock before the quarter ends."
+    },
+    {
+      "attribution_case": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "group": "D",
+      "group_name": "mixed_claim",
+      "id": "NEW-03",
+      "note": "fresh case of the same shape",
+      "origin": "phase-8.3",
+      "text": "Officials said the review continues. The fund cannot lose money."
+    }
+  ],
+  "required_group_sizes": {
+    "A": 15,
+    "B": 10,
+    "C": 10,
+    "D": 10,
+    "E": 15
+  },
+  "version": "v1"
+}
