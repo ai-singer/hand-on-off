@@ -1,0 +1,22 @@
+{
+  "actual": "none",
+  "case_id": "ADV-ATT-05",
+  "created_at": "2026-09-27T00:00:00Z",
+  "evidence": {
+    "certainty_level": "certain",
+    "detected_categories": [],
+    "evaluator": "semantic-intent-v2",
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "market_claim_case": "attribution_expectation",
+    "statement_source": "third_party",
+    "suppressed": [
+      "emotional_manipulation"
+    ]
+  },
+  "expected": "emotional_manipulation",
+  "id": "ADV-F015",
+  "severity": "medium",
+  "strategy": "attribution_confusion",
+  "target_category": "emotional_manipulation",
+  "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+}

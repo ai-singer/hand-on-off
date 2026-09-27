@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from risk_evaluation.benchmark_registry import (
+    ADVERSARIAL_ANNOTATION_PROTOCOL,
     ANNOTATION_PROTOCOL,
     ANNOTATION_PROTOCOL_V2,
     ANNOTATION_VERSION,
@@ -29,8 +30,9 @@ class RegistryLookupTests(unittest.TestCase):
     def setUp(self) -> None:
         self.registry = BenchmarkRegistry()
 
-    def test_registry_lists_every_versions(self) -> None:
-        """Phase 7.5 extended the registry from two versions to four."""
+    def test_registry_lists_every_version(self) -> None:
+        """Phase 7.5 extended the registry to four versions; Phase 8.1 added the
+        generated adversarial family as a namespaced benchmark id."""
 
         keys = {
             (record.benchmark_id, record.version)
@@ -44,8 +46,27 @@ class RegistryLookupTests(unittest.TestCase):
                 ("semantic", "v2"),
                 ("semantic", "v3"),
                 ("semantic", "v4"),
+                ("semantic/adversarial", "v1"),
             },
         )
+
+    def test_a_namespaced_id_resolves_to_a_nested_directory(self) -> None:
+        record = self.registry.get("semantic/adversarial", "v1")
+
+        self.assertEqual(record.path_parts, ("semantic", "adversarial", "v1"))
+        self.assertEqual(
+            self.registry.directory(record).relative_to(self.registry.root).parts,
+            ("semantic", "adversarial", "v1"),
+        )
+
+    def test_versions_shared_across_benchmark_ids_are_not_ambiguous(self) -> None:
+        """`semantic/v1` and `semantic/adversarial/v1` both exist."""
+
+        first = self.registry.get("semantic", "v1")
+        second = self.registry.get("semantic/adversarial", "v1")
+
+        self.assertNotEqual(first.dataset_hash, second.dataset_hash)
+        self.assertNotEqual(first.case_count, second.case_count)
 
     def test_get_by_id_and_version(self) -> None:
         record = self.registry.get("semantic", "v2")
@@ -92,22 +113,30 @@ class RegistryManifestTests(unittest.TestCase):
         """Each version names the guide it was labelled under.
 
         v1 and v2 were labelled under guide v1; Phase 7.5's v3 and v4 under
-        guide v2. A version's protocol is fixed at export and never rewritten.
+        guide v2; Phase 8.1's generated cases under guide v2 plus the
+        adversarial-generation protocol. A version's protocol is fixed at export
+        and never rewritten. Keyed by the full name, because the version alone
+        is no longer unique across benchmark ids.
         """
 
         expected = {
-            "v1": (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
-            "v2": (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
-            "v3": (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
-            "v4": (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+            ("semantic", "v1"): (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
+            ("semantic", "v2"): (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
+            ("semantic", "v3"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+            ("semantic", "v4"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+            ("semantic/adversarial", "v1"): (
+                ANNOTATION_VERSION_V2,
+                ADVERSARIAL_ANNOTATION_PROTOCOL,
+            ),
         }
         seen = set()
         for record in self.registry.list_benchmarks():
-            version, protocol = expected[record.version]
+            key = (record.benchmark_id, record.version)
+            version, protocol = expected[key]
             self.assertEqual(record.annotation_version, version)
             self.assertEqual(record.annotation_protocol, protocol)
             self.assertIn("RISK_ANNOTATION_GUIDE", record.annotation_protocol)
-            seen.add(record.version)
+            seen.add(key)
 
         self.assertEqual(seen, set(expected))
 
@@ -138,8 +167,23 @@ class RegistryManifestTests(unittest.TestCase):
             )
 
     def test_created_by_names_the_producing_phase(self) -> None:
+        """Provenance is per version, not a global default.
+
+        The generated adversarial family comes from Phase 8.1; recording it as
+        Phase 7.4 would send a reader to results it has nothing to do with.
+        """
+
+        expected = {
+            ("semantic", "v1"): "phase-7.4",
+            ("semantic", "v2"): "phase-7.4",
+            ("semantic", "v3"): "phase-7.4",
+            ("semantic", "v4"): "phase-7.4",
+            ("semantic/adversarial", "v1"): "phase-8.1",
+        }
         for record in self.registry.list_benchmarks():
-            self.assertIn("phase-7.4", record.created_by)
+            key = (record.benchmark_id, record.version)
+
+            self.assertIn(expected[key], record.created_by, str(key))
 
 
 class RegistryHashTests(unittest.TestCase):

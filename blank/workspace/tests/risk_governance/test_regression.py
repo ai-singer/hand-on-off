@@ -89,12 +89,23 @@ class RegressionComparisonTests(unittest.TestCase):
         self.assertEqual(report.changed_cases, ())
 
     def test_every_version_and_evaluator_runs(self) -> None:
-        """Four registered versions times two frozen evaluators."""
+        """Five registered versions times two frozen evaluators."""
 
         reports = run_all(self.registry)
 
-        self.assertEqual(len(reports), 8)
+        self.assertEqual(len(reports), 10)
         self.assertTrue(all(not report.regressed for report in reports))
+
+    def test_the_generated_adversarial_family_is_covered(self) -> None:
+        """A generated benchmark is still a benchmark: it needs a baseline."""
+
+        record = self.registry.get("semantic/adversarial", "v1")
+        baseline = load_baseline(record, self.registry)
+
+        self.assertEqual(set(baseline["evaluators"]), set(EVALUATORS))
+        for entry in baseline["evaluators"].values():
+            self.assertEqual(entry["dataset_hash"], record.dataset_hash)
+            self.assertEqual(len(entry["case_results"]), record.case_count)
 
     def test_the_new_phase_7_5_versions_are_covered(self) -> None:
         """A benchmark version without a baseline cannot be governed."""

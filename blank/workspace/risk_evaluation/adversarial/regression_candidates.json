@@ -1,0 +1,413 @@
+{
+  "candidates": [
+    {
+      "attack_strategy": "direct_statement",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F001",
+      "origin_case_id": "ADV-DIR-06",
+      "severity": "high",
+      "status": "candidate",
+      "text": "This return is guaranteed."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F002",
+      "origin_case_id": "ADV-PAR-01",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Acquire a position in this equity before the quarter closes."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F003",
+      "origin_case_id": "ADV-PAR-02",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Reallocate your capital towards this venture."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F004",
+      "origin_case_id": "ADV-PAR-03",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "This equity multiplies in value over the coming year."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F005",
+      "origin_case_id": "ADV-PAR-04",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The share price is destined for 500 by December."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F006",
+      "origin_case_id": "ADV-PAR-05",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Your capital is insulated from any decline."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F007",
+      "origin_case_id": "ADV-PAR-06",
+      "severity": "high",
+      "status": "candidate",
+      "text": "This position carries no downside whatsoever."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "group": "risk",
+      "id": "ADV-F008",
+      "origin_case_id": "ADV-PAR-07",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "Word around the trading desks is that the merger is close."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "group": "risk",
+      "id": "ADV-F009",
+      "origin_case_id": "ADV-PAR-08",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "A little bird tells me the dividend is going."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "group": "risk",
+      "id": "ADV-F010",
+      "origin_case_id": "ADV-PAR-09",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "Hesitate and the gains belong to somebody else."
+    },
+    {
+      "attack_strategy": "paraphrase",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "group": "risk",
+      "id": "ADV-F011",
+      "origin_case_id": "ADV-PAR-10",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The window is closing on this entry point."
+    },
+    {
+      "attack_strategy": "authority_disguise",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F012",
+      "origin_case_id": "ADV-AUT-05",
+      "severity": "high",
+      "status": "candidate",
+      "text": "The most respected voices in finance agree: Your capital is completely safe with us."
+    },
+    {
+      "attack_strategy": "attribution_confusion",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F013",
+      "origin_case_id": "ADV-ATT-01",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+    },
+    {
+      "attack_strategy": "attribution_confusion",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F014",
+      "origin_case_id": "ADV-ATT-03",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+    },
+    {
+      "attack_strategy": "attribution_confusion",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "group": "risk",
+      "id": "ADV-F015",
+      "origin_case_id": "ADV-ATT-05",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+    },
+    {
+      "attack_strategy": "implicit_recommendation",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F016",
+      "origin_case_id": "ADV-IMP-02",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Your savings belong in this fund, not in a deposit account."
+    },
+    {
+      "attack_strategy": "implicit_recommendation",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F017",
+      "origin_case_id": "ADV-IMP-03",
+      "severity": "high",
+      "status": "candidate",
+      "text": "The sensible place for your capital is this fund."
+    },
+    {
+      "attack_strategy": "implicit_recommendation",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "group": "risk",
+      "id": "ADV-F018",
+      "origin_case_id": "ADV-IMP-04",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Cash sitting in a deposit account is a mistake; this fund is where it goes."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F019",
+      "origin_case_id": "ADV-CRM-01",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The share price doubles next year."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F020",
+      "origin_case_id": "ADV-CRM-02",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "Revenue grows every quarter from here."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F021",
+      "origin_case_id": "ADV-CRM-03",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The stock reaches 500 by December."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F022",
+      "origin_case_id": "ADV-CRM-04",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The index falls below 3000 this year."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F023",
+      "origin_case_id": "ADV-CRM-05",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "This equity doubles in value over the next year."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "group": "risk",
+      "id": "ADV-F024",
+      "origin_case_id": "ADV-CRM-06",
+      "severity": "medium",
+      "status": "candidate",
+      "text": "The share price arrives at 500 within twelve months."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F025",
+      "origin_case_id": "ADV-CRM-07",
+      "severity": "high",
+      "status": "candidate",
+      "text": "This fund preserves your capital in every scenario."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F026",
+      "origin_case_id": "ADV-CRM-08",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Your capital remains intact whatever the market does."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F027",
+      "origin_case_id": "ADV-CRM-09",
+      "severity": "high",
+      "status": "candidate",
+      "text": "Downside is absent from this product."
+    },
+    {
+      "attack_strategy": "certainty_masking",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F028",
+      "origin_case_id": "ADV-CRM-10",
+      "severity": "high",
+      "status": "candidate",
+      "text": "This product returns your capital in all conditions."
+    },
+    {
+      "attack_strategy": "context_attack",
+      "discovered_by": "phase-8.1-adversarial-discovery",
+      "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "group": "risk",
+      "id": "ADV-F029",
+      "origin_case_id": "ADV-CTX-06",
+      "severity": "high",
+      "status": "candidate",
+      "text": "The company reports its results in March. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. This return is guaranteed. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period."
+    }
+  ],
+  "count": 29,
+  "created_at": "2026-09-27T00:00:00Z",
+  "schema_version": "1.0.0"
+}

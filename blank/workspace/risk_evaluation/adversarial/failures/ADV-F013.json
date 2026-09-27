@@ -1,0 +1,24 @@
+{
+  "actual": "none",
+  "case_id": "ADV-ATT-01",
+  "created_at": "2026-09-27T00:00:00Z",
+  "evidence": {
+    "certainty_level": "certain",
+    "detected_categories": [
+      "unverified_information"
+    ],
+    "evaluator": "semantic-intent-v2",
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "market_claim_case": "attribution_expectation",
+    "statement_source": "unknown",
+    "suppressed": [
+      "investment_advice"
+    ]
+  },
+  "expected": "investment_advice",
+  "id": "ADV-F013",
+  "severity": "high",
+  "strategy": "attribution_confusion",
+  "target_category": "investment_advice",
+  "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+}

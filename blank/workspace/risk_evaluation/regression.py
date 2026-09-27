@@ -173,20 +173,23 @@ def write_baseline(
     registry: BenchmarkRegistry | None = None,
     *,
     evaluators: Mapping[str, type[RiskIntentEvaluator]] | None = None,
-    versions: Iterable[str] | None = None,
+    benchmarks: Iterable[str] | None = None,
 ) -> tuple[Path, ...]:
     """Record the current scores as the baseline for each benchmark version.
 
-    `versions` restricts the write to a named subset, so adding a benchmark
-    version does not require rewriting every recorded baseline.
+    `benchmarks` restricts the write to a named subset, given as full
+    `<benchmark_id>/<version>` keys such as `"semantic/v4"`. Keys are full names
+    rather than bare versions because ids can be namespaced: since Phase 8.1
+    `semantic/v1` and `semantic/adversarial/v1` share the version `v1`, and
+    filtering on a bare version would have silently rewritten both.
     """
 
     active = registry if registry is not None else BenchmarkRegistry()
     factories = evaluators if evaluators is not None else EVALUATORS
-    wanted = None if versions is None else set(versions)
+    wanted = None if benchmarks is None else set(benchmarks)
     written: list[Path] = []
     for record in active.list_benchmarks():
-        if wanted is not None and record.version not in wanted:
+        if wanted is not None and f"{record.benchmark_id}/{record.version}" not in wanted:
             continue
         payload = {
             "evaluators": {

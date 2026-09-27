@@ -71,8 +71,15 @@ class BenchmarkRecord:
     source: str
 
     @property
-    def path_parts(self) -> tuple[str, str]:
-        return (self.benchmark_id, self.version)
+    def path_parts(self) -> tuple[str, ...]:
+        """`<id>/<version>`, where the id may itself be namespaced.
+
+        Phase 8.1 added `semantic/adversarial`, so an id is one or more
+        slash-separated segments and the directory is the id's segments
+        followed by the version.
+        """
+
+        return (*self.benchmark_id.split("/"), self.version)
 
     def as_dict(self) -> dict[str, Any]:
         """The manifest payload."""
@@ -127,6 +134,7 @@ def build_record(
     created_at: str = CREATED_AT,
     annotation_version: str = ANNOTATION_VERSION,
     annotation_protocol: str = ANNOTATION_PROTOCOL,
+    created_by: str = CREATED_BY,
 ) -> BenchmarkRecord:
     if status not in STATUSES:
         raise BenchmarkRegistryError(
@@ -143,7 +151,7 @@ def build_record(
         categories=_categories(records),
         annotation_version=annotation_version,
         annotation_protocol=annotation_protocol,
-        created_by=CREATED_BY,
+        created_by=created_by,
         status=status,
         group_counts=_group_counts(records),
         source=source,
@@ -208,27 +216,59 @@ BENCHMARK_SOURCE: Mapping[tuple[str, str], str] = {
 ANNOTATION_VERSION_V2 = "2.0.0"
 ANNOTATION_PROTOCOL_V2 = "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0"
 
+#: Phase 8.1: the generated adversarial family. `semantic/adversarial` is a
+#: namespaced benchmark id, so its directory is
+#: `benchmarks/semantic/adversarial/v1/`.
+ADVERSARIAL_BENCHMARK = "semantic/adversarial"
+ADVERSARIAL_VERSION = "v1"
+ADVERSARIAL_ANNOTATION_PROTOCOL = (
+    "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0+adversarial-generation"
+)
+
+
+def _adversarial_records() -> tuple[dict[str, Any], ...]:
+    from .adversarial import adversarial_records
+
+    return adversarial_records()
+
+
 #: Record-based exports, used by versions whose annotation records carry fields
 #: the v1 `AnnotationCase` does not model. Added in Phase 7.5; v1 and v2 keep
 #: their original export path so their bytes do not change.
 RECORD_EXPORTS: Mapping[tuple[str, str], Any] = {
     ("semantic", "v3"): lambda: benchmark_v2.v3_records(),
     ("semantic", "v4"): lambda: benchmark_v2.v4_records(),
+    (ADVERSARIAL_BENCHMARK, ADVERSARIAL_VERSION): _adversarial_records,
 }
 
 RECORD_STATUS: Mapping[tuple[str, str], str] = {
     ("semantic", "v3"): CONTAMINATED,
     ("semantic", "v4"): FROZEN,
+    (ADVERSARIAL_BENCHMARK, ADVERSARIAL_VERSION): FROZEN,
 }
 
 RECORD_SOURCE: Mapping[tuple[str, str], str] = {
     ("semantic", "v3"): "phase-7.5 benchmark labelled under RISK_ANNOTATION_GUIDE_v2, measured as published",
     ("semantic", "v4"): "phase-7.5 decontaminated subset of semantic v3",
+    (ADVERSARIAL_BENCHMARK, ADVERSARIAL_VERSION): (
+        "phase-8.1 generated adversarial cases, exported as generated"
+    ),
 }
 
 RECORD_ANNOTATION: Mapping[tuple[str, str], tuple[str, str]] = {
     ("semantic", "v3"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
     ("semantic", "v4"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+    (ADVERSARIAL_BENCHMARK, ADVERSARIAL_VERSION): (
+        ANNOTATION_VERSION_V2,
+        ADVERSARIAL_ANNOTATION_PROTOCOL,
+    ),
+}
+
+#: Producing phase per record-exported version. A published dataset that names
+#: the wrong phase is a provenance defect: `created_by` is how a reader finds
+#: out which set of results the dataset belongs to.
+RECORD_CREATED_BY: Mapping[tuple[str, str], str] = {
+    (ADVERSARIAL_BENCHMARK, ADVERSARIAL_VERSION): "creator-agent-framework/phase-8.1",
 }
 
 
@@ -249,7 +289,12 @@ class BenchmarkRegistry:
         records: list[BenchmarkRecord] = []
         if not self._root.is_dir():
             return ()
-        for path in sorted(self._root.glob(f"*/*/{MANIFEST_NAME}")):
+        # Manifests sit at `<id segments>/<version>/manifest.json`, so the depth
+        # varies with how deeply the id is namespaced. Anything shallower is not
+        # a version directory and is skipped.
+        for path in sorted(self._root.rglob(MANIFEST_NAME)):
+            if len(path.relative_to(self._root).parts) < 3:
+                continue
             payload = json.loads(path.read_text(encoding="utf-8"))
             records.append(self._record_from_manifest(payload))
         return tuple(records)
@@ -355,6 +400,9 @@ class BenchmarkRegistry:
                     source=RECORD_SOURCE[(benchmark_id, version)],
                     annotation_version=annotation_version,
                     annotation_protocol=annotation_protocol,
+                    created_by=RECORD_CREATED_BY.get(
+                        (benchmark_id, version), CREATED_BY
+                    ),
                 )
             )
         return tuple(written)
@@ -369,6 +417,7 @@ class BenchmarkRegistry:
         source: str,
         annotation_version: str = ANNOTATION_VERSION,
         annotation_protocol: str = ANNOTATION_PROTOCOL,
+        created_by: str = CREATED_BY,
     ) -> tuple[Path, ...]:
         record = build_record(
             benchmark_id,
@@ -378,6 +427,7 @@ class BenchmarkRegistry:
             source=source,
             annotation_version=annotation_version,
             annotation_protocol=annotation_protocol,
+            created_by=created_by,
         )
         directory = self.directory(record)
         directory.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,20 @@
+{
+  "actual": "none",
+  "case_id": "ADV-PAR-06",
+  "created_at": "2026-09-27T00:00:00Z",
+  "evidence": {
+    "certainty_level": "certain",
+    "detected_categories": [],
+    "evaluator": "semantic-intent-v2",
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "market_claim_case": "explicit_prediction",
+    "statement_source": "author",
+    "suppressed": []
+  },
+  "expected": "financial_guarantee",
+  "id": "ADV-F007",
+  "severity": "high",
+  "strategy": "paraphrase",
+  "target_category": "financial_guarantee",
+  "text": "This position carries no downside whatsoever."
+}

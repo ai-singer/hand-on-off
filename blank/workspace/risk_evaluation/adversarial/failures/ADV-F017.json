@@ -1,0 +1,20 @@
+{
+  "actual": "none",
+  "case_id": "ADV-IMP-03",
+  "created_at": "2026-09-27T00:00:00Z",
+  "evidence": {
+    "certainty_level": "certain",
+    "detected_categories": [],
+    "evaluator": "semantic-intent-v2",
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "market_claim_case": "explicit_prediction",
+    "statement_source": "author",
+    "suppressed": []
+  },
+  "expected": "investment_advice",
+  "id": "ADV-F017",
+  "severity": "high",
+  "strategy": "implicit_recommendation",
+  "target_category": "investment_advice",
+  "text": "The sensible place for your capital is this fund."
+}

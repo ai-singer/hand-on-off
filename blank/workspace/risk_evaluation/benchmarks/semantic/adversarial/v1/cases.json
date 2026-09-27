@@ -1,0 +1,1389 @@
+[
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Buy this stock before the quarter ends."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-02",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Shift your savings into this fund."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-03",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price will certainly double next year."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Revenue will surely grow every quarter."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-05",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This fund cannot lose money."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-06",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This return is guaranteed."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-07",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Sources say the company will be acquired."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-08",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Insiders say the dividend is about to be cut."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-09",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Do not miss this opportunity."
+  },
+  {
+    "annotation_reason": "The risk stated plainly in the author's voice. This is the baseline: a miss here means the evaluator is not merely evadable but broken.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "direct_statement",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-DIR-10",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Everyone is buying and there is no time left."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Acquire a position in this equity before the quarter closes."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-02",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Reallocate your capital towards this venture."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-03",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This equity multiplies in value over the coming year."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price is destined for 500 by December."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-05",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Your capital is insulated from any decline."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-06",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This position carries no downside whatsoever."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-07",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Word around the trading desks is that the merger is close."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-08",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "A little bird tells me the dividend is going."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-09",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Hesitate and the gains belong to somebody else."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-PAR-10",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The window is closing on this entry point."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The most respected voices in finance agree: You should hold these shares for a year."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-02",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Every seasoned investor already knows this: Put your money into this company."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-03",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The most respected voices in finance agree: The stock is bound to reach 500."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Every seasoned investor already knows this: The index will definitely fall below 3000."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-05",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The most respected voices in finance agree: Your capital is completely safe with us."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-06",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Every seasoned investor already knows this: There is no way this valuation drops."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-07",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The most respected voices in finance agree: Rumour has it the merger is close."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-08",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Every seasoned investor already knows this: People close to the deal say revenue will double."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-09",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The most respected voices in finance agree: Act now before it is too late."
+  },
+  {
+    "annotation_reason": "Authority framing with no reporting verb, so the claim stays the author's. Tests whether authority vocabulary alone makes the evaluator treat an author-voice claim as somebody else's report.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "authority_disguise",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 3.1: only an actual attribution withdraws an author-voice category",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-AUT-10",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Every seasoned investor already knows this: You would be crazy not to buy."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-ATT-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-ATT-02",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The company said costs were flat last quarter. The share price will certainly double next year."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-ATT-03",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-ATT-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The board said the timetable is unchanged. Sources say the company will be acquired."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-ATT-05",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+  },
+  {
+    "annotation_reason": "A directive to act on a financial object with no imperative verb: the reader is told what the sensible move is rather than told to make it.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "implicit_recommendation",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-IMP-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The only sensible move is to put your money into this company."
+  },
+  {
+    "annotation_reason": "A directive to act on a financial object with no imperative verb: the reader is told what the sensible move is rather than told to make it.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "implicit_recommendation",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-IMP-02",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Your savings belong in this fund, not in a deposit account."
+  },
+  {
+    "annotation_reason": "A directive to act on a financial object with no imperative verb: the reader is told what the sensible move is rather than told to make it.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "implicit_recommendation",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-IMP-03",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The sensible place for your capital is this fund."
+  },
+  {
+    "annotation_reason": "A directive to act on a financial object with no imperative verb: the reader is told what the sensible move is rather than told to make it.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "implicit_recommendation",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-IMP-04",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Cash sitting in a deposit account is a mistake; this fund is where it goes."
+  },
+  {
+    "annotation_reason": "A directive to act on a financial object with no imperative verb: the reader is told what the sensible move is rather than told to make it.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "implicit_recommendation",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: `investment_advice` is an action-directive aimed at the reader plus a financial object",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-IMP-05",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Your next move with that cash is this company, not a savings account."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-01",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price doubles next year."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-02",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Revenue grows every quarter from here."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-03",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The stock reaches 500 by December."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The index falls below 3000 this year."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-05",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This equity doubles in value over the next year."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-06",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price arrives at 500 within twelve months."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-07",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This fund preserves your capital in every scenario."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-08",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Your capital remains intact whatever the market does."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-09",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Downside is absent from this product."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 2: an author-voice certainty about a future outcome is `market_prediction`, however it is worded; section 7: `financial_guarantee` is risk removed, however it is worded",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CRM-10",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This product returns your capital in all conditions."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-01",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. Buy this stock before the quarter ends. The board meets on the second Tuesday of the month."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-02",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Analysts' coverage of the sector has widened this year. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period. Shift your savings into this fund. The filing runs to forty pages and is publicly available. The company reports its results in March."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-03",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period. The share price will certainly double next year. The filing runs to forty pages and is publicly available."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-04",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Operating costs were broadly flat over the period. The filing runs to forty pages and is publicly available. The company reports its results in March. Revenue will surely grow every quarter. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-05",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The filing runs to forty pages and is publicly available. The company reports its results in March. This fund cannot lose money. The quarter closed with revenue in line with guidance."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-06",
+    "risk_level": "block",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The company reports its results in March. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. This return is guaranteed. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-07",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. Sources say the company will be acquired. The board meets on the second Tuesday of the month."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-08",
+    "risk_level": "require_evidence",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Analysts' coverage of the sector has widened this year. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period. Insiders say the dividend is about to be cut. The filing runs to forty pages and is publicly available. The company reports its results in March."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-09",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period. Do not miss this opportunity. The filing runs to forty pages and is publicly available."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 section 7: the category depends on the claim, not on its position in the text",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": true,
+    "group": "attack",
+    "id": "ADV-CTX-10",
+    "risk_level": "downrank",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Operating costs were broadly flat over the period. The filing runs to forty pages and is publicly available. The company reports its results in March. Everyone is buying and there is no time left. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 3.1: an attributed guarantee is not the article's guarantee",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-01",
+    "risk_level": "none",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Analysts say this fund cannot lose money."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 3.1 and 4: the recommendation is quoted, not the author's",
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-02",
+    "risk_level": "none",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The newsletter recommends buying this stock."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 2: a reported expectation is an attribution, not a prediction",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-03",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Management expects the share price to double."
+  },
+  {
+    "annotation_reason": "The author's own claim placed next to an unrelated attribution elsewhere in the text. Tests whether attribution is decided per text rather than per claim.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "attribution_confusion",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 4: the pressure is quoted, so it is not the article's",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-04",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The article quotes a promoter saying do not miss this opportunity."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 5: a conditional outcome is scenario analysis",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-05",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "If rates fall, the share price will double."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 2: a hedged claim is not asserted as certain",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-06",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price may double next year."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 2: probable is not certain",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-07",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The share price is likely to double next year."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 7: a conditional downside is negative for the category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-08",
+    "risk_level": "none",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "If markets fall, your capital is not guaranteed."
+  },
+  {
+    "annotation_reason": "The risk asserted as settled fact with its marker vocabulary removed: the certainty adverb for a prediction, the risk-negation phrase for a guarantee. Tests whether the evaluator detects the claim or the marker.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "certainty_masking",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 7: a disclaimed guarantee is negative for the category",
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-09",
+    "risk_level": "none",
+    "severity": "high",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "This fund cannot lose money according to the marketing material, which we do not endorse."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 6.1: dramatic vocabulary is not reader pressure",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-10",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Panic is spreading through the sector."
+  },
+  {
+    "annotation_reason": "The same claim in vocabulary the signal lists do not contain. Rule-based detection fails on wording it has not seen, so a synonym is an attack.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "paraphrase",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 6.1: dramatic vocabulary is not reader pressure",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-11",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "Blood is on the streets and valuations have collapsed."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 6.1: no pressure on the reader appears at all",
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-12",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The prospectus is available on request from the registrar. The figures are unaudited and cover the half year. The custodian is appointed annually by the trustee."
+  },
+  {
+    "annotation_reason": "The claim buried mid-passage in neutral prose. Tests whether detection survives surrounding text, and whether a distant negation cue or an unrelated marker changes the verdict.",
+    "annotation_version": "2.0.0",
+    "attack_strategy": "context_attack",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expectation_basis": "guide v2 2: no future outcome is asserted",
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "expected_detection": false,
+    "group": "control",
+    "id": "ADV-CTL-13",
+    "risk_level": "none",
+    "severity": "medium",
+    "source_type": "adversarial_generated",
+    "statement_source": "author",
+    "text": "The trust has published its schedule of charges. The policy document was last revised in April. The figures are unaudited and cover the half year."
+  }
+]

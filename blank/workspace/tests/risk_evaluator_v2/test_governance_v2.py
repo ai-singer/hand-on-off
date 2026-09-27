@@ -48,14 +48,15 @@ class RegistryTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.registry = BenchmarkRegistry()
 
-    def test_all_four_versions_are_registered(self) -> None:
+    def test_all_versions_are_registered(self) -> None:
         keys = {
             f"{record.benchmark_id}/{record.version}"
             for record in self.registry.list_benchmarks()
         }
 
-        self.assertEqual(
-            keys, {"semantic/v1", "semantic/v2", "semantic/v3", "semantic/v4"}
+        self.assertTrue(
+            {"semantic/v1", "semantic/v2", "semantic/v3", "semantic/v4"} <= keys,
+            keys,
         )
 
     def test_every_exported_benchmark_verifies_against_its_manifest(self) -> None:

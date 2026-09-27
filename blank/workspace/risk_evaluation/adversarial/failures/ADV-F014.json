@@ -1,0 +1,22 @@
+{
+  "actual": "none",
+  "case_id": "ADV-ATT-03",
+  "created_at": "2026-09-27T00:00:00Z",
+  "evidence": {
+    "certainty_level": "certain",
+    "detected_categories": [],
+    "evaluator": "semantic-intent-v2",
+    "expectation_basis": "guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+    "market_claim_case": "attribution_expectation",
+    "statement_source": "third_party",
+    "suppressed": [
+      "financial_guarantee"
+    ]
+  },
+  "expected": "financial_guarantee",
+  "id": "ADV-F014",
+  "severity": "high",
+  "strategy": "attribution_confusion",
+  "target_category": "financial_guarantee",
+  "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+}
