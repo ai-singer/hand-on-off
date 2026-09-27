@@ -5,14 +5,21 @@
 ```text
 Release:      creator-agent-template-v0.1.0
 Tag:          creator-agent-template-v0.1.0
-Commit:       033da3c76ddae7740afb7c51d56b4e12ce78378e
-Baseline:     cfb38a8cc97bb146f1445ebdd02850e47f5b2736
+Commit:       d3cf40faca4789796b60dbe2e9d81f454da7a780
+Baseline:     a6111aefc4b7be9024be38207879ec91e9595c2f
 Repository:   https://github.com/ai-singer/hand-on-off
 Branch:       main
 Package:      creator-agent-template 0.1.0 (pyproject.toml)
 Deployable:   blank/workspace/
 Date:         2026-09-26
 ```
+
+> **安全清理说明（Phase 5.2.1）**：本 Tag 已在凭据暴露闭环中**重建**。历史重写移除了
+> 含明文凭据与会话材料的 `new/workspace.tar.gz`，因此本版本全部 commit SHA 与
+> Phase 5.2 之前的记录不同，上表为重建后的事实 SHA。旧 Tag 对象 `c9ad5b5` 与旧
+> commit SHA 已不存在于仓库中。详见
+> [`PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md`](PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md)。
+> 本版本文档中的历史验证证据与已知限制条目描述的是重建前的内容，除 SHA 外未被改写。
 
 本版本是 Creator Agent Framework 的第一个可部署候选模板，用于空白龙虾实例
 （OpenClaw workspace）拉取部署。发布源为 GitHub；实例配置、密钥与生产副作用

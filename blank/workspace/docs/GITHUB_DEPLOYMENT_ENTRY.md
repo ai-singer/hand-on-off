@@ -9,7 +9,7 @@ Framework 的唯一入口说明。
 | --- | --- |
 | 仓库 | https://github.com/ai-singer/hand-on-off |
 | 使用版本 | `creator-agent-template-v0.1.0` |
-| 版本对应 commit | `033da3c76ddae7740afb7c51d56b4e12ce78378e` |
+| 版本对应 commit | `d3cf40faca4789796b60dbe2e9d81f454da7a780` |
 | 分支 | `main` |
 | 可部署目录 | 仓库内 `blank/workspace/` |
 | 发布说明 | [`RELEASE_NOTES_v0.1.0.md`](RELEASE_NOTES_v0.1.0.md) |
@@ -35,14 +35,32 @@ git checkout tags/creator-agent-template-v0.1.0 -b release/creator-agent-templat
 
 # 校验拉取到的正是候选版本
 git rev-parse HEAD
-# 期望：033da3c76ddae7740afb7c51d56b4e12ce78378e
+# 期望：d3cf40faca4789796b60dbe2e9d81f454da7a780
 ```
 
-也可直接下载该 tag 的源码归档：
+也可直接取得该 tag 的**可部署子树归档**。这是推荐的归档方式：它只含
+`blank/workspace/`，不含仓库根的历史快照目录。
 
-```text
-https://github.com/ai-singer/hand-on-off/archive/refs/tags/creator-agent-template-v0.1.0.tar.gz
+```bash
+git archive --format=tar.gz --prefix=workspace/ \
+  -o creator-agent-workspace.tar.gz \
+  creator-agent-template-v0.1.0:blank/workspace
 ```
+
+GitHub 自动生成的整树归档
+（`https://github.com/ai-singer/hand-on-off/archive/refs/tags/creator-agent-template-v0.1.0.tar.gz`）
+包含仓库根下的**全部**内容，包括历史快照目录。只有在仓库根 secret scan 通过后才
+可以使用它：
+
+```bash
+python security/secret_scan.py <repository-root>   # 必须 PASS
+```
+
+无论使用哪种归档方式，都必须在部署前记录归档的 SHA-256。
+
+> `creator-agent-template-v0.1.0` 已在 Phase 5.2.1 凭据暴露闭环中重建：历史重写
+> 移除了含明文凭据的 `new/workspace.tar.gz`，因此本版本的所有 commit SHA 与
+> Phase 5.2 之前的记录不同。以上为重建后的事实 SHA。
 
 部署根目录为 `blank/workspace/`。以下步骤均在该目录下执行。如需打包成交付
 制品，使用 `scripts/package_workspace.ps1`，并记录输出的 SHA-256。

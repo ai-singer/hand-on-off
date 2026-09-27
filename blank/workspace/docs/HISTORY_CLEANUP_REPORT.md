@@ -1,5 +1,12 @@
 # Creator Agent Framework Phase 5.2 - History Cleanup Report
 
+> **状态：已被 Phase 5.2.1 取代，保留为历史记录。**
+> 本报告作出的是“是否需要重写、如何重写”的**判定与方案**，当时未执行任何重写。
+> Phase 5.2.1 已按本报告第 4 节的流程完成历史重写、Tag 重建与远端更新，因此第 1 节
+> 的 `Rewrite Executed This Round: NO` 与第 3 节的 ref/SHA 反映的是重写前状态，已
+> 不再生效。执行结果见
+> [`PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md`](PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md)。
+
 ## 1. 结论摘要
 
 ```text

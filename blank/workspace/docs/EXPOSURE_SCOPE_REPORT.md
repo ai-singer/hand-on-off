@@ -1,5 +1,11 @@
 # Creator Agent Framework Phase 5.2 - Exposure Scope Report
 
+> **状态：已被 Phase 5.2.1 取代，保留为历史记录。**
+> 本报告描述的是历史重写**之前**的事实：当时 `new/workspace.tar.gz` 仍被跟踪，并
+> 存在于 `main` 与发布 Tag 中。Phase 5.2.1 已完成取消跟踪、历史重写、Tag 重建与
+> 远端更新，因此本报告中的 commit / blob SHA 已不再存在。原始结论与证据未作改写；
+> 当前状态见 [`PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md`](PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md)。
+
 ## 1. 检查范围
 
 本轮目标是关闭 `docs/CREDENTIAL_AUDIT_REPORT.md` 遗留的“暴露范围未知”缺口。执行
