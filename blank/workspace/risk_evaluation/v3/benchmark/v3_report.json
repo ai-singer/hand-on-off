@@ -1,0 +1,2191 @@
+{
+  "benchmark": "risk_evaluation_v3",
+  "case_count": 60,
+  "cases": [
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-01",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This fund cannot lose money.",
+      "transition": "unchanged",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "AE-02",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This return is guaranteed.",
+      "transition": "fixed",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "AE-03",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We guarantee this return.",
+      "transition": "fixed",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "AE-04",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Your capital is guaranteed.",
+      "transition": "fixed",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-05",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We believe this fund cannot lose money.",
+      "transition": "unchanged",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-06",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Your capital is risk-free.",
+      "transition": "unchanged",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "market_prediction": "require_evidence"
+      },
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-07",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The share price will certainly double next year.",
+      "transition": "unchanged",
+      "v3": [
+        "market_prediction"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "market_prediction": "require_evidence"
+      },
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-08",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Revenue will surely grow every quarter.",
+      "transition": "unchanged",
+      "v3": [
+        "market_prediction"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "investment_advice": "block"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-09",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "You should buy this stock today.",
+      "transition": "unchanged",
+      "v3": [
+        "investment_advice"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "investment_advice": "block"
+      },
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-10",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Shift your savings into this fund.",
+      "transition": "unchanged",
+      "v3": [
+        "investment_advice"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "emotional_manipulation": "downrank"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-11",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Do not miss this opportunity.",
+      "transition": "unchanged",
+      "v3": [
+        "emotional_manipulation"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "emotional_manipulation": "downrank"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-12",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Everyone is buying and there is no time left.",
+      "transition": "unchanged",
+      "v3": [
+        "emotional_manipulation"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-13",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Sources say the company will be acquired.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-14",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Insiders say the dividend is about to be cut.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AE-15",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed",
+      "label_source": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Rumour has it the merger is close.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "TQ-01",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts say this fund cannot lose money.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "TQ-02",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The company said the fund cannot lose money.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "TQ-03",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "According to the report, the fund cannot lose money.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "TQ-04",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A broker told clients the fund cannot lose money.",
+      "transition": "different",
+      "v3": [],
+      "v3_outcome": "fn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "TQ-05",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Economists forecast the stock will certainly double.",
+      "transition": "different",
+      "v3": [],
+      "v3_outcome": "fn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "TQ-06",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Officials said the fund cannot lose money.",
+      "transition": "different",
+      "v3": [],
+      "v3_outcome": "fn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "fn",
+      "case_id": "TQ-07",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Commentators said the market will certainly crash.",
+      "transition": "different",
+      "v3": [],
+      "v3_outcome": "fn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "TQ-08",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The newsletter recommends buying this stock.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "TQ-09",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Management expects the share price to double.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "TQ-10",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The board said returns are guaranteed.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "TQ-11",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts say you should buy this stock.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "TQ-12",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The report states the stock will certainly double.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "TQ-13",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Experts predict the fund cannot lose money.",
+      "transition": "different",
+      "v3": [],
+      "v3_outcome": "fn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "TQ-14",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The regulator said capital is guaranteed.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "TQ-15",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "third_party_quoted",
+      "label_source": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Sources say the fund cannot lose money.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-01",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We disagree with the view that this fund cannot lose money.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-02",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We disagree with the claim that the stock will certainly double.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-03",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We doubt the fund cannot lose money.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_outcome": "tp",
+      "case_id": "AR-04",
+      "claims": 2,
+      "claims_with_evidence": 2,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts say the fund cannot lose money. However, we disagree.",
+      "transition": "unchanged",
+      "v3": [
+        "unverified_information"
+      ],
+      "v3_outcome": "tp"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AR-05",
+      "claims": 2,
+      "claims_with_evidence": 2,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Experts expect the stock to rise. We are not convinced.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AR-06",
+      "claims": 2,
+      "claims_with_evidence": 2,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "The marketing claims the fund cannot lose money. We do not endorse that.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-07",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This article rejects the idea that the fund cannot lose money.",
+      "transition": "different",
+      "v3": [
+        "financial_guarantee"
+      ],
+      "v3_outcome": "fp"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-08",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The claim that the stock will certainly double is incorrect.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AR-09",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We are not convinced the fund cannot lose money.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AR-10",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_rejection",
+      "label_source": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Do not miss this opportunity is what the advert says; we disagree.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-01",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "A price-to-earnings ratio compares price with earnings per share.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-02",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Diversification spreads risk across assets.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-03",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Compounding means returns are earned on earlier returns.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-04",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Interest rate changes affect bond prices inversely.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-05",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The company reports its results in March.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-06",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The prospectus explains how charges are calculated.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-07",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The board meets on the second Tuesday of the month.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-08",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The audit covers the twelve months to December.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-09",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A benchmark is a standard against which performance is measured.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "NE-10",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "label_source": "guide v2 section 7: explanation and method guidance are negative",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Operating costs were broadly flat over the period.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-01",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Returns are not guaranteed.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-02",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "If markets rise, returns are guaranteed.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-03",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Returns may be guaranteed.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-04",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Returns could be guaranteed if the scheme performs.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_outcome": "fp",
+      "case_id": "AM-05",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A guaranteed return is not available.",
+      "transition": "fixed",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-06",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Past performance does not guarantee future results.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-07",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The fund does not guarantee your capital.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-08",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Whether returns are guaranteed depends on the scheme.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-09",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Returns are guaranteed, according to the marketing material.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    },
+    {
+      "actions": {},
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_outcome": "tn",
+      "case_id": "AM-10",
+      "claims": 1,
+      "claims_with_evidence": 1,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous",
+      "label_source": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+      "relation_recall_ok": true,
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The index will probably be rebalanced in June.",
+      "transition": "unchanged",
+      "v3": [],
+      "v3_outcome": "tn"
+    }
+  ],
+  "group_basis": {
+    "ambiguous": "guide v2 sections 2 and 5: a conditional or hedged claim asserts nothing unconditionally",
+    "author_endorsed": "guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+    "author_rejection": "guide v2 sections 3.1 and 4: arguing against a claim is not making it",
+    "neutral_education": "guide v2 section 7: explanation and method guidance are negative",
+    "third_party_quoted": "guide v2 sections 3.1 and 7: a quoted third party's claim is not the article's, and an uncheckable source is unverified_information"
+  },
+  "groups": {
+    "ambiguous": 10,
+    "author_endorsed": 15,
+    "author_rejection": 10,
+    "neutral_education": 10,
+    "third_party_quoted": 15
+  },
+  "metrics": {
+    "attribution": {
+      "aligned_claims": 63,
+      "cases": 60,
+      "error_cases": [
+        "TQ-04",
+        "TQ-08",
+        "TQ-14",
+        "NE-01",
+        "NE-07"
+      ],
+      "speaker_accuracy": 0.9683,
+      "speaker_correct": 61,
+      "split_accuracy": 1.0,
+      "split_correct": 60,
+      "stance_accuracy": 0.9524,
+      "stance_correct": 60
+    },
+    "baseline": {
+      "accuracy": 0.7,
+      "cases": 60,
+      "correct": 42,
+      "error_cases": [
+        "AE-02",
+        "AE-03",
+        "AE-04",
+        "TQ-02",
+        "TQ-03",
+        "TQ-04",
+        "TQ-05",
+        "TQ-06",
+        "TQ-07",
+        "TQ-12",
+        "TQ-13",
+        "AR-01",
+        "AR-02",
+        "AR-03",
+        "AR-07",
+        "AR-08",
+        "AR-10",
+        "AM-05"
+      ],
+      "f1": 0.6923,
+      "false_negatives": 6,
+      "false_positives": 10,
+      "name": "baseline",
+      "per_group": {
+        "ambiguous": {
+          "cases": 10,
+          "correct": 9,
+          "fn": 0,
+          "fp": 1,
+          "tn": 9,
+          "tp": 0
+        },
+        "author endorsed risk": {
+          "cases": 15,
+          "correct": 12,
+          "fn": 3,
+          "fp": 0,
+          "tn": 0,
+          "tp": 12
+        },
+        "author rejection": {
+          "cases": 10,
+          "correct": 4,
+          "fn": 0,
+          "fp": 6,
+          "tn": 3,
+          "tp": 1
+        },
+        "neutral education": {
+          "cases": 10,
+          "correct": 10,
+          "fn": 0,
+          "fp": 0,
+          "tn": 10,
+          "tp": 0
+        },
+        "third party quoted risk": {
+          "cases": 15,
+          "correct": 7,
+          "fn": 3,
+          "fp": 3,
+          "tn": 4,
+          "tp": 5
+        }
+      },
+      "precision": 0.6429,
+      "recall": 0.75,
+      "true_negatives": 26,
+      "true_positives": 18
+    },
+    "broken_cases": [],
+    "decision": {
+      "accuracy": 0.9,
+      "cases": 60,
+      "correct": 54,
+      "error_cases": [
+        "TQ-04",
+        "TQ-05",
+        "TQ-06",
+        "TQ-07",
+        "TQ-13",
+        "AR-07"
+      ],
+      "f1": 0.8637,
+      "false_negatives": 5,
+      "false_positives": 1,
+      "name": "v3",
+      "per_group": {
+        "ambiguous": {
+          "cases": 10,
+          "correct": 10,
+          "fn": 0,
+          "fp": 0,
+          "tn": 10,
+          "tp": 0
+        },
+        "author endorsed risk": {
+          "cases": 15,
+          "correct": 15,
+          "fn": 0,
+          "fp": 0,
+          "tn": 0,
+          "tp": 15
+        },
+        "author rejection": {
+          "cases": 10,
+          "correct": 9,
+          "fn": 0,
+          "fp": 1,
+          "tn": 8,
+          "tp": 1
+        },
+        "neutral education": {
+          "cases": 10,
+          "correct": 10,
+          "fn": 0,
+          "fp": 0,
+          "tn": 10,
+          "tp": 0
+        },
+        "third party quoted risk": {
+          "cases": 15,
+          "correct": 10,
+          "fn": 5,
+          "fp": 0,
+          "tn": 7,
+          "tp": 3
+        }
+      },
+      "precision": 0.95,
+      "recall": 0.7917,
+      "true_negatives": 35,
+      "true_positives": 19
+    },
+    "fixed_cases": [
+      "AE-02",
+      "AE-03",
+      "AE-04",
+      "TQ-02",
+      "TQ-03",
+      "TQ-12",
+      "AR-01",
+      "AR-02",
+      "AR-03",
+      "AR-08",
+      "AR-10",
+      "AM-05"
+    ],
+    "intent": {
+      "case_recall": 1.0,
+      "cases_with_relations": 40,
+      "expected_relations": 40,
+      "found_relations": 40,
+      "miss_cases": [],
+      "per_relation": {
+        "ADVICE": {
+          "expected": 4,
+          "found": 4,
+          "missed_cases": [],
+          "recall": 1.0
+        },
+        "GUARANTEE": {
+          "expected": 11,
+          "found": 11,
+          "missed_cases": [],
+          "recall": 1.0
+        },
+        "PREDICTION": {
+          "expected": 9,
+          "found": 9,
+          "missed_cases": [],
+          "recall": 1.0
+        },
+        "RISK_REMOVED": {
+          "expected": 16,
+          "found": 16,
+          "missed_cases": [],
+          "recall": 1.0
+        }
+      },
+      "relation_recall": 1.0
+    },
+    "trace": {
+      "cases": 60,
+      "claims": 63,
+      "claims_with_evidence": 63,
+      "complete_cases": 60,
+      "completeness": 1.0,
+      "decisions_without_evidence": 0,
+      "traces_missing_spans": 0
+    }
+  },
+  "note": "Labels come from the annotation guide, never from a pipeline run. Attribution and intent are scored only on cases whose claim count matched, and the aligned-claim count is reported alongside.",
+  "relation_counts": {
+    "ADVICE": 4,
+    "GUARANTEE": 11,
+    "PREDICTION": 9,
+    "RISK_REMOVED": 16
+  },
+  "version": "v1"
+}

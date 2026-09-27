@@ -1,0 +1,4179 @@
+{
+  "broken_count": 0,
+  "by_phase": {
+    "phase-8.1": {
+      "after_correct": 6,
+      "before_correct": 0,
+      "broken": [],
+      "cases": 15,
+      "evidence_complete": 15,
+      "fixed": [
+        "ADV-F001",
+        "ADV-F002",
+        "ADV-F003",
+        "ADV-F014",
+        "ADV-F015",
+        "ADV-F029"
+      ],
+      "meets_minimum": true,
+      "required": 5,
+      "still_wrong": [
+        "ADV-F004",
+        "ADV-F005",
+        "ADV-F006",
+        "ADV-F007",
+        "ADV-F008",
+        "ADV-F009",
+        "ADV-F010",
+        "ADV-F011",
+        "ADV-F013"
+      ]
+    },
+    "phase-8.3": {
+      "after_correct": 8,
+      "before_correct": 6,
+      "broken": [],
+      "cases": 9,
+      "evidence_complete": 9,
+      "fixed": [
+        "83-ATT-03",
+        "83-ATT-05"
+      ],
+      "meets_minimum": true,
+      "required": 5,
+      "still_wrong": [
+        "83-ATT-01"
+      ]
+    },
+    "phase-8.4": {
+      "after_correct": 16,
+      "before_correct": 4,
+      "broken": [],
+      "cases": 17,
+      "evidence_complete": 17,
+      "fixed": [
+        "84-PG-03",
+        "84-PG-04",
+        "84-PG-05",
+        "84-PG-06",
+        "84-PG-07",
+        "84-PG-08",
+        "84-PG-09",
+        "84-PG-10",
+        "84-PG-11",
+        "84-PG-12",
+        "84-PG-13",
+        "84-PG-14"
+      ],
+      "meets_minimum": true,
+      "required": 5,
+      "still_wrong": [
+        "84-PG-15"
+      ]
+    }
+  },
+  "cases": 41,
+  "evidence_complete": 41,
+  "fixed_count": 20,
+  "note": "Cases are read from the artifacts the earlier phases published: the committed failure repository, Phase 8.3's replay set and Phase 8.4's benchmark. The replay cannot substitute easier material than was originally recorded.",
+  "outcomes": [
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F001",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "direct_statement: guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+        "origin": "adversarial failures/ADV-F001.json",
+        "phase": "phase-8.1",
+        "text": "This return is guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This return is guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                5,
+                25
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            26
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "investment_advice": "block"
+      },
+      "after": [
+        "investment_advice"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F002",
+        "expected": [
+          "investment_advice"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F002.json",
+        "phase": "phase-8.1",
+        "text": "Acquire a position in this equity before the quarter closes."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "investment_advice",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE",
+            "intent:advice:instrument:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Acquire a position in this equity before the quarter closes.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "investment_advice"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "investment_advice",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_advice_pattern",
+                "rule:semantic.skipped:intent-found-ADVICE",
+                "intent:advice:instrument:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "INSTRUMENT",
+            "relation": "ADVICE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Acquire",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                33
+              ]
+            },
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Acquire",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                33
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            60
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "investment_advice": "block"
+      },
+      "after": [
+        "investment_advice"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F003",
+        "expected": [
+          "investment_advice"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F003.json",
+        "phase": "phase-8.1",
+        "text": "Reallocate your capital towards this venture."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "investment_advice",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE",
+            "intent:advice:capital:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Reallocate your capital towards this venture.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "investment_advice"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "investment_advice",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_advice_pattern",
+                "rule:semantic.skipped:intent-found-ADVICE",
+                "intent:advice:capital:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "CAPITAL",
+            "relation": "ADVICE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "CAPITAL",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Reallocate",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                23
+              ]
+            },
+            {
+              "asserted": true,
+              "entity": "CAPITAL",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Reallocate",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                23
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            45
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F004",
+        "expected": [
+          "market_prediction"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F004.json",
+        "phase": "phase-8.1",
+        "text": "This equity multiplies in value over the coming year."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This equity multiplies in value over the coming year.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            53
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F005",
+        "expected": [
+          "market_prediction"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F005.json",
+        "phase": "phase-8.1",
+        "text": "The share price is destined for 500 by December."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The share price is destined for 500 by December.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            48
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F006",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F006.json",
+        "phase": "phase-8.1",
+        "text": "Your capital is insulated from any decline."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Your capital is insulated from any decline.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            43
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F007",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F007.json",
+        "phase": "phase-8.1",
+        "text": "This position carries no downside whatsoever."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This position carries no downside whatsoever.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            45
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F008",
+        "expected": [
+          "unverified_information"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F008.json",
+        "phase": "phase-8.1",
+        "text": "Word around the trading desks is that the merger is close."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Word around the trading desks is that the merger is close.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            58
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F009",
+        "expected": [
+          "unverified_information"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F009.json",
+        "phase": "phase-8.1",
+        "text": "A little bird tells me the dividend is going."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "A little bird tells me the dividend is going.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            45
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F010",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F010.json",
+        "phase": "phase-8.1",
+        "text": "Hesitate and the gains belong to somebody else."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Hesitate and the gains belong to somebody else.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            47
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F011",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+        "origin": "adversarial failures/ADV-F011.json",
+        "phase": "phase-8.1",
+        "text": "The window is closing on this entry point."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The window is closing on this entry point.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            42
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {
+        "investment_advice": "block",
+        "unverified_information": "require_evidence"
+      },
+      "after": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "after_correct": false,
+      "before": [
+        "unverified_information"
+      ],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F013",
+        "expected": [
+          "investment_advice"
+        ],
+        "note": "attribution_confusion: guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+        "origin": "adversarial failures/ADV-F013.json",
+        "phase": "phase-8.1",
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "investment_advice",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE",
+            "intent:advice:instrument:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        },
+        {
+          "action": "require_evidence",
+          "category": "unverified_information",
+          "claim_id": "claim-001",
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "fallback:agnostic:unverified_information"
+          ],
+          "kept": true,
+          "reason": "sourcing risk is reported whatever the voice",
+          "rule": "D7-attribution-agnostic"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Analysts say the sector is volatile this year.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "require_evidence",
+            "category": "unverified_information"
+          },
+          "decisions": [
+            {
+              "action": "require_evidence",
+              "category": "unverified_information",
+              "claim_id": "claim-001",
+              "evidence": [
+                "analysts",
+                "say",
+                "rule:attribution.third_party/quoted",
+                "rule:intent_pattern.no-relation",
+                "unverified_information:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "fallback:agnostic:unverified_information"
+              ],
+              "kept": true,
+              "reason": "sourcing risk is reported whatever the voice",
+              "rule": "D7-attribution-agnostic"
+            }
+          ],
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "unverified_information"
+          ],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            46
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "Buy this stock before the quarter ends.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "block",
+            "category": "investment_advice"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "investment_advice",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_advice_pattern",
+                "rule:semantic.skipped:intent-found-ADVICE",
+                "intent:advice:instrument:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "INSTRUMENT",
+            "relation": "ADVICE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Buy",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                14
+              ]
+            },
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Buy",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                14
+              ]
+            }
+          ],
+          "source_span": [
+            46,
+            86
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F014",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "attribution_confusion: guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+        "origin": "adversarial failures/ADV-F014.json",
+        "phase": "phase-8.1",
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED",
+            "intent:risk_removed:unknown:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Economists forecast slower growth in Europe.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "economists",
+            "forecast",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            44
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "This fund cannot lose money.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_risk_removed_pattern",
+                "rule:semantic.skipped:intent-found-RISK_REMOVED",
+                "intent:risk_removed:unknown:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "UNKNOWN",
+            "relation": "RISK_REMOVED"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "UNKNOWN",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "lose",
+              "relation": "RISK_REMOVED",
+              "span": [
+                10,
+                21
+              ]
+            }
+          ],
+          "source_span": [
+            44,
+            73
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "emotional_manipulation": "downrank"
+      },
+      "after": [
+        "emotional_manipulation"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F015",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "note": "attribution_confusion: guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+        "origin": "adversarial failures/ADV-F015.json",
+        "phase": "phase-8.1",
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+      },
+      "decisions": [
+        {
+          "action": "downrank",
+          "category": "emotional_manipulation",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "fallback:emotional_manipulation"
+          ],
+          "kept": true,
+          "reason": "the intent layer produced no relation here",
+          "rule": "D8-semantic-fallback"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Regulators published the revised disclosure rules.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "regulators",
+            "published",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            50
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "Do not miss this opportunity.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "downrank",
+            "category": "emotional_manipulation"
+          },
+          "decisions": [
+            {
+              "action": "downrank",
+              "category": "emotional_manipulation",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "rule:intent_pattern.no-relation",
+                "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "fallback:emotional_manipulation"
+              ],
+              "kept": true,
+              "reason": "the intent layer produced no relation here",
+              "rule": "D8-semantic-fallback"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "emotional_manipulation"
+          ],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            50,
+            80
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "ADV-F029",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "context_attack: guide v2 section 7: the category depends on the claim, not on its position in the text",
+        "origin": "adversarial failures/ADV-F029.json",
+        "phase": "phase-8.1",
+        "text": "The company reports its results in March. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. This return is guaranteed. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-004",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The company reports its results in March.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            41
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        },
+        {
+          "claim": "The quarter closed with revenue in line with guidance.",
+          "claim_id": "claim-002",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-002",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            41,
+            96
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        },
+        {
+          "claim": "Analysts' coverage of the sector has widened this year.",
+          "claim_id": "claim-003",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "analysts",
+            "rule:stance.no-marker",
+            "rule:attribution.third_party/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-003",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            96,
+            152
+          ],
+          "speaker": "third_party",
+          "stance": "uncertain",
+          "suppressed": []
+        },
+        {
+          "claim": "This return is guaranteed.",
+          "claim_id": "claim-004",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-004",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                5,
+                25
+              ]
+            }
+          ],
+          "source_span": [
+            152,
+            179
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        },
+        {
+          "claim": "The board meets on the second Tuesday of the month.",
+          "claim_id": "claim-005",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "the board",
+            "rule:stance.no-marker",
+            "rule:attribution.third_party/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-005",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            179,
+            231
+          ],
+          "speaker": "third_party",
+          "stance": "uncertain",
+          "suppressed": []
+        },
+        {
+          "claim": "Operating costs were broadly flat over the period.",
+          "claim_id": "claim-006",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-006",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            231,
+            282
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "investment_advice": "block",
+        "unverified_information": "require_evidence"
+      },
+      "after": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "after_correct": false,
+      "before": [
+        "unverified_information"
+      ],
+      "before_correct": false,
+      "case": {
+        "case_id": "83-ATT-01",
+        "expected": [
+          "investment_advice"
+        ],
+        "note": "ADV-ATT-01, recorded failure ADV-F013",
+        "origin": "attribution_experiment replay ATT-01",
+        "phase": "phase-8.3",
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "investment_advice",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE",
+            "intent:advice:instrument:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        },
+        {
+          "action": "require_evidence",
+          "category": "unverified_information",
+          "claim_id": "claim-001",
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "fallback:agnostic:unverified_information"
+          ],
+          "kept": true,
+          "reason": "sourcing risk is reported whatever the voice",
+          "rule": "D7-attribution-agnostic"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Analysts say the sector is volatile this year.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "require_evidence",
+            "category": "unverified_information"
+          },
+          "decisions": [
+            {
+              "action": "require_evidence",
+              "category": "unverified_information",
+              "claim_id": "claim-001",
+              "evidence": [
+                "analysts",
+                "say",
+                "rule:attribution.third_party/quoted",
+                "rule:intent_pattern.no-relation",
+                "unverified_information:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "fallback:agnostic:unverified_information"
+              ],
+              "kept": true,
+              "reason": "sourcing risk is reported whatever the voice",
+              "rule": "D7-attribution-agnostic"
+            }
+          ],
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "unverified_information"
+          ],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            46
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "Buy this stock before the quarter ends.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "block",
+            "category": "investment_advice"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "investment_advice",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_advice_pattern",
+                "rule:semantic.skipped:intent-found-ADVICE",
+                "intent:advice:instrument:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "INSTRUMENT",
+            "relation": "ADVICE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Buy",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                14
+              ]
+            },
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "Buy",
+              "relation": "ADVICE",
+              "span": [
+                0,
+                14
+              ]
+            }
+          ],
+          "source_span": [
+            46,
+            86
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {
+        "market_prediction": "require_evidence"
+      },
+      "after": [
+        "market_prediction"
+      ],
+      "after_correct": true,
+      "before": [
+        "market_prediction"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-ATT-02",
+        "expected": [
+          "market_prediction"
+        ],
+        "note": "ADV-ATT-02, passed by accident",
+        "origin": "attribution_experiment replay ATT-02",
+        "phase": "phase-8.3",
+        "text": "The company said costs were flat last quarter. The share price will certainly double next year."
+      },
+      "decisions": [
+        {
+          "action": "require_evidence",
+          "category": "market_prediction",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_prediction_pattern",
+            "rule:semantic.skipped:intent-found-PREDICTION",
+            "intent:prediction:value:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The company said costs were flat last quarter.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "the company said",
+            "said",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            46
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "The share price will certainly double next year.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "require_evidence",
+            "category": "market_prediction"
+          },
+          "decisions": [
+            {
+              "action": "require_evidence",
+              "category": "market_prediction",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_prediction_pattern",
+                "rule:semantic.skipped:intent-found-PREDICTION",
+                "intent:prediction:value:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_prediction_pattern",
+            "rule:semantic.skipped:intent-found-PREDICTION"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "VALUE",
+            "relation": "PREDICTION"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "VALUE",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-market-prediction",
+              "predicate": "double",
+              "relation": "PREDICTION",
+              "span": [
+                0,
+                37
+              ]
+            },
+            {
+              "asserted": true,
+              "entity": "VALUE",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-market-prediction",
+              "predicate": "double",
+              "relation": "PREDICTION",
+              "span": [
+                0,
+                47
+              ]
+            }
+          ],
+          "source_span": [
+            46,
+            95
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "83-ATT-03",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "ADV-ATT-03, recorded failure ADV-F014",
+        "origin": "attribution_experiment replay ATT-03",
+        "phase": "phase-8.3",
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED",
+            "intent:risk_removed:unknown:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Economists forecast slower growth in Europe.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "economists",
+            "forecast",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            44
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "This fund cannot lose money.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_risk_removed_pattern",
+                "rule:semantic.skipped:intent-found-RISK_REMOVED",
+                "intent:risk_removed:unknown:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "UNKNOWN",
+            "relation": "RISK_REMOVED"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "UNKNOWN",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "lose",
+              "relation": "RISK_REMOVED",
+              "span": [
+                10,
+                21
+              ]
+            }
+          ],
+          "source_span": [
+            44,
+            73
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "after": [
+        "unverified_information"
+      ],
+      "after_correct": true,
+      "before": [
+        "unverified_information"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-ATT-04",
+        "expected": [
+          "unverified_information"
+        ],
+        "note": "ADV-ATT-04, voice-agnostic target",
+        "origin": "attribution_experiment replay ATT-04",
+        "phase": "phase-8.3",
+        "text": "The board said the timetable is unchanged. Sources say the company will be acquired."
+      },
+      "decisions": [
+        {
+          "action": "require_evidence",
+          "category": "unverified_information",
+          "claim_id": "claim-002",
+          "evidence": [
+            "sources",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "fallback:agnostic:unverified_information"
+          ],
+          "kept": true,
+          "reason": "sourcing risk is reported whatever the voice",
+          "rule": "D7-attribution-agnostic"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The board said the timetable is unchanged.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "the board",
+            "said",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            42
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "Sources say the company will be acquired.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "require_evidence",
+            "category": "unverified_information"
+          },
+          "decisions": [
+            {
+              "action": "require_evidence",
+              "category": "unverified_information",
+              "claim_id": "claim-002",
+              "evidence": [
+                "sources",
+                "say",
+                "rule:attribution.third_party/quoted",
+                "rule:intent_pattern.no-relation",
+                "unverified_information:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "fallback:agnostic:unverified_information"
+              ],
+              "kept": true,
+              "reason": "sourcing risk is reported whatever the voice",
+              "rule": "D7-attribution-agnostic"
+            }
+          ],
+          "evidence": [
+            "sources",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "unverified_information"
+          ],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            42,
+            84
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "emotional_manipulation": "downrank"
+      },
+      "after": [
+        "emotional_manipulation"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "83-ATT-05",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "note": "ADV-ATT-05, recorded failure ADV-F015",
+        "origin": "attribution_experiment replay ATT-05",
+        "phase": "phase-8.3",
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity."
+      },
+      "decisions": [
+        {
+          "action": "downrank",
+          "category": "emotional_manipulation",
+          "claim_id": "claim-002",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "fallback:emotional_manipulation"
+          ],
+          "kept": true,
+          "reason": "the intent layer produced no relation here",
+          "rule": "D8-semantic-fallback"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Regulators published the revised disclosure rules.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "regulators",
+            "published",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            50
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        },
+        {
+          "claim": "Do not miss this opportunity.",
+          "claim_id": "claim-002",
+          "decision": {
+            "action": "downrank",
+            "category": "emotional_manipulation"
+          },
+          "decisions": [
+            {
+              "action": "downrank",
+              "category": "emotional_manipulation",
+              "claim_id": "claim-002",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "rule:intent_pattern.no-relation",
+                "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "fallback:emotional_manipulation"
+              ],
+              "kept": true,
+              "reason": "the intent layer produced no relation here",
+              "rule": "D8-semantic-fallback"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "emotional_manipulation"
+          ],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            50,
+            80
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "unverified_information": "require_evidence"
+      },
+      "after": [
+        "unverified_information"
+      ],
+      "after_correct": true,
+      "before": [
+        "unverified_information"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-CTL-01",
+        "expected": [
+          "unverified_information"
+        ],
+        "note": "ADV-CTL-01 control",
+        "origin": "attribution_experiment replay CTL-01",
+        "phase": "phase-8.3",
+        "text": "Analysts say this fund cannot lose money."
+      },
+      "decisions": [
+        {
+          "action": "require_evidence",
+          "category": "unverified_information",
+          "claim_id": "claim-001",
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "active_risk_removed_pattern:hedged:say",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing",
+            "attribution:third_party/quoted"
+          ],
+          "kept": true,
+          "reason": "the relation belongs to a quoted third party whose source cannot be checked, so it is reported as an unchecked source rather than as the article's claim",
+          "rule": "D4-third-party-unverified"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Analysts say this fund cannot lose money.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "require_evidence",
+            "category": "unverified_information"
+          },
+          "decisions": [
+            {
+              "action": "require_evidence",
+              "category": "unverified_information",
+              "claim_id": "claim-001",
+              "evidence": [
+                "analysts",
+                "say",
+                "rule:attribution.third_party/quoted",
+                "active_risk_removed_pattern:hedged:say",
+                "unverified_information:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "attribution:third_party/quoted"
+              ],
+              "kept": true,
+              "reason": "the relation belongs to a quoted third party whose source cannot be checked, so it is reported as an unchecked source rather than as the article's claim",
+              "rule": "D4-third-party-unverified"
+            }
+          ],
+          "evidence": [
+            "analysts",
+            "say",
+            "rule:attribution.third_party/quoted",
+            "active_risk_removed_pattern:hedged:say",
+            "unverified_information:semantic-intent-v2:confidence=0.6",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [
+            "unverified_information"
+          ],
+          "intent": null,
+          "intents": [
+            {
+              "asserted": false,
+              "entity": "UNKNOWN",
+              "frame": "active",
+              "hedge": "say",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "lose",
+              "relation": "RISK_REMOVED",
+              "span": [
+                23,
+                34
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            41
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": [
+            {
+              "action": "downrank",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "analysts",
+                "say",
+                "rule:attribution.third_party/quoted",
+                "active_risk_removed_pattern:hedged:say",
+                "unverified_information:semantic-intent-v2:confidence=0.6",
+                "rule:semantic.searched-because:intent-found-nothing",
+                "intent:risk_removed:unknown:active:hedged"
+              ],
+              "kept": false,
+              "reason": "a quoted third party's relation is not the article's",
+              "rule": "D4-third-party-unverified"
+            }
+          ]
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": true,
+      "before": [],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-CTL-02",
+        "expected": [],
+        "note": "ADV-CTL-02 control",
+        "origin": "attribution_experiment replay CTL-02",
+        "phase": "phase-8.3",
+        "text": "The newsletter recommends buying this stock."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The newsletter recommends buying this stock.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "the newsletter",
+            "rule:stance.no-marker",
+            "rule:attribution.third_party/uncertain",
+            "active_advice_pattern",
+            "rule:semantic.skipped:intent-found-ADVICE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "INSTRUMENT",
+            "relation": "ADVICE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "INSTRUMENT",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-investment-advice",
+              "predicate": "recommends",
+              "relation": "ADVICE",
+              "span": [
+                15,
+                43
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            44
+          ],
+          "speaker": "third_party",
+          "stance": "uncertain",
+          "suppressed": [
+            {
+              "action": "downrank",
+              "category": "investment_advice",
+              "claim_id": "claim-001",
+              "evidence": [
+                "the newsletter",
+                "rule:stance.no-marker",
+                "rule:attribution.third_party/uncertain",
+                "active_advice_pattern",
+                "rule:semantic.skipped:intent-found-ADVICE",
+                "intent:advice:instrument:active:asserted"
+              ],
+              "kept": false,
+              "reason": "the claim is not the article's",
+              "rule": "D4-third-party-unverified"
+            }
+          ]
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": true,
+      "before": [],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-CTL-03",
+        "expected": [],
+        "note": "ADV-CTL-03 control",
+        "origin": "attribution_experiment replay CTL-03",
+        "phase": "phase-8.3",
+        "text": "Management expects the share price to double."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Management expects the share price to double.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "management",
+            "expects",
+            "rule:attribution.third_party/quoted",
+            "active_prediction_pattern",
+            "rule:semantic.skipped:intent-found-PREDICTION"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "VALUE",
+            "relation": "PREDICTION"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "VALUE",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-market-prediction",
+              "predicate": "double",
+              "relation": "PREDICTION",
+              "span": [
+                11,
+                44
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            45
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": [
+            {
+              "action": "downrank",
+              "category": "market_prediction",
+              "claim_id": "claim-001",
+              "evidence": [
+                "management",
+                "expects",
+                "rule:attribution.third_party/quoted",
+                "active_prediction_pattern",
+                "rule:semantic.skipped:intent-found-PREDICTION",
+                "intent:prediction:value:active:asserted"
+              ],
+              "kept": false,
+              "reason": "a quoted third party's relation is not the article's, and the source is identifiable so it is not unverified_information either",
+              "rule": "D4-third-party-unverified"
+            }
+          ]
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": true,
+      "before": [],
+      "before_correct": true,
+      "case": {
+        "case_id": "83-CTL-04",
+        "expected": [],
+        "note": "ADV-CTL-04 control",
+        "origin": "attribution_experiment replay CTL-04",
+        "phase": "phase-8.3",
+        "text": "The article quotes a promoter saying do not miss this opportunity."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The article quotes a promoter saying do not miss this opportunity.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "a promoter",
+            "quotes",
+            "saying",
+            "rule:attribution.third_party/quoted",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            66
+          ],
+          "speaker": "third_party",
+          "stance": "quoted",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [
+        "financial_guarantee"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "84-PG-01",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "the form the old rule matched",
+        "origin": "intent_pattern/v1 PG-01",
+        "phase": "phase-8.4",
+        "text": "This is a guaranteed return."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:attributive:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This is a guaranteed return.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "attributive_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:attributive:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "attributive",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed return",
+              "relation": "GUARANTEE",
+              "span": [
+                10,
+                27
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            28
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [
+        "financial_guarantee"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "84-PG-02",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "prenominal adjective",
+        "origin": "intent_pattern/v1 PG-02",
+        "phase": "phase-8.4",
+        "text": "Guaranteed returns are available."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:attributive:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Guaranteed returns are available.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "attributive_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:attributive:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "attributive",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "Guaranteed returns",
+              "relation": "GUARANTEE",
+              "span": [
+                0,
+                18
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            33
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-03",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-03",
+        "phase": "phase-8.4",
+        "text": "This return is guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This return is guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                5,
+                25
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            26
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-04",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-04",
+        "phase": "phase-8.4",
+        "text": "Returns are guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Returns are guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                0,
+                22
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            23
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-05",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-05",
+        "phase": "phase-8.4",
+        "text": "Your capital is guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:capital:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Your capital is guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:capital:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "CAPITAL",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "CAPITAL",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                5,
+                26
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            27
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-06",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-06",
+        "phase": "phase-8.4",
+        "text": "The profit is guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The profit is guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                4,
+                24
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            25
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [
+        "investment_advice"
+      ],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-07",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "object and copula separated by a phrase",
+        "origin": "intent_pattern/v1 PG-07",
+        "phase": "phase-8.4",
+        "text": "The value of your investment is guaranteed."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:value:copular:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The value of your investment is guaranteed.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "copular_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:value:copular:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "copular_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "VALUE",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "VALUE",
+              "frame": "copular",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                4,
+                42
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            43
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-08",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-08",
+        "phase": "phase-8.4",
+        "text": "We guarantee this return."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "We guarantee this return.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guarantee",
+              "relation": "GUARANTEE",
+              "span": [
+                0,
+                24
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            25
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-09",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "Phase 8.1 blind spot",
+        "origin": "intent_pattern/v1 PG-09",
+        "phase": "phase-8.4",
+        "text": "The fund guarantees your capital."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:capital:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The fund guarantees your capital.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:capital:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "CAPITAL",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "CAPITAL",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guarantees",
+              "relation": "GUARANTEE",
+              "span": [
+                0,
+                32
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            33
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-10",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "verb form with a determiner",
+        "origin": "intent_pattern/v1 PG-10",
+        "phase": "phase-8.4",
+        "text": "We guarantee a profit."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "We guarantee a profit.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guarantee",
+              "relation": "GUARANTEE",
+              "span": [
+                0,
+                21
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            22
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-11",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "participle with an agent",
+        "origin": "intent_pattern/v1 PG-11",
+        "phase": "phase-8.4",
+        "text": "Your returns are guaranteed by the scheme."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "passive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:passive:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Your returns are guaranteed by the scheme.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "passive_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:passive:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "passive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "passive",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                5,
+                41
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            42
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-12",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "participle with an agent",
+        "origin": "intent_pattern/v1 PG-12",
+        "phase": "phase-8.4",
+        "text": "The capital is guaranteed by the issuer."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "passive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:capital:passive:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The capital is guaranteed by the issuer.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "passive_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:capital:passive:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "passive_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "CAPITAL",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "CAPITAL",
+              "frame": "passive",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guaranteed",
+              "relation": "GUARANTEE",
+              "span": [
+                4,
+                39
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            40
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-13",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "noun form with of",
+        "origin": "intent_pattern/v1 PG-13",
+        "phase": "phase-8.4",
+        "text": "The fund offers a guarantee of returns."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "nominal_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:nominal:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "The fund offers a guarantee of returns.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "nominal_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:nominal:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "nominal_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "nominal",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guarantee",
+              "relation": "GUARANTEE",
+              "span": [
+                16,
+                38
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            39
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-14",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "noun form with of",
+        "origin": "intent_pattern/v1 PG-14",
+        "phase": "phase-8.4",
+        "text": "This plan comes with a guarantee of income."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "nominal_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE",
+            "intent:guarantee:return:nominal:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This plan comes with a guarantee of income.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "nominal_guarantee_pattern",
+                "rule:semantic.skipped:intent-found-GUARANTEE",
+                "intent:guarantee:return:nominal:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "nominal_guarantee_pattern",
+            "rule:semantic.skipped:intent-found-GUARANTEE"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "RETURN",
+            "relation": "GUARANTEE"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "RETURN",
+              "frame": "nominal",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "guarantee",
+              "relation": "GUARANTEE",
+              "span": [
+                21,
+                42
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            43
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "fixed"
+    },
+    {
+      "actions": {},
+      "after": [],
+      "after_correct": false,
+      "before": [],
+      "before_correct": false,
+      "case": {
+        "case_id": "84-PG-15",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "noun form with on",
+        "origin": "intent_pattern/v1 PG-15",
+        "phase": "phase-8.4",
+        "text": "Returns are a guarantee on this product."
+      },
+      "decisions": [],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Returns are a guarantee on this product.",
+          "claim_id": "claim-001",
+          "decision": null,
+          "decisions": [],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "rule:intent_pattern.no-relation",
+            "rule:semantic.no-category:claim-001",
+            "rule:semantic.searched-because:intent-found-nothing"
+          ],
+          "fallback_categories": [],
+          "intent": null,
+          "intents": [],
+          "source_span": [
+            0,
+            40
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "still_wrong"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [
+        "financial_guarantee"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "84-PG-16",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "parity with the old rule",
+        "origin": "intent_pattern/v1 PG-16",
+        "phase": "phase-8.4",
+        "text": "Your capital is risk-free."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED",
+            "intent:risk_removed:unknown:attributive:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "Your capital is risk-free.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "attributive_risk_removed_pattern",
+                "rule:semantic.skipped:intent-found-RISK_REMOVED",
+                "intent:risk_removed:unknown:attributive:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "attributive_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "UNKNOWN",
+            "relation": "RISK_REMOVED"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "UNKNOWN",
+              "frame": "attributive",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "risk-free",
+              "relation": "RISK_REMOVED",
+              "span": [
+                16,
+                25
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            26
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    },
+    {
+      "actions": {
+        "financial_guarantee": "block"
+      },
+      "after": [
+        "financial_guarantee"
+      ],
+      "after_correct": true,
+      "before": [
+        "financial_guarantee"
+      ],
+      "before_correct": true,
+      "case": {
+        "case_id": "84-PG-17",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "note": "parity with the old rule",
+        "origin": "intent_pattern/v1 PG-17",
+        "phase": "phase-8.4",
+        "text": "This fund cannot lose money."
+      },
+      "decisions": [
+        {
+          "action": "block",
+          "category": "financial_guarantee",
+          "claim_id": "claim-001",
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED",
+            "intent:risk_removed:unknown:active:asserted"
+          ],
+          "kept": true,
+          "reason": "",
+          "rule": "D5-author-voice-relation"
+        }
+      ],
+      "evidence_complete": true,
+      "trace": [
+        {
+          "claim": "This fund cannot lose money.",
+          "claim_id": "claim-001",
+          "decision": {
+            "action": "block",
+            "category": "financial_guarantee"
+          },
+          "decisions": [
+            {
+              "action": "block",
+              "category": "financial_guarantee",
+              "claim_id": "claim-001",
+              "evidence": [
+                "rule:speaker.no-marker",
+                "rule:stance.no-marker",
+                "rule:attribution.unknown/uncertain",
+                "active_risk_removed_pattern",
+                "rule:semantic.skipped:intent-found-RISK_REMOVED",
+                "intent:risk_removed:unknown:active:asserted"
+              ],
+              "kept": true,
+              "reason": "",
+              "rule": "D5-author-voice-relation"
+            }
+          ],
+          "evidence": [
+            "rule:speaker.no-marker",
+            "rule:stance.no-marker",
+            "rule:attribution.unknown/uncertain",
+            "active_risk_removed_pattern",
+            "rule:semantic.skipped:intent-found-RISK_REMOVED"
+          ],
+          "fallback_categories": [],
+          "intent": {
+            "entity": "UNKNOWN",
+            "relation": "RISK_REMOVED"
+          },
+          "intents": [
+            {
+              "asserted": true,
+              "entity": "UNKNOWN",
+              "frame": "active",
+              "hedge": "",
+              "negated": false,
+              "pattern_id": "v3-financial-guarantee",
+              "predicate": "lose",
+              "relation": "RISK_REMOVED",
+              "span": [
+                10,
+                21
+              ]
+            }
+          ],
+          "source_span": [
+            0,
+            28
+          ],
+          "speaker": "unknown",
+          "stance": "uncertain",
+          "suppressed": []
+        }
+      ],
+      "transition": "unchanged"
+    }
+  ]
+}
