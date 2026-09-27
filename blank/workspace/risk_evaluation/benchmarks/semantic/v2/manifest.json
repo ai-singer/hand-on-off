@@ -1,0 +1,24 @@
+{
+  "annotation_protocol": "docs/RISK_ANNOTATION_GUIDE.md@1.0.0",
+  "annotation_version": "1.0.0",
+  "case_count": 62,
+  "categories": [
+    "emotional_manipulation",
+    "financial_guarantee",
+    "investment_advice",
+    "market_prediction",
+    "unverified_information"
+  ],
+  "created_at": "2026-09-27T00:00:00Z",
+  "created_by": "creator-agent-framework/phase-7.4",
+  "dataset_hash": "c01fe03efe22c441ba0ca58d53ae9a533a755b7811b055e20c18e9495532a740",
+  "group_counts": {
+    "boundary": 17,
+    "risk": 35,
+    "safe": 10
+  },
+  "id": "semantic",
+  "source": "phase-7.4 decontaminated subset of semantic v1",
+  "status": "frozen",
+  "version": "v2"
+}

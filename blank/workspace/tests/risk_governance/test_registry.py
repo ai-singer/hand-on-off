@@ -1,0 +1,261 @@
+from __future__ import annotations
+
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from risk_evaluation.benchmark_registry import (
+    ANNOTATION_PROTOCOL,
+    ANNOTATION_VERSION,
+    BENCHMARK_EXPORTS,
+    CASES_NAME,
+    LABELS_NAME,
+    MANIFEST_NAME,
+    STATUSES,
+    BenchmarkRecord,
+    BenchmarkRegistry,
+    BenchmarkRegistryError,
+    annotation_field_names,
+    build_record,
+    dataset_hash,
+    decontaminated_cases,
+)
+
+
+class RegistryLookupTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.registry = BenchmarkRegistry()
+
+    def test_registry_lists_both_versions(self) -> None:
+        keys = {
+            (record.benchmark_id, record.version)
+            for record in self.registry.list_benchmarks()
+        }
+
+        self.assertEqual(keys, {("semantic", "v1"), ("semantic", "v2")})
+
+    def test_get_by_id_and_version(self) -> None:
+        record = self.registry.get("semantic", "v2")
+
+        self.assertEqual(record.version, "v2")
+        self.assertEqual(record.case_count, 62)
+
+    def test_get_without_version_is_unambiguous_for_single_version_ids(self) -> None:
+        with self.assertRaises(BenchmarkRegistryError):
+            self.registry.get("semantic")
+
+    def test_unknown_benchmark_is_rejected(self) -> None:
+        with self.assertRaises(BenchmarkRegistryError):
+            self.registry.get("does-not-exist", "v1")
+
+    def test_every_version_directory_has_the_three_files(self) -> None:
+        for record in self.registry.list_benchmarks():
+            directory = self.registry.directory(record)
+            for name in (MANIFEST_NAME, CASES_NAME, LABELS_NAME):
+                self.assertTrue((directory / name).is_file(), f"{record.version}/{name}")
+
+
+class RegistryManifestTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.registry = BenchmarkRegistry()
+
+    def test_manifest_carries_every_required_field(self) -> None:
+        required = {
+            "id",
+            "version",
+            "case_count",
+            "dataset_hash",
+            "annotation_protocol",
+            "created_by",
+            "status",
+        }
+
+        for record in self.registry.list_benchmarks():
+            payload = record.as_dict()
+            for field in required:
+                self.assertIn(field, payload, record.version)
+
+    def test_manifest_records_the_annotation_contract(self) -> None:
+        for record in self.registry.list_benchmarks():
+            self.assertEqual(record.annotation_version, ANNOTATION_VERSION)
+            self.assertEqual(record.annotation_protocol, ANNOTATION_PROTOCOL)
+            self.assertIn("RISK_ANNOTATION_GUIDE", record.annotation_protocol)
+
+    def test_status_is_a_known_value(self) -> None:
+        for record in self.registry.list_benchmarks():
+            self.assertIn(record.status, STATUSES)
+
+    def test_v1_is_recorded_as_contaminated_and_v2_as_frozen(self) -> None:
+        self.assertEqual(self.registry.get("semantic", "v1").status, "contaminated")
+        self.assertEqual(self.registry.get("semantic", "v2").status, "frozen")
+
+    def test_manifest_counts_match_the_records(self) -> None:
+        for record in self.registry.list_benchmarks():
+            records = self.registry.load_records(record)
+
+            self.assertEqual(record.case_count, len(records))
+            groups: dict[str, int] = {}
+            for item in records:
+                groups[item["group"]] = groups.get(item["group"], 0) + 1
+            self.assertEqual(dict(record.group_counts), groups)
+
+    def test_manifest_categories_match_the_labels(self) -> None:
+        for record in self.registry.list_benchmarks():
+            labels = self.registry.load_labels(record)
+
+            self.assertEqual(
+                set(record.categories), set(labels["category_index"])
+            )
+
+    def test_created_by_names_the_producing_phase(self) -> None:
+        for record in self.registry.list_benchmarks():
+            self.assertIn("phase-7.4", record.created_by)
+
+
+class RegistryHashTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.registry = BenchmarkRegistry()
+
+    def test_dataset_hash_is_a_sha256_digest(self) -> None:
+        for record in self.registry.list_benchmarks():
+            self.assertEqual(len(record.dataset_hash), 64)
+            int(record.dataset_hash, 16)
+
+    def test_stored_datasets_still_match_their_manifest_hash(self) -> None:
+        for record in self.registry.list_benchmarks():
+            self.assertTrue(self.registry.verify(record), record.version)
+
+    def test_verify_all_reports_true_for_both(self) -> None:
+        self.assertEqual(
+            set(self.registry.verify_all().values()), {True}
+        )
+
+    def test_changing_a_case_changes_the_hash(self) -> None:
+        records = [dict(item) for item in self.registry.load_records(
+            self.registry.get("semantic", "v2")
+        )]
+        original = dataset_hash(records)
+        records[0]["expected_categories"] = ["emotional_manipulation"]
+
+        self.assertNotEqual(dataset_hash(records), original)
+
+    def test_changing_annotation_prose_changes_the_hash(self) -> None:
+        """The hash covers the complete record, prose included."""
+
+        records = [dict(item) for item in self.registry.load_records(
+            self.registry.get("semantic", "v2")
+        )]
+        original = dataset_hash(records)
+        records[0]["annotation_reason"] = "edited after the fact"
+
+        self.assertNotEqual(dataset_hash(records), original)
+
+    def test_reordering_cases_changes_the_hash(self) -> None:
+        records = [dict(item) for item in self.registry.load_records(
+            self.registry.get("semantic", "v2")
+        )]
+
+        self.assertNotEqual(dataset_hash(records), dataset_hash(list(reversed(records))))
+
+    def test_hash_is_stable_across_calls(self) -> None:
+        records = self.registry.load_records(self.registry.get("semantic", "v1"))
+
+        self.assertEqual(dataset_hash(records), dataset_hash(records))
+
+    def test_verify_detects_a_tampered_dataset(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            tampered = BenchmarkRegistry(directory)
+            source = BenchmarkRegistry()
+            record = source.get("semantic", "v2")
+            target = tampered.directory(record)
+            target.mkdir(parents=True)
+            payload = json.loads(
+                (source.directory(record) / MANIFEST_NAME).read_text(encoding="utf-8")
+            )
+            (target / MANIFEST_NAME).write_text(json.dumps(payload), encoding="utf-8")
+            records = list(source.load_records(record))
+            records[0]["text"] = "tampered text"
+            (target / CASES_NAME).write_text(json.dumps(records), encoding="utf-8")
+            (target / LABELS_NAME).write_text("{}", encoding="utf-8")
+
+            loaded = tampered.get("semantic", "v2")
+
+            self.assertFalse(tampered.verify(loaded))
+
+
+class RegistryExportTests(unittest.TestCase):
+    def test_export_is_deterministic(self) -> None:
+        with tempfile.TemporaryDirectory() as first, tempfile.TemporaryDirectory() as second:
+            BenchmarkRegistry(first).export()
+            BenchmarkRegistry(second).export()
+
+            for (benchmark_id, version) in BENCHMARK_EXPORTS:
+                for name in (MANIFEST_NAME, CASES_NAME, LABELS_NAME):
+                    left = Path(first, benchmark_id, version, name).read_text(
+                        encoding="utf-8"
+                    )
+                    right = Path(second, benchmark_id, version, name).read_text(
+                        encoding="utf-8"
+                    )
+                    self.assertEqual(left, right, f"{version}/{name}")
+
+    def test_exported_records_carry_every_annotation_field(self) -> None:
+        registry = BenchmarkRegistry()
+
+        for record in registry.list_benchmarks():
+            for payload in registry.load_records(record):
+                for field in annotation_field_names():
+                    self.assertIn(field, payload, payload["id"])
+
+    def test_labels_index_agrees_with_the_cases(self) -> None:
+        registry = BenchmarkRegistry()
+
+        for record in registry.list_benchmarks():
+            labels = registry.load_labels(record)
+            records = registry.load_records(record)
+
+            self.assertEqual(labels["case_count"], len(records))
+            self.assertEqual(
+                set(labels["by_case"]), {item["id"] for item in records}
+            )
+            for item in records:
+                self.assertEqual(
+                    labels["by_case"][item["id"]], item["expected_categories"]
+                )
+            indexed = sorted(
+                case_id for ids in labels["group_index"].values() for case_id in ids
+            )
+            self.assertEqual(indexed, sorted(item["id"] for item in records))
+
+    def test_v2_is_the_decontaminated_subset_of_v1(self) -> None:
+        registry = BenchmarkRegistry()
+        v1_ids = {item["id"] for item in registry.load_records(registry.get("semantic", "v1"))}
+        v2_ids = {item["id"] for item in registry.load_records(registry.get("semantic", "v2"))}
+
+        self.assertTrue(v2_ids < v1_ids)
+        self.assertEqual(len(v2_ids), 62)
+        self.assertEqual(
+            len(v2_ids), len(decontaminated_cases())
+        )
+
+    def test_build_record_rejects_an_unknown_status(self) -> None:
+        with self.assertRaises(BenchmarkRegistryError):
+            build_record("x", "v1", [{"id": "a"}], status="whatever")
+
+    def test_build_record_rejects_an_empty_dataset(self) -> None:
+        with self.assertRaises(BenchmarkRegistryError):
+            build_record("x", "v1", [])
+
+    def test_record_round_trips_through_its_manifest(self) -> None:
+        registry = BenchmarkRegistry()
+        record = registry.get("semantic", "v1")
+
+        restored = registry._record_from_manifest(json.loads(json.dumps(record.as_dict())))
+
+        self.assertEqual(restored, record)
+        self.assertIsInstance(restored, BenchmarkRecord)
+
+
+if __name__ == "__main__":
+    unittest.main()

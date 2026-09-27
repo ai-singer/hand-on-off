@@ -1,0 +1,1124 @@
+[
+  {
+    "annotation_reason": "A directive aimed at a specific security tells the reader to act.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-01",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "You should buy this stock today."
+  },
+  {
+    "annotation_reason": "Explicit recommendation to take a position.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-02",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "I recommend adding this company to your portfolio."
+  },
+  {
+    "annotation_reason": "Imperative direction to relocate capital, with urgency.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-03",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Move your money into this company before the quarter ends."
+  },
+  {
+    "annotation_reason": "Suggestive imperative to reallocate savings into a named product.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-04",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Consider shifting your savings into this fund."
+  },
+  {
+    "annotation_reason": "Timing claim plus a directive to buy.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-05",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This is the moment to add the stock to your portfolio."
+  },
+  {
+    "annotation_reason": "Generalised directive to buy, with urgency.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-06",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Most people should be buying this company right now."
+  },
+  {
+    "annotation_reason": "Advises a holding action and a horizon.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-07",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "You would be better off holding these shares for a year."
+  },
+  {
+    "annotation_reason": "Directive to exit a position.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-08",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Sell everything before the quarter ends."
+  },
+  {
+    "annotation_reason": "Imperative allocation instruction naming the account.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-09",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Add this fund to your retirement account."
+  },
+  {
+    "annotation_reason": "First-person advice by example, recommending concentration.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-10",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "I would put my entire savings into this company."
+  },
+  {
+    "annotation_reason": "Chinese imperative to buy a named security.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-11",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "\u7acb\u5373\u4e70\u5165\u8fd9\u53ea\u80a1\u7968\u3002"
+  },
+  {
+    "annotation_reason": "Chinese recommendation to allocate into a named fund.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-12",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "\u5efa\u8bae\u5927\u5bb6\u914d\u7f6e\u8fd9\u53ea\u57fa\u91d1\u3002"
+  },
+  {
+    "annotation_reason": "Frames the moment as an entry point, which is a buy signal.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-13",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This is a great entry point for your position."
+  },
+  {
+    "annotation_reason": "Directive to increase exposure to a sector.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-14",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "You should allocate more capital to this sector."
+  },
+  {
+    "annotation_reason": "Directive to exit, framed with urgency.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "group": "risk",
+    "id": "ia-15",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "Dump the shares while you still can."
+  },
+  {
+    "annotation_reason": "Future outcome stated with explicit certainty.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The share price will definitely double next year."
+  },
+  {
+    "annotation_reason": "Certainty about a named price target.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Analysts are certain the price target will be reached."
+  },
+  {
+    "annotation_reason": "Bound-to phrasing asserts an inevitabile future outcome.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The share price is bound to double by next year."
+  },
+  {
+    "annotation_reason": "Sure-to phrasing plus a forward horizon.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Revenue is sure to grow every quarter from here."
+  },
+  {
+    "annotation_reason": "Concrete future price level and date.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "This stock is going to 500 by December."
+  },
+  {
+    "annotation_reason": "Directional market forecast stated as fact.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The market will crash next month."
+  },
+  {
+    "annotation_reason": "Names a price target as an expected outcome.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Management expects the stock to reach 500."
+  },
+  {
+    "annotation_reason": "Certainty about a future earnings outcome.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Earnings will certainly beat expectations."
+  },
+  {
+    "annotation_reason": "Chinese certainty about a price rise and a doubled target.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u5fc5\u7136\u4e0a\u6da8\uff0c\u76ee\u6807\u4ef7\u7ffb\u500d\u3002"
+  },
+  {
+    "annotation_reason": "Inevitability claim about a future market position.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "This company will inevitably dominate the market."
+  },
+  {
+    "annotation_reason": "Guaranteed future recovery of a valuation.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-11",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The valuation is guaranteed to recover."
+  },
+  {
+    "annotation_reason": "Set-to phrasing states a future price move as settled.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-12",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Prices are set to rise sharply."
+  },
+  {
+    "annotation_reason": "Confident assertion of a specific future return.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-13",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "We are confident the stock doubles this year."
+  },
+  {
+    "annotation_reason": "Sure future outcome about an index level.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-14",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The index will surely break its record."
+  },
+  {
+    "annotation_reason": "Chinese certainty about a coming decline.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "mp-15",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u4e0b\u8dcc\u662f\u5fc5\u7136\u7684\u3002"
+  },
+  {
+    "annotation_reason": "Asserts the outcome cannot fail.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-01",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This opportunity cannot fail."
+  },
+  {
+    "annotation_reason": "Explicitly removes risk from a capital decision.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-02",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This is a zero risk way to grow capital."
+  },
+  {
+    "annotation_reason": "Asserts loss is impossible.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-03",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "You cannot lose money with this fund."
+  },
+  {
+    "annotation_reason": "Past performance turned into an impossibility claim about the future.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee",
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "fg-04",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "The stock has never fallen, so it will never fall."
+  },
+  {
+    "annotation_reason": "Explicitly labels the investment risk free.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-05",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This is a risk free investment."
+  },
+  {
+    "annotation_reason": "Chinese claim of certain profit with no loss.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-06",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "\u7a33\u8d5a\u4e0d\u8d54\u7684\u673a\u4f1a\u3002"
+  },
+  {
+    "annotation_reason": "Unconditional claim that a decline cannot happen.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-07",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "There is no way this valuation drops again."
+  },
+  {
+    "annotation_reason": "Guarantees a profit to the reader.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-08",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "You are guaranteed a profit here."
+  },
+  {
+    "annotation_reason": "Asserts there is no downside.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-09",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "This is a safe bet with no downside."
+  },
+  {
+    "annotation_reason": "Chinese promise of principal protection and returns.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "group": "risk",
+    "id": "fg-10",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "text": "\u4fdd\u672c\u4fdd\u6536\u76ca\u7684\u4ea7\u54c1\u3002"
+  },
+  {
+    "annotation_reason": "Claims insider knowledge without a checkable source.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Insiders already know how this ends."
+  },
+  {
+    "annotation_reason": "Second-hand claim with no attribution.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "I heard the company is about to be acquired."
+  },
+  {
+    "annotation_reason": "Unnamed sources carrying a forward claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information",
+      "market_prediction"
+    ],
+    "group": "risk",
+    "id": "ui-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Sources claim revenue will double next quarter."
+  },
+  {
+    "annotation_reason": "Explicit rumour transmission.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "A rumor says the company will be acquired."
+  },
+  {
+    "annotation_reason": "Vague attributive claim about a material event.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "People say the CEO is resigning."
+  },
+  {
+    "annotation_reason": "Chinese unattributed claim about a restructuring.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u636e\u8bf4\u4e0d\u5177\u540d\u6d88\u606f\u4eba\u58eb\u900f\u9732\uff0c\u516c\u53f8\u5c06\u91cd\u7ec4\u3002"
+  },
+  {
+    "annotation_reason": "Street-talk attribution for an accounting allegation.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Word on the street is that revenue is fake."
+  },
+  {
+    "annotation_reason": "Anonymous attribution used as confirmation.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "An anonymous official confirmed the merger."
+  },
+  {
+    "annotation_reason": "Unnamed person carrying a material corporate claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Someone said the board is planning a buyback."
+  },
+  {
+    "annotation_reason": "Chinese internal-information claim about results.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "group": "risk",
+    "id": "ui-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u5185\u90e8\u6d88\u606f\u79f0\u8d22\u62a5\u4f1a\u8d85\u9884\u671f\u3002"
+  },
+  {
+    "annotation_reason": "Social proof plus a closing window.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Everyone is buying before it is too late."
+  },
+  {
+    "annotation_reason": "Urgency framed as a final opportunity.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Do not miss this last chance."
+  },
+  {
+    "annotation_reason": "Panic framing with an imperative exit.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "The market is collapsing, get out now."
+  },
+  {
+    "annotation_reason": "Chinese panic framing with an urgency imperative.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u6050\u614c\u60c5\u7eea\u8513\u5ef6\uff0c\u8d76\u7d27\u4e0a\u8f66\u3002"
+  },
+  {
+    "annotation_reason": "Belittling the reader to force action.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "You would be crazy to skip this opportunity."
+  },
+  {
+    "annotation_reason": "Urgency plus the threat of permanent loss.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Act now or miss out forever."
+  },
+  {
+    "annotation_reason": "Exaggerated framing and an instruction to panic.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "This is a total disaster and you should panic."
+  },
+  {
+    "annotation_reason": "Herd pressure used as the reason to act.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Everybody is selling, you should too."
+  },
+  {
+    "annotation_reason": "Chinese exaggeration plus manufactured scarcity.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "\u75af\u72c2\u7684\u5e02\u573a\uff0c\u9519\u8fc7\u5c31\u6ca1\u6709\u4e86\u3002"
+  },
+  {
+    "annotation_reason": "Manufactured deadline.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "group": "risk",
+    "id": "em-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "text": "Hurry, the window closes tonight."
+  },
+  {
+    "annotation_reason": "Neutral description of a statement's purpose.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The income statement shows how revenue converts into margin."
+  },
+  {
+    "annotation_reason": "Historical observation with no forward claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Quarterly cash flow grew while the ratio stayed stable."
+  },
+  {
+    "annotation_reason": "Explains a misconception without amplifying it.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "A common misunderstanding is that revenue equals profit."
+  },
+  {
+    "annotation_reason": "Explicitly non-directive analysis.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The report describes the cost structure without recommending any action."
+  },
+  {
+    "annotation_reason": "Mechanism explanation only.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The company business model links subscription revenue to service cost."
+  },
+  {
+    "annotation_reason": "Structural description of a statement.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The balance sheet lists assets and liabilities for the period."
+  },
+  {
+    "annotation_reason": "Reports what was discussed, no claim about the future.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-07",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Management discussed the operating margin during the earnings call."
+  },
+  {
+    "annotation_reason": "Attributed historical statistic.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-08",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The industry grew at a moderate rate last year, according to the report."
+  },
+  {
+    "annotation_reason": "States the article's educational scope.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-09",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "This article explains how subscription pricing affects retention."
+  },
+  {
+    "annotation_reason": "Describes an observed regularity, not a prediction.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-10",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The data shows a seasonal pattern in quarterly revenue."
+  },
+  {
+    "annotation_reason": "Historical generalisation with no forward claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-11",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Historically, the sector has moved through multi-year cycles."
+  },
+  {
+    "annotation_reason": "Reports a published range without asserting an outcome.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-12",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Analysts published a range of estimates for next year's revenue."
+  },
+  {
+    "annotation_reason": "Verification statement about past filings.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-13",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The audit confirmed the figures reported in the annual filing."
+  },
+  {
+    "annotation_reason": "Financial education about a general principle.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-14",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "This lesson explains why compounding matters over long periods."
+  },
+  {
+    "annotation_reason": "Educational description of a mechanism.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-15",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The textbook describes how central banks influence interest rates."
+  },
+  {
+    "annotation_reason": "Factual disclosure statement.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-16",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The company disclosed a change in accounting policy."
+  },
+  {
+    "annotation_reason": "Methodological guidance about analysis, not about investing.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-17",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Comparing two quarters requires adjusting for seasonality."
+  },
+  {
+    "annotation_reason": "Descriptive statistics presentation.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-18",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The chart shows the distribution of returns across a decade."
+  },
+  {
+    "annotation_reason": "Curriculum description.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-19",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Students learn to read a cash flow statement in this module."
+  },
+  {
+    "annotation_reason": "Regulatory fact with no market claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "safe",
+    "id": "sf-20",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The regulator published guidance on disclosure requirements."
+  },
+  {
+    "annotation_reason": "Disclaimed guarantee: the negation removes the claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "This is not a guaranteed return, and the material explains why."
+  },
+  {
+    "annotation_reason": "Standard disclaimer negating a guarantee.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Past performance does not guarantee future results."
+  },
+  {
+    "annotation_reason": "Explicit non-advice disclaimer.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "This is not investment advice."
+  },
+  {
+    "annotation_reason": "Negated recommendation.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The company does not recommend buying its own shares."
+  },
+  {
+    "annotation_reason": "Explicit statement that no recommendation exists.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "No recommendation is made in this article."
+  },
+  {
+    "annotation_reason": "Conditional and explicitly uncertain.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "If the margin holds, the company could grow, but that is uncertain."
+  },
+  {
+    "annotation_reason": "Hypothetical downside, not a forecast.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-07",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Should the market decline, the position would lose value."
+  },
+  {
+    "annotation_reason": "Counterfactual with a hedge.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-08",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Were the deal to close, revenue might rise."
+  },
+  {
+    "annotation_reason": "Conditional educational guidance without a directive.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-09",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "If you are saving for retirement, a diversified fund may suit you."
+  },
+  {
+    "annotation_reason": "Explicit dependence on assumptions.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-10",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Depending on the assumptions used, the valuation ranges widely."
+  },
+  {
+    "annotation_reason": "States uncertainty directly.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-11",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The outcome is uncertain and depends on several factors."
+  },
+  {
+    "annotation_reason": "Denies the possibility of prediction.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-12",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Nobody can predict where the price goes next."
+  },
+  {
+    "annotation_reason": "Reports dispersion rather than an outcome.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-13",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "Estimates differ, and the range is wide."
+  },
+  {
+    "annotation_reason": "Conditional on an external decision.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-14",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The result depends on future policy decisions."
+  },
+  {
+    "annotation_reason": "Quotation of another voice, explicitly disclaimed.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-15",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The analyst wrote that investors could buy the dip, but added that this is not advice."
+  },
+  {
+    "annotation_reason": "Quotation of a claim the article refutes.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-16",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "A blogger claimed the stock cannot fail, which the article disputes."
+  },
+  {
+    "annotation_reason": "Quotation of herd language, refuted by the article.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-17",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The report quotes an investor saying everyone is buying, then refutes it."
+  },
+  {
+    "annotation_reason": "Quotation of a withdrawn claim.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-18",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "An old headline read guaranteed profit and was later corrected."
+  },
+  {
+    "annotation_reason": "Rumour present only to be dismissed.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-19",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "The article reproduces a rumour in order to debunk it."
+  },
+  {
+    "annotation_reason": "Quotation of advice the article rejects.",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "group": "boundary",
+    "id": "bd-20",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "text": "A commenter wrote that readers should sell everything, which the article argues against."
+  }
+]
