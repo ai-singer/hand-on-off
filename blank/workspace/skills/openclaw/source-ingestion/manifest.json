@@ -1,0 +1,7 @@
+{
+  "name": "source-ingestion",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "capabilities": ["normalize-video", "normalize-document", "normalize-data", "normalize-image"],
+  "test_command": "python -m unittest tests.deployment.test_skill_adapters -v"
+}

@@ -1,0 +1,7 @@
+{
+  "name": "unified-distillation",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "capabilities": ["classify-material", "extract-common-signals", "apply-creator-plugin", "validate-artifact"],
+  "test_command": "python -m unittest tests.deployment.test_skill_adapters -v"
+}

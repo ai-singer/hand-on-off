@@ -1,0 +1,7 @@
+{
+  "name": "quality-review",
+  "version": "1.0.0",
+  "entrypoint": "SKILL.md",
+  "capabilities": ["evaluate-coverage", "apply-domain-rubric", "enforce-risk-gate"],
+  "test_command": "python -m unittest tests.deployment.test_skill_adapters -v"
+}
