@@ -19,7 +19,7 @@ from __future__ import annotations
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Iterable, Mapping
 
 from .benchmark_registry import BenchmarkRecord, BenchmarkRegistry
 from .evaluator import KeywordRiskEvaluator, RiskIntentEvaluator
@@ -173,13 +173,21 @@ def write_baseline(
     registry: BenchmarkRegistry | None = None,
     *,
     evaluators: Mapping[str, type[RiskIntentEvaluator]] | None = None,
+    versions: Iterable[str] | None = None,
 ) -> tuple[Path, ...]:
-    """Record the current scores as the baseline for each benchmark version."""
+    """Record the current scores as the baseline for each benchmark version.
+
+    `versions` restricts the write to a named subset, so adding a benchmark
+    version does not require rewriting every recorded baseline.
+    """
 
     active = registry if registry is not None else BenchmarkRegistry()
     factories = evaluators if evaluators is not None else EVALUATORS
+    wanted = None if versions is None else set(versions)
     written: list[Path] = []
     for record in active.list_benchmarks():
+        if wanted is not None and record.version not in wanted:
+            continue
         payload = {
             "evaluators": {
                 name: snapshot(record, active, factory())

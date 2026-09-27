@@ -7,7 +7,9 @@ from pathlib import Path
 
 from risk_evaluation.benchmark_registry import (
     ANNOTATION_PROTOCOL,
+    ANNOTATION_PROTOCOL_V2,
     ANNOTATION_VERSION,
+    ANNOTATION_VERSION_V2,
     BENCHMARK_EXPORTS,
     CASES_NAME,
     LABELS_NAME,
@@ -27,13 +29,23 @@ class RegistryLookupTests(unittest.TestCase):
     def setUp(self) -> None:
         self.registry = BenchmarkRegistry()
 
-    def test_registry_lists_both_versions(self) -> None:
+    def test_registry_lists_every_versions(self) -> None:
+        """Phase 7.5 extended the registry from two versions to four."""
+
         keys = {
             (record.benchmark_id, record.version)
             for record in self.registry.list_benchmarks()
         }
 
-        self.assertEqual(keys, {("semantic", "v1"), ("semantic", "v2")})
+        self.assertEqual(
+            keys,
+            {
+                ("semantic", "v1"),
+                ("semantic", "v2"),
+                ("semantic", "v3"),
+                ("semantic", "v4"),
+            },
+        )
 
     def test_get_by_id_and_version(self) -> None:
         record = self.registry.get("semantic", "v2")
@@ -77,10 +89,27 @@ class RegistryManifestTests(unittest.TestCase):
                 self.assertIn(field, payload, record.version)
 
     def test_manifest_records_the_annotation_contract(self) -> None:
+        """Each version names the guide it was labelled under.
+
+        v1 and v2 were labelled under guide v1; Phase 7.5's v3 and v4 under
+        guide v2. A version's protocol is fixed at export and never rewritten.
+        """
+
+        expected = {
+            "v1": (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
+            "v2": (ANNOTATION_VERSION, ANNOTATION_PROTOCOL),
+            "v3": (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+            "v4": (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+        }
+        seen = set()
         for record in self.registry.list_benchmarks():
-            self.assertEqual(record.annotation_version, ANNOTATION_VERSION)
-            self.assertEqual(record.annotation_protocol, ANNOTATION_PROTOCOL)
+            version, protocol = expected[record.version]
+            self.assertEqual(record.annotation_version, version)
+            self.assertEqual(record.annotation_protocol, protocol)
             self.assertIn("RISK_ANNOTATION_GUIDE", record.annotation_protocol)
+            seen.add(record.version)
+
+        self.assertEqual(seen, set(expected))
 
     def test_status_is_a_known_value(self) -> None:
         for record in self.registry.list_benchmarks():

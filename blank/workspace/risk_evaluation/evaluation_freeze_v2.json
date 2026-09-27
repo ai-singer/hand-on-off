@@ -1,0 +1,26 @@
+{
+  "annotation_protocol": "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0",
+  "annotation_version": "2.0.0",
+  "benchmark_hash": "58c3bf8da3e4a2d51ff28440989981021c2eb25a191066ce75f5b69c66c4a0df",
+  "benchmarks": {
+    "semantic/v3": {
+      "case_count": 120,
+      "dataset_hash": "1432cda8ed1d7fc4927b45fe9c0c0fa61aaa82241a20164107e13888e5a7d3f2",
+      "status": "contaminated"
+    },
+    "semantic/v4": {
+      "case_count": 88,
+      "dataset_hash": "8765b6fec4a115a963e107c823a1d162f3e3596ab158971fb66fdaf37af21693",
+      "status": "frozen"
+    }
+  },
+  "config_hash": "d3cb2f0130659f6b592cf2951beca7195327083d2af86540ead593e99025b434",
+  "evaluator_hash": "cbe305aa1b4648c0baf34ecd4a8a78725ec0e2f5aede5b80c145bc2853dd4e10",
+  "evaluator_name": "semantic-intent-v2",
+  "freeze_schema_version": "2.0.0",
+  "governed_benchmark": "semantic/v4",
+  "measured_benchmark": "semantic/v3",
+  "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+  "taxonomy_version": "2.0.0",
+  "timestamp": "2026-09-27T13:15:57Z"
+}

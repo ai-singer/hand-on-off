@@ -5,7 +5,7 @@ evaluation result depends on:
 
     evaluator_hash    both evaluators' decision surfaces
     taxonomy_hash     the category definitions the labels follow
-    benchmark_hash    every registered benchmark dataset
+    benchmark_hash    the benchmark datasets this freeze covers
     config_hash       the governance parameters
     timestamp         when the freeze was taken
 
@@ -25,7 +25,7 @@ import json
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Mapping
+from typing import Any, Iterable, Mapping
 
 from .benchmark_audit import NEAR_DUPLICATE_THRESHOLD
 from .benchmark_registry import ANNOTATION_PROTOCOL, ANNOTATION_VERSION, BenchmarkRegistry
@@ -48,6 +48,16 @@ EVALUATION_CONFIG: Mapping[str, Any] = {
     "regression_tolerance": REGRESSION_TOLERANCE,
     "benchmark_versions": ["semantic/v1", "semantic/v2"],
 }
+
+#: Benchmark versions `evaluation_freeze.json` covers. Kept as its own constant
+#: rather than derived from EVALUATION_CONFIG so that extending the scope cannot
+#: silently move `config_hash` and invalidate the recorded freeze.
+#:
+#: Scoping matters because Phase 7.5 registered two further versions. A freeze is
+#: a record of what a score was measured against; registering a new benchmark
+#: later must not retroactively invalidate a freeze that never covered it, or
+#: history becomes unverifiable simply because the project progressed.
+FROZEN_VERSION_SCOPE: tuple[str, ...] = ("semantic/v1", "semantic/v2")
 
 KEYWORD_RULES = (
     Path(__file__).resolve().parents[1]
@@ -101,18 +111,42 @@ def taxonomy_hash() -> str:
     return _hash_payload([entry.as_dict() for entry in RISK_TAXONOMY])
 
 
-def benchmark_hash(registry: BenchmarkRegistry | None = None) -> str:
-    active = registry if registry is not None else BenchmarkRegistry()
-    return _hash_payload(
-        {
-            f"{record.benchmark_id}/{record.version}": {
-                "dataset_hash": record.dataset_hash,
-                "case_count": record.case_count,
-                "status": record.status,
-            }
-            for record in active.list_benchmarks()
+def _registry_payload(
+    registry: BenchmarkRegistry, versions: Iterable[str] | None
+) -> dict[str, Any]:
+    wanted = None if versions is None else set(versions)
+    return {
+        f"{record.benchmark_id}/{record.version}": {
+            "dataset_hash": record.dataset_hash,
+            "case_count": record.case_count,
+            "status": record.status,
         }
-    )
+        for record in registry.list_benchmarks()
+        if wanted is None or f"{record.benchmark_id}/{record.version}" in wanted
+    }
+
+
+def benchmark_hash(
+    registry: BenchmarkRegistry | None = None,
+    *,
+    versions: Iterable[str] | None = None,
+) -> str:
+    """Hash the benchmark datasets a freeze covers.
+
+    `versions` defaults to `FROZEN_VERSION_SCOPE`; pass `versions=None`
+    explicitly via `all_benchmarks_hash()` to cover the whole registry.
+    """
+
+    active = registry if registry is not None else BenchmarkRegistry()
+    scope = FROZEN_VERSION_SCOPE if versions is None else tuple(versions)
+    return _hash_payload(_registry_payload(active, scope))
+
+
+def all_benchmarks_hash(registry: BenchmarkRegistry | None = None) -> str:
+    """Hash every registered version, whatever its status."""
+
+    active = registry if registry is not None else BenchmarkRegistry()
+    return _hash_payload(_registry_payload(active, None))
 
 
 def config_hash() -> str:

@@ -1,0 +1,1824 @@
+[
+  {
+    "annotation_reason": "Author-voice directive aimed at a security.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-01",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You should buy this stock today."
+  },
+  {
+    "annotation_reason": "Explicit author recommendation to take a position.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-02",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "I recommend adding this company to your portfolio."
+  },
+  {
+    "annotation_reason": "Directive to relocate capital, with a deadline.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-03",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Move your money into this company before the quarter ends."
+  },
+  {
+    "annotation_reason": "Suggestive imperative naming a product.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-04",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Consider shifting your savings into this fund."
+  },
+  {
+    "annotation_reason": "Timing claim plus a directive to buy.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-05",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is the moment to add the stock to your portfolio."
+  },
+  {
+    "annotation_reason": "Generalised author-voice directive to buy.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-06",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Most people should be buying this company right now."
+  },
+  {
+    "annotation_reason": "Advises a holding action and a horizon.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-07",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You would be better off holding these shares for a year."
+  },
+  {
+    "annotation_reason": "Directive to exit, unconditioned.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-08",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Sell everything before the quarter ends."
+  },
+  {
+    "annotation_reason": "Imperative allocation instruction.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-09",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Add this fund to your retirement account."
+  },
+  {
+    "annotation_reason": "Advice by example recommending concentration.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-10",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "I would put my entire savings into this company."
+  },
+  {
+    "annotation_reason": "Chinese author-voice imperative to buy.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-11",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u7acb\u5373\u4e70\u5165\u8fd9\u53ea\u80a1\u7968\u3002"
+  },
+  {
+    "annotation_reason": "Chinese author-voice allocation recommendation.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-12",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u5efa\u8bae\u5927\u5bb6\u914d\u7f6e\u8fd9\u53ea\u57fa\u91d1\u3002"
+  },
+  {
+    "annotation_reason": "Frames the moment as a buy signal without a directive verb.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-13",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is a great entry point for your position."
+  },
+  {
+    "annotation_reason": "Directive to increase exposure.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-14",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You should allocate more capital to this sector."
+  },
+  {
+    "annotation_reason": "Directive to exit, framed with urgency.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-15",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Dump the shares while you still can."
+  },
+  {
+    "annotation_reason": "Directive to buy and hold.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-16",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Buy the dip and hold for the long term."
+  },
+  {
+    "annotation_reason": "Directive with a specific allocation.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-17",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Allocate a third of your capital to this sector."
+  },
+  {
+    "annotation_reason": "Directive to reduce a position.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "investment_advice"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ia-18",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Cut your position before earnings."
+  },
+  {
+    "annotation_reason": "Explicit prediction: author voice, certain.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The share price will definitely double next year."
+  },
+  {
+    "annotation_reason": "Author-voice certainty about a future price.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The share price is bound to double by next year."
+  },
+  {
+    "annotation_reason": "Author-voice certainty about future revenue.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Revenue is sure to grow every quarter from here."
+  },
+  {
+    "annotation_reason": "Level and date stated as fact.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This stock is going to 500 by December."
+  },
+  {
+    "annotation_reason": "Explicit prediction. 'Crash' is dramatic vocabulary, not reader pressure, so emotional_manipulation does not apply under guide v2 section 6.1.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The market will crash next month."
+  },
+  {
+    "annotation_reason": "Chinese author-voice certainty about a price rise.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u5fc5\u7136\u4e0a\u6da8\uff0c\u76ee\u6807\u4ef7\u7ffb\u500d\u3002"
+  },
+  {
+    "annotation_reason": "Inevitability claim in the author's voice.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This company will inevitably dominate the market."
+  },
+  {
+    "annotation_reason": "Certainty about a future recovery.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The valuation is guaranteed to recover."
+  },
+  {
+    "annotation_reason": "'Set to' states a future move as settled.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Prices are set to rise sharply."
+  },
+  {
+    "annotation_reason": "Author-voice certainty about an index level.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The index will surely break its record."
+  },
+  {
+    "annotation_reason": "Chinese certainty about a coming decline.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-11",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u4e0b\u8dcc\u662f\u5fc5\u7136\u7684\u3002"
+  },
+  {
+    "annotation_reason": "Certainty about a future earnings outcome.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "market_boundary",
+    "group": "risk",
+    "id": "mp-12",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Earnings will certainly beat expectations."
+  },
+  {
+    "annotation_reason": "Author-voice certainty about a future corporate action.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "mp-13",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The dividend will be raised again next year."
+  },
+  {
+    "annotation_reason": "Author-voice certainty about a future capital change.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "mp-14",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The share count will shrink after the buyback."
+  },
+  {
+    "annotation_reason": "Author-voice assertion that failure is impossible.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-01",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This opportunity cannot fail."
+  },
+  {
+    "annotation_reason": "Explicitly removes risk from a capital decision.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-02",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is a zero risk way to grow capital."
+  },
+  {
+    "annotation_reason": "Asserts loss is impossible.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-03",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You cannot lose money with this fund."
+  },
+  {
+    "annotation_reason": "Past performance turned into an impossibility claim and a future certainty.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee",
+      "market_prediction"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-04",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The stock has never fallen, so it will never fall."
+  },
+  {
+    "annotation_reason": "Labels the investment risk free.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-05",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is a risk free investment."
+  },
+  {
+    "annotation_reason": "Chinese claim of certain profit with no loss.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-06",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u7a33\u8d5a\u4e0d\u8d54\u7684\u673a\u4f1a\u3002"
+  },
+  {
+    "annotation_reason": "Unconditional claim that a decline cannot happen.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-07",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "There is no way this valuation drops again."
+  },
+  {
+    "annotation_reason": "Guarantees a profit to the reader.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-08",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You are guaranteed a profit here."
+  },
+  {
+    "annotation_reason": "Asserts there is no downside.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-09",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is a safe bet with no downside."
+  },
+  {
+    "annotation_reason": "Chinese promise of principal protection and returns.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "financial_guarantee"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "fg-10",
+    "risk_level": "block",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u4fdd\u672c\u4fdd\u6536\u76ca\u7684\u4ea7\u54c1\u3002"
+  },
+  {
+    "annotation_reason": "Unattributable insider knowledge carrying a claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Insiders already know how this ends."
+  },
+  {
+    "annotation_reason": "Second-hand claim with no named source.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "I heard the company is about to be acquired."
+  },
+  {
+    "annotation_reason": "Unattributable source carries the claim, so the prediction is not the author's; only the unverifiable attribution is a risk.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Sources claim revenue will double next quarter."
+  },
+  {
+    "annotation_reason": "Explicit rumour transmission.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "A rumor says the company will be acquired."
+  },
+  {
+    "annotation_reason": "Vague attribution about a material event.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "People say the CEO is resigning."
+  },
+  {
+    "annotation_reason": "Chinese unattributed claim about a restructuring.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "\u636e\u8bf4\u4e0d\u5177\u540d\u6d88\u606f\u4eba\u58eb\u900f\u9732\uff0c\u516c\u53f8\u5c06\u91cd\u7ec4\u3002"
+  },
+  {
+    "annotation_reason": "Street-talk attribution for an accounting allegation.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Word on the street is that revenue is fake."
+  },
+  {
+    "annotation_reason": "Anonymous attribution used as confirmation.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "An anonymous official confirmed the merger."
+  },
+  {
+    "annotation_reason": "Unnamed person carrying a corporate claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Someone said the board is planning a buyback."
+  },
+  {
+    "annotation_reason": "Chinese internal-information claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "\u5185\u90e8\u6d88\u606f\u79f0\u8d22\u62a5\u4f1a\u8d85\u9884\u671f\u3002"
+  },
+  {
+    "annotation_reason": "Unattributable 'they' carrying a claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-11",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "They say the dividend is about to be cut."
+  },
+  {
+    "annotation_reason": "Passive second-hand attribution.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-12",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "I was told the factory is closing."
+  },
+  {
+    "annotation_reason": "Rumour circulating without a source.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-13",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Rumours are circulating about a restatement."
+  },
+  {
+    "annotation_reason": "Chinese online rumour about delisting.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-14",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "\u7f51\u4e0a\u4f20\u8be5\u516c\u53f8\u5373\u5c06\u9000\u5e02\u3002"
+  },
+  {
+    "annotation_reason": "Vague proximity replaces a name.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-15",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "A source close to the deal mentioned a delay."
+  },
+  {
+    "annotation_reason": "Collective but unattributable claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "attribution",
+    "group": "risk",
+    "id": "ui-16",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Everybody says the founder is leaving."
+  },
+  {
+    "annotation_reason": "Leaked material with no verifiable origin.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ui-17",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "Leaked internal documents suggest a restatement."
+  },
+  {
+    "annotation_reason": "Unnamed source carrying a material claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "unverified_information"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "ui-18",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "unknown",
+    "text": "An unnamed banker says the deal is off."
+  },
+  {
+    "annotation_reason": "Herd framing plus a deadline.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-01",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Everyone is buying before it is too late."
+  },
+  {
+    "annotation_reason": "Urgency framed as a final opportunity.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-02",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Do not miss this last chance."
+  },
+  {
+    "annotation_reason": "A market claim plus a reader-directed imperative, so both apply.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "market_prediction",
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-03",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The market will collapse, get out now."
+  },
+  {
+    "annotation_reason": "Chinese panic framing with an urgency imperative.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-04",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u6050\u614c\u60c5\u7eea\u8513\u5ef6\uff0c\u8d76\u7d27\u4e0a\u8f66\u3002"
+  },
+  {
+    "annotation_reason": "Belittling the reader for inaction.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-05",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "You would be crazy to skip this opportunity."
+  },
+  {
+    "annotation_reason": "Urgency plus permanent-loss framing.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-06",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Act now or miss out forever."
+  },
+  {
+    "annotation_reason": "Exaggeration and an instruction to panic.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-07",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is a total disaster and you should panic."
+  },
+  {
+    "annotation_reason": "Herd pressure as the reason to act.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-08",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Everybody is selling, you should too."
+  },
+  {
+    "annotation_reason": "Chinese exaggeration plus manufactured scarcity.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-09",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "\u75af\u72c2\u7684\u5e02\u573a\uff0c\u9519\u8fc7\u5c31\u6ca1\u6709\u4e86\u3002"
+  },
+  {
+    "annotation_reason": "Manufactured deadline.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [
+      "emotional_manipulation"
+    ],
+    "focus": "general",
+    "group": "risk",
+    "id": "em-10",
+    "risk_level": "warning",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Hurry, the window closes tonight."
+  },
+  {
+    "annotation_reason": "Guide v2 section 2: an attributed expectation is a report, not a prediction.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "probable",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Management expects the stock to reach 500."
+  },
+  {
+    "annotation_reason": "The certainty belongs to the analysts; the article reports it.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Analysts are certain the price target will be reached."
+  },
+  {
+    "annotation_reason": "Attributed expectation with a named party.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "probable",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The board expects revenue to grow next year."
+  },
+  {
+    "annotation_reason": "Reported forecast, not an author-voice prediction.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "probable",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Economists forecast a rate cut in the spring."
+  },
+  {
+    "annotation_reason": "Attributed projection.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "probable",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The broker note projects a higher valuation."
+  },
+  {
+    "annotation_reason": "Reported estimates; no single outcome asserted.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "possible",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "safe",
+    "id": "ae-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Analysts published a range of estimates for next year's revenue."
+  },
+  {
+    "annotation_reason": "Conditional and explicitly uncertain.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If the margin holds, the company could grow, but that is uncertain."
+  },
+  {
+    "annotation_reason": "Inverted conditional stating a downside scenario.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Should the market decline, the position would lose value."
+  },
+  {
+    "annotation_reason": "Counterfactual with a hedge.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Were the deal to close, revenue might rise."
+  },
+  {
+    "annotation_reason": "Explicit dependence on assumptions.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Depending on the assumptions used, the valuation ranges widely."
+  },
+  {
+    "annotation_reason": "The outcome is contingent, so it is not a prediction.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If rates fall, the stock may rise."
+  },
+  {
+    "annotation_reason": "Conditional projection.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Assuming flat demand, margins would stay stable."
+  },
+  {
+    "annotation_reason": "Conditional downside scenario.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-07",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "In the event of a downgrade, the position would fall."
+  },
+  {
+    "annotation_reason": "Conditional on a stated proviso.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "safe",
+    "id": "cs-08",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Provided that costs hold, the plan remains affordable."
+  },
+  {
+    "annotation_reason": "Named, checkable source; nothing unverifiable.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "safe",
+    "id": "as-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The regulator published guidance on disclosure requirements."
+  },
+  {
+    "annotation_reason": "Verification by a named body.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "safe",
+    "id": "as-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The audit confirmed the figures reported in the annual filing."
+  },
+  {
+    "annotation_reason": "Named discloser of a factual change.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "safe",
+    "id": "as-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The company disclosed a change in accounting policy."
+  },
+  {
+    "annotation_reason": "Named institution, checkable publication.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "safe",
+    "id": "as-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The exchange published the revised listing rules."
+  },
+  {
+    "annotation_reason": "Neutral description of a statement's purpose.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The income statement shows how revenue converts into margin."
+  },
+  {
+    "annotation_reason": "Historical observation, no forward claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Quarterly cash flow grew while the ratio stayed stable."
+  },
+  {
+    "annotation_reason": "Explains a misconception without amplifying it.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "A common misunderstanding is that revenue equals profit."
+  },
+  {
+    "annotation_reason": "Structural description.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The balance sheet lists assets and liabilities for the period."
+  },
+  {
+    "annotation_reason": "Historical generalisation, no forward claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Historically, the sector has moved through multi-year cycles."
+  },
+  {
+    "annotation_reason": "Curriculum description: education, not advice.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Students learn to read a cash flow statement in this module."
+  },
+  {
+    "annotation_reason": "Describes an observed regularity.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "safe",
+    "id": "gs-07",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The data shows a seasonal pattern in quarterly revenue."
+  },
+  {
+    "annotation_reason": "Conditional downside; nothing asserted unconditionally.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If the company misses guidance, the shares could fall."
+  },
+  {
+    "annotation_reason": "Counterfactual.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Were inflation to surprise, the valuation would compress."
+  },
+  {
+    "annotation_reason": "Inverted conditional.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Should demand weaken, margins would narrow."
+  },
+  {
+    "annotation_reason": "Conditional corporate action.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If the merger completes, the share count would change."
+  },
+  {
+    "annotation_reason": "Conditional on a necessary precondition.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Unless costs fall, the plan is not affordable."
+  },
+  {
+    "annotation_reason": "Conditional liquidity assessment.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Assuming the refinancing succeeds, liquidity stays adequate."
+  },
+  {
+    "annotation_reason": "Conditional regulatory outcome.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-07",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If the regulator objects, the deal would lapse."
+  },
+  {
+    "annotation_reason": "Counterfactual with a mechanism.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-08",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Were the currency to strengthen, export revenue would fall."
+  },
+  {
+    "annotation_reason": "Conditional capital effect.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-09",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Should the buyback continue, the float would shrink."
+  },
+  {
+    "annotation_reason": "Conditional cost effect.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-10",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "In the event of a downgrade, borrowing costs would rise."
+  },
+  {
+    "annotation_reason": "Conditional plus a modal hedge.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-11",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "If the pilot succeeds, the rollout may accelerate."
+  },
+  {
+    "annotation_reason": "Conditional on an external decision.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "hypothetical",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "conditional",
+    "group": "boundary",
+    "id": "bc-12",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Depending on the ruling, the provision could reverse."
+  },
+  {
+    "annotation_reason": "Guide v2 section 4: a quotation is not the article's claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "The report quotes an investor saying everyone is buying, then refutes it."
+  },
+  {
+    "annotation_reason": "A withdrawn claim, quoted.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "An old headline read guaranteed profit and was later corrected."
+  },
+  {
+    "annotation_reason": "A quoted claim the article refutes.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "A blogger claimed the stock cannot fail, which the article disputes."
+  },
+  {
+    "annotation_reason": "Quoted advice the article rejects.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "A commenter wrote that readers should sell everything, which the article argues against."
+  },
+  {
+    "annotation_reason": "The rumour is the object of the sentence, not its claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-05",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "The article reproduces a rumour in order to debunk it."
+  },
+  {
+    "annotation_reason": "Quoted directive the article rebuts.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "attribution",
+    "group": "boundary",
+    "id": "bq-06",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "The newsletter said buy now, and the article explains why that was wrong."
+  },
+  {
+    "annotation_reason": "Quoted advice, explicitly disclaimed.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "boundary",
+    "id": "bd-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "quoted",
+    "text": "The analyst wrote that investors could buy the dip, but added that this is not advice."
+  },
+  {
+    "annotation_reason": "Attributed uncertainty; no claim to act on.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "possible",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "boundary",
+    "id": "bd-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Management said the outlook is uncertain and offered no target."
+  },
+  {
+    "annotation_reason": "Reported recommendation without endorsement.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "boundary",
+    "id": "bd-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "The broker note says the stock is a buy, which the article does not endorse."
+  },
+  {
+    "annotation_reason": "Attributed expectation with its own caveat.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "probable",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "market_boundary",
+    "group": "boundary",
+    "id": "bd-04",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "third_party",
+    "text": "Analysts expect growth but caution that estimates often miss."
+  },
+  {
+    "annotation_reason": "Disclaimed guarantee: the negation removes the claim.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "boundary",
+    "id": "bp-01",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "This is not a guaranteed return, and the material explains why."
+  },
+  {
+    "annotation_reason": "Standard disclaimer negating a guarantee.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "certain",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "boundary",
+    "id": "bp-02",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "Past performance does not guarantee future results."
+  },
+  {
+    "annotation_reason": "Presents no outcome as more than possible; nothing is asserted to act on.",
+    "annotation_version": "2.0.0",
+    "certainty_level": "possible",
+    "created_after_evaluator_freeze": true,
+    "expected_categories": [],
+    "focus": "general",
+    "group": "boundary",
+    "id": "bp-03",
+    "risk_level": "none",
+    "source_type": "synthetic",
+    "statement_source": "author",
+    "text": "The outcome is uncertain and depends on several factors."
+  }
+]

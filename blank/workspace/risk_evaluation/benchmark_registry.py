@@ -25,6 +25,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
 
+from . import benchmark_v2
 from .benchmark import BENCHMARK_CASES
 from .independent_benchmark import (
     ANNOTATION_FIELDS,
@@ -124,6 +125,8 @@ def build_record(
     status: str = FROZEN,
     source: str = "",
     created_at: str = CREATED_AT,
+    annotation_version: str = ANNOTATION_VERSION,
+    annotation_protocol: str = ANNOTATION_PROTOCOL,
 ) -> BenchmarkRecord:
     if status not in STATUSES:
         raise BenchmarkRegistryError(
@@ -138,8 +141,8 @@ def build_record(
         dataset_hash=dataset_hash(records),
         case_count=len(records),
         categories=_categories(records),
-        annotation_version=ANNOTATION_VERSION,
-        annotation_protocol=ANNOTATION_PROTOCOL,
+        annotation_version=annotation_version,
+        annotation_protocol=annotation_protocol,
         created_by=CREATED_BY,
         status=status,
         group_counts=_group_counts(records),
@@ -199,6 +202,33 @@ BENCHMARK_STATUS: Mapping[tuple[str, str], str] = {
 BENCHMARK_SOURCE: Mapping[tuple[str, str], str] = {
     ("semantic", "v1"): "phase-7.3 independent benchmark, measured as published",
     ("semantic", "v2"): "phase-7.4 decontaminated subset of semantic v1",
+}
+
+#: Annotation contract for versions labelled under the v2 guide.
+ANNOTATION_VERSION_V2 = "2.0.0"
+ANNOTATION_PROTOCOL_V2 = "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0"
+
+#: Record-based exports, used by versions whose annotation records carry fields
+#: the v1 `AnnotationCase` does not model. Added in Phase 7.5; v1 and v2 keep
+#: their original export path so their bytes do not change.
+RECORD_EXPORTS: Mapping[tuple[str, str], Any] = {
+    ("semantic", "v3"): lambda: benchmark_v2.v3_records(),
+    ("semantic", "v4"): lambda: benchmark_v2.v4_records(),
+}
+
+RECORD_STATUS: Mapping[tuple[str, str], str] = {
+    ("semantic", "v3"): CONTAMINATED,
+    ("semantic", "v4"): FROZEN,
+}
+
+RECORD_SOURCE: Mapping[tuple[str, str], str] = {
+    ("semantic", "v3"): "phase-7.5 benchmark labelled under RISK_ANNOTATION_GUIDE_v2, measured as published",
+    ("semantic", "v4"): "phase-7.5 decontaminated subset of semantic v3",
+}
+
+RECORD_ANNOTATION: Mapping[tuple[str, str], tuple[str, str]] = {
+    ("semantic", "v3"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
+    ("semantic", "v4"): (ANNOTATION_VERSION_V2, ANNOTATION_PROTOCOL_V2),
 }
 
 
@@ -295,42 +325,79 @@ class BenchmarkRegistry:
         )
 
     def export(self, key: tuple[str, str] | None = None) -> tuple[Path, ...]:
-        """Write the benchmarks this package publishes."""
+        """Write every benchmark this package publishes."""
 
         written: list[Path] = []
         for (benchmark_id, version), cases in BENCHMARK_EXPORTS.items():
             if key is not None and key != (benchmark_id, version):
                 continue
-            records = _records_for(cases)
-            record = build_record(
-                benchmark_id,
-                version,
-                records,
-                status=BENCHMARK_STATUS[(benchmark_id, version)],
-                source=BENCHMARK_SOURCE[(benchmark_id, version)],
-            )
-            directory = self.directory(record)
-            directory.mkdir(parents=True, exist_ok=True)
-            (directory / MANIFEST_NAME).write_text(
-                json.dumps(record.as_dict(), indent=2, sort_keys=True) + "\n",
-                encoding="utf-8",
-            )
-            (directory / CASES_NAME).write_text(
-                json.dumps(list(records), indent=2, sort_keys=True) + "\n",
-                encoding="utf-8",
-            )
-            (directory / LABELS_NAME).write_text(
-                json.dumps(_labels_payload(records), indent=2, sort_keys=True) + "\n",
-                encoding="utf-8",
-            )
             written.extend(
-                (
-                    directory / MANIFEST_NAME,
-                    directory / CASES_NAME,
-                    directory / LABELS_NAME,
+                self._write(
+                    benchmark_id,
+                    version,
+                    _records_for(cases),
+                    status=BENCHMARK_STATUS[(benchmark_id, version)],
+                    source=BENCHMARK_SOURCE[(benchmark_id, version)],
+                )
+            )
+        for (benchmark_id, version), provider in RECORD_EXPORTS.items():
+            if key is not None and key != (benchmark_id, version):
+                continue
+            annotation_version, annotation_protocol = RECORD_ANNOTATION[
+                (benchmark_id, version)
+            ]
+            written.extend(
+                self._write(
+                    benchmark_id,
+                    version,
+                    provider(),
+                    status=RECORD_STATUS[(benchmark_id, version)],
+                    source=RECORD_SOURCE[(benchmark_id, version)],
+                    annotation_version=annotation_version,
+                    annotation_protocol=annotation_protocol,
                 )
             )
         return tuple(written)
+
+    def _write(
+        self,
+        benchmark_id: str,
+        version: str,
+        records: Sequence[Mapping[str, Any]],
+        *,
+        status: str,
+        source: str,
+        annotation_version: str = ANNOTATION_VERSION,
+        annotation_protocol: str = ANNOTATION_PROTOCOL,
+    ) -> tuple[Path, ...]:
+        record = build_record(
+            benchmark_id,
+            version,
+            records,
+            status=status,
+            source=source,
+            annotation_version=annotation_version,
+            annotation_protocol=annotation_protocol,
+        )
+        directory = self.directory(record)
+        directory.mkdir(parents=True, exist_ok=True)
+        (directory / MANIFEST_NAME).write_text(
+            json.dumps(record.as_dict(), indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        (directory / CASES_NAME).write_text(
+            json.dumps(list(records), indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        (directory / LABELS_NAME).write_text(
+            json.dumps(_labels_payload(records), indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+        return (
+            directory / MANIFEST_NAME,
+            directory / CASES_NAME,
+            directory / LABELS_NAME,
+        )
 
 
 def annotation_field_names() -> tuple[str, ...]:

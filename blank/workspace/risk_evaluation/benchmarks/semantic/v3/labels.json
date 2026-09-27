@@ -1,0 +1,480 @@
+{
+  "annotation_version": "1.0.0",
+  "by_case": {
+    "ae-01": [],
+    "ae-02": [],
+    "ae-03": [],
+    "ae-04": [],
+    "ae-05": [],
+    "ae-06": [],
+    "as-01": [],
+    "as-02": [],
+    "as-03": [],
+    "as-04": [],
+    "bc-01": [],
+    "bc-02": [],
+    "bc-03": [],
+    "bc-04": [],
+    "bc-05": [],
+    "bc-06": [],
+    "bc-07": [],
+    "bc-08": [],
+    "bc-09": [],
+    "bc-10": [],
+    "bc-11": [],
+    "bc-12": [],
+    "bd-01": [],
+    "bd-02": [],
+    "bd-03": [],
+    "bd-04": [],
+    "bp-01": [],
+    "bp-02": [],
+    "bp-03": [],
+    "bq-01": [],
+    "bq-02": [],
+    "bq-03": [],
+    "bq-04": [],
+    "bq-05": [],
+    "bq-06": [],
+    "cs-01": [],
+    "cs-02": [],
+    "cs-03": [],
+    "cs-04": [],
+    "cs-05": [],
+    "cs-06": [],
+    "cs-07": [],
+    "cs-08": [],
+    "em-01": [
+      "emotional_manipulation"
+    ],
+    "em-02": [
+      "emotional_manipulation"
+    ],
+    "em-03": [
+      "market_prediction",
+      "emotional_manipulation"
+    ],
+    "em-04": [
+      "emotional_manipulation"
+    ],
+    "em-05": [
+      "emotional_manipulation"
+    ],
+    "em-06": [
+      "emotional_manipulation"
+    ],
+    "em-07": [
+      "emotional_manipulation"
+    ],
+    "em-08": [
+      "emotional_manipulation"
+    ],
+    "em-09": [
+      "emotional_manipulation"
+    ],
+    "em-10": [
+      "emotional_manipulation"
+    ],
+    "fg-01": [
+      "financial_guarantee"
+    ],
+    "fg-02": [
+      "financial_guarantee"
+    ],
+    "fg-03": [
+      "financial_guarantee"
+    ],
+    "fg-04": [
+      "financial_guarantee",
+      "market_prediction"
+    ],
+    "fg-05": [
+      "financial_guarantee"
+    ],
+    "fg-06": [
+      "financial_guarantee"
+    ],
+    "fg-07": [
+      "financial_guarantee"
+    ],
+    "fg-08": [
+      "financial_guarantee"
+    ],
+    "fg-09": [
+      "financial_guarantee"
+    ],
+    "fg-10": [
+      "financial_guarantee"
+    ],
+    "gs-01": [],
+    "gs-02": [],
+    "gs-03": [],
+    "gs-04": [],
+    "gs-05": [],
+    "gs-06": [],
+    "gs-07": [],
+    "ia-01": [
+      "investment_advice"
+    ],
+    "ia-02": [
+      "investment_advice"
+    ],
+    "ia-03": [
+      "investment_advice"
+    ],
+    "ia-04": [
+      "investment_advice"
+    ],
+    "ia-05": [
+      "investment_advice"
+    ],
+    "ia-06": [
+      "investment_advice"
+    ],
+    "ia-07": [
+      "investment_advice"
+    ],
+    "ia-08": [
+      "investment_advice"
+    ],
+    "ia-09": [
+      "investment_advice"
+    ],
+    "ia-10": [
+      "investment_advice"
+    ],
+    "ia-11": [
+      "investment_advice"
+    ],
+    "ia-12": [
+      "investment_advice"
+    ],
+    "ia-13": [
+      "investment_advice"
+    ],
+    "ia-14": [
+      "investment_advice"
+    ],
+    "ia-15": [
+      "investment_advice"
+    ],
+    "ia-16": [
+      "investment_advice"
+    ],
+    "ia-17": [
+      "investment_advice"
+    ],
+    "ia-18": [
+      "investment_advice"
+    ],
+    "mp-01": [
+      "market_prediction"
+    ],
+    "mp-02": [
+      "market_prediction"
+    ],
+    "mp-03": [
+      "market_prediction"
+    ],
+    "mp-04": [
+      "market_prediction"
+    ],
+    "mp-05": [
+      "market_prediction"
+    ],
+    "mp-06": [
+      "market_prediction"
+    ],
+    "mp-07": [
+      "market_prediction"
+    ],
+    "mp-08": [
+      "market_prediction"
+    ],
+    "mp-09": [
+      "market_prediction"
+    ],
+    "mp-10": [
+      "market_prediction"
+    ],
+    "mp-11": [
+      "market_prediction"
+    ],
+    "mp-12": [
+      "market_prediction"
+    ],
+    "mp-13": [
+      "market_prediction"
+    ],
+    "mp-14": [
+      "market_prediction"
+    ],
+    "ui-01": [
+      "unverified_information"
+    ],
+    "ui-02": [
+      "unverified_information"
+    ],
+    "ui-03": [
+      "unverified_information"
+    ],
+    "ui-04": [
+      "unverified_information"
+    ],
+    "ui-05": [
+      "unverified_information"
+    ],
+    "ui-06": [
+      "unverified_information"
+    ],
+    "ui-07": [
+      "unverified_information"
+    ],
+    "ui-08": [
+      "unverified_information"
+    ],
+    "ui-09": [
+      "unverified_information"
+    ],
+    "ui-10": [
+      "unverified_information"
+    ],
+    "ui-11": [
+      "unverified_information"
+    ],
+    "ui-12": [
+      "unverified_information"
+    ],
+    "ui-13": [
+      "unverified_information"
+    ],
+    "ui-14": [
+      "unverified_information"
+    ],
+    "ui-15": [
+      "unverified_information"
+    ],
+    "ui-16": [
+      "unverified_information"
+    ],
+    "ui-17": [
+      "unverified_information"
+    ],
+    "ui-18": [
+      "unverified_information"
+    ]
+  },
+  "case_count": 120,
+  "category_index": {
+    "emotional_manipulation": [
+      "em-01",
+      "em-02",
+      "em-03",
+      "em-04",
+      "em-05",
+      "em-06",
+      "em-07",
+      "em-08",
+      "em-09",
+      "em-10"
+    ],
+    "financial_guarantee": [
+      "fg-01",
+      "fg-02",
+      "fg-03",
+      "fg-04",
+      "fg-05",
+      "fg-06",
+      "fg-07",
+      "fg-08",
+      "fg-09",
+      "fg-10"
+    ],
+    "investment_advice": [
+      "ia-01",
+      "ia-02",
+      "ia-03",
+      "ia-04",
+      "ia-05",
+      "ia-06",
+      "ia-07",
+      "ia-08",
+      "ia-09",
+      "ia-10",
+      "ia-11",
+      "ia-12",
+      "ia-13",
+      "ia-14",
+      "ia-15",
+      "ia-16",
+      "ia-17",
+      "ia-18"
+    ],
+    "market_prediction": [
+      "em-03",
+      "fg-04",
+      "mp-01",
+      "mp-02",
+      "mp-03",
+      "mp-04",
+      "mp-05",
+      "mp-06",
+      "mp-07",
+      "mp-08",
+      "mp-09",
+      "mp-10",
+      "mp-11",
+      "mp-12",
+      "mp-13",
+      "mp-14"
+    ],
+    "unverified_information": [
+      "ui-01",
+      "ui-02",
+      "ui-03",
+      "ui-04",
+      "ui-05",
+      "ui-06",
+      "ui-07",
+      "ui-08",
+      "ui-09",
+      "ui-10",
+      "ui-11",
+      "ui-12",
+      "ui-13",
+      "ui-14",
+      "ui-15",
+      "ui-16",
+      "ui-17",
+      "ui-18"
+    ]
+  },
+  "group_index": {
+    "boundary": [
+      "bc-01",
+      "bc-02",
+      "bc-03",
+      "bc-04",
+      "bc-05",
+      "bc-06",
+      "bc-07",
+      "bc-08",
+      "bc-09",
+      "bc-10",
+      "bc-11",
+      "bc-12",
+      "bd-01",
+      "bd-02",
+      "bd-03",
+      "bd-04",
+      "bp-01",
+      "bp-02",
+      "bp-03",
+      "bq-01",
+      "bq-02",
+      "bq-03",
+      "bq-04",
+      "bq-05",
+      "bq-06"
+    ],
+    "risk": [
+      "em-01",
+      "em-02",
+      "em-03",
+      "em-04",
+      "em-05",
+      "em-06",
+      "em-07",
+      "em-08",
+      "em-09",
+      "em-10",
+      "fg-01",
+      "fg-02",
+      "fg-03",
+      "fg-04",
+      "fg-05",
+      "fg-06",
+      "fg-07",
+      "fg-08",
+      "fg-09",
+      "fg-10",
+      "ia-01",
+      "ia-02",
+      "ia-03",
+      "ia-04",
+      "ia-05",
+      "ia-06",
+      "ia-07",
+      "ia-08",
+      "ia-09",
+      "ia-10",
+      "ia-11",
+      "ia-12",
+      "ia-13",
+      "ia-14",
+      "ia-15",
+      "ia-16",
+      "ia-17",
+      "ia-18",
+      "mp-01",
+      "mp-02",
+      "mp-03",
+      "mp-04",
+      "mp-05",
+      "mp-06",
+      "mp-07",
+      "mp-08",
+      "mp-09",
+      "mp-10",
+      "mp-11",
+      "mp-12",
+      "mp-13",
+      "mp-14",
+      "ui-01",
+      "ui-02",
+      "ui-03",
+      "ui-04",
+      "ui-05",
+      "ui-06",
+      "ui-07",
+      "ui-08",
+      "ui-09",
+      "ui-10",
+      "ui-11",
+      "ui-12",
+      "ui-13",
+      "ui-14",
+      "ui-15",
+      "ui-16",
+      "ui-17",
+      "ui-18"
+    ],
+    "safe": [
+      "ae-01",
+      "ae-02",
+      "ae-03",
+      "ae-04",
+      "ae-05",
+      "ae-06",
+      "as-01",
+      "as-02",
+      "as-03",
+      "as-04",
+      "cs-01",
+      "cs-02",
+      "cs-03",
+      "cs-04",
+      "cs-05",
+      "cs-06",
+      "cs-07",
+      "cs-08",
+      "gs-01",
+      "gs-02",
+      "gs-03",
+      "gs-04",
+      "gs-05",
+      "gs-06",
+      "gs-07"
+    ]
+  }
+}

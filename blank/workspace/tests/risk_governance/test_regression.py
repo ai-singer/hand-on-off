@@ -89,10 +89,23 @@ class RegressionComparisonTests(unittest.TestCase):
         self.assertEqual(report.changed_cases, ())
 
     def test_every_version_and_evaluator_runs(self) -> None:
+        """Four registered versions times two frozen evaluators."""
+
         reports = run_all(self.registry)
 
-        self.assertEqual(len(reports), 4)
+        self.assertEqual(len(reports), 8)
         self.assertTrue(all(not report.regressed for report in reports))
+
+    def test_the_new_phase_7_5_versions_are_covered(self) -> None:
+        """A benchmark version without a baseline cannot be governed."""
+
+        for version in ("v3", "v4"):
+            record = self.registry.get("semantic", version)
+            baseline = load_baseline(record, self.registry)
+
+            self.assertEqual(set(baseline["evaluators"]), set(EVALUATORS))
+            for entry in baseline["evaluators"].values():
+                self.assertEqual(entry["dataset_hash"], record.dataset_hash)
 
     def test_a_raise_in_the_previous_score_reads_as_a_regression(self) -> None:
         inflated = copy.deepcopy(self.baseline)

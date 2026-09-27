@@ -120,8 +120,47 @@ class FreezeComponentTests(unittest.TestCase):
         self.assertEqual(taxonomy_hash(), taxonomy_hash())
         self.assertNotEqual(taxonomy_hash(), config_hash())
 
-    def test_benchmark_hash_covers_every_registered_version(self) -> None:
-        from risk_evaluation.release_freeze import _hash_payload
+    def test_benchmark_hash_covers_exactly_the_declared_scope(self) -> None:
+        """A freeze covers the versions it was taken against, not the registry."""
+
+        from risk_evaluation.release_freeze import FROZEN_VERSION_SCOPE, _hash_payload
+
+        registry = BenchmarkRegistry()
+        scope = set(FROZEN_VERSION_SCOPE)
+        expected = _hash_payload(
+            {
+                f"{record.benchmark_id}/{record.version}": {
+                    "dataset_hash": record.dataset_hash,
+                    "case_count": record.case_count,
+                    "status": record.status,
+                }
+                for record in registry.list_benchmarks()
+                if f"{record.benchmark_id}/{record.version}" in scope
+            }
+        )
+
+        self.assertEqual(benchmark_hash(registry), expected)
+
+    def test_a_later_registered_version_does_not_move_the_scoped_hash(self) -> None:
+        """Phase 7.5 added semantic/v3 and v4 after this freeze was recorded.
+
+        Registering a benchmark must not retroactively invalidate an older
+        freeze, or history stops being verifiable the moment the project grows.
+        """
+
+        from risk_evaluation.release_freeze import all_benchmarks_hash
+
+        registry = BenchmarkRegistry()
+        registered = {f"{r.benchmark_id}/{r.version}" for r in registry.list_benchmarks()}
+
+        self.assertTrue({"semantic/v3", "semantic/v4"} <= registered)
+        self.assertNotEqual(benchmark_hash(registry), all_benchmarks_hash(registry))
+        self.assertEqual(
+            benchmark_hash(registry), load_evaluation_freeze()["benchmark_hash"]
+        )
+
+    def test_every_registered_benchmark_is_covered_by_a_full_registry_hash(self) -> None:
+        from risk_evaluation.release_freeze import _hash_payload, all_benchmarks_hash
 
         registry = BenchmarkRegistry()
         expected = _hash_payload(
@@ -135,7 +174,7 @@ class FreezeComponentTests(unittest.TestCase):
             }
         )
 
-        self.assertEqual(benchmark_hash(registry), expected)
+        self.assertEqual(all_benchmarks_hash(registry), expected)
 
     def test_config_hash_covers_the_governance_parameters(self) -> None:
         from risk_evaluation.release_freeze import _hash_payload
