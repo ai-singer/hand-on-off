@@ -20,6 +20,7 @@ packages = [
   "plugin_interface",
   "plugins",
   "plugins.xiaolin_finance",
+  "production",
   "runtime",
   "schema_validation",
   "security",
