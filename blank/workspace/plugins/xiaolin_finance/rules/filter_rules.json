@@ -13,7 +13,7 @@
       "category": "investment_advice",
       "severity": "block",
       "action": "block",
-      "keywords": ["buy now", "sell now", "guaranteed return", "立即买入", "立即卖出", "稳赚", "推荐买入", "推荐卖出"],
+      "keywords": ["buy now", "sell now", "guaranteed return", "guaranteed buy", "guaranteed profit", "guaranteed gain", "must buy", "立即买入", "立即卖出", "稳赚", "稳赚不赔", "必买", "推荐买入", "推荐卖出"],
       "message": "Direct investment instructions or guaranteed-return claims must not enter generated content."
     },
     {

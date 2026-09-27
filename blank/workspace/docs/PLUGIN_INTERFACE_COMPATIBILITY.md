@@ -82,7 +82,7 @@ the plugin adds domain judgement on top rather than re-classifying from scratch.
 | Field | Type | Contract |
 | --- | --- | --- |
 | `domain_extension` | `Mapping[str, Any]` | Plugin-owned structured values. Merged verbatim into `artifact.domain_extension`. |
-| `risk_constraints` | `Sequence[Mapping]` | Explicit risk decisions. Each item requires `rule_id`, `severity` (`info`/`warning`/`block`), `action` (`downrank`/`require_evidence`/`require_review`/`block`), `message`, `source_ids`. |
+| `risk_constraints` | `Sequence[Mapping]` | Explicit risk decisions. Each item requires `rule_id`, `severity` (`info`/`warning`/`block`), `action` (`downrank`/`require_evidence`/`require_review`/`block`), `message`, `source_ids`. The shared schema does not set `additionalProperties: false` here, so a plugin may add fields; `xiaolin_finance` adds `category` so the prohibited category is visible without looking up the rule id. |
 | `evaluation_result` | `Mapping[str, Any]` | Domain quality evidence. Merged into `artifact.evaluation_result.domain`. |
 | `field_enhancements` | `Mapping[str, Sequence[Mapping]]` | **Optional additions** to `topic_candidate`, `content_template`, `knowledge_unit`, or `style_pattern`. |
 

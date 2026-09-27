@@ -44,7 +44,7 @@ compatible with `schemas/unified_distillation_artifact.json`.
 | Output | Requirement |
 | --- | --- |
 | `domain_extension` | Plugin-owned object. Must validate against the plugin's `schemas/domain_extension.schema.json`. **May only add fields.** |
-| `risk_constraints` | Every risk uses `rule_id`, `severity`, `action`, `message`, `source_ids`. A claim is never deleted silently. |
+| `risk_constraints` | Every risk uses `rule_id`, `severity`, `action`, `message`, `source_ids`. A claim is never deleted silently. Additional fields are allowed; the reference plugin adds `category` so the prohibited category is readable directly from the artifact. |
 | `evaluation_result` | Deterministic domain evidence, including the framework-inherited dimensions and the domain-specific checks. |
 | `field_enhancements` | **Append-only additions** to the four common families. Replacing or removing a common signal is impossible by construction. |
 

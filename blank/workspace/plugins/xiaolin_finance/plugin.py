@@ -192,6 +192,7 @@ class XiaolinFinancePlugin:
                 risk_constraints.append(
                     {
                         "rule_id": rule["id"],
+                        "category": category_by_rule[rule["id"]],
                         "severity": rule["severity"],
                         "action": rule["action"],
                         "message": rule["message"],
