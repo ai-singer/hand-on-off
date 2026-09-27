@@ -1,5 +1,11 @@
 # Creator Agent Framework Phase 5.2 - Security Remediation
 
+> **后续状态**：本报告第 4 节列出的 R-01/R-02/R-03/R-05 已在 Phase 5.2.1 中处置，
+> 第 5.1 节的收尾步骤 2–6 已执行完毕（取消跟踪、历史重写、Tag 重建、远端强制更新、
+> 部署入口修订）。本报告保留为 Phase 5.2 当时的记录，未改写；最新状态与仍在开放
+> 的风险见
+> [`PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md`](PHASE_5_2_1_CREDENTIAL_EXPOSURE_CLOSURE.md)。
+
 ```text
 Phase 5.2 Security Remediation Status: PASS WITH ISSUES
 Security Risk: HIGH -> Security Stabilization: PASS (release protection) / HIGH residual (credential exposure)
