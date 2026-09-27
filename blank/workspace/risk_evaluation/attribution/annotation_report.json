@@ -1,0 +1,1184 @@
+{
+  "aligned_claims": 35,
+  "annotation_set": "main",
+  "annotation_set_version": "1.0.0",
+  "cases": 30,
+  "cases_detail": [
+    {
+      "case_id": "AT-001",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "named collective, reporting verb",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts said the stock will rise."
+    },
+    {
+      "case_id": "AT-002",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "reporting verb",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Experts predict growth next year."
+    },
+    {
+      "case_id": "AT-003",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "reporting verb",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Researchers say the effect is small."
+    },
+    {
+      "case_id": "AT-004",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "attribution phrase",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "According to analysts, the outlook has improved."
+    },
+    {
+      "case_id": "AT-005",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "'reports say'",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Reports say the merger will complete."
+    },
+    {
+      "case_id": "AT-006",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "'some investors'",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Some investors believe the rally will continue."
+    },
+    {
+      "case_id": "AT-007",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "corporate speaker",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Management expects margins to recover."
+    },
+    {
+      "case_id": "AT-008",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'I think'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "I think the stock is cheap."
+    },
+    {
+      "case_id": "AT-009",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'we believe'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We believe the fund is well managed."
+    },
+    {
+      "case_id": "AT-010",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'our analysis'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Our analysis shows revenue is durable."
+    },
+    {
+      "case_id": "AT-011",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'this article argues'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This article argues the fee is too high."
+    },
+    {
+      "case_id": "AT-012",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "first person plus reporting verb",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We expect the sector to recover."
+    },
+    {
+      "case_id": "AT-013",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'in our view'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "In our view the valuation is stretched."
+    },
+    {
+      "case_id": "AT-014",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'our research'",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Our research shows the effect is small."
+    },
+    {
+      "case_id": "AT-015",
+      "expected_speakers": [
+        "unknown"
+      ],
+      "expected_stances": [
+        "uncertain"
+      ],
+      "note": "no attribution marker at all",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The quarter closed in March."
+    },
+    {
+      "case_id": "AT-016",
+      "expected_speakers": [
+        "unknown"
+      ],
+      "expected_stances": [
+        "uncertain"
+      ],
+      "note": "no attribution marker",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Revenue rose four percent."
+    },
+    {
+      "case_id": "AT-017",
+      "expected_speakers": [
+        "unknown"
+      ],
+      "expected_stances": [
+        "uncertain"
+      ],
+      "note": "no attribution marker",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Costs were flat over the period."
+    },
+    {
+      "case_id": "AT-018",
+      "expected_speakers": [
+        "unknown"
+      ],
+      "expected_stances": [
+        "uncertain"
+      ],
+      "note": "no attribution marker",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The filing runs to forty pages."
+    },
+    {
+      "case_id": "AT-019",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "quoted, no author attitude",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts say the dividend will be cut."
+    },
+    {
+      "case_id": "AT-020",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "quotation marks plus reporting verb",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The report said \"the outlook is improving\"."
+    },
+    {
+      "case_id": "AT-021",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "forecast frame",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Economists forecast slower growth."
+    },
+    {
+      "case_id": "AT-022",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "author takes up a third party's claim",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Experts say the rally will continue, and we agree."
+    },
+    {
+      "case_id": "AT-023",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'this is correct'",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts expect growth, and this is correct."
+    },
+    {
+      "case_id": "AT-024",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "author's own claim",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We believe the risk is contained."
+    },
+    {
+      "case_id": "AT-025",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "'indeed'",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts expect higher margins, and indeed this is correct."
+    },
+    {
+      "case_id": "AT-026",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "contrastive lead rejects the previous claim",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts believe the stock will rise. However, we disagree."
+    },
+    {
+      "case_id": "AT-027",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "rejection frame",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Experts predict growth. However, we are not convinced."
+    },
+    {
+      "case_id": "AT-028",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "rejection without a first-person marker",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts expect a rebound. But evidence shows otherwise."
+    },
+    {
+      "case_id": "AT-029",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "'is misleading'",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts forecast a slowdown. However, this is misleading."
+    },
+    {
+      "case_id": "AT-030",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "'we doubt'",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Experts predict growth. Yet we doubt the forecast."
+    }
+  ],
+  "coverage_detail": [
+    {
+      "case_id": "PR-001",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "unnamed plural speaker",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Some say the rally is over."
+    },
+    {
+      "case_id": "PR-002",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "passive attribution",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "It is widely believed that rates will fall."
+    },
+    {
+      "case_id": "PR-003",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "nominalised attribution",
+      "predicted_speakers": [
+        "unknown"
+      ],
+      "predicted_stances": [
+        "uncertain"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "There is a view that the fund is overpriced."
+    },
+    {
+      "case_id": "PR-004",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "attribution phrase, no reporting verb",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "According to the analysts, the market will rise."
+    },
+    {
+      "case_id": "PR-005",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "disagreement outside the cue list",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Management expects margins to recover, but we remain unconvinced."
+    },
+    {
+      "case_id": "PR-006",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "hedged disagreement",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [],
+      "split_ok": false,
+      "stance_ok": [],
+      "text": "Experts predict growth; we are not so sure."
+    },
+    {
+      "case_id": "PR-007",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "evidence-based rejection",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "The report claims the fund never loses money. We have found no evidence for this."
+    },
+    {
+      "case_id": "PR-008",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "rejection inside a quotation",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts expect growth. \"But we disagree,\" she wrote."
+    },
+    {
+      "case_id": "PR-009",
+      "expected_speakers": [
+        "third_party"
+      ],
+      "expected_stances": [
+        "quoted"
+      ],
+      "note": "Chinese attribution",
+      "predicted_speakers": [
+        "third_party"
+      ],
+      "predicted_stances": [
+        "quoted"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "据分析师称，该基金不会亏损。"
+    },
+    {
+      "case_id": "PR-010",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "Chinese first person",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "我们认为市场将上涨。"
+    },
+    {
+      "case_id": "PR-011",
+      "expected_speakers": [
+        "third_party",
+        "author"
+      ],
+      "expected_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "note": "rejection by outcome, not by cue",
+      "predicted_speakers": [
+        "third_party",
+        "author"
+      ],
+      "predicted_stances": [
+        "rejected",
+        "rejected"
+      ],
+      "speaker_ok": [
+        true,
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true,
+        true
+      ],
+      "text": "Analysts said the stock would rise. However, the opposite happened."
+    },
+    {
+      "case_id": "PR-012",
+      "expected_speakers": [
+        "author"
+      ],
+      "expected_stances": [
+        "endorsed"
+      ],
+      "note": "agreement stated before the attribution",
+      "predicted_speakers": [
+        "author"
+      ],
+      "predicted_stances": [
+        "endorsed"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We agree with analysts that the risk is contained."
+    }
+  ],
+  "coverage_probe": {
+    "aligned_claims": 15,
+    "annotation_set_version": "1.0.0",
+    "cases": 12,
+    "expected_claims": 17,
+    "label_error_cases": [
+      "PR-001",
+      "PR-002",
+      "PR-003"
+    ],
+    "pair_accuracy": 0.8,
+    "pair_correct": 12,
+    "per_speaker": {
+      "author": {
+        "accuracy": 1.0,
+        "correct": 6,
+        "expected": 6
+      },
+      "third_party": {
+        "accuracy": 0.6667,
+        "correct": 6,
+        "expected": 9
+      },
+      "unknown": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "expected": 0
+      }
+    },
+    "per_stance": {
+      "endorsed": {
+        "accuracy": 1.0,
+        "correct": 2,
+        "expected": 2
+      },
+      "quoted": {
+        "accuracy": 0.6,
+        "correct": 3,
+        "expected": 5
+      },
+      "rejected": {
+        "accuracy": 1.0,
+        "correct": 8,
+        "expected": 8
+      },
+      "uncertain": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "expected": 0
+      }
+    },
+    "predicted_claims": 16,
+    "speaker_accuracy": 0.8,
+    "speaker_correct": 12,
+    "split_accuracy": 0.9167,
+    "split_correct": 11,
+    "split_error_cases": [
+      "PR-006"
+    ],
+    "stance_accuracy": 0.8667,
+    "stance_correct": 13
+  },
+  "expected_claims": 35,
+  "label_error_cases": [],
+  "note": "The 30-case metric and the coverage probe are reported separately. The probe was written after the rules and is a boundary stress set, not a held-out estimate.",
+  "pair_accuracy": 1.0,
+  "pair_correct": 35,
+  "per_speaker": {
+    "author": {
+      "accuracy": 1.0,
+      "correct": 13,
+      "expected": 13
+    },
+    "third_party": {
+      "accuracy": 1.0,
+      "correct": 18,
+      "expected": 18
+    },
+    "unknown": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "expected": 4
+    }
+  },
+  "per_stance": {
+    "endorsed": {
+      "accuracy": 1.0,
+      "correct": 11,
+      "expected": 11
+    },
+    "quoted": {
+      "accuracy": 1.0,
+      "correct": 10,
+      "expected": 10
+    },
+    "rejected": {
+      "accuracy": 1.0,
+      "correct": 10,
+      "expected": 10
+    },
+    "uncertain": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "expected": 4
+    }
+  },
+  "predicted_claims": 35,
+  "speaker_accuracy": 1.0,
+  "speaker_correct": 35,
+  "split_accuracy": 1.0,
+  "split_correct": 30,
+  "split_error_cases": [],
+  "stance_accuracy": 1.0,
+  "stance_correct": 35
+}
