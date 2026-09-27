@@ -185,10 +185,15 @@ NOT Production Ready
 ## 8. 最终状态
 
 ```text
-main pushed      : YES   (666f8b0)
+main pushed      : YES   (RC 推送后为 666f8b0)
 tag pushed       : YES   (creator-agent-template-v0.2.0-rc1 -> 666f8b0)
 working tree     : clean
 ```
+
+> 关于 `main` 的移动：本报告本身是一次提交，因此它一旦入库，`main` 会比上表记录的
+> `666f8b0` 前进一个提交。这是发布报告的固有自指问题，不影响发布身份：
+> **RC Tag `creator-agent-template-v0.2.0-rc1` 固定指向 `666f8b0`，不随 `main` 移动。**
+> 第 2 节与第 3 节的全部验证结论均针对该 Tag 目标提交成立。
 
 ## 9. Harness / Rule Distillation Review
 
