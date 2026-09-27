@@ -1,0 +1,1020 @@
+{
+  "benchmark": "intent_pattern/v1",
+  "cases": [
+    {
+      "case_id": "PG-01",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "attributive"
+      ],
+      "frame_kinds": [
+        "attributive"
+      ],
+      "group": "positive",
+      "old_categories": [
+        "financial_guarantee"
+      ],
+      "old_fired": true,
+      "old_v1_categories": [
+        "financial_guarantee"
+      ],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "This is a guaranteed return.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "PG-02",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "attributive"
+      ],
+      "frame_kinds": [
+        "attributive"
+      ],
+      "group": "positive",
+      "old_categories": [
+        "financial_guarantee"
+      ],
+      "old_fired": true,
+      "old_v1_categories": [
+        "financial_guarantee"
+      ],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Guaranteed returns are available.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "PG-03",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "frame_kinds": [
+        "copular"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "This return is guaranteed.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-04",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "frame_kinds": [
+        "copular"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Returns are guaranteed.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-05",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "frame_kinds": [
+        "copular"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Your capital is guaranteed.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-06",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "frame_kinds": [
+        "copular"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The profit is guaranteed.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-07",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "frame_kinds": [
+        "copular"
+      ],
+      "group": "positive",
+      "old_categories": [
+        "investment_advice"
+      ],
+      "old_fired": false,
+      "old_v1_categories": [
+        "investment_advice"
+      ],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The value of your investment is guaranteed.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-08",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "frame_kinds": [
+        "active"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "We guarantee this return.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-09",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "frame_kinds": [
+        "active"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The fund guarantees your capital.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-10",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "frame_kinds": [
+        "active"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "We guarantee a profit.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-11",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "passive"
+      ],
+      "frame_kinds": [
+        "copular",
+        "passive"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Your returns are guaranteed by the scheme.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-12",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "passive"
+      ],
+      "frame_kinds": [
+        "copular",
+        "passive"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The capital is guaranteed by the issuer.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-13",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "frame_kinds": [
+        "nominal"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The fund offers a guarantee of returns.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-14",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "frame_kinds": [
+        "nominal"
+      ],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "This plan comes with a guarantee of income.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "PG-15",
+      "category_correct": false,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "frame_kinds": [],
+      "group": "positive",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": false,
+      "text": "Returns are a guarantee on this product.",
+      "transition": "different"
+    },
+    {
+      "case_id": "PG-16",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "risk_removed"
+      ],
+      "frame_kinds": [
+        "attributive"
+      ],
+      "group": "positive",
+      "old_categories": [
+        "financial_guarantee"
+      ],
+      "old_fired": true,
+      "old_v1_categories": [
+        "financial_guarantee"
+      ],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Your capital is risk-free.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "PG-17",
+      "category_correct": true,
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "risk_removed"
+      ],
+      "frame_kinds": [
+        "active"
+      ],
+      "group": "positive",
+      "old_categories": [
+        "financial_guarantee"
+      ],
+      "old_fired": true,
+      "old_v1_categories": [
+        "financial_guarantee"
+      ],
+      "pattern_fired": true,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "This fund cannot lose money.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-01",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "Returns are not guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-02",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "This is not a guaranteed return.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-03",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "We do not guarantee returns.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-04",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "Returns cannot be guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-05",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The fund does not guarantee your capital.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-06",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "Past performance does not guarantee future results.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-07",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [
+        "financial_guarantee"
+      ],
+      "old_fired": true,
+      "old_v1_categories": [
+        "financial_guarantee"
+      ],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "A guaranteed return is not available.",
+      "transition": "fixed"
+    },
+    {
+      "case_id": "NG-08",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": true,
+      "text": "The fund will not guarantee your capital.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-09",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "A price-to-earnings ratio compares price with earnings per share.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-10",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "Diversification spreads risk across assets.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-11",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "Compounding means returns are earned on earlier returns.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-12",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "The prospectus explains how charges are calculated.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-13",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "The article asks whether a guarantee is ever appropriate.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-14",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "The regulator reviewed how guarantees are described in marketing.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "NG-15",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "frame_kinds": [],
+      "group": "negative",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": false,
+      "relation_correct": true,
+      "text": "The word guarantee has a specific legal meaning.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-01",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Returns are guaranteed, according to the marketing material.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-02",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "The promoter said returns are guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-03",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Some funds claim their returns are guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-04",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "The advert states that capital is guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-05",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Returns are said to be guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-06",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [
+        "unverified_information"
+      ],
+      "old_fired": false,
+      "old_v1_categories": [
+        "unverified_information"
+      ],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Returns are reportedly guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-07",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "If markets rise, returns are guaranteed.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-08",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Returns could be guaranteed if the scheme performs.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-09",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Whether returns are guaranteed depends on the scheme.",
+      "transition": "unchanged"
+    },
+    {
+      "case_id": "BD-10",
+      "category_correct": true,
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "uncertain"
+      ],
+      "frame_kinds": [],
+      "group": "boundary",
+      "old_categories": [],
+      "old_fired": false,
+      "old_v1_categories": [],
+      "pattern_fired": false,
+      "pattern_scanned": true,
+      "relation_correct": false,
+      "text": "Returns may be guaranteed.",
+      "transition": "unchanged"
+    }
+  ],
+  "category": "financial_guarantee",
+  "category_view": {
+    "boundary": 10,
+    "broken_cases": [],
+    "by_form": {
+      "active": {
+        "cases": 3,
+        "old": 0,
+        "pattern": 3
+      },
+      "attributive": {
+        "cases": 2,
+        "old": 2,
+        "pattern": 2
+      },
+      "copular": {
+        "cases": 5,
+        "old": 0,
+        "pattern": 5
+      },
+      "nominal": {
+        "cases": 3,
+        "old": 0,
+        "pattern": 2
+      },
+      "passive": {
+        "cases": 2,
+        "old": 0,
+        "pattern": 2
+      },
+      "risk_removed": {
+        "cases": 2,
+        "old": 2,
+        "pattern": 2
+      }
+    },
+    "cases": 42,
+    "false_negatives": 1,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "fixed_cases": [
+      "PG-03",
+      "PG-04",
+      "PG-05",
+      "PG-06",
+      "PG-07",
+      "PG-08",
+      "PG-09",
+      "PG-10",
+      "PG-11",
+      "PG-12",
+      "PG-13",
+      "PG-14",
+      "NG-07"
+    ],
+    "miss_reduction": 12,
+    "miss_reduction_rate": 0.9231,
+    "negatives": 15,
+    "old_false_negatives": 13,
+    "old_false_positives": 1,
+    "old_recall": 0.2353,
+    "old_true_positives": 4,
+    "positives": 17,
+    "precision": 1.0,
+    "recall": 0.9412,
+    "remaining_errors": [
+      "PG-15"
+    ],
+    "scope": "category",
+    "true_positives": 16
+  },
+  "combination": {
+    "attribution_correct": 53,
+    "attribution_misses": 2,
+    "baseline_correct": 39,
+    "baseline_misses": 9,
+    "cases": 60,
+    "changed_by_pattern": [
+      "A-02",
+      "D-06"
+    ],
+    "combination_correct": 55,
+    "combination_misses": 0
+  },
+  "note": "Boundary cases contain the relation but are not the article's guarantee, so they are excluded from the relation view and counted as benign in the category view.",
+  "relation_view": {
+    "boundary": 10,
+    "broken_cases": [],
+    "by_form": {
+      "active": {
+        "cases": 3,
+        "old": 0,
+        "pattern": 3
+      },
+      "attributive": {
+        "cases": 2,
+        "old": 2,
+        "pattern": 2
+      },
+      "copular": {
+        "cases": 5,
+        "old": 0,
+        "pattern": 5
+      },
+      "nominal": {
+        "cases": 3,
+        "old": 0,
+        "pattern": 2
+      },
+      "passive": {
+        "cases": 2,
+        "old": 0,
+        "pattern": 2
+      },
+      "risk_removed": {
+        "cases": 2,
+        "old": 2,
+        "pattern": 2
+      }
+    },
+    "cases": 32,
+    "false_negatives": 1,
+    "false_positive_rate": 0.0,
+    "false_positives": 0,
+    "fixed_cases": [
+      "PG-03",
+      "PG-04",
+      "PG-05",
+      "PG-06",
+      "PG-07",
+      "PG-08",
+      "PG-09",
+      "PG-10",
+      "PG-11",
+      "PG-12",
+      "PG-13",
+      "PG-14",
+      "NG-07"
+    ],
+    "miss_reduction": 12,
+    "miss_reduction_rate": 0.9231,
+    "negatives": 15,
+    "old_false_negatives": 13,
+    "old_false_positives": 1,
+    "old_recall": 0.2353,
+    "old_true_positives": 4,
+    "positives": 17,
+    "precision": 1.0,
+    "recall": 0.9412,
+    "remaining_errors": [
+      "PG-15"
+    ],
+    "scope": "relation",
+    "true_positives": 16
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "benchmark": "intent_pattern",
+  "case_count": 42,
+  "cases": [
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "attributive"
+      ],
+      "group": "positive",
+      "id": "PG-01",
+      "note": "the form the old rule matched",
+      "text": "This is a guaranteed return."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "attributive"
+      ],
+      "group": "positive",
+      "id": "PG-02",
+      "note": "prenominal adjective",
+      "text": "Guaranteed returns are available."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "group": "positive",
+      "id": "PG-03",
+      "note": "Phase 8.1 blind spot",
+      "text": "This return is guaranteed."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "group": "positive",
+      "id": "PG-04",
+      "note": "Phase 8.1 blind spot",
+      "text": "Returns are guaranteed."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "group": "positive",
+      "id": "PG-05",
+      "note": "Phase 8.1 blind spot",
+      "text": "Your capital is guaranteed."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "group": "positive",
+      "id": "PG-06",
+      "note": "Phase 8.1 blind spot",
+      "text": "The profit is guaranteed."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "copular"
+      ],
+      "group": "positive",
+      "id": "PG-07",
+      "note": "object and copula separated by a phrase",
+      "text": "The value of your investment is guaranteed."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "group": "positive",
+      "id": "PG-08",
+      "note": "Phase 8.1 blind spot",
+      "text": "We guarantee this return."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "group": "positive",
+      "id": "PG-09",
+      "note": "Phase 8.1 blind spot",
+      "text": "The fund guarantees your capital."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "active"
+      ],
+      "group": "positive",
+      "id": "PG-10",
+      "note": "verb form with a determiner",
+      "text": "We guarantee a profit."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "passive"
+      ],
+      "group": "positive",
+      "id": "PG-11",
+      "note": "participle with an agent",
+      "text": "Your returns are guaranteed by the scheme."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "passive"
+      ],
+      "group": "positive",
+      "id": "PG-12",
+      "note": "participle with an agent",
+      "text": "The capital is guaranteed by the issuer."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "group": "positive",
+      "id": "PG-13",
+      "note": "noun form with of",
+      "text": "The fund offers a guarantee of returns."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "group": "positive",
+      "id": "PG-14",
+      "note": "noun form with of",
+      "text": "This plan comes with a guarantee of income."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "nominal"
+      ],
+      "group": "positive",
+      "id": "PG-15",
+      "note": "noun form with on",
+      "text": "Returns are a guarantee on this product."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "risk_removed"
+      ],
+      "group": "positive",
+      "id": "PG-16",
+      "note": "parity with the old rule",
+      "text": "Your capital is risk-free."
+    },
+    {
+      "expects_category": true,
+      "expects_relation": true,
+      "forms": [
+        "risk_removed"
+      ],
+      "group": "positive",
+      "id": "PG-17",
+      "note": "parity with the old rule",
+      "text": "This fund cannot lose money."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-01",
+      "note": "copular negated",
+      "text": "Returns are not guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-02",
+      "note": "attributive negated",
+      "text": "This is not a guaranteed return."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-03",
+      "note": "active negated",
+      "text": "We do not guarantee returns."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-04",
+      "note": "negator inside the frame",
+      "text": "Returns cannot be guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-05",
+      "note": "active negated",
+      "text": "The fund does not guarantee your capital."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-06",
+      "note": "standard disclaimer",
+      "text": "Past performance does not guarantee future results."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-07",
+      "note": "negation after the match",
+      "text": "A guaranteed return is not available."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "negation"
+      ],
+      "group": "negative",
+      "id": "NG-08",
+      "note": "future negated",
+      "text": "The fund will not guarantee your capital."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "group": "negative",
+      "id": "NG-09",
+      "note": "definition",
+      "text": "A price-to-earnings ratio compares price with earnings per share."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "group": "negative",
+      "id": "NG-10",
+      "note": "method guidance",
+      "text": "Diversification spreads risk across assets."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "education"
+      ],
+      "group": "negative",
+      "id": "NG-11",
+      "note": "definition mentioning returns",
+      "text": "Compounding means returns are earned on earlier returns."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "group": "negative",
+      "id": "NG-12",
+      "note": "neutral statement",
+      "text": "The prospectus explains how charges are calculated."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "group": "negative",
+      "id": "NG-13",
+      "note": "guarantee discussed, not made",
+      "text": "The article asks whether a guarantee is ever appropriate."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "group": "negative",
+      "id": "NG-14",
+      "note": "guarantee discussed, not made",
+      "text": "The regulator reviewed how guarantees are described in marketing."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": false,
+      "forms": [
+        "discussion"
+      ],
+      "group": "negative",
+      "id": "NG-15",
+      "note": "mention rather than use",
+      "text": "The word guarantee has a specific legal meaning."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-01",
+      "note": "attributed to marketing material",
+      "text": "Returns are guaranteed, according to the marketing material."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-02",
+      "note": "reported speech",
+      "text": "The promoter said returns are guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-03",
+      "note": "reported claim",
+      "text": "Some funds claim their returns are guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-04",
+      "note": "reported claim",
+      "text": "The advert states that capital is guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-05",
+      "note": "reported passive",
+      "text": "Returns are said to be guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "quoted"
+      ],
+      "group": "boundary",
+      "id": "BD-06",
+      "note": "reporting adverb",
+      "text": "Returns are reportedly guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "group": "boundary",
+      "id": "BD-07",
+      "note": "conditional outcome",
+      "text": "If markets rise, returns are guaranteed."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "group": "boundary",
+      "id": "BD-08",
+      "note": "conditional with a modal",
+      "text": "Returns could be guaranteed if the scheme performs."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "hypothetical"
+      ],
+      "group": "boundary",
+      "id": "BD-09",
+      "note": "framed as a question",
+      "text": "Whether returns are guaranteed depends on the scheme."
+    },
+    {
+      "expects_category": false,
+      "expects_relation": true,
+      "forms": [
+        "uncertain"
+      ],
+      "group": "boundary",
+      "id": "BD-10",
+      "note": "hedged with a modal",
+      "text": "Returns may be guaranteed."
+    }
+  ],
+  "category": "financial_guarantee",
+  "form_coverage": {
+    "active": 3,
+    "attributive": 2,
+    "copular": 5,
+    "discussion": 4,
+    "education": 3,
+    "hypothetical": 3,
+    "negation": 8,
+    "nominal": 3,
+    "passive": 2,
+    "quoted": 6,
+    "risk_removed": 2,
+    "uncertain": 1
+  },
+  "groups": {
+    "boundary": 10,
+    "negative": 15,
+    "positive": 17
+  },
+  "required_group_sizes": {
+    "boundary": 10,
+    "negative": 15,
+    "positive": 15
+  },
+  "version": "v1"
+}
