@@ -1,0 +1,24 @@
+# Runtime secrets and private credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+**/credentials.json
+**/credentials.yml
+**/credentials.yaml
+**/secrets.json
+**/secrets.yml
+**/secrets.yaml
+**/*cookie*.txt
+**/*cookies*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+
+# Historical unsafe snapshot and generated deployment artifacts
+new/workspace.tar.gz
+blank/dist/
+

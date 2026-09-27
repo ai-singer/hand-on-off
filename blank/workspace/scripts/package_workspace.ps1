@@ -6,6 +6,12 @@ param(
 $ErrorActionPreference = "Stop"
 $workspaceRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $blankRoot = Split-Path $workspaceRoot -Parent
+$secretScanner = Join-Path $workspaceRoot "security\secret_scan.py"
+
+python $secretScanner $workspaceRoot
+if ($LASTEXITCODE -ne 0) {
+    throw "Pre-package secret scan failed with exit code $LASTEXITCODE"
+}
 
 $forbidden = @(
     (Join-Path $workspaceRoot ".env"),
@@ -39,6 +45,12 @@ try {
         workspace
     if ($LASTEXITCODE -ne 0) {
         throw "tar failed with exit code $LASTEXITCODE"
+    }
+
+    python $secretScanner $outputFullPath
+    if ($LASTEXITCODE -ne 0) {
+        Remove-Item -LiteralPath $outputFullPath -Force
+        throw "Packaged artifact secret scan failed with exit code $LASTEXITCODE"
     }
 }
 finally {
