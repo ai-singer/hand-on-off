@@ -2,7 +2,7 @@
   "manifest_version": "1.0.0",
   "plugin": {
     "name": "xiaolin_finance",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "domain": "finance",
     "creator_target": "xiaolin-style-finance-explainer"
   },

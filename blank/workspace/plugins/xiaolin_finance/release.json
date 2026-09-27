@@ -1,0 +1,35 @@
+{
+  "manifest_version": "1.0.0",
+  "name": "xiaolin_finance",
+  "version": "1.2.0",
+  "release_status": "release-candidate",
+  "framework_compatibility": "creator-distillation-plugin@1.0",
+  "artifact_schema_version": "1.0.0",
+  "runtime_requirement": "creator-agent-runtime-config@1.0.0",
+  "capabilities": [
+    "distill:business_mechanism",
+    "distill:financial_structure",
+    "distill:data_expression_pattern",
+    "distill:case_selection_logic",
+    "distill:misconception_analysis",
+    "prohibit:investment_advice",
+    "prohibit:market_prediction",
+    "prohibit:emotional_language",
+    "prohibit:unverified_fact",
+    "evaluate:performance",
+    "evaluate:structure_quality",
+    "evaluate:transferability",
+    "evaluate:data_credibility",
+    "evaluate:explanation_completeness",
+    "evaluate:risk_boundary"
+  ],
+  "domain_contract_version": "1.1.0",
+  "python_requirement": ">=3.11",
+  "entrypoint": {
+    "module": "plugins.xiaolin_finance",
+    "factory": "create_plugin"
+  },
+  "side_effects": "none",
+  "network_required": false,
+  "writes_content": false
+}
