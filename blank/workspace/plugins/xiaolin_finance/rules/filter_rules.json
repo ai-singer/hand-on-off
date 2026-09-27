@@ -1,19 +1,44 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "Finance content the xiaolin_finance plugin must not distill. Rules never delete a claim silently: each match produces an explicit risk_constraint that the quality gate can act on.",
+  "prohibited_categories": {
+    "investment_advice": "Direct instructions to buy or sell, or guaranteed-return claims.",
+    "market_prediction": "Forecasts stated as certainty, including price prediction without basis.",
+    "emotional_language": "Incitement, panic framing or exaggerated judgement.",
+    "unverified_fact": "Unconfirmed figures or claims whose source cannot be identified."
+  },
   "rules": [
     {
       "id": "finance.investment-advice",
+      "category": "investment_advice",
       "severity": "block",
       "action": "block",
-      "keywords": ["buy now", "sell now", "guaranteed return", "立即买入", "立即卖出", "稳赚"],
+      "keywords": ["buy now", "sell now", "guaranteed return", "立即买入", "立即卖出", "稳赚", "推荐买入", "推荐卖出"],
       "message": "Direct investment instructions or guaranteed-return claims must not enter generated content."
     },
     {
       "id": "finance.unsupported-prediction",
+      "category": "market_prediction",
       "severity": "warning",
       "action": "require_evidence",
-      "keywords": ["will definitely", "certain to", "必然上涨", "肯定下跌", "一定会"],
+      "keywords": ["will definitely", "certain to", "必然上涨", "肯定下跌", "一定会", "价格预测", "目标价"],
       "message": "Forecast language requires evidence, uncertainty, and explicit assumptions."
+    },
+    {
+      "id": "finance.emotional-language",
+      "category": "emotional_language",
+      "severity": "warning",
+      "action": "downrank",
+      "keywords": ["panic", "collapse now", "everyone is buying", "恐慌", "崩盘", "赶紧上车", "错过就没有了", "疯狂"],
+      "message": "Incitement, panic framing or exaggerated judgement lowers explanation quality and must be down-ranked."
+    },
+    {
+      "id": "finance.unverified-fact",
+      "category": "unverified_fact",
+      "severity": "warning",
+      "action": "require_evidence",
+      "keywords": ["rumor", "someone said", "internal news", "据说", "传闻", "消息人士", "内部消息", "未经证实"],
+      "message": "Unconfirmed figures or unattributable claims require a named source before they may be distilled."
     }
   ]
 }

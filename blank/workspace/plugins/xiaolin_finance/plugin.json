@@ -1,0 +1,51 @@
+{
+  "manifest_version": "1.0.0",
+  "plugin": {
+    "name": "xiaolin_finance",
+    "version": "1.1.0",
+    "domain": "finance",
+    "creator_target": "xiaolin-style-finance-explainer"
+  },
+  "contract": {
+    "specification": "creator-distillation-plugin",
+    "version": "1.0"
+  },
+  "entrypoint": {
+    "module": "plugins.xiaolin_finance",
+    "factory": "create_plugin",
+    "implementation": "plugin.py"
+  },
+  "domain_schema": {
+    "path": "schemas/domain_extension.schema.json",
+    "version": "1.1.0"
+  },
+  "rules": {
+    "value": "rules/value_rules.json",
+    "filter": "rules/filter_rules.json",
+    "structure": "rules/structure_templates.json"
+  },
+  "evaluation": {
+    "path": "evaluation/rubric.json",
+    "version": "1.1.0"
+  },
+  "distills": [
+    "business_mechanism",
+    "financial_structure",
+    "data_expression_pattern",
+    "case_selection_logic",
+    "misconception_analysis"
+  ],
+  "prohibits": [
+    "investment_advice",
+    "market_prediction",
+    "emotional_language",
+    "unverified_fact"
+  ],
+  "enhances": [
+    "topic_candidate"
+  ],
+  "side_effects": "none",
+  "network_required": false,
+  "writes_content": false,
+  "requires_review_before_generation": true
+}

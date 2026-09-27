@@ -1,19 +1,64 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
+  "description": "Deterministic domain evaluation policy for the xiaolin_finance plugin. Scoring parameters live here, not in code, so the policy is inspectable.",
   "pass_score": 0.6,
+  "scoring": {
+    "method": "dimension_coverage_with_risk_penalty",
+    "base": 0.4,
+    "coverage_weight": 0.6,
+    "warning_penalty": 0.1,
+    "warning_penalty_cap": 0.3,
+    "blocking_score_cap": 0.2
+  },
   "dimensions": {
     "business_mechanism": {
-      "weight": 0.35,
       "question": "Does the material explain causal commercial or economic mechanisms?"
     },
+    "financial_structure": {
+      "question": "Is the material organised as revenue, cost, growth sources and named risk factors?"
+    },
     "data_interpretation": {
-      "weight": 0.35,
       "question": "Are metrics interpreted with context rather than repeated without meaning?"
     },
     "company_case": {
-      "weight": 0.3,
       "question": "Are cases traceable and bounded by the available evidence?"
+    },
+    "misconception_analysis": {
+      "question": "Is a common belief separated from the observed fact without ridiculing the audience?"
     }
   },
-  "hard_failures": ["direct investment instruction", "guaranteed return claim"]
+  "inherited_checks": {
+    "performance": {
+      "source": "common_framework",
+      "question": "How much of the finance value taxonomy did the material actually cover?"
+    },
+    "structure_quality": {
+      "source": "common_framework",
+      "question": "Was an explainable structure selected for the material?"
+    },
+    "transferability": {
+      "source": "common_framework",
+      "question": "Does the extracted value hold across the supplied sources rather than one excerpt?"
+    }
+  },
+  "finance_checks": {
+    "data_credibility": {
+      "question": "Are figures attributable, or do they rest on unconfirmed claims?",
+      "rule_ids": ["finance.unverified-fact"],
+      "penalty_per_match": 0.4
+    },
+    "explanation_completeness": {
+      "question": "Does the material explain a mechanism and interpret data, not only report events?",
+      "required_dimensions": ["business_mechanism", "data_interpretation"]
+    },
+    "risk_boundary": {
+      "question": "Is the boundary between explanation and advice respected?",
+      "blocking_score": 0.0,
+      "warning_penalty": 0.25
+    }
+  },
+  "hard_failures": [
+    "direct investment instruction",
+    "guaranteed return claim"
+  ]
 }

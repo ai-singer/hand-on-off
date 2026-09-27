@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "XiaolinFinanceDomainExtension",
+  "description": "Private extension merged into UnifiedDistillationArtifact.domain_extension. It may only add fields; it can never override topic_candidate, content_template, knowledge_unit, style_pattern, risk_constraints or evaluation_result.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -9,7 +10,13 @@
     "value_signals",
     "filtered_claims",
     "recommended_structure",
-    "common_signal_counts"
+    "common_signal_counts",
+    "business_mechanism",
+    "financial_structure",
+    "data_expression_pattern",
+    "case_selection_logic",
+    "misconception_analysis",
+    "source_classification"
   ],
   "properties": {
     "schema_version": { "type": "string" },
@@ -17,6 +24,69 @@
     "value_signals": { "type": "array" },
     "filtered_claims": { "type": "array" },
     "recommended_structure": { "type": "object" },
-    "common_signal_counts": { "type": "object" }
+    "common_signal_counts": { "type": "object" },
+    "business_mechanism": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matched", "signals", "source_ids"],
+      "properties": {
+        "matched": { "type": "boolean" },
+        "signals": { "type": "array" },
+        "source_ids": { "type": "array" }
+      }
+    },
+    "financial_structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matched", "signals", "source_ids"],
+      "properties": {
+        "matched": { "type": "boolean" },
+        "signals": { "type": "array" },
+        "source_ids": { "type": "array" }
+      }
+    },
+    "data_expression_pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matched", "signals", "source_ids"],
+      "properties": {
+        "matched": { "type": "boolean" },
+        "signals": { "type": "array" },
+        "source_ids": { "type": "array" }
+      }
+    },
+    "case_selection_logic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matched", "signals", "source_ids"],
+      "properties": {
+        "matched": { "type": "boolean" },
+        "signals": { "type": "array" },
+        "source_ids": { "type": "array" }
+      }
+    },
+    "misconception_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["matched", "signals", "source_ids"],
+      "properties": {
+        "matched": { "type": "boolean" },
+        "signals": { "type": "array" },
+        "source_ids": { "type": "array" }
+      }
+    },
+    "source_classification": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_id", "roles", "artifact_fields"],
+        "properties": {
+          "source_id": { "type": "string" },
+          "roles": { "type": "array" },
+          "artifact_fields": { "type": "array" }
+        }
+      }
+    }
   }
 }
