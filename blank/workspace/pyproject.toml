@@ -21,6 +21,7 @@ packages = [
   "plugins",
   "plugins.xiaolin_finance",
   "production",
+  "risk_evaluation",
   "runtime",
   "schema_validation",
   "security",
