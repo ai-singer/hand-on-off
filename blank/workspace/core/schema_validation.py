@@ -70,12 +70,25 @@ def _validate_node(value: Any, schema: Mapping[str, Any], path: str) -> None:
                 _validate_node(item, item_schema, f"{path}[{index}]")
 
 
-def validate_unified_artifact(
-    artifact: Mapping[str, Any], schema_path: str | Path
+def validate_schema_instance(
+    value: Any,
+    schema_path: str | Path,
+    *,
+    root_name: str = "value",
 ) -> None:
+    """Validate a value against the supported dependency-free Schema subset."""
+
     path = Path(schema_path)
     try:
         schema = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
-        raise ArtifactValidationError(f"cannot read artifact schema {path}: {exc}") from exc
-    _validate_node(dict(artifact), schema, "artifact")
+        raise ArtifactValidationError(f"cannot read schema {path}: {exc}") from exc
+    if not isinstance(schema, dict):
+        raise ArtifactValidationError(f"schema root must be an object: {path}")
+    _validate_node(value, schema, root_name)
+
+
+def validate_unified_artifact(
+    artifact: Mapping[str, Any], schema_path: str | Path
+) -> None:
+    validate_schema_instance(dict(artifact), schema_path, root_name="artifact")

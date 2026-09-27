@@ -19,6 +19,7 @@ packages = [
   "plugin_interface",
   "plugins",
   "plugins.xiaolin_finance",
+  "schema_validation",
   "skills",
   "skills.openclaw",
   "workflows",

@@ -7,9 +7,9 @@ from pathlib import Path
 from typing import Iterable
 
 from core.models import RawSource
-from core.schema_validation import validate_unified_artifact
 from evaluation.evaluator import evaluate_distillation_artifact
 from plugin_interface.base import CreatorDistillationPlugin
+from schema_validation import validate_runtime_schemas
 
 from .extractor import CommonExtractor
 
@@ -73,7 +73,11 @@ class DistillationEngine:
                 "domain": deepcopy(dict(contribution.evaluation_result)),
             },
         }
-        validate_unified_artifact(artifact, self._schema_path)
+        validate_runtime_schemas(
+            artifact,
+            plugin=self._plugin,
+            shared_schema_path=self._schema_path,
+        )
         return artifact
 
 
