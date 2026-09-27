@@ -131,6 +131,13 @@ means "expressed and missing".
 
 ## 6. Benchmark 结果
 
+> **已被 Phase 7.2 取代（保留为历史记录）。** 本节记录的是 Phase 7.1 当时的 **20 条**
+> 基准（10 positive / 5 safe / 5 paraphrase）。Phase 7.2 按阶段要求把基准扩展到
+> **50 条**（10 keyword / 10 safe / 20 paraphrase / 10 adversarial），并修正了 safe 集
+> 假阳性的统计口径。因此现在运行 `python -m risk_evaluation.benchmark` 得到的是 50 条
+> 结果，与本节的数字不可直接比较。当前基线与对比见
+> [`PHASE_7_2_SEMANTIC_RISK_EVALUATOR_REPORT.md`](PHASE_7_2_SEMANTIC_RISK_EVALUATOR_REPORT.md)。
+
 `tests/risk_evaluation_framework/` — 20 benchmark cases (10 positive /
 5 safe / 5 paraphrase) plus framework tests. Measured with
 `python -m risk_evaluation.benchmark`:

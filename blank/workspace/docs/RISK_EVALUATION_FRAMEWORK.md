@@ -123,7 +123,7 @@ not care whether risk intent comes from keywords, semantics or a model.
 | Evaluator | Status |
 | --- | --- |
 | `KeywordRiskEvaluator` (`keyword-xiaolin-finance-v1`) | **Exists.** Wraps the current xiaolin_finance rules read-only. |
-| Semantic evaluator | Not implemented. Implements the same protocol. |
+| `SemanticRiskEvaluator` (`semantic-intent-v0`) | **Prototype exists** (Phase 7.2). Composes surface signals into intent patterns; reads no rule file. Not wired into production. |
 | Model-backed evaluator | Not implemented. Would additionally have to document network use, timeout and failure behaviour. |
 
 `KeywordRiskEvaluator` adds, removes and reweights **no** keyword. It runs the
@@ -188,27 +188,33 @@ schema, the gate or the workflow.
 
 ## 6. Current Capability Boundary
 
-Measured with `python -m risk_evaluation.benchmark` on 20 cases (10 enumerated
-positive, 5 safe, 5 paraphrase):
+Phase 7.2 expanded the benchmark to 50 cases (10 keyword, 10 safe, 20
+paraphrase, 10 adversarial) and added a second evaluator. Measured with
+`python -m risk_evaluation.benchmark`:
 
 ```text
-positive (enumerated): 10/10  (100%)
-paraphrase (novel)   :  0/5   (0%)   <- capability boundary
-safe flagged         :  0/5   (0%)
+                        keyword-xiaolin-finance-v1   semantic-intent-v0
+keyword recall                100%                        100%
+paraphrase recall               5%                         95%   <- capability boundary
+false positive rate             0%                          0%
+adversarial accuracy           40%                         90%
 ```
 
-The mechanism works; the semantics do not exist yet. Five prohibited
-statements written in wording the rules do not enumerate — including
-*"You should buy this stock today."* and *"This opportunity cannot fail."* —
-produce no result at all.
+The keyword mechanism is exact on enumerated wording and catches almost none of
+the unenumerated phrasing. The semantic prototype closes most of that gap on
+this benchmark, but the benchmark and evaluator were written together, so the
+gain is in-sample. Full evidence, failure cases and the overfitting disclosure
+are in [`PHASE_7_2_SEMANTIC_RISK_EVALUATOR_REPORT.md`](PHASE_7_2_SEMANTIC_RISK_EVALUATOR_REPORT.md).
 
 ## 7. Limits of this design
 
 - The framework is **not wired into production**. Nothing calls it; the plugin
   still produces risk constraints directly. Section 5 is a design, not an
-  integration.
+  integration — verified by test in Phase 7.2.
 - Only `source` evidence is checkable. The evidence layer mostly reports
   `unknown`, which is honest but not yet useful for gating.
 - The taxonomy is hand-written and uncalibrated against real material.
-- No semantic or model evaluator exists. Until one does, adding this layer does
-  not improve detection over the keyword rules it wraps.
+- The semantic evaluator is a **prototype**: an explainable rule system that
+  composes surface signals. Its measured improvement is in-sample, two
+  benchmark cases still fail, and no independent corpus has been used to
+  confirm generalisation.
