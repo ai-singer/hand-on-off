@@ -70,5 +70,28 @@ class SecretScanTests(unittest.TestCase):
         self.assertEqual(findings, [])
 
 
+    def test_archive_directory_name_is_not_treated_as_credential_file(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            archive_path = Path(directory) / "payload.tar.gz"
+            with tarfile.open(archive_path, "w:gz") as archive:
+                directory_member = tarfile.TarInfo("workspace/tests/secret_scan")
+                directory_member.type = tarfile.DIRTYPE
+                archive.addfile(directory_member)
+
+                credential_data = (
+                    b'{"api_key": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}\n'
+                )
+                credential_member = tarfile.TarInfo("workspace/credentials.json")
+                credential_member.size = len(credential_data)
+                archive.addfile(credential_member, io.BytesIO(credential_data))
+
+            findings = scan_targets([archive_path])
+
+        rendered = "\n".join(finding.render() for finding in findings)
+        self.assertIn("forbidden-filename", {finding.rule for finding in findings})
+        self.assertIn("credentials.json", rendered)
+        self.assertNotIn("secret_scan", rendered)
+
+
 if __name__ == "__main__":
     unittest.main()

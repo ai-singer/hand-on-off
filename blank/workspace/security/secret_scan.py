@@ -125,7 +125,12 @@ def _archive_kind(name: str) -> str | None:
     return None
 
 
-def _scan_name(path: str, *, root_git_allowed: bool = False) -> list[Finding]:
+def _scan_name(
+    path: str,
+    *,
+    root_git_allowed: bool = False,
+    is_directory: bool = False,
+) -> list[Finding]:
     normalized = path.replace("\\", "/")
     pure_path = PurePosixPath(normalized)
     findings: list[Finding] = []
@@ -135,6 +140,14 @@ def _scan_name(path: str, *, root_git_allowed: bool = False) -> list[Finding]:
         findings.append(
             Finding(path, "nested-git", None, "nested Git metadata is forbidden")
         )
+
+    if is_directory:
+        # A directory cannot itself be a credential file: the filename rules
+        # below describe files. Members inside the directory are scanned
+        # individually, so only the nested-VCS check above applies here.
+        # Without this, legitimate directories such as `tests/secret_scan`
+        # would fail the gate and train reviewers to ignore it.
+        return findings
 
     name = pure_path.name.lower()
     if name in ALLOWED_SENSITIVE_FILENAMES:
@@ -255,7 +268,13 @@ def _scan_archive_bytes(
                                     "nested Git metadata is forbidden",
                                 )
                             )
-                    findings.extend(_scan_name(member_path, root_git_allowed=True))
+                    findings.extend(
+                        _scan_name(
+                            member_path,
+                            root_git_allowed=True,
+                            is_directory=member.isdir(),
+                        )
+                    )
                     if not member.isfile():
                         continue
                     expanded_bytes += member.size
@@ -301,7 +320,13 @@ def _scan_archive_bytes(
                                     "nested Git metadata is forbidden",
                                 )
                             )
-                    findings.extend(_scan_name(member_path, root_git_allowed=True))
+                    findings.extend(
+                        _scan_name(
+                            member_path,
+                            root_git_allowed=True,
+                            is_directory=member.is_dir(),
+                        )
+                    )
                     if member.is_dir():
                         continue
                     expanded_bytes += member.file_size
