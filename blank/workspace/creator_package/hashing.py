@@ -34,6 +34,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+from pathlib import PurePosixPath
 from typing import Any, Iterable, Mapping
 
 from .errors import PackageArchiveError
@@ -107,14 +108,26 @@ def package_hash(members: Mapping[str, bytes]) -> str:
     Each member contributes ``<path>\\0<sha256 of its bytes>\\n``, in sorted path
     order. Hashing the *names* as well as the contents means a member cannot be
     renamed without changing the digest.
+
+    The two self-referential members are matched by **basename**, not by full path.
+    A package written at the archive root names them ``manifest.json``; a library
+    written one directory down names them ``creator_skill_library/manifest.json``.
+    Matching on the bare name would silently include the library's own manifest in
+    its content hash, which is the bug this comment exists to prevent.
     """
 
     lines: list[str] = []
     for path in sorted(members):
-        if path in SELF_REFERENTIAL_MEMBERS:
+        if _is_self_referential(path):
             continue
         lines.append(f"{path}\0{digest_bytes(members[path])}\n")
     return digest_bytes("".join(lines).encode("utf-8"))
+
+
+def _is_self_referential(path: str) -> bool:
+    """Whether a member is one of the files that record a digest."""
+
+    return PurePosixPath(path).name in SELF_REFERENTIAL_MEMBERS
 
 
 def verify_package_hash(
@@ -128,27 +141,31 @@ def verify_package_hash(
     return package_hash(members) == expected
 
 
-def checksum_ledger(members: Mapping[str, bytes]) -> dict[str, Any]:
+def checksum_ledger(
+    members: Mapping[str, bytes],
+    *,
+    null_digest_for: Iterable[str] | None = None,
+) -> dict[str, Any]:
     """The ``checksums.json`` document for a set of members.
 
-    Every member gets an entry, *including* ``checksums.json`` itself, which is
-    written with its own entry set to ``null`` because a file cannot contain its own
-    digest. The ledger records that fact in ``self_reference`` rather than quietly
-    omitting the row, so a reader sees the gap instead of an unexplained absence.
+    A file cannot contain its own digest, so some rows must record ``sha256: null``.
+    Which rows those are is **passed in**, not guessed: the content hash excludes two
+    members, but a ledger written last has only one member it cannot digest. Defaulting
+    to the content-hash exclusion list would put a digest for ``checksums.json`` in the
+    very document that digest describes, which can never be right.
     """
 
+    nulls = set(SELF_REFERENTIAL_MEMBERS if null_digest_for is None else null_digest_for)
     rows: dict[str, Any] = {}
     for path in sorted(members):
         payload = members[path]
         rows[path] = {
-            "sha256": (
-                None if path == "checksums.json" else digest_bytes(payload)
-            ),
+            "sha256": None if path in nulls else digest_bytes(payload),
             "bytes": len(payload),
         }
     return {
         "algorithm": "sha256",
-        "self_reference": "checksums.json",
+        "self_reference": sorted(nulls),
         "excluded_from_package_hash": list(SELF_REFERENTIAL_MEMBERS),
         "file_count": len(rows),
         "files": rows,
