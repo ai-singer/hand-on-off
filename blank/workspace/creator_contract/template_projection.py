@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Any, Mapping
 
 from .artifacts import MODULE_NAMES, canonical_json, instance_dir
-from .authoring import build_visual_rules
+from .authoring import build_generation, build_publishing, build_visual_rules
 from .errors import CreatorContractError, CreatorContractSchemaError
 
 #: Default template workspace, relative to the repository root.
@@ -463,41 +463,22 @@ def _project_risk_policy(
 def _project_generation(*, notes: list[str]) -> dict[str, Any]:
     notes.append(
         "the template ships no generation adapter; generation is declared as a "
-        "routing reference and left disabled"
+        "routing reference, left disabled, and states why"
     )
-    return {
-        "adapter_ref": "deployment.generation_adapter",
-        "input": ["topic", "structure", "knowledge", "style", "domain_context", "constraints"],
-        "output_format": "content_plan",
-        "quality_gate": {
-            "required_decision": "PASS",
-            "controller_ref": "evaluation.quality_gate_controller.QualityGateController",
-        },
-        "enabled": False,
-    }
+    return build_generation()
 
 
 def _project_publishing(platform: str, *, notes: list[str]) -> dict[str, Any]:
     notes.append(
         "the template ships no publisher; publishing is declared as a target "
-        "with an explicit idempotency key"
+        "with an explicit idempotency key, left disabled, and states why"
     )
-    return {
-        "platform": platform if platform in {"xiaohongshu", "bilibili", "youtube", "douyin", "wechat", "web", "github"} else "web",
-        "image_requirement": {
-            "aspect_ratio": "16:9",
-            "min_width": 1080,
-            "title_safe_area_ratio": 0.25,
-            "count": 1,
-        },
-        "api": {
-            "adapter_ref": "deployment.publishing_adapter",
-            "idempotency_key": "creator_id + source_id + content_hash",
-            "retry_policy": "bounded",
-        },
-        "schedule": {"mode": "manual", "timezone": "UTC"},
-        "requires_human_approval": True,
-    }
+    resolved = (
+        platform
+        if platform in {"xiaohongshu", "bilibili", "youtube", "douyin", "wechat", "web", "github"}
+        else "web"
+    )
+    return build_publishing(platform=resolved, aspect_ratio="16:9")
 
 
 def _mapping(parent: Mapping[str, Any], key: str, origin: Path) -> Mapping[str, Any]:

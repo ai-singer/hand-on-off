@@ -1,0 +1,18 @@
+{
+  "adapter_ref": "deployment.generation_adapter",
+  "enabled": false,
+  "input": [
+    "topic",
+    "structure",
+    "knowledge",
+    "style",
+    "domain_context",
+    "constraints"
+  ],
+  "output_format": "content_plan",
+  "quality_gate": {
+    "controller_ref": "evaluation.quality_gate_controller.QualityGateController",
+    "required_decision": "PASS"
+  },
+  "reason": "generation_capability_not_available"
+}

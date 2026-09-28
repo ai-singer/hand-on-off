@@ -1,0 +1,152 @@
+# Creator Projection — Asset Registry
+#
+# Every projection input MUST come from this registry. No path used by the
+# projection layer may be hard-coded in Python.
+#
+# `location` is always WORKSPACE-RELATIVE (relative to the template workspace,
+# i.e. the directory containing config/, plugins/, schemas/). This keeps the
+# registry portable and makes the read-only guarantee easy to check.
+#
+# An asset that is referenced by documentation but has no implementation is
+# registered with `status: unavailable` and a machine-readable `reason`, so the
+# projection marks the gap instead of inventing the capability.
+#
+# status:    available | unavailable
+# type:      identity_source | visual_rules | text_rules | risk_reference |
+#            source_rules | generation_capability | publishing_capability |
+#            evaluation_policy | markdown_template
+# format:    json | markdown | yaml | python
+
+version: "1.0.0"
+
+assets:
+  # ---- identity ---------------------------------------------------------
+  - id: nuwa_persona_skill
+    type: identity_source
+    location: external/nuwa-skill/SKILL.md
+    format: markdown
+    status: unavailable
+    reason: external_toolchain_not_present_in_repository
+    description: >
+      The nuwa (女娲) persona-generation procedure. Registered so the identity
+      projection has a declared input; when absent, identity is projected from
+      the template's own declared configuration and the substitution is recorded
+      in provenance rather than silently defaulted.
+
+  - id: nuwa_skill_template
+    type: markdown_template
+    location: external/nuwa-skill/references/skill-template.md
+    format: markdown
+    status: unavailable
+    reason: external_toolchain_not_present_in_repository
+    description: The persona Skill output template that defines the section shape.
+
+  - id: persona_perspective_skill
+    type: identity_source
+    location: external/tim-mediastorm-perspective/SKILL.md
+    format: markdown
+    status: unavailable
+    reason: external_toolchain_not_present_in_repository
+    description: A real generated persona instance, used as the identity shape reference.
+
+  - id: plugin_manifest
+    type: identity_source
+    location: plugins/xiaolin_finance/plugin.json
+    format: json
+    status: available
+    description: Plugin identity — name, version, domain, creator_target.
+
+  - id: plugin_release_manifest
+    type: identity_source
+    location: plugins/xiaolin_finance/release.json
+    format: json
+    status: available
+    description: Declared capabilities and framework compatibility.
+
+  - id: runtime_config
+    type: identity_source
+    location: config/runtime/default.json
+    format: json
+    status: available
+    description: Instance name, enabled plugins, selected workflow, contract version.
+
+  # ---- visual -----------------------------------------------------------
+  - id: visual_profile_m5
+    type: visual_rules
+    location: docs/m5/profiles/visual_profile.yaml
+    format: yaml
+    status: available
+    description: >
+      Flattened M5 VisualCreatorProfile emitted by
+      multimodal_creator.profile.serialization.factory_config. Referenced, never
+      copied.
+
+  - id: visual_profile_m5_json
+    type: visual_rules
+    location: docs/m5/profiles/vcp-4fea7437238d4bca.json
+    format: json
+    status: available
+    description: The full M5 profile document the flattened projection derives from.
+
+  # ---- text -------------------------------------------------------------
+  - id: text_distillation_rules
+    type: text_rules
+    location: plugins/xiaolin_finance/rules/value_rules.json
+    format: json
+    status: available
+    description: The value-rule taxonomy a creator distils for; the text-rule source of truth.
+
+  - id: text_structure_templates
+    type: text_rules
+    location: plugins/xiaolin_finance/rules/structure_templates.json
+    format: json
+    status: available
+    description: Organisation templates (section names, not prose).
+
+  # ---- risk -------------------------------------------------------------
+  - id: risk_policy_reference
+    type: risk_reference
+    location: plugins/xiaolin_finance/rules/filter_rules.json
+    format: json
+    status: available
+    description: The prohibited-category rules the live quality gate enforces.
+
+  - id: evaluation_rubric
+    type: evaluation_policy
+    location: plugins/xiaolin_finance/evaluation/rubric.json
+    format: json
+    status: available
+    description: Deterministic domain scoring policy; supplies knowledge boundaries.
+
+  # ---- source -----------------------------------------------------------
+  - id: source_collection_strategy
+    type: source_rules
+    location: external/xhs-collection-strategy/SKILL.md
+    format: markdown
+    status: unavailable
+    reason: external_toolchain_not_present_in_repository
+    description: >
+      The dual-layer collection and creator-discovery procedure. Registered as a
+      declared input; the projection falls back to the template's declared
+      keywords and marks the substitution in provenance.
+
+  # ---- capabilities that do not exist -----------------------------------
+  - id: generation_capability
+    type: generation_capability
+    location: workflows/content_distillation_pipeline/generation_interface.py
+    format: python
+    status: unavailable
+    reason: generation_capability_not_available
+    description: >
+      Only a 24-line request contract exists. No generation adapter ships, so an
+      instance may declare a routing reference but must never enable generation.
+
+  - id: publishing_capability
+    type: publishing_capability
+    location: config/runtime/default.json
+    format: json
+    status: unavailable
+    reason: publishing_capability_not_available
+    description: >
+      No publisher, CMS, or idempotency implementation exists anywhere. An
+      instance may declare a target but must never enable publishing.

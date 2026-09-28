@@ -1,0 +1,1153 @@
+{
+  "contract_version": "1.0.0",
+  "field_provenance": {
+    "generation": {
+      "adapter_ref": {
+        "confidence": 0.0,
+        "field": "adapter_ref",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "input": {
+        "confidence": 0.0,
+        "field": "input",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "output_format": {
+        "confidence": 0.0,
+        "field": "output_format",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "quality_gate": {
+        "confidence": 0.0,
+        "field": "quality_gate",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reason": {
+        "confidence": 0.0,
+        "field": "reason",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "identity": {
+      "audience": {
+        "confidence": 1.0,
+        "field": "audience",
+        "projection_method": "asset_substitution",
+        "source_asset": "plugin_manifest",
+        "source_path": "plugins/xiaolin_finance/plugin.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "creator_id": {
+        "confidence": 0.4,
+        "field": "creator_id",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "domain": {
+        "confidence": 0.4,
+        "field": "domain",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "language": {
+        "confidence": 1.0,
+        "field": "language",
+        "projection_method": "asset_substitution",
+        "source_asset": "runtime_config",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "name": {
+        "confidence": 0.4,
+        "field": "name",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "persona": {
+        "confidence": 0.4,
+        "field": "persona",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "platform": {
+        "confidence": 1.0,
+        "field": "platform",
+        "projection_method": "asset_substitution",
+        "source_asset": "runtime_config",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reference_creator_name": {
+        "confidence": 1.0,
+        "field": "reference_creator_name",
+        "projection_method": "config_read",
+        "source_asset": "plugin_manifest",
+        "source_path": "plugins/xiaolin_finance/plugin.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "tone": {
+        "confidence": 0.4,
+        "field": "tone",
+        "projection_method": "config_read",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "publishing": {
+      "api": {
+        "confidence": 0.0,
+        "field": "api",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "image_requirement": {
+        "confidence": 0.0,
+        "field": "image_requirement",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "platform": {
+        "confidence": 0.0,
+        "field": "platform",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reason": {
+        "confidence": 0.0,
+        "field": "reason",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "requires_human_approval": {
+        "confidence": 0.0,
+        "field": "requires_human_approval",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "schedule": {
+        "confidence": 0.0,
+        "field": "schedule",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "risk_policy": {
+      "blocked_patterns": {
+        "confidence": 1.0,
+        "field": "blocked_patterns",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "evidence_requirement": {
+        "confidence": 1.0,
+        "field": "evidence_requirement",
+        "projection_method": "config_read",
+        "source_asset": "evaluation_rubric",
+        "source_path": "plugins/xiaolin_finance/evaluation/rubric.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "review_required": {
+        "confidence": 0.0,
+        "field": "review_required",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "review_rules": {
+        "confidence": 1.0,
+        "field": "review_rules",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "risk_categories": {
+        "confidence": 1.0,
+        "field": "risk_categories",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "runtime_connected": {
+        "confidence": 0.0,
+        "field": "runtime_connected",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "source": {
+        "confidence": 0.0,
+        "field": "source",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "source": {
+      "collection_rules": {
+        "confidence": 0.4,
+        "field": "collection_rules",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "data_sources": {
+        "confidence": 0.4,
+        "field": "data_sources",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "keywords": {
+        "confidence": 1.0,
+        "field": "keywords",
+        "projection_method": "config_read",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reference_creators": {
+        "confidence": 0.4,
+        "field": "reference_creators",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "text_rules": {
+      "knowledge_boundary": {
+        "confidence": 1.0,
+        "field": "knowledge_boundary",
+        "projection_method": "config_read",
+        "source_asset": "evaluation_rubric",
+        "source_path": "plugins/xiaolin_finance/evaluation/rubric.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "length": {
+        "confidence": 1.0,
+        "field": "length",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "structure": {
+        "confidence": 1.0,
+        "field": "structure",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "title_formula": {
+        "confidence": 1.0,
+        "field": "title_formula",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "tone": {
+        "confidence": 1.0,
+        "field": "tone",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "visual_rules": {
+      "attention_strategy": {
+        "confidence": 1.0,
+        "field": "attention_strategy",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "composition": {
+        "confidence": 1.0,
+        "field": "composition",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "constraints": {
+        "confidence": 1.0,
+        "field": "constraints",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "hierarchy": {
+        "confidence": 1.0,
+        "field": "hierarchy",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "profile_id": {
+        "confidence": 1.0,
+        "field": "profile_id",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "profile_version": {
+        "confidence": 1.0,
+        "field": "profile_version",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "provenance": {
+        "confidence": 1.0,
+        "field": "provenance",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "visual_language": {
+        "confidence": 1.0,
+        "field": "visual_language",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    }
+  },
+  "generation": {
+    "adapter_ref": "deployment.generation_adapter",
+    "enabled": false,
+    "input": [
+      "topic",
+      "structure",
+      "knowledge",
+      "style",
+      "domain_context",
+      "constraints"
+    ],
+    "output_format": "content_plan",
+    "quality_gate": {
+      "controller_ref": "evaluation.quality_gate_controller.QualityGateController",
+      "required_decision": "PASS"
+    },
+    "reason": "generation_capability_not_available"
+  },
+  "identity": {
+    "audience": "unspecified; the template declares no audience model",
+    "creator_id": "template_creator",
+    "domain": "finance",
+    "language": "en",
+    "name": "template_creator",
+    "persona": {
+      "decision_heuristics": [
+        "prefer material whose business_mechanism dimension is present",
+        "prefer material whose financial_structure dimension is present",
+        "prefer material whose data_interpretation dimension is present",
+        "prefer material whose company_case dimension is present",
+        "prefer material whose misconception_analysis dimension is present"
+      ],
+      "honest_boundaries": [
+        "projected from the blank template; no creator research was performed",
+        "no persona distillation has been run for template_creator",
+        "the template declares no audience or platform model"
+      ],
+      "identity_card": "template_creator is the template's reference instance, projected from its own declared configuration rather than a distilled persona.",
+      "mental_models": [
+        {
+          "apply_when": "material concerns business mechanism",
+          "evidence": "declared as a distillation section in the value rules",
+          "failure_condition": "no source material supports this section",
+          "mechanism": "How a business earns money and how value, cost and incentive connect.",
+          "model_id": "business_mechanism"
+        },
+        {
+          "apply_when": "material concerns financial structure",
+          "evidence": "declared as a distillation section in the value rules",
+          "failure_condition": "no source material supports this section",
+          "mechanism": "How a report is organised: revenue, cost, growth sources and risk factors.",
+          "model_id": "financial_structure"
+        },
+        {
+          "apply_when": "material concerns data expression pattern",
+          "evidence": "declared as a distillation section in the value rules",
+          "failure_condition": "no source material supports this section",
+          "mechanism": "How numbers are expressed: comparison, trend, indicator interpretation.",
+          "model_id": "data_expression_pattern"
+        },
+        {
+          "apply_when": "material concerns case selection logic",
+          "evidence": "declared as a distillation section in the value rules",
+          "failure_condition": "no source material supports this section",
+          "mechanism": "Why a company case is chosen and how it supports the claim.",
+          "model_id": "case_selection_logic"
+        },
+        {
+          "apply_when": "material concerns misconception analysis",
+          "evidence": "declared as a distillation section in the value rules",
+          "failure_condition": "no source material supports this section",
+          "mechanism": "Which common belief is wrong and where fact diverges from perception.",
+          "model_id": "misconception_analysis"
+        }
+      ],
+      "mode": "reasoning_model"
+    },
+    "platform": "web",
+    "reference_creator_name": "xiaolin-style-finance-explainer",
+    "tone": "evidence-aware, mechanism-first, conclusion keeps its boundaries"
+  },
+  "provenance": {
+    "generation": {
+      "asset_reason": "generation_capability_not_available",
+      "asset_status": "unavailable",
+      "confidence": 0.0,
+      "projection_method": "capability_declaration",
+      "source": "generation_capability",
+      "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "identity": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_distillation_rules",
+      "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "publishing": {
+      "asset_reason": "publishing_capability_not_available",
+      "asset_status": "unavailable",
+      "confidence": 0.0,
+      "projection_method": "capability_declaration",
+      "source": "publishing_capability",
+      "source_path": "config/runtime/default.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "risk_policy": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "config_read",
+      "source": "risk_policy_reference",
+      "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "source": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_distillation_rules",
+      "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "text_rules": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_structure_templates",
+      "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "visual_rules": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "visual_profile_m5",
+      "source_path": "docs/m5/profiles/visual_profile.yaml",
+      "timestamp": "1970-01-01T00:00:00Z"
+    }
+  },
+  "publishing": {
+    "api": {
+      "adapter_ref": "deployment.publishing_adapter",
+      "idempotency_key": "creator_id + source_id + content_hash",
+      "retry_policy": "bounded"
+    },
+    "enabled": false,
+    "image_requirement": {
+      "aspect_ratio": "16:9",
+      "count": 1,
+      "min_width": 1080,
+      "title_safe_area_ratio": 0.25
+    },
+    "platform": "web",
+    "reason": "publishing_capability_not_available",
+    "requires_human_approval": true,
+    "schedule": {
+      "mode": "manual",
+      "timezone": "UTC"
+    }
+  },
+  "risk_policy": {
+    "blocked_patterns": [
+      {
+        "category_id": "investment_advice",
+        "pattern": "buy now"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "sell now"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "guaranteed return"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "guaranteed buy"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "guaranteed profit"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "guaranteed gain"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "must buy"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "立即买入"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "立即卖出"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "稳赚"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "稳赚不赔"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "必买"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "推荐买入"
+      },
+      {
+        "category_id": "investment_advice",
+        "pattern": "推荐卖出"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "will definitely"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "certain to"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "必然上涨"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "肯定下跌"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "一定会"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "价格预测"
+      },
+      {
+        "category_id": "market_prediction",
+        "pattern": "目标价"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "panic"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "collapse now"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "everyone is buying"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "恐慌"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "崩盘"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "赶紧上车"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "错过就没有了"
+      },
+      {
+        "category_id": "emotional_language",
+        "pattern": "疯狂"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "rumor"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "someone said"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "internal news"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "据说"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "传闻"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "消息人士"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "内部消息"
+      },
+      {
+        "category_id": "unverified_fact",
+        "pattern": "未经证实"
+      }
+    ],
+    "enabled": true,
+    "evidence_requirement": {
+      "evidence_layer_only_as_fact": true,
+      "min_first_party_ratio": 0.5,
+      "require_source_ids": true
+    },
+    "review_required": true,
+    "review_rules": [
+      {
+        "decision": "block",
+        "when": "any risk category with severity 'block' matched"
+      },
+      {
+        "decision": "require_review",
+        "when": "domain score below pass_score (0.6)"
+      },
+      {
+        "decision": "pass",
+        "when": "no blocking risk and domain score at or above pass_score"
+      }
+    ],
+    "risk_categories": [
+      {
+        "action": "block",
+        "category_id": "investment_advice",
+        "definition": "Direct investment instructions or guaranteed-return claims must not enter generated content.",
+        "severity": "block"
+      },
+      {
+        "action": "require_evidence",
+        "category_id": "market_prediction",
+        "definition": "Forecast language requires evidence, uncertainty, and explicit assumptions.",
+        "severity": "warning"
+      },
+      {
+        "action": "downrank",
+        "category_id": "emotional_language",
+        "definition": "Incitement, panic framing or exaggerated judgement lowers explanation quality and must be down-ranked.",
+        "severity": "warning"
+      },
+      {
+        "action": "require_evidence",
+        "category_id": "unverified_fact",
+        "definition": "Unconfirmed figures or unattributable claims require a named source before they may be distilled.",
+        "severity": "warning"
+      }
+    ],
+    "runtime_connected": false,
+    "source": "risk_evaluation"
+  },
+  "source": {
+    "collection_rules": {
+      "dedupe_by": "source_id",
+      "material_tiers": [
+        "A"
+      ],
+      "min_notes": 1,
+      "rate_limit_seconds": 3
+    },
+    "data_sources": [
+      {
+        "kind": "injected_adapter",
+        "layer": "evidence",
+        "locator": "core.models.RawSource",
+        "source_id": "deployment-adapter"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "business model",
+        "weight": 1.0
+      },
+      {
+        "keyword": "revenue",
+        "weight": 1.0
+      },
+      {
+        "keyword": "cost",
+        "weight": 1.0
+      },
+      {
+        "keyword": "margin",
+        "weight": 1.0
+      },
+      {
+        "keyword": "商业模式",
+        "weight": 1.0
+      },
+      {
+        "keyword": "收入",
+        "weight": 1.0
+      },
+      {
+        "keyword": "成本",
+        "weight": 1.0
+      },
+      {
+        "keyword": "利润率",
+        "weight": 1.0
+      },
+      {
+        "keyword": "income statement",
+        "weight": 0.95
+      },
+      {
+        "keyword": "balance sheet",
+        "weight": 0.95
+      },
+      {
+        "keyword": "cash flow statement",
+        "weight": 0.95
+      },
+      {
+        "keyword": "cost structure",
+        "weight": 0.95
+      },
+      {
+        "keyword": "revenue mix",
+        "weight": 0.95
+      },
+      {
+        "keyword": "gross margin",
+        "weight": 0.95
+      },
+      {
+        "keyword": "operating margin",
+        "weight": 0.95
+      },
+      {
+        "keyword": "利润表",
+        "weight": 0.95
+      },
+      {
+        "keyword": "资产负债表",
+        "weight": 0.95
+      },
+      {
+        "keyword": "现金流量表",
+        "weight": 0.95
+      },
+      {
+        "keyword": "成本结构",
+        "weight": 0.95
+      },
+      {
+        "keyword": "收入结构",
+        "weight": 0.95
+      },
+      {
+        "keyword": "毛利率",
+        "weight": 0.95
+      },
+      {
+        "keyword": "data",
+        "weight": 0.9
+      },
+      {
+        "keyword": "growth rate",
+        "weight": 0.9
+      },
+      {
+        "keyword": "cash flow",
+        "weight": 0.9
+      },
+      {
+        "keyword": "ratio",
+        "weight": 0.9
+      },
+      {
+        "keyword": "数据",
+        "weight": 0.9
+      },
+      {
+        "keyword": "增长率",
+        "weight": 0.9
+      },
+      {
+        "keyword": "现金流",
+        "weight": 0.9
+      },
+      {
+        "keyword": "比率",
+        "weight": 0.9
+      },
+      {
+        "keyword": "company",
+        "weight": 0.8
+      },
+      {
+        "keyword": "enterprise",
+        "weight": 0.8
+      },
+      {
+        "keyword": "earnings",
+        "weight": 0.8
+      },
+      {
+        "keyword": "公司",
+        "weight": 0.8
+      },
+      {
+        "keyword": "企业",
+        "weight": 0.8
+      },
+      {
+        "keyword": "财报",
+        "weight": 0.8
+      },
+      {
+        "keyword": "misconception",
+        "weight": 0.85
+      },
+      {
+        "keyword": "myth",
+        "weight": 0.85
+      },
+      {
+        "keyword": "common mistake",
+        "weight": 0.85
+      },
+      {
+        "keyword": "misunderstanding",
+        "weight": 0.85
+      },
+      {
+        "keyword": "误区",
+        "weight": 0.85
+      },
+      {
+        "keyword": "误解",
+        "weight": 0.85
+      },
+      {
+        "keyword": "常见错误",
+        "weight": 0.85
+      },
+      {
+        "keyword": "认知偏差",
+        "weight": 0.85
+      }
+    ],
+    "reference_creators": [
+      {
+        "identity_verified": true,
+        "name": "template-placeholder",
+        "platform": "web",
+        "role": "unassigned",
+        "verification_method": "not-applicable: no reference creator is declared and the user/otherinfo verification call is not implemented"
+      }
+    ]
+  },
+  "text_rules": {
+    "knowledge_boundary": [
+      "Does the material explain causal commercial or economic mechanisms?",
+      "Is the material organised as revenue, cost, growth sources and named risk factors?",
+      "Are metrics interpreted with context rather than repeated without meaning?",
+      "Are cases traceable and bounded by the available evidence?",
+      "Is a common belief separated from the observed fact without ridiculing the audience?",
+      "Are figures attributable, or do they rest on unconfirmed claims?",
+      "Does the material explain a mechanism and interpret data, not only report events?",
+      "Is the boundary between explanation and advice respected?",
+      "How much of the finance value taxonomy did the material actually cover?",
+      "Was an explainable structure selected for the material?",
+      "Does the extracted value hold across the supplied sources rather than one excerpt?",
+      "required evidence: source reference",
+      "required evidence: time period for metrics",
+      "required evidence: uncertainty for forecasts"
+    ],
+    "length": {
+      "max_chars": 2400,
+      "min_chars": 300
+    },
+    "structure": {
+      "sections": [
+        "question and scope",
+        "business or economic mechanism",
+        "data and evidence interpretation",
+        "company or market case",
+        "counter-evidence and risk boundary"
+      ],
+      "template_id": "mechanism-evidence-case-risk"
+    },
+    "title_formula": [
+      "[specific subject], what is the [question and scope]?",
+      "[specific subject], what is the [business or economic mechanism]?",
+      "[specific subject], what is the [data and evidence interpretation]?"
+    ],
+    "tone": {
+      "avoid": [
+        "unsourced numbers",
+        "investment advice",
+        "emotional framing"
+      ],
+      "certainty": "assert on cited evidence; qualify forecasts",
+      "voice": "mechanism first, evidence before conclusion"
+    }
+  },
+  "visual_rules": {
+    "attention_strategy": {
+      "first": "headline",
+      "second": "headline"
+    },
+    "composition": {
+      "forbidden_layout": [
+        "central_subject",
+        "offset_subject",
+        "full_bleed_subject",
+        "bottom_anchor",
+        "overlay_headline",
+        "split_columns",
+        "stacked_information",
+        "centred_information"
+      ],
+      "preferred_layout": [
+        "top_entry"
+      ]
+    },
+    "constraints": {
+      "avoid": [
+        "missing_information_support"
+      ],
+      "must_have": [
+        "background_background",
+        "background_center_mid",
+        "background_dense",
+        "background_encloses_all",
+        "background_present",
+        "entrance_point:headline->secondary_information:headline",
+        "headline_first",
+        "headline_present",
+        "headline_primary",
+        "headline_secondary",
+        "headline_sparse",
+        "headline_top_mid"
+      ]
+    },
+    "hierarchy": {
+      "primary": "hook"
+    },
+    "profile_id": "vcp-02c53916e346200e",
+    "profile_version": "m5.0.0",
+    "provenance": {
+      "attention_strategy": {
+        "confidence": 0.866667,
+        "derivation": "direct",
+        "evidence": {
+          "attention_support": [
+            1.0
+          ]
+        },
+        "source": {
+          "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+          "artifact_kind": "CreatorStrategyPattern",
+          "phase": "M4"
+        }
+      },
+      "composition_rules": {
+        "confidence": 0.866667,
+        "derivation": "enumerated_absent",
+        "evidence": {
+          "moves_absent": [
+            "central_subject",
+            "offset_subject",
+            "full_bleed_subject",
+            "bottom_anchor",
+            "overlay_headline",
+            "split_columns",
+            "stacked_information",
+            "centred_information"
+          ],
+          "moves_present": [
+            "top_entry"
+          ],
+          "vocabulary_size": 9
+        },
+        "source": {
+          "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+          "artifact_kind": "CreatorStrategyPattern",
+          "phase": "M4"
+        }
+      },
+      "constraints": {
+        "confidence": 0.7,
+        "derivation": "thresholded",
+        "evidence": {
+          "constraint_count": 1,
+          "must_have_features": [
+            "background_background",
+            "background_center_mid",
+            "background_dense",
+            "background_encloses_all",
+            "background_present",
+            "entrance_point:headline->secondary_information:headline",
+            "headline_first",
+            "headline_present",
+            "headline_primary",
+            "headline_secondary",
+            "headline_sparse",
+            "headline_top_mid"
+          ],
+          "must_have_frequency": 0.85
+        },
+        "source": {
+          "artifact": "constraint-strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+          "artifact_kind": "VisualConstraint",
+          "phase": "M4"
+        }
+      },
+      "hierarchy_pattern": {
+        "confidence": 0.866667,
+        "derivation": "direct",
+        "evidence": {
+          "strategies": [
+            "headline_first"
+          ],
+          "support": 2
+        },
+        "source": {
+          "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+          "artifact_kind": "CreatorStrategyPattern",
+          "phase": "M4"
+        }
+      },
+      "visual_identity": {
+        "confidence": 0.775,
+        "derivation": "aggregated",
+        "evidence": {
+          "attention_strategy": [
+            "headline_first"
+          ],
+          "average_region_area": 0.35283,
+          "style_traits": [
+            "background_dense",
+            "headline_sparse"
+          ]
+        },
+        "source": {
+          "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+          "artifact_kind": "CreatorStrategyPattern+VisualGrammar",
+          "phase": "M4"
+        }
+      }
+    },
+    "visual_language": "information_first"
+  }
+}

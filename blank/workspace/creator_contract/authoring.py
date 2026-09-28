@@ -322,7 +322,12 @@ def build_generation(
     adapter_ref: str = "deployment.generation_adapter",
     output_format: str = "content_plan",
 ) -> dict[str, Any]:
-    """Build the ``generation`` module (a routing declaration, not a model call)."""
+    """Build the ``generation`` module (a routing declaration, not a model call).
+
+    Disabled by default, with a reason: no generation adapter ships with this
+    template, so a default-enabled declaration would be a false claim. A
+    deployment enables it only by editing the instance.
+    """
 
     return {
         "adapter_ref": adapter_ref,
@@ -333,6 +338,7 @@ def build_generation(
             "controller_ref": "evaluation.quality_gate_controller.QualityGateController",
         },
         "enabled": False,
+        "reason": "generation_disabled_by_default: no adapter is injected in this template",
     }
 
 
@@ -342,7 +348,10 @@ def build_publishing(
     aspect_ratio: str = "4:5",
     schedule_mode: str = "manual",
 ) -> dict[str, Any]:
-    """Build the ``publishing`` module (a target declaration, not a publisher)."""
+    """Build the ``publishing`` module (a target declaration, not a publisher).
+
+    Disabled by default, with a reason: no publisher ships with this template.
+    """
 
     return {
         "platform": platform,
@@ -359,6 +368,8 @@ def build_publishing(
         },
         "schedule": {"mode": schedule_mode, "timezone": "Asia/Shanghai"},
         "requires_human_approval": True,
+        "enabled": False,
+        "reason": "publishing_disabled_by_default: no publisher is injected in this template",
     }
 
 

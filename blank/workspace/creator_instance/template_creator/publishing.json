@@ -1,0 +1,21 @@
+{
+  "api": {
+    "adapter_ref": "deployment.publishing_adapter",
+    "idempotency_key": "creator_id + source_id + content_hash",
+    "retry_policy": "bounded"
+  },
+  "enabled": false,
+  "image_requirement": {
+    "aspect_ratio": "16:9",
+    "count": 1,
+    "min_width": 1080,
+    "title_safe_area_ratio": 0.25
+  },
+  "platform": "web",
+  "reason": "publishing_capability_not_available",
+  "requires_human_approval": true,
+  "schedule": {
+    "mode": "manual",
+    "timezone": "UTC"
+  }
+}

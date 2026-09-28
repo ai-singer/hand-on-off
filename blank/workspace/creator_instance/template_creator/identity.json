@@ -1,0 +1,63 @@
+{
+  "audience": "unspecified; the template declares no audience model",
+  "creator_id": "template_creator",
+  "domain": "finance",
+  "language": "en",
+  "name": "template_creator",
+  "persona": {
+    "decision_heuristics": [
+      "prefer material whose business_mechanism dimension is present",
+      "prefer material whose financial_structure dimension is present",
+      "prefer material whose data_interpretation dimension is present",
+      "prefer material whose company_case dimension is present",
+      "prefer material whose misconception_analysis dimension is present"
+    ],
+    "honest_boundaries": [
+      "projected from the blank template; no creator research was performed",
+      "no persona distillation has been run for template_creator",
+      "the template declares no audience or platform model"
+    ],
+    "identity_card": "template_creator is the template's reference instance, projected from its own declared configuration rather than a distilled persona.",
+    "mental_models": [
+      {
+        "apply_when": "material concerns business mechanism",
+        "evidence": "declared as a distillation section in the value rules",
+        "failure_condition": "no source material supports this section",
+        "mechanism": "How a business earns money and how value, cost and incentive connect.",
+        "model_id": "business_mechanism"
+      },
+      {
+        "apply_when": "material concerns financial structure",
+        "evidence": "declared as a distillation section in the value rules",
+        "failure_condition": "no source material supports this section",
+        "mechanism": "How a report is organised: revenue, cost, growth sources and risk factors.",
+        "model_id": "financial_structure"
+      },
+      {
+        "apply_when": "material concerns data expression pattern",
+        "evidence": "declared as a distillation section in the value rules",
+        "failure_condition": "no source material supports this section",
+        "mechanism": "How numbers are expressed: comparison, trend, indicator interpretation.",
+        "model_id": "data_expression_pattern"
+      },
+      {
+        "apply_when": "material concerns case selection logic",
+        "evidence": "declared as a distillation section in the value rules",
+        "failure_condition": "no source material supports this section",
+        "mechanism": "Why a company case is chosen and how it supports the claim.",
+        "model_id": "case_selection_logic"
+      },
+      {
+        "apply_when": "material concerns misconception analysis",
+        "evidence": "declared as a distillation section in the value rules",
+        "failure_condition": "no source material supports this section",
+        "mechanism": "Which common belief is wrong and where fact diverges from perception.",
+        "model_id": "misconception_analysis"
+      }
+    ],
+    "mode": "reasoning_model"
+  },
+  "platform": "web",
+  "reference_creator_name": "xiaolin-style-finance-explainer",
+  "tone": "evidence-aware, mechanism-first, conclusion keeps its boundaries"
+}

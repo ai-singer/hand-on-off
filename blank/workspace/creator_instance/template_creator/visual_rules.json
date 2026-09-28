@@ -1,0 +1,148 @@
+{
+  "attention_strategy": {
+    "first": "headline",
+    "second": "headline"
+  },
+  "composition": {
+    "forbidden_layout": [
+      "central_subject",
+      "offset_subject",
+      "full_bleed_subject",
+      "bottom_anchor",
+      "overlay_headline",
+      "split_columns",
+      "stacked_information",
+      "centred_information"
+    ],
+    "preferred_layout": [
+      "top_entry"
+    ]
+  },
+  "constraints": {
+    "avoid": [
+      "missing_information_support"
+    ],
+    "must_have": [
+      "background_background",
+      "background_center_mid",
+      "background_dense",
+      "background_encloses_all",
+      "background_present",
+      "entrance_point:headline->secondary_information:headline",
+      "headline_first",
+      "headline_present",
+      "headline_primary",
+      "headline_secondary",
+      "headline_sparse",
+      "headline_top_mid"
+    ]
+  },
+  "hierarchy": {
+    "primary": "hook"
+  },
+  "profile_id": "vcp-02c53916e346200e",
+  "profile_version": "m5.0.0",
+  "provenance": {
+    "attention_strategy": {
+      "confidence": 0.866667,
+      "derivation": "direct",
+      "evidence": {
+        "attention_support": [
+          1.0
+        ]
+      },
+      "source": {
+        "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "artifact_kind": "CreatorStrategyPattern",
+        "phase": "M4"
+      }
+    },
+    "composition_rules": {
+      "confidence": 0.866667,
+      "derivation": "enumerated_absent",
+      "evidence": {
+        "moves_absent": [
+          "central_subject",
+          "offset_subject",
+          "full_bleed_subject",
+          "bottom_anchor",
+          "overlay_headline",
+          "split_columns",
+          "stacked_information",
+          "centred_information"
+        ],
+        "moves_present": [
+          "top_entry"
+        ],
+        "vocabulary_size": 9
+      },
+      "source": {
+        "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "artifact_kind": "CreatorStrategyPattern",
+        "phase": "M4"
+      }
+    },
+    "constraints": {
+      "confidence": 0.7,
+      "derivation": "thresholded",
+      "evidence": {
+        "constraint_count": 1,
+        "must_have_features": [
+          "background_background",
+          "background_center_mid",
+          "background_dense",
+          "background_encloses_all",
+          "background_present",
+          "entrance_point:headline->secondary_information:headline",
+          "headline_first",
+          "headline_present",
+          "headline_primary",
+          "headline_secondary",
+          "headline_sparse",
+          "headline_top_mid"
+        ],
+        "must_have_frequency": 0.85
+      },
+      "source": {
+        "artifact": "constraint-strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "artifact_kind": "VisualConstraint",
+        "phase": "M4"
+      }
+    },
+    "hierarchy_pattern": {
+      "confidence": 0.866667,
+      "derivation": "direct",
+      "evidence": {
+        "strategies": [
+          "headline_first"
+        ],
+        "support": 2
+      },
+      "source": {
+        "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "artifact_kind": "CreatorStrategyPattern",
+        "phase": "M4"
+      }
+    },
+    "visual_identity": {
+      "confidence": 0.775,
+      "derivation": "aggregated",
+      "evidence": {
+        "attention_strategy": [
+          "headline_first"
+        ],
+        "average_region_area": 0.35283,
+        "style_traits": [
+          "background_dense",
+          "headline_sparse"
+        ]
+      },
+      "source": {
+        "artifact": "strategy-family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "artifact_kind": "CreatorStrategyPattern+VisualGrammar",
+        "phase": "M4"
+      }
+    }
+  },
+  "visual_language": "information_first"
+}

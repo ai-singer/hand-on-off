@@ -263,14 +263,19 @@
             "min_first_party_ratio": {"type": "number"},
             "evidence_layer_only_as_fact": {"type": "boolean"}
           }
-        }
+        },
+        "review_required": {"type": "boolean"},
+        "source": {"type": "string"},
+        "runtime_connected": {"type": "boolean"},
+        "enabled": {"type": "boolean"},
+        "reason": {"type": "string"}
       }
     },
 
     "generation": {
       "type": "object",
       "additionalProperties": false,
-      "description": "A ROUTING declaration. It names the adapter to inject; it must never contain the model call itself.",
+      "description": "A ROUTING declaration. It names the adapter to inject; it must never contain the model call itself. When the capability is absent it is disabled and MUST carry a machine-readable reason.",
       "required": ["adapter_ref", "input", "output_format", "quality_gate"],
       "properties": {
         "adapter_ref": {"type": "string"},
@@ -289,14 +294,15 @@
             "controller_ref": {"type": "string"}
           }
         },
-        "enabled": {"type": "boolean"}
+        "enabled": {"type": "boolean"},
+        "reason": {"type": "string"}
       }
     },
 
     "publishing": {
       "type": "object",
       "additionalProperties": false,
-      "description": "A TARGET declaration. Publishing is performed by a deployment adapter; this block only declares platform, media expectations, idempotency key source, and schedule.",
+      "description": "A TARGET declaration. Publishing is performed by a deployment adapter; this block only declares platform, media expectations, idempotency key source, and schedule. When the capability is absent it is disabled and MUST carry a machine-readable reason.",
       "required": ["platform", "image_requirement", "api", "schedule"],
       "properties": {
         "platform": {"type": "string", "enum": ["xiaohongshu", "bilibili", "youtube", "douyin", "wechat", "web", "github"]},
@@ -331,7 +337,9 @@
             "timezone": {"type": "string"}
           }
         },
-        "requires_human_approval": {"type": "boolean"}
+        "requires_human_approval": {"type": "boolean"},
+        "enabled": {"type": "boolean"},
+        "reason": {"type": "string"}
       }
     },
 
@@ -349,7 +357,9 @@
         "generation": {"type": "object"},
         "publishing": {"type": "object"},
         "generated_by": {"type": "string"},
-        "template_contract": {"type": "object"}
+        "template_contract": {"type": "object"},
+        "registry_version": {"type": "string"},
+        "field_provenance": {"type": "object"}
       }
     }
   }

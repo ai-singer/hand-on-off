@@ -1,0 +1,201 @@
+{
+  "collection_rules": {
+    "dedupe_by": "source_id",
+    "material_tiers": [
+      "A"
+    ],
+    "min_notes": 1,
+    "rate_limit_seconds": 3
+  },
+  "data_sources": [
+    {
+      "kind": "injected_adapter",
+      "layer": "evidence",
+      "locator": "core.models.RawSource",
+      "source_id": "deployment-adapter"
+    }
+  ],
+  "keywords": [
+    {
+      "keyword": "business model",
+      "weight": 1.0
+    },
+    {
+      "keyword": "revenue",
+      "weight": 1.0
+    },
+    {
+      "keyword": "cost",
+      "weight": 1.0
+    },
+    {
+      "keyword": "margin",
+      "weight": 1.0
+    },
+    {
+      "keyword": "商业模式",
+      "weight": 1.0
+    },
+    {
+      "keyword": "收入",
+      "weight": 1.0
+    },
+    {
+      "keyword": "成本",
+      "weight": 1.0
+    },
+    {
+      "keyword": "利润率",
+      "weight": 1.0
+    },
+    {
+      "keyword": "income statement",
+      "weight": 0.95
+    },
+    {
+      "keyword": "balance sheet",
+      "weight": 0.95
+    },
+    {
+      "keyword": "cash flow statement",
+      "weight": 0.95
+    },
+    {
+      "keyword": "cost structure",
+      "weight": 0.95
+    },
+    {
+      "keyword": "revenue mix",
+      "weight": 0.95
+    },
+    {
+      "keyword": "gross margin",
+      "weight": 0.95
+    },
+    {
+      "keyword": "operating margin",
+      "weight": 0.95
+    },
+    {
+      "keyword": "利润表",
+      "weight": 0.95
+    },
+    {
+      "keyword": "资产负债表",
+      "weight": 0.95
+    },
+    {
+      "keyword": "现金流量表",
+      "weight": 0.95
+    },
+    {
+      "keyword": "成本结构",
+      "weight": 0.95
+    },
+    {
+      "keyword": "收入结构",
+      "weight": 0.95
+    },
+    {
+      "keyword": "毛利率",
+      "weight": 0.95
+    },
+    {
+      "keyword": "data",
+      "weight": 0.9
+    },
+    {
+      "keyword": "growth rate",
+      "weight": 0.9
+    },
+    {
+      "keyword": "cash flow",
+      "weight": 0.9
+    },
+    {
+      "keyword": "ratio",
+      "weight": 0.9
+    },
+    {
+      "keyword": "数据",
+      "weight": 0.9
+    },
+    {
+      "keyword": "增长率",
+      "weight": 0.9
+    },
+    {
+      "keyword": "现金流",
+      "weight": 0.9
+    },
+    {
+      "keyword": "比率",
+      "weight": 0.9
+    },
+    {
+      "keyword": "company",
+      "weight": 0.8
+    },
+    {
+      "keyword": "enterprise",
+      "weight": 0.8
+    },
+    {
+      "keyword": "earnings",
+      "weight": 0.8
+    },
+    {
+      "keyword": "公司",
+      "weight": 0.8
+    },
+    {
+      "keyword": "企业",
+      "weight": 0.8
+    },
+    {
+      "keyword": "财报",
+      "weight": 0.8
+    },
+    {
+      "keyword": "misconception",
+      "weight": 0.85
+    },
+    {
+      "keyword": "myth",
+      "weight": 0.85
+    },
+    {
+      "keyword": "common mistake",
+      "weight": 0.85
+    },
+    {
+      "keyword": "misunderstanding",
+      "weight": 0.85
+    },
+    {
+      "keyword": "误区",
+      "weight": 0.85
+    },
+    {
+      "keyword": "误解",
+      "weight": 0.85
+    },
+    {
+      "keyword": "常见错误",
+      "weight": 0.85
+    },
+    {
+      "keyword": "认知偏差",
+      "weight": 0.85
+    }
+  ],
+  "reference_creators": [
+    {
+      "identity_verified": true,
+      "name": "template-placeholder",
+      "platform": "web",
+      "role": "unassigned",
+      "verification_method": "not-applicable: no reference creator is declared and the user/otherinfo verification call is not implemented"
+    }
+  ]
+}

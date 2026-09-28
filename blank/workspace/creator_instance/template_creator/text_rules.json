@@ -1,0 +1,46 @@
+{
+  "knowledge_boundary": [
+    "Does the material explain causal commercial or economic mechanisms?",
+    "Is the material organised as revenue, cost, growth sources and named risk factors?",
+    "Are metrics interpreted with context rather than repeated without meaning?",
+    "Are cases traceable and bounded by the available evidence?",
+    "Is a common belief separated from the observed fact without ridiculing the audience?",
+    "Are figures attributable, or do they rest on unconfirmed claims?",
+    "Does the material explain a mechanism and interpret data, not only report events?",
+    "Is the boundary between explanation and advice respected?",
+    "How much of the finance value taxonomy did the material actually cover?",
+    "Was an explainable structure selected for the material?",
+    "Does the extracted value hold across the supplied sources rather than one excerpt?",
+    "required evidence: source reference",
+    "required evidence: time period for metrics",
+    "required evidence: uncertainty for forecasts"
+  ],
+  "length": {
+    "max_chars": 2400,
+    "min_chars": 300
+  },
+  "structure": {
+    "sections": [
+      "question and scope",
+      "business or economic mechanism",
+      "data and evidence interpretation",
+      "company or market case",
+      "counter-evidence and risk boundary"
+    ],
+    "template_id": "mechanism-evidence-case-risk"
+  },
+  "title_formula": [
+    "[specific subject], what is the [question and scope]?",
+    "[specific subject], what is the [business or economic mechanism]?",
+    "[specific subject], what is the [data and evidence interpretation]?"
+  ],
+  "tone": {
+    "avoid": [
+      "unsourced numbers",
+      "investment advice",
+      "emotional framing"
+    ],
+    "certainty": "assert on cited evidence; qualify forecasts",
+    "voice": "mechanism first, evidence before conclusion"
+  }
+}

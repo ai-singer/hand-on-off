@@ -435,6 +435,39 @@ def assert_risk_policy_not_empty(instance: Mapping[str, Any]) -> None:
             )
 
 
+def assert_no_phantom_capability(instance: Mapping[str, Any]) -> None:
+    """Reject an instance that claims a capability it cannot have.
+
+    ``generation`` and ``publishing`` are *routing and target declarations*. A
+    declaration may name an adapter to inject; it may not assert that the
+    capability is present. An instance that sets ``enabled: true`` must therefore
+    carry no absence reason, and an instance that sets ``enabled: false`` must
+    state why - otherwise the disabled state is indistinguishable from an
+    oversight.
+
+    This rule lives in the contract rather than in the projection because it is a
+    property of a valid instance, not of how the instance was produced.
+    """
+
+    for module in ("generation", "publishing"):
+        block = instance.get(module)
+        if not isinstance(block, Mapping):
+            raise CreatorContractDependencyError(f"instance has no {module} block")
+        enabled = block.get("enabled")
+        reason = str(block.get("reason", "")).strip()
+        if enabled is True and reason:
+            raise CreatorContractDependencyError(
+                f"{module}.enabled is true but a reason is declared ({reason!r}); "
+                "a declaration must not both enable the capability and explain "
+                "its absence"
+            )
+        if enabled is False and not reason:
+            raise CreatorContractDependencyError(
+                f"{module}.enabled is false but no reason is declared; a disabled "
+                "capability must state why it is disabled"
+            )
+
+
 # --------------------------------------------------------------------------
 # 3. Isolation
 # --------------------------------------------------------------------------
@@ -612,6 +645,9 @@ def validate(
     validate_dependencies(instance)
     checks["dependencies"] = "PASS"
 
+    assert_no_phantom_capability(instance)
+    checks["capability_declaration"] = "PASS"
+
     validate_isolation(instance, visual_profile=visual_profile)
     checks["isolation"] = "PASS"
 
@@ -648,6 +684,7 @@ __all__ = [
     "PROMPT_CONTENT_PATTERNS",
     "PROMPT_FORBIDDEN_KEYS",
     "assert_no_generation_prompt",
+    "assert_no_phantom_capability",
     "assert_no_runtime_code",
     "assert_provenance_complete",
     "assert_risk_policy_not_empty",

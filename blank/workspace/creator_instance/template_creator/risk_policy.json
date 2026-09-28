@@ -1,0 +1,201 @@
+{
+  "blocked_patterns": [
+    {
+      "category_id": "investment_advice",
+      "pattern": "buy now"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "sell now"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "guaranteed return"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "guaranteed buy"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "guaranteed profit"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "guaranteed gain"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "must buy"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "立即买入"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "立即卖出"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "稳赚"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "稳赚不赔"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "必买"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "推荐买入"
+    },
+    {
+      "category_id": "investment_advice",
+      "pattern": "推荐卖出"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "will definitely"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "certain to"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "必然上涨"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "肯定下跌"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "一定会"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "价格预测"
+    },
+    {
+      "category_id": "market_prediction",
+      "pattern": "目标价"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "panic"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "collapse now"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "everyone is buying"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "恐慌"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "崩盘"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "赶紧上车"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "错过就没有了"
+    },
+    {
+      "category_id": "emotional_language",
+      "pattern": "疯狂"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "rumor"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "someone said"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "internal news"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "据说"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "传闻"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "消息人士"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "内部消息"
+    },
+    {
+      "category_id": "unverified_fact",
+      "pattern": "未经证实"
+    }
+  ],
+  "enabled": true,
+  "evidence_requirement": {
+    "evidence_layer_only_as_fact": true,
+    "min_first_party_ratio": 0.5,
+    "require_source_ids": true
+  },
+  "review_required": true,
+  "review_rules": [
+    {
+      "decision": "block",
+      "when": "any risk category with severity 'block' matched"
+    },
+    {
+      "decision": "require_review",
+      "when": "domain score below pass_score (0.6)"
+    },
+    {
+      "decision": "pass",
+      "when": "no blocking risk and domain score at or above pass_score"
+    }
+  ],
+  "risk_categories": [
+    {
+      "action": "block",
+      "category_id": "investment_advice",
+      "definition": "Direct investment instructions or guaranteed-return claims must not enter generated content.",
+      "severity": "block"
+    },
+    {
+      "action": "require_evidence",
+      "category_id": "market_prediction",
+      "definition": "Forecast language requires evidence, uncertainty, and explicit assumptions.",
+      "severity": "warning"
+    },
+    {
+      "action": "downrank",
+      "category_id": "emotional_language",
+      "definition": "Incitement, panic framing or exaggerated judgement lowers explanation quality and must be down-ranked.",
+      "severity": "warning"
+    },
+    {
+      "action": "require_evidence",
+      "category_id": "unverified_fact",
+      "definition": "Unconfirmed figures or unattributable claims require a named source before they may be distilled.",
+      "severity": "warning"
+    }
+  ],
+  "runtime_connected": false,
+  "source": "risk_evaluation"
+}

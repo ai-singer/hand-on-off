@@ -1,0 +1,456 @@
+{
+  "fields": {
+    "generation": {
+      "adapter_ref": {
+        "confidence": 0.0,
+        "field": "adapter_ref",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "input": {
+        "confidence": 0.0,
+        "field": "input",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "output_format": {
+        "confidence": 0.0,
+        "field": "output_format",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "quality_gate": {
+        "confidence": 0.0,
+        "field": "quality_gate",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reason": {
+        "confidence": 0.0,
+        "field": "reason",
+        "projection_method": "capability_declaration",
+        "source_asset": "generation_capability",
+        "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "identity": {
+      "audience": {
+        "confidence": 1.0,
+        "field": "audience",
+        "projection_method": "asset_substitution",
+        "source_asset": "plugin_manifest",
+        "source_path": "plugins/xiaolin_finance/plugin.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "creator_id": {
+        "confidence": 0.4,
+        "field": "creator_id",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "domain": {
+        "confidence": 0.4,
+        "field": "domain",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "language": {
+        "confidence": 1.0,
+        "field": "language",
+        "projection_method": "asset_substitution",
+        "source_asset": "runtime_config",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "name": {
+        "confidence": 0.4,
+        "field": "name",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "persona": {
+        "confidence": 0.4,
+        "field": "persona",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "platform": {
+        "confidence": 1.0,
+        "field": "platform",
+        "projection_method": "asset_substitution",
+        "source_asset": "runtime_config",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reference_creator_name": {
+        "confidence": 1.0,
+        "field": "reference_creator_name",
+        "projection_method": "config_read",
+        "source_asset": "plugin_manifest",
+        "source_path": "plugins/xiaolin_finance/plugin.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "tone": {
+        "confidence": 0.4,
+        "field": "tone",
+        "projection_method": "config_read",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "publishing": {
+      "api": {
+        "confidence": 0.0,
+        "field": "api",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "image_requirement": {
+        "confidence": 0.0,
+        "field": "image_requirement",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "platform": {
+        "confidence": 0.0,
+        "field": "platform",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reason": {
+        "confidence": 0.0,
+        "field": "reason",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "requires_human_approval": {
+        "confidence": 0.0,
+        "field": "requires_human_approval",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "schedule": {
+        "confidence": 0.0,
+        "field": "schedule",
+        "projection_method": "capability_declaration",
+        "source_asset": "publishing_capability",
+        "source_path": "config/runtime/default.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "risk_policy": {
+      "blocked_patterns": {
+        "confidence": 1.0,
+        "field": "blocked_patterns",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "enabled": {
+        "confidence": 0.0,
+        "field": "enabled",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "evidence_requirement": {
+        "confidence": 1.0,
+        "field": "evidence_requirement",
+        "projection_method": "config_read",
+        "source_asset": "evaluation_rubric",
+        "source_path": "plugins/xiaolin_finance/evaluation/rubric.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "review_required": {
+        "confidence": 0.0,
+        "field": "review_required",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "review_rules": {
+        "confidence": 1.0,
+        "field": "review_rules",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "risk_categories": {
+        "confidence": 1.0,
+        "field": "risk_categories",
+        "projection_method": "config_read",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "runtime_connected": {
+        "confidence": 0.0,
+        "field": "runtime_connected",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "source": {
+        "confidence": 0.0,
+        "field": "source",
+        "projection_method": "capability_declaration",
+        "source_asset": "risk_policy_reference",
+        "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "source": {
+      "collection_rules": {
+        "confidence": 0.4,
+        "field": "collection_rules",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "data_sources": {
+        "confidence": 0.4,
+        "field": "data_sources",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "keywords": {
+        "confidence": 1.0,
+        "field": "keywords",
+        "projection_method": "config_read",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "reference_creators": {
+        "confidence": 0.4,
+        "field": "reference_creators",
+        "projection_method": "asset_substitution",
+        "source_asset": "text_distillation_rules",
+        "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "text_rules": {
+      "knowledge_boundary": {
+        "confidence": 1.0,
+        "field": "knowledge_boundary",
+        "projection_method": "config_read",
+        "source_asset": "evaluation_rubric",
+        "source_path": "plugins/xiaolin_finance/evaluation/rubric.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "length": {
+        "confidence": 1.0,
+        "field": "length",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "structure": {
+        "confidence": 1.0,
+        "field": "structure",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "title_formula": {
+        "confidence": 1.0,
+        "field": "title_formula",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "tone": {
+        "confidence": 1.0,
+        "field": "tone",
+        "projection_method": "declared_reference",
+        "source_asset": "text_structure_templates",
+        "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    },
+    "visual_rules": {
+      "attention_strategy": {
+        "confidence": 1.0,
+        "field": "attention_strategy",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "composition": {
+        "confidence": 1.0,
+        "field": "composition",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "constraints": {
+        "confidence": 1.0,
+        "field": "constraints",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "hierarchy": {
+        "confidence": 1.0,
+        "field": "hierarchy",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "profile_id": {
+        "confidence": 1.0,
+        "field": "profile_id",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "profile_version": {
+        "confidence": 1.0,
+        "field": "profile_version",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "provenance": {
+        "confidence": 1.0,
+        "field": "provenance",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      },
+      "visual_language": {
+        "confidence": 1.0,
+        "field": "visual_language",
+        "projection_method": "declared_reference",
+        "source_asset": "visual_profile_m5",
+        "source_path": "docs/m5/profiles/visual_profile.yaml",
+        "timestamp": "1970-01-01T00:00:00Z"
+      }
+    }
+  },
+  "modules": {
+    "generated_by": "creator_projection.mapper c0.2.0",
+    "generation": {
+      "asset_reason": "generation_capability_not_available",
+      "asset_status": "unavailable",
+      "confidence": 0.0,
+      "projection_method": "capability_declaration",
+      "source": "generation_capability",
+      "source_path": "workflows/content_distillation_pipeline/generation_interface.py",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "identity": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_distillation_rules",
+      "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "publishing": {
+      "asset_reason": "publishing_capability_not_available",
+      "asset_status": "unavailable",
+      "confidence": 0.0,
+      "projection_method": "capability_declaration",
+      "source": "publishing_capability",
+      "source_path": "config/runtime/default.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "registry_version": "1.0.0",
+    "risk_policy": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "config_read",
+      "source": "risk_policy_reference",
+      "source_path": "plugins/xiaolin_finance/rules/filter_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "source": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_distillation_rules",
+      "source_path": "plugins/xiaolin_finance/rules/value_rules.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "text_rules": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "text_structure_templates",
+      "source_path": "plugins/xiaolin_finance/rules/structure_templates.json",
+      "timestamp": "1970-01-01T00:00:00Z"
+    },
+    "visual_rules": {
+      "asset_status": "available",
+      "confidence": 1.0,
+      "projection_method": "declared_reference",
+      "source": "visual_profile_m5",
+      "source_path": "docs/m5/profiles/visual_profile.yaml",
+      "timestamp": "1970-01-01T00:00:00Z"
+    }
+  }
+}

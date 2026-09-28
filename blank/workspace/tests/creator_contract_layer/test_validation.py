@@ -332,10 +332,11 @@ class CombinedValidationTests(unittest.TestCase):
         self.assertTrue(report.passed)
         self.assertEqual(report.status, "PASS")
 
-    def test_report_records_all_three_checks(self) -> None:
+    def test_report_records_all_four_checks(self) -> None:
         report = validate(minimal_instance())
         self.assertEqual(
-            sorted(report.checks), ["dependencies", "isolation", "schema"]
+            sorted(report.checks),
+            ["capability_declaration", "dependencies", "isolation", "schema"],
         )
         self.assertTrue(all(value == "PASS" for value in report.checks.values()))
 
