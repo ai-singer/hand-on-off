@@ -1,0 +1,2820 @@
+{
+  "benchmark": "independent_v1/v1",
+  "cases": [
+    {
+      "annotation_reason": "guide 7: risk removed, copular guarantee",
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-001",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Your money is guaranteed to be returned in full."
+    },
+    {
+      "annotation_reason": "guide 7: active guarantee",
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-002",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The scheme guarantees the return of your capital."
+    },
+    {
+      "annotation_reason": "guide 7: copular guarantee with a compound subject",
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-003",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Capital protection is guaranteed under this plan."
+    },
+    {
+      "annotation_reason": "guide 7: nominal guarantee",
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-004",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A guarantee on your principal is provided."
+    },
+    {
+      "annotation_reason": "guide 7: risk denied outright",
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-005",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This product carries zero risk of loss."
+    },
+    {
+      "annotation_reason": "guide 7: risk denied outright",
+      "asserted_relations": [
+        "RISK_REMOVED"
+      ],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-006",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "You cannot lose your principal here."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-007",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Put your savings into this fund before the deadline."
+    },
+    {
+      "annotation_reason": "guide 7: modal directive plus object",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-008",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Investors should allocate more to this fund."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-009",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Buy into this fund while units are still available."
+    },
+    {
+      "annotation_reason": "guide 7: implicit directive plus object",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-010",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The sensible choice is to hold these bonds for income."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-011",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Consider moving your capital into the equity fund."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty about a future outcome",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-012",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The unit price will definitely climb by December."
+    },
+    {
+      "annotation_reason": "guide 2: copular certainty",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-013",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Yields are certain to rise over the coming months."
+    },
+    {
+      "annotation_reason": "guide 2: present-tense assertion with a horizon",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-014",
+      "correct": false,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Turnover expands sharply next quarter."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-015",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The index is going to rally from here."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-016",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Earnings will surely multiply under the new plan."
+    },
+    {
+      "annotation_reason": "guide 7: carried on an uncheckable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-017",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Word on the street is that the board will resign."
+    },
+    {
+      "annotation_reason": "guide 7: explicitly anonymous source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-018",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "An unnamed official confirmed the restatement."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-019",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A source claims the audit was qualified."
+    },
+    {
+      "annotation_reason": "guide 7: reported without a checkable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-020",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Reportedly the fund has suspended redemptions."
+    },
+    {
+      "annotation_reason": "guide 7: first-person hearsay names no source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-021",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "I heard the custodian is being replaced."
+    },
+    {
+      "annotation_reason": "guide 6.1: deadline pressure on the reader",
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-022",
+      "correct": true,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Hurry, this window closes tonight."
+    },
+    {
+      "annotation_reason": "guide 6.1: herd framing",
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-023",
+      "correct": true,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Nobody wants to be the one who missed this."
+    },
+    {
+      "annotation_reason": "guide 6.1: imperative pressure",
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-024",
+      "correct": true,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Act fast or watch others take the gains."
+    },
+    {
+      "annotation_reason": "guide 6.1: deadline pressure",
+      "asserted_relations": [],
+      "baseline": [
+        "emotional_manipulation"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-025",
+      "correct": true,
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "author_endorsed_risk",
+      "outcome": "tp",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "This is a last chance to get in."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-026",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Analysts say the fund is about to gate redemptions."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-027",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Insiders say the dividend will be suspended."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-028",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Sources claim the merger talks have stalled."
+    },
+    {
+      "annotation_reason": "guide 7: rumour is unattributable",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-029",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Rumour has it the chief executive is leaving."
+    },
+    {
+      "annotation_reason": "guide 7: reported without a checkable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-030",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Reportedly the fund has changed its mandate."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-031",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Word on the street is that the audit is late."
+    },
+    {
+      "annotation_reason": "guide 7: anonymous person",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-032",
+      "correct": false,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A person familiar with the matter says the deal is off."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-033",
+      "correct": false,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Traders say the shares are cheap."
+    },
+    {
+      "annotation_reason": "guide 7: explicitly anonymous source",
+      "asserted_relations": [],
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "case_id": "IV-034",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "An anonymous official confirmed the probe."
+    },
+    {
+      "annotation_reason": "guide 7: unattributable chatter",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-035",
+      "correct": false,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Market chatter suggests the float will be cut."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source is negative",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-036",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The company said the timetable is unchanged."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-037",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "According to the prospectus, charges are capped."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-038",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The report states that revenue fell."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-039",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Management expects margins to hold."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-040",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The board said the dividend is unchanged."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-041",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The regulator said the review is ongoing."
+    },
+    {
+      "annotation_reason": "guide 7: definite publication is checkable",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-042",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The newsletter recommends holding the fund."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-043",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The custodian confirmed the transfer."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-044",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The trustee published the annual statement."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-045",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "third_party_claim",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The exchange said trading was orderly."
+    },
+    {
+      "annotation_reason": "guide 3.1: arguing against a claim is not making it",
+      "asserted_relations": [
+        "GUARANTEE"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-046",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "author_rejection",
+      "outcome": "fp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "We reject the suggestion that returns are guaranteed."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-047",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "We are unconvinced that capital is protected here."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-048",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The idea that the fund cannot fall is not supported."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-049",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We dispute the claim that yields will double."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-050",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Contrary to the marketing, the return is not guaranteed."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-051",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "outcome": "fp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "We see no basis for the view that the price will triple."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-052",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The assertion that losses are impossible is false."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-053",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We disagree that this is a suitable holding for retirees."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-054",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Claims that the fund is risk-free are overstated."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-055",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "outcome": "fp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "We do not accept that the index will recover."
+    },
+    {
+      "annotation_reason": "guide 4: quoted pressure rejected",
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-056",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The fund cannot lose money, or so the advert claims; we disagree."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [
+        "PREDICTION"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-057",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "We doubt the projection that earnings will multiply."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-058",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "That the shares are cheap is not something we accept."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-059",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "We would not describe this as a safe bet."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-060",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [],
+      "group": "author_rejection",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "There is no evidence for the claim that capital is protected."
+    },
+    {
+      "annotation_reason": "guide 7: explanation is negative",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-061",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A bond's duration measures its sensitivity to interest rates."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-062",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The expense ratio is the annual cost of holding a fund."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-063",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Real returns adjust nominal returns for inflation."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-064",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A limit order sets a maximum or minimum execution price."
+    },
+    {
+      "annotation_reason": "guide 7: method guidance",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-065",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Rebalancing restores a portfolio to its target weights."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-066",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The yield curve plots yields against maturity."
+    },
+    {
+      "annotation_reason": "guide 7: definition of a risk concept, not a claim about a product",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-067",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Credit risk is the chance an issuer fails to pay."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-068",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A tracking error measures deviation from a benchmark."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-069",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The settlement cycle determines when cash changes hands."
+    },
+    {
+      "annotation_reason": "guide 7: method guidance",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-070",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Dollar-cost averaging buys fixed amounts at regular intervals."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-071",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The prospectus sets out the fund's investment objective."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-072",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "neutral_education",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Custodians hold assets on behalf of the fund."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-073",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "An index committee reviews the constituents quarterly."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-074",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The audit committee meets four times a year."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-075",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Stamp duty applies to certain share purchases."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-076",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Withholding tax is deducted at source in some jurisdictions."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-077",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A closed-end fund trades at a premium or a discount."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-078",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The fund's year end is the thirty-first of December."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-079",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Units are priced once a day at the valuation point."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-080",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "neutral_education",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "The manager's report is published with the annual accounts."
+    },
+    {
+      "annotation_reason": "guide 5: negated claim asserts nothing",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-081",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Returns are not guaranteed under any circumstances."
+    },
+    {
+      "annotation_reason": "guide 5: negation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-082",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Capital protection is not offered on this share class."
+    },
+    {
+      "annotation_reason": "guide 5: active negation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-083",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The fund does not guarantee income."
+    },
+    {
+      "annotation_reason": "guide 7: standard disclaimer",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-084",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Past performance is no guide to future returns."
+    },
+    {
+      "annotation_reason": "guide 5: future negation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-085",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The scheme will not guarantee your principal."
+    },
+    {
+      "annotation_reason": "guide 5: negation",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-086",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "No guarantee is given regarding distributions."
+    },
+    {
+      "annotation_reason": "guide 5: conditional outcome",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-087",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "If inflation subsides, yields may rise."
+    },
+    {
+      "annotation_reason": "guide 5: inverted conditional",
+      "asserted_relations": [],
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-088",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Should the index fall, the fund would underperform."
+    },
+    {
+      "annotation_reason": "guide 5: conditional",
+      "asserted_relations": [
+        "ADVICE"
+      ],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-089",
+      "correct": false,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Assuming rates hold, income is likely to be stable."
+    },
+    {
+      "annotation_reason": "guide 5: conditional guarantee",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-090",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The return is guaranteed only if the plan is held for five years."
+    },
+    {
+      "annotation_reason": "guide 5: subjunctive conditional",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-091",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Were the issuer to default, capital would be at risk."
+    },
+    {
+      "annotation_reason": "guide 5: conditional",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-092",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Depending on the outcome, the payout could double."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document, so negative",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-093",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The marketing material states that returns are guaranteed."
+    },
+    {
+      "annotation_reason": "guide 7: indefinite promoter is uncheckable",
+      "asserted_relations": [],
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-094",
+      "correct": false,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "A promoter claimed the fund cannot lose money."
+    },
+    {
+      "annotation_reason": "guide 7: checkable advert, so negative",
+      "asserted_relations": [],
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": false,
+      "case_id": "IV-095",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        false
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The advert says the price will certainly double."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": false,
+      "case_id": "IV-096",
+      "correct": false,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "fn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        false
+      ],
+      "text": "Some commentators argue the shares are cheap."
+    },
+    {
+      "annotation_reason": "guide 2: hedged, not asserted as certain",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-097",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The index might recover later in the year."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-098",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "Perhaps the fund will outperform its benchmark."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-099",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "There is a possibility that yields fall."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "asserted_relations": [],
+      "baseline": [],
+      "baseline_correct": true,
+      "case_id": "IV-100",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "found_relations": [],
+      "group": "ambiguous_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "speaker_ok": [
+        true
+      ],
+      "split_ok": true,
+      "stance_ok": [
+        true
+      ],
+      "text": "The shares could be cheap at this level."
+    }
+  ],
+  "metrics": {
+    "attribution": {
+      "aligned_claims": 100,
+      "cases": 100,
+      "error_cases": [
+        "IV-017",
+        "IV-018",
+        "IV-020",
+        "IV-021",
+        "IV-028",
+        "IV-029",
+        "IV-030",
+        "IV-031",
+        "IV-032",
+        "IV-033",
+        "IV-034",
+        "IV-035",
+        "IV-041",
+        "IV-042",
+        "IV-043",
+        "IV-044",
+        "IV-045",
+        "IV-046",
+        "IV-047",
+        "IV-048",
+        "IV-050",
+        "IV-051",
+        "IV-052",
+        "IV-054",
+        "IV-055",
+        "IV-058",
+        "IV-059",
+        "IV-080",
+        "IV-093",
+        "IV-095",
+        "IV-096"
+      ],
+      "speaker_accuracy": 0.74,
+      "speaker_correct": 74,
+      "split_accuracy": 1.0,
+      "split_correct": 100,
+      "stance_accuracy": 0.79,
+      "stance_correct": 79
+    },
+    "decision": {
+      "accuracy": 0.85,
+      "cases": 100,
+      "correct": 85,
+      "error_cases": [
+        "IV-014",
+        "IV-032",
+        "IV-033",
+        "IV-035",
+        "IV-046",
+        "IV-051",
+        "IV-055",
+        "IV-062",
+        "IV-071",
+        "IV-072",
+        "IV-075",
+        "IV-088",
+        "IV-089",
+        "IV-094",
+        "IV-096"
+      ],
+      "f1": 0.8052,
+      "false_negative_rate": 0.1622,
+      "false_negatives": 6,
+      "false_positive_rate": 0.1429,
+      "false_positives": 9,
+      "per_group": {
+        "ambiguous_boundary": {
+          "cases": 20,
+          "correct": 16,
+          "fn": 2,
+          "fp": 2,
+          "tn": 16,
+          "tp": 0
+        },
+        "author_endorsed_risk": {
+          "cases": 25,
+          "correct": 24,
+          "fn": 1,
+          "fp": 0,
+          "tn": 0,
+          "tp": 24
+        },
+        "author_rejection": {
+          "cases": 15,
+          "correct": 12,
+          "fn": 0,
+          "fp": 3,
+          "tn": 12,
+          "tp": 0
+        },
+        "neutral_education": {
+          "cases": 20,
+          "correct": 16,
+          "fn": 0,
+          "fp": 4,
+          "tn": 16,
+          "tp": 0
+        },
+        "third_party_claim": {
+          "cases": 20,
+          "correct": 17,
+          "fn": 3,
+          "fp": 0,
+          "tn": 10,
+          "tp": 7
+        }
+      },
+      "precision": 0.775,
+      "recall": 0.8378,
+      "true_negatives": 54,
+      "true_positives": 31
+    },
+    "intent": {
+      "cases_with_relations": 40,
+      "expected_relations": 40,
+      "false_positive_cases": [
+        "IV-042",
+        "IV-072",
+        "IV-083",
+        "IV-085",
+        "IV-089"
+      ],
+      "miss_cases": [
+        "IV-014",
+        "IV-047",
+        "IV-048",
+        "IV-050",
+        "IV-052",
+        "IV-053",
+        "IV-058",
+        "IV-060",
+        "IV-081",
+        "IV-086",
+        "IV-087",
+        "IV-092",
+        "IV-098"
+      ],
+      "per_relation": {
+        "ADVICE": {
+          "expected": 7,
+          "found": 5,
+          "missed_cases": [
+            "IV-053",
+            "IV-058"
+          ],
+          "recall": 0.7143
+        },
+        "GUARANTEE": {
+          "expected": 12,
+          "found": 7,
+          "missed_cases": [
+            "IV-047",
+            "IV-050",
+            "IV-060",
+            "IV-081",
+            "IV-086"
+          ],
+          "recall": 0.5833
+        },
+        "PREDICTION": {
+          "expected": 13,
+          "found": 9,
+          "missed_cases": [
+            "IV-014",
+            "IV-087",
+            "IV-092",
+            "IV-098"
+          ],
+          "recall": 0.6923
+        },
+        "RISK_REMOVED": {
+          "expected": 8,
+          "found": 6,
+          "missed_cases": [
+            "IV-048",
+            "IV-052"
+          ],
+          "recall": 0.75
+        }
+      },
+      "precision": 0.8438,
+      "predicted_relations": 32,
+      "recall": 0.675,
+      "recalled": 27
+    },
+    "trace": {
+      "claim_evidence_rate": 1.0,
+      "claims": 100,
+      "claims_with_evidence": 100,
+      "decision_evidence_rate": 1.0,
+      "decisions": 40,
+      "decisions_with_evidence": 40,
+      "span_completeness": 1.0,
+      "spans_present": 100,
+      "spans_total": 100
+    }
+  },
+  "note": "Predictions were produced from id and text only. Errors are counted on exact category match; fp/fn come from the flag."
+}

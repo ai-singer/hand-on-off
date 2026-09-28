@@ -1,0 +1,41 @@
+{
+  "affected_case_count": 1,
+  "benchmark": "independent_v1",
+  "case_count": 100,
+  "counts": {
+    "development_overlap": 0,
+    "exact_overlap": 1,
+    "label_incomplete": 0,
+    "near_duplicate": 0
+  },
+  "dataset_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+  "findings": [
+    {
+      "case_ids": [
+        "IV-037"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    }
+  ],
+  "note": "A finding is a FAIL. The phase forbids deleting contaminated cases and recomputing, so nothing is repaired here.",
+  "sources_checked": [
+    "development/independent",
+    "development/risk-evaluation",
+    "phase-8.2/annotation",
+    "phase-8.2/coverage-probe",
+    "phase-8.3/experiment",
+    "phase-8.3/replay",
+    "phase-8.4/intent-pattern",
+    "phase-8.5/composition",
+    "semantic/adversarial/v1",
+    "semantic/v1",
+    "semantic/v2",
+    "semantic/v3",
+    "semantic/v4"
+  ],
+  "status": "FAIL",
+  "threshold": 0.8
+}

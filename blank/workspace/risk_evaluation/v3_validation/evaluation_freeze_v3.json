@@ -1,0 +1,13 @@
+{
+  "benchmark": "independent_v1/v1",
+  "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+  "case_count": 100,
+  "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+  "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+  "evaluator_hash": "cd187bfa0d8d0a6e14c6860ac282ec314fab672b31a282fcff49d0cd31033dc9",
+  "freeze_schema_version": "3.0.0",
+  "pipeline": "risk-evaluation-v3",
+  "pipeline_version": "3.0.0-experimental",
+  "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+  "timestamp": "2026-09-28T01:36:25Z"
+}

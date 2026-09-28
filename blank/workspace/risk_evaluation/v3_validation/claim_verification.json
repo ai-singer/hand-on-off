@@ -1,0 +1,260 @@
+{
+  "benchmark": "independent_v1",
+  "claims": [
+    {
+      "claim": "Phase 8.5 claim 1: the attribution layer still resolves quoted risk and author rejection",
+      "sub_claims": [
+        {
+          "correct": 17,
+          "failures": [
+            "IV-032",
+            "IV-033",
+            "IV-035"
+          ],
+          "name": "quoted third-party claims decided correctly",
+          "rate": 0.85,
+          "total": 20,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 12,
+          "failures": [
+            "IV-046",
+            "IV-051",
+            "IV-055"
+          ],
+          "name": "author rejections decided correctly",
+          "rate": 0.8,
+          "total": 15,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 74,
+          "failures": [
+            "IV-017",
+            "IV-018",
+            "IV-020",
+            "IV-021",
+            "IV-028",
+            "IV-029",
+            "IV-030",
+            "IV-031",
+            "IV-032",
+            "IV-033",
+            "IV-034",
+            "IV-035",
+            "IV-041",
+            "IV-042",
+            "IV-043",
+            "IV-044",
+            "IV-045",
+            "IV-046",
+            "IV-047",
+            "IV-048",
+            "IV-050",
+            "IV-051",
+            "IV-052",
+            "IV-054",
+            "IV-055",
+            "IV-058",
+            "IV-059",
+            "IV-080",
+            "IV-093",
+            "IV-095",
+            "IV-096"
+          ],
+          "name": "speaker accuracy on aligned claims",
+          "rate": 0.74,
+          "total": 100,
+          "verdict": "PARTIALLY_SUPPORTED"
+        },
+        {
+          "correct": 79,
+          "failures": [
+            "IV-017",
+            "IV-018",
+            "IV-020",
+            "IV-021",
+            "IV-028",
+            "IV-029",
+            "IV-030",
+            "IV-031",
+            "IV-032",
+            "IV-033",
+            "IV-034",
+            "IV-035",
+            "IV-041",
+            "IV-042",
+            "IV-043",
+            "IV-044",
+            "IV-045",
+            "IV-046",
+            "IV-047",
+            "IV-048",
+            "IV-050",
+            "IV-051",
+            "IV-052",
+            "IV-054",
+            "IV-055",
+            "IV-058",
+            "IV-059",
+            "IV-080",
+            "IV-093",
+            "IV-095",
+            "IV-096"
+          ],
+          "name": "stance accuracy on aligned claims",
+          "rate": 0.79,
+          "total": 100,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "summary": "quoted 17/20, rejected 12/15, speaker 74.0%, stance 79.0%",
+      "verdict": "PARTIALLY_SUPPORTED"
+    },
+    {
+      "claim": "Phase 8.5 claim 2: the intent patterns still resolve passive, copular and nominal guarantees",
+      "sub_claims": [
+        {
+          "correct": 4,
+          "failures": [
+            "IV-046"
+          ],
+          "name": "copular guarantee",
+          "rate": 0.8,
+          "total": 5,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 1,
+          "failures": [],
+          "name": "nominal guarantee",
+          "rate": 1.0,
+          "total": 1,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 3,
+          "failures": [],
+          "name": "attributive guarantee",
+          "rate": 1.0,
+          "total": 3,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 3,
+          "failures": [
+            "IV-094"
+          ],
+          "name": "active guarantee",
+          "rate": 0.75,
+          "total": 4,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 0,
+          "failures": [
+            "IV-047",
+            "IV-048",
+            "IV-050",
+            "IV-052",
+            "IV-060",
+            "IV-081",
+            "IV-086"
+          ],
+          "name": "guarantee text no frame matched",
+          "rate": 0.0,
+          "total": 7,
+          "verdict": "NOT_SUPPORTED"
+        },
+        {
+          "correct": 27,
+          "failures": [
+            "IV-014",
+            "IV-047",
+            "IV-048",
+            "IV-050",
+            "IV-052",
+            "IV-053",
+            "IV-058",
+            "IV-060",
+            "IV-081",
+            "IV-086",
+            "IV-087",
+            "IV-092",
+            "IV-098"
+          ],
+          "name": "per-relation recall",
+          "rate": 0.675,
+          "total": 40,
+          "verdict": "PARTIALLY_SUPPORTED"
+        }
+      ],
+      "summary": "copular guarantee 4/5; nominal guarantee 1/1; attributive guarantee 3/3; active guarantee 3/4; guarantee text no frame matched 0/7; per-relation recall 27/40",
+      "verdict": "NOT_SUPPORTED"
+    },
+    {
+      "claim": "Phase 8.5 claim 3: the decision policy keeps false positives and false negatives low",
+      "sub_claims": [
+        {
+          "correct": 54,
+          "failures": [
+            "IV-046",
+            "IV-051",
+            "IV-055",
+            "IV-062",
+            "IV-071",
+            "IV-072",
+            "IV-075",
+            "IV-088",
+            "IV-089"
+          ],
+          "name": "false positive rate",
+          "rate": 0.8571,
+          "total": 63,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 31,
+          "failures": [
+            "IV-014",
+            "IV-032",
+            "IV-033",
+            "IV-035",
+            "IV-094",
+            "IV-096"
+          ],
+          "name": "false negative rate",
+          "rate": 0.8378,
+          "total": 37,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 31,
+          "failures": [],
+          "name": "precision",
+          "rate": 0.775,
+          "total": 40,
+          "verdict": "SUPPORTED"
+        },
+        {
+          "correct": 31,
+          "failures": [],
+          "name": "recall",
+          "rate": 0.8378,
+          "total": 37,
+          "verdict": "SUPPORTED"
+        }
+      ],
+      "summary": "fpr 0.1429, fnr 0.1622, precision 0.7750, recall 0.8378",
+      "verdict": "SUPPORTED"
+    }
+  ],
+  "note": "Each claim is settled on counts, and every claim reports the cases behind it so a reader can disagree with the threshold and see the same evidence.",
+  "summary": {
+    "Phase 8.5 claim 1: the attribution layer still resolves quoted risk and author rejection": "PARTIALLY_SUPPORTED",
+    "Phase 8.5 claim 2: the intent patterns still resolve passive, copular and nominal guarantees": "NOT_SUPPORTED",
+    "Phase 8.5 claim 3: the decision policy keeps false positives and false negatives low": "SUPPORTED"
+  },
+  "threshold": 0.75
+}

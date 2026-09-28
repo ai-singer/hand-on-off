@@ -1,0 +1,907 @@
+{
+  "any_failure_rate": 0.39,
+  "cases": 100,
+  "classified_failures": 39,
+  "counts": {
+    "annotation_ambiguity": 0,
+    "attribution_error": 31,
+    "decision_policy_error": 5,
+    "intent_detection_error": 3,
+    "unclassified": 0,
+    "unknown_language_pattern": 0
+  },
+  "decision_error_rate": 0.15,
+  "decision_errors": 15,
+  "diagnoses": [
+    {
+      "baseline": [],
+      "case_id": "IV-014",
+      "category": "intent_detection_error",
+      "expected": [
+        "market_prediction"
+      ],
+      "explanation": "a relation the guide says is present was not found",
+      "group": "author_endorsed_risk",
+      "mechanisms": [
+        {
+          "detail": "`expands` appears but the frames list only `expand`",
+          "name": "inflected_verb"
+        },
+        {
+          "detail": "no frame matched for ['PREDICTION'] in this wording",
+          "name": "lexical_gap"
+        }
+      ],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "Turnover expands sharply next quarter."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-017",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_endorsed_risk",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['third_party']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Word on the street is that the board will resign."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-018",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_endorsed_risk",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "An unnamed official confirmed the restatement."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-020",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_endorsed_risk",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Reportedly the fund has suspended redemptions."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-021",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_endorsed_risk",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "I heard the custodian is being replaced."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-028",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['third_party']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Sources claim the merger talks have stalled."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-029",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Rumour has it the chief executive is leaving."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-030",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Reportedly the fund has changed its mandate."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-031",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "Word on the street is that the audit is late."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-032",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "A person familiar with the matter says the deal is off."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-033",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "Traders say the shares are cheap."
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "case_id": "IV-034",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "text": "An anonymous official confirmed the probe."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-035",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "Market chatter suggests the float will be cut."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-041",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The regulator said the review is ongoing."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-042",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['third_party']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The newsletter recommends holding the fund."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-043",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The custodian confirmed the transfer."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-044",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The trustee published the annual statement."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-045",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "third_party_claim",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The exchange said trading was orderly."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-046",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "text": "We reject the suggestion that returns are guaranteed."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-047",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "We are unconvinced that capital is protected here."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-048",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The idea that the fund cannot fall is not supported."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-050",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "Contrary to the marketing, the return is not guaranteed."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-051",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "text": "We see no basis for the view that the price will triple."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-052",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The assertion that losses are impossible is false."
+    },
+    {
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "case_id": "IV-054",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "Claims that the fund is risk-free are overstated."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-055",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "text": "We do not accept that the index will recover."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-058",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "That the shares are cheap is not something we accept."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-059",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "author_rejection",
+      "mechanisms": [
+        {
+          "detail": "a rejection is phrased with words the attribution cue list does not contain",
+          "name": "novel_rejection_cue"
+        },
+        {
+          "detail": "annotated ['author']/['rejected'], predicted ['unknown']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "We would not describe this as a safe bet."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-062",
+      "category": "decision_policy_error",
+      "expected": [],
+      "explanation": "the relation layer was silent and the fallback carried the verdict",
+      "group": "neutral_education",
+      "mechanisms": [
+        {
+          "detail": "the semantic fallback reproduced the baseline's verdict on this text",
+          "name": "fallback_propagation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "The expense ratio is the annual cost of holding a fund."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-071",
+      "category": "decision_policy_error",
+      "expected": [],
+      "explanation": "the relation layer was silent and the fallback carried the verdict",
+      "group": "neutral_education",
+      "mechanisms": [
+        {
+          "detail": "the semantic fallback reproduced the baseline's verdict on this text",
+          "name": "fallback_propagation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "The prospectus sets out the fund's investment objective."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-072",
+      "category": "intent_detection_error",
+      "expected": [],
+      "explanation": "a relation was found where the guide does not place one",
+      "group": "neutral_education",
+      "mechanisms": [
+        {
+          "detail": "found ['ADVICE'] which the guide does not place here",
+          "name": "extra_relation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "Custodians hold assets on behalf of the fund."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-075",
+      "category": "decision_policy_error",
+      "expected": [],
+      "explanation": "the relation layer was silent and the fallback carried the verdict",
+      "group": "neutral_education",
+      "mechanisms": [
+        {
+          "detail": "the semantic fallback reproduced the baseline's verdict on this text",
+          "name": "fallback_propagation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "Stamp duty applies to certain share purchases."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-080",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "neutral_education",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['unknown']/['uncertain'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The manager's report is published with the annual accounts."
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "case_id": "IV-088",
+      "category": "decision_policy_error",
+      "expected": [],
+      "explanation": "the relation layer was silent and the fallback carried the verdict",
+      "group": "ambiguous_boundary",
+      "mechanisms": [
+        {
+          "detail": "the semantic fallback reproduced the baseline's verdict on this text",
+          "name": "fallback_propagation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "Should the index fall, the fund would underperform."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-089",
+      "category": "intent_detection_error",
+      "expected": [],
+      "explanation": "a relation was found where the guide does not place one",
+      "group": "ambiguous_boundary",
+      "mechanisms": [
+        {
+          "detail": "found ['ADVICE'] which the guide does not place here",
+          "name": "extra_relation"
+        }
+      ],
+      "outcome": "fp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "text": "Assuming rates hold, income is likely to be stable."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-093",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "ambiguous_boundary",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The marketing material states that returns are guaranteed."
+    },
+    {
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "case_id": "IV-094",
+      "category": "decision_policy_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the relation was found and the policy decided against the guide",
+      "group": "ambiguous_boundary",
+      "mechanisms": [],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "A promoter claimed the fund cannot lose money."
+    },
+    {
+      "baseline": [
+        "market_prediction"
+      ],
+      "case_id": "IV-095",
+      "category": "attribution_error",
+      "expected": [],
+      "explanation": "the speaker or stance was wrong; the verdict happened to be right",
+      "group": "ambiguous_boundary",
+      "mechanisms": [
+        {
+          "detail": "a reporting frame is present and its source noun is not in the attribution lexicon",
+          "name": "novel_source_noun"
+        },
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['unknown']/['quoted']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "tn",
+      "predicted": [],
+      "text": "The advert says the price will certainly double."
+    },
+    {
+      "baseline": [],
+      "case_id": "IV-096",
+      "category": "attribution_error",
+      "expected": [
+        "unverified_information"
+      ],
+      "explanation": "the speaker or stance was wrong, and the decision followed it",
+      "group": "ambiguous_boundary",
+      "mechanisms": [
+        {
+          "detail": "annotated ['third_party']/['quoted'], predicted ['third_party']/['uncertain']",
+          "name": "speaker_stance"
+        }
+      ],
+      "outcome": "fn",
+      "predicted": [],
+      "text": "Some commentators argue the shares are cheap."
+    }
+  ],
+  "disputed_label_cases": [],
+  "language_gap_cases": [
+    "IV-014",
+    "IV-018",
+    "IV-020",
+    "IV-030",
+    "IV-032",
+    "IV-033",
+    "IV-034",
+    "IV-035",
+    "IV-041",
+    "IV-043",
+    "IV-044",
+    "IV-045",
+    "IV-046",
+    "IV-047",
+    "IV-048",
+    "IV-051",
+    "IV-052",
+    "IV-054",
+    "IV-055",
+    "IV-059",
+    "IV-080",
+    "IV-093",
+    "IV-095"
+  ],
+  "mechanisms": {
+    "fallback_propagation": 4,
+    "inflected_verb": 1,
+    "lexical_gap": 1,
+    "novel_rejection_cue": 8,
+    "novel_source_noun": 15
+  },
+  "note": "Each failing case is classified and explained. A case the classifier cannot place is reported as unclassified rather than forced into a bucket."
+}

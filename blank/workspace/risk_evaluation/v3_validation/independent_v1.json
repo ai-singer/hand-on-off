@@ -1,0 +1,2796 @@
+{
+  "annotation": "single-annotator engineering validation only",
+  "benchmark": "independent_v1",
+  "case_count": 100,
+  "cases": [
+    {
+      "annotation_reason": "guide 7: risk removed, copular guarantee",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-001",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Your money is guaranteed to be returned in full."
+    },
+    {
+      "annotation_reason": "guide 7: active guarantee",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-002",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The scheme guarantees the return of your capital."
+    },
+    {
+      "annotation_reason": "guide 7: copular guarantee with a compound subject",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-003",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Capital protection is guaranteed under this plan."
+    },
+    {
+      "annotation_reason": "guide 7: nominal guarantee",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-004",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "A guarantee on your principal is provided."
+    },
+    {
+      "annotation_reason": "guide 7: risk denied outright",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-005",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "This product carries zero risk of loss."
+    },
+    {
+      "annotation_reason": "guide 7: risk denied outright",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-006",
+      "labels": {
+        "categories": [
+          "financial_guarantee"
+        ],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "You cannot lose your principal here."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-007",
+      "labels": {
+        "categories": [
+          "investment_advice"
+        ],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Put your savings into this fund before the deadline."
+    },
+    {
+      "annotation_reason": "guide 7: modal directive plus object",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-008",
+      "labels": {
+        "categories": [
+          "investment_advice"
+        ],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Investors should allocate more to this fund."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-009",
+      "labels": {
+        "categories": [
+          "investment_advice"
+        ],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Buy into this fund while units are still available."
+    },
+    {
+      "annotation_reason": "guide 7: implicit directive plus object",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-010",
+      "labels": {
+        "categories": [
+          "investment_advice"
+        ],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The sensible choice is to hold these bonds for income."
+    },
+    {
+      "annotation_reason": "guide 7: imperative directive plus object",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-011",
+      "labels": {
+        "categories": [
+          "investment_advice"
+        ],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Consider moving your capital into the equity fund."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty about a future outcome",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-012",
+      "labels": {
+        "categories": [
+          "market_prediction"
+        ],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The unit price will definitely climb by December."
+    },
+    {
+      "annotation_reason": "guide 2: copular certainty",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-013",
+      "labels": {
+        "categories": [
+          "market_prediction"
+        ],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Yields are certain to rise over the coming months."
+    },
+    {
+      "annotation_reason": "guide 2: present-tense assertion with a horizon",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-014",
+      "labels": {
+        "categories": [
+          "market_prediction"
+        ],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Turnover expands sharply next quarter."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-015",
+      "labels": {
+        "categories": [
+          "market_prediction"
+        ],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The index is going to rally from here."
+    },
+    {
+      "annotation_reason": "guide 2: author-voice certainty",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-016",
+      "labels": {
+        "categories": [
+          "market_prediction"
+        ],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Earnings will surely multiply under the new plan."
+    },
+    {
+      "annotation_reason": "guide 7: carried on an uncheckable source",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-017",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Word on the street is that the board will resign."
+    },
+    {
+      "annotation_reason": "guide 7: explicitly anonymous source",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-018",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "An unnamed official confirmed the restatement."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-019",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "A source claims the audit was qualified."
+    },
+    {
+      "annotation_reason": "guide 7: reported without a checkable source",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-020",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Reportedly the fund has suspended redemptions."
+    },
+    {
+      "annotation_reason": "guide 7: first-person hearsay names no source",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-021",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "I heard the custodian is being replaced."
+    },
+    {
+      "annotation_reason": "guide 6.1: deadline pressure on the reader",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-022",
+      "labels": {
+        "categories": [
+          "emotional_manipulation"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Hurry, this window closes tonight."
+    },
+    {
+      "annotation_reason": "guide 6.1: herd framing",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-023",
+      "labels": {
+        "categories": [
+          "emotional_manipulation"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Nobody wants to be the one who missed this."
+    },
+    {
+      "annotation_reason": "guide 6.1: imperative pressure",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-024",
+      "labels": {
+        "categories": [
+          "emotional_manipulation"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Act fast or watch others take the gains."
+    },
+    {
+      "annotation_reason": "guide 6.1: deadline pressure",
+      "basis": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+      "group": "author_endorsed_risk",
+      "group_name": "author endorsed risk",
+      "id": "IV-025",
+      "labels": {
+        "categories": [
+          "emotional_manipulation"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "This is a last chance to get in."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-026",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Analysts say the fund is about to gate redemptions."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-027",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Insiders say the dividend will be suspended."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-028",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Sources claim the merger talks have stalled."
+    },
+    {
+      "annotation_reason": "guide 7: rumour is unattributable",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-029",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Rumour has it the chief executive is leaving."
+    },
+    {
+      "annotation_reason": "guide 7: reported without a checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-030",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Reportedly the fund has changed its mandate."
+    },
+    {
+      "annotation_reason": "guide 7: uncheckable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-031",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Word on the street is that the audit is late."
+    },
+    {
+      "annotation_reason": "guide 7: anonymous person",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-032",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "A person familiar with the matter says the deal is off."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-033",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Traders say the shares are cheap."
+    },
+    {
+      "annotation_reason": "guide 7: explicitly anonymous source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-034",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "An anonymous official confirmed the probe."
+    },
+    {
+      "annotation_reason": "guide 7: unattributable chatter",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-035",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Market chatter suggests the float will be cut."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source is negative",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-036",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The company said the timetable is unchanged."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-037",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "According to the prospectus, charges are capped."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-038",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The report states that revenue fell."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-039",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Management expects margins to hold."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-040",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The board said the dividend is unchanged."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-041",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The regulator said the review is ongoing."
+    },
+    {
+      "annotation_reason": "guide 7: definite publication is checkable",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-042",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The newsletter recommends holding the fund."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-043",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The custodian confirmed the transfer."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-044",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The trustee published the annual statement."
+    },
+    {
+      "annotation_reason": "guide 7: named, checkable source",
+      "basis": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information",
+      "group": "third_party_claim",
+      "group_name": "third party claim",
+      "id": "IV-045",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The exchange said trading was orderly."
+    },
+    {
+      "annotation_reason": "guide 3.1: arguing against a claim is not making it",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-046",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We reject the suggestion that returns are guaranteed."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-047",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We are unconvinced that capital is protected here."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-048",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "The idea that the fund cannot fall is not supported."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-049",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We dispute the claim that yields will double."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-050",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "Contrary to the marketing, the return is not guaranteed."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-051",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We see no basis for the view that the price will triple."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-052",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "The assertion that losses are impossible is false."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-053",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We disagree that this is a suitable holding for retirees."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-054",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "Claims that the fund is risk-free are overstated."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-055",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We do not accept that the index will recover."
+    },
+    {
+      "annotation_reason": "guide 4: quoted pressure rejected",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-056",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "The fund cannot lose money, or so the advert claims; we disagree."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-057",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We doubt the projection that earnings will multiply."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-058",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "ADVICE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "ADVICE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "That the shares are cheap is not something we accept."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-059",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "We would not describe this as a safe bet."
+    },
+    {
+      "annotation_reason": "guide 3.1: rejection",
+      "basis": "guide v2 3.1 and 4: arguing against a claim is not making it",
+      "group": "author_rejection",
+      "group_name": "author rejection",
+      "id": "IV-060",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "author",
+            "stance": "rejected"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "author"
+        ],
+        "stances": [
+          "rejected"
+        ]
+      },
+      "text": "There is no evidence for the claim that capital is protected."
+    },
+    {
+      "annotation_reason": "guide 7: explanation is negative",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-061",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "A bond's duration measures its sensitivity to interest rates."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-062",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The expense ratio is the annual cost of holding a fund."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-063",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Real returns adjust nominal returns for inflation."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-064",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "A limit order sets a maximum or minimum execution price."
+    },
+    {
+      "annotation_reason": "guide 7: method guidance",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-065",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Rebalancing restores a portfolio to its target weights."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-066",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The yield curve plots yields against maturity."
+    },
+    {
+      "annotation_reason": "guide 7: definition of a risk concept, not a claim about a product",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-067",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Credit risk is the chance an issuer fails to pay."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-068",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "A tracking error measures deviation from a benchmark."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-069",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The settlement cycle determines when cash changes hands."
+    },
+    {
+      "annotation_reason": "guide 7: method guidance",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-070",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Dollar-cost averaging buys fixed amounts at regular intervals."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-071",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The prospectus sets out the fund's investment objective."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-072",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Custodians hold assets on behalf of the fund."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-073",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "An index committee reviews the constituents quarterly."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-074",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The audit committee meets four times a year."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-075",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Stamp duty applies to certain share purchases."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-076",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Withholding tax is deducted at source in some jurisdictions."
+    },
+    {
+      "annotation_reason": "guide 7: definition",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-077",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "A closed-end fund trades at a premium or a discount."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-078",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The fund's year end is the thirty-first of December."
+    },
+    {
+      "annotation_reason": "guide 7: explanation",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-079",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Units are priced once a day at the valuation point."
+    },
+    {
+      "annotation_reason": "guide 7: neutral statement",
+      "basis": "guide v2 7: explanation and method guidance are negative",
+      "group": "neutral_education",
+      "group_name": "neutral education",
+      "id": "IV-080",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The manager's report is published with the annual accounts."
+    },
+    {
+      "annotation_reason": "guide 5: negated claim asserts nothing",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-081",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Returns are not guaranteed under any circumstances."
+    },
+    {
+      "annotation_reason": "guide 5: negation",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-082",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Capital protection is not offered on this share class."
+    },
+    {
+      "annotation_reason": "guide 5: active negation",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-083",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The fund does not guarantee income."
+    },
+    {
+      "annotation_reason": "guide 7: standard disclaimer",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-084",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Past performance is no guide to future returns."
+    },
+    {
+      "annotation_reason": "guide 5: future negation",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-085",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The scheme will not guarantee your principal."
+    },
+    {
+      "annotation_reason": "guide 5: negation",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-086",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "No guarantee is given regarding distributions."
+    },
+    {
+      "annotation_reason": "guide 5: conditional outcome",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-087",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "If inflation subsides, yields may rise."
+    },
+    {
+      "annotation_reason": "guide 5: inverted conditional",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-088",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Should the index fall, the fund would underperform."
+    },
+    {
+      "annotation_reason": "guide 5: conditional",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-089",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Assuming rates hold, income is likely to be stable."
+    },
+    {
+      "annotation_reason": "guide 5: conditional guarantee",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-090",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The return is guaranteed only if the plan is held for five years."
+    },
+    {
+      "annotation_reason": "guide 5: subjunctive conditional",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-091",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Were the issuer to default, capital would be at risk."
+    },
+    {
+      "annotation_reason": "guide 5: conditional",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-092",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Depending on the outcome, the payout could double."
+    },
+    {
+      "annotation_reason": "guide 7: checkable document, so negative",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-093",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "GUARANTEE",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "GUARANTEE"
+        ],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The marketing material states that returns are guaranteed."
+    },
+    {
+      "annotation_reason": "guide 7: indefinite promoter is uncheckable",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-094",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "RISK_REMOVED",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [
+          "RISK_REMOVED"
+        ],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "A promoter claimed the fund cannot lose money."
+    },
+    {
+      "annotation_reason": "guide 7: checkable advert, so negative",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-095",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "The advert says the price will certainly double."
+    },
+    {
+      "annotation_reason": "guide 7: unnamed collective is uncheckable",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-096",
+      "labels": {
+        "categories": [
+          "unverified_information"
+        ],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "third_party",
+            "stance": "quoted"
+          }
+        ],
+        "expects_risk": true,
+        "relations": [],
+        "speakers": [
+          "third_party"
+        ],
+        "stances": [
+          "quoted"
+        ]
+      },
+      "text": "Some commentators argue the shares are cheap."
+    },
+    {
+      "annotation_reason": "guide 2: hedged, not asserted as certain",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-097",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The index might recover later in the year."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-098",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "PREDICTION",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [
+          "PREDICTION"
+        ],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "Perhaps the fund will outperform its benchmark."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-099",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "There is a possibility that yields fall."
+    },
+    {
+      "annotation_reason": "guide 2: hedged",
+      "basis": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+      "group": "ambiguous_boundary",
+      "group_name": "ambiguous boundary",
+      "id": "IV-100",
+      "labels": {
+        "categories": [],
+        "claims": [
+          {
+            "relation": "",
+            "speaker": "unknown",
+            "stance": "uncertain"
+          }
+        ],
+        "expects_risk": false,
+        "relations": [],
+        "speakers": [
+          "unknown"
+        ],
+        "stances": [
+          "uncertain"
+        ]
+      },
+      "text": "The shares could be cheap at this level."
+    }
+  ],
+  "category_counts": {
+    "emotional_manipulation": 4,
+    "financial_guarantee": 6,
+    "investment_advice": 5,
+    "market_prediction": 5,
+    "unverified_information": 17
+  },
+  "group_basis": {
+    "ambiguous_boundary": "guide v2 2 and 5: a conditional, negated or hedged claim asserts nothing unconditionally",
+    "author_endorsed_risk": "guide v2 3.1 and 7: a directive, prediction, guarantee, uncheckable claim or reader pressure in the author's own voice is the category",
+    "author_rejection": "guide v2 3.1 and 4: arguing against a claim is not making it",
+    "neutral_education": "guide v2 7: explanation and method guidance are negative",
+    "third_party_claim": "guide v2 3.1 and 7: a reported claim is not the article's, and only an uncheckable source is unverified_information"
+  },
+  "groups": {
+    "ambiguous_boundary": 20,
+    "author_endorsed_risk": 25,
+    "author_rejection": 15,
+    "neutral_education": 20,
+    "third_party_claim": 20
+  },
+  "relation_counts": {
+    "ADVICE": 7,
+    "GUARANTEE": 12,
+    "PREDICTION": 13,
+    "RISK_REMOVED": 8
+  },
+  "target_group_sizes": {
+    "ambiguous_boundary": 20,
+    "author_endorsed_risk": 25,
+    "author_rejection": 15,
+    "neutral_education": 20,
+    "third_party_claim": 20
+  },
+  "version": "v1"
+}
