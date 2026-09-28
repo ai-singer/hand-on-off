@@ -1,0 +1,39 @@
+{
+  "benchmark": "independent_v1/v1",
+  "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+  "case_count": 100,
+  "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+  "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+  "evaluator_hash": "6768eb66f7e28d2c885e93fa33c60f9a7c9396e02c6180ffc609f1a7149ba87a",
+  "freeze_kind": "targeted-repair",
+  "freeze_schema_version": "3.1.0",
+  "labels_unchanged": true,
+  "pipeline": "risk-evaluation-v3",
+  "pipeline_version": "3.0.0-experimental",
+  "repair_hashes": {
+    "attribution": "5e7322a3a619f9eabe112a7d81d42a5b7b3b46233e6b09ab82ab9bcc7f1c07bb",
+    "morphology": "746d5ceef9a953fd579d544e62b3090fec50f54a7c693fa27e723091b46938e8",
+    "negation": "59229d90ab0b591f740efce7ab60a8d35fd91610c280b89736582cd2bc7adbec",
+    "rejection": "b47fed6f23824b577886749f369288d2acb8ecde2336afbfa49cd44bcdd54809",
+    "sources": "e25cf7c0b007d3b67ff51252da19741df496eb70caa371af74e573cf8219b60f"
+  },
+  "repair_table_hash": "69b29e498a73a39d02de5cc96e187c47120593314e5d2b642916ba1e814b80b1",
+  "repairs": [
+    "R1-intent-pattern-inflection-coverage",
+    "R2-attribution-source-and-rejection-coverage",
+    "R3-fallback-propagation"
+  ],
+  "supersedes": {
+    "benchmark": "independent_v1/v1",
+    "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+    "case_count": 100,
+    "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+    "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+    "evaluator_hash": "cd187bfa0d8d0a6e14c6860ac282ec314fab672b31a282fcff49d0cd31033dc9",
+    "path": "evaluation_freeze_v3.json",
+    "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+    "timestamp": "2026-09-28T01:36:25Z"
+  },
+  "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+  "timestamp": "2026-09-28T02:17:32Z"
+}

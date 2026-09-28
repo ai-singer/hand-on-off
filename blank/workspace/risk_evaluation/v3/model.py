@@ -61,6 +61,11 @@ ENTITY_NAMES = (*CORE_ENTITIES, *EXTENDED_ENTITIES)
 #: Frame kinds, from the Phase 8.4 model.
 FRAMES = ("active", "passive", "copular", "attributive", "nominal")
 
+#: What a negation can govern, from the Phase 8.7 refinement over Phase 8.4's
+#: `negated` boolean. Declared here rather than imported so the model does not
+#: depend on a repair layer.
+NEGATION_SCOPES = ("positive", "local", "propositional")
+
 
 class ModelError(Exception):
     """Raised when a claim or decision violates the model contract."""
@@ -117,6 +122,12 @@ class IntentEvidence:
     span: tuple[int, int]
     negated: bool = False
     hedge: str = ""
+    #: What the negation governs, when there is one. Phase 8.6 found that one
+    #: boolean could not separate `Returns are not guaranteed.` - the predicate
+    #: is denied - from `It is not true that returns are guaranteed.` - the claim
+    #: is denied. Both are `negated`; only the second is a denial *of a claim*.
+    #: The Phase 8.4 verdict is unchanged; this refines it.
+    negation_scope: str = "positive"
 
     def __post_init__(self) -> None:
         if self.relation not in RELATIONS:
@@ -125,10 +136,18 @@ class IntentEvidence:
             raise ModelError(f"unknown frame {self.frame!r}")
         if not self.pattern_id.strip():
             raise ModelError("intent evidence must name the pattern that fired")
+        if self.negation_scope not in NEGATION_SCOPES:
+            raise ModelError(f"unknown negation scope {self.negation_scope!r}")
 
     @property
     def asserted(self) -> bool:
         return not self.negated and not self.hedge
+
+    @property
+    def denies_claim(self) -> bool:
+        """Is the claim itself denied, rather than the predicate inside it?"""
+
+        return self.negation_scope == "propositional"
 
     @property
     def marker(self) -> str:
@@ -136,6 +155,16 @@ class IntentEvidence:
 
         state = "negated" if self.negated else ("hedged" if self.hedge else "asserted")
         return f"{self.relation.lower()}:{self.entity.lower()}:{self.frame}:{state}"
+
+    @property
+    def scope_marker(self) -> str:
+        """The evidence string that says *what* the negation governs.
+
+        Kept separate from `marker` so that a negated finding carries both: that
+        it was negated, and which of the two denials it is.
+        """
+
+        return f"negation:{self.negation_scope}"
 
     def as_dict(self) -> dict[str, Any]:
         return {
@@ -146,6 +175,7 @@ class IntentEvidence:
             "pattern_id": self.pattern_id,
             "span": list(self.span),
             "negated": self.negated,
+            "negation_scope": self.negation_scope,
             "hedge": self.hedge,
             "asserted": self.asserted,
         }
@@ -171,6 +201,12 @@ class RiskClaim:
     fallback_categories: tuple[str, ...] = ()
     fallback_evidence: tuple[str, ...] = ()
     intent_available: bool = True
+    #: Categories the Phase 8.7 attribution refinement raised on its own, from a
+    #: typed source. Kept separate from `fallback_categories` because they have a
+    #: different author: the semantic layer did not find these, the source typing
+    #: did, and a trace that merged them could not say which layer was talking.
+    sourcing_categories: tuple[str, ...] = ()
+    attribution_refinement: Mapping[str, Any] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if not self.claim_id.strip():
@@ -201,6 +237,12 @@ class RiskClaim:
             )
         object.__setattr__(self, "evidence", tuple(str(item) for item in self.evidence))
         object.__setattr__(self, "intents", tuple(self.intents))
+        object.__setattr__(
+            self, "sourcing_categories", tuple(str(item) for item in self.sourcing_categories)
+        )
+        object.__setattr__(
+            self, "attribution_refinement", dict(self.attribution_refinement)
+        )
 
     @property
     def is_authorial(self) -> bool:
@@ -255,6 +297,8 @@ class RiskClaim:
             "intent_evidence": [item.as_dict() for item in self.intents],
             "fallback_categories": list(self.fallback_categories),
             "fallback_evidence": list(self.fallback_evidence),
+            "sourcing_categories": list(self.sourcing_categories),
+            "attribution_refinement": dict(self.attribution_refinement),
             "intent_available": self.intent_available,
         }
 

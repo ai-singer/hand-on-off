@@ -366,20 +366,36 @@ class FreezeTests(unittest.TestCase):
         self.assertEqual(self.frozen["benchmark"], f"{BENCHMARK_ID}/v1")
         self.assertEqual(self.frozen["case_count"], len(CASES))
 
-    def test_the_freeze_still_matches_after_the_evaluation(self) -> None:
-        """Taken before the run, verified after it. A mismatch is a FAIL."""
+    def test_the_freeze_no_longer_matches_and_that_is_the_point(self) -> None:
+        """Taken before the Phase 8.6 run, verified after it, and now superseded.
+
+        Phase 8.7 changed the pattern set on purpose, so this freeze must fail
+        its own verification: a freeze that survived a repair would mean the
+        repair had not touched the pipeline. Exactly one component may have
+        moved, and it is the one the repair is allowed to move.
+        """
 
         result = verify_freeze()
 
-        self.assertTrue(result.matches, result.render())
-        self.assertEqual(result.mismatches, ())
+        self.assertFalse(result.matches)
+        self.assertEqual(result.mismatches, ("evaluator_hash",))
 
-    def test_the_pipeline_sources_are_untouched(self) -> None:
+    def test_the_repair_did_not_touch_the_labels_or_the_decision_policy(self) -> None:
+        """What the superseded freeze still proves, read the other way round.
+
+        The taxonomy and the decision policy - the rule table, the actions and
+        the relation-to-category map - are byte-identical to what Phase 8.6
+        froze. The benchmark hash is checked by the Phase 8.7 freeze, which
+        asserts it equals the hash recorded here.
+        """
+
         frozen = self.frozen
 
-        self.assertEqual(frozen["evaluator_hash"], evaluator_hash())
-        self.assertEqual(frozen["decision_policy_hash"], decision_policy_hash())
         self.assertEqual(frozen["taxonomy_hash"], taxonomy_hash())
+        self.assertEqual(frozen["decision_policy_hash"], decision_policy_hash())
+        self.assertEqual(frozen["benchmark_hash"], dataset_hash())
+        self.assertEqual(frozen["configuration_hash"], configuration_hash())
+        self.assertNotEqual(frozen["evaluator_hash"], evaluator_hash())
 
     def test_the_freeze_was_taken_before_the_predictions(self) -> None:
         from risk_evaluation.v3_validation.evaluation import PREDICTION_PATH
@@ -423,7 +439,9 @@ class FreezeTests(unittest.TestCase):
             target = Path(directory) / "freeze.json"
             target.write_text(json.dumps(tampered), encoding="utf-8")
 
-            self.assertTrue(verify_freeze(target).matches)
+            # The freeze no longer matches the tree, for the evaluator hash. The
+            # timestamp still must not be one of the reasons.
+            self.assertNotIn("timestamp", verify_freeze(target).mismatches)
 
     def test_a_missing_freeze_is_reported(self) -> None:
         import tempfile
@@ -431,11 +449,13 @@ class FreezeTests(unittest.TestCase):
         with self.assertRaises(FreezeError):
             load_freeze(Path(tempfile.gettempdir()) / "no-such-freeze-v3.json")
 
-    def test_building_a_freeze_does_not_move_it(self) -> None:
-        self.assertEqual(
-            {k: v for k, v in build_freeze().items() if k != "timestamp"},
-            {k: v for k, v in self.frozen.items() if k != "timestamp"},
-        )
+    def test_building_a_freeze_twice_gives_the_same_hashes(self) -> None:
+        """Re-taking a freeze with nothing changed must not look like a change."""
+
+        first = {k: v for k, v in build_freeze().items() if k != "timestamp"}
+        second = {k: v for k, v in build_freeze().items() if k != "timestamp"}
+
+        self.assertEqual(first, second)
 
     def test_the_freeze_is_json_serializable(self) -> None:
         json.dumps(self.frozen, sort_keys=True)

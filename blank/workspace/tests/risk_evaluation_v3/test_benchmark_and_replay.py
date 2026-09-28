@@ -154,8 +154,12 @@ class MetricsTests(unittest.TestCase):
         )
 
     def test_attribution_accuracy_is_pinned(self) -> None:
+        # Phase 8.5 measured speaker 0.9683 / stance 0.9524. Phase 8.7's source
+        # typing raised speaker to 0.9841 and left stance where it was: no case in
+        # this benchmark labels a stance the repair disagrees with. The one
+        # speaker still wrong is `TQ-05`, recorded as open.
         self.assertEqual(self.metrics.attribution.split_accuracy, 1.0)
-        self.assertEqual(self.metrics.attribution.speaker_accuracy, 0.9683)
+        self.assertEqual(self.metrics.attribution.speaker_accuracy, 0.9841)
         self.assertEqual(self.metrics.attribution.stance_accuracy, 0.9524)
 
     def test_intent_recall_is_pinned(self) -> None:
@@ -163,17 +167,29 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(self.metrics.intent.relation_recall, 1.0)
 
     def test_decision_metrics_are_pinned(self) -> None:
-        self.assertEqual(self.metrics.decision.precision, 0.95)
-        self.assertEqual(self.metrics.decision.recall, 0.7917)
-        self.assertEqual(self.metrics.decision.accuracy, 0.9)
+        # Phase 8.5: precision 0.9500, recall 0.7917, accuracy 0.9000,
+        # fp 1, fn 5. Phase 8.7 moved recall and accuracy up and precision up as
+        # well, and the false positive count is where 8.5 left it.
+        self.assertEqual(self.metrics.decision.precision, 0.9565)
+        self.assertEqual(self.metrics.decision.recall, 0.9167)
+        self.assertEqual(self.metrics.decision.accuracy, 0.95)
         self.assertEqual(self.metrics.decision.counts["fp"], 1)
-        self.assertEqual(self.metrics.decision.counts["fn"], 5)
+        self.assertEqual(self.metrics.decision.counts["fn"], 2)
 
     def test_no_case_was_broken(self) -> None:
         self.assertEqual(self.metrics.broken_cases, ())
 
-    def test_twelve_cases_were_fixed(self) -> None:
-        self.assertEqual(len(self.metrics.fixed_cases), 12)
+    def test_the_repair_fixed_three_more_cases_without_breaking_one(self) -> None:
+        """Phase 8.5 fixed 12; Phase 8.7 fixed 15 and broke none.
+
+        `TQ-03` was the one case the first attempt at the fallback guard and
+        source typing regressed, and it is asserted here by name so a later
+        version of either cannot quietly lose it again.
+        """
+
+        self.assertEqual(len(self.metrics.fixed_cases), 15)
+        self.assertIn("TQ-03", [item.case_id for item in self.metrics.outcomes])
+        self.assertNotIn("TQ-03", [item.case_id for item in self.metrics.decision.errors()])
 
     def test_the_controls_did_not_regress(self) -> None:
         baseline = self.metrics.baseline.per_group()

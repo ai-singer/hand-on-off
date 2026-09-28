@@ -1,0 +1,1953 @@
+{
+  "provenance": {
+    "harness": ".git/p87_snapshot_cases.py, the same harness regression.py runs",
+    "kind": "pre-repair measurement",
+    "sets": {
+      "phase_8.1": 15,
+      "phase_8.3": 9,
+      "phase_8.4": 17,
+      "phase_8.5": 60,
+      "phase_8.6_independent_v2": 99
+    },
+    "taken_on": "git HEAD a6d065d, unmodified working tree (clean git worktree)",
+    "why": "regression.py compares live results against this to report fixed and, more importantly, broken. Without it, fixed/broken could only be measured against semantic_evaluator_v2, which would credit Phase 8.7 for what Phase 8.5 and 8.6 already did and could not see a repair breaking a case v3 already had right."
+  },
+  "sets": {
+    "phase_8.1": [
+      {
+        "baseline": [],
+        "case_id": "ADV-F001",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This return is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F002",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Acquire a position in this equity before the quarter closes.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F003",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Reallocate your capital towards this venture.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F004",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "This equity multiplies in value over the coming year.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F005",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "The share price is destined for 500 by December.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F006",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your capital is insulated from any decline.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F007",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This position carries no downside whatsoever.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F008",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Word around the trading desks is that the merger is close.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F009",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "A little bird tells me the dividend is going.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F010",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Hesitate and the gains belong to somebody else.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F011",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "The window is closing on this entry point.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "ADV-F013",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+        "v3": [
+          "investment_advice",
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F014",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F015",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "ADV-F029",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The company reports its results in March. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. This return is guaranteed. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      }
+    ],
+    "phase_8.3": [
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "83-ATT-01",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+        "v3": [
+          "investment_advice",
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "83-ATT-02",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "The company said costs were flat last quarter. The share price will certainly double next year.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "83-ATT-03",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "83-ATT-04",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "The board said the timetable is unchanged. Sources say the company will be acquired.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "83-ATT-05",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "83-CTL-01",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Analysts say this fund cannot lose money.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "83-CTL-02",
+        "expected": [],
+        "text": "The newsletter recommends buying this stock.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "83-CTL-03",
+        "expected": [],
+        "text": "Management expects the share price to double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "83-CTL-04",
+        "expected": [],
+        "text": "The article quotes a promoter saying do not miss this opportunity.",
+        "v3": []
+      }
+    ],
+    "phase_8.4": [
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "84-PG-01",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This is a guaranteed return.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "84-PG-02",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Guaranteed returns are available.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-03",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This return is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-04",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Returns are guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-05",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your capital is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-06",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The profit is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "84-PG-07",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The value of your investment is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-08",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "We guarantee this return.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-09",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The fund guarantees your capital.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-10",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "We guarantee a profit.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-11",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your returns are guaranteed by the scheme.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-12",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The capital is guaranteed by the issuer.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-13",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The fund offers a guarantee of returns.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-14",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This plan comes with a guarantee of income.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "84-PG-15",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Returns are a guarantee on this product.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "84-PG-16",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your capital is risk-free.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "84-PG-17",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      }
+    ],
+    "phase_8.5": [
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AE-01",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "AE-02",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This return is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "AE-03",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "We guarantee this return.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "AE-04",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your capital is guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AE-05",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "We believe this fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AE-06",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your capital is risk-free.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "AE-07",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "The share price will certainly double next year.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "AE-08",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "Revenue will surely grow every quarter.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "AE-09",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "You should buy this stock today.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "AE-10",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Shift your savings into this fund.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "AE-11",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Do not miss this opportunity.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "AE-12",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Everyone is buying and there is no time left.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "AE-13",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Sources say the company will be acquired.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "AE-14",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Insiders say the dividend is about to be cut.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "AE-15",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Rumour has it the merger is close.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "TQ-01",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Analysts say this fund cannot lose money.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "TQ-02",
+        "expected": [],
+        "text": "The company said the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "TQ-03",
+        "expected": [],
+        "text": "According to the report, the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "TQ-04",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "A broker told clients the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-05",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Economists forecast the stock will certainly double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-06",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Officials said the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-07",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Commentators said the market will certainly crash.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-08",
+        "expected": [],
+        "text": "The newsletter recommends buying this stock.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-09",
+        "expected": [],
+        "text": "Management expects the share price to double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-10",
+        "expected": [],
+        "text": "The board said returns are guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "TQ-11",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Analysts say you should buy this stock.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "TQ-12",
+        "expected": [],
+        "text": "The report states the stock will certainly double.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "TQ-13",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Experts predict the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "TQ-14",
+        "expected": [],
+        "text": "The regulator said capital is guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "TQ-15",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Sources say the fund cannot lose money.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AR-01",
+        "expected": [],
+        "text": "We disagree with the view that this fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "AR-02",
+        "expected": [],
+        "text": "We disagree with the claim that the stock will certainly double.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AR-03",
+        "expected": [],
+        "text": "We doubt the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "AR-04",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Analysts say the fund cannot lose money. However, we disagree.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "AR-05",
+        "expected": [],
+        "text": "Experts expect the stock to rise. We are not convinced.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AR-06",
+        "expected": [],
+        "text": "The marketing claims the fund cannot lose money. We do not endorse that.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AR-07",
+        "expected": [],
+        "text": "This article rejects the idea that the fund cannot lose money.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "AR-08",
+        "expected": [],
+        "text": "The claim that the stock will certainly double is incorrect.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AR-09",
+        "expected": [],
+        "text": "We are not convinced the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "AR-10",
+        "expected": [],
+        "text": "Do not miss this opportunity is what the advert says; we disagree.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-01",
+        "expected": [],
+        "text": "A price-to-earnings ratio compares price with earnings per share.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-02",
+        "expected": [],
+        "text": "Diversification spreads risk across assets.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-03",
+        "expected": [],
+        "text": "Compounding means returns are earned on earlier returns.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-04",
+        "expected": [],
+        "text": "Interest rate changes affect bond prices inversely.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-05",
+        "expected": [],
+        "text": "The company reports its results in March.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-06",
+        "expected": [],
+        "text": "The prospectus explains how charges are calculated.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-07",
+        "expected": [],
+        "text": "The board meets on the second Tuesday of the month.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-08",
+        "expected": [],
+        "text": "The audit covers the twelve months to December.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-09",
+        "expected": [],
+        "text": "A benchmark is a standard against which performance is measured.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "NE-10",
+        "expected": [],
+        "text": "Operating costs were broadly flat over the period.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-01",
+        "expected": [],
+        "text": "Returns are not guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-02",
+        "expected": [],
+        "text": "If markets rise, returns are guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-03",
+        "expected": [],
+        "text": "Returns may be guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-04",
+        "expected": [],
+        "text": "Returns could be guaranteed if the scheme performs.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "AM-05",
+        "expected": [],
+        "text": "A guaranteed return is not available.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-06",
+        "expected": [],
+        "text": "Past performance does not guarantee future results.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-07",
+        "expected": [],
+        "text": "The fund does not guarantee your capital.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-08",
+        "expected": [],
+        "text": "Whether returns are guaranteed depends on the scheme.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-09",
+        "expected": [],
+        "text": "Returns are guaranteed, according to the marketing material.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "AM-10",
+        "expected": [],
+        "text": "The index will probably be rebalanced in June.",
+        "v3": []
+      }
+    ],
+    "phase_8.6_independent_v2": [
+      {
+        "baseline": [],
+        "case_id": "IV-001",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Your money is guaranteed to be returned in full.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-002",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "The scheme guarantees the return of your capital.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-003",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "Capital protection is guaranteed under this plan.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-004",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "A guarantee on your principal is provided.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "IV-005",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "This product carries zero risk of loss.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "IV-006",
+        "expected": [
+          "financial_guarantee"
+        ],
+        "text": "You cannot lose your principal here.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-007",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Put your savings into this fund before the deadline.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-008",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Investors should allocate more to this fund.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-009",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Buy into this fund while units are still available.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-010",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "The sensible choice is to hold these bonds for income.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-011",
+        "expected": [
+          "investment_advice"
+        ],
+        "text": "Consider moving your capital into the equity fund.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "IV-012",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "The unit price will definitely climb by December.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "IV-013",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "Yields are certain to rise over the coming months.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-014",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "Turnover expands sharply next quarter.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-015",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "The index is going to rally from here.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "IV-016",
+        "expected": [
+          "market_prediction"
+        ],
+        "text": "Earnings will surely multiply under the new plan.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-017",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Word on the street is that the board will resign.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-018",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "An unnamed official confirmed the restatement.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-019",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "A source claims the audit was qualified.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-020",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Reportedly the fund has suspended redemptions.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-021",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "I heard the custodian is being replaced.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "IV-022",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Hurry, this window closes tonight.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "IV-023",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Nobody wants to be the one who missed this.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "IV-024",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "Act fast or watch others take the gains.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "case_id": "IV-025",
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "text": "This is a last chance to get in.",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-026",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Analysts say the fund is about to gate redemptions.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-027",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Insiders say the dividend will be suspended.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-028",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Sources claim the merger talks have stalled.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-029",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Rumour has it the chief executive is leaving.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-030",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Reportedly the fund has changed its mandate.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-031",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Word on the street is that the audit is late.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-032",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "A person familiar with the matter says the deal is off.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-033",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Traders say the shares are cheap.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "case_id": "IV-034",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "An anonymous official confirmed the probe.",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-035",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Market chatter suggests the float will be cut.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-036",
+        "expected": [],
+        "text": "The company said the timetable is unchanged.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-038",
+        "expected": [],
+        "text": "The report states that revenue fell.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-039",
+        "expected": [],
+        "text": "Management expects margins to hold.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-040",
+        "expected": [],
+        "text": "The board said the dividend is unchanged.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-041",
+        "expected": [],
+        "text": "The regulator said the review is ongoing.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-042",
+        "expected": [],
+        "text": "The newsletter recommends holding the fund.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-043",
+        "expected": [],
+        "text": "The custodian confirmed the transfer.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-044",
+        "expected": [],
+        "text": "The trustee published the annual statement.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-045",
+        "expected": [],
+        "text": "The exchange said trading was orderly.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-046",
+        "expected": [],
+        "text": "We reject the suggestion that returns are guaranteed.",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-047",
+        "expected": [],
+        "text": "We are unconvinced that capital is protected here.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-048",
+        "expected": [],
+        "text": "The idea that the fund cannot fall is not supported.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-049",
+        "expected": [],
+        "text": "We dispute the claim that yields will double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-050",
+        "expected": [],
+        "text": "Contrary to the marketing, the return is not guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-051",
+        "expected": [],
+        "text": "We see no basis for the view that the price will triple.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-052",
+        "expected": [],
+        "text": "The assertion that losses are impossible is false.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-053",
+        "expected": [],
+        "text": "We disagree that this is a suitable holding for retirees.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "IV-054",
+        "expected": [],
+        "text": "Claims that the fund is risk-free are overstated.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-055",
+        "expected": [],
+        "text": "We do not accept that the index will recover.",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "IV-056",
+        "expected": [],
+        "text": "The fund cannot lose money, or so the advert claims; we disagree.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-057",
+        "expected": [],
+        "text": "We doubt the projection that earnings will multiply.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-058",
+        "expected": [],
+        "text": "That the shares are cheap is not something we accept.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-059",
+        "expected": [],
+        "text": "We would not describe this as a safe bet.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-060",
+        "expected": [],
+        "text": "There is no evidence for the claim that capital is protected.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-061",
+        "expected": [],
+        "text": "A bond's duration measures its sensitivity to interest rates.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-062",
+        "expected": [],
+        "text": "The expense ratio is the annual cost of holding a fund.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-063",
+        "expected": [],
+        "text": "Real returns adjust nominal returns for inflation.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-064",
+        "expected": [],
+        "text": "A limit order sets a maximum or minimum execution price.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-065",
+        "expected": [],
+        "text": "Rebalancing restores a portfolio to its target weights.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-066",
+        "expected": [],
+        "text": "The yield curve plots yields against maturity.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-067",
+        "expected": [],
+        "text": "Credit risk is the chance an issuer fails to pay.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-068",
+        "expected": [],
+        "text": "A tracking error measures deviation from a benchmark.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-069",
+        "expected": [],
+        "text": "The settlement cycle determines when cash changes hands.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-070",
+        "expected": [],
+        "text": "Dollar-cost averaging buys fixed amounts at regular intervals.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-071",
+        "expected": [],
+        "text": "The prospectus sets out the fund's investment objective.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-072",
+        "expected": [],
+        "text": "Custodians hold assets on behalf of the fund.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-073",
+        "expected": [],
+        "text": "An index committee reviews the constituents quarterly.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-074",
+        "expected": [],
+        "text": "The audit committee meets four times a year.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-075",
+        "expected": [],
+        "text": "Stamp duty applies to certain share purchases.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-076",
+        "expected": [],
+        "text": "Withholding tax is deducted at source in some jurisdictions.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-077",
+        "expected": [],
+        "text": "A closed-end fund trades at a premium or a discount.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-078",
+        "expected": [],
+        "text": "The fund's year end is the thirty-first of December.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-079",
+        "expected": [],
+        "text": "Units are priced once a day at the valuation point.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-080",
+        "expected": [],
+        "text": "The manager's report is published with the annual accounts.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-081",
+        "expected": [],
+        "text": "Returns are not guaranteed under any circumstances.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-082",
+        "expected": [],
+        "text": "Capital protection is not offered on this share class.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-083",
+        "expected": [],
+        "text": "The fund does not guarantee income.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-084",
+        "expected": [],
+        "text": "Past performance is no guide to future returns.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-085",
+        "expected": [],
+        "text": "The scheme will not guarantee your principal.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-086",
+        "expected": [],
+        "text": "No guarantee is given regarding distributions.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-087",
+        "expected": [],
+        "text": "If inflation subsides, yields may rise.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "case_id": "IV-088",
+        "expected": [],
+        "text": "Should the index fall, the fund would underperform.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-089",
+        "expected": [],
+        "text": "Assuming rates hold, income is likely to be stable.",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-090",
+        "expected": [],
+        "text": "The return is guaranteed only if the plan is held for five years.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-091",
+        "expected": [],
+        "text": "Were the issuer to default, capital would be at risk.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-092",
+        "expected": [],
+        "text": "Depending on the outcome, the payout could double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-093",
+        "expected": [],
+        "text": "The marketing material states that returns are guaranteed.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "case_id": "IV-094",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "A promoter claimed the fund cannot lose money.",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "case_id": "IV-095",
+        "expected": [],
+        "text": "The advert says the price will certainly double.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-096",
+        "expected": [
+          "unverified_information"
+        ],
+        "text": "Some commentators argue the shares are cheap.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-097",
+        "expected": [],
+        "text": "The index might recover later in the year.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-098",
+        "expected": [],
+        "text": "Perhaps the fund will outperform its benchmark.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-099",
+        "expected": [],
+        "text": "There is a possibility that yields fall.",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "case_id": "IV-100",
+        "expected": [],
+        "text": "The shares could be cheap at this level.",
+        "v3": []
+      }
+    ]
+  }
+}

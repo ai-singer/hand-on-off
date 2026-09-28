@@ -309,6 +309,26 @@ class ConfigTests(unittest.TestCase):
 
         self.assertEqual(result.claims[0].speaker, "unknown")
 
+    def test_disabling_attribution_turns_off_the_refinement_with_it(self) -> None:
+        """The Phase 8.7 refinement is part of the attribution stage.
+
+        It types a source and finds rejection cues, both of which are attribution
+        answers. Keeping it running while the layer it refines was switched off
+        would make `use_attribution` mean less than it says.
+        """
+
+        text = "Analysts say this fund cannot lose money."
+        off = RiskEvaluationPipeline(config=PipelineConfig(use_attribution=False))
+        on = RiskEvaluationPipeline()
+
+        self.assertEqual(off.evaluate(text).claims[0].speaker, "unknown")
+        self.assertEqual(off.evaluate(text).claims[0].sourcing_categories, ())
+        self.assertEqual(on.evaluate(text).claims[0].speaker, "third_party")
+        self.assertEqual(
+            on.evaluate(text).claims[0].sourcing_categories,
+            ("unverified_information",),
+        )
+
 
 class BaselineComparisonTests(unittest.TestCase):
     def test_the_baseline_is_the_evaluator_on_the_whole_text(self) -> None:

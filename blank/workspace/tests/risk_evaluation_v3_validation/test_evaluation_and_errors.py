@@ -26,6 +26,7 @@ from risk_evaluation.v3_validation.errors import (
     FALLBACK_PROPAGATION,
     INFLECTED_VERB,
     INTENT_DETECTION_ERROR,
+    LEXICAL_GAP,
     MECHANISMS,
     NOVEL_REJECTION_CUE,
     NOVEL_SOURCE_NOUN,
@@ -128,32 +129,41 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(len(self.metrics.outcomes), len(CASES))
 
     def test_attribution_metrics_are_pinned(self) -> None:
+        # Phase 8.6 measured speaker 0.7400 and stance 0.7900. Phase 8.7 typed the
+        # source a statement is reported through, which is the axis Phase 8.6
+        # found the layer could not answer: `The regulator said ...` and `Traders
+        # say ...` both came back `unknown`.
         attribution = self.metrics.attribution
 
         self.assertEqual(attribution.split_accuracy, 1.0)
-        self.assertEqual(attribution.speaker_accuracy, 0.74)
-        self.assertEqual(attribution.stance_accuracy, 0.79)
+        self.assertEqual(attribution.speaker_accuracy, 0.99)
+        self.assertEqual(attribution.stance_accuracy, 0.98)
 
     def test_intent_metrics_are_pinned(self) -> None:
+        # Phase 8.6 measured 27/40 (0.6750). Phase 8.7 brought the guarantee
+        # relation to 12/12 and RISK_REMOVED to 8/8; PREDICTION and ADVICE are
+        # unchanged and are listed as still open in the Phase 8.7 report.
         intent = self.metrics.intent
 
         self.assertEqual(intent.expected_total, 40)
-        self.assertEqual(intent.recalled, 27)
-        self.assertEqual(intent.recall, 0.675)
+        self.assertEqual(intent.recalled, 35)
+        self.assertEqual(intent.recall, 0.875)
         self.assertGreater(intent.precision, 0.0)
         self.assertLessEqual(intent.precision, 1.0)
 
     def test_decision_metrics_are_pinned(self) -> None:
+        # Phase 8.6 measured tp/fp/fn/tn 31/9/6/54, precision 0.7750,
+        # recall 0.8378, fpr 0.1429, fnr 0.1622.
         decision = self.metrics.decision
 
-        self.assertEqual(decision.counts["tp"], 31)
-        self.assertEqual(decision.counts["fp"], 9)
-        self.assertEqual(decision.counts["fn"], 6)
-        self.assertEqual(decision.counts["tn"], 54)
-        self.assertEqual(decision.precision, 0.775)
-        self.assertEqual(decision.recall, 0.8378)
-        self.assertEqual(decision.false_positive_rate, 0.1429)
-        self.assertEqual(decision.false_negative_rate, 0.1622)
+        self.assertEqual(decision.counts["tp"], 36)
+        self.assertEqual(decision.counts["fp"], 2)
+        self.assertEqual(decision.counts["fn"], 1)
+        self.assertEqual(decision.counts["tn"], 61)
+        self.assertEqual(decision.precision, 0.9474)
+        self.assertEqual(decision.recall, 0.973)
+        self.assertEqual(decision.false_positive_rate, 0.0317)
+        self.assertEqual(decision.false_negative_rate, 0.027)
 
     def test_trace_metrics_are_complete(self) -> None:
         trace = self.metrics.trace
@@ -249,19 +259,34 @@ class ClaimVerificationTests(unittest.TestCase):
                 self.assertGreaterEqual(sub.total, 0)
                 self.assertEqual(sub.correct <= sub.total, True)
 
-    def test_claim_one_is_partially_supported(self) -> None:
-        """Quoted and rejected groups hold; speaker accuracy does not."""
+    def test_claim_one_is_supported(self) -> None:
+        """Phase 8.6 returned PARTIALLY_SUPPORTED here: speaker accuracy was 74%.
+
+        Phase 8.7 typed the source, so quoted third-party claims went 17/20 to
+        20/20, author rejections 12/15 to 15/15, and speaker accuracy to 96%.
+        """
 
         verdict = verify_attribution(self.metrics)
 
-        self.assertEqual(verdict.verdict, PARTIALLY_SUPPORTED)
+        self.assertEqual(verdict.verdict, SUPPORTED)
 
-    def test_claim_two_is_not_supported(self) -> None:
-        """The guarantee forms hold where they matched, but seven matched nothing."""
+    def test_claim_two_is_supported(self) -> None:
+        """Phase 8.6 returned NOT_SUPPORTED here: seven guarantee cases matched no
+        frame at all, so the claim rested on the forms that happened to fire.
+
+        Phase 8.7 gave the frames the inflected verbs and the negated copula, and
+        the `guarantee text no frame matched` sub-claim is gone rather than
+        passing - a sub-claim that cannot be built is the strongest form of it
+        holding, and section 3 of the Phase 8.7 report says which case each repair
+        answered.
+        """
 
         verdict = verify_intent(self.metrics)
 
-        self.assertEqual(verdict.verdict, NOT_SUPPORTED)
+        self.assertEqual(verdict.verdict, SUPPORTED)
+        self.assertNotIn(
+            "guarantee text no frame matched", [s.name for s in verdict.sub_claims]
+        )
 
     def test_claim_three_is_supported(self) -> None:
         verdict = verify_decision(self.metrics)
@@ -274,11 +299,17 @@ class ClaimVerificationTests(unittest.TestCase):
         self.assertIn("copular", by_form)
         self.assertTrue(by_form["copular"])
 
-    def test_the_unmatched_bucket_is_reported(self) -> None:
+    def test_the_unmatched_bucket_is_empty(self) -> None:
+        """Phase 8.6 had 7 guarantee cases whose text no frame matched.
+
+        The bucket is still built by the same code, so an unmatched case would
+        reappear here rather than being silently dropped from the grouping.
+        """
+
         by_form = guarantee_form_outcomes(self.metrics.outcomes)
 
-        self.assertIn("unmatched", by_form)
-        self.assertGreaterEqual(len(by_form["unmatched"]), 5)
+        self.assertNotIn("unmatched", by_form)
+        self.assertIn("copular", by_form)
 
     def test_the_verification_is_json_serializable(self) -> None:
         from risk_evaluation.v3_validation.claims import payload
@@ -324,8 +355,29 @@ class ErrorAnalysisTests(unittest.TestCase):
         self.assertEqual(set(counts), set(MECHANISMS))
         self.assertGreater(counts[NOVEL_SOURCE_NOUN], 0)
 
-    def test_the_inflected_verb_defect_is_found(self) -> None:
-        """`Turnover expands sharply next quarter.` - the frames list `expand`."""
+    def test_the_inflected_verb_defect_is_repaired(self) -> None:
+        """Phase 8.6: `Turnover expands sharply next quarter.` matched no frame.
+
+        The detector is still declared in `MECHANISMS` and still runs; what must
+        be true after Phase 8.7 is that it fires on nothing, and that the case
+        which raised it is decided correctly.
+        """
+
+        names = {
+            mechanism.name
+            for item in self.analysis.diagnoses
+            for mechanism in item.mechanisms
+        }
+        outcome = next(
+            item for item in self.metrics.outcomes if item.case_id == "IV-014"
+        )
+
+        self.assertIn(INFLECTED_VERB, MECHANISMS)
+        self.assertNotIn(INFLECTED_VERB, names)
+        self.assertTrue(outcome.correct, outcome.prediction.categories)
+
+    def test_fallback_propagation_is_repaired(self) -> None:
+        """Phase 8.6: four neutral sentences kept a keyword `investment_advice`."""
 
         names = {
             mechanism.name
@@ -333,25 +385,45 @@ class ErrorAnalysisTests(unittest.TestCase):
             for mechanism in item.mechanisms
         }
 
-        self.assertIn(INFLECTED_VERB, names)
+        self.assertIn(FALLBACK_PROPAGATION, MECHANISMS)
+        self.assertNotIn(FALLBACK_PROPAGATION, names)
+        for case_id in ("IV-062", "IV-071", "IV-075", "IV-088"):
+            outcome = next(i for i in self.metrics.outcomes if i.case_id == case_id)
+            self.assertTrue(outcome.correct, case_id)
 
-    def test_fallback_propagation_is_found(self) -> None:
+    def test_the_rejection_cue_gap_is_repaired(self) -> None:
+        """Phase 8.6: eight rejections were phrased with cues the layer lacked."""
+
         names = {
             mechanism.name
             for item in self.analysis.diagnoses
             for mechanism in item.mechanisms
         }
+        rejected = [
+            item
+            for item in self.metrics.outcomes
+            if item.case.group == "author_rejection"
+        ]
 
-        self.assertIn(FALLBACK_PROPAGATION, names)
+        self.assertIn(NOVEL_REJECTION_CUE, MECHANISMS)
+        self.assertNotIn(NOVEL_REJECTION_CUE, names)
+        self.assertTrue(all(item.correct for item in rejected), rejected)
 
-    def test_the_rejection_cue_gap_is_found(self) -> None:
-        names = {
-            mechanism.name
-            for item in self.analysis.diagnoses
-            for mechanism in item.mechanisms
-        }
+    def test_the_defects_phase_8_6_confirmed_are_all_absent(self) -> None:
+        """The three defects the phase names, as one assertion.
 
-        self.assertIn(NOVEL_REJECTION_CUE, names)
+        Nothing here says the pipeline is finished. `novel_source_noun` survives
+        on one case and the PREDICTION and ADVICE relations still miss five
+        between them; both are recorded in the Phase 8.7 report rather than
+        asserted away.
+        """
+
+        counts = self.analysis.mechanism_counts()
+
+        self.assertEqual(counts[INFLECTED_VERB], 0)
+        self.assertEqual(counts[NOVEL_REJECTION_CUE], 0)
+        self.assertEqual(counts[FALLBACK_PROPAGATION], 0)
+        self.assertEqual(counts[LEXICAL_GAP], 0)
 
     def test_the_classifier_leaves_nothing_unclassified(self) -> None:
         self.assertEqual(self.analysis.counts()["unclassified"], 0)

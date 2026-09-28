@@ -16,6 +16,7 @@ from typing import Any
 
 from ...intent_patterns.matcher import RelationMatcher
 from ...intent_patterns.model import PatternMatch
+from ...v3_repair.negation import classify as classify_negation
 from ..model import ClaimInput, IntentEvidence, evidence_strings
 from ..patterns import ENTITIES, PATTERNS
 from . import AdapterError, AdapterResult
@@ -71,6 +72,12 @@ class IntentPatternAdapter:
             for frame in match.frames:
                 object_value = frame.object_value or frame.subject_value
                 entity = _entity_for(match, object_value)
+                scope = classify_negation(
+                    claim.text,
+                    frame_span=frame.span,
+                    predicate_span=_predicate_span(claim.text, frame),
+                    negated=frame.negated,
+                )
                 intents.append(
                     IntentEvidence(
                         relation=frame.relation,
@@ -81,9 +88,12 @@ class IntentPatternAdapter:
                         span=frame.span,
                         negated=frame.negated,
                         hedge=frame.hedge,
+                        negation_scope=scope.scope,
                     )
                 )
-                evidence.append(_evidence_marker(frame.relation, frame.kind, frame))
+                evidence.append(_evidence_marker(frame.relation, frame.kind, frame, scope))
+                if scope.negated:
+                    evidence.append(scope.marker_text)
 
         if not intents:
             evidence.append("rule:intent_pattern.no-relation")
@@ -102,12 +112,31 @@ class IntentPatternAdapter:
         )
 
 
-def _evidence_marker(relation: str, kind: str, frame) -> str:
+def _predicate_span(text: str, frame) -> tuple[int, int]:
+    """Where the predicate sits, inside the frame.
+
+    The Phase 8.4 `FrameMatch` carries the predicate *text* and the frame span but
+    not the predicate's own offsets, and the negation-scope refinement needs them:
+    a denial predicate is propositional only when it is outside the predicate.
+    Locating the text inside the frame's own span is enough, and falling back to
+    the frame span keeps the answer conservative - a marker inside the frame is
+    then read as the predicate's own negation, which is what it is.
+    """
+
+    if not frame.predicate:
+        return frame.span
+    start = text.find(frame.predicate, frame.span[0], frame.span[1])
+    if start < 0:
+        return frame.span
+    return start, start + len(frame.predicate)
+
+
+def _evidence_marker(relation: str, kind: str, frame, scope=None) -> str:
     """A stable, named marker for one frame, as the trace example shows."""
 
     base = f"{kind}_{relation.lower()}_pattern"
     if frame.negated:
-        return f"{base}:negated"
+        return f"{base}:negated:{scope.scope}" if scope is not None else f"{base}:negated"
     if frame.hedge:
         return f"{base}:hedged:{frame.hedge}"
     return base

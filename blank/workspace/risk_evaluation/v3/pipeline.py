@@ -37,6 +37,7 @@ from typing import Any, Mapping, Sequence
 
 from ..semantic_evaluator_v2 import EVALUATOR_NAME as BASELINE_NAME
 from ..semantic_evaluator_v2 import SemanticRiskEvaluatorV2
+from ..v3_repair.attribution import refine as refine_attribution
 from .adapters import AdapterResult, ClaimAdapter, require_adapters
 from .adapters import attribution as attribution_adapter
 from .adapters import intent_pattern as intent_adapter
@@ -285,8 +286,26 @@ class RiskEvaluationPipeline:
         speaker = attribution_result.speaker or "unknown"
         stance = attribution_result.stance or "uncertain"
 
+        # Phase 8.7's refinement, applied to the layer's answer rather than
+        # inside it. Phase 8.2 does not recognise `Traders say` or `The advert
+        # says`, and it cannot say whether a source it did find is checkable;
+        # both are repairs to its *coverage*, so they sit here.
+        #
+        # It is part of the attribution stage, so `use_attribution=False` turns it
+        # off with the rest of that stage. A refinement that kept answering while
+        # the layer it refines was disabled would make the config flag a lie.
+        refinement = (
+            refine_attribution(claim_input.text, speaker=speaker, stance=stance)
+            if self._config.use_attribution
+            else None
+        )
+        if refinement is not None:
+            speaker = refinement.speaker
+            stance = refinement.stance
+
         evidence = evidence_strings(
             attribution_result.evidence,
+            refinement.evidence if refinement else (),
             intent_result.evidence,
             semantic_result.evidence,
         )
@@ -306,6 +325,10 @@ class RiskEvaluationPipeline:
             fallback_categories=semantic_result.categories,
             fallback_evidence=semantic_result.evidence,
             intent_available=intent_result.available,
+            sourcing_categories=(
+                refinement.sourcing_categories if refinement else ()
+            ),
+            attribution_refinement=refinement.as_dict() if refinement else {},
         )
         return claim, stages
 

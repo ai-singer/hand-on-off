@@ -333,9 +333,60 @@ class SuppressionTests(unittest.TestCase):
         )
 
     def test_a_fallback_category_survives_for_an_authorial_claim(self) -> None:
-        kept, _ = decide(_claim(speaker="author", stance="endorsed", fallback=("market_prediction",)))
+        """A category no relation defines still reaches the fallback.
+
+        `emotional_manipulation` has no v3 relation, so the semantic layer is its
+        only detector and the guard in `RELATION_REQUIRED` does not apply to it.
+        """
+
+        kept, _ = decide(_claim(speaker="author", stance="endorsed", fallback=("emotional_manipulation",)))
+
+        self.assertEqual([d.category for d in kept], ["emotional_manipulation"])
+
+    def test_a_fallback_category_needing_a_relation_is_declined_without_one(self) -> None:
+        """Phase 8.6's four false positives, as the rule that answers them.
+
+        `investment_advice` is defined as a directive aimed at the reader, and
+        `The expense ratio is the annual cost of holding a fund.` contains no
+        directive. The fallback kept it anyway; now the relation decides.
+        """
+
+        kept, suppressed = decide(
+            _claim(speaker="author", stance="endorsed", fallback=("investment_advice",))
+        )
+
+        self.assertEqual(kept, ())
+        self.assertEqual([d.category for d in suppressed], ["investment_advice"])
+        self.assertEqual(suppressed[0].rule, R_FALLBACK)
+        self.assertIn("no-relation-behind-it", " ".join(suppressed[0].evidence))
+
+    def test_a_category_the_guard_does_not_cover_still_reaches_the_fallback(self) -> None:
+        """The guard is a table, and it covers what was measured, not everything.
+
+        `market_prediction` is deliberately absent: adding it changed no number
+        on any scored set, so shipping it would have been untested code. This
+        test is what makes that decision visible rather than invisible.
+        """
+
+        kept, _ = decide(
+            _claim(speaker="author", stance="endorsed", fallback=("market_prediction",))
+        )
 
         self.assertEqual([d.category for d in kept], ["market_prediction"])
+
+    def test_a_fallback_category_is_kept_when_the_relation_is_there(self) -> None:
+        """The guard asks whether the relation fired, not what was decided."""
+
+        kept, _ = decide(
+            _claim(
+                speaker="author",
+                stance="endorsed",
+                intents=(_intent(ADVICE),),
+                fallback=("investment_advice",),
+            )
+        )
+
+        self.assertEqual([d.category for d in kept], ["investment_advice"])
 
     def test_a_fallback_category_is_suppressed_for_a_quoted_claim(self) -> None:
         kept, suppressed = decide(

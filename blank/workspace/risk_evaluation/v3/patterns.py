@@ -41,6 +41,7 @@ from ..intent_patterns.model import (
     PatternSet,
     Relation,
 )
+from .morphology import alternation
 from .model import (
     ADVICE,
     CAPITAL,
@@ -181,11 +182,43 @@ GUARANTORS = EntityType(
 )
 
 #: Verbs that name a change in a market quantity. A prediction needs one.
-MOVEMENT_VERBS = (
-    r"rise|fall|double|triple|reach|grow|climb|drop|decline|crash|recover|"
-    r"rally|surge|slip|tumble|soar|multiply|increase|decrease|expand|contract|"
-    r"\u4e0a\u6da8|\u4e0b\u8dcc|\u7ffb\u500d|\u589e\u957f"
+#:
+#: Phase 8.6 found this list written out in base form with a trailing `\b`,
+#: which meant `Turnover expands sharply next quarter.` matched nothing at all:
+#: `expand\b` cannot match `expands`. Listing every inflected form by hand would
+#: be the same defect deferred by one verb, so the forms are derived from the
+#: lemmas by `morphology` instead. See `docs/PHASE_8_7_TARGETED_REPAIR_REPORT.md`.
+MOVEMENT_LEMMAS: tuple[str, ...] = (
+    "rise",
+    "fall",
+    "double",
+    "triple",
+    "reach",
+    "grow",
+    "climb",
+    "drop",
+    "decline",
+    "crash",
+    "recover",
+    "rally",
+    "surge",
+    "slip",
+    "tumble",
+    "soar",
+    "multiply",
+    "increase",
+    "decrease",
+    "expand",
+    "contract",
 )
+
+#: Chinese movement words carry no English inflection and are listed as written.
+_MOVEMENT_CJK = r"\u4e0a\u6da8|\u4e0b\u8dcc|\u7ffb\u500d|\u589e\u957f"
+
+#: The generated alternation the prediction frames match with. `alternation`
+#: returns its own non-capturing group, whose body is spliced into this one so
+#: the pattern keeps a single group for the English and Chinese alternatives.
+MOVEMENT_VERBS = f"(?:{alternation(MOVEMENT_LEMMAS)[3:-1]}|{_MOVEMENT_CJK})"
 
 #: Certainty carriers for the copular prediction frame.
 CERTAINTY_ADJECTIVES = r"certain|sure|bound|destined|set|poised|guaranteed"
@@ -211,6 +244,26 @@ _COPULA = (
 )
 _ADVERB = r"(?:\w+ly\s+)?"
 
+#: A negator between the copula and its predicate. Phase 8.6 found the copular
+#: and passive guarantee frames unable to match `Returns are not guaranteed.` at
+#: all, so the sentence produced no finding and therefore no trace: the pipeline
+#: could not say whether the frame had looked and declined or never looked.
+#:
+#: The negator is matched, not skipped over. The Phase 8.4 guard measures negation
+#: from the start of the `predicate` group, so a frame that spans `not` comes back
+#: `negated=True` and the decision layer suppresses it. Widening the frame
+#: therefore adds coverage without adding a single asserted guarantee, which is
+#: the property the phase's "no false positive growth" requirement is about.
+_NEG = r"(?:(?:not|never|no\s+longer)\s+)?"
+
+#: Guarantee predicates. `protected` and `assured` are here because the Phase 8.6
+#: annotation assigns them the GUARANTEE relation by meaning: `We are unconvinced
+#: that capital is protected here.` quotes a guarantee, and the relation is what
+#: the benchmark labels, independently of whether the author believes it. The
+#: object group still has to be satisfied, so `Your data is protected.` matches
+#: nothing.
+_GUARANTEE_PREDICATE = r"guaranteed|protected|assured"
+
 
 GUARANTEE_RELATION = Relation(
     name=GUARANTEE,
@@ -225,17 +278,24 @@ GUARANTEE_RELATION = Relation(
         ),
         Frame(
             PASSIVE,
-            rf"\b(?P<object>{_GUARANTEE_OBJECT}){_FILLER}\s+{_COPULA}\s+{_ADVERB}"
+            rf"\b(?P<object>{_GUARANTEE_OBJECT}){_FILLER}\s+{_COPULA}\s+{_NEG}{_ADVERB}"
             rf"(?P<predicate>guaranteed)\s+by\s+(?P<agent>[A-Za-z' ]{{2,40}})",
             ("predicate", "object", "agent"),
             "object + be + guaranteed + agent",
         ),
         Frame(
             COPULAR,
-            rf"\b(?P<object>{_GUARANTEE_OBJECT}){_FILLER}\s+{_COPULA}\s+{_ADVERB}"
+            rf"\b(?P<object>{_GUARANTEE_OBJECT}){_FILLER}\s+{_COPULA}\s+{_NEG}{_ADVERB}"
             rf"(?P<predicate>guaranteed)\b",
             ("predicate", "object"),
             "object + be + guaranteed",
+        ),
+        Frame(
+            COPULAR,
+            rf"\b(?P<object>{_GUARANTEE_OBJECT}){_FILLER}\s+{_COPULA}\s+{_NEG}{_ADVERB}"
+            rf"(?P<predicate>protected|assured)\b",
+            ("predicate", "object"),
+            "object + be + protected or assured",
         ),
         Frame(
             ACTIVE,
@@ -263,6 +323,14 @@ GUARANTEE_RELATION = Relation(
             ("predicate",),
             "is a guarantee, object implicit",
         ),
+        Frame(
+            NOMINAL,
+            r"\b(?:no|not\s+any)\s+(?P<predicate>guarantee)\s+"
+            r"(?:is|are|was|were|has\s+been|have\s+been|will\s+be)\s+"
+            r"(?:given|made|offered|provided|implied|extended|available)\b",
+            ("predicate",),
+            "no guarantee is given",
+        ),
     ),
 )
 
@@ -287,10 +355,17 @@ RISK_REMOVED_RELATION = Relation(
         ),
         Frame(
             ACTIVE,
-            r"\bcan(?:not|'t)\s+(?P<predicate>fail|lose|go wrong)\b",
+            rf"\bcan(?:not|'t)\s+(?P<predicate>fail|lose|go wrong|{MOVEMENT_VERBS})\b",
             ("predicate",),
-            "cannot fail or lose",
+            "cannot fail, lose or move down",
             self_negating=True,
+        ),
+        Frame(
+            COPULAR,
+            rf"\b(?P<predicate>(?:loss(?:es)?|drawdowns?|a\s+loss)\s+{_COPULA}\s+"
+            rf"(?:impossible|unthinkable|out\s+of\s+the\s+question))\b",
+            ("predicate",),
+            "losses are impossible",
         ),
         Frame(
             ATTRIBUTIVE,

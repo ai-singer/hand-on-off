@@ -217,6 +217,45 @@ def hedges(relation: str, hedge: str) -> bool:
     return True
 
 
+#: Categories a relation *defines*, so the fallback needs the relation behind it.
+#:
+#: The intent layer and the semantic layer do not have equal standing, and the
+#: policy already says so: `declined` stops the fallback undoing an intent
+#: decision. That guard only covers categories the intent layer *reached*. Phase
+#: 8.6 found the other half of the same defect - four false positives where the
+#: intent layer found nothing and the fallback kept a keyword hit anyway:
+#:
+#:     The expense ratio is the annual cost of holding a fund.
+#:     The prospectus sets out the fund's investment objective.
+#:     Stamp duty applies to certain share purchases.
+#:     Should the index fall, the fund would underperform.
+#:
+#: All four are `investment_advice`, whose definition in guide v2 section 7 is an
+#: action-directive *aimed at the reader* plus a financial object. None of the
+#: four contains a directive at all: `holding` is not `hold`, and a conditional
+#: clause is not an address. So the fallback was not detecting advice, it was
+#: detecting a fund word near a purchase word.
+#:
+#: The rule is stated over the relation rather than over those four sentences: for
+#: a category this table names, the fallback is kept only when the claim contains
+#: the relation's own structure. `unverified_information` and
+#: `emotional_manipulation` are deliberately absent - they have no v3 relation,
+#: the semantic layer is genuinely their only detector, and applying this rule to
+#: them would remove the fallback rather than discipline it.
+#:
+#: `financial_guarantee` and `market_prediction` are absent for a different and
+#: also deliberate reason: they were **measured**, not assumed. Adding them to this
+#: table changed no number on any of the four scored sets - Phase 8.5's benchmark,
+#: Phase 8.6's independent benchmark, and the Phase 8.1/8.3/8.4 replays - because
+#: every guarantee and prediction those sets contain already reaches the intent
+#: layer. An entry that no measurement supports is untested code that can only
+#: cost recall later, so it is not shipped. The ablation is recorded in
+#: `docs/PHASE_8_7_TARGETED_REPAIR_REPORT.md`, section 5.
+RELATION_REQUIRED: dict[str, tuple[str, ...]] = {
+    "investment_advice": (ADVICE,),
+}
+
+
 def decide(
     claim: RiskClaim,
     *,
@@ -268,12 +307,31 @@ def decide(
         category = categories[0]
 
         if intent.negated:
+            # Phase 8.7: a negated frame has two shapes and they are not the same
+            # finding. `Returns are not guaranteed.` denies the predicate - the
+            # outcome is not promised. `It is not true that returns are
+            # guaranteed.` denies the claim - nobody promised anything. Both are
+            # suppressed and both keep the rule id, because the policy decision is
+            # the same; what differs is what the trace says happened.
+            scope = intent.negation_scope
+            if scope == "propositional":
+                reason = (
+                    f"the {intent.relation} relation is quoted only to be denied: "
+                    f"the claim itself is rejected, not asserted"
+                )
+            elif scope == "local":
+                reason = (
+                    f"the {intent.relation} frame is negated in its predicate: "
+                    f"the relation is denied, not asserted"
+                )
+            else:
+                reason = f"the {intent.relation} frame is negated"
             emit(
                 R_NEGATED,
                 category,
-                marker,
+                f"{marker}:{intent.scope_marker}",
                 keep=False,
-                reason=f"the {intent.relation} frame is negated",
+                reason=reason,
             )
             continue
 
@@ -382,13 +440,22 @@ def decide(
     # emitted `unverified_information` for every third-party claim, which is
     # wrong for a named, checkable source: guide v2 section 7 says a named
     # source is negative for this category.
+    #
+    # Phase 8.7 widened *which* layer may raise it, not what the rule does. The
+    # attribution refinement types the source a statement is reported through, and
+    # an uncheckable one - `Traders say`, `Reportedly`, `An unnamed official` - is
+    # the definition of this category. The rule, its action and its wording are
+    # unchanged; the evidence now says which layer found it.
     for category in ATTRIBUTION_AGNOSTIC_CATEGORIES:
-        if category not in claim.fallback_categories:
+        from_semantic = category in claim.fallback_categories
+        from_sourcing = category in claim.sourcing_categories
+        if not from_semantic and not from_sourcing:
             continue
+        origin = "semantic" if from_semantic else "attribution-refinement"
         emit(
             R_AGNOSTIC,
             category,
-            f"fallback:agnostic:{category}",
+            f"sourcing:{origin}:{category}",
             keep=True,
             reason="sourcing risk is reported whatever the voice",
         )
@@ -402,6 +469,9 @@ def decide(
     # the relation and made a decision about it, and a weaker signal does not
     # get to overrule that.
     declined = {item.category for item in suppressed}
+    #: Relations this claim produced a frame for, asserted or not. A frame that
+    #: fired and was declined is evidence; a frame that never fired is not.
+    relations_seen = {item.relation for item in claim.intents}
     for category in claim.fallback_categories:
         if any(item.category == category and item.kept for item in kept):
             continue
@@ -412,6 +482,23 @@ def decide(
                 f"fallback:declined-by-intent:{category}",
                 keep=False,
                 reason="the intent layer found this relation and the policy declined it",
+            )
+            continue
+        # The other half of the same guard: a category a relation defines, offered
+        # by the fallback on a claim where that relation found nothing at all.
+        required = RELATION_REQUIRED.get(category, ())
+        if required and not relations_seen & set(required):
+            emit(
+                R_FALLBACK,
+                category,
+                f"fallback:no-relation-behind-it:{category}",
+                keep=False,
+                reason=(
+                    "the category is defined by "
+                    + "/".join(required)
+                    + " and the claim carries no such relation, so the fallback "
+                    "matched a keyword rather than a finding"
+                ),
             )
             continue
         if claim.is_rejected:
