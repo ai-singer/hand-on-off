@@ -28,6 +28,8 @@ PACKAGE_FILES: tuple[str, ...] = (
     "errors.py",
     "manifest.py",
     "paths.py",
+    "skill_package.py",
+    "skill_package_validation.py",
     "validation.py",
 )
 
@@ -38,6 +40,34 @@ _TEMP_ROOT = Path(tempfile.mkdtemp(prefix="c06_library_tests_"))
 atexit.register(shutil.rmtree, _TEMP_ROOT, True)
 
 _CACHE: dict[str, LibraryBuild] = {}
+_PACKAGE_CACHE: dict[str, tuple[Any, ...]] = {}
+
+
+def packages(version: str = "1.0.0") -> tuple[Any, ...]:
+    """The thirteen standalone skill packages, cached per version."""
+
+    if version not in _PACKAGE_CACHE:
+        from creator_library import build_skill_packages
+
+        _PACKAGE_CACHE[version] = build_skill_packages(library_version=version)
+    return _PACKAGE_CACHE[version]
+
+
+def package(name: str, version: str = "1.0.0") -> Any:
+    """One standalone skill package by skill name."""
+
+    for candidate in packages(version):
+        if candidate.name == name:
+            return candidate
+    raise KeyError(name)
+
+
+def package_members(name: str, version: str = "1.0.0") -> dict[str, bytes]:
+    """One package's members, read back from its own bytes."""
+
+    from creator_library import read_package
+
+    return read_package(package(name, version).payload)
 
 
 def scratch_dir(name: str) -> Path:

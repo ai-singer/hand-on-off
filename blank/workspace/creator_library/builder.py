@@ -229,7 +229,10 @@ def emit_skills(
 
     universal_names = tuple(UNIVERSAL_SKILLS if universal is None else universal)
     meta_names = tuple(META_SKILLS if meta is None else meta)
-    companions = tuple(sorted(universal_names + meta_names))
+    # The *whole* library, not the selected subset. A skill's companions are what the
+    # library contains, and its document must say the same thing whether it is read
+    # from an archive that carries all thirteen or from one that carries a few.
+    companions = tuple(sorted(set(UNIVERSAL_SKILLS) | set(META_SKILLS)))
 
     members: dict[str, bytes] = {}
     entries: list[dict[str, Any]] = []

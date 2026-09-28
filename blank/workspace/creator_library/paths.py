@@ -67,6 +67,12 @@ SCHEMA_MEMBER = f"{LIBRARY_DIR}/schemas/domain_plugin.schema.json"
 #: The three files inside one skill directory, in write order.
 SKILL_FILES: tuple[str, ...] = ("SKILL.md", "manifest.json", "skill.json")
 
+#: The shared-metadata member that accompanies a skill in a standalone package.
+LIBRARY_FILE = "library.json"
+
+#: Every file inside one *standalone* skill package, in write order.
+STANDALONE_FILES: tuple[str, ...] = SKILL_FILES + (LIBRARY_FILE,)
+
 #: The top-level directories a member may live under.
 ALLOWED_TOP_LEVEL: tuple[str, ...] = (
     "universal_skills",
@@ -298,6 +304,85 @@ def summarise_members(members: dict[str, bytes]) -> dict[str, Any]:
     }
 
 
+# --------------------------------------------------------------------------
+# Standalone skill packages
+# --------------------------------------------------------------------------
+#
+# A Shared Skill Library ingests one skill at a time, so each skill also ships as
+# its own small zip. The layout is deliberately flatter than the library's: a single
+# top-level directory named for the skill.
+#
+#     <skill_name>/
+#     ├── SKILL.md          front matter + prose
+#     ├── manifest.json     name, version, library_layer, entrypoint, capabilities
+#     ├── skill.json        the declaration, machine-readable
+#     └── library.json      where it came from
+#
+# **No** ``creator_skill_library/`` wrapper, unlike the library archive. Repetition
+# across thirteen packages is cheap; a reader handling one of them at a time would
+# gain nothing from being told thirteen times which library it belongs to before
+# reaching the skill itself. And the layout matches ``skills/<name>/`` in this
+# repository, which is the convention a skill directory already has here.
+
+#: The suffix a standalone package's filename carries.
+PACKAGE_SUFFIX = ".zip"
+
+
+def package_root(name: str) -> str:
+    """The single top-level directory inside a standalone skill package."""
+
+    _assert_safe_name(name, what="skill name")
+    return name
+
+
+def package_filename(name: str, *, prefix: str = "") -> str:
+    """The filename of a standalone skill package.
+
+    ``creator-`` by default, so the thirteen files sort together and are obviously
+    one family when they land in an upload directory.
+    """
+
+    _assert_safe_name(name, what="skill name")
+    return f"{prefix}{name}{PACKAGE_SUFFIX}"
+
+
+def package_members(name: str) -> dict[str, str]:
+    """``{filename: archive path}`` for one standalone skill package."""
+
+    root = package_root(name)
+    return {filename: f"{root}/{filename}" for filename in STANDALONE_FILES}
+
+
+def package_classify(member: str) -> str:
+    """What kind of member this is inside a standalone package."""
+
+    parts = member.split("/")
+    if len(parts) != 2:
+        return "unknown"
+    if parts[1] not in STANDALONE_FILES:
+        return "unknown"
+    if parts[1] == LIBRARY_FILE:
+        return "library"
+    return "skill"
+
+
+def package_member_sort_key(member: str) -> tuple[str, str]:
+    """The deterministic write order for a standalone package.
+
+    ``SKILL.md`` first — it is the entrypoint a reader opens — then the two machine
+    documents, then the shared metadata.
+    """
+
+    order = {
+        "SKILL.md": "0",
+        "manifest.json": "1",
+        "skill.json": "2",
+        LIBRARY_FILE: "3",
+    }
+    filename = member.rsplit("/", 1)[-1]
+    return (order.get(filename, "9"), member)
+
+
 __all__ = [
     "ALLOWED_SUFFIXES",
     "ALLOWED_TOP_LEVEL",
@@ -309,13 +394,16 @@ __all__ = [
     "LAYERS",
     "LAYER_DIRS",
     "LIBRARY_DIR",
+    "LIBRARY_FILE",
     "MANIFEST_MEMBER",
     "META_SKILLS_DIR",
+    "PACKAGE_SUFFIX",
     "README_MEMBER",
     "REGISTRY_MEMBER",
     "ROOT_MEMBERS",
     "SCHEMA_MEMBER",
     "SKILL_FILES",
+    "STANDALONE_FILES",
     "UNIVERSAL_SKILLS_DIR",
     "VERSION_MEMBER",
     "classify_member",
@@ -324,6 +412,11 @@ __all__ = [
     "layer_of",
     "library_root",
     "member_sort_key",
+    "package_classify",
+    "package_filename",
+    "package_member_sort_key",
+    "package_members",
+    "package_root",
     "skill_dir",
     "skill_directory_of",
     "skill_document_member",

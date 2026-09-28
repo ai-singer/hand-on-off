@@ -1,0 +1,84 @@
+{
+  "algorithm": "sha256",
+  "package_count": 13,
+  "packages": {
+    "creator-domain-plugin-builder.zip": {
+      "bytes": 2047,
+      "library_layer": "meta",
+      "sha256": "e084edc5626e0b9c8152ee6912dae1039ab02d0e64bd05f1daf1c470a702c1a2",
+      "skill": "domain-plugin-builder"
+    },
+    "creator-domain-plugin-validator.zip": {
+      "bytes": 2108,
+      "library_layer": "meta",
+      "sha256": "f8a5dbd3ff06acc24fa363c98041ec543561b626942cbb062a2dff70ffb6de0c",
+      "skill": "domain-plugin-validator"
+    },
+    "creator-generation-interface.zip": {
+      "bytes": 2030,
+      "library_layer": "universal",
+      "sha256": "afb603ba33f1a3f0e9cb49c4b9b116c06852235d24958e391fdcb35797fdd40a",
+      "skill": "generation-interface"
+    },
+    "creator-identity-rules.zip": {
+      "bytes": 1960,
+      "library_layer": "universal",
+      "sha256": "26f8780702eee7ddd329b92c6a965efca3694c6cad7a07cf55915f781ad872b7",
+      "skill": "identity-rules"
+    },
+    "creator-publishing-interface.zip": {
+      "bytes": 2033,
+      "library_layer": "universal",
+      "sha256": "a276a80bfa92262654b3681acb30843f5dfb6a0137c70ad62f386744e65e77d9",
+      "skill": "publishing-interface"
+    },
+    "creator-quality-review.zip": {
+      "bytes": 2020,
+      "library_layer": "universal",
+      "sha256": "5e8de7a2f0ddae2075b07652caabfd0b2b4a186ff09ae539c328a92cd186eb26",
+      "skill": "quality-review"
+    },
+    "creator-risk-review.zip": {
+      "bytes": 1986,
+      "library_layer": "universal",
+      "sha256": "a7296ac611c20a9993dad21826c9643a00e8ebadeafa7491166d637ea7acf5d9",
+      "skill": "risk-review"
+    },
+    "creator-skill-composer.zip": {
+      "bytes": 2010,
+      "library_layer": "meta",
+      "sha256": "997c63e0a4bc0a3101d665713b20fddb17a9ca43d45293292aceeb428a9dc882",
+      "skill": "skill-composer"
+    },
+    "creator-source-discovery.zip": {
+      "bytes": 2016,
+      "library_layer": "universal",
+      "sha256": "5ebc3424cdedc90f2171eff07cb8bedf42069366f4c3cb8747a43b0f30c74abb",
+      "skill": "source-discovery"
+    },
+    "creator-source-normalization.zip": {
+      "bytes": 2059,
+      "library_layer": "universal",
+      "sha256": "4dbf0f43fe7a2ea38315054f90f9a8c9ece4e3c750178d62ef00d7a4be58f3c4",
+      "skill": "source-normalization"
+    },
+    "creator-template-extraction.zip": {
+      "bytes": 2037,
+      "library_layer": "universal",
+      "sha256": "778369318b30aaa0bedc413b8e6323c82c093c46915f98f881d0dcee09cf5edb",
+      "skill": "template-extraction"
+    },
+    "creator-text-distillation.zip": {
+      "bytes": 2012,
+      "library_layer": "universal",
+      "sha256": "dc76d0a0890a0f9914f912afad1f98f4dfb5fbe8b0e1171398296e68c325d86e",
+      "skill": "text-distillation"
+    },
+    "creator-visual-distillation.zip": {
+      "bytes": 2022,
+      "library_layer": "universal",
+      "sha256": "028d9e9f95b029c55b8012388f18ae615e3b20d800bb2ba6c6642a37da5bbb16",
+      "skill": "visual-distillation"
+    }
+  }
+}

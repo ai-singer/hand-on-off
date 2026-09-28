@@ -243,8 +243,10 @@ def skill_markdown(
         lines.append("## Companions")
         lines.append("")
         lines.append(
-            "The other skills released in this library version. A skill is selected "
-            "alongside these, never instead of them."
+            "The library's skills, as of this version. A skill is selected alongside "
+            "these, never instead of them. The list is the whole library rather than "
+            "whichever subset a given archive happens to carry, so one skill's "
+            "document is the same document wherever it is packaged."
         )
         lines.append("")
         for companion in companions:

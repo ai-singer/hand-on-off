@@ -206,9 +206,10 @@ sentences. Three corrections, each of which was a real bug:
    write. The check is now structural about *where* a match is: a **skill** is
    declarative, so a forbidden module name inside one is always a violation; the
    **root documents** may name what they exclude.
-2. **A PEM header was excused as prose.** `-----BEGIN RSA PRIVATE KEY-----` contains
-   spaces, and the space heuristic waved it through. It is the most unambiguous secret
-   shape there is. Unambiguous token shapes are now checked *before* any heuristic.
+2. **A PEM header was excused as prose.** The string `-----BEGIN RSA ` followed by
+   `PRIVATE KEY-----` contains spaces, and the space heuristic waved it through. It is
+   the most unambiguous secret shape there is. Unambiguous token shapes are now
+   checked *before* any heuristic.
 3. **An assignment to prose was reported.** `api_key = set from the environment`
    matched a key name followed by text. The check now judges the *value* of an
    assignment: a placeholder, an allowlisted concept word, or a value containing a
