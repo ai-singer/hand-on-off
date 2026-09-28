@@ -1,0 +1,1573 @@
+{
+  "artifact": "adversarial-expansion-set",
+  "benchmark_hash": "d49fcecbc3f5306aa6d7785c53ed8db818410bfb113ab06d526d4f3b870186fd",
+  "cases": [
+    {
+      "case_id": "GEN-R1-ADVICE-IMPERATIVE-ADD-TO",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an action-directive aimed at the reader. The word 'add to' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-IMPERATIVE:axis:directive_verb:add to",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [
+          "investment_advice"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Add to this fund."
+    },
+    {
+      "case_id": "GEN-R1-PRESSURE-URGENCY-ACT-FAST",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only. The word 'act fast' belongs to axis 'urgency_pressure', whose canonical words the evaluator matches as . No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-PRESSURE-URGENCY:axis:urgency_pressure:act fast",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "predicted": [
+          "emotional_manipulation"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "emotional_manipulation",
+      "source_table": "synonyms.AXES[urgency_pressure]",
+      "text": "Buy now, act fast."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-COPULAR-VOW",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an outcome made unconditional. The word 'vow' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-COPULAR:axis:guarantee_predicate:vow",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "Returns are vowed."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-DIRECTIVE_PHRASAL-03",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive aimed at the reader. The word 'snap up' is the first step of chain 'directive_phrasal' the evaluator does not accept.",
+      "generation_rule": "chain:directive_phrasal:snap up",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.CHAINS",
+      "text": "Snap up this fund."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-DIRECTIVE_PHRASAL-05",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive aimed at the reader. The word 'pile into' is the first step of chain 'directive_phrasal' the evaluator does not accept.",
+      "generation_rule": "chain:directive_phrasal:pile into",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.CHAINS",
+      "text": "Pile into this fund."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-COPULAR-PLEDGE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an outcome made unconditional. The word 'pledge' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-COPULAR:axis:guarantee_predicate:pledge",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "Returns are pledged."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-IMPERATIVE-TRIM-BACK",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an action-directive aimed at the reader. The word 'trim back' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-IMPERATIVE:axis:directive_verb:trim back",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [
+          "investment_advice"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Trim back this fund."
+    },
+    {
+      "case_id": "GEN-R1-PRESSURE-URGENCY-LAST-CHANCE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only. The word 'last chance' belongs to axis 'urgency_pressure', whose canonical words the evaluator matches as . No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-PRESSURE-URGENCY:axis:urgency_pressure:last chance",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "predicted": [
+          "emotional_manipulation"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "emotional_manipulation",
+      "source_table": "synonyms.AXES[urgency_pressure]",
+      "text": "Buy now, last chance."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-IMPERATIVE-GET-OUT-OF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an action-directive aimed at the reader. The word 'get out of' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-IMPERATIVE:axis:directive_verb:get out of",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Get out of this fund."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-DIRECTIVE_PHRASAL-04",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive aimed at the reader. The word 'load up on' is the first step of chain 'directive_phrasal' the evaluator does not accept.",
+      "generation_rule": "chain:directive_phrasal:load up on",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.CHAINS",
+      "text": "Load up on this fund."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-GUARANTEE_WEAKENING-04",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7 via the evaluator's own predicate axis. The word 'promised' is the first step of chain 'guarantee_weakening' the evaluator does not accept.",
+      "generation_rule": "chain:guarantee_weakening:promised",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.CHAINS",
+      "text": "Returns are promised."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-COPULAR-WARRANT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an outcome made unconditional. The word 'warrant' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-COPULAR:axis:guarantee_predicate:warrant",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "Returns are warranted."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-IMPERATIVE-ROTATE-INTO",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an action-directive aimed at the reader. The word 'rotate into' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-IMPERATIVE:axis:directive_verb:rotate into",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Rotate into this fund."
+    },
+    {
+      "case_id": "GEN-R1-FRAME-0001",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "FRAME_GAP",
+      "generation_reason": "Guide v2 section 7, the copular guarantee frame.",
+      "generation_rule": "FRAME-GUAR-GUARANTEED",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [
+          "financial_guarantee"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "FRAME-GUAR-GUARANTEED",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.FRAME_VARIANTS",
+      "text": "Returns are guaranteed."
+    },
+    {
+      "case_id": "GEN-R1-FRAME-0004",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "FRAME_GAP",
+      "generation_reason": "Guide v2 section 2: author-voice certainty about a future outcome.",
+      "generation_rule": "FRAME-PRED-INEVITABLE",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "FRAME-PRED-INEVITABLE",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.FRAME_VARIANTS",
+      "text": "Returns are inevitable."
+    },
+    {
+      "case_id": "GEN-R1-PRED-CERTAINTY-INESCAPABLE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: author-voice certainty about a future outcome. The word 'inescapable' belongs to axis 'certainty_carrier', whose canonical words the evaluator matches as certain, sure, bound, destined, set, poised, guaranteed.",
+      "generation_rule": "template:TPL-PRED-CERTAINTY:axis:certainty_carrier:inescapable",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[certainty_carrier]",
+      "text": "Returns are inescapable."
+    },
+    {
+      "case_id": "GEN-R1-PRED-CERTAINTY-UNAVOIDABLE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: author-voice certainty about a future outcome. The word 'unavoidable' belongs to axis 'certainty_carrier', whose canonical words the evaluator matches as certain, sure, bound, destined, set, poised, guaranteed.",
+      "generation_rule": "template:TPL-PRED-CERTAINTY:axis:certainty_carrier:unavoidable",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[certainty_carrier]",
+      "text": "Returns are unavoidable."
+    },
+    {
+      "case_id": "GEN-R1-PRED-CERTAINTY-UNSTOPPABLE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: author-voice certainty about a future outcome. The word 'unstoppable' belongs to axis 'certainty_carrier', whose canonical words the evaluator matches as certain, sure, bound, destined, set, poised, guaranteed.",
+      "generation_rule": "template:TPL-PRED-CERTAINTY:axis:certainty_carrier:unstoppable",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[certainty_carrier]",
+      "text": "Returns are unstoppable."
+    },
+    {
+      "case_id": "GEN-R1-PRESSURE-URGENCY-ONLY-A-FEW-LEFT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only. The word 'only a few left' belongs to axis 'urgency_pressure', whose canonical words the evaluator matches as . No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-PRESSURE-URGENCY:axis:urgency_pressure:only a few left",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "emotional_manipulation",
+      "source_table": "synonyms.AXES[urgency_pressure]",
+      "text": "Buy now, only a few left."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-IMPERATIVE-STEER-CLEAR-OF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: an action-directive aimed at the reader. The word 'steer clear of' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-IMPERATIVE:axis:directive_verb:steer clear of",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Steer clear of this fund."
+    },
+    {
+      "case_id": "GEN-R1-PRESSURE-URGENCY-EVERYONE-IS-BUYING",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only. The word 'everyone is buying' belongs to axis 'urgency_pressure', whose canonical words the evaluator matches as . No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-PRESSURE-URGENCY:axis:urgency_pressure:everyone is buying",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "predicted": [
+          "emotional_manipulation"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "emotional_manipulation",
+      "source_table": "synonyms.AXES[urgency_pressure]",
+      "text": "Buy now, everyone is buying."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-SINK",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'sink' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:sink",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover sinks next quarter."
+    },
+    {
+      "case_id": "GEN-R1-FRAME-0003",
+      "excludes_from_benchmark": true,
+      "expected_categories": [],
+      "expects_risk": false,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 7 does not label a disclosure that no guarantee exists. The evaluator returns no finding, and that is correct, so this variant is a control: it must never become a repair candidate.",
+      "generation_rule": "FRAME-GUAR-NEGATED",
+      "language": "en",
+      "observed": {
+        "expected": [],
+        "predicted": [],
+        "verdict": "already_handled"
+      },
+      "parent_case": "FRAME-GUAR-NEGATED",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.FRAME_VARIANTS",
+      "text": "Returns cannot be guaranteed."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-HALVE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'halve' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:halve",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover halves next quarter."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-SLIDE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'slide' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:slide",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover slides next quarter."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-SPIKE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'spike' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:spike",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover spikes next quarter."
+    },
+    {
+      "case_id": "GEN-R1-RISK-ATTRIBUTIVE-RISKLESS",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: risk denied outright without the word guarantee. The word 'riskless' belongs to axis 'risk_removed', whose canonical words the evaluator matches as risk, safe, impossible.",
+      "generation_rule": "template:TPL-RISK-ATTRIBUTIVE:axis:risk_removed:riskless",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[risk_removed]",
+      "text": "This is a riskless investment."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-ROCKET",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'rocket' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:rocket",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover rockets next quarter."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-BALLOON",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'balloon' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:balloon",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover balloons next quarter."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-MOVEMENT_LEXICAL-06",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: direction is not what makes a prediction. The word 'plummet' is the first step of chain 'movement_lexical' the evaluator does not accept.",
+      "generation_rule": "chain:movement_lexical:plummet",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.CHAINS",
+      "text": "Turnover plummets next quarter."
+    },
+    {
+      "case_id": "GEN-R1-RISK-ATTRIBUTIVE-LOSS-PROOF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: risk denied outright without the word guarantee. The word 'loss-proof' belongs to axis 'risk_removed', whose canonical words the evaluator matches as risk, safe, impossible.",
+      "generation_rule": "template:TPL-RISK-ATTRIBUTIVE:axis:risk_removed:loss-proof",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[risk_removed]",
+      "text": "This is a loss-proof investment."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-NOSEDIVE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'nosedive' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:nosedive",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover nosedives next quarter."
+    },
+    {
+      "case_id": "GEN-R1-PRED-MOVEMENT-QUADRUPLE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: the certainty is carried by a movement verb. The word 'quadruple' belongs to axis 'movement_direction', whose canonical words the evaluator matches as rise, fall, double, triple, soar, expand.",
+      "generation_rule": "template:TPL-PRED-MOVEMENT:axis:movement_direction:quadruple",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.AXES[movement_direction]",
+      "text": "Turnover quadruples next quarter."
+    },
+    {
+      "case_id": "GEN-R1-CHAIN-MOVEMENT_LEXICAL-05",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 2: direction is not what makes a prediction. The word 'skyrocket' is the first step of chain 'movement_lexical' the evaluator does not accept.",
+      "generation_rule": "chain:movement_lexical:skyrocket",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "market_prediction"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "market_prediction",
+      "source_table": "synonyms.CHAINS",
+      "text": "Turnover skyrockets next quarter."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-ADD-TO",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'add to' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:add to",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [
+          "investment_advice"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should add to this fund."
+    },
+    {
+      "case_id": "GEN-R1-RISK-ATTRIBUTIVE-CAPITAL-SAFE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: risk denied outright without the word guarantee. The word 'capital-safe' belongs to axis 'risk_removed', whose canonical words the evaluator matches as risk, safe, impossible.",
+      "generation_rule": "template:TPL-RISK-ATTRIBUTIVE:axis:risk_removed:capital-safe",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[risk_removed]",
+      "text": "This is a capital-safe investment."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-SNAP-UP",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'snap up' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:snap up",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should snap up this fund."
+    },
+    {
+      "case_id": "GEN-R1-RISK-ATTRIBUTIVE-DOWNSIDE-FREE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: risk denied outright without the word guarantee. The word 'downside-free' belongs to axis 'risk_removed', whose canonical words the evaluator matches as risk, safe, impossible.",
+      "generation_rule": "template:TPL-RISK-ATTRIBUTIVE:axis:risk_removed:downside-free",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[risk_removed]",
+      "text": "This is a downside-free investment."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-PILE-INTO",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'pile into' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:pile into",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should pile into this fund."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-TRIM-BACK",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'trim back' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:trim back",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [
+          "investment_advice"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should trim back this fund."
+    },
+    {
+      "case_id": "GEN-R1-FRAME-0002",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "FRAME_GAP",
+      "generation_reason": "Guide v2 section 7 read with the Phase 8.6 ruling that the relation is labelled by meaning regardless of who asserts it. The evaluator has no reported-speech guarantee frame, so this is the frame gap the framework is built to find.",
+      "generation_rule": "FRAME-GUAR-REPORTED",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "FRAME-GUAR-REPORTED",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.FRAME_VARIANTS",
+      "text": "Returns are claimed to be guaranteed."
+    },
+    {
+      "case_id": "GEN-R1-PRESSURE-URGENCY-YOU-WOULD-BE-FOOLISH-TO-WAIT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only. The word 'you would be foolish to wait' belongs to axis 'urgency_pressure', whose canonical words the evaluator matches as . No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-PRESSURE-URGENCY:axis:urgency_pressure:you would be foolish to wait",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "predicted": [
+          "emotional_manipulation"
+        ],
+        "verdict": "already_handled"
+      },
+      "parent_case": "",
+      "risk_category": "emotional_manipulation",
+      "source_table": "synonyms.AXES[urgency_pressure]",
+      "text": "Buy now, you would be foolish to wait."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-GET-OUT-OF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'get out of' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:get out of",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should get out of this fund."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-LOAD-UP-ON",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'load up on' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:load up on",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should load up on this fund."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-RUMOR",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'rumor' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:rumor",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The rumor is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-ROTATE-INTO",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'rotate into' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:rotate into",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should rotate into this fund."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-RUMOUR",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'rumour' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:rumour",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The rumour is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-CHATTER",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'chatter' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:chatter",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The chatter is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-HEARSAY",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'hearsay' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:hearsay",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The hearsay is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-TIP-OFF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'tip-off' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:tip-off",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The tip-off is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-POSITION-LONG",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: advice named by the position it recommends. The word 'long' belongs to axis 'position_word', whose canonical words the evaluator matches as overweight, underweight, hold, stay, remain.",
+      "generation_rule": "template:TPL-ADVICE-POSITION:axis:position_word:long",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[position_word]",
+      "text": "You should be long into the next quarter."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-SHOULD-STEER-CLEAR-OF",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: a directive addressed to the reader. The word 'steer clear of' belongs to axis 'directive_verb', whose canonical words the evaluator matches as buy, sell, hold, add, trim, reduce, avoid, invest.",
+      "generation_rule": "template:TPL-ADVICE-SHOULD:axis:directive_verb:steer clear of",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[directive_verb]",
+      "text": "Investors should steer clear of this fund."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-POSITION-SHORT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: advice named by the position it recommends. The word 'short' belongs to axis 'position_word', whose canonical words the evaluator matches as overweight, underweight, hold, stay, remain.",
+      "generation_rule": "template:TPL-ADVICE-POSITION:axis:position_word:short",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[position_word]",
+      "text": "You should be short into the next quarter."
+    },
+    {
+      "case_id": "GEN-R1-SOURCE-REPORTED-SCUTTLEBUTT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "LEXICAL_GAP",
+      "generation_reason": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension. The word 'scuttlebutt' belongs to axis 'reported_source', whose canonical words the evaluator matches as say, claim, report, confirm. No v3 relation exists for this category, so the case is generated for human review and is not a vocabulary proposal.",
+      "generation_rule": "template:TPL-SOURCE-REPORTED:axis:reported_source:scuttlebutt",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [
+          "market_prediction"
+        ],
+        "verdict": "over_triggered"
+      },
+      "parent_case": "",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.AXES[reported_source]",
+      "text": "The scuttlebutt is that returns will triple."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-ACTIVE-VOW",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: the author makes the outcome unconditional. The word 'vow' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-ACTIVE:axis:guarantee_predicate:vow",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "We vow that your capital is returned in full."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-POSITION-CAUTIOUS",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: advice named by the position it recommends. The word 'cautious' belongs to axis 'position_word', whose canonical words the evaluator matches as overweight, underweight, hold, stay, remain.",
+      "generation_rule": "template:TPL-ADVICE-POSITION:axis:position_word:cautious",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[position_word]",
+      "text": "You should be cautious into the next quarter."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-POSITION-DEFENSIVE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: advice named by the position it recommends. The word 'defensive' belongs to axis 'position_word', whose canonical words the evaluator matches as overweight, underweight, hold, stay, remain.",
+      "generation_rule": "template:TPL-ADVICE-POSITION:axis:position_word:defensive",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[position_word]",
+      "text": "You should be defensive into the next quarter."
+    },
+    {
+      "case_id": "GEN-R1-ADVICE-POSITION-AGGRESSIVE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: advice named by the position it recommends. The word 'aggressive' belongs to axis 'position_word', whose canonical words the evaluator matches as overweight, underweight, hold, stay, remain.",
+      "generation_rule": "template:TPL-ADVICE-POSITION:axis:position_word:aggressive",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "investment_advice"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "investment_advice",
+      "source_table": "synonyms.AXES[position_word]",
+      "text": "You should be aggressive into the next quarter."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-ACTIVE-PLEDGE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: the author makes the outcome unconditional. The word 'pledge' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-ACTIVE:axis:guarantee_predicate:pledge",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "We pledge that your capital is returned in full."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-ACTIVE-PROMISE",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: the author makes the outcome unconditional. The word 'promise' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-ACTIVE:axis:guarantee_predicate:promise",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "We promise that your capital is returned in full."
+    },
+    {
+      "case_id": "GEN-R1-GUAR-ACTIVE-WARRANT",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expects_risk": true,
+      "failure_type": "SYNONYM_GAP",
+      "generation_reason": "Guide v2 section 7: the author makes the outcome unconditional. The word 'warrant' belongs to axis 'guarantee_predicate', whose canonical words the evaluator matches as guaranteed, assured, protected.",
+      "generation_rule": "template:TPL-GUAR-ACTIVE:axis:guarantee_predicate:warrant",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "financial_guarantee"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "",
+      "risk_category": "financial_guarantee",
+      "source_table": "synonyms.AXES[guarantee_predicate]",
+      "text": "We warrant that your capital is returned in full."
+    },
+    {
+      "case_id": "GEN-R1-FRAME-0005",
+      "excludes_from_benchmark": true,
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expects_risk": true,
+      "failure_type": "FRAME_GAP",
+      "generation_reason": "Guide v2: the author is not the speaker and the source is unnamed, so the claim is unverified rather than predicted. Human judgement, not vocabulary.",
+      "generation_rule": "FRAME-PRED-REPORTED-TIP",
+      "language": "en",
+      "observed": {
+        "expected": [
+          "unverified_information"
+        ],
+        "predicted": [],
+        "verdict": "missed"
+      },
+      "parent_case": "FRAME-PRED-REPORTED-TIP",
+      "risk_category": "unverified_information",
+      "source_table": "synonyms.FRAME_VARIANTS",
+      "text": "A tip circulating on the forum says returns will triple."
+    }
+  ],
+  "count": 62,
+  "evaluator_hash": "323dcf9f350c739b697916a7ba1730f1b29fceb55be687fc9bd7146886792b51",
+  "generated_at": "2026-09-28T06:17:36+00:00",
+  "not_a_benchmark": "these cases are generated material for review. They are excluded from every registered benchmark by construction, and nothing here writes to risk_evaluation/benchmarks/.",
+  "phase": "R1",
+  "source_hash": "c9e3ff9ee4b3c7b4df8178ce16af6d44f169907502198a8be63677e4369e844c",
+  "templates": [
+    {
+      "axis": "guarantee_predicate",
+      "category": "financial_guarantee",
+      "form": "participle",
+      "guide_basis": "Guide v2 section 7: an outcome made unconditional.",
+      "pattern": "Returns are {word}.",
+      "relation": "GUARANTEE",
+      "template_id": "TPL-GUAR-COPULAR"
+    },
+    {
+      "axis": "guarantee_predicate",
+      "category": "financial_guarantee",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 7: the author makes the outcome unconditional.",
+      "pattern": "We {word} that your capital is returned in full.",
+      "relation": "GUARANTEE",
+      "template_id": "TPL-GUAR-ACTIVE"
+    },
+    {
+      "axis": "risk_removed",
+      "category": "financial_guarantee",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 7: risk denied outright without the word guarantee.",
+      "pattern": "This is a {word} investment.",
+      "relation": "RISK_REMOVED",
+      "template_id": "TPL-RISK-ATTRIBUTIVE"
+    },
+    {
+      "axis": "certainty_carrier",
+      "category": "market_prediction",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 2: author-voice certainty about a future outcome.",
+      "pattern": "Returns are {word}.",
+      "relation": "PREDICTION",
+      "template_id": "TPL-PRED-CERTAINTY"
+    },
+    {
+      "axis": "movement_direction",
+      "category": "market_prediction",
+      "form": "third",
+      "guide_basis": "Guide v2 section 2: the certainty is carried by a movement verb.",
+      "pattern": "Turnover {word} next quarter.",
+      "relation": "PREDICTION",
+      "template_id": "TPL-PRED-MOVEMENT"
+    },
+    {
+      "axis": "directive_verb",
+      "category": "investment_advice",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 7: an action-directive aimed at the reader.",
+      "pattern": "{Word} this fund.",
+      "relation": "ADVICE",
+      "template_id": "TPL-ADVICE-IMPERATIVE"
+    },
+    {
+      "axis": "directive_verb",
+      "category": "investment_advice",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 7: a directive addressed to the reader.",
+      "pattern": "Investors should {word} this fund.",
+      "relation": "ADVICE",
+      "template_id": "TPL-ADVICE-SHOULD"
+    },
+    {
+      "axis": "position_word",
+      "category": "investment_advice",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 7: advice named by the position it recommends.",
+      "pattern": "You should be {word} into the next quarter.",
+      "relation": "ADVICE",
+      "template_id": "TPL-ADVICE-POSITION"
+    },
+    {
+      "axis": "reported_source",
+      "category": "unverified_information",
+      "form": "lemma",
+      "guide_basis": "Guide v2: a claim carried from a source that is not the author. The evaluator has no v3 relation for this category, so the case is generated for human review rather than as a vocabulary extension.",
+      "pattern": "The {word} is that returns will triple.",
+      "relation": "PREDICTION",
+      "template_id": "TPL-SOURCE-REPORTED"
+    },
+    {
+      "axis": "urgency_pressure",
+      "category": "emotional_manipulation",
+      "form": "lemma",
+      "guide_basis": "Guide v2 section 8: pressure applied through urgency. No v3 relation exists for this category, so the case is for human review only.",
+      "pattern": "Buy now, {word}.",
+      "relation": "PREDICTION",
+      "template_id": "TPL-PRESSURE-URGENCY"
+    }
+  ],
+  "verdicts": {
+    "already_handled": 10,
+    "missed": 46,
+    "over_triggered": 6
+  },
+  "withheld": [
+    {
+      "category": "financial_guarantee",
+      "reason": "A disclosure that no guarantee exists is not a guarantee claim. Turning it into a candidate would trade a false negative for a false positive.",
+      "text": "Returns cannot be guaranteed."
+    },
+    {
+      "category": "investment_advice",
+      "reason": "A disclaimer removes the directive it names; matching it as advice would punish the wording the guide expects publishers to use.",
+      "text": "This is not investment advice."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "additions": [
+    "last chance",
+    "act fast",
+    "only a few left",
+    "you would be foolish to wait",
+    "everyone is buying"
+  ],
+  "candidate_id": "CAND-R1-0026",
+  "covers_cases": [
+    "IND-0143"
+  ],
+  "covers_count": 1,
+  "expected_impact": "would give 1 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "SYNONYM_GAP",
+  "generator": "analyzer",
+  "proposal": "extend the urgency_pressure axis of the emotional_manipulation pattern by adding act fast, everyone is buying, last chance, only a few left, you would be foolish to wait; the evaluator currently matches ",
+  "reasons": [
+    "1 case(s) share this failure and this target, so the candidate generalizes across them",
+    "no single case's literal text appears in the proposal"
+  ],
+  "recommendation": "accept",
+  "risk_category": "emotional_manipulation",
+  "source_case": "IND-0143",
+  "status": "pending"
+}

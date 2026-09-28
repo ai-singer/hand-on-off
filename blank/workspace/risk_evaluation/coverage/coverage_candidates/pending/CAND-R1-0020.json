@@ -1,0 +1,22 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0020",
+  "covers_cases": [
+    "IND-0061",
+    "IND-0077",
+    "IND-0084",
+    "IND-0259"
+  ],
+  "covers_count": 4,
+  "expected_impact": "would give 4 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "STANCE_GAP",
+  "generator": "analyzer",
+  "proposal": "review the STANCE_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+  "reasons": [
+    "STANCE_GAP needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "financial_guarantee",
+  "source_case": "IND-0061",
+  "status": "pending"
+}

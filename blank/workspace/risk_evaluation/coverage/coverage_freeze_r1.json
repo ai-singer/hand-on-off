@@ -1,0 +1,55 @@
+{
+  "phase": "R1",
+  "artifact": "risk-coverage-expansion-framework",
+  "source_hash": "c9e3ff9ee4b3c7b4df8178ce16af6d44f169907502198a8be63677e4369e844c",
+  "benchmark_hash": "d49fcecbc3f5306aa6d7785c53ed8db818410bfb113ab06d526d4f3b870186fd",
+  "evaluator_hash": "323dcf9f350c739b697916a7ba1730f1b29fceb55be687fc9bd7146886792b51",
+  "timestamp": "2026-09-28T06:17:37+00:00",
+  "source_files": [
+    "risk_evaluation/coverage/__init__.py",
+    "risk_evaluation/coverage/analyzer.py",
+    "risk_evaluation/coverage/freeze.py",
+    "risk_evaluation/coverage/generator.py",
+    "risk_evaluation/coverage/lexicon.py",
+    "risk_evaluation/coverage/model.py",
+    "risk_evaluation/coverage/pipeline.py",
+    "risk_evaluation/coverage/registry.py",
+    "risk_evaluation/coverage/reporter.py",
+    "risk_evaluation/coverage/synonyms.py",
+    "risk_evaluation/coverage/taxonomy.py"
+  ],
+  "evaluator_sources": [
+    "risk_evaluation/v3/patterns.py",
+    "risk_evaluation/v3/morphology.py",
+    "risk_evaluation/v3/decision.py",
+    "risk_evaluation/v3/model.py",
+    "risk_evaluation/v3/pipeline.py",
+    "risk_evaluation/v3_1/modal.py",
+    "risk_evaluation/v3_1/advice.py",
+    "risk_evaluation/v3_1/certainty.py",
+    "risk_evaluation/v3_repair/sources.py",
+    "risk_evaluation/v3_repair/rejection.py",
+    "risk_evaluation/v3_independent/evaluation.py",
+    "risk_evaluation/v3_independent/dataset.py"
+  ],
+  "benchmark_sources": [
+    "risk_evaluation/benchmarks/risk/independent/v1/cases.json",
+    "risk_evaluation/benchmarks/risk/independent/v1/labels.json",
+    "risk_evaluation/benchmarks/risk/independent/v1/adjudicated.json",
+    "risk_evaluation/benchmarks/risk/independent/v1/disagreements.json",
+    "risk_evaluation/benchmarks/risk/independent/v1/manifest.json"
+  ],
+  "foreign_freezes_untouched": {
+    "risk_evaluation/v3_1/evaluation_freeze_v3_1.json": "895fac24f790ab31649954d23bdd87e36cbb3b248a9bd09e9bc5a2f64e72ef50",
+    "risk_evaluation/v3_independent/evaluation_freeze_v3_2.json": "48d5054af31496b3108f72b16d2d947fda7201dbf3ecdd501c70eafde869a09d"
+  },
+  "scope": "this freeze covers the coverage framework only; it neither rewrites nor re-verifies the freezes owned by earlier phases",
+  "invariants": {
+    "modifies_evaluator": false,
+    "modifies_benchmark": false,
+    "modifies_taxonomy": false,
+    "modifies_decision_policy": false,
+    "imports_production": false,
+    "uses_network": false
+  }
+}

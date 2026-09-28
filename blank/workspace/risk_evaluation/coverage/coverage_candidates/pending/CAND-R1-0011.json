@@ -1,0 +1,24 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0011",
+  "covers_cases": [
+    "IND-0031",
+    "IND-0033",
+    "IND-0041",
+    "IND-0049",
+    "IND-0253",
+    "IND-0267"
+  ],
+  "covers_count": 6,
+  "expected_impact": "would give 6 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "FRAME_GAP",
+  "generator": "analyzer",
+  "proposal": "review the FRAME_GAP affecting market_prediction: the repair is structural and no word list is proposed",
+  "reasons": [
+    "the repair is structural and is not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "market_prediction",
+  "source_case": "IND-0031",
+  "status": "pending"
+}

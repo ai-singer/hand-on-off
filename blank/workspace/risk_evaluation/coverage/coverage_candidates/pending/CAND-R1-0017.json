@@ -1,0 +1,35 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0017",
+  "covers_cases": [
+    "IND-0092",
+    "IND-0094",
+    "IND-0095",
+    "IND-0098",
+    "IND-0100",
+    "IND-0103",
+    "IND-0104",
+    "IND-0106",
+    "IND-0110",
+    "IND-0112",
+    "IND-0116",
+    "IND-0118",
+    "IND-0120",
+    "IND-0228",
+    "IND-0231",
+    "IND-0258",
+    "IND-0288"
+  ],
+  "covers_count": 17,
+  "expected_impact": "would give 17 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "LEXICAL_GAP",
+  "generator": "analyzer",
+  "proposal": "review the LEXICAL_GAP affecting unverified_information: the repair is structural and no word list is proposed",
+  "reasons": [
+    "the repair is structural and is not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "unverified_information",
+  "source_case": "IND-0092",
+  "status": "pending"
+}

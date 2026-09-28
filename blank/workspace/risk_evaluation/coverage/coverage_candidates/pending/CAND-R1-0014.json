@@ -1,0 +1,24 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0014",
+  "covers_cases": [
+    "IND-0066",
+    "IND-0068",
+    "IND-0078",
+    "IND-0082",
+    "IND-0088",
+    "IND-0090"
+  ],
+  "covers_count": 6,
+  "expected_impact": "would give 6 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "LEXICAL_GAP",
+  "generator": "analyzer",
+  "proposal": "review the LEXICAL_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+  "reasons": [
+    "the repair is structural and is not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "financial_guarantee",
+  "source_case": "IND-0066",
+  "status": "pending"
+}

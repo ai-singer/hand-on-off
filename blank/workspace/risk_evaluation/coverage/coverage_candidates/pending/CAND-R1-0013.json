@@ -1,0 +1,25 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0013",
+  "covers_cases": [
+    "IND-0122",
+    "IND-0126",
+    "IND-0128",
+    "IND-0140",
+    "IND-0142",
+    "IND-0146",
+    "IND-0270"
+  ],
+  "covers_count": 7,
+  "expected_impact": "would give 7 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "LEXICAL_GAP",
+  "generator": "analyzer",
+  "proposal": "review the LEXICAL_GAP affecting emotional_manipulation: the repair is structural and no word list is proposed",
+  "reasons": [
+    "the repair is structural and is not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "emotional_manipulation",
+  "source_case": "IND-0122",
+  "status": "pending"
+}

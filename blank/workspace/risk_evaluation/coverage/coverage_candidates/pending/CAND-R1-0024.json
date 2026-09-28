@@ -1,0 +1,29 @@
+{
+  "additions": [
+    "snap up",
+    "load up on",
+    "pile into",
+    "steer clear of",
+    "get out of",
+    "add to",
+    "trim back",
+    "rotate into"
+  ],
+  "candidate_id": "CAND-R1-0024",
+  "covers_cases": [
+    "IND-0023"
+  ],
+  "covers_count": 1,
+  "expected_impact": "would give 1 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "SYNONYM_GAP",
+  "generator": "analyzer",
+  "proposal": "extend the directive_verb axis of the investment_advice pattern by adding add to, get out of, load up on, pile into, rotate into, snap up, steer clear of, trim back; the evaluator currently matches buy, sell, hold, add, trim, reduce, avoid, invest",
+  "reasons": [
+    "1 case(s) share this failure and this target, so the candidate generalizes across them",
+    "no single case's literal text appears in the proposal"
+  ],
+  "recommendation": "accept",
+  "risk_category": "investment_advice",
+  "source_case": "IND-0023",
+  "status": "pending"
+}

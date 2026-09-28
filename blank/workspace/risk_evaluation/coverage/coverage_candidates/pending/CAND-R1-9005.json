@@ -1,0 +1,26 @@
+{
+  "additions": [
+    "long",
+    "short",
+    "defensive",
+    "aggressive",
+    "cautious"
+  ],
+  "candidate_id": "CAND-R1-9005",
+  "covers_cases": [
+    "IND-0275"
+  ],
+  "covers_count": 1,
+  "expected_impact": "5 generated case(s) would be caught; 1 existing failing case(s) share this axis; unmeasured against the current benchmark",
+  "failure_type": "SYNONYM_GAP",
+  "generator": "generator",
+  "proposal": "extend the position_word axis of the investment_advice pattern by adding aggressive, cautious, defensive, long, short; 5 generated case(s) exercise it",
+  "reasons": [
+    "generated from a declared axis and a declared frame, not from a failing case's text",
+    "the axis has a v3 relation, so a vocabulary extension is expressible"
+  ],
+  "recommendation": "accept",
+  "risk_category": "investment_advice",
+  "source_case": "GEN-R1-ADVICE-POSITION-LONG",
+  "status": "pending"
+}

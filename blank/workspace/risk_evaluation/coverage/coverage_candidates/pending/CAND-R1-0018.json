@@ -1,0 +1,25 @@
+{
+  "additions": [
+    "holding"
+  ],
+  "candidate_id": "CAND-R1-0018",
+  "covers_cases": [
+    "IND-0001",
+    "IND-0005",
+    "IND-0009",
+    "IND-0135"
+  ],
+  "covers_count": 4,
+  "expected_impact": "would give 4 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "MORPHOLOGY_GAP",
+  "generator": "analyzer",
+  "proposal": "review the MORPHOLOGY_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+  "reasons": [
+    "4 case(s) share this failure and this target, so the candidate generalizes across them",
+    "no single case's literal text appears in the proposal"
+  ],
+  "recommendation": "accept",
+  "risk_category": "investment_advice",
+  "source_case": "IND-0001",
+  "status": "pending"
+}

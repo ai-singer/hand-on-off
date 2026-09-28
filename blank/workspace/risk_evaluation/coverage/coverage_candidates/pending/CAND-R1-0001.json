@@ -1,0 +1,27 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0001",
+  "covers_cases": [
+    "IND-0127",
+    "IND-0130",
+    "IND-0134",
+    "IND-0136",
+    "IND-0141",
+    "IND-0148",
+    "IND-0149",
+    "IND-0240",
+    "IND-0255"
+  ],
+  "covers_count": 9,
+  "expected_impact": "would give 9 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "ANNOTATION_CONFLICT",
+  "generator": "analyzer",
+  "proposal": "review the ANNOTATION_CONFLICT affecting emotional_manipulation: the repair is structural and no word list is proposed",
+  "reasons": [
+    "ANNOTATION_CONFLICT needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "emotional_manipulation",
+  "source_case": "IND-0127",
+  "status": "pending"
+}

@@ -1,0 +1,24 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0029",
+  "covers_cases": [
+    "IND-0007",
+    "IND-0063",
+    "IND-0071",
+    "IND-0079",
+    "IND-0101",
+    "IND-0115"
+  ],
+  "covers_count": 6,
+  "expected_impact": "would give 6 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "TAXONOMY_CONFLICT",
+  "generator": "analyzer",
+  "proposal": "review the TAXONOMY_CONFLICT affecting unverified_information: the repair is structural and no word list is proposed",
+  "reasons": [
+    "TAXONOMY_CONFLICT needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "unverified_information",
+  "source_case": "IND-0007",
+  "status": "pending"
+}

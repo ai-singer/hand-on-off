@@ -1,0 +1,23 @@
+{
+  "additions": [
+    "promise",
+    "pledge",
+    "warrant",
+    "vow"
+  ],
+  "candidate_id": "CAND-R1-9003",
+  "covers_cases": [],
+  "covers_count": 0,
+  "expected_impact": "7 generated case(s) would be caught; 0 existing failing case(s) share this axis; unmeasured against the current benchmark",
+  "failure_type": "SYNONYM_GAP",
+  "generator": "generator",
+  "proposal": "extend the guarantee_predicate axis of the financial_guarantee pattern by adding pledge, promise, vow, warrant; 7 generated case(s) exercise it",
+  "reasons": [
+    "generated from a declared axis and a declared frame, not from a failing case's text",
+    "no failing case in the calibration set needs this axis, so the candidate is proactive expansion rather than a repair"
+  ],
+  "recommendation": "defer",
+  "risk_category": "financial_guarantee",
+  "source_case": "GEN-R1-GUAR-COPULAR-VOW",
+  "status": "pending"
+}

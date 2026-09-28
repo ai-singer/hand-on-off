@@ -1,0 +1,19 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0022",
+  "covers_cases": [
+    "IND-0047"
+  ],
+  "covers_count": 1,
+  "expected_impact": "would give 1 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "STANCE_GAP",
+  "generator": "analyzer",
+  "proposal": "review the STANCE_GAP affecting market_prediction: the repair is structural and no word list is proposed",
+  "reasons": [
+    "STANCE_GAP needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "market_prediction",
+  "source_case": "IND-0047",
+  "status": "pending"
+}

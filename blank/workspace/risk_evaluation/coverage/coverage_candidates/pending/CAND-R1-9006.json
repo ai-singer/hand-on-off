@@ -1,0 +1,25 @@
+{
+  "additions": [
+    "chatter",
+    "rumour",
+    "rumor",
+    "scuttlebutt",
+    "tip-off",
+    "hearsay"
+  ],
+  "candidate_id": "CAND-R1-9006",
+  "covers_cases": [],
+  "covers_count": 0,
+  "expected_impact": "6 generated case(s) would be caught; 0 existing failing case(s) share this axis; unmeasured against the current benchmark",
+  "failure_type": "LEXICAL_GAP",
+  "generator": "generator",
+  "proposal": "extend the reported_source axis of the unverified_information pattern by adding chatter, hearsay, rumor, rumour, scuttlebutt, tip-off; 6 generated case(s) exercise it",
+  "reasons": [
+    "generated from a declared axis and a declared frame, not from a failing case's text",
+    "no v3 relation exists for this category, so the candidate cannot be applied as a vocabulary extension"
+  ],
+  "recommendation": "defer",
+  "risk_category": "unverified_information",
+  "source_case": "GEN-R1-SOURCE-REPORTED-RUMOR",
+  "status": "pending"
+}

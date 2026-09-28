@@ -1,0 +1,24 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0005",
+  "covers_cases": [
+    "IND-0093",
+    "IND-0239",
+    "IND-0268",
+    "IND-0271",
+    "IND-0276",
+    "IND-0282"
+  ],
+  "covers_count": 6,
+  "expected_impact": "would give 6 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "ANNOTATION_CONFLICT",
+  "generator": "analyzer",
+  "proposal": "review the ANNOTATION_CONFLICT affecting unverified_information: the repair is structural and no word list is proposed",
+  "reasons": [
+    "ANNOTATION_CONFLICT needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "unverified_information",
+  "source_case": "IND-0093",
+  "status": "pending"
+}

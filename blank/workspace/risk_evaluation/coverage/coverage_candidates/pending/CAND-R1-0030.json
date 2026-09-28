@@ -1,0 +1,24 @@
+{
+  "additions": [],
+  "candidate_id": "CAND-R1-0030",
+  "covers_cases": [
+    "IND-0089",
+    "IND-0113",
+    "IND-0129",
+    "IND-0137",
+    "IND-0217",
+    "IND-0299"
+  ],
+  "covers_count": 6,
+  "expected_impact": "would give 6 failing case(s) the vocabulary they lack; unmeasured until a benchmark that did not exist when this candidate was made is scored",
+  "failure_type": "UNKNOWN",
+  "generator": "analyzer",
+  "proposal": "review the UNKNOWN affecting financial_guarantee: the repair is structural and no word list is proposed",
+  "reasons": [
+    "UNKNOWN needs a human ruling: the classification rests on a judgement, not a word list"
+  ],
+  "recommendation": "defer",
+  "risk_category": "financial_guarantee",
+  "source_case": "IND-0089",
+  "status": "pending"
+}

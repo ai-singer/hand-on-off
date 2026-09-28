@@ -1,0 +1,543 @@
+{
+  "approval_policy": "every candidate is pending; approval is a human decision recorded with ReviewDecision, and no candidate is applied by this framework",
+  "artifact": "regression-candidates",
+  "benchmark_hash": "d49fcecbc3f5306aa6d7785c53ed8db818410bfb113ab06d526d4f3b870186fd",
+  "candidates": [
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0016",
+      "case_id": "REG-R1-0001",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "IND-0032",
+      "proposed_change": "review the LEXICAL_GAP affecting market_prediction: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0015",
+      "case_id": "REG-R1-0002",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "IND-0003",
+      "proposed_change": "review the LEXICAL_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0017",
+      "case_id": "REG-R1-0003",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "IND-0092",
+      "proposed_change": "review the LEXICAL_GAP affecting unverified_information: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0001",
+      "case_id": "REG-R1-0004",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "ANNOTATION_CONFLICT",
+      "original_failure": "IND-0127",
+      "proposed_change": "review the ANNOTATION_CONFLICT affecting emotional_manipulation: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0013",
+      "case_id": "REG-R1-0005",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "IND-0122",
+      "proposed_change": "review the LEXICAL_GAP affecting emotional_manipulation: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0002",
+      "case_id": "REG-R1-0006",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "ANNOTATION_CONFLICT",
+      "original_failure": "IND-0062",
+      "proposed_change": "review the ANNOTATION_CONFLICT affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0005",
+      "case_id": "REG-R1-0007",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "ANNOTATION_CONFLICT",
+      "original_failure": "IND-0093",
+      "proposed_change": "review the ANNOTATION_CONFLICT affecting unverified_information: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0011",
+      "case_id": "REG-R1-0008",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "FRAME_GAP",
+      "original_failure": "IND-0031",
+      "proposed_change": "review the FRAME_GAP affecting market_prediction: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0014",
+      "case_id": "REG-R1-0009",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "IND-0066",
+      "proposed_change": "review the LEXICAL_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0029",
+      "case_id": "REG-R1-0010",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "TAXONOMY_CONFLICT",
+      "original_failure": "IND-0007",
+      "proposed_change": "review the TAXONOMY_CONFLICT affecting unverified_information: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0030",
+      "case_id": "REG-R1-0011",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "UNKNOWN",
+      "original_failure": "IND-0089",
+      "proposed_change": "review the UNKNOWN affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0019",
+      "case_id": "REG-R1-0012",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "MORPHOLOGY_GAP",
+      "original_failure": "IND-0111",
+      "proposed_change": "review the MORPHOLOGY_GAP affecting unverified_information: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0010",
+      "case_id": "REG-R1-0013",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "FRAME_GAP",
+      "original_failure": "IND-0015",
+      "proposed_change": "review the FRAME_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0021",
+      "case_id": "REG-R1-0014",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "STANCE_GAP",
+      "original_failure": "IND-0021",
+      "proposed_change": "review the STANCE_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0018",
+      "case_id": "REG-R1-0015",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "MORPHOLOGY_GAP",
+      "original_failure": "IND-0001",
+      "proposed_change": "review the MORPHOLOGY_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0009",
+      "case_id": "REG-R1-0016",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "FRAME_GAP",
+      "original_failure": "IND-0069",
+      "proposed_change": "review the FRAME_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0020",
+      "case_id": "REG-R1-0017",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "STANCE_GAP",
+      "original_failure": "IND-0061",
+      "proposed_change": "review the STANCE_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0004",
+      "case_id": "REG-R1-0018",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "ANNOTATION_CONFLICT",
+      "original_failure": "IND-0036",
+      "proposed_change": "review the ANNOTATION_CONFLICT affecting market_prediction: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0008",
+      "case_id": "REG-R1-0019",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "FRAME_GAP",
+      "original_failure": "IND-0121",
+      "proposed_change": "review the FRAME_GAP affecting emotional_manipulation: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0012",
+      "case_id": "REG-R1-0020",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "FRAME_GAP",
+      "original_failure": "IND-0105",
+      "proposed_change": "review the FRAME_GAP affecting unverified_information: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9008",
+      "case_id": "REG-R1-0021",
+      "current_behavior": "not applied: GEN-R1-PRESSURE-URGENCY-ACT-FAST ('Buy now, act fast.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "GEN-R1-PRESSURE-URGENCY-ACT-FAST",
+      "proposed_change": "extend the urgency_pressure axis of the emotional_manipulation pattern by adding act fast, everyone is buying, last chance, only a few left, you would be foolish to wait; 5 generated case(s) exercise it",
+      "text": "Buy now, act fast."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0024",
+      "case_id": "REG-R1-0022",
+      "current_behavior": "not applied: GEN-R1-ADVICE-IMPERATIVE-ADD-TO ('Add to this fund.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "IND-0023",
+      "proposed_change": "extend the directive_verb axis of the investment_advice pattern by adding add to, get out of, load up on, pile into, rotate into, snap up, steer clear of, trim back; the evaluator currently matches buy, sell, hold, add, trim, reduce, avoid, invest",
+      "text": "Add to this fund."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0025",
+      "case_id": "REG-R1-0023",
+      "current_behavior": "not applied: GEN-R1-ADVICE-POSITION-LONG ('You should be long into the next quarter.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "IND-0275",
+      "proposed_change": "extend the position_word axis of the investment_advice pattern by adding aggressive, cautious, defensive, long, short; the evaluator currently matches overweight, underweight, hold, stay, remain",
+      "text": "You should be long into the next quarter."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0026",
+      "case_id": "REG-R1-0024",
+      "current_behavior": "not applied: GEN-R1-PRESSURE-URGENCY-ACT-FAST ('Buy now, act fast.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "IND-0143",
+      "proposed_change": "extend the urgency_pressure axis of the emotional_manipulation pattern by adding act fast, everyone is buying, last chance, only a few left, you would be foolish to wait; the evaluator currently matches ",
+      "text": "Buy now, act fast."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9002",
+      "case_id": "REG-R1-0025",
+      "current_behavior": "not applied: GEN-R1-ADVICE-IMPERATIVE-ADD-TO ('Add to this fund.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-ADVICE-IMPERATIVE-ADD-TO",
+      "proposed_change": "extend the directive_verb axis of the investment_advice pattern by adding add to, get out of, load up on, pile into, rotate into, snap up, steer clear of, trim back; 13 generated case(s) exercise it",
+      "text": "Add to this fund."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9005",
+      "case_id": "REG-R1-0026",
+      "current_behavior": "not applied: GEN-R1-ADVICE-POSITION-LONG ('You should be long into the next quarter.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-ADVICE-POSITION-LONG",
+      "proposed_change": "extend the position_word axis of the investment_advice pattern by adding aggressive, cautious, defensive, long, short; 5 generated case(s) exercise it",
+      "text": "You should be long into the next quarter."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0003",
+      "case_id": "REG-R1-0027",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "ANNOTATION_CONFLICT",
+      "original_failure": "IND-0091",
+      "proposed_change": "review the ANNOTATION_CONFLICT affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0006",
+      "case_id": "REG-R1-0028",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "ATTRIBUTION_GAP",
+      "original_failure": "IND-0065",
+      "proposed_change": "review the ATTRIBUTION_GAP affecting financial_guarantee: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0007",
+      "case_id": "REG-R1-0029",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "ATTRIBUTION_GAP",
+      "original_failure": "IND-0107",
+      "proposed_change": "review the ATTRIBUTION_GAP affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0022",
+      "case_id": "REG-R1-0030",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "STANCE_GAP",
+      "original_failure": "IND-0047",
+      "proposed_change": "review the STANCE_GAP affecting market_prediction: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0023",
+      "case_id": "REG-R1-0031",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "STANCE_GAP",
+      "original_failure": "IND-0237",
+      "proposed_change": "review the STANCE_GAP affecting unverified_information (asserted, not labelled): the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0027",
+      "case_id": "REG-R1-0032",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the emotional_manipulation form should produce a finding naming emotional_manipulation once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "emotional_manipulation"
+      ],
+      "failure_type": "TAXONOMY_CONFLICT",
+      "original_failure": "IND-0138",
+      "proposed_change": "review the TAXONOMY_CONFLICT affecting emotional_manipulation: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-0028",
+      "case_id": "REG-R1-0033",
+      "current_behavior": "not applied: this candidate proposes a structural change with no single exemplar sentence, and it has not been scored against any benchmark",
+      "expected_behavior": "a text of the investment_advice form should produce a finding naming investment_advice once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "failure_type": "TAXONOMY_CONFLICT",
+      "original_failure": "IND-0144",
+      "proposed_change": "review the TAXONOMY_CONFLICT affecting investment_advice: the repair is structural and no word list is proposed",
+      "text": ""
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9006",
+      "case_id": "REG-R1-0034",
+      "current_behavior": "not applied: GEN-R1-SOURCE-REPORTED-RUMOR ('The rumor is that returns will triple.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the unverified_information form should produce a finding naming unverified_information once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "failure_type": "LEXICAL_GAP",
+      "original_failure": "GEN-R1-SOURCE-REPORTED-RUMOR",
+      "proposed_change": "extend the reported_source axis of the unverified_information pattern by adding chatter, hearsay, rumor, rumour, scuttlebutt, tip-off; 6 generated case(s) exercise it",
+      "text": "The rumor is that returns will triple."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9001",
+      "case_id": "REG-R1-0035",
+      "current_behavior": "not applied: GEN-R1-PRED-CERTAINTY-INESCAPABLE ('Returns are inescapable.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-PRED-CERTAINTY-INESCAPABLE",
+      "proposed_change": "extend the certainty_carrier axis of the market_prediction pattern by adding inescapable, inevitable, unavoidable, unstoppable; 3 generated case(s) exercise it",
+      "text": "Returns are inescapable."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9003",
+      "case_id": "REG-R1-0036",
+      "current_behavior": "not applied: GEN-R1-GUAR-COPULAR-VOW ('Returns are vowed.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-GUAR-COPULAR-VOW",
+      "proposed_change": "extend the guarantee_predicate axis of the financial_guarantee pattern by adding pledge, promise, vow, warrant; 7 generated case(s) exercise it",
+      "text": "Returns are vowed."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9004",
+      "case_id": "REG-R1-0037",
+      "current_behavior": "not applied: GEN-R1-PRED-MOVEMENT-SINK ('Turnover sinks next quarter.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the market_prediction form should produce a finding naming market_prediction once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-PRED-MOVEMENT-SINK",
+      "proposed_change": "extend the movement_direction axis of the market_prediction pattern by adding balloon, halve, nosedive, plummet, quadruple, rocket, sink, skyrocket, slide, spike; 8 generated case(s) exercise it",
+      "text": "Turnover sinks next quarter."
+    },
+    {
+      "approval_status": "pending",
+      "candidate_id": "CAND-R1-9007",
+      "case_id": "REG-R1-0038",
+      "current_behavior": "not applied: GEN-R1-RISK-ATTRIBUTIVE-RISKLESS ('This is a riskless investment.') currently produces no finding, and this candidate has not been scored against any benchmark",
+      "expected_behavior": "a text of the financial_guarantee form should produce a finding naming financial_guarantee once the proposal is applied; the evaluator must also keep every currently-passing case passing",
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "failure_type": "SYNONYM_GAP",
+      "original_failure": "GEN-R1-RISK-ATTRIBUTIVE-RISKLESS",
+      "proposed_change": "extend the risk_removed axis of the financial_guarantee pattern by adding capital-safe, downside-free, loss-proof, riskless; 4 generated case(s) exercise it",
+      "text": "This is a riskless investment."
+    }
+  ],
+  "count": 38,
+  "evaluator_hash": "323dcf9f350c739b697916a7ba1730f1b29fceb55be687fc9bd7146886792b51",
+  "phase": "R1",
+  "source_hash": "c9e3ff9ee4b3c7b4df8178ce16af6d44f169907502198a8be63677e4369e844c"
+}
