@@ -1,0 +1,77 @@
+{
+  "claim": "NOT human agreement: fewer than two human raters contributed, so this is an internal consistency check only",
+  "disagreement_cases": [
+    {
+      "comments": {
+        "fixture-a": "fixture",
+        "fixture-b": "fixture"
+      },
+      "item_id": "family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_",
+      "question": "grammar_matches_image",
+      "verdicts": {
+        "fixture-a": "yes",
+        "fixture-b": "no"
+      }
+    },
+    {
+      "comments": {
+        "fixture-a": "fixture",
+        "fixture-b": "fixture"
+      },
+      "item_id": "family-creator_d__T06_cover_with_logo__00-creator_d__T06_cov",
+      "question": "grammar_matches_image",
+      "verdicts": {
+        "fixture-a": "no",
+        "fixture-b": "yes"
+      }
+    },
+    {
+      "comments": {
+        "fixture-a": "fixture",
+        "fixture-b": "fixture"
+      },
+      "item_id": "family-creator_e__T09_list_stack__00-creator_e__T09_list_sta",
+      "question": "grammar_matches_image",
+      "verdicts": {
+        "fixture-a": "no",
+        "fixture-b": "yes"
+      }
+    }
+  ],
+  "human_raters": 0,
+  "is_human_agreement": false,
+  "item_count": 8,
+  "notes": [
+    "no human rater contributed; this report is an internal consistency check and must not be presented as human agreement",
+    "agreement is the fraction of rater pairs giving the same verdict, so it does not depend on how many raters scored each item"
+  ],
+  "overall_agreement": 0.8125,
+  "per_question": {
+    "grammar_matches_image": {
+      "agreeing_items": 5,
+      "agreement": 0.625,
+      "items": 8,
+      "pair_count": 8
+    },
+    "strategy_is_reasonable": {
+      "agreeing_items": 8,
+      "agreement": 1.0,
+      "items": 8,
+      "pair_count": 8
+    }
+  },
+  "protocol_version": "m4.0.0",
+  "raters": [
+    {
+      "notes": "placeholder for a real human rater",
+      "rater_id": "fixture-a",
+      "rater_kind": "synthetic_fixture"
+    },
+    {
+      "notes": "placeholder for a real human rater",
+      "rater_id": "fixture-b",
+      "rater_kind": "synthetic_fixture"
+    }
+  ],
+  "unanimous_items": 5
+}

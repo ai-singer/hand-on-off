@@ -1,0 +1,413 @@
+{
+  "creator_count": 8,
+  "dataset_id": "m4-synthetic-grammar-corpus",
+  "description": "Synthetic corpus rendered from template specifications. Reported as synthetic everywhere; supports no claim about real creator behaviour.",
+  "is_real_collection": false,
+  "manifest_version": "m4.0.0",
+  "origins": {
+    "synthetic_rendered": 40
+  },
+  "record_count": 40,
+  "records": [
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_a",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_a__T01_left_text_right_image__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_a",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_a__T01_left_text_right_image__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_a",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_a__T01_left_text_right_image__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_a",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_a__T03_three_card_grid__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_a",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_a__T03_three_card_grid__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_b",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_b__T01_left_text_right_image__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_b",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_b__T01_left_text_right_image__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_b",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_b__T01_left_text_right_image__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_b",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_b__T02_top_image_bottom_text__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_b",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_b__T02_top_image_bottom_text__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_c",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_c__T03_three_card_grid__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_c",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_c__T03_three_card_grid__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_c",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_c__T03_three_card_grid__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_c",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_c__T04_full_bleed_overlay__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_c",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_c__T04_full_bleed_overlay__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_d",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_d__T01_left_text_right_image__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_d",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_d__T01_left_text_right_image__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_d",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_d__T01_left_text_right_image__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_d",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_d__T06_cover_with_logo__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_d",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_d__T06_cover_with_logo__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_e",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_e__T02_top_image_bottom_text__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_e",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_e__T02_top_image_bottom_text__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_e",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_e__T02_top_image_bottom_text__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_e",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_e__T09_list_stack__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_e",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_e__T09_list_stack__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_f",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_f__T05_chart_with_caption__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_f",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_f__T05_chart_with_caption__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_f",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_f__T05_chart_with_caption__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_f",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_f__T07_data_table__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_f",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_f__T07_data_table__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_g",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_g__T04_full_bleed_overlay__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_g",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_g__T04_full_bleed_overlay__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_g",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_g__T08_two_column_text__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_g",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_g__T08_two_column_text__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_g",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_g__T08_two_column_text__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_h",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_h__T03_three_card_grid__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_h",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_h__T03_three_card_grid__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_h",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_h__T10_centered_quote__00",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_h",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_h__T10_centered_quote__01",
+      "source_reference": "multimodal_creator.observation.corpus"
+    },
+    {
+      "collected_at": "2026-01-01T00:00:00Z",
+      "collection_method": "synthetic_generation",
+      "creator_id": "creator_h",
+      "notes": "generated structural corpus; not real creator material",
+      "origin": "synthetic_rendered",
+      "permission_status": "not_applicable_synthetic",
+      "source_id": "creator_h__T10_centered_quote__02",
+      "source_reference": "multimodal_creator.observation.corpus"
+    }
+  ]
+}

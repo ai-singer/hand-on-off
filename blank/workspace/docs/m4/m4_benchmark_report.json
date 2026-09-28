@@ -1,0 +1,1487 @@
+{
+  "by_group": {
+    "creator_strategy": {
+      "passed": 12,
+      "total": 20
+    },
+    "grammar_extraction": {
+      "passed": 13,
+      "total": 30
+    },
+    "invariant_discovery": {
+      "passed": 16,
+      "total": 20
+    },
+    "negative_cases": {
+      "passed": 10,
+      "total": 10
+    },
+    "relation_extraction": {
+      "passed": 17,
+      "total": 20
+    }
+  },
+  "case_count": 100,
+  "cases": [
+    {
+      "case_id": "grammar-01-T01-regions",
+      "failures": [
+        "region F1 0.415 below 0.5 for T01"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.415079
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-01-T01-types",
+      "failures": [
+        "declared region types absent: ['headline']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "headline"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-01-T01-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-02-T02-regions",
+      "failures": [
+        "region F1 0.472 below 0.5 for T02"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.472063
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-02-T02-types",
+      "failures": [
+        "declared region types absent: ['headline', 'supporting_information']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "headline",
+          "supporting_information"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-02-T02-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-03-T03-regions",
+      "failures": [
+        "region F1 0.471 below 0.5 for T03"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.470521
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-03-T03-types",
+      "failures": [
+        "declared region types absent: ['data_display', 'supporting_information']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "data_display",
+          "supporting_information"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-03-T03-no-invention",
+      "failures": [
+        "extractor invented region types: ['subject']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": [
+          "subject"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-04-T04-regions",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.625
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-04-T04-types",
+      "failures": [
+        "declared region types absent: ['subject']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "subject"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-04-T04-no-invention",
+      "failures": [
+        "extractor invented region types: ['supporting_information']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": [
+          "supporting_information"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-05-T05-regions",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.505291
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-05-T05-types",
+      "failures": [
+        "declared region types absent: ['data_display', 'supporting_information']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "data_display",
+          "supporting_information"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-05-T05-no-invention",
+      "failures": [
+        "extractor invented region types: ['subject']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": [
+          "subject"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-06-T06-regions",
+      "failures": [
+        "region F1 0.400 below 0.5 for T06"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.4
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-06-T06-types",
+      "failures": [
+        "declared region types absent: ['branding']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "branding"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-06-T06-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-07-T07-regions",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.571429
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-07-T07-types",
+      "failures": [
+        "declared region types absent: ['data_display', 'supporting_information']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": [
+          "data_display",
+          "supporting_information"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-07-T07-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-08-T08-regions",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.509524
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-08-T08-types",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-08-T08-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-09-T09-regions",
+      "failures": [
+        "region F1 0.462 below 0.5 for T09"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.461538
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-09-T09-types",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-09-T09-no-invention",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-10-T10-regions",
+      "failures": [
+        "region F1 0.430 below 0.5 for T10"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_regions",
+      "observed": {
+        "mean_f1": 0.429629
+      },
+      "passed": false
+    },
+    {
+      "case_id": "grammar-10-T10-types",
+      "failures": [],
+      "group": "grammar_extraction",
+      "kind": "grammar_region_types",
+      "observed": {
+        "missing_types": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "grammar-10-T10-no-invention",
+      "failures": [
+        "extractor invented region types: ['subject']"
+      ],
+      "group": "grammar_extraction",
+      "kind": "grammar_no_invention",
+      "observed": {
+        "invented_types": [
+          "subject"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "relation-01-T01-expected",
+      "failures": [
+        "declared relations absent: ['support_below_headline']"
+      ],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": [
+          "support_below_headline"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "relation-01-T01-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-02-T02-expected",
+      "failures": [
+        "declared relations absent: ['headline_below_subject']"
+      ],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": [
+          "headline_below_subject"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "relation-02-T02-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-03-T03-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-03-T03-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-04-T04-expected",
+      "failures": [
+        "declared relations absent: ['subject_full_bleed']"
+      ],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": [
+          "subject_full_bleed"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "relation-04-T04-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-05-T05-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-05-T05-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-06-T06-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-06-T06-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-07-T07-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-07-T07-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-08-T08-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-08-T08-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-09-T09-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-09-T09-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-10-T10-expected",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_expected",
+      "observed": {
+        "missing_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "relation-10-T10-valid",
+      "failures": [],
+      "group": "relation_extraction",
+      "kind": "relation_valid",
+      "observed": {
+        "invalid_relations": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-01-T01-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_a__T01_left_text_right_image__00-creator_a__T01_left_text_right_image__01-creator_a__T01_left_text_right_image__02-creator_b__T01_left_text_right_image__00-creator_b__T01_left_text_right_image__01-creator_b__T01_left_text_right_image__02-creator_d__T01_left_text_right_image__00-creator_d__T01_left_text_right_image__01-creator_d__T01_left_text_right_image__02",
+        "clustered": 9
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-01-T01-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-02-T02-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_b__T02_top_image_bottom_text__00-creator_b__T02_top_image_bottom_text__01-creator_e__T02_top_image_bottom_text__00-creator_e__T02_top_image_bottom_text__01-creator_e__T02_top_image_bottom_text__02",
+        "clustered": 5
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-02-T02-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-03-T03-frequencies",
+      "failures": [
+        "region_presence:data_display_present frequency 0.000 below declared minimum 0.600 in family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01"
+      ],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "clustered": 7
+      },
+      "passed": false
+    },
+    {
+      "case_id": "invariant-03-T03-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-04-T04-frequencies",
+      "failures": [
+        "region_presence:subject_present frequency 0.000 below declared minimum 1.000 in family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_centered_quote__00-creator_h__T10_centered_quote__01"
+      ],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_centered_quote__00-creator_h__T10_centered_quote__01",
+        "clustered": 4
+      },
+      "passed": false
+    },
+    {
+      "case_id": "invariant-04-T04-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-05-T05-frequencies",
+      "failures": [
+        "region_presence:data_display_present frequency 0.000 below declared minimum 0.600 in family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01"
+      ],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "clustered": 3
+      },
+      "passed": false
+    },
+    {
+      "case_id": "invariant-05-T05-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-06-T06-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_d__T06_cover_with_logo__00-creator_d__T06_cover_with_logo__01",
+        "clustered": 2
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-06-T06-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-07-T07-frequencies",
+      "failures": [
+        "region_presence:data_display_present frequency 0.000 below declared minimum 0.600 in family-creator_f__T07_data_table__00-creator_f__T07_data_table__01"
+      ],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+        "clustered": 2
+      },
+      "passed": false
+    },
+    {
+      "case_id": "invariant-07-T07-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-08-T08-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_e__T09_list_stack__00-creator_e__T09_list_stack__01-creator_g__T08_two_column_text__00-creator_g__T08_two_column_text__01-creator_g__T08_two_column_text__02",
+        "clustered": 3
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-08-T08-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-09-T09-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_e__T09_list_stack__00-creator_e__T09_list_stack__01-creator_g__T08_two_column_text__00-creator_g__T08_two_column_text__01-creator_g__T08_two_column_text__02",
+        "clustered": 2
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-09-T09-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-10-T10-frequencies",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_frequency",
+      "observed": {
+        "cluster": "family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_centered_quote__00-creator_h__T10_centered_quote__01",
+        "clustered": 2
+      },
+      "passed": true
+    },
+    {
+      "case_id": "invariant-10-T10-mined",
+      "failures": [],
+      "group": "invariant_discovery",
+      "kind": "invariant_is_mined",
+      "observed": {
+        "forbidden_tokens": []
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-01-T01-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-01-T01-hierarchy",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "offset_subject",
+          "split_columns",
+          "stacked_information",
+          "top_entry"
+        ],
+        "stages": [
+          "explanation",
+          "hook"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-02-T02-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "subject_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-02-T02-hierarchy",
+      "failures": [
+        "required hierarchy stage 'hook' missing from ['action']",
+        "required hierarchy stage 'explanation' missing from ['action']",
+        "none of ['split_columns'] present in composition ['central_subject']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "central_subject"
+        ],
+        "stages": [
+          "action"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-03-T03-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-03-T03-hierarchy",
+      "failures": [
+        "required hierarchy stage 'evidence' missing from ['hook']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "top_entry"
+        ],
+        "stages": [
+          "hook"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-04-T04-attention",
+      "failures": [
+        "expected attention 'subject_first', got ['undetermined']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "undetermined"
+        ],
+        "clusters_found": 2
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-04-T04-hierarchy",
+      "failures": [
+        "required hierarchy stage 'hook' missing from ['explanation']",
+        "none of ['full_bleed_subject'] present in composition ['centred_information', 'stacked_information']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "centred_information",
+          "stacked_information"
+        ],
+        "stages": [
+          "explanation"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-05-T05-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-05-T05-hierarchy",
+      "failures": [
+        "required hierarchy stage 'evidence' missing from ['hook']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "top_entry"
+        ],
+        "stages": [
+          "hook"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-06-T06-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "subject_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-06-T06-hierarchy",
+      "failures": [
+        "required hierarchy stage 'action' missing from []"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "full_bleed_subject"
+        ],
+        "stages": []
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-07-T07-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-07-T07-hierarchy",
+      "failures": [
+        "required hierarchy stage 'evidence' missing from ['hook']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "top_entry"
+        ],
+        "stages": [
+          "hook"
+        ]
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-08-T08-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-08-T08-hierarchy",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "centred_information",
+          "stacked_information",
+          "top_entry"
+        ],
+        "stages": [
+          "action",
+          "explanation",
+          "hook"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-09-T09-attention",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "headline_first"
+        ],
+        "clusters_found": 1
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-09-T09-hierarchy",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "centred_information",
+          "stacked_information",
+          "top_entry"
+        ],
+        "stages": [
+          "action",
+          "explanation",
+          "hook"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "strategy-10-T10-attention",
+      "failures": [
+        "expected attention 'headline_first', got ['undetermined']"
+      ],
+      "group": "creator_strategy",
+      "kind": "strategy_attention",
+      "observed": {
+        "attention_strategies": [
+          "undetermined"
+        ],
+        "clusters_found": 1
+      },
+      "passed": false
+    },
+    {
+      "case_id": "strategy-10-T10-hierarchy",
+      "failures": [],
+      "group": "creator_strategy",
+      "kind": "strategy_hierarchy",
+      "observed": {
+        "moves": [
+          "centred_information",
+          "stacked_information"
+        ],
+        "stages": [
+          "explanation"
+        ]
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-absent-region-is-not-invented",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "no_invented_regions",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-relation-is-not-invented",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "no_dangling_relations",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-no-single-score",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "no_combined_score",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-pattern-carries-no-material",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "no_material_in_pattern",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-invariants-not-hand-specified",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "invariants_are_mined",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-no-human-agreement-claim",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "agreement_requires_two_humans",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-synthetic-not-real",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "synthetic_fails_real_check",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-constraint-is-not-generative",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "constraint_not_generative",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-no-runtime-integration",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "no_runtime_integration",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    },
+    {
+      "case_id": "negative-layout-label-not-needed",
+      "failures": [],
+      "group": "negative_cases",
+      "kind": "strategy_ignores_layout_label",
+      "observed": {
+        "holds": true
+      },
+      "passed": true
+    }
+  ],
+  "clusters": [
+    {
+      "attention_strategy": "headline_first",
+      "cluster_id": "family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+      "composition_strategy": [
+        "top_entry"
+      ],
+      "confidence": 0.989333,
+      "constraint_count": 18,
+      "information_hierarchy": [
+        "hook"
+      ],
+      "invariant_count": 15,
+      "member_count": 10,
+      "template_ids": [
+        "T03_three_card_grid",
+        "T05_chart_with_caption"
+      ]
+    },
+    {
+      "attention_strategy": "headline_first",
+      "cluster_id": "family-creator_a__T01_left_text_right_image__00-creator_a__T01_left_text_right_image__01-creator_a__T01_left_text_right_image__02-creator_b__T01_left_text_right_image__00-creator_b__T01_left_text_right_image__01-creator_b__T01_left_text_right_image__02-creator_d__T01_left_text_right_image__00-creator_d__T01_left_text_right_image__01-creator_d__T01_left_text_right_image__02",
+      "composition_strategy": [
+        "offset_subject",
+        "top_entry",
+        "split_columns",
+        "stacked_information"
+      ],
+      "confidence": 0.997661,
+      "constraint_count": 26,
+      "information_hierarchy": [
+        "hook",
+        "explanation"
+      ],
+      "invariant_count": 19,
+      "member_count": 9,
+      "template_ids": [
+        "T01_left_text_right_image"
+      ]
+    },
+    {
+      "attention_strategy": "subject_first",
+      "cluster_id": "family-creator_b__T02_top_image_bottom_text__00-creator_b__T02_top_image_bottom_text__01-creator_e__T02_top_image_bottom_text__00-creator_e__T02_top_image_bottom_text__01-creator_e__T02_top_image_bottom_text__02",
+      "composition_strategy": [
+        "central_subject"
+      ],
+      "confidence": 0.92,
+      "constraint_count": 21,
+      "information_hierarchy": [
+        "action"
+      ],
+      "invariant_count": 18,
+      "member_count": 5,
+      "template_ids": [
+        "T02_top_image_bottom_text"
+      ]
+    },
+    {
+      "attention_strategy": "headline_first",
+      "cluster_id": "family-creator_e__T09_list_stack__00-creator_e__T09_list_stack__01-creator_g__T08_two_column_text__00-creator_g__T08_two_column_text__01-creator_g__T08_two_column_text__02",
+      "composition_strategy": [
+        "top_entry",
+        "stacked_information",
+        "centred_information"
+      ],
+      "confidence": 0.925714,
+      "constraint_count": 28,
+      "information_hierarchy": [
+        "hook",
+        "explanation",
+        "action"
+      ],
+      "invariant_count": 21,
+      "member_count": 5,
+      "template_ids": [
+        "T08_two_column_text",
+        "T09_list_stack"
+      ]
+    },
+    {
+      "attention_strategy": "undetermined",
+      "cluster_id": "family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_centered_quote__00-creator_h__T10_centered_quote__01",
+      "composition_strategy": [
+        "stacked_information",
+        "centred_information"
+      ],
+      "confidence": 0.933333,
+      "constraint_count": 12,
+      "information_hierarchy": [
+        "explanation"
+      ],
+      "invariant_count": 9,
+      "member_count": 3,
+      "template_ids": [
+        "T04_full_bleed_overlay",
+        "T10_centered_quote"
+      ]
+    },
+    {
+      "attention_strategy": "undetermined",
+      "cluster_id": "family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+      "composition_strategy": [],
+      "confidence": 0.933333,
+      "constraint_count": 4,
+      "information_hierarchy": [],
+      "invariant_count": 4,
+      "member_count": 3,
+      "template_ids": [
+        "T04_full_bleed_overlay"
+      ]
+    },
+    {
+      "attention_strategy": "subject_first",
+      "cluster_id": "family-creator_d__T06_cover_with_logo__00-creator_d__T06_cover_with_logo__01",
+      "composition_strategy": [
+        "full_bleed_subject"
+      ],
+      "confidence": 0.866667,
+      "constraint_count": 14,
+      "information_hierarchy": [],
+      "invariant_count": 12,
+      "member_count": 2,
+      "template_ids": [
+        "T06_cover_with_logo"
+      ]
+    },
+    {
+      "attention_strategy": "headline_first",
+      "cluster_id": "family-creator_f__T07_data_table__00-creator_f__T07_data_table__01",
+      "composition_strategy": [
+        "top_entry"
+      ],
+      "confidence": 0.866667,
+      "constraint_count": 14,
+      "information_hierarchy": [
+        "hook"
+      ],
+      "invariant_count": 11,
+      "member_count": 2,
+      "template_ids": [
+        "T07_data_table"
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.082,
+  "evaluation": {
+    "discovery_stability": {
+      "baseline_cluster_count": 8,
+      "identical_runs": 2,
+      "notes": [
+        "perturbation nudges the structural threshold by +-0.02; a partition change there is expected and is reported rather than hidden"
+      ],
+      "perturbation_rate": 1.0,
+      "perturbed_runs": 2,
+      "repetition_rate": 1.0,
+      "runs": 2,
+      "stable_under_perturbation": 2
+    },
+    "grammar_regions": {
+      "correct_placement": 88,
+      "correct_type": 90,
+      "expected": 139,
+      "f1": 0.467533,
+      "found": 246,
+      "missing": [
+        "branding@bottom",
+        "data_display@center",
+        "headline@bottom",
+        "headline@top",
+        "subject@center",
+        "subject@top",
+        "supporting_information@bottom",
+        "supporting_information@center"
+      ],
+      "per_type": {
+        "background": {
+          "expected": 40,
+          "found": 40,
+          "matched": 40
+        },
+        "branding": {
+          "expected": 2,
+          "found": 0,
+          "matched": 0
+        },
+        "cta": {
+          "expected": 0,
+          "found": 22,
+          "matched": 0
+        },
+        "data_display": {
+          "expected": 12,
+          "found": 0,
+          "matched": 0
+        },
+        "headline": {
+          "expected": 31,
+          "found": 45,
+          "matched": 17
+        },
+        "subject": {
+          "expected": 20,
+          "found": 27,
+          "matched": 14
+        },
+        "subtitle": {
+          "expected": 0,
+          "found": 35,
+          "matched": 0
+        },
+        "supporting_information": {
+          "expected": 34,
+          "found": 77,
+          "matched": 17
+        }
+      },
+      "placement_accuracy": 0.633094,
+      "precision": 0.365854,
+      "recall": 0.647482,
+      "spurious": [
+        "cta@bottom",
+        "cta@center",
+        "headline@center",
+        "headline@top",
+        "subject@center",
+        "subtitle@center",
+        "subtitle@top",
+        "supporting_information@bottom",
+        "supporting_information@center",
+        "supporting_information@top"
+      ],
+      "type_accuracy": 0.647482
+    },
+    "grammar_relations": {
+      "expected": 59,
+      "f1": 0.450549,
+      "false_negative": 18,
+      "false_positive": 82,
+      "found": 123,
+      "per_relation": {},
+      "precision": 0.333333,
+      "recall": 0.694915,
+      "true_positive": 41
+    },
+    "strategy": {
+      "attention_accuracy": 0.75,
+      "attention_matches": 6,
+      "composition_jaccard": 0.458333,
+      "hierarchy_accuracy": 0.125,
+      "hierarchy_matches": 1,
+      "measurement_note": "agreement is measured against reference labels; when those labels come from human raters this is human agreement, and the report must say which",
+      "patterns": 8
+    }
+  },
+  "failed": 32,
+  "ok": false,
+  "passed": 68,
+  "schema": "m4_benchmark_report/v1",
+  "structural_threshold": 0.75
+}

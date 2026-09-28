@@ -1,0 +1,103 @@
+{
+  "allowed_verdicts": [
+    "no",
+    "yes"
+  ],
+  "instructions": "For each item, read the grammar and strategy the system produced for the image, then answer both questions with 'yes' or 'no'. Judge whether the claim is correct for the image, not whether you would have described it the same way. Add a comment whenever you answer 'no'.",
+  "items": [
+    {
+      "grammar_summary": "background@center/mid | headline@top/mid | headline@top/mid | headline@top/mid | subject@center/mid",
+      "image_reference": "creator_a__T03_three_card_grid__00",
+      "item_id": "family-creator_a__T03_three_card_grid__00-creator_a__T03_thr",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=headline_first hierarchy=['hook'] composition=['top_entry']"
+    },
+    {
+      "grammar_summary": "background@center/mid | subtitle@top/left | subject@center/right | subtitle@top/left | subtitle@top/left | subtitle@center/left | supporting_information@center/left | supporting_information@center/left | supporting_information@center/left | supporting_information@center/left | supporting_information@center/left",
+      "image_reference": "creator_a__T01_left_text_right_image__00",
+      "item_id": "family-creator_a__T01_left_text_right_image__00-creator_a__T",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=headline_first hierarchy=['hook', 'explanation'] composition=['offset_subject', 'top_entry', 'split_columns', 'stacked_information']"
+    },
+    {
+      "grammar_summary": "background@center/mid | subject@top/mid | cta@center/mid | cta@center/mid | cta@bottom/mid",
+      "image_reference": "creator_b__T02_top_image_bottom_text__00",
+      "item_id": "family-creator_b__T02_top_image_bottom_text__00-creator_b__T",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=subject_first hierarchy=['action'] composition=['central_subject']"
+    },
+    {
+      "grammar_summary": "background@center/mid | headline@top/mid | headline@top/mid | headline@top/mid | headline@top/mid | supporting_information@top/mid | supporting_information@center/mid | supporting_information@center/mid | cta@center/mid | cta@bottom/mid",
+      "image_reference": "creator_e__T09_list_stack__00",
+      "item_id": "family-creator_e__T09_list_stack__00-creator_e__T09_list_sta",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=headline_first hierarchy=['hook', 'explanation', 'action'] composition=['top_entry', 'stacked_information', 'centred_information']"
+    },
+    {
+      "grammar_summary": "background@center/mid | supporting_information@center/mid",
+      "image_reference": "creator_c__T04_full_bleed_overlay__00",
+      "item_id": "family-creator_c__T04_full_bleed_overlay__00-creator_h__T10_",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=undetermined hierarchy=['explanation'] composition=['stacked_information', 'centred_information']"
+    },
+    {
+      "grammar_summary": "background@center/mid",
+      "image_reference": "creator_c__T04_full_bleed_overlay__01",
+      "item_id": "family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=undetermined hierarchy=[] composition=[]"
+    },
+    {
+      "grammar_summary": "background@center/mid | subject@center/mid",
+      "image_reference": "creator_d__T06_cover_with_logo__00",
+      "item_id": "family-creator_d__T06_cover_with_logo__00-creator_d__T06_cov",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=subject_first hierarchy=[] composition=['full_bleed_subject']"
+    },
+    {
+      "grammar_summary": "background@center/mid | headline@top/mid | headline@top/mid",
+      "image_reference": "creator_f__T07_data_table__00",
+      "item_id": "family-creator_f__T07_data_table__00-creator_f__T07_data_tab",
+      "ratings": {
+        "comment": "",
+        "grammar_matches_image": null,
+        "strategy_is_reasonable": null
+      },
+      "strategy_summary": "attention=headline_first hierarchy=['hook'] composition=['top_entry']"
+    }
+  ],
+  "minimum_raters": 2,
+  "protocol_version": "m4.0.0",
+  "questions": {
+    "grammar_matches_image": "Does the described grammar match what the image actually shows?",
+    "strategy_is_reasonable": "Is the described strategy a reasonable account of how this creator composes?"
+  }
+}
