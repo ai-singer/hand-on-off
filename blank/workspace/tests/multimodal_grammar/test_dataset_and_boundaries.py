@@ -658,13 +658,46 @@ class NoRuntimeIntegrationTests(unittest.TestCase):
         self.assertNotIn("DistillationEngine", source)
 
     def test_no_content_generation_exists(self) -> None:
+        """No module may define or import a generation capability.
+
+        Checked structurally rather than by substring. A bare token search flags a
+        module that merely *names* a forbidden capability — M5's
+        ``FORBIDDEN_KEYS`` contains ``"diffusion"`` precisely to reject it, which
+        a substring scan reads as the opposite of what it is.
+        """
+
         root = Path(__file__).resolve().parents[2] / "multimodal_creator"
+        forbidden_imports = {
+            "torch",
+            "diffusers",
+            "transformers",
+            "openai",
+            "stability_sdk",
+            "replicate",
+        }
+        forbidden_callables = (
+            "generate",
+            "render_image",
+            "publish",
+            "deploy",
+            "upload",
+        )
         offenders: list[str] = []
         for path in sorted(root.rglob("*.py")):
-            text = path.read_text(encoding="utf-8").lower()
-            for token in ("generate_image", "render_prompt", "diffusion", "text_to_image"):
-                if token in text:
-                    offenders.append(f"{path.name}:{token}")
+            tree = ast.parse(path.read_text(encoding="utf-8"))
+            for node in ast.walk(tree):
+                if isinstance(node, ast.Import):
+                    for alias in node.names:
+                        if alias.name.split(".")[0] in forbidden_imports:
+                            offenders.append(f"{path.name}:import {alias.name}")
+                elif isinstance(node, ast.ImportFrom) and node.module:
+                    if node.module.split(".")[0] in forbidden_imports:
+                        offenders.append(f"{path.name}:from {node.module}")
+                elif isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):
+                    lowered = node.name.lower()
+                    for token in forbidden_callables:
+                        if token in lowered:
+                            offenders.append(f"{path.name}:def {node.name}")
         self.assertEqual(offenders, [], f"generation code found: {offenders}")
 
 

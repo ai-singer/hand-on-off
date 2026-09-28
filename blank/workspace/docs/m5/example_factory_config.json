@@ -1,0 +1,172 @@
+{
+  "visual_profile": {
+    "profile_id": "vcp-4fea7437238d4bca",
+    "profile_version": "m5.0.0",
+    "creator_id": "creator_a",
+    "support": 10,
+    "confidence": 0.7,
+    "confidence_floor": 0.7
+  },
+  "identity": {
+    "style_family": "high_contrast__dense__full_bleed__display_led",
+    "visual_language": "information_first",
+    "complexity": "low",
+    "density": "dense",
+    "contrast": "high_contrast",
+    "framing": "full_bleed",
+    "typography": "display_led"
+  },
+  "composition": {
+    "preferred_layout": [
+      "top_entry"
+    ],
+    "forbidden_layout": [
+      "central_subject",
+      "offset_subject",
+      "full_bleed_subject",
+      "bottom_anchor",
+      "overlay_headline",
+      "split_columns",
+      "stacked_information",
+      "centred_information"
+    ]
+  },
+  "attention": {
+    "first": "headline",
+    "second": "subject",
+    "third": "headline"
+  },
+  "hierarchy": {
+    "primary": "hook"
+  },
+  "constraints": {
+    "must_have": [
+      "background_background",
+      "background_center_mid",
+      "background_dense",
+      "background_encloses_all",
+      "background_present",
+      "headline_above_subject",
+      "headline_first",
+      "headline_present",
+      "headline_secondary",
+      "headline_sparse",
+      "headline_top_mid",
+      "subject_moderate",
+      "subject_present",
+      "subject_primary"
+    ],
+    "avoid": [
+      "missing_information_support"
+    ]
+  },
+  "provenance": {
+    "visual_identity": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "artifact_kind": "CreatorStrategyPattern+VisualGrammar"
+      },
+      "derivation": "aggregated",
+      "confidence": 0.775,
+      "evidence": {
+        "style_traits": [
+          "background_dense",
+          "headline_sparse",
+          "subject_moderate"
+        ],
+        "average_region_area": 0.26919,
+        "attention_strategy": [
+          "headline_first"
+        ]
+      }
+    },
+    "composition_rules": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "enumerated_absent",
+      "confidence": 0.989333,
+      "evidence": {
+        "moves_present": [
+          "top_entry"
+        ],
+        "moves_absent": [
+          "central_subject",
+          "offset_subject",
+          "full_bleed_subject",
+          "bottom_anchor",
+          "overlay_headline",
+          "split_columns",
+          "stacked_information",
+          "centred_information"
+        ],
+        "vocabulary_size": 9
+      }
+    },
+    "attention_strategy": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "direct",
+      "confidence": 0.989333,
+      "evidence": {
+        "attention_support": [
+          1.0
+        ]
+      }
+    },
+    "hierarchy_pattern": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "direct",
+      "confidence": 0.989333,
+      "evidence": {
+        "strategies": [
+          "headline_first"
+        ],
+        "support": 10
+      }
+    },
+    "constraints": {
+      "source": {
+        "phase": "M4",
+        "artifact": "constraint-strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01",
+        "artifact_kind": "VisualConstraint"
+      },
+      "derivation": "thresholded",
+      "confidence": 0.7,
+      "evidence": {
+        "constraint_count": 1,
+        "must_have_features": [
+          "background_background",
+          "background_center_mid",
+          "background_dense",
+          "background_encloses_all",
+          "background_present",
+          "headline_above_subject",
+          "headline_first",
+          "headline_present",
+          "headline_secondary",
+          "headline_sparse",
+          "headline_top_mid",
+          "subject_moderate",
+          "subject_present",
+          "subject_primary"
+        ],
+        "must_have_frequency": 0.85
+      }
+    }
+  },
+  "source_pattern_ids": [
+    "strategy-family-creator_a__T03_three_card_grid__00-creator_a__T03_three_card_grid__01-creator_c__T03_three_card_grid__00-creator_c__T03_three_card_grid__01-creator_c__T03_three_card_grid__02-creator_f__T05_chart_with_caption__00-creator_f__T05_chart_with_caption__01-creator_f__T05_chart_with_caption__02-creator_h__T03_three_card_grid__00-creator_h__T03_three_card_grid__01"
+  ],
+  "generated_by": "multimodal_creator.profile m5.0.0"
+}

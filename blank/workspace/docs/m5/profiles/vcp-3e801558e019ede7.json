@@ -1,0 +1,148 @@
+{
+  "profile_version": "m5.0.0",
+  "profile_id": "vcp-3e801558e019ede7",
+  "creator_id": "creator_c",
+  "source_pattern_ids": [
+    "strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01"
+  ],
+  "support": 3,
+  "confidence": 0.5,
+  "visual_identity": {
+    "style_family": "dense__stacked",
+    "visual_language": "undetermined",
+    "complexity": "low",
+    "density": "dense",
+    "contrast": "undetermined",
+    "framing": "stacked",
+    "typography": "undetermined"
+  },
+  "composition_rules": {
+    "preferred": [],
+    "forbidden": [
+      "central_subject",
+      "offset_subject",
+      "full_bleed_subject",
+      "top_entry",
+      "bottom_anchor",
+      "overlay_headline",
+      "split_columns",
+      "stacked_information",
+      "centred_information"
+    ]
+  },
+  "attention_strategy": {
+    "first": "undetermined"
+  },
+  "hierarchy_pattern": {
+    "primary": "undetermined"
+  },
+  "constraints": {
+    "must_have": [
+      "background_background",
+      "background_center_mid",
+      "background_dense",
+      "background_present"
+    ],
+    "avoid": [
+      "missing_information_support",
+      "unclear_entry_point"
+    ]
+  },
+  "provenance": {
+    "attention_strategy": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "direct",
+      "confidence": 0.933333,
+      "evidence": {
+        "attention_support": [
+          1.0
+        ]
+      }
+    },
+    "composition_rules": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "enumerated_absent",
+      "confidence": 0.933333,
+      "evidence": {
+        "moves_present": [],
+        "moves_absent": [
+          "central_subject",
+          "offset_subject",
+          "full_bleed_subject",
+          "top_entry",
+          "bottom_anchor",
+          "overlay_headline",
+          "split_columns",
+          "stacked_information",
+          "centred_information"
+        ],
+        "vocabulary_size": 9
+      }
+    },
+    "constraints": {
+      "source": {
+        "phase": "M4",
+        "artifact": "constraint-strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+        "artifact_kind": "VisualConstraint"
+      },
+      "derivation": "thresholded",
+      "confidence": 1.0,
+      "evidence": {
+        "constraint_count": 1,
+        "must_have_features": [
+          "background_background",
+          "background_center_mid",
+          "background_dense",
+          "background_present"
+        ],
+        "must_have_frequency": 0.85
+      }
+    },
+    "hierarchy_pattern": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+        "artifact_kind": "CreatorStrategyPattern"
+      },
+      "derivation": "direct",
+      "confidence": 0.933333,
+      "evidence": {
+        "strategies": [
+          "undetermined"
+        ],
+        "support": 3
+      }
+    },
+    "visual_identity": {
+      "source": {
+        "phase": "M4",
+        "artifact": "strategy-family-creator_c__T04_full_bleed_overlay__01-creator_g__T04_full_bleed_overlay__00-creator_g__T04_full_bleed_overlay__01",
+        "artifact_kind": "CreatorStrategyPattern+VisualGrammar"
+      },
+      "derivation": "aggregated",
+      "confidence": 0.5,
+      "evidence": {
+        "style_traits": [
+          "background_dense"
+        ],
+        "average_region_area": 0.983255,
+        "attention_strategy": [
+          "undetermined"
+        ]
+      }
+    }
+  },
+  "notes": [
+    "derived from 1 M4 strategy pattern(s) over 3 grammar(s)",
+    "forbidden composition set rests on 3 supporting observations; absence over a small sample is weaker evidence than presence",
+    "forbidden moves are the composition vocabulary entries no cluster member exhibited, not moves observed to be avoided"
+  ]
+}

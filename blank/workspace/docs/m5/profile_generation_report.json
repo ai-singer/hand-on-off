@@ -1,0 +1,319 @@
+{
+  "schema": "m5_profile_generation/v1",
+  "profile_version": "m5.0.0",
+  "m4_benchmark": {
+    "cases_passed": 68,
+    "cases_total": 100,
+    "clusters": 8
+  },
+  "profiles_generated": 8,
+  "profiles": [
+    {
+      "profile_id": "vcp-4fea7437238d4bca",
+      "creator_id": "creator_a",
+      "support": 10,
+      "confidence": 0.7,
+      "style_family": "high_contrast__dense__full_bleed__display_led",
+      "visual_language": "information_first",
+      "complexity": "low",
+      "preferred_layout": [
+        "top_entry"
+      ],
+      "forbidden_layout_count": 8,
+      "attention": {
+        "first": "headline",
+        "second": "subject",
+        "third": "headline"
+      },
+      "hierarchy": {
+        "primary": "hook"
+      },
+      "must_have_count": 14,
+      "avoid": [
+        "missing_information_support"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-f519c6bc6117563f",
+      "creator_id": "creator_a",
+      "support": 9,
+      "confidence": 0.7,
+      "style_family": "high_contrast__dense__full_bleed__balanced_display_and_body",
+      "visual_language": "information_first",
+      "complexity": "medium",
+      "preferred_layout": [
+        "offset_subject",
+        "top_entry",
+        "split_columns",
+        "stacked_information"
+      ],
+      "forbidden_layout_count": 5,
+      "attention": {
+        "first": "subtitle",
+        "second": "subject",
+        "third": "subtitle"
+      },
+      "hierarchy": {
+        "primary": "hook",
+        "secondary": "explanation"
+      },
+      "must_have_count": 20,
+      "avoid": [
+        "unclear_entry_point"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-0ec3d69b4137e0f0",
+      "creator_id": "creator_b",
+      "support": 5,
+      "confidence": 0.7,
+      "style_family": "low_contrast__dense__full_bleed",
+      "visual_language": "subject_first",
+      "complexity": "low",
+      "preferred_layout": [
+        "central_subject"
+      ],
+      "forbidden_layout_count": 8,
+      "attention": {
+        "first": "subject",
+        "second": "cta",
+        "third": "cta"
+      },
+      "hierarchy": {
+        "primary": "action"
+      },
+      "must_have_count": 16,
+      "avoid": [
+        "missing_information_support"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-42a709fe7bbbb777",
+      "creator_id": "creator_e",
+      "support": 5,
+      "confidence": 0.7,
+      "style_family": "high_contrast__dense__full_bleed__balanced_display_and_body",
+      "visual_language": "information_first",
+      "complexity": "medium",
+      "preferred_layout": [
+        "top_entry",
+        "stacked_information",
+        "centred_information"
+      ],
+      "forbidden_layout_count": 6,
+      "attention": {
+        "first": "headline",
+        "second": "supporting_information",
+        "third": "cta"
+      },
+      "hierarchy": {
+        "primary": "hook",
+        "secondary": "explanation",
+        "tertiary": "action"
+      },
+      "must_have_count": 20,
+      "avoid": [],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-600c32e5c0e4ae8f",
+      "creator_id": "creator_c",
+      "support": 3,
+      "confidence": 0.675,
+      "style_family": "dense__full_bleed",
+      "visual_language": "undetermined",
+      "complexity": "low",
+      "preferred_layout": [
+        "stacked_information",
+        "centred_information"
+      ],
+      "forbidden_layout_count": 7,
+      "attention": {
+        "first": "supporting_information",
+        "second": "supporting_information"
+      },
+      "hierarchy": {
+        "primary": "explanation"
+      },
+      "must_have_count": 9,
+      "avoid": [
+        "unclear_entry_point"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-3e801558e019ede7",
+      "creator_id": "creator_c",
+      "support": 3,
+      "confidence": 0.5,
+      "style_family": "dense__stacked",
+      "visual_language": "undetermined",
+      "complexity": "low",
+      "preferred_layout": [],
+      "forbidden_layout_count": 9,
+      "attention": {
+        "first": "undetermined"
+      },
+      "hierarchy": {
+        "primary": "undetermined"
+      },
+      "must_have_count": 4,
+      "avoid": [
+        "missing_information_support",
+        "unclear_entry_point"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-dc6e25db6aee5e60",
+      "creator_id": "creator_d",
+      "support": 2,
+      "confidence": 0.7,
+      "style_family": "low_contrast__dense__full_bleed",
+      "visual_language": "subject_first",
+      "complexity": "low",
+      "preferred_layout": [
+        "full_bleed_subject"
+      ],
+      "forbidden_layout_count": 8,
+      "attention": {
+        "first": "subject"
+      },
+      "hierarchy": {
+        "primary": "undetermined"
+      },
+      "must_have_count": 13,
+      "avoid": [
+        "missing_information_support",
+        "unclear_entry_point"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    },
+    {
+      "profile_id": "vcp-02c53916e346200e",
+      "creator_id": "creator_f",
+      "support": 2,
+      "confidence": 0.7,
+      "style_family": "dense__full_bleed__display_led",
+      "visual_language": "information_first",
+      "complexity": "low",
+      "preferred_layout": [
+        "top_entry"
+      ],
+      "forbidden_layout_count": 8,
+      "attention": {
+        "first": "headline",
+        "second": "headline"
+      },
+      "hierarchy": {
+        "primary": "hook"
+      },
+      "must_have_count": 12,
+      "avoid": [
+        "missing_information_support"
+      ],
+      "validation": {
+        "schema": true,
+        "provenance_complete": true,
+        "rules_are_sourced": true,
+        "no_contradiction": true,
+        "no_generation_logic": true,
+        "no_universal_override": true
+      }
+    }
+  ],
+  "written": [
+    {
+      "profile_id": "vcp-4fea7437238d4bca",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-4fea7437238d4bca.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-f519c6bc6117563f",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-f519c6bc6117563f.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-0ec3d69b4137e0f0",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-0ec3d69b4137e0f0.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-42a709fe7bbbb777",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-42a709fe7bbbb777.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-600c32e5c0e4ae8f",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-600c32e5c0e4ae8f.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-3e801558e019ede7",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-3e801558e019ede7.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-dc6e25db6aee5e60",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-dc6e25db6aee5e60.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    },
+    {
+      "profile_id": "vcp-02c53916e346200e",
+      "json_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\vcp-02c53916e346200e.json",
+      "yaml_path": "F:\\Desktop\\workspace_audit_handoff\\blank\\workspace\\docs\\m5\\profiles\\visual_profile.yaml"
+    }
+  ]
+}
