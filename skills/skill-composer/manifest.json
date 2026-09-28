@@ -1,0 +1,15 @@
+{
+  "capabilities": [
+    "skill-composer",
+    "produces:a skill selection"
+  ],
+  "entrypoint": "SKILL.md",
+  "library_id": "creator_skill_library",
+  "library_layer": "meta",
+  "library_version": "1.0.0",
+  "name": "skill-composer",
+  "note": "a released skill is a declaration: there is nothing to run",
+  "package_filename": "creator-skill-composer.zip",
+  "produces": "a skill selection",
+  "version": "1.0.0"
+}

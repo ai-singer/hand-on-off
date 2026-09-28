@@ -418,6 +418,7 @@ class ImportIsolationTests(unittest.TestCase):
             "re",
             "io",
             "hashlib",
+            "shutil",
             "zipfile",
             "dataclasses",
             "enum",

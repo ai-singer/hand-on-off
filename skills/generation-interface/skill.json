@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "generation-interface",
+    "produces:a declared capability"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "generation-interface",
+  "produces": "a declared capability",
+  "purpose": "Declare the interface a generation adapter must satisfy.",
+  "skill_type": "generation"
+}

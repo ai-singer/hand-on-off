@@ -1,0 +1,15 @@
+{
+  "capabilities": [
+    "quality-review",
+    "produces:a review decision with reasons"
+  ],
+  "entrypoint": "SKILL.md",
+  "library_id": "creator_skill_library",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "quality-review",
+  "note": "a released skill is a declaration: there is nothing to run",
+  "package_filename": "creator-quality-review.zip",
+  "produces": "a review decision with reasons",
+  "version": "1.0.0"
+}

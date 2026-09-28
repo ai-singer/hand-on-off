@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "source-discovery",
+    "produces:source references"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "source-discovery",
+  "produces": "source references",
+  "purpose": "Find and enumerate the material a creator draws from.",
+  "skill_type": "source"
+}

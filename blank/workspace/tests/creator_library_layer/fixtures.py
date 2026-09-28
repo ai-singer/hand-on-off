@@ -32,7 +32,6 @@ PACKAGE_FILES: tuple[str, ...] = (
     "skill_package_validation.py",
     "validation.py",
 )
-
 #: The library directory prefix inside the archive.
 LIB = "creator_skill_library"
 

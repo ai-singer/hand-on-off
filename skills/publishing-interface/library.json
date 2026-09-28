@@ -1,0 +1,27 @@
+{
+  "companions": [
+    "domain-plugin-builder",
+    "domain-plugin-validator",
+    "generation-interface",
+    "identity-rules",
+    "quality-review",
+    "risk-review",
+    "skill-composer",
+    "source-discovery",
+    "source-normalization",
+    "template-extraction",
+    "text-distillation",
+    "visual-distillation"
+  ],
+  "format_version": "1.0.0",
+  "generated_by": "creator_library.builder c0.5",
+  "library_id": "creator_skill_library",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "manifest_schema_version": "1.0.0",
+  "meta_skill_count": 3,
+  "packaged_alone": true,
+  "partition_note": "this package is one skill of the library, packaged alone for upload; the whole library also ships as creator_skill_library.zip",
+  "skill": "publishing-interface",
+  "universal_skill_count": 10
+}

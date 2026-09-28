@@ -1,0 +1,15 @@
+{
+  "capabilities": [
+    "source-normalization",
+    "produces:normalized source records"
+  ],
+  "entrypoint": "SKILL.md",
+  "library_id": "creator_skill_library",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "source-normalization",
+  "note": "a released skill is a declaration: there is nothing to run",
+  "package_filename": "creator-source-normalization.zip",
+  "produces": "normalized source records",
+  "version": "1.0.0"
+}

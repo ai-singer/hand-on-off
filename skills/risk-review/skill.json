@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "risk-review",
+    "produces:a risk decision with reasons"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "risk-review",
+  "produces": "a risk decision with reasons",
+  "purpose": "Evaluate an artifact against the declared risk constraints.",
+  "skill_type": "review"
+}

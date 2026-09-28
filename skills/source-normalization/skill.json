@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "source-normalization",
+    "produces:normalized source records"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "source-normalization",
+  "produces": "normalized source records",
+  "purpose": "Normalize raw material into the shape the pipeline consumes.",
+  "skill_type": "source"
+}

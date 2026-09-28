@@ -60,6 +60,7 @@ from __future__ import annotations
 
 import io
 import json
+import shutil
 import zipfile
 from dataclasses import dataclass
 from pathlib import Path
@@ -475,7 +476,7 @@ def write_skill_packages(
     packages: Sequence[SkillPackage],
     out_root: str | Path,
 ) -> list[Path]:
-    """Write every package, plus the two index files, into ``out_root``."""
+    """Write every package as a zip, plus the two index files, into ``out_root``."""
 
     target = Path(out_root)
     target.mkdir(parents=True, exist_ok=True)
@@ -517,6 +518,168 @@ def write_skill_packages(
     return written
 
 
+def unpack_skill_package(
+    package: SkillPackage,
+    out_root: str | Path,
+) -> Path:
+    """Write one package **unpacked** — a skill directory, not an archive.
+
+    This is the form a shared skill library actually reads. It matches a skill by its
+    description and then loads ``SKILL.md`` from the skill's directory, so an archive
+    has to be extracted before anything can see it. Handing over the directory skips
+    that step, and writing the members out directly produces exactly the same tree as
+    extracting the zip would.
+    """
+
+    target = Path(out_root) / package.root
+    if target.exists():
+        shutil.rmtree(target)
+    target.mkdir(parents=True, exist_ok=True)
+
+    for member in sorted(package.members, key=package_member_sort_key):
+        filename = member.rsplit("/", 1)[-1]
+        (target / filename).write_bytes(package.members[member])
+
+    return target
+
+
+def unpack_skill_packages(
+    packages: Sequence[SkillPackage],
+    out_root: str | Path,
+    *,
+    with_indexes: bool = True,
+) -> list[Path]:
+    """Write every package unpacked, into one directory.
+
+    ``out_root`` ends up holding one directory per skill — the shape a shared skill
+    library is pointed at — plus the two index files unless ``with_indexes`` is off.
+    """
+
+    target = Path(out_root)
+    target.mkdir(parents=True, exist_ok=True)
+
+    written: list[Path] = []
+    for package in packages:
+        written.append(unpack_skill_package(package, target))
+
+    if not with_indexes:
+        return written
+
+    version = packages[0].version if packages else LIBRARY_FORMAT_VERSION
+
+    index_path = target / "INDEX.json"
+    index_path.write_text(
+        json.dumps(
+            unpacked_index(packages, library_version=version),
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    written.append(index_path)
+
+    checksums_path = target / "CHECKSUMS.json"
+    checksums_path.write_text(
+        json.dumps(
+            unpacked_checksum_index(packages),
+            ensure_ascii=False,
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    written.append(checksums_path)
+
+    return written
+
+
+def unpacked_index(
+    packages: Sequence[SkillPackage],
+    *,
+    library_version: str = LIBRARY_FORMAT_VERSION,
+) -> dict[str, Any]:
+    """The upload index for an **unpacked** set: directories, not archives.
+
+    Records each skill's directory and the digest of each of its files, because there
+    is no archive digest to record: the unit here is a directory.
+    """
+
+    entries: list[dict[str, Any]] = []
+    for package in packages:
+        entries.append(
+            {
+                "skill": package.name,
+                "layer": package.layer,
+                "version": package.version,
+                "directory": package.root,
+                "entrypoint": f"{package.root}/SKILL.md",
+                "files": sorted(
+                    member.rsplit("/", 1)[-1] for member in package.members
+                ),
+                "bytes": sum(
+                    len(payload) for payload in package.members.values()
+                ),
+            }
+        )
+
+    return {
+        "library_id": LIBRARY_ID,
+        "library_version": library_version,
+        "format_version": LIBRARY_FORMAT_VERSION,
+        "generated_by": GENERATED_BY,
+        "distribution": "unpacked",
+        "skill_count": len(entries),
+        "universal_skill_count": sum(1 for e in entries if e["layer"] == "universal"),
+        "meta_skill_count": sum(1 for e in entries if e["layer"] == "meta"),
+        "total_bytes": sum(e["bytes"] for e in entries),
+        "purpose": (
+            "one directory per skill, each holding SKILL.md at its root, for a "
+            "shared skill library that loads SKILL.md from a skills directory"
+        ),
+        "note": (
+            "an archive would have to be extracted before anything could read "
+            "SKILL.md, so these are written out rather than zipped"
+        ),
+        "skills": entries,
+    }
+
+
+def unpacked_checksum_index(
+    packages: Sequence[SkillPackage],
+) -> dict[str, Any]:
+    """Per-**file** digests for an unpacked set.
+
+    A zipped set has one digest per archive. An unpacked set has one per file, and
+    ``SKILL.md`` — the file a library actually reads — is the one worth checking
+    first, so it is listed first within each skill.
+    """
+
+    files: dict[str, Any] = {}
+    for package in packages:
+        paths = package_members(package.name)
+        for filename in ("SKILL.md", "manifest.json", "skill.json", LIBRARY_FILE):
+            member = paths[filename]
+            payload = package.members[member]
+            files[member] = {
+                "sha256": digest_bytes(payload),
+                "bytes": len(payload),
+                "skill": package.name,
+                "library_layer": package.layer,
+            }
+
+    return {
+        "algorithm": "sha256",
+        "distribution": "unpacked",
+        "skill_count": len(packages),
+        "file_count": len(files),
+        "entrypoint_first": True,
+        "files": files,
+    }
+
+
 __all__ = [
     "COMPRESSION",
     "COMPRESS_LEVEL",
@@ -531,6 +694,10 @@ __all__ = [
     "library_metadata",
     "package_manifest",
     "skill_layer",
+    "unpack_skill_package",
+    "unpack_skill_packages",
+    "unpacked_checksum_index",
+    "unpacked_index",
     "upload_index",
     "write_skill_packages",
 ]

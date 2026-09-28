@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "text-distillation",
+    "produces:text rules"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "text-distillation",
+  "produces": "text rules",
+  "purpose": "Distill normalized material into the text rules an instance carries.",
+  "skill_type": "distillation"
+}

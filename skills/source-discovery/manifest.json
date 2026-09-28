@@ -1,0 +1,15 @@
+{
+  "capabilities": [
+    "source-discovery",
+    "produces:source references"
+  ],
+  "entrypoint": "SKILL.md",
+  "library_id": "creator_skill_library",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "source-discovery",
+  "note": "a released skill is a declaration: there is nothing to run",
+  "package_filename": "creator-source-discovery.zip",
+  "produces": "source references",
+  "version": "1.0.0"
+}

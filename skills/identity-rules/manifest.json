@@ -1,0 +1,15 @@
+{
+  "capabilities": [
+    "identity-rules",
+    "produces:identity"
+  ],
+  "entrypoint": "SKILL.md",
+  "library_id": "creator_skill_library",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "identity-rules",
+  "note": "a released skill is a declaration: there is nothing to run",
+  "package_filename": "creator-identity-rules.zip",
+  "produces": "identity",
+  "version": "1.0.0"
+}

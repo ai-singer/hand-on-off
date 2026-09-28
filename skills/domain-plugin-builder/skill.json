@@ -1,0 +1,14 @@
+{
+  "accepts": "domain_request",
+  "capabilities": [
+    "domain-plugin-builder",
+    "produces:a domain plugin"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "meta",
+  "library_version": "1.0.0",
+  "name": "domain-plugin-builder",
+  "produces": "a domain plugin",
+  "purpose": "Turn a domain request into a domain plugin document.",
+  "skill_type": "builder"
+}

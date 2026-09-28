@@ -1,0 +1,13 @@
+{
+  "capabilities": [
+    "identity-rules",
+    "produces:identity"
+  ],
+  "declaration_version": "1.0.0",
+  "library_layer": "universal",
+  "library_version": "1.0.0",
+  "name": "identity-rules",
+  "produces": "identity",
+  "purpose": "Turn a declared domain identity into an instance identity block.",
+  "skill_type": "identity"
+}
