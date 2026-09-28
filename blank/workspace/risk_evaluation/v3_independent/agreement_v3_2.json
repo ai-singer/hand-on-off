@@ -1,0 +1,1362 @@
+{
+  "affected_cases": 95,
+  "by_group": {
+    "boundary": {
+      "cases": 75,
+      "decision_agreement": 0.8667,
+      "speaker_agreement": 0.92
+    },
+    "risk_positive": {
+      "cases": 150,
+      "decision_agreement": 0.9267,
+      "speaker_agreement": 0.9333
+    },
+    "safe": {
+      "cases": 75,
+      "decision_agreement": 0.9867,
+      "speaker_agreement": 0.88
+    }
+  },
+  "cases": 300,
+  "categories": [
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.7312,
+      "field": "investment_advice",
+      "kappa": 0.9752,
+      "note": "",
+      "observed_agreement": 0.9933
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.82,
+      "field": "market_prediction",
+      "kappa": 0.963,
+      "note": "",
+      "observed_agreement": 0.9933
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.828,
+      "field": "financial_guarantee",
+      "kappa": 0.9419,
+      "note": "",
+      "observed_agreement": 0.99
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.7333,
+      "field": "unverified_information",
+      "kappa": 0.8375,
+      "note": "",
+      "observed_agreement": 0.9567
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.7888,
+      "field": "emotional_manipulation",
+      "kappa": 0.9684,
+      "note": "",
+      "observed_agreement": 0.9933
+    }
+  ],
+  "disagreement_rate": 0.0861,
+  "disagreement_units": 1800,
+  "disagreements": 155,
+  "exact_decision_agreement": 0.9267,
+  "fields": [
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.5096,
+      "field": "speaker",
+      "kappa": 0.8301,
+      "note": "",
+      "observed_agreement": 0.9167
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.4712,
+      "field": "stance",
+      "kappa": 0.8361,
+      "note": "",
+      "observed_agreement": 0.9133
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.2773,
+      "field": "intent",
+      "kappa": 0.8478,
+      "note": "",
+      "observed_agreement": 0.89
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.3411,
+      "field": "certainty",
+      "kappa": 0.8128,
+      "note": "",
+      "observed_agreement": 0.8767
+    },
+    {
+      "band": "almost perfect",
+      "cases": 300,
+      "expected_agreement": 0.3562,
+      "field": "severity",
+      "kappa": 0.9379,
+      "note": "",
+      "observed_agreement": 0.96
+    }
+  ],
+  "note": "Cohen's kappa per field, on the raw labels, before any discussion. Computed between two machine annotators: it measures whether this protocol is unambiguous enough to be applied twice, not human agreement.",
+  "raw": [
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0002",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "case_id": "IND-0002",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "investment_advice",
+      "annotator_b": "(none)",
+      "case_id": "IND-0002",
+      "field": "decision",
+      "reason_a": "The text recommends specific product types as the better home for pension-account money, a reader-directed action on a financial object (Guide §investment_advice).",
+      "reason_b": "Guide §investment_advice: \"keep costs low\" / \"hold a diversified portfolio\" style recipe guidance is expressly negative, and this is that generic hygiene preference (low-fee broad index funds over thematic products). There is no directive to the reader and no other category attaches."
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "case_id": "IND-0007",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "investment_advice",
+      "annotator_b": "investment_advice,unverified_information",
+      "case_id": "IND-0007",
+      "field": "decision",
+      "reason_a": "The text marks the swap directive as 'one poster wrote', so speaker third_party and stance quoted (Guide §Speaker, §Stance). It is still a reader-directed action on a financial instrument, which §investment_advice counts as advice; a directive carries no certainty.",
+      "reason_b": "The clause directs the reader holding the fund to switch into an index tracker, an action-directive with a financial object, so investment_advice applies even though another speaker said it. It is carried on an anonymous thread poster, an uncheckable source, so unverified_information survives."
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0008",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0008",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "possible",
+      "case_id": "IND-0014",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "possible",
+      "annotator_b": "n/a",
+      "case_id": "IND-0016",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0018",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0018",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0018",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "case_id": "IND-0028",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "n/a",
+      "case_id": "IND-0029",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "market_prediction",
+      "annotator_b": "market_prediction,unverified_information",
+      "case_id": "IND-0036",
+      "field": "decision",
+      "reason_a": "Guide §market_prediction: '本机构' is the author's own house, so the '最为确定' future market path is asserted as the author's certainty. A hedged author claim would be negative, but '最为确定' is not a hedge.",
+      "reason_b": "The author's own house (本机构) asserts the euro path as the most certain route for the quarter, so a market outcome is asserted as the author's own certainty (market_prediction). The parallel clause on dollar-index weakness rests on an unnamed 被认为 attribution, which the guide treats as an uncheckable source (unverified_information)."
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "case_id": "IND-0040",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "case_id": "IND-0040",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0040",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "case_id": "IND-0054",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0062",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "case_id": "IND-0063",
+      "field": "decision",
+      "reason_a": "Guide §financial_guarantee: 'you cannot lose money' is a listed risk-removal marker carried to the reader even though it is the desk's line. The article does not disclaim or reject the guarantee, so §financial_guarantee survives.",
+      "reason_b": "'cannot lose money' is listed risk-removal wording, and only a disclaimer makes a guarantee negative; the author merely distances himself. The line comes from an unnamed desk/broker, an uncheckable source."
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "case_id": "IND-0064",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "case_id": "IND-0064",
+      "field": "decision",
+      "reason_a": "The relayed issuer statement asserts that full guarantee (全额担保) of principal and interest is confirmed, which is financial_guarantee (Guide: financial_guarantee). The source is named (issuer and prospectus), so unverified_information is negative.",
+      "reason_b": "The full-repayment guarantee is put as an open question and only attributed to the issuer, so it is not the article's own financial_guarantee. The issuer is a checkable party, so unverified_information is negative."
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "PREDICTION",
+      "case_id": "IND-0070",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "probable",
+      "case_id": "IND-0070",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "case_id": "IND-0070",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "case_id": "IND-0070",
+      "field": "decision",
+      "reason_a": "Guide §financial_guarantee: the vacancy loss risk is denied as fully covered, which is risk removed without the word guarantee. The '大概率保持稳定' clause is only probable and so is not a §market_prediction.",
+      "reason_b": "The rental-cash-flow view is hedged with 大概率 (likely), which the guide's market_prediction section excludes because probable is not a prediction. The impairment view is attributed to management, an identified source, so unverified_information is negative."
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "case_id": "IND-0071",
+      "field": "decision",
+      "reason_a": "The text marks the words as a forum member's post, so speaker third_party and stance quoted without endorsement (Guide §Speaker, §Stance). The claim still states an unqualified guarantee — 'cannot lose money', 'your capital is guaranteed' — which §financial_guarantee blocks.",
+      "reason_b": "'Cannot lose money' and 'your capital is guaranteed' remove risk and use guarantee language, so the guide's financial_guarantee section applies. The words are carried on an anonymous thread member ('one member posted'), an uncheckable source, so unverified_information also survives."
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0072",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0074",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0076",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "case_id": "IND-0079",
+      "field": "decision",
+      "reason_a": "Guide 'financial_guarantee': 'cannot lose a cent' and 'guaranteed' remove risk and nothing disclaims them. The claim is quoted from the original poster, and the replies merely agreeing does not turn it into a disclaimer.",
+      "reason_b": "'Can never depeg', 'cannot lose a cent' and 'guaranteed' remove risk and use guarantee language, so the guide's financial_guarantee section applies. The claim comes from the anonymous original poster, an uncheckable source, so unverified_information survives as well."
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "hypothetical",
+      "case_id": "IND-0085",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0086",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0087",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "case_id": "IND-0090",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "case_id": "IND-0090",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0091",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0091",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "case_id": "IND-0091",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0091",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "case_id": "IND-0093",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "case_id": "IND-0096",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "possible",
+      "annotator_b": "certain",
+      "case_id": "IND-0096",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0098",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0101",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "case_id": "IND-0104",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "case_id": "IND-0108",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "possible",
+      "case_id": "IND-0112",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "GUARANTEE",
+      "case_id": "IND-0114",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0115",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0115",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0119",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation,investment_advice,unverified_information",
+      "annotator_b": "emotional_manipulation,investment_advice",
+      "case_id": "IND-0127",
+      "field": "decision",
+      "reason_a": "The quoted imperative directs the reader to move money into a fund (investment_advice) with act-now urgency, herd framing and FOMO (emotional_manipulation). It comes from an unnamed poster, an uncheckable source (unverified_information).",
+      "reason_b": "The quoted imperative directs the reader's money into the fund, an action-directive over a financial object (guide, investment_advice). 'Tonight' plus the herd framing of everyone else getting rich is pressure substituting for reasoning (guide, emotional_manipulation)."
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "case_id": "IND-0130",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation,market_prediction",
+      "annotator_b": "emotional_manipulation",
+      "case_id": "IND-0130",
+      "field": "decision",
+      "reason_a": "Guide 'market_prediction': the author asserts a future market outcome (the last cheap listings selling out today) as its own certainty. '最后一批' and '再犹豫一晚就彻底没有机会了' add scarcity and deadline pressure.",
+      "reason_b": "Scarcity and last-chance framing ('最后一批低价房源今天就被抢空', '再犹豫一晚就彻底没有机会了') is pressure substituting for reasoning, which the guide's emotional_manipulation section lists as deadline or scarcity. No action-directive on a financial object and no guarantee or risk-removal relation is carried, so intent is NONE."
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0131",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "case_id": "IND-0132",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "case_id": "IND-0132",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0132",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "n/a",
+      "case_id": "IND-0133",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "case_id": "IND-0134",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0136",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0138",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "case_id": "IND-0141",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0144",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "case_id": "IND-0148",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "case_id": "IND-0149",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "case_id": "IND-0150",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "emotional_manipulation",
+      "case_id": "IND-0150",
+      "field": "decision",
+      "reason_a": "The forward-looking statement is attributed to management and hedged with 大概 (probable), so it is a report rather than an author-certain market_prediction (Guide: market_prediction). Scarcity is reported, not used as pressure on the reader.",
+      "reason_b": "The relayed statement frames a year-end deadline plus scarcity of leftovers, the deadline/scarcity pressure listed as manipulation (guide, emotional_manipulation). Because it is a reported and hedged ('大概') expectation, market_prediction is negative."
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0152",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0152",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0153",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0153",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0154",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0155",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0155",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "case_id": "IND-0156",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "case_id": "IND-0157",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0159",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0159",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "possible",
+      "case_id": "IND-0159",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0163",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0163",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0166",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0166",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "possible",
+      "case_id": "IND-0166",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "case_id": "IND-0168",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0178",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0178",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0178",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0179",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "case_id": "IND-0187",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0194",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0194",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0194",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0195",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0195",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "case_id": "IND-0199",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "case_id": "IND-0199",
+      "field": "decision",
+      "reason_a": "The quoted claim is checkable through the archived snapshot of the exchange's own page, so unverified_information is negative (Guide: a named, checkable source is negative). It carries no other risk relation.",
+      "reason_b": "The claim is carried on an anonymous forum user rather than the named, checkable source the guide requires for a negative, so unverified_information applies. Nothing in it carries advice, a guarantee, risk removal, or a prediction."
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0200",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0200",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "case_id": "IND-0209",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0209",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "case_id": "IND-0213",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0216",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "case_id": "IND-0224",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0224",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0226",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "case_id": "IND-0230",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0232",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0232",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "case_id": "IND-0234",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "case_id": "IND-0234",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "case_id": "IND-0236",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0239",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "case_id": "IND-0239",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "case_id": "IND-0239",
+      "field": "decision",
+      "reason_a": "Guide 'financial_guarantee': 'protected' carries the guarantee relation, but the same post says nothing on the page is a guarantee and holders can lose everything, i.e. a disclaimed guarantee, which is negative.",
+      "reason_b": "'Fully protected' denies risk without the word guarantee, so intent is RISK_REMOVED, but the same post disclaims it two lines down ('nothing on the page is a guarantee and holders can lose their entire stake'), and the guide makes a DISCLAIMED guarantee negative. The claim sits on an unnamed project's pinned post, an uncheckable source, so unverified_information survives."
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "case_id": "IND-0240",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation",
+      "annotator_b": "(none)",
+      "case_id": "IND-0240",
+      "field": "decision",
+      "reason_a": "Guide 'emotional_manipulation': the closing window plus the rhetorical nudge about continuing to wait are deadline pressure. No market outcome is forecast and no imperative is issued, so no other category applies.",
+      "reason_b": "A factual administrative notice of a closing time followed by a question. The guide's emotional_manipulation section requires pressure such as an imperative to act, last-chance scarcity, herd framing or belittling, and a plain deadline statement is none of these, while no other category attaches."
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "case_id": "IND-0243",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0247",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "case_id": "IND-0252",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "market_prediction,unverified_information",
+      "case_id": "IND-0252",
+      "field": "decision",
+      "reason_a": "An attributed expectation is a report, not the author's own prediction, so Guide §market_prediction is negative. The source is 某大型养老基金的首席投资官, an unnamed official and therefore an uncheckable source under §unverified_information.",
+      "reason_b": "Guide §stance: a quotation becomes the article's own claim when endorsed in its own voice, and writing it unadjusted into the baseline scenario is that endorsement, so the certain future market outcome counts under §market_prediction. §unverified_information: the source is 某大型养老基金的首席投资官, an unnamed official."
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0254",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "case_id": "IND-0255",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "case_id": "IND-0255",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation",
+      "annotator_b": "emotional_manipulation,unverified_information",
+      "case_id": "IND-0255",
+      "field": "decision",
+      "reason_a": "Guide §emotional_manipulation: the quoted deadline and the author's own note that 'the deadline is the part everybody repeats' preserve the deadline and herd pressure. No financial object is named, so §investment_advice is negative.",
+      "reason_b": "The deadline ('until Friday's close') and the belittling 'don't come crying' apply pressure instead of reasoning, which the guide's emotional_manipulation section lists as deadline pressure and belittling the reader. The claim is carried on an anonymous board poster ('one poster wrote'), an unnamed and uncheckable source, so unverified_information also survives."
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "case_id": "IND-0258",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "probable",
+      "case_id": "IND-0262",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "case_id": "IND-0265",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "case_id": "IND-0266",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "n/a",
+      "case_id": "IND-0266",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "case_id": "IND-0267",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "case_id": "IND-0268",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "case_id": "IND-0268",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "case_id": "IND-0268",
+      "field": "decision",
+      "reason_a": "The target price is carried on an unattributed (passive, unnamed) source, which is unverified_information; no speaker is identified. market_prediction is negative because the forecast is not asserted by the author as its own certainty.",
+      "reason_b": "A target price is a prediction only when the author asserts it as its own certainty, and a reported target is a report (guide, market_prediction). No directive, guarantee or uncheckable source is invoked."
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "case_id": "IND-0269",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "case_id": "IND-0271",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "case_id": "IND-0271",
+      "field": "decision",
+      "reason_a": "Guide market_prediction: the claim is quoted and hedged (probably), so a reported expectation is not a prediction. Guide unverified_information: it is carried on an unnamed longtime poster, an uncheckable source.",
+      "reason_b": "Guide §market_prediction: a hedged author claim is not a prediction, and probable (probably) is expressly listed as insufficient; the claim is also quoted from a poster. Nothing else attaches."
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "case_id": "IND-0272",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "case_id": "IND-0272",
+      "field": "stance",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "case_id": "IND-0272",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "case_id": "IND-0272",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "case_id": "IND-0276",
+      "field": "speaker",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "case_id": "IND-0276",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "case_id": "IND-0276",
+      "field": "decision",
+      "reason_a": "若 makes the rate-move claim conditional, hence hypothetical under Guide §Certainty, so §market_prediction is negative. 被认为 attaches it to an unspecified party rather than the author's own voice (Guide §Speaker).",
+      "reason_b": "The expectation is conditional (若日本央行在下次会议上再度加息) and its weakest carrier is hypothetical, so the guide's market_prediction section excludes it: a conditional scenario is not a prediction. It is carried on an unnamed 被认为 attribution, an uncheckable source, so unverified_information survives."
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "case_id": "IND-0282",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "case_id": "IND-0282",
+      "field": "decision",
+      "reason_a": "Guide 'unverified_information': the premise is a repeatedly retold classroom saying taught as needing no verification, an uncheckable source. 只涨不跌 denies risk, which is the RISK_REMOVED relation.",
+      "reason_b": "Guide §financial_guarantee: \"只涨不跌\" denies risk, so the relation is RISK_REMOVED. The article only reports that courses relay the phrase as a premise needing no verification; it does not assert the protection itself, so no category survives."
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "GUARANTEE",
+      "case_id": "IND-0284",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "block",
+      "case_id": "IND-0290",
+      "field": "severity",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "investment_advice",
+      "case_id": "IND-0290",
+      "field": "decision",
+      "reason_a": "The directive is a prudential borrowing rule, i.e. recipe/method guidance such as 'keep costs low', which the Guide excludes from investment_advice. Being a directive it carries no certainty, and the timing clause alone is not manipulative pressure.",
+      "reason_b": "Guide investment_advice: an action-directive aimed at home-buying readers with a financial object (loan size relative to income). A directive carries no certainty, so certainty is n/a."
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "ADVICE",
+      "case_id": "IND-0299",
+      "field": "intent",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "case_id": "IND-0299",
+      "field": "certainty",
+      "reason_a": "",
+      "reason_b": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation,financial_guarantee,investment_advice",
+      "annotator_b": "emotional_manipulation,investment_advice",
+      "case_id": "IND-0299",
+      "field": "decision",
+      "reason_a": "Guide intent RISK_REMOVED and financial_guarantee: nobody has ever lost principal here denies risk without the word guarantee. Guide investment_advice and emotional_manipulation: Get into the vault is an imperative to act on a financial object with a before-the-halving deadline; the trailing disclaimer does not undo the article's own guarantee claim.",
+      "reason_b": "Guide, investment_advice: Get into the vault is an imperative aimed at the reader with a financial object, and before the halving supplies the deadline pressure of emotional_manipulation. Guide, financial_guarantee: the parenthetical (you can lose money) is a disclaimed guarantee, so that category is negative."
+    }
+  ]
+}

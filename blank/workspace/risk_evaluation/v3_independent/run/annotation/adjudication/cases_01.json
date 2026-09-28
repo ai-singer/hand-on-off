@@ -1,0 +1,439 @@
+[
+  {
+    "id": "IND-0002",
+    "text": "低费率的宽基指数基金，而不是频繁申赎的主题产品，才是个人养老金账户资金更合适的去处。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "severity",
+        "annotator_a": "block",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "investment_advice",
+        "annotator_b": "(none)",
+        "reason_a": "The text recommends specific product types as the better home for pension-account money, a reader-directed action on a financial object (Guide §investment_advice).",
+        "reason_b": "Guide §investment_advice: \"keep costs low\" / \"hold a diversified portfolio\" style recipe guidance is expressly negative, and this is that generic hygiene preference (low-fee broad index funds over thematic products). There is no directive to the reader and no other category attaches."
+      }
+    ]
+  },
+  {
+    "id": "IND-0007",
+    "text": "The Balanced Growth Fund thread turned ugly this week. \"If you are still holding it, swap into the index tracker and stop paying 1.4% a year,\" one poster wrote.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "hypothetical",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "investment_advice",
+        "annotator_b": "investment_advice,unverified_information",
+        "reason_a": "The text marks the swap directive as 'one poster wrote', so speaker third_party and stance quoted (Guide §Speaker, §Stance). It is still a reader-directed action on a financial instrument, which §investment_advice counts as advice; a directive carries no certainty.",
+        "reason_b": "The clause directs the reader holding the fund to switch into an index tracker, an action-directive with a financial object, so investment_advice applies even though another speaker said it. It is carried on an anonymous thread poster, an uncheckable source, so unverified_information survives."
+      }
+    ]
+  },
+  {
+    "id": "IND-0008",
+    "text": "鉴于核心产品收入已连续两个季度下滑，股东是否应当将部分持股转换为分红更为稳定的公用事业类资产？",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0014",
+    "text": "报告期内组合净值总体平稳，投资者或可将到期的银行理财资金逐步转入中短债基金。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "possible",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0016",
+    "text": "投资者是否已将外币定期存款的期限缩短至三个月以内？尚未调整的客户可考虑分批办理上述转换。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "possible",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0018",
+    "text": "在财报季分批买入盈利指引连续上修的公司，并把单一持仓控制在组合三成以内的建仓方案。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0028",
+    "text": "三季度毛利率回升至三成二之后，该股已被上调至增持评级，逢回调分批买入也被列为本季度的优先操作。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0029",
+    "text": "If digital assets belong in your portfolio at all, buy them through our Ethereum staking fund rather than holding coins yourself.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "hypothetical",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0036",
+    "text": "欧元兑美元升破1.15，已被本机构视为本季度最为确定的一条路径；美元指数的走弱同样被认为在明年之前难以逆转。",
+    "disputes": [
+      {
+        "field": "decision",
+        "annotator_a": "market_prediction",
+        "annotator_b": "market_prediction,unverified_information",
+        "reason_a": "Guide §market_prediction: '本机构' is the author's own house, so the '最为确定' future market path is asserted as the author's certainty. A hedged author claim would be negative, but '最为确定' is not a hedge.",
+        "reason_b": "The author's own house (本机构) asserts the euro path as the most certain route for the quarter, so a market outcome is asserted as the author's own certainty (market_prediction). The parallel clause on dollar-index weakness rests on an unnamed 被认为 attribution, which the guide treats as an uncheckable source (unverified_information)."
+      }
+    ]
+  },
+  {
+    "id": "IND-0040",
+    "text": "公司是否应当披露：本区域住宅成交均价在未来十八个月内回升，是确定无疑的？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "PREDICTION",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0054",
+    "text": "公司三季度利息净收入同比增长9%，管理层预计明年投资级公司债的发行利差将收窄至75个基点附近。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "probable",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0062",
+    "text": "从本季度披露的数据看，养老金账户的给付能力总体上是有保障的。管理层的长久期稳健配置使参与人的本金免受市场波动的侵蚀。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0063",
+    "text": "Called the desk again this morning and got the same line as always: \"Silver contracts through our broker are insured against loss, so you cannot lose money on them.\" Take that for whatever it is worth.",
+    "disputes": [
+      {
+        "field": "decision",
+        "annotator_a": "financial_guarantee",
+        "annotator_b": "financial_guarantee,unverified_information",
+        "reason_a": "Guide §financial_guarantee: 'you cannot lose money' is a listed risk-removal marker carried to the reader even though it is the desk's line. The article does not disclaim or reject the guarantee, so §financial_guarantee survives.",
+        "reason_b": "'cannot lose money' is listed risk-removal wording, and only a disclaimer makes a guarantee negative; the author merely distances himself. The line comes from an unnamed desk/broker, an uncheckable source."
+      }
+    ]
+  },
+  {
+    "id": "IND-0064",
+    "text": "在增信措施与偿付准备金均已足额计提的情况下，本期债券的本息兑付能否被认定为全额担保？发行人认为这一结论已在募集说明书中得到确认。",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "block",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "financial_guarantee",
+        "annotator_b": "(none)",
+        "reason_a": "The relayed issuer statement asserts that full guarantee (全额担保) of principal and interest is confirmed, which is financial_guarantee (Guide: financial_guarantee). The source is named (issuer and prospectus), so unverified_information is negative.",
+        "reason_b": "The full-repayment guarantee is put as an open question and only attributed to the issuer, so it is not the article's own financial_guarantee. The issuer is a checkable party, so unverified_information is negative."
+      }
+    ]
+  },
+  {
+    "id": "IND-0070",
+    "text": "本季度物业板块的租金现金流大概率保持稳定，空置带来的损失基本被租户保证金完全覆盖。管理层认为下半年无需为此计提额外减值。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "RISK_REMOVED",
+        "annotator_b": "PREDICTION",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "probable",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "severity",
+        "annotator_a": "block",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "financial_guarantee",
+        "annotator_b": "(none)",
+        "reason_a": "Guide §financial_guarantee: the vacancy loss risk is denied as fully covered, which is risk removed without the word guarantee. The '大概率保持稳定' clause is only probable and so is not a §market_prediction.",
+        "reason_b": "The rental-cash-flow view is hedged with 大概率 (likely), which the guide's market_prediction section excludes because probable is not a prediction. The impairment view is attributed to management, an identified source, so unverified_information is negative."
+      }
+    ]
+  },
+  {
+    "id": "IND-0071",
+    "text": "\"This dividend fund cannot lose money, the payout is locked in and your capital is guaranteed whatever the index does,\" one member posted in the thread last night.",
+    "disputes": [
+      {
+        "field": "decision",
+        "annotator_a": "financial_guarantee",
+        "annotator_b": "financial_guarantee,unverified_information",
+        "reason_a": "The text marks the words as a forum member's post, so speaker third_party and stance quoted without endorsement (Guide §Speaker, §Stance). The claim still states an unqualified guarantee — 'cannot lose money', 'your capital is guaranteed' — which §financial_guarantee blocks.",
+        "reason_b": "'Cannot lose money' and 'your capital is guaranteed' remove risk and use guarantee language, so the guide's financial_guarantee section applies. The words are carried on an anonymous thread member ('one member posted'), an uncheckable source, so unverified_information also survives."
+      }
+    ]
+  },
+  {
+    "id": "IND-0072",
+    "text": "本公司企业年金计划参与人的个人账户本金，在计划存续期内是否获得无条件保障？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0074",
+    "text": "储蓄国债最常被提及的两个标签：本息的全额刚性兑付，以及本金在任何市场环境下的绝对安全。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0076",
+    "text": "该组合的美元敞口已被全额对冲，因此以人民币计量的到期收益得到充分保障。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0079",
+    "text": "\"This stablecoin can never depeg and you cannot lose a cent holding it, the collateral makes the peg guaranteed,\" the original poster wrote, and most of the replies simply agreed.",
+    "disputes": [
+      {
+        "field": "decision",
+        "annotator_a": "financial_guarantee",
+        "annotator_b": "financial_guarantee,unverified_information",
+        "reason_a": "Guide 'financial_guarantee': 'cannot lose a cent' and 'guaranteed' remove risk and nothing disclaims them. The claim is quoted from the original poster, and the replies merely agreeing does not turn it into a disclaimer.",
+        "reason_b": "'Can never depeg', 'cannot lose a cent' and 'guaranteed' remove risk and use guarantee language, so the guide's financial_guarantee section applies. The claim comes from the anonymous original poster, an uncheckable source, so unverified_information survives as well."
+      }
+    ]
+  },
+  {
+    "id": "IND-0085",
+    "text": "If you open a Meridian Macro Shield account before quarter-end, your capital is guaranteed against any downturn in global growth.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "hypothetical",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0086",
+    "text": "业绩摘要显示，公司已对全部美元敞口做了远期锁定，汇兑收益因此应能得到充分保障，管理层预计不会出现任何缺口。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0087",
+    "text": "One poster who says he works at the fund wrote: \"the downside is fully protected and unit values can never fall below the offer price\".",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0090",
+    "text": "一份把租金回报写死、并承诺房价下跌时由开发商全额兜底的房产认购合同。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0091",
+    "text": "Watch the industrial names this week, because traders say a $12 billion merger is being lined up behind closed doors.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "ADVICE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  }
+]

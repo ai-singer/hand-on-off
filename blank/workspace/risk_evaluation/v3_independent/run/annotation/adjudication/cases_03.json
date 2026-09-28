@@ -1,0 +1,460 @@
+[
+  {
+    "id": "IND-0154",
+    "text": "票面利率、到期收益率与再投资假设之间的对应关系：债券定价入门课程里最常被一笔带过的一节。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0155",
+    "text": "Check the base effects before you post another chart about inflation. Last January's shelter reading was revised twice, and that revision is doing most of the work in the year-over-year comparison.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0156",
+    "text": "过去一个月，美元兑人民币的隐含波动率被市场定价在近两年的低位区间。这一变化通常与离岸人民币资金面的松紧有关，而不是对基本面预期的重新定价。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "probable",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0157",
+    "text": "If you hold Harborline Income Fund shares inside a retirement account, distributions are reinvested automatically unless you instruct us otherwise. Class I shares carry a $25,000 minimum initial purchase, which employer-sponsored accounts are not required to meet.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "hypothetical",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0159",
+    "text": "The project's own documentation states that \"validator rewards are distributed in proportion to bonded stake,\" so I cannot work out why the staking dashboard shows something different. Screenshot is in the comments; either I am reading the parameters wrong or the dashboard has not been updated.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "possible",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0163",
+    "text": "Check the exchange's weekly warehouse report if you want the official copper stock numbers; registered inventories fell for a fifth straight week.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0166",
+    "text": "汇率变动对本季度收入的影响可能约为1.5个百分点，管理层预计这一拖累在下半年有望减轻。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "probable",
+        "annotator_b": "possible",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0168",
+    "text": "收入确认时点调整之后，各报告分部的收入口径是否已按可比基础重新表述？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0178",
+    "text": "毛利率与营业利润率的口径差异，以及这两项指标在财报附注中的常见列示方式。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0179",
+    "text": "Compare the token unlock schedule with the current circulating supply before you form a view on the float.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0187",
+    "text": "Learn what a fund's tracking difference actually measures before comparing two index trackers on fees alone.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "ADVICE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0194",
+    "text": "票面利率、到期收益率与债券市场价格之间的反向关系。久期在衡量利率敏感性时的作用与局限。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0195",
+    "text": "Track the monthly CPI print alongside average weekly earnings to see how the disinflation is actually progressing. Both series come out on the statistics office's own calendar.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0199",
+    "text": "\"The exchange's proof-of-reserves page listed 41,200 BTC that morning,\" a user wrote, attaching an archived link to the snapshot.",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "none",
+        "annotator_b": "warning",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "(none)",
+        "annotator_b": "unverified_information",
+        "reason_a": "The quoted claim is checkable through the archived snapshot of the exchange's own page, so unverified_information is negative (Guide: a named, checkable source is negative). It carries no other risk relation.",
+        "reason_b": "The claim is carried on an anonymous forum user rather than the named, checkable source the guide requires for a negative, so unverified_information applies. Nothing in it carries advice, a guarantee, risk removal, or a prediction."
+      }
+    ]
+  },
+  {
+    "id": "IND-0200",
+    "text": "本公司所持投资性房地产是否采用公允价值模式进行后续计量？该项会计政策的说明列于附注七。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0209",
+    "text": "An outage at the venue halted customer withdrawals for two days, and the operator said on Thursday that service resumed.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0213",
+    "text": "If your mandate permits real assets, our commodity desk publishes a monthly supply-and-demand briefing for clients.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "hypothetical",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0216",
+    "text": "报告期内，本公司外币借款产生的汇兑差额是如何计入当期损益的？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0224",
+    "text": "本期债券持有人在回售登记期内应在何时提交申请，逾期未提交的又将如何处理？具体安排以登记托管机构发布的公告为准。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0226",
+    "text": "关于日元兑美元汇率在未来两个季度可能延续弱势的三种解释，以及这些解释所依赖的利差与套息交易假设。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0230",
+    "text": "公司全年归母净利润同比下降18%，管理层将降幅归因于结转放缓与存货减值计提扩大。若明年上半年销售回款如管理层预期般改善，投资者或许可以考虑在当前价格附近分批增持其股票。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "hypothetical",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0232",
+    "text": "受托人是否应当每年按既定的目标比例对养老金资产进行一次再平衡，以控制长期偏离？此类安排属于计划管理的常规操作，不针对任何具体持仓。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0234",
+    "text": "债券价格随市场利率反向波动所带来的净值回撤风险，以及持有到期与提前赎回两种情形下实际收益的不确定性。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "unknown",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0236",
+    "text": "据瑞银外汇策略团队本周报告，日元兑美元明年一季度回升至 142 的目标位被写入了该团队的季度展望。上述判断被本行列为客户参考情形之一，并未改变我们对汇率的基准假设。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "probable",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0239",
+    "text": "The project's pinned post opens with \"with our auto-hedge bot running, your downside is fully protected,\" then adds two lines down that nothing on the page is a guarantee and holders can lose their entire stake.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "severity",
+        "annotator_a": "none",
+        "annotator_b": "warning",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "(none)",
+        "annotator_b": "unverified_information",
+        "reason_a": "Guide 'financial_guarantee': 'protected' carries the guarantee relation, but the same post says nothing on the page is a guarantee and holders can lose everything, i.e. a disclaimed guarantee, which is negative.",
+        "reason_b": "'Fully protected' denies risk without the word guarantee, so intent is RISK_REMOVED, but the same post disclaims it two lines down ('nothing on the page is a guarantee and holders can lose their entire stake'), and the guide makes a DISCLAIMED guarantee negative. The claim sits on an unnamed project's pinned post, an uncheckable source, so unverified_information survives."
+      }
+    ]
+  }
+]

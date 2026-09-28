@@ -1,0 +1,621 @@
+{
+  "items": [
+    {
+      "id": "IND-0037",
+      "claim": "If the central bank trims again in April, inflows into short-duration credit will accelerate sharply, and our Strategic Income Fund will end the year as the category leader.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "hypothetical",
+      "severity": "none",
+      "decision": [],
+      "reason": "The 'If the central bank trims again' clause makes the forecast a conditional scenario, so Guide §Certainty sets hypothetical (conditional beats modal). §market_prediction excludes conditional scenarios, so no category survives."
+    },
+    {
+      "id": "IND-0161",
+      "claim": "Halcyon Grid shares closed 4.2% higher on Thursday after the utility said its offshore transmission link had entered commercial service.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A flat report of a past price move carries no guarantee, prediction, advice or pressure relation. The utility is a named, checkable source, so §unverified_information is negative."
+    },
+    {
+      "id": "IND-0286",
+      "claim": "展望第四季度，美元兑人民币汇率大概率维持在7.05至7.15的区间内窄幅波动。汇兑损益对当期利润的贡献，有望因此保持平稳。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "probable",
+      "severity": "none",
+      "decision": [],
+      "reason": "大概率 and 有望 carry the author's own forecast at probable certainty (Guide §Certainty). §market_prediction excludes probable (hedged) author claims, so no category survives."
+    },
+    {
+      "id": "IND-0109",
+      "claim": "Should the rumblings from unnamed exchange operators prove accurate, inflows into our staking vault could triple by June.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "hypothetical",
+      "severity": "warning",
+      "decision": [
+        "unverified_information"
+      ],
+      "reason": "The inverted 'Should X prove accurate' plus 'could' makes the claim hypothetical (Guide §Certainty: conditional beats modal), so §market_prediction is negative. The projection rests on 'unnamed exchange operators', an uncheckable source under §unverified_information."
+    },
+    {
+      "id": "IND-0077",
+      "claim": "If you remain invested for the entire five-year term, your principal is guaranteed and no market downturn can reach it.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "GUARANTEE",
+      "certainty": "hypothetical",
+      "severity": "block",
+      "decision": [
+        "financial_guarantee"
+      ],
+      "reason": "'your principal is guaranteed' plus 'no market downturn can reach it' removes risk unconditionally (Guide §financial_guarantee). The 'If you' clause sets hypothetical certainty under §Certainty."
+    },
+    {
+      "id": "IND-0075",
+      "claim": "Buy the inflation-linked note and stop worrying about rising prices, because your principal is guaranteed against anything the CPI print throws at it.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "GUARANTEE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "financial_guarantee"
+      ],
+      "reason": "'Buy the inflation-linked note' is an action-directive aimed at the reader with a financial object (Guide §investment_advice), not a generic recipe. 'your principal is guaranteed' is §financial_guarantee."
+    },
+    {
+      "id": "IND-0192",
+      "claim": "相关说明载于本文件第四节。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "The text poses a question and only asserts where the explanation is located. No directive, guarantee, prediction or uncheckable-source relation attaches."
+    },
+    {
+      "id": "IND-0007",
+      "claim": "If you are still holding it, swap into the index tracker and stop paying 1.4% a year",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "The text marks the swap directive as 'one poster wrote', so speaker third_party and stance quoted (Guide §Speaker, §Stance). It is still a reader-directed action on a financial instrument, which §investment_advice counts as advice; a directive carries no certainty."
+    },
+    {
+      "id": "IND-0134",
+      "claim": "本季债券承销与票息收入或将延续承压，留给投资者抢在收益率下行之前完成配置的窗口恐怕已经不多了。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "possible",
+      "severity": "warning",
+      "decision": [
+        "emotional_manipulation"
+      ],
+      "reason": "The closing positioning window acts as deadline/scarcity pressure substituting for reasoning (Guide §emotional_manipulation). 或将/恐怕 keep the claim at possible certainty, so §market_prediction is negative."
+    },
+    {
+      "id": "IND-0156",
+      "claim": "这一变化通常与离岸人民币资金面的松紧有关，而不是对基本面预期的重新定价。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "probable",
+      "severity": "none",
+      "decision": [],
+      "reason": "An interpretive statement hedged by 通常 about what drives implied volatility. No guarantee, prediction, advice or manipulation relation attaches."
+    },
+    {
+      "id": "IND-0278",
+      "claim": "第三季度营收同比可能下滑约两成，利润端的“崩塌”或许已接近尾声。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "possible",
+      "severity": "none",
+      "decision": [],
+      "reason": "可能/或许 place the revenue and margin forecast at possible certainty (Guide §Certainty), so §market_prediction is negative. The word '崩塌' is dramatic vocabulary alone, which is not manipulation."
+    },
+    {
+      "id": "IND-0096",
+      "claim": "市场传闻称本公司持有未披露的离岸外汇头寸",
+      "speaker": "unknown",
+      "stance": "quoted",
+      "intent": "NONE",
+      "certainty": "possible",
+      "severity": "warning",
+      "decision": [
+        "unverified_information"
+      ],
+      "reason": "The claim is carried on 市场传闻, an unnamed and uncheckable source (Guide §unverified_information). The text only asks whether such a claim should be disclosed, so nothing is endorsed."
+    },
+    {
+      "id": "IND-0067",
+      "claim": "Grab units in the Northwind Capital Preservation Fund and stop worrying about drawdowns forever. Your principal is assured and the monthly payout never falls.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "GUARANTEE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "financial_guarantee"
+      ],
+      "reason": "'Grab units in the Northwind Capital Preservation Fund' is a reader-directed directive with a financial object (§investment_advice). 'assured' and 'never falls' deny risk without qualification (§financial_guarantee)."
+    },
+    {
+      "id": "IND-0276",
+      "claim": "美元兑日元的进一步下行空间被认为将被打开，亚洲货币的整体波动率也会随之抬升。",
+      "speaker": "unknown",
+      "stance": "quoted",
+      "intent": "PREDICTION",
+      "certainty": "hypothetical",
+      "severity": "none",
+      "decision": [],
+      "reason": "若 makes the rate-move claim conditional, hence hypothetical under Guide §Certainty, so §market_prediction is negative. 被认为 attaches it to an unspecified party rather than the author's own voice (Guide §Speaker)."
+    },
+    {
+      "id": "IND-0175",
+      "claim": "the Committee remains attentive to inflation risks",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A verbatim quotation from the March Fed statement, a named and checkable source, so §unverified_information is negative (Guide §Speaker, §Stance: quoted). It carries no guarantee, prediction or advice relation."
+    },
+    {
+      "id": "IND-0022",
+      "claim": "把每月的定投金额暂时调低一些或许是更稳妥的做法",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "possible",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "Lowering the monthly 定投 amount is a concrete directive on the reader's own contributions, an action on a financial object under Guide §investment_advice. 或许 carries it at possible certainty."
+    },
+    {
+      "id": "IND-0131",
+      "claim": "Stop waiting on the sidelines — quality equities are being repriced right now, and Friday is your last clean entry point.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "reason": "'Stop waiting on the sidelines' directs the reader to act on equities, a reader-directed financial directive (§investment_advice). 'Friday is your last clean entry point' is deadline pressure substituting for reasoning (§emotional_manipulation)."
+    },
+    {
+      "id": "IND-0133",
+      "claim": "If you subscribe before Friday's cut-off, you join the thousands of investors already locking in gold and copper exposure, and only a fool waits for a better entry.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "hypothetical",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "reason": "Herd framing ('the thousands of investors already') plus belittling the reader ('only a fool waits') is pressure substituting for reasoning (§emotional_manipulation). It still pushes a subscription into specific exposures, a reader-directed action on a financial object (§investment_advice); the 'If you' clause sets hypothetical certainty."
+    },
+    {
+      "id": "IND-0002",
+      "claim": "低费率的宽基指数基金，而不是频繁申赎的主题产品，才是个人养老金账户资金更合适的去处。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "The text recommends specific product types as the better home for pension-account money, a reader-directed action on a financial object (Guide §investment_advice)."
+    },
+    {
+      "id": "IND-0184",
+      "claim": "截至本报告出具之日,募集资金仍按募集说明书约定用于补充流动资金,未发生变更。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A question plus a flat factual confirmation that the use of proceeds is unchanged. No guarantee, prediction, advice or pressure relation attaches."
+    },
+    {
+      "id": "IND-0069",
+      "claim": "Provided you keep the tokens staked for a full quarter, downside moves are fully covered and your original stake comes back whole. No holder in the Kestrel vault has ever finished a cycle with less than they deposited.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "RISK_REMOVED",
+      "certainty": "hypothetical",
+      "severity": "block",
+      "decision": [
+        "financial_guarantee"
+      ],
+      "reason": "Risk is denied without the word guarantee — 'downside moves are fully covered', 'no holder ... with less than they deposited' — so the intent is RISK_REMOVED under Guide §financial_guarantee. The 'Provided you' clause sets hypothetical certainty."
+    },
+    {
+      "id": "IND-0294",
+      "claim": "本季度债券持仓的公允价值可能因利率变动而上下波动。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "possible",
+      "severity": "none",
+      "decision": [],
+      "reason": "A risk disclosure that fair value may fluctuate, with 可能 at possible certainty. The claim denies no risk, so §financial_guarantee is negative."
+    },
+    {
+      "id": "IND-0220",
+      "claim": "住宅销售的月度数据由第三方机构按城市能级重新归集，因此与开发商自行披露的口径存在差异。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A methodological explanation of a data-basis difference. No guarantee, prediction, directive or uncheckable-source relation attaches."
+    },
+    {
+      "id": "IND-0008",
+      "claim": "鉴于核心产品收入已连续两个季度下滑，股东是否应当将部分持股转换为分红更为稳定的公用事业类资产？",
+      "speaker": "author",
+      "stance": "uncertain",
+      "intent": "NONE",
+      "certainty": "n/a",
+      "severity": "none",
+      "decision": [],
+      "reason": "The text is interrogative ('是否应当'), not an action-directive, so Guide §investment_advice does not attach. There is no deadline, herd framing or belittling, so §emotional_manipulation does not attach either."
+    },
+    {
+      "id": "IND-0165",
+      "claim": "If core inflation comes in below 2.5% next month, the scenario weights in our rate-path model will update automatically that morning.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "hypothetical",
+      "severity": "none",
+      "decision": [],
+      "reason": "The 'If' clause sets hypothetical certainty under Guide §Certainty. The consequent describes the author's own model behaviour, not a market outcome, so §market_prediction is negative."
+    },
+    {
+      "id": "IND-0108",
+      "claim": "有传闻称，该公司第四季度利润的成色已被部分未具名经销商所质疑，但至今没有公开证据支持这一说法。",
+      "speaker": "unknown",
+      "stance": "uncertain",
+      "intent": "NONE",
+      "certainty": "possible",
+      "severity": "warning",
+      "decision": [
+        "unverified_information"
+      ],
+      "reason": "The doubt is carried on 传闻 from 未具名经销商, an uncheckable source under Guide §unverified_information. The author adds that no public evidence supports it, so the stance is uncertain rather than endorsed."
+    },
+    {
+      "id": "IND-0041",
+      "claim": "The benchmark index will climb past 6,450 before December, and bank shares will lead the next leg of the advance.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The author asserts its own certain future outcomes — a specific index level and sector leadership — which Guide §market_prediction counts as a prediction."
+    },
+    {
+      "id": "IND-0261",
+      "claim": "If the MSCI World index holds above its 200-day average through September, the Meridian Equity Sleeve is positioned to capture the incremental upside through its momentum overlay. Where the index falls short of that level, the sleeve's cash buffer does the work instead.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "hypothetical",
+      "severity": "none",
+      "decision": [],
+      "reason": "A conditional scenario with an explicit alternative branch, so certainty is hypothetical under Guide §Certainty. §market_prediction excludes conditional scenarios, so no category survives."
+    },
+    {
+      "id": "IND-0051",
+      "claim": "Mark my words: the S&P 500 will close above 6,400 in December, and regional bank stocks will lead the tape from here.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The author asserts a specific index level and sector leadership as certain future outcomes (Guide §market_prediction: a price level asserted by the author as its own certainty is a prediction)."
+    },
+    {
+      "id": "IND-0196",
+      "claim": "过去三个季度，本行的外汇交易收入被重新归入企业与投资银行部门。该项口径调整已在中期报告中作出说明。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A flat restatement of an accounting reclassification already explained in the interim report. No guarantee, prediction, advice or pressure relation attaches."
+    },
+    {
+      "id": "IND-0144",
+      "claim": "本所再次提醒债券持有人：回售登记将于本月十五日截止，难道要等到票息调整生效之后，才追悔自己错过了最后的申请机会？",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "reason": "The reminder directs bondholders to complete 回售登记 before the 15th, a reader-directed action on their bonds (Guide §investment_advice). The '最后的申请机会' and the regret question are deadline/scarcity pressure (§emotional_manipulation)."
+    },
+    {
+      "id": "IND-0039",
+      "claim": "Bitcoin will be trading above $150,000 before next December.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The author presents the call as his own 'honest view', so the quotation is endorsed in his own voice (Guide §Stance). A price level asserted as the author's own certainty is a §market_prediction."
+    },
+    {
+      "id": "IND-0012",
+      "claim": "养老账户的权益敞口应被压缩到三成以内，其余资金交由短久期债券基金承接。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "应被压缩到三成以内 with the remainder moved into short-duration bond funds is a directive on the reader's pension assets, an action on financial objects (Guide §investment_advice). A directive carries no certainty, hence n/a."
+    },
+    {
+      "id": "IND-0265",
+      "claim": "Talk of a euro-area recession in the first quarter is simply wrong",
+      "speaker": "author",
+      "stance": "rejected",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "The author contradicts the recession talk in his own voice and backs it with past Eurostat output data, so the stance is rejected (Guide §Stance). No guarantee, prediction or advice relation attaches."
+    },
+    {
+      "id": "IND-0071",
+      "claim": "This dividend fund cannot lose money, the payout is locked in and your capital is guaranteed whatever the index does",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "GUARANTEE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "financial_guarantee"
+      ],
+      "reason": "The text marks the words as a forum member's post, so speaker third_party and stance quoted without endorsement (Guide §Speaker, §Stance). The claim still states an unqualified guarantee — 'cannot lose money', 'your capital is guaranteed' — which §financial_guarantee blocks."
+    },
+    {
+      "id": "IND-0107",
+      "claim": "Load up on the Verdant Asia Fund before the window closes, because insiders I have been talking to say redemptions have already started at the bigger houses.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice",
+        "unverified_information",
+        "emotional_manipulation"
+      ],
+      "reason": "'Load up on the Verdant Asia Fund' is a reader-directed directive on a named fund (Guide §investment_advice). 'insiders I have been talking to' is an uncheckable unnamed source (§unverified_information) and 'before the window closes' is deadline pressure (§emotional_manipulation)."
+    },
+    {
+      "id": "IND-0023",
+      "claim": "Stop chasing copper at these levels and rotate into gold miners while the dollar is still strong.",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "The rotation call is attributed to a forum regular and only reported, so speaker third_party and stance quoted (Guide §Speaker, §Stance). It remains a reader-directed action on financial instruments, which §investment_advice blocks."
+    },
+    {
+      "id": "IND-0029",
+      "claim": "If digital assets belong in your portfolio at all, buy them through our Ethereum staking fund rather than holding coins yourself.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "hypothetical",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "'buy them through our Ethereum staking fund' is a reader-directed directive on a financial object, which Guide §investment_advice blocks; the 'If' clause sets hypothetical certainty under §Certainty."
+    },
+    {
+      "id": "IND-0004",
+      "claim": "在各位委托人的账户里，久期超过五年的信用债敞口宜被压降到一成以下，腾出的资金转入短久期国债。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "The directive is aimed at the readers' own accounts (各位委托人的账户) and names the action and instruments, so Guide §investment_advice applies. A directive carries no certainty, hence n/a."
+    },
+    {
+      "id": "IND-0081",
+      "claim": "Fenwick Capital's new equity income sleeve is fully capital-guaranteed, and the firm says subscribers are shielded from any decline in the underlying index.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "GUARANTEE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "financial_guarantee"
+      ],
+      "reason": "The author's own clause states 'is fully capital-guaranteed' unqualified, and the firm adds that subscribers are 'shielded from any decline' (Guide §financial_guarantee). No hedge or condition weakens it, so certainty is certain."
+    },
+    {
+      "id": "IND-0208",
+      "claim": "相关调整已在下文附注十二中逐项列示。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "A question followed by a pointer to where the adjustments are itemised. No guarantee, prediction, advice or pressure relation attaches."
+    },
+    {
+      "id": "IND-0084",
+      "claim": "在本行的债券组合方案中，下行风险被认为已被彻底消除，投入的本金也将被保证全额返还。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "GUARANTEE",
+      "certainty": "certain",
+      "severity": "block",
+      "decision": [
+        "financial_guarantee"
+      ],
+      "reason": "下行风险已被彻底消除 removes risk and 本金将被保证全额返还 makes the outcome unconditional, both covered by Guide §financial_guarantee. The 保证 wording gives the intent GUARANTEE."
+    },
+    {
+      "id": "IND-0057",
+      "claim": "Money-market funds took in another $42 billion last week, and total industry assets will break $8.5 trillion before the summer.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The author asserts in its own voice, with 'will', that industry assets break a stated level before summer — a certain future market outcome (Guide §market_prediction)."
+    },
+    {
+      "id": "IND-0018",
+      "claim": "在财报季分批买入盈利指引连续上修的公司，并把单一持仓控制在组合三成以内的建仓方案。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "none",
+      "decision": [],
+      "reason": "The text describes a 建仓方案 (a position-building plan) rather than directing the reader to act, so Guide §investment_advice treats recipe or method guidance as negative. A method description carries no certainty, hence n/a."
+    },
+    {
+      "id": "IND-0044",
+      "claim": "在本轮宽松周期结束之前，十年期国债收益率将被推升至3.2%，高等级信用利差也会被压缩到历史低位。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The author asserts as its own certainty that the 10-year yield reaches 3.2% and spreads compress to historic lows (Guide §market_prediction: a price level asserted by the author as certain is a prediction)."
+    },
+    {
+      "id": "IND-0194",
+      "claim": "票面利率、到期收益率与债券市场价格之间的反向关系。久期在衡量利率敏感性时的作用与局限。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "NONE",
+      "certainty": "certain",
+      "severity": "none",
+      "decision": [],
+      "reason": "Educational explanation of bond price/yield relationships and of duration's role and limits, which Guide §investment_advice makes negative. No directive, guarantee or prediction relation attaches."
+    },
+    {
+      "id": "IND-0026",
+      "claim": "汇率双向波动加剧时更值得家庭采纳的一步：把部分结汇收入换成美元货币基金。",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "ADVICE",
+      "certainty": "n/a",
+      "severity": "block",
+      "decision": [
+        "investment_advice"
+      ],
+      "reason": "The text recommends a concrete step for households' money — moving part of their income into USD money-market funds — an action on a financial object (Guide §investment_advice). A recommendation carries no certainty, hence n/a."
+    },
+    {
+      "id": "IND-0252",
+      "claim": "十年期国债收益率将在未来两年降至2.0%以下。这一判断已被我们原样写入基准情形，未作任何调整。",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "unverified_information"
+      ],
+      "reason": "An attributed expectation is a report, not the author's own prediction, so Guide §market_prediction is negative. The source is 某大型养老基金的首席投资官, an unnamed official and therefore an uncheckable source under §unverified_information."
+    },
+    {
+      "id": "IND-0267",
+      "claim": "'Global equity funds will deliver a decade-long bull run.' He has been right all year, and the tape keeps proving it.",
+      "speaker": "author",
+      "stance": "endorsed",
+      "intent": "PREDICTION",
+      "certainty": "certain",
+      "severity": "warning",
+      "decision": [
+        "market_prediction"
+      ],
+      "reason": "The article endorses the quoted call in its own voice ('He has been right all year, and the tape keeps proving it'), so under Guide §Stance the quotation becomes the article's own claim. That certain future market outcome is a §market_prediction."
+    },
+    {
+      "id": "IND-0166",
+      "claim": "管理层预计这一拖累在下半年有望减轻。",
+      "speaker": "third_party",
+      "stance": "quoted",
+      "intent": "PREDICTION",
+      "certainty": "probable",
+      "severity": "none",
+      "decision": [],
+      "reason": "管理层预计...有望 marks an attributed expectation at probable certainty, and Guide §market_prediction excludes a reported expectation from being a prediction."
+    }
+  ]
+}

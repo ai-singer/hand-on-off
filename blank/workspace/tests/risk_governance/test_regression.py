@@ -89,11 +89,11 @@ class RegressionComparisonTests(unittest.TestCase):
         self.assertEqual(report.changed_cases, ())
 
     def test_every_version_and_evaluator_runs(self) -> None:
-        """Five registered versions times two frozen evaluators."""
+        """Six registered versions times two frozen evaluators."""
 
         reports = run_all(self.registry)
 
-        self.assertEqual(len(reports), 10)
+        self.assertEqual(len(reports), 12)
         self.assertTrue(all(not report.regressed for report in reports))
 
     def test_the_generated_adversarial_family_is_covered(self) -> None:

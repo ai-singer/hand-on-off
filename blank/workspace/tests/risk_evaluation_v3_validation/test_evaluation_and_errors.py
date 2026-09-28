@@ -609,6 +609,10 @@ class IsolationTests(unittest.TestCase):
                 "semantic/v3",
                 "semantic/v4",
                 "semantic/adversarial/v1",
+                # Phase 8.9 added the independent validation benchmark. Registered
+                # here rather than filtered out, so a version nobody declared still
+                # fails this test.
+                "risk/independent/v1",
             },
         )
 

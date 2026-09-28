@@ -1,0 +1,383 @@
+[
+  {
+    "id": "IND-0093",
+    "text": "If the chatter from Gulf shipping agents is accurate, our refined-metals basket is positioned ahead of a remarkably tight autumn market.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "PREDICTION",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0096",
+    "text": "风险提示：市场传闻称本公司持有未披露的离岸外汇头寸，此类说法是否应作为重大信息予以披露？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "possible",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0098",
+    "text": "一则据称来自公司未具名高管的盈利预告，以及它在几乎未经核实的情况下如何被市场当成了既成事实。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0101",
+    "text": "If the chatter we keep hearing from unnamed trading desks holds up, equity demand could turn sharply higher this quarter, and our allocation desk is staffed for exactly that moment.",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0104",
+    "text": "据不愿具名的交易对手反映，本公司部分债券持仓的估值可能偏离市场水平，这是否会影响本季度净值披露的准确性？",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0108",
+    "text": "有传闻称，该公司第四季度利润的成色已被部分未具名经销商所质疑，但至今没有公开证据支持这一说法。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0112",
+    "text": "有未具名知情人士转述称，部分省级职业年金账户的当期支付缺口存在递延确认的情形，本公司对此无法核实；在受托人正式披露之前，该说法能否成立？",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "possible",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0114",
+    "text": "据说来自不愿具名的承销人士、关于部分城投平台“隐性担保并未写入募集说明书”的说法，是本文要讨论的第一个争议点，也是持有人与发行人在展期谈判中反复引用的那一句。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "GUARANTEE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0115",
+    "text": "Read the payroll-revision thread doing the rounds before you repeat it anywhere: the figures come from a person who says he saw the draft tables, and nobody has been able to confirm a single line of them.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0119",
+    "text": "A user with a blue check in our group swears his cousin runs a validator and reports him as saying, \"the foundation quietly moved a chunk of treasury coins last month.\" No address and no screenshot has appeared since, in any of the three threads where it was repeated.",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "uncertain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0127",
+    "text": "\"Get out of cash and into the fund tonight, or watch everyone else get rich without you,\" one poster wrote, and dozens of replies agreed.",
+    "disputes": [
+      {
+        "field": "decision",
+        "annotator_a": "emotional_manipulation,investment_advice,unverified_information",
+        "annotator_b": "emotional_manipulation,investment_advice",
+        "reason_a": "The quoted imperative directs the reader to move money into a fund (investment_advice) with act-now urgency, herd framing and FOMO (emotional_manipulation). It comes from an unnamed poster, an uncheckable source (unverified_information).",
+        "reason_b": "The quoted imperative directs the reader's money into the fund, an action-directive over a financial object (guide, investment_advice). 'Tonight' plus the herd framing of everyone else getting rich is pressure substituting for reasoning (guide, emotional_manipulation)."
+      }
+    ]
+  },
+  {
+    "id": "IND-0130",
+    "text": "仍在观望的购房者——最后一批低价房源今天就被抢空，再犹豫一晚就彻底没有机会了。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "PREDICTION",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "emotional_manipulation,market_prediction",
+        "annotator_b": "emotional_manipulation",
+        "reason_a": "Guide 'market_prediction': the author asserts a future market outcome (the last cheap listings selling out today) as its own certainty. '最后一批' and '再犹豫一晚就彻底没有机会了' add scarcity and deadline pressure.",
+        "reason_b": "Scarcity and last-chance framing ('最后一批低价房源今天就被抢空', '再犹豫一晚就彻底没有机会了') is pressure substituting for reasoning, which the guide's emotional_manipulation section lists as deadline or scarcity. No action-directive on a financial object and no guarantee or risk-removal relation is carried, so intent is NONE."
+      }
+    ]
+  },
+  {
+    "id": "IND-0131",
+    "text": "Stop waiting on the sidelines — quality equities are being repriced right now, and Friday is your last clean entry point.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0132",
+    "text": "养老金组合的再平衡窗口被管理方定在本周五收盘后关闭，仍未提交指令的客户则被反复提醒，别做最后一个错过机会的人。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0133",
+    "text": "If you subscribe before Friday's cut-off, you join the thousands of investors already locking in gold and copper exposure, and only a fool waits for a better entry.",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "hypothetical",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0134",
+    "text": "本季债券承销与票息收入或将延续承压，留给投资者抢在收益率下行之前完成配置的窗口恐怕已经不多了。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "PREDICTION",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0136",
+    "text": "公司在风险因素章节中向持有人发问：在远期结汇窗口关闭之前，还要等到什么时候才肯行动？",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0138",
+    "text": "财报季里最尴尬的一群人：在业绩预告截止前犹豫不决，最后只能在最高价追进去的投资者。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0141",
+    "text": "If the remaining equity allocation slots are taken before Friday's close, later applicants will simply have to wait until next spring for another look.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "PREDICTION",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0144",
+    "text": "本所再次提醒债券持有人：回售登记将于本月十五日截止，难道要等到票息调整生效之后，才追悔自己错过了最后的申请机会？",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0148",
+    "text": "业绩披露季只剩最后两周，迟迟不肯动手的客户，将被跑得更快的同行远远甩在身后。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "PREDICTION",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0149",
+    "text": "If you have not completed the form by the time the whitelist closes, you will spend the next quarter watching from the back of a very long queue.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "ADVICE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0150",
+    "text": "三季度业绩通报显示，嘉泰置业在售项目的去化速度有所放缓，管理层也坦言，仍在观望的买家拖到年底，大概只能从别人挑剩的房源里做选择。",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "none",
+        "annotator_b": "warning",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "(none)",
+        "annotator_b": "emotional_manipulation",
+        "reason_a": "The forward-looking statement is attributed to management and hedged with 大概 (probable), so it is a report rather than an author-certain market_prediction (Guide: market_prediction). Scarcity is reported, not used as pressure on the reader.",
+        "reason_b": "The relayed statement frames a year-end deadline plus scarcity of leftovers, the deadline/scarcity pressure listed as manipulation (guide, emotional_manipulation). Because it is a reported and hedged ('大概') expectation, market_prediction is negative."
+      }
+    ]
+  },
+  {
+    "id": "IND-0152",
+    "text": "本计划参与人个人账户的年度缴费上限如何确定，是否随社会平均工资的变动逐年调整？管理人将在年度报告中披露具体的核算口径与调整时点。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0153",
+    "text": "Zinc inventories in London Metal Exchange warehouses fell for a fourth consecutive session on Tuesday, exchange data showed. Deliverable stock stood at 214,600 tonnes, down 2.4 percent from Monday and the lowest reading since March.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "third_party",
+        "annotator_b": "author",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  }
+]

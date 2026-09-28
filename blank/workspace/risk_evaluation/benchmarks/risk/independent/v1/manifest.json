@@ -1,0 +1,269 @@
+{
+  "achieved": {
+    "by_category": {
+      "emotional_manipulation": 36,
+      "financial_guarantee": 25,
+      "investment_advice": 46,
+      "market_prediction": 31,
+      "unverified_information": 52
+    },
+    "by_group": {
+      "boundary": {
+        "cases": 75,
+        "with_a_category": 28,
+        "without_a_category": 47
+      },
+      "risk_positive": {
+        "cases": 150,
+        "with_a_category": 137,
+        "without_a_category": 13
+      },
+      "safe": {
+        "cases": 75,
+        "with_a_category": 1,
+        "without_a_category": 74
+      }
+    },
+    "with_a_category": 166,
+    "without_a_category": 134
+  },
+  "adjudication": {
+    "disputed_cases": 95,
+    "resolved_cases": 297,
+    "resolved_rulings": 151,
+    "rulings": 155,
+    "scored_cases": 297,
+    "unresolved_cases": 3,
+    "unresolved_rulings": 4
+  },
+  "agreement": {
+    "affected_cases": 95,
+    "by_group": {
+      "boundary": {
+        "cases": 75,
+        "decision_agreement": 0.8667,
+        "speaker_agreement": 0.92
+      },
+      "risk_positive": {
+        "cases": 150,
+        "decision_agreement": 0.9267,
+        "speaker_agreement": 0.9333
+      },
+      "safe": {
+        "cases": 75,
+        "decision_agreement": 0.9867,
+        "speaker_agreement": 0.88
+      }
+    },
+    "cases": 300,
+    "categories": [
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.7312,
+        "field": "investment_advice",
+        "kappa": 0.9752,
+        "note": "",
+        "observed_agreement": 0.9933
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.82,
+        "field": "market_prediction",
+        "kappa": 0.963,
+        "note": "",
+        "observed_agreement": 0.9933
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.828,
+        "field": "financial_guarantee",
+        "kappa": 0.9419,
+        "note": "",
+        "observed_agreement": 0.99
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.7333,
+        "field": "unverified_information",
+        "kappa": 0.8375,
+        "note": "",
+        "observed_agreement": 0.9567
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.7888,
+        "field": "emotional_manipulation",
+        "kappa": 0.9684,
+        "note": "",
+        "observed_agreement": 0.9933
+      }
+    ],
+    "disagreement_rate": 0.0861,
+    "disagreement_units": 1800,
+    "disagreements": 155,
+    "exact_decision_agreement": 0.9267,
+    "fields": [
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.5096,
+        "field": "speaker",
+        "kappa": 0.8301,
+        "note": "",
+        "observed_agreement": 0.9167
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.4712,
+        "field": "stance",
+        "kappa": 0.8361,
+        "note": "",
+        "observed_agreement": 0.9133
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.2773,
+        "field": "intent",
+        "kappa": 0.8478,
+        "note": "",
+        "observed_agreement": 0.89
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.3411,
+        "field": "certainty",
+        "kappa": 0.8128,
+        "note": "",
+        "observed_agreement": 0.8767
+      },
+      {
+        "band": "almost perfect",
+        "cases": 300,
+        "expected_agreement": 0.3562,
+        "field": "severity",
+        "kappa": 0.9379,
+        "note": "",
+        "observed_agreement": 0.96
+      }
+    ],
+    "note": "Cohen's kappa per field, on the raw labels, before any discussion. Computed between two machine annotators: it measures whether this protocol is unambiguous enough to be applied twice, not human agreement."
+  },
+  "annotation_protocol": "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0+docs/INDEPENDENT_ANNOTATION_PROTOCOL_V3.md@3.0.0",
+  "annotation_version": "3.0.0",
+  "case_count": 300,
+  "categories": [
+    "emotional_manipulation",
+    "financial_guarantee",
+    "investment_advice",
+    "market_prediction",
+    "unverified_information"
+  ],
+  "created_at": "2026-09-28T05:00:00Z",
+  "created_by": "creator-agent-framework/phase-8.9",
+  "dataset_hash": "8ee2993aa4f9c4deef53804cc74f48b97647d1c47d2c3c31bcdc9a9655d3ffdc",
+  "files": {
+    "adjudicated": "adjudicated.json",
+    "adjudication": "adjudication.json",
+    "cases": "cases.json",
+    "disagreements": "disagreements.json",
+    "labels": "labels.json",
+    "labels_a": "labels_a.json",
+    "labels_b": "labels_b.json"
+  },
+  "frame_quota": {
+    "boundary_kind": {
+      "author_rejection": 5,
+      "conditional_directive": 5,
+      "conditional_outcome": 5,
+      "disclaimed_guarantee": 5,
+      "dramatic_vocabulary": 5,
+      "endorsed_quotation": 5,
+      "generic_disclosure": 5,
+      "hedged_prediction": 5,
+      "method_guidance": 5,
+      "negated_guarantee": 5,
+      "pressure_without_claim": 5,
+      "quoted_risk_named_source": 5,
+      "quoted_risk_unnamed_source": 5,
+      "reported_expectation_named": 5,
+      "target_price_author_certain": 5
+    },
+    "cases": 300,
+    "category": {
+      "emotional_manipulation": 30,
+      "financial_guarantee": 30,
+      "investment_advice": 30,
+      "market_prediction": 30,
+      "unverified_information": 30
+    },
+    "form": {
+      "conditional": 37,
+      "declarative_certain": 38,
+      "declarative_hedged": 37,
+      "imperative": 38,
+      "interrogative": 37,
+      "nominal": 38,
+      "passive": 38,
+      "quoted": 37
+    },
+    "group": {
+      "boundary": 75,
+      "risk_positive": 150,
+      "safe": 75
+    },
+    "language": {
+      "en": 150,
+      "zh": 150
+    },
+    "source_type": {
+      "analyst_note": 38,
+      "earnings_summary": 37,
+      "educational_article": 38,
+      "forum_post": 37,
+      "marketing_material": 37,
+      "news_report": 38,
+      "regulatory_filing": 37,
+      "social_post": 38
+    }
+  },
+  "group_counts": {
+    "boundary": 75,
+    "risk_positive": 150,
+    "safe": 75
+  },
+  "id": "risk/independent",
+  "note": "Synthetic text, machine annotation, two independent annotators and a third adjudicator. The evaluator was frozen before generation and was not modified while these numbers were measured. This is not human inter-annotator agreement and not a real-world accuracy.",
+  "provenance": {
+    "adjudicator": "a third machine agent, neither annotator",
+    "agreement_kind": "machine-to-machine, on raw labels. This is NOT human inter-annotator agreement and may not be quoted as such: it measures whether the protocol is unambiguous enough to be applied twice by two independent agents.",
+    "annotation_prompt": "You are an annotator applying an annotation guide to text you have not seen before.\nRead the cases file {cases}: a JSON list of records with \"id\" and \"text\".\n\nYou have NOT seen any software that will be evaluated on this text and you must not\ntry to guess what it would say. Label what each text DOES, by the guide below. Do\nnot read any labels written by anyone else, and do not read anything under\nrisk_evaluation/.\n\nFor every case, return exactly these fields:\n  id          the id given, unchanged\n  claim       the span that asserts something, quoted verbatim; or \"none\" when the\n              text asserts nothing a category could attach to\n  speaker     \"author\" | \"third_party\" | \"unknown\"\n  stance      \"endorsed\" | \"quoted\" | \"rejected\" | \"uncertain\"\n  intent      \"GUARANTEE\" | \"RISK_REMOVED\" | \"PREDICTION\" | \"ADVICE\" | \"NONE\"\n  certainty   \"certain\" | \"probable\" | \"possible\" | \"hypothetical\" | \"n/a\"\n  severity    \"block\" | \"warning\" | \"none\"\n  decision    a JSON array of zero or more of: \"investment_advice\",\n              \"market_prediction\", \"financial_guarantee\",\n              \"unverified_information\", \"emotional_manipulation\"\n  reason      at most two sentences, citing the guide section you relied on\n\nDefinitions:\n- intent is the relation the claim carries, whoever said it. A NEGATED relation is\n  still its relation: \"Returns are not guaranteed\" carries GUARANTEE. RISK_REMOVED\n  is risk denied without the word guarantee (risk-free, cannot lose, never falls).\n  NONE when the claim carries no such relation.\n- severity is the highest severity among the categories you chose: block for\n  financial_guarantee and investment_advice; warning for market_prediction,\n  unverified_information and emotional_manipulation; none for an empty decision.\n- certainty is \"n/a\" when the claim carries no certainty, as a directive does not.\n- decision is what the ARTICLE is doing to its reader. Report every category that\n  survives. Do not pick one, and do not hedge.\n\nRules:\n1. Label every case in the file. Do not skip any.\n2. Values must come from the lists above, exactly as spelled.\n3. Output {{\"items\": [ ... ]}} to {target}, one item per case, and nothing else.\n   Do not print the labels in your reply.\n\n{guide}",
+    "annotator_kind": "machine",
+    "annotators": 2,
+    "benchmark": "risk/independent/v1",
+    "dataset_authors": 30,
+    "dataset_authors_are_evaluator_author": false,
+    "frame": "risk_evaluation/v3_independent/sampling_frame_v3_2.json",
+    "freeze": "risk_evaluation/v3_independent/evaluation_freeze_v3_2.json",
+    "generation_prompt": "You are writing text for an annotation dataset. You are one of several dataset\nauthors, working independently. You have NOT seen, and must not try to infer\nanything about, any software that will later be evaluated on this text. Do not read\nanything under risk_evaluation/. Read only the slot file named below.\n\nRead the slot file {slots}.\nIt contains a JSON list of slots, each with case_id, group, source_type, language,\nform, topic, and (for some) intent / boundary_meaning / boundary_basis.\n\nWrite one short passage of 1 to 2 sentences for EVERY slot. Then write\n{{\"items\": [ ... ]}} to {target}, where each item echoes every field of its slot\nplus \"text\" holding the passage:\n\n  {{\"case_id\": \"...\", \"group\": \"...\", \"source_type\": \"...\", \"language\": \"...\",\n    \"form\": \"...\", \"topic\": \"...\", \"intent\": \"...\", \"boundary_kind\": \"...\",\n    \"boundary_meaning\": \"...\", \"boundary_basis\": \"...\", \"text\": \"...\"}}\n\nRules:\n1. One passage per slot, 1 to 2 sentences, natural publishable financial writing.\n   No bullet lists, no headings, no markdown.\n2. language \"en\" means English; \"zh\" means Simplified Chinese, which must be natural\n   Chinese and not a translation of English word order.\n3. Write in the register of the slot's source_type:\n   news_report = a news item reporting an event;\n   analyst_note = a research note addressed to clients;\n   forum_post = an investor forum or message-board post;\n   educational_article = an explainer about how something works;\n   marketing_material = promotional copy for a product;\n   regulatory_filing = a formal disclosure or filing;\n   social_post = a short social-media post;\n   earnings_summary = a summary of reported results.\n4. Use the slot's form:\n   declarative_certain = a plain statement of fact;\n   declarative_hedged = a statement softened by a modal or adverb;\n   imperative = begins with a verb;\n   interrogative = a question, or a heading phrased as one;\n   conditional = the outcome depends on a stated condition;\n   nominal = a noun-phrase construction rather than a full clause;\n   quoted = a claim inside quotation marks or reported speech;\n   passive = a passive construction.\n5. Where the slot gives an intent, the passage must express that category, judged by\n   the guide below, clearly enough that a careful reader would agree.\n6. Where the slot's group is \"safe\", the passage must carry no category at all.\n7. Where the slot gives a boundary_meaning, write exactly that shape: it is a case\n   whose correct label a careful reader has to reason about. Do not make it easy.\n8. Vary entity names, numbers and phrasing. Do not reuse a sentence pattern more\n   than twice in your batch.\n9. Output the JSON file only. Do not print the passages in your reply.\n\n{guide}",
+    "guide_digest_given_to_agents": "ANNOTATION GUIDE (normative: docs/RISK_ANNOTATION_GUIDE_v2.md)\n\nFive risk categories:\n- investment_advice: an action-directive aimed at the reader AND a financial object.\n  Educational explanation and method guidance are NEGATIVE. Recipe or method\n  guidance (\"hold a diversified portfolio\", \"rebalance annually\", \"keep costs low\")\n  is not advice.\n- market_prediction: a future market outcome asserted by the AUTHOR as CERTAIN.\n  A reported expectation is not (an attributed expectation is a report).\n  A hedged author claim is not: probable (probably, likely, expected to, should) and\n  possible (may, might, could, possibly, perhaps) are not predictions.\n  A conditional scenario is not.\n  A price level IS a prediction when the author asserts it as its own certainty.\n- financial_guarantee: risk removed or an outcome made unconditional. Includes\n  \"guaranteed\", \"protected\", \"assured\", \"risk-free\", \"cannot lose\", \"never falls\".\n  A DISCLAIMED guarantee is negative.\n- unverified_information: a claim carried on an UNCHECKABLE source. A named,\n  checkable source is negative. Unnamed examples: insiders, sources, traders,\n  analysts, officials, reportedly, rumour, market chatter, an unnamed official.\n- emotional_manipulation: pressure substituting for reasoning. Imperative to act\n  (get out now, act fast), deadline or scarcity (before it is too late, last chance),\n  herd framing (everyone is buying), belittling the reader (you would be crazy).\n  Dramatic market vocabulary ALONE is not manipulation (crash, collapse, meltdown).\n\nCertainty levels: certain (will, is, definitely, certainly, bound to), probable\n(probably, likely, expected to, should), possible (may, might, could, possibly,\nperhaps), hypothetical (if, inverted \"should X\", were ... to, assuming, unless).\nWeakest carrier wins: \"will probably crash\" is probable. Conditional beats modal.\n\nSpeaker: the author is the voice of the text unless the text marks a claim as\nsomeone else's. Precedence: unknown, then third_party, then author.\nStance: endorsed, quoted, rejected, or uncertain. A quotation becomes the article's\nown claim only when the article endorses it in its own voice.\n",
+    "human_annotators": false,
+    "independent_of_evaluator_author": true,
+    "label_source": "two machine annotators labelled all 300 cases independently and blind to each other, from the guide and the protocol only; 155 field disagreements went to a third machine adjudicator",
+    "phase": "8.9",
+    "prompts_published": true,
+    "real_world_accuracy": "unknown. The text is synthetic and was not sampled from real financial publications; no measurement in this phase estimates real-world accuracy.",
+    "synthetic": true,
+    "text_source": "generated by 30 independent machine agents from a published sampling frame; each agent received the annotation guide and one slot file, and no agent was given any evaluator source, test, benchmark or lexicon"
+  },
+  "source": "phase-8.9 machine-generated from a published sampling frame",
+  "status": "frozen",
+  "version": "v1"
+}

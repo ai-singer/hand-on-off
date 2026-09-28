@@ -1,0 +1,400 @@
+{
+  "items": [
+    {
+      "id": "IND-0154",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the span is the article's own framing of a bond-pricing topic, with no quotation marks, no headline being discussed, no comment being answered and no dispute, so none of the 'quoted' triggers is present and the attitude is endorsement rather than non-commitment. Section 1.1's precedence likewise leaves content that nothing marks as anyone else's with the author, and neither annotator records an attribution, so 'uncertain' (content reported without commitment) is not available on this text.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0155",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide v2 section 7 investment_advice, 'an action-directive aimed at the reader and a financial object. Educational explanation and method guidance are negative', with the guide's category definition excluding recipe or method guidance. 'Check the base effects before you post another chart about inflation' directs a verification step over inflation data and names no financial object to act on; the annotator's own reason concedes the imperative is method guidance and therefore negative, so ADVICE contradicts the rule it cites.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0155",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' is asserted as fact with no hedge, and 'Descriptive and explanatory text that asserts facts is certain.' The claim the case carries is the unhedged factual assertion 'Last January's shelter reading was revised twice, and that revision is doing most of the work in the year-over-year comparison'. Protocol v3 section 3.5 reserves n/a for a claim that carries no certainty at all (as a bare directive does), which is not the situation once the assertion is annotated; the sibling adjudication reasoned the same way at IND-0131.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0156",
+      "field": "certainty",
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "ruling": "",
+      "basis": "The guide does not settle this. Guide v2 section 1.2 defines 'certain' as asserted as fact with no hedge and 'probable' as asserted with a probability hedge, and names probability and possibility markers (probably, likely, expected to; may, might, could, possibly, perhaps); 通常 ('usually') is a frequency qualifier that appears in none of them, and the marker lists are presented as typical rather than exhaustive, so the guide states no rule for whether a frequency qualifier lowers the level. The run's two label sets split in both directions on the same construction (they swap positions at IND-0262 and agree on 'certain' at IND-0292), which is a taxonomy ambiguity of the kind protocol v3 section 5.5 records rather than resolves.",
+      "resolution": "unresolved"
+    },
+    {
+      "id": "IND-0157",
+      "field": "certainty",
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "ruling": "hypothetical",
+      "basis": "Guide v2 section 1.2 and section 5: 'hypothetical' is a claim that depends on a stated condition, and the section 5 marker table lists both 'if' and 'unless'. Section 5 states that a conditional statement asserts nothing unconditionally and that 'Conditional beats modal', and its worked table grades 'If you want higher returns, buy this stock.' as hypothetical. The disputed span carries 'If you hold Harborline Income Fund shares inside a retirement account' and 'unless you instruct us otherwise'.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0159",
+      "field": "speaker",
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "ruling": "third_party",
+      "basis": "Guide v2 section 1.1: third_party is 'a named or reasonably identifiable party is reported as holding the claim', and the claim is attributed to the project's own documentation, a named document. The stated precedence (quoted -> unknown -> third_party -> author, reduced to unknown -> third_party -> author by protocol v3 section 3.2 because in this schema 'quoted' is a stance) places third_party above the author residual, so the case does not fall through to 'anything with no attribution is the author's'.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0159",
+      "field": "stance",
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "ruling": "quoted",
+      "basis": "Guide v2 section 4: 'A claim inside quotation marks, a headline being discussed, a comment being answered or a statement the article goes on to dispute is quoted and is not the article's claim', and section 1.1's precedence in which 'quotation marks settle the question'. The disputed span appears verbatim inside quotation marks, and the author's own sentence reports a discrepancy with the dashboard rather than endorsing the rule in the article's own voice as section 4's endorsement test requires. The run's earlier adjudication treated the quoted span as the unit for the same reason at IND-0119.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0159",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "possible",
+      "ruling": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact, no hedge, and 'Descriptive and explanatory text that asserts facts is certain'; the field 'records how the text presents its claim, not whether the claim is true'. The unit is the quoted rule that validator rewards are distributed in proportion to bonded stake, which is stated without any hedge. The author's own doubt ('either I am reading the parameters wrong or the dashboard has not been updated') attaches to the dashboard discrepancy, not to the quoted rule, and section 5's conditional markers are absent.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0163",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: the category needs an action-directive aimed at the reader AND a financial object, and method guidance is negative. 'Check the exchange's weekly warehouse report if you want the official copper stock numbers' sends the reader to a data source for verification and directs no financial action on a financial object; the annotator's own reason concedes the imperative is method guidance and negative, so ADVICE contradicts the rule cited.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0163",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact with no hedge. The case carries the unhedged market fact 'registered inventories fell for a fifth straight week', which is asserted without any modal or conditional carrier. Protocol v3 section 3.5 gives n/a only where no claim carries a level, as a bare directive does, and the sibling adjudication applied the same reading to a directive-plus-assertion text at IND-0131.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0166",
+      "field": "speaker",
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "ruling": "third_party",
+      "basis": "Guide v2 section 1.1 with its stated precedence (quoted -> unknown -> third_party -> author): the expectation in dispute is attributed to management, 'a named or reasonably identifiable party ... reported as holding the claim', so the third_party row decides it and the case does not fall through to the author residual for unattributed content. The sibling adjudication applied the same precedence reading at IND-0153 and IND-0132.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0166",
+      "field": "stance",
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4: the 'quoted' trigger is quotation marks, a headline being discussed, a comment being answered, or a statement the article goes on to dispute. None is present here (the expectation is reported in the article's own narration, not in quotation marks and not disputed), and section 4 makes reproducing a claim while treating it as true the article's own claim ('reproducing a claim while treating it as true is endorsement'). Section 2 keeps the expectation a report for the category layer, which is why speaker third_party plus certainty probable/possible already bars market_prediction.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0166",
+      "field": "certainty",
+      "annotator_a": "probable",
+      "annotator_b": "possible",
+      "ruling": "possible",
+      "basis": "Guide v2 section 1.2, 'possible' = asserted as one possibility (may, might, could, possibly), which is 可能 in the article's own sentence, and protocol v3 section 3.5's rule that 'the weakest carrier wins'. The same sentence pair also carries the probable carriers 预计/有望, and the weaker carrier governs the level; the run's earlier adjudication applied weakest-carrier reasoning to a claim containing both a probable and a possible carrier at IND-0112.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0168",
+      "field": "speaker",
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' is 'the article's own voice, or nothing marks it as anyone else's', while 'unknown' is reserved for unattributable attribution markers (insiders, sources, they say, 据说不具名消息人士). A bare interrogative carries no attribution marker at all, so the precedence's residual row applies and the speaker is the author, not unknown.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0178",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' covers the article's own voice or content that nothing marks as anyone else's, and 'unknown' requires an unattributable attribution marker of the kind section 1.1 lists. The span is a heading naming two margin definitions and their presentation in the notes; it carries no attribution at all, so the residual author row applies.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0178",
+      "field": "stance",
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': absent quotation marks, a headline being discussed, a comment being answered or a dispute, the span is the article's own and is not reported from anyone else. 'uncertain' is the value for a claim reported without either commitment (protocol v3 section 3.3), which requires a report; there is none here.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0178",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "ruling": "n/a",
+      "basis": "Guide v2 section 1.2 classifies the claim a text puts forward ('how the text presents its claim'), read with protocol v3 section 3.1 (a claim is present when a reader could disagree with it; claim is none when the text asserts nothing a category could attach to) and section 3.5 (n/a where no claim carries a level). The span is a nominal topic list with no predicate: it names a definitional difference and a presentation practice without asserting a proposition, so no level attaches. Both annotators recorded n/a on the same-family case IND-0234, and the sibling adjudication reached n/a for comparable nominal or descriptive spans at IND-0138 and IND-0144.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0179",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide v2 section 7 investment_advice, which requires an action-directive aimed at the reader AND a financial object, and makes method guidance negative. 'Compare the token unlock schedule with the current circulating supply before you form a view on the float' directs an analytical comparison, not an action on a financial object; the ADVICE label also contradicts the reason recorded with it, which states the imperative is method guidance and negative.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0187",
+      "field": "intent",
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "ruling": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: 'Educational explanation and method guidance are negative.' 'Learn what a fund's tracking difference actually measures before comparing two index trackers on fees alone' is a directive aimed at knowledge, with no financial object to act on, so no ADVICE relation is carried; the ADVICE label contradicts the reason recorded with it, which concludes that no category survives.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0194",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: content that nothing marks as anyone else's is the author's, and 'unknown' is confined to unattributable attribution markers. The span lists bond price/yield and duration topics with no attribution of any kind, so the residual author row applies.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0194",
+      "field": "stance",
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': none of the 'quoted' triggers (quotation marks, a headline being discussed, a comment being answered, a dispute) is present, so the content is the article's own rather than reported from a third party. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment, which presupposes a report.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0194",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "ruling": "n/a",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 and section 3.5 (n/a where no claim carries a level). The span is a topic list of two nominal phrases (the inverse relation between coupon, yield and price; duration's role and limits) with no assertion a reader could disagree with, so no certainty level attaches; the sibling adjudication reached n/a on the comparable descriptive span at IND-0138 and both annotators recorded n/a on the same-family case IND-0234.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0195",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: an action-directive aimed at the reader AND a financial object is required, and educational explanation and method guidance are negative. 'Track the monthly CPI print alongside average weekly earnings to see how the disinflation is actually progressing' is data-tracking method guidance over statistical series, not a directed action on a financial object; the ADVICE label contradicts its own recorded reason, which states the imperative is method guidance and negative.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0195",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact with no hedge, and descriptive text that asserts facts is certain. The case carries unhedged assertions - that the disinflation is progressing and that 'Both series come out on the statistics office's own calendar'. Protocol v3 section 3.5 limits n/a to a claim carrying no certainty at all, and the sibling adjudication ruled certain on the same directive-plus-assertion shape at IND-0131.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0199",
+      "field": "severity",
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "ruling": "none",
+      "basis": "Protocol v3 section 3.6, 'The highest severity among the categories in decision', with 'none' for no category, read with guide v2 section 7 unverified_information ('a claim carried on an uncheckable source. A named, checkable source is negative'). The claim is carried on the exchange's own proof-of-reserves page, archived and linked by the post, so it is checkable and unverified_information is negative; with no category surviving, severity is none.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0199",
+      "field": "decision",
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "ruling": "",
+      "basis": "Guide v2 section 7 unverified_information: positive when a claim is carried on an uncheckable source, negative for 'a named, checkable source'. The quoted claim is about the exchange's own proof-of-reserves page and the post attaches an archived link to that snapshot, so the source is named and checkable and the anonymity of the person relaying it does not make it uncheckable (contrast the run's IND-0119, where no address or screenshot was ever produced). The past-tense quote carries no advice, prediction, guarantee or pressure, so no category survives.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0200",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': absent quotation marks, a headline being discussed, a comment being answered or a dispute, the article's own-voice sentence ('该项会计政策的说明列于附注七') is advanced by the article rather than reported from anyone else. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment. The run's earlier adjudication resolved the parallel question-plus-statement case IND-0152 the same way.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0200",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "n/a",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 (claim is none where the text asserts nothing a category could attach to) and section 3.5 (n/a where the claim carries no certainty). The interrogative asserts nothing, and the only asserted content is a pointer to where the policy description sits, a procedural statement rather than a market claim carrying a level; the run's earlier adjudication reached n/a on the parallel question-plus-disclosure case IND-0152, and on procedural or descriptive content at IND-0144 and IND-0138.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0209",
+      "field": "speaker",
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "ruling": "third_party",
+      "basis": "Guide v2 section 1.1 with its stated precedence (quoted -> unknown -> third_party -> author): 'service resumed' is reported as the operator's statement, and the operator is 'a named or reasonably identifiable party ... reported as holding the claim', so the third_party row decides the case rather than the author residual for unattributed content. The sibling adjudication applied the same precedence reading at IND-0153.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0209",
+      "field": "stance",
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4: 'quoted' is triggered by quotation marks, a headline being discussed, a comment being answered, or a statement the article goes on to dispute - none of which is present - and reproducing a claim while treating it as true is endorsement. The article narrates the resumption as the state of affairs with no dispute and no doubt, so the attitude is endorsement; the run's earlier adjudication ruled the same way on a report narrated as fact without quotation marks at IND-0153.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0213",
+      "field": "certainty",
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "ruling": "hypothetical",
+      "basis": "Guide v2 section 1.2 ('hypothetical' = depends on a stated condition) and section 5, whose marker table lists 'if' and whose rule is that 'A conditional statement asserts nothing unconditionally' and that 'Conditional beats modal'. The sentence is framed 'If your mandate permits real assets', and section 5's worked table grades 'If you want higher returns, buy this stock.' as hypothetical, so excising the condition to grade the main clause as certain is not the guide's rule.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0216",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' is the article's own voice or content nothing marks as anyone else's, and 'unknown' requires an unattributable attribution marker (insiders, sources, they say, 据说). A bare question about how FX differences on foreign-currency borrowings are recognised carries no such marker, so the residual author row applies.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0224",
+      "field": "speaker",
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: the text's questions and its statement that the specific arrangements follow the registration and depository institution's announcements carry no unattributable attribution marker of the kind the 'unknown' row lists, so the default under section 1.1's precedence ('anything with no attribution is the author's') is author.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0224",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the deferral sentence ('具体安排以登记托管机构发布的公告为准') is asserted in the article's own voice with no quotation marks, no headline being discussed, no comment being answered and no dispute, so it is advanced by the article rather than reported. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment, which requires a report.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0226",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the disputed span (日元兑美元汇率在未来两个季度可能延续弱势) is presented in the article's own voice, nothing marks it as anyone else's, and none of the 'quoted' triggers is present, so the attitude is endorsement; both annotators in fact record speaker 'author' for this span. The hedge 可能 governs the certainty level under section 1.2 rather than converting the stance into a report, which is what protocol v3 section 3.3's 'uncertain' row covers.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0230",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "ruling": "hypothetical",
+      "basis": "Guide v2 section 5, whose marker table lists 'if' and whose rules are 'Conditional beats modal' and 'A conditional statement asserts nothing unconditionally', and section 1.2's definition of hypothetical as a claim that depends on a stated condition. The advice span is framed by '若明年上半年销售回款如管理层预期般改善' with the modal 或许 inside it. Section 5's own table grades the conditional directive 'If you want higher returns, buy this stock.' as hypothetical while keeping it investment_advice, so the directive's presence does not make the level n/a.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0232",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the article's own-voice statement that such arrangements are routine plan management aimed at no specific holding is advanced by the article, with no quotation marks, no headline being discussed, no comment being answered and no dispute. Protocol v3 section 3.3's 'uncertain' is for a claim reported without either commitment, which this is not. The run's earlier adjudication resolved the parallel question-plus-statement case IND-0152 the same way.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0232",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "n/a",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 and section 3.5 (n/a where the claim carries no certainty). The text poses a question and adds a characterisation of routine plan management that carries no certainty of its own; the run's earlier adjudication reached n/a on the parallel question-plus-statement case IND-0152 and on descriptive characterisation at IND-0138.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0234",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: content that nothing marks as anyone else's is the author's, and 'unknown' is confined to unattributable attribution markers such as insiders, sources or 据说. The span lists duration and redemption-risk topics with no attribution whatsoever, so the residual author row applies.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0234",
+      "field": "stance",
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "ruling": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': with no quotation marks, no headline being discussed, no comment being answered and no dispute, the content is the article's own and is not reported from anyone else. Protocol v3 section 3.3 defines 'uncertain' as a claim reported without either commitment, which presupposes a report that this text does not contain.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0236",
+      "field": "certainty",
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "ruling": "certain",
+      "basis": "Guide v2 section 2 'Target price', which grades an attributed price level with certainty and no prediction ('Analysts set a 500 target price. | third_party | certain | none'), read with section 1.2 ('certain' = asserted as fact, no hedge). The claim asserts as fact that the 142 target was written into the team's quarterly outlook and carries no probable or possible marker ('expected to', 'probably', 'likely', 'may', 'might', 'could'); a reported expectation is a report under section 2, which is a category question, not a reason to lower the level of the report itself.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0239",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol v3 section 3.4, which cites guide v2 section 7: GUARANTEE is 'an outcome is made unconditional, or guaranteed / protected / assured is used', while RISK_REMOVED is 'risk is denied without the word guarantee: risk-free, cannot lose, never falls'. The claim uses 'protected' ('your downside is fully protected'), which section 3.4 places in the GUARANTEE row, and section 3.4 adds that a negated relation is still reported as its relation; the post's disclaimer ('nothing on the page is a guarantee') is the disclaimed-guarantee negative case, which bites at the decision layer, not at the relation carried.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0239",
+      "field": "severity",
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "ruling": "warning",
+      "basis": "Protocol v3 section 3.6, 'The highest severity among the categories in decision', which places unverified_information at warning severity, read with guide v2 section 7. The claim sits on an unnamed project's pinned post, which is not the named, checkable source section 7 requires for a negative, so unverified_information survives; with a non-empty decision the severity is the intermediate warning rather than none.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0239",
+      "field": "decision",
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "ruling": "unverified_information",
+      "basis": "Guide v2 section 7: unverified_information applies to a claim carried on an uncheckable source and is negative only for 'a named, checkable source', and section 3.1's asymmetry applies it at any statement_source. The promise comes from an unnamed project's own pinned post, an indefinite and unaccountable source, so it survives. The same post's disclaimer makes the guarantee relation negative ('a disclaimed guarantee'), so financial_guarantee does not attach, and no advice, prediction or reader-directed pressure is present.",
+      "resolution": "annotator_b"
+    }
+  ]
+}

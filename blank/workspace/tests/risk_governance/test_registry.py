@@ -32,7 +32,8 @@ class RegistryLookupTests(unittest.TestCase):
 
     def test_registry_lists_every_version(self) -> None:
         """Phase 7.5 extended the registry to four versions; Phase 8.1 added the
-        generated adversarial family as a namespaced benchmark id."""
+        generated adversarial family as a namespaced benchmark id; Phase 8.9 added
+        the independent validation benchmark, which is a namespace of its own."""
 
         keys = {
             (record.benchmark_id, record.version)
@@ -47,6 +48,7 @@ class RegistryLookupTests(unittest.TestCase):
                 ("semantic", "v3"),
                 ("semantic", "v4"),
                 ("semantic/adversarial", "v1"),
+                ("risk/independent", "v1"),
             },
         )
 
@@ -128,6 +130,15 @@ class RegistryManifestTests(unittest.TestCase):
                 ANNOTATION_VERSION_V2,
                 ADVERSARIAL_ANNOTATION_PROTOCOL,
             ),
+            # Phase 8.9 labels under guide v2 plus its own protocol, which is where
+            # the two-annotator and adjudication rules live. Recorded here rather
+            # than defaulted, so a version that appears without being registered
+            # still fails this test.
+            ("risk/independent", "v1"): (
+                "3.0.0",
+                "docs/RISK_ANNOTATION_GUIDE_v2.md@2.0.0+"
+                "docs/INDEPENDENT_ANNOTATION_PROTOCOL_V3.md@3.0.0",
+            ),
         }
         seen = set()
         for record in self.registry.list_benchmarks():
@@ -179,6 +190,7 @@ class RegistryManifestTests(unittest.TestCase):
             ("semantic", "v3"): "phase-7.4",
             ("semantic", "v4"): "phase-7.4",
             ("semantic/adversarial", "v1"): "phase-8.1",
+            ("risk/independent", "v1"): "phase-8.9",
         }
         for record in self.registry.list_benchmarks():
             key = (record.benchmark_id, record.version)

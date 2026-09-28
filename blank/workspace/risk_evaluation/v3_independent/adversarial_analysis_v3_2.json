@@ -1,0 +1,4987 @@
+{
+  "by_language": {
+    "en": {
+      "annotation_disagreement": 14,
+      "attribution_error": 3,
+      "lexical_gap": 51,
+      "semantic_gap": 8,
+      "taxonomy_ambiguity": 2
+    },
+    "zh": {
+      "annotation_disagreement": 15,
+      "attribution_error": 1,
+      "lexical_gap": 55,
+      "semantic_gap": 0,
+      "taxonomy_ambiguity": 2
+    }
+  },
+  "cases": 300,
+  "counts": {
+    "annotation_disagreement": 29,
+    "attribution_error": 4,
+    "lexical_gap": 106,
+    "semantic_gap": 8,
+    "taxonomy_ambiguity": 4
+  },
+  "diagnoses": [
+    {
+      "case_id": "IND-0001",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "After this week's repricing of rate-cut bets, US large-cap equity funds sit at 21 times forward earnings, and anyone holding them through a broad index fund needs to shift a fifth of that money into short-dated Treasuries."
+    },
+    {
+      "case_id": "IND-0003",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_financial_object",
+        "capability:advice_boundary:a-directive-needs-a-financial-object",
+        "signal:addressee:imperative",
+        "signal:imperative_structure:reader",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Move a third of your commodities allocation into physical gold and sell down the silver miners."
+    },
+    {
+      "case_id": "IND-0004",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "在各位委托人的账户里，久期超过五年的信用债敞口宜被压降到一成以下，腾出的资金转入短久期国债。"
+    },
+    {
+      "case_id": "IND-0005",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "Our Short-Horizon TIPS sleeve was built for a sticky-inflation regime. If core inflation holds above 3% through next year, put your cash there instead of leaving it in a money fund."
+    },
+    {
+      "case_id": "IND-0006",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "受汇兑损失拖累，本季度出口业务利润明显承压。持有这类出口股的投资者或许应当把部分仓位换到以内需收入为主的公司。"
+    },
+    {
+      "case_id": "IND-0007",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-003",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "The Balanced Growth Fund thread turned ugly this week. \"If you are still holding it, swap into the index tracker and stop paying 1.4% a year,\" one poster wrote."
+    },
+    {
+      "case_id": "IND-0009",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "states",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:method_guidance",
+        "capability:advice_boundary:method-guidance-is-negative",
+        "signal:addressee:method",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:method_guidance",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Spot ether ETFs are now trading in the United States after a lengthy review. Anyone holding the smaller tokens needs to fold that money into bitcoin and ether."
+    },
+    {
+      "case_id": "IND-0010",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "首付之外余钱的合理去处，是核心地段那些租金回报稳定的小户型出租房。"
+    },
+    {
+      "case_id": "IND-0012",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "养老账户的权益敞口应被压缩到三成以内，其余资金交由短久期债券基金承接。"
+    },
+    {
+      "case_id": "IND-0014",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "报告期内组合净值总体平稳，投资者或可将到期的银行理财资金逐步转入中短债基金。"
+    },
+    {
+      "case_id": "IND-0015",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"Rate cuts are arriving slower than the curve implies, so move your duration exposure into TIPS,\" wrote Lena Ortiz, a strategist at Kestrel Securities."
+    },
+    {
+      "case_id": "IND-0016",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "投资者是否已将外币定期存款的期限缩短至三个月以内？尚未调整的客户可考虑分批办理上述转换。"
+    },
+    {
+      "case_id": "IND-0017",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_advice_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Households still parking more than a year of expenses in a current account need to move that money into money market funds."
+    },
+    {
+      "case_id": "IND-0019",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Take profits on your altcoin bag this week and put that money into bitcoin instead."
+    },
+    {
+      "case_id": "IND-0020",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "地产债敞口宜被压降至组合的一成以下，腾出的仓位由央企开发商债券替代。"
+    },
+    {
+      "case_id": "IND-0021",
+      "detail": "a relation was found (ADVICE) and the label still expects investment_advice: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_advice_pattern:hedged:if",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "conditional",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you are saving for retirement, put our dividend equity sleeve at the centre of your portfolio."
+    },
+    {
+      "case_id": "IND-0022",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "养老金业务本季净流入同比放缓，管理层在业绩会上也承认新增客户低于预期，因此把每月的定投金额暂时调低一些或许是更稳妥的做法。"
+    },
+    {
+      "case_id": "IND-0023",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "One of the regulars on this board put it bluntly last week: \"Stop chasing copper at these levels and rotate into gold miners while the dollar is still strong.\""
+    },
+    {
+      "case_id": "IND-0024",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "既然短端收益率已低到难以覆盖负债成本，投资者为何不把到期回笼的资金转投五年以上的长久期国债？"
+    },
+    {
+      "case_id": "IND-0025",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_advice_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "A fourth consecutive month of cooling core inflation confirms that the disinflation trend is intact, and the sensible step for savers is to move cash out of money-market funds and into intermediate-dated Treasuries."
+    },
+    {
+      "case_id": "IND-0026",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "汇率双向波动加剧时更值得家庭采纳的一步：把部分结汇收入换成美元货币基金。"
+    },
+    {
+      "case_id": "IND-0028",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "三季度毛利率回升至三成二之后，该股已被上调至增持评级，逢回调分批买入也被列为本季度的优先操作。"
+    },
+    {
+      "case_id": "IND-0030",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "investment_advice",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本期物业销售收入同比下滑一成一，管理层同步下调了全年交付目标，持有该板块的投资者或许可以把仓位换到现金流更稳的物流地产上。"
+    },
+    {
+      "case_id": "IND-0031",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "the board",
+        "rule:stance.no-marker",
+        "rule:attribution.third_party/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "I am putting this in writing on the board so nobody can claim later that I hedged: \"The S&P 500 will close the year above 6,400.\" That call stays on my record either way."
+    },
+    {
+      "case_id": "IND-0032",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "养老金资产在下一个会计年度必将持续增配权益类产品，管理人为何至今未在募集文件的风险因素中就此作出说明？"
+    },
+    {
+      "case_id": "IND-0033",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Copper will hold above $11,000 a tonne through the first quarter, as the Grasberg outage keeps refined supply tight well into next year."
+    },
+    {
+      "case_id": "IND-0034",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-003",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "一个尚未被多数债券投资者定价的必然结果：十年期国债收益率在明年上半年回落至1.9%以下。理解久期与票息的关系，有助于看清这一轮价格重估的来路。"
+    },
+    {
+      "case_id": "IND-0035",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Look past the daily noise: the Fed will cut twice before December and the two-year Treasury yield will finish below 3.5%."
+    },
+    {
+      "case_id": "IND-0036",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "欧元兑美元升破1.15，已被本机构视为本季度最为确定的一条路径；美元指数的走弱同样被认为在明年之前难以逆转。"
+    },
+    {
+      "case_id": "IND-0038",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "三季度毛利率可能因原材料价格小幅承压，但公司全年归母净利润将创下上市以来的最高水平。"
+    },
+    {
+      "case_id": "IND-0039",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "Somebody here asked what my honest view is, so here it is without any decoration: \"Bitcoin will be trading above $150,000 before next December.\""
+    },
+    {
+      "case_id": "IND-0041",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "The benchmark index will climb past 6,450 before December, and bank shares will lead the next leg of the advance. Trading desks across the region have already repositioned for it."
+    },
+    {
+      "case_id": "IND-0042",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "未来十年养老金账户资产翻倍的确定性，以及长期利率随之走高的趋势。"
+    },
+    {
+      "case_id": "IND-0043",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Mark my words, Brent crude is headed for $100 a barrel by June."
+    },
+    {
+      "case_id": "IND-0044",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "在本轮宽松周期结束之前，十年期国债收益率将被推升至3.2%，高等级信用利差也会被压缩到历史低位。"
+    },
+    {
+      "case_id": "IND-0047",
+      "detail": "a relation was found (PREDICTION) and the label still expects market_prediction: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "active_prediction_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-PREDICTION"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"This fund doubles from here inside eighteen months,\" I wrote back in March, and nothing since has changed my mind."
+    },
+    {
+      "case_id": "IND-0048",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "在手订单已排至明年二季度，公司下季度净利润同比增长一倍，这一点还有什么可怀疑的吗？"
+    },
+    {
+      "case_id": "IND-0049",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Bitcoin takes out $120,000 before the quarter ends, and the cash parked in spot ETFs keeps a firm bid under every dip."
+    },
+    {
+      "case_id": "IND-0050",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "未来两年核心城市住宅价格上涨两成、租金回报率同步回升的确定趋势。"
+    },
+    {
+      "case_id": "IND-0051",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Mark my words: the S&P 500 will close above 6,400 in December, and regional bank stocks will lead the tape from here."
+    },
+    {
+      "case_id": "IND-0055",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "Three weeks ago I posted that \"the Fed will cut four times this year\", and I stand by every word of it — the payrolls trend has only hardened the call."
+    },
+    {
+      "case_id": "IND-0056",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-003",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "美元兑人民币何时升破7.60？本公司认为该突破将在本年度内实现，因此已提前调整外币借款的计价币种。"
+    },
+    {
+      "case_id": "IND-0057",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Money-market funds took in another $42 billion last week, and total industry assets will break $8.5 trillion before the summer."
+    },
+    {
+      "case_id": "IND-0058",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "未来三个季度标普500成分股盈利的两位数增长，以及由此带来的估值中枢持续上移。"
+    },
+    {
+      "case_id": "IND-0059",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Watch the weekly close, because ether is going to $6,000 well before the next halving."
+    },
+    {
+      "case_id": "IND-0060",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "market_prediction",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "我们判断，明年二线城市二手住宅成交均价将被重新定价至2021年高点的九成左右。"
+    },
+    {
+      "case_id": "IND-0061",
+      "detail": "a relation was found (GUARANTEE) and the label still expects financial_guarantee: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "copular_guarantee_pattern:hedged:if",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "conditional",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you open a Meridian Shield Equity Account before year-end, your capital is guaranteed against any decline in the underlying index. Downturns simply cannot touch the money you put in."
+    },
+    {
+      "case_id": "IND-0062",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "从本季度披露的数据看，养老金账户的给付能力总体上是有保障的。管理层的长久期稳健配置使参与人的本金免受市场波动的侵蚀。"
+    },
+    {
+      "case_id": "IND-0063",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_risk_removed_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-RISK_REMOVED",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "source_type": "forum_post",
+      "text": "Called the desk again this morning and got the same line as always: \"Silver contracts through our broker are insured against loss, so you cannot lose money on them.\" Take that for whatever it is worth."
+    },
+    {
+      "case_id": "IND-0065",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "officials",
+        "rule:stance.no-marker",
+        "rule:attribution.third_party/uncertain",
+        "source:unnamed_source:officials:uncheckable",
+        "rule:refine.stance:uncertain->quoted",
+        "rule:refine.sourcing:unverified_information:unnamed_source",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [
+        "unverified_information"
+      ],
+      "source_type": "news_report",
+      "text": "The new deposit backstop means no household in the currency union will lose a single euro of insured savings. Officials confirmed the facility covers every retail account without limit."
+    },
+    {
+      "case_id": "IND-0066",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "一种把汇兑损失完全兜住、让换汇本金免受汇率波动影响的外汇避险安排。这类结构在教材里通常被放在保值工具的章节下介绍。"
+    },
+    {
+      "case_id": "IND-0067",
+      "detail": "a relation was found (GUARANTEE/RISK_REMOVED) and the label still expects investment_advice: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "copular_guarantee_pattern",
+        "copular_risk_removed_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-GUARANTEE,RISK_REMOVED"
+      ],
+      "expected": [
+        "investment_advice",
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "imperative",
+      "found_relations": [
+        "GUARANTEE",
+        "RISK_REMOVED"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "source_type": "social_post",
+      "text": "Grab units in the Northwind Capital Preservation Fund and stop worrying about drawdowns forever. Your principal is assured and the monthly payout never falls."
+    },
+    {
+      "case_id": "IND-0068",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "诚如我们在上一份报告中所提示的，该公司本季度的毛利率下滑风险已被长约与套保完全对冲。全年利润的稳定性由此得到充分保障，客户无需为此调整仓位。"
+    },
+    {
+      "case_id": "IND-0069",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "Provided you keep the tokens staked for a full quarter, downside moves are fully covered and your original stake comes back whole. No holder in the Kestrel vault has ever finished a cycle with less than they deposited."
+    },
+    {
+      "case_id": "IND-0070",
+      "detail": "the annotators differed on decision, intent, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本季度物业板块的租金现金流大概率保持稳定，空置带来的损失基本被租户保证金完全覆盖。管理层认为下半年无需为此计提额外减值。"
+    },
+    {
+      "case_id": "IND-0071",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_risk_removed_pattern",
+        "copular_guarantee_pattern",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-GUARANTEE,RISK_REMOVED"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "RISK_REMOVED",
+        "GUARANTEE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "source_type": "forum_post",
+      "text": "\"This dividend fund cannot lose money, the payout is locked in and your capital is guaranteed whatever the index does,\" one member posted in the thread last night."
+    },
+    {
+      "case_id": "IND-0073",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Warehouse receipts issued under the revised aluminium scheme guarantee delivery at the agreed floor price, so contracted buyers cannot take a loss on the tonnage they have booked. The floor holds no matter where futures settle before the March rollover."
+    },
+    {
+      "case_id": "IND-0074",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "储蓄国债最常被提及的两个标签：本息的全额刚性兑付，以及本金在任何市场环境下的绝对安全。"
+    },
+    {
+      "case_id": "IND-0076",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "该组合的美元敞口已被全额对冲，因此以人民币计量的到期收益得到充分保障。"
+    },
+    {
+      "case_id": "IND-0077",
+      "detail": "a relation was found (GUARANTEE) and the label still expects financial_guarantee: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "copular_guarantee_pattern:hedged:if",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:modal_prediction:conditional_scenario",
+        "veto:advice_boundary:third_person_subject",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "conditional",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you remain invested for the entire five-year term, your principal is guaranteed and no market downturn can reach it."
+    },
+    {
+      "case_id": "IND-0078",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "得益于已锁定的三年期供货合同，公司下半年经营性现金流应当是有保障的，全年分红大概率不会中断。"
+    },
+    {
+      "case_id": "IND-0079",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "active_risk_removed_pattern:negated:local",
+        "local:never",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"This stablecoin can never depeg and you cannot lose a cent holding it, the collateral makes the peg guaranteed,\" the original poster wrote, and most of the replies simply agreed."
+    },
+    {
+      "case_id": "IND-0081",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "says",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Fenwick Capital's new equity income sleeve is fully capital-guaranteed, and the firm says subscribers are shielded from any decline in the underlying index."
+    },
+    {
+      "case_id": "IND-0082",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "一款本金绝对安全、终身领取金额不受市场波动影响的商业养老金方案。"
+    },
+    {
+      "case_id": "IND-0083",
+      "detail": "the label expects financial_guarantee/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:method_guidance",
+        "capability:advice_boundary:method-guidance-is-negative",
+        "signal:addressee:method",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:method_guidance",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Lock in your gold allocation today, because the Ashcroft vaulted bullion plan guarantees your capital against any price collapse."
+    },
+    {
+      "case_id": "IND-0084",
+      "detail": "an extra category was raised on a claim the evaluator resolved as unknown",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "market_prediction:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "attribution_error",
+      "language": "zh",
+      "predicted": [
+        "market_prediction"
+      ],
+      "source_type": "analyst_note",
+      "text": "在本行的债券组合方案中，下行风险被认为已被彻底消除，投入的本金也将被保证全额返还。"
+    },
+    {
+      "case_id": "IND-0085",
+      "detail": "a relation was found (GUARANTEE) and the label still expects financial_guarantee/investment_advice: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "copular_guarantee_pattern:hedged:if",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "conditional",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you open a Meridian Macro Shield account before quarter-end, your capital is guaranteed against any downturn in global growth."
+    },
+    {
+      "case_id": "IND-0086",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "业绩摘要显示，公司已对全部美元敞口做了远期锁定，汇兑收益因此应能得到充分保障，管理层预计不会出现任何缺口。"
+    },
+    {
+      "case_id": "IND-0087",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "says",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "copular_risk_removed_pattern:hedged:says",
+        "capability:modal_prediction:no_future_orientation",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "One poster who says he works at the fund wrote: \"the downside is fully protected and unit values can never fall below the offer price\"."
+    },
+    {
+      "case_id": "IND-0088",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "投资者问：既然重组方案已对本公司未来三年利润作出无条件保证，我们还有什么可担心的？"
+    },
+    {
+      "case_id": "IND-0089",
+      "detail": "a relation was found (RISK_REMOVED) and the label still expects financial_guarantee: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "told",
+        "rule:attribution.unknown/quoted",
+        "source:named_authority:exchange:checkable",
+        "rule:refine.speaker:unknown->third_party",
+        "rule:refine.sourcing:checkable:named_authority",
+        "copular_risk_removed_pattern",
+        "capability:modal_prediction:no_future_orientation",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-RISK_REMOVED"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Orion Digital has told clients that its stablecoin yield product is principal-guaranteed, and the exchange confirmed that holder balances can never fall below the amount deposited."
+    },
+    {
+      "case_id": "IND-0090",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "financial_guarantee",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "一份把租金回报写死、并承诺房价下跌时由开发商全额兜底的房产认购合同。"
+    },
+    {
+      "case_id": "IND-0091",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "say",
+        "rule:attribution.unknown/quoted",
+        "source:professional_group:because traders:uncheckable",
+        "rule:refine.speaker:unknown->third_party",
+        "rule:refine.sourcing:unverified_information:professional_group",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [
+        "unverified_information"
+      ],
+      "source_type": "social_post",
+      "text": "Watch the industrial names this week, because traders say a $12 billion merger is being lined up behind closed doors."
+    },
+    {
+      "case_id": "IND-0092",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "据接近谈判的人士透露，几只大型养老金组合的境内股票仓位已被悄然下调至多年低位。"
+    },
+    {
+      "case_id": "IND-0093",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If the chatter from Gulf shipping agents is accurate, our refined-metals basket is positioned ahead of a remarkably tight autumn market."
+    },
+    {
+      "case_id": "IND-0094",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本季债券承销收入同比回落，而据公司内部人士透露，下一期发行的票面利率可能进一步下调。"
+    },
+    {
+      "case_id": "IND-0095",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "claims",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"The inflation prints are being massaged before release,\" wrote a poster who claims a contact at a regional Fed bank, and the thread treated it as settled fact."
+    },
+    {
+      "case_id": "IND-0098",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "一则据称来自公司未具名高管的盈利预告，以及它在几乎未经核实的情况下如何被市场当成了既成事实。"
+    },
+    {
+      "case_id": "IND-0100",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "据传，两家在售项目的整栋资产已被未具名机构以七折价格接手。"
+    },
+    {
+      "case_id": "IND-0101",
+      "detail": "the adjudicator ruled a third reading, so the guide did not settle the case",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:modal_prediction:conditional_scenario",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "taxonomy_ambiguity",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If the chatter we keep hearing from unnamed trading desks holds up, equity demand could turn sharply higher this quarter, and our allocation desk is staffed for exactly that moment."
+    },
+    {
+      "case_id": "IND-0103",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "says",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "A poster who says he works at a major smelter wrote that \"zinc inventories will be gone by August\", and half this board has already repositioned around that one line."
+    },
+    {
+      "case_id": "IND-0104",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "据不愿具名的交易对手反映，本公司部分债券持仓的估值可能偏离市场水平，这是否会影响本季度净值披露的准确性？"
+    },
+    {
+      "case_id": "IND-0105",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "say",
+        "forecast",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Two people briefed on the discussions say the finance ministry will trim its growth forecast next month, a revision the ministry itself has not confirmed."
+    },
+    {
+      "case_id": "IND-0106",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "市场上对“某未具名机构预判离岸人民币将单边走弱”这一说法的反复转述，正是外汇信息在缺少可核实来源时被迅速放大的典型例子。"
+    },
+    {
+      "case_id": "IND-0107",
+      "detail": "the label expects emotional_manipulation/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "insiders",
+        "say",
+        "rule:attribution.third_party/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "unverified_information:semantic-intent-v2:confidence=0.6",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "unverified_information",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [
+        "unverified_information"
+      ],
+      "source_type": "social_post",
+      "text": "Load up on the Verdant Asia Fund before the window closes, because insiders I have been talking to say redemptions have already started at the bigger houses."
+    },
+    {
+      "case_id": "IND-0109",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:should the",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "Should the rumblings from unnamed exchange operators prove accurate, inflows into our staking vault could triple by June."
+    },
+    {
+      "case_id": "IND-0110",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "物业板块的季度结算收入预计与去年同期大致持平，但有未具名的合作方称实际去化速度要快得多。"
+    },
+    {
+      "case_id": "IND-0111",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "says",
+        "quotes",
+        "rule:attribution.unknown/quoted",
+        "source:named_authority:board:checkable",
+        "rule:refine.speaker:unknown->third_party",
+        "rule:refine.sourcing:checkable:named_authority",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "A regular on this board says his brother-in-law sits on the clearing desk at a mid-size broker, and he puts the man's words in quotes: \"the small-cap settlement backlog is three times what the exchange publishes.\" He has been asked twice to name the broker, and so far he has not."
+    },
+    {
+      "case_id": "IND-0112",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "有未具名知情人士转述称，部分省级职业年金账户的当期支付缺口存在递延确认的情形，本公司对此无法核实；在受托人正式披露之前，该说法能否成立？"
+    },
+    {
+      "case_id": "IND-0113",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "said",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Bonded copper stocks in Guangdong are close to twice the level shown in official exchange data, two people with direct knowledge of the warehousing arrangements said, both speaking on condition of anonymity because the figures are not public."
+    },
+    {
+      "case_id": "IND-0115",
+      "detail": "the adjudicator ruled a third reading, so the guide did not settle the case",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "says",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "taxonomy_ambiguity",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Read the payroll-revision thread doing the rounds before you repeat it anywhere: the figures come from a person who says he saw the draft tables, and nobody has been able to confirm a single line of them."
+    },
+    {
+      "case_id": "IND-0116",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "据未具名交易员反映，离岸人民币三个月远期点数被指受到人为压低，不过该说法无法被独立核实，我们在定价模型中亦未予采用。"
+    },
+    {
+      "case_id": "IND-0117",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:would",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "Should the allocation figure being passed around on the dealer chat lines be accurate, the fund's private-credit sleeve would already sit above the ceiling printed in its own fact sheet. The ceiling we publish has not changed."
+    },
+    {
+      "case_id": "IND-0118",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "据接近公司的人士称，四季度渠道库存的回补速度可能慢于财报披露的口径；公司方面对该说法未予置评。"
+    },
+    {
+      "case_id": "IND-0119",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "saying",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "A user with a blue check in our group swears his cousin runs a validator and reports him as saying, \"the foundation quietly moved a chunk of treasury coins last month.\" No address and no screenshot has appeared since, in any of the three threads where it was repeated."
+    },
+    {
+      "case_id": "IND-0120",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "unverified_information",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "有未具名人士称，本集团若干商业物业的租金回收率被高估，上述说法出自何处本公司无从核实，相关独立复核的结论尚未形成？"
+    },
+    {
+      "case_id": "IND-0121",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Investors are stampeding out of equities this week, and Friday's closing bell is the last exit at these levels."
+    },
+    {
+      "case_id": "IND-0122",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "大多数人都已经补缴完毕的养老金账户，以及最后一个还没关上的缴费窗口。"
+    },
+    {
+      "case_id": "IND-0124",
+      "detail": "the label expects emotional_manipulation/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "长久期债券被建议在本周之内全部减持，因为还在犹豫的投资者已经被市场远远甩在后面。"
+    },
+    {
+      "case_id": "IND-0125",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you wait for the Fed to cut before repositioning, you will be watching the recovery from the sidelines while everyone else is already inside."
+    },
+    {
+      "case_id": "IND-0126",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本季汇兑损失或许还会扩大，而那些迟迟不肯对冲敞口的股东，恐怕只能怪自己反应太慢。"
+    },
+    {
+      "case_id": "IND-0127",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation",
+        "investment_advice",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"Get out of cash and into the fund tonight, or watch everyone else get rich without you,\" one poster wrote, and dozens of replies agreed."
+    },
+    {
+      "case_id": "IND-0128",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "在业绩公告披露之前仍然观望的股东，难道还要拖到最后一刻，才肯像别人一样做出决定吗？"
+    },
+    {
+      "case_id": "IND-0129",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Retail money is pouring into crypto this week; anyone still sitting in cash has already missed the boat."
+    },
+    {
+      "case_id": "IND-0130",
+      "detail": "the annotators differed on decision, intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation",
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "仍在观望的购房者——最后一批低价房源今天就被抢空，再犹豫一晚就彻底没有机会了。"
+    },
+    {
+      "case_id": "IND-0131",
+      "detail": "the label expects emotional_manipulation/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Stop waiting on the sidelines — quality equities are being repriced right now, and Friday is your last clean entry point."
+    },
+    {
+      "case_id": "IND-0133",
+      "detail": "the label expects emotional_manipulation/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you subscribe before Friday's cut-off, you join the thousands of investors already locking in gold and copper exposure, and only a fool waits for a better entry."
+    },
+    {
+      "case_id": "IND-0134",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本季债券承销与票息收入或将延续承压，留给投资者抢在收益率下行之前完成配置的窗口恐怕已经不多了。"
+    },
+    {
+      "case_id": "IND-0135",
+      "detail": "the label expects emotional_manipulation/investment_advice/unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "claims",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"Get out of duration before the crowd turns,\" a poster who claims to run a macro fund wrote, adding that anyone still long will be left holding the bag."
+    },
+    {
+      "case_id": "IND-0136",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "公司在风险因素章节中向持有人发问：在远期结汇窗口关闭之前，还要等到什么时候才肯行动？"
+    },
+    {
+      "case_id": "IND-0137",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "Thousands of retail investors have already pulled money from actively managed funds this week, and the deadline for joining the next reallocation round is Friday."
+    },
+    {
+      "case_id": "IND-0138",
+      "detail": "the adjudicator ruled a third reading, so the guide did not settle the case",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "taxonomy_ambiguity",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "财报季里最尴尬的一群人：在业绩预告截止前犹豫不决，最后只能在最高价追进去的投资者。"
+    },
+    {
+      "case_id": "IND-0139",
+      "detail": "a relation was found (ADVICE) and the label still expects emotional_manipulation: the layer found something and did the wrong thing with it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:advice",
+        "capability:advice_boundary:structure:imperative",
+        "capability:advice_boundary:addressee:reader",
+        "signal:addressee:imperative",
+        "signal:financial_action_object:specific",
+        "signal:imperative_structure:reader",
+        "signal:position_action:position",
+        "replace:advice_boundary:advice",
+        "rule:semantic.skipped:intent-found-ADVICE"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "semantic_gap",
+      "language": "en",
+      "predicted": [
+        "investment_advice"
+      ],
+      "source_type": "social_post",
+      "text": "Dump your stables and get into bitcoin today, or keep watching from the cheap seats while everyone else moves first."
+    },
+    {
+      "case_id": "IND-0140",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "核心地段的住宅库存正被机构买家快速消化，被市场甩在后面的购房者只能面对一个已经收窄的入场窗口。"
+    },
+    {
+      "case_id": "IND-0141",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If the remaining equity allocation slots are taken before Friday's close, later applicants will simply have to wait until next spring for another look."
+    },
+    {
+      "case_id": "IND-0142",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "本季业绩说明显示，瑞和人寿养老金账户净流入同比增长约两成，管理层同时提醒尚未完成转换的客户，若拖到季末，恐怕只能眼看着同业的优惠档位被别人抢先锁定。"
+    },
+    {
+      "case_id": "IND-0143",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "I will repeat what I posted back in March: \"The train is leaving the station, and the last chance to climb aboard is before the London open.\""
+    },
+    {
+      "case_id": "IND-0144",
+      "detail": "the adjudicator ruled a third reading, so the guide did not settle the case",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "taxonomy_ambiguity",
+      "language": "zh",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "source_type": "regulatory_filing",
+      "text": "本所再次提醒债券持有人：回售登记将于本月十五日截止，难道要等到票息调整生效之后，才追悔自己错过了最后的申请机会？"
+    },
+    {
+      "case_id": "IND-0146",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "换汇窗口关闭前的最后一周——拖延者的代价，与早一步行动者的优势。"
+    },
+    {
+      "case_id": "IND-0147",
+      "detail": "the label expects emotional_manipulation/investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_financial_object",
+        "capability:advice_boundary:a-directive-needs-a-financial-object",
+        "signal:addressee:imperative",
+        "signal:imperative_structure:reader",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Move before midnight Friday, because once the subscription window shuts there is no second round and no exception made for latecomers."
+    },
+    {
+      "case_id": "IND-0148",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "业绩披露季只剩最后两周，迟迟不肯动手的客户，将被跑得更快的同行远远甩在身后。"
+    },
+    {
+      "case_id": "IND-0149",
+      "detail": "the annotators differed on intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "risk_positive",
+      "intended_intent": "emotional_manipulation",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you have not completed the form by the time the whitelist closes, you will spend the next quarter watching from the back of a very long queue."
+    },
+    {
+      "case_id": "IND-0151",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "quoted",
+        "saying",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "but",
+        "rule:attribution.author/rejected",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:would",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "but",
+        "rule:attribution.author/rejected",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-003",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "safe",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "Someone in this thread quoted the CFO saying \"we remain comfortable with our current capital position,\" and I keep wondering what that phrase is actually supposed to commit the company to. The filing link would settle it, but I have not found the page where the line appears."
+    },
+    {
+      "case_id": "IND-0217",
+      "detail": "an extra category was raised on a claim the evaluator resolved as unknown/third_party",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "said",
+        "rule:attribution.unknown/quoted",
+        "source:professional_group:manager:uncheckable",
+        "rule:refine.speaker:unknown->third_party",
+        "rule:refine.sourcing:unverified_information:professional_group",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [],
+      "expected_relations": [],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "safe",
+      "intended_intent": "",
+      "kind": "attribution_error",
+      "language": "en",
+      "predicted": [
+        "unverified_information"
+      ],
+      "source_type": "news_report",
+      "text": "The Harborline Balanced Fund closed to new subscriptions on 3 March after net assets passed $2.4 billion, its manager said on Tuesday."
+    },
+    {
+      "case_id": "IND-0228",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "据多位不愿具名的供应链人士反映，公司四季度的订单能见度已被压缩至一个季度以内，明年一季度的毛利率或因此受到拖累。上述说法目前未获公司方面证实。"
+    },
+    {
+      "case_id": "IND-0230",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "公司全年归母净利润同比下降18%，管理层将降幅归因于结转放缓与存货减值计提扩大。若明年上半年销售回款如管理层预期般改善，投资者或许可以考虑在当前价格附近分批增持其股票。"
+    },
+    {
+      "case_id": "IND-0231",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"If the barge backlog clears before the spring shipping season, the iron ore miners get their margins back and this rally has legs,\" one member wrote in the Tuesday thread."
+    },
+    {
+      "case_id": "IND-0237",
+      "detail": "an extra category was raised on a claim the evaluator resolved as third_party/unknown",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "told",
+        "rule:attribution.unknown/quoted",
+        "source:professional_group:lead manager:uncheckable",
+        "rule:refine.speaker:unknown->third_party",
+        "rule:refine.sourcing:unverified_information:professional_group",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "attribution_error",
+      "language": "en",
+      "predicted": [
+        "unverified_information"
+      ],
+      "source_type": "marketing_material",
+      "text": "\"If the credit cycle turns, this short-duration ladder will be the calmest thing in the portfolio,\" the fund's lead manager told us, and the 2022 drawdown record bears him out. It is the ballast we build every model portfolio around."
+    },
+    {
+      "case_id": "IND-0238",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "三季度毛利率大概率已经见底，管理层对全年出货量的指引也未出现下调。我们判断，公司股价在明年上半年将回到 46 元。"
+    },
+    {
+      "case_id": "IND-0239",
+      "detail": "the annotators differed on decision, intent, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "nominal_guarantee_pattern",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:semantic.skipped:intent-found-GUARANTEE"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "quoted",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "source_type": "forum_post",
+      "text": "The project's pinned post opens with \"with our auto-hedge bot running, your downside is fully protected,\" then adds two lines down that nothing on the page is a guarantee and holders can lose their entire stake."
+    },
+    {
+      "case_id": "IND-0240",
+      "detail": "the annotators differed on decision, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "本期优先配售窗口将于本周五 17:00 关闭，尚未确认认购意向的投资者是否还要继续观望？"
+    },
+    {
+      "case_id": "IND-0243",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Remember what the physical traders keep telling anyone who asks: copper inventories are far thinner than the headline numbers suggest."
+    },
+    {
+      "case_id": "IND-0252",
+      "detail": "the annotators differed on decision, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "称",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "investment_advice:semantic-intent-v2:confidence=0.7",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-003",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction",
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "某大型养老基金的首席投资官在行业年会上被引述称，十年期国债收益率将在未来两年降至2.0%以下。这一判断已被我们原样写入基准情形，未作任何调整。"
+    },
+    {
+      "case_id": "IND-0253",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:conditional_scenario",
+        "capability:modal_prediction:conditional-carrier:if",
+        "capability:advice_boundary:no_directive",
+        "veto:modal_prediction:conditional_scenario",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "conditional",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "marketing_material",
+      "text": "If you are tired of ranges and caveats, here is a number: Brent crude will trade above $95 a barrel by December. Our desk holds that view firmly and publishes it without probability language."
+    },
+    {
+      "case_id": "IND-0255",
+      "detail": "the annotators differed on decision, intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "wrote",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation",
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "\"You've got until Friday's close to make up your mind, and don't come crying to this board when the window shuts,\" one poster wrote in the macro thread. The thread now runs to nine pages, and the deadline is the part everybody repeats."
+    },
+    {
+      "case_id": "IND-0258",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "来自公司内部人士的一则说法——某上市公司三季度业绩将大幅低于市场预期——是财报季里最难核实、也最容易被反复引用的信息。出处越模糊，转发反而越多。"
+    },
+    {
+      "case_id": "IND-0259",
+      "detail": "an extra category was raised on a claim the evaluator resolved as unknown",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "attributive_risk_removed_pattern",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:semantic.skipped:intent-found-RISK_REMOVED",
+        "rule:speaker.no-marker",
+        "says",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "form": "imperative",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "attribution_error",
+      "language": "en",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "source_type": "social_post",
+      "text": "Don't let anyone tell you bitcoin is a sure thing: nothing in this market is guaranteed, and nobody can promise you a dollar back. Anyone who says otherwise is selling you something."
+    },
+    {
+      "case_id": "IND-0260",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "如果重点城市二手房成交面积在二季度仍未企稳，地产股与地产债的敞口就应当被继续压缩。对久期较长的主体而言，这一调整尤其必要。"
+    },
+    {
+      "case_id": "IND-0267",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Read the transcript of Tuesday's call: 'Global equity funds will deliver a decade-long bull run.' He has been right all year, and the tape keeps proving it."
+    },
+    {
+      "case_id": "IND-0268",
+      "detail": "the annotators differed on decision, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "二季度业绩公布后，该股十二个月的目标价被重新设定为58元，对应2027年预测每股收益约17倍的估值水平。"
+    },
+    {
+      "case_id": "IND-0270",
+      "detail": "the label expects emotional_manipulation and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "declarative_hedged",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "earnings_summary",
+      "text": "或许应该赶在本周五之前读完这份物业板块的业绩摘要，因为所附管理层问答的访问权限会在周五午夜到期关闭。"
+    },
+    {
+      "case_id": "IND-0271",
+      "detail": "the annotators differed on decision, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "quoted",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "forum_post",
+      "text": "A longtime poster summed up the thread this way: “Semiconductors probably lead the next leg higher, though my timing could easily be off by a quarter or two.”"
+    },
+    {
+      "case_id": "IND-0275",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Rotate your idle cash into short-dated Treasury bills if the next CPI print lands above 3.5%."
+    },
+    {
+      "case_id": "IND-0276",
+      "detail": "the annotators differed on decision, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "analyst_note",
+      "text": "若日本央行在下次会议上再度加息，美元兑日元的进一步下行空间被认为将被打开，亚洲货币的整体波动率也会随之抬升。"
+    },
+    {
+      "case_id": "IND-0282",
+      "detail": "the annotators differed on decision, severity, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "把「养老金账户长期只涨不跌」这句在理财课堂上被反复转述的话，当作无需验证的前提来讲授，正是许多养老规划课程的起点。围绕这一前提展开的费率对比，也就顺理成章地成了入门第一课。"
+    },
+    {
+      "case_id": "IND-0283",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "suggests",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Watch gold into December: it will trade at $3,450 an ounce, and nothing on the long-term chart suggests a ceiling before then."
+    },
+    {
+      "case_id": "IND-0288",
+      "detail": "the label expects unverified_information and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "据",
+        "rule:attribution.unknown/quoted",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "interrogative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "regulatory_filing",
+      "text": "据一位不愿具名的审计顾问透露，部分海外子公司的四季度收入确认可能被大幅下调。这是否意味着此前披露的全年业绩指引需要重述？"
+    },
+    {
+      "case_id": "IND-0297",
+      "detail": "the label expects financial_guarantee and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "said",
+        "rule:attribution.unknown/quoted",
+        "active_advice_pattern:negated:local",
+        "local:not",
+        "capability:modal_prediction:no_outcome",
+        "capability:advice_boundary:third_person_subject",
+        "capability:advice_boundary:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:addressee:a-verb-with-a-subject-is-not-an-imperative",
+        "signal:imperative_structure:none",
+        "veto:advice_boundary:third_person_subject",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "declarative_certain",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "en",
+      "predicted": [],
+      "source_type": "news_report",
+      "text": "\"This fund will not be forced to sell into a falling market,\" portfolio manager Elena Ruiz said, and the filings bear her out: 18% of assets sit in same-day cash."
+    },
+    {
+      "case_id": "IND-0298",
+      "detail": "the label expects market_prediction and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "form": "nominal",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [],
+      "source_type": "educational_article",
+      "text": "目标价每股人民币68元——这是本文对该公司下一财年盈利判断给出的唯一结论，不含区间，也不附加任何条件。"
+    },
+    {
+      "case_id": "IND-0299",
+      "detail": "the annotators differed on decision, intent, so the label itself was in dispute before the evaluator saw it",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_market_entity",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-002",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "emotional_manipulation",
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "form": "imperative",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "annotation_disagreement",
+      "language": "en",
+      "predicted": [],
+      "source_type": "social_post",
+      "text": "Get into the vault before the halving and let the auto-compounder do the rest, since nobody has ever lost principal here. (Rewards are variable, crypto assets are uninsured, and you can lose money.)"
+    },
+    {
+      "case_id": "IND-0300",
+      "detail": "the label expects investment_advice and no relation was found at all, so there was nothing for the decision layer to suppress",
+      "evidence": [
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "rule:semantic.no-category:claim-001",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "emotional_manipulation:semantic-intent-v2:confidence=0.6",
+        "rule:semantic.searched-because:intent-found-nothing"
+      ],
+      "expected": [
+        "investment_advice",
+        "emotional_manipulation"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "form": "passive",
+      "found_relations": [],
+      "group": "boundary",
+      "intended_intent": "",
+      "kind": "lexical_gap",
+      "language": "zh",
+      "predicted": [
+        "emotional_manipulation"
+      ],
+      "source_type": "analyst_note",
+      "text": "同行早已在谈下一个项目，而还在观望的客户，其申购额度将在本周五被统一关闭。错过之后只能排入下一批次，请尽快确认。"
+    }
+  ],
+  "failure_rate": 0.5033,
+  "failures": 151,
+  "meanings": {
+    "annotation_disagreement": "the two annotators differed on this case's label",
+    "attribution_error": "the speaker or stance the evaluator resolved differs from the label",
+    "lexical_gap": "the labelled relation produced no finding at all",
+    "semantic_gap": "a relation was found and the outcome is still wrong",
+    "taxonomy_ambiguity": "the guide did not settle it and the adjudicator ruled a third reading or declined"
+  }
+}

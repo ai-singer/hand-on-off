@@ -1,0 +1,1404 @@
+{
+  "counts": {
+    "resolved": 151,
+    "total": 155,
+    "unresolved": 4
+  },
+  "rulings": [
+    {
+      "annotator_a": "investment_advice",
+      "annotator_b": "(none)",
+      "basis": "Guide §7 / protocol §3.7: investment_advice needs an action-directive aimed at the reader plus a financial object; preferring low-fee broad index funds to frequently traded thematic products is method guidance, which the guide makes negative.",
+      "case_id": "IND-0002",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide §7 investment_advice: an action-directive aimed at the reader plus a financial object is required, and method guidance is negative; the text states a product-type preference (low-fee broad index funds over thematic products) with no directive, so no relation is carried.",
+      "case_id": "IND-0002",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the categories in decision; with decision empty the severity is none.",
+      "case_id": "IND-0002",
+      "field": "severity",
+      "resolution": "annotator_b",
+      "ruling": "none"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "basis": "Guide §5: a conditional directive keeps its category and takes certainty hypothetical ('If you want higher returns, buy this stock.'), and conditional beats modal (guide §1.2).",
+      "case_id": "IND-0007",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "investment_advice",
+      "annotator_b": "investment_advice,unverified_information",
+      "basis": "Guide §3.1 and §4: investment_advice requires statement_source author and a claim inside quotation marks is not the article's claim; unverified_information applies at any statement_source, and 'one poster' is unattributable.",
+      "case_id": "IND-0007",
+      "field": "decision",
+      "resolution": "third_reading",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Protocol §3.5: n/a applies where the claim carries no certainty; the interrogative asserts no claim, and guide §1.2 records only how a claim is presented.",
+      "case_id": "IND-0008",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Protocol §3.3: endorsed means the article advances the claim as its own; the text puts the conversion as an open question (股东是否应当) and commits to nothing.",
+      "case_id": "IND-0008",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "uncertain"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "possible",
+      "basis": "Protocol §3.5 marker table / guide §1.2: 或可 ('may') is a possibility modal, so the claim is presented as one possibility.",
+      "case_id": "IND-0014",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "possible"
+    },
+    {
+      "annotator_a": "possible",
+      "annotator_b": "n/a",
+      "basis": "Protocol §3.5 marker table / guide §1.2: 可考虑 ('may consider') is a possibility modal, so the claim is presented as one possibility.",
+      "case_id": "IND-0016",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "possible"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide §7 / protocol §3.7: a described 建仓方案 (buy in batches during earnings season, cap a single holding at 30%) is method guidance, not an action-directive aimed at the reader.",
+      "case_id": "IND-0018",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Protocol §3.2: author is the article's own voice, or where nothing marks the claim as anyone else's; the text carries no attribution marker.",
+      "case_id": "IND-0018",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "basis": "Protocol §3.3 with guide §4: the unit of annotation is the article's own voice, and nothing marks the plan as quoted or reported from another party, so the article advances it itself.",
+      "case_id": "IND-0018",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "basis": "Protocol §3.2: third_party requires attribution to a named person, body or document; 已被上调至增持评级 / 被列为本季度的优先操作 leave the agent unattributable, which is unknown.",
+      "case_id": "IND-0028",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "n/a",
+      "basis": "Guide §5 / §1.2: conditional beats modal — the directive is framed by 'If digital assets belong in your portfolio at all', and a conditional directive is still hypothetical.",
+      "case_id": "IND-0029",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "market_prediction",
+      "annotator_b": "market_prediction,unverified_information",
+      "basis": "Guide §2 rule / protocol §3.7: the second clause's 同样被认为 continues the named speaker 本机构, and unverified_information is negative for a named, checkable source.",
+      "case_id": "IND-0036",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "market_prediction"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Protocol §3.5 / guide §1.2: the text asks whether the company should disclose the proposition rather than asserting it, so no certainty attaches to a claim.",
+      "case_id": "IND-0040",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "basis": "Guide §2 rule: market_prediction requires the article to assert a future market outcome as its own certainty; a question about whether the company should disclose the proposition asserts nothing.",
+      "case_id": "IND-0040",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "basis": "Protocol §3.2: nothing marks the question as anyone else's, so it is the article's own voice.",
+      "case_id": "IND-0040",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "basis": "Protocol §3.5: 'expected to' is a probable marker and the weakest carrier wins — 管理层预计 together with 将 narrows the claim to probable, not certain.",
+      "case_id": "IND-0054",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "probable"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4: GUARANTEE applies where assured/protected wording is used or an outcome is made unconditional (有保障 = assured; 使本金免受市场波动的侵蚀 = protected); RISK_REMOVED is the residual for risk denied without such wording.",
+      "case_id": "IND-0062",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and the desk's line sits inside quotation marks and is not endorsed; unverified_information survives at any statement_source because the desk/broker is unnamed and uncheckable.",
+      "case_id": "IND-0063",
+      "field": "decision",
+      "resolution": "third_reading",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "basis": "Guide §3.1: financial_guarantee requires statement_source author, but the guarantee is the issuer's reported view and is posed as an open question; the issuer and the prospectus are named and checkable, so unverified_information is negative (protocol §3.7).",
+      "case_id": "IND-0064",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity follows decision, and no category survives in this text.",
+      "case_id": "IND-0064",
+      "field": "severity",
+      "resolution": "annotator_b",
+      "ruling": "none"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "probable",
+      "basis": "Protocol §3.5: the weakest carrier wins — 大概率 is a probable marker carried by the text's claim.",
+      "case_id": "IND-0070",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "probable"
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "basis": "Guide §7: risk removed in the article's own voice (空置带来的损失基本被租户保证金完全覆盖); the impairment view is attributed to named management and the hedged rent view is not a prediction, so neither adds a further category.",
+      "case_id": "IND-0070",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "financial_guarantee"
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "PREDICTION",
+      "basis": "Protocol §3.4: the risk is denied (vacancy losses covered by tenant deposits); guide §2 and protocol §3.7 exclude a hedged author claim (大概率) from market_prediction.",
+      "case_id": "IND-0070",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "RISK_REMOVED"
+    },
+    {
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: financial_guarantee is a block-severity category and it survives in decision.",
+      "case_id": "IND-0070",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "block"
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and these words are a quoted thread post the article does not endorse; unverified_information survives at any statement_source because 'one member' is unattributable and uncheckable.",
+      "case_id": "IND-0071",
+      "field": "decision",
+      "resolution": "third_reading",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Protocol §3.2: the question is in the article's own voice and nothing marks it as anyone else's.",
+      "case_id": "IND-0072",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4: 本息的全额刚性兑付 makes the repayment outcome unconditional, which is the GUARANTEE branch (an outcome made unconditional), so RISK_REMOVED — the residual for risk denied without such wording or unconditional outcome — does not govern.",
+      "case_id": "IND-0074",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4: 得到充分保障 uses assurance/protection wording ('assured'), the GUARANTEE branch; RISK_REMOVED is the residual used only when risk is denied without such wording.",
+      "case_id": "IND-0076",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and the claim is quoted from the original poster with no endorsement in the article's own voice (replies agreeing is not the article endorsing it); unverified_information survives at any statement_source because the poster is unattributable.",
+      "case_id": "IND-0079",
+      "field": "decision",
+      "resolution": "third_reading",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "hypothetical",
+      "basis": "Guide §5 / §1.2: conditional beats modal — 'If you open a Meridian Macro Shield account before quarter-end' frames the guarantee, so the claim is hypothetical.",
+      "case_id": "IND-0085",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4: 汇兑收益应能得到充分保障 uses assurance/protection wording ('assured'), the GUARANTEE branch; RISK_REMOVED is the residual for risk denied without such wording.",
+      "case_id": "IND-0086",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4: 'the downside is fully protected' uses a GUARANTEE marker word (protected) and 'unit values can never fall below the offer price' makes the outcome unconditional; RISK_REMOVED is the residual category.",
+      "case_id": "IND-0087",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "basis": "Protocol §3.2: the guarantee is attributed to a named body/document — the developer (开发商) promising 全额兜底 in the subscription contract — so it is not the article's own voice.",
+      "case_id": "IND-0090",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "basis": "Protocol §3.3 with guide §4: the promise is relayed from the contract and the article does not advance it in its own voice, so it is not endorsed.",
+      "case_id": "IND-0090",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "quoted"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Protocol §3.5: n/a applies where the claim carries no certainty, as a directive does not; no conditional is present, so guide §5 does not make it hypothetical.",
+      "case_id": "IND-0091",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "basis": "Guide §7 / protocol §3.7: 'Watch the industrial names this week' is an imperative action-directive aimed at the reader with a financial object, and it is neither educational explanation nor method guidance, the two stated negatives.",
+      "case_id": "IND-0091",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "ADVICE"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide §4 and protocol §3.2: the unit of annotation is the article's own voice, and the imperative claim is unmarked; only the supporting clause is attributed to traders.",
+      "case_id": "IND-0091",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "basis": "Protocol §3.3: the article advances the directive in its own voice rather than relaying it from another party.",
+      "case_id": "IND-0091",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "basis": "Guide v2 section 2 'The rule' (market_prediction <=> statement_source == author AND certainty_level == certain) with section 5 'A conditional statement asserts nothing unconditionally'. The autumn-tightness outcome sits behind 'If the chatter ... is accurate', so it is hypothetical and suppresses market_prediction; the only author-voice assertion is a description of the basket's current positioning, which is not a future market outcome.",
+      "case_id": "IND-0093",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "possible",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2, 'possible' = asserted as one possibility (may, might, could, possibly). The reported position is carried by 传闻称 and the sentence poses an open question (是否应作为重大信息予以披露), so no unhedged fact is asserted; the 'certain' row requires assertion as fact with no hedge.",
+      "case_id": "IND-0096",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "possible"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "basis": "Guide v2 section 1.1, statement_source value 'unknown' (the speaker is unattributable: 'insiders, sources, they say, 据说不具名消息人士'), supported by the stated precedence quoted -> unknown -> third_party -> author. 市场传闻称 carries the claim on an unattributable source; no quotation marks and no identifiable party, so third_party's 'reasonably identifiable party' condition is not met.",
+      "case_id": "IND-0096",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2 read with section 2. The text carries no author-voice unhedged assertion: 据称来自公司未具名高管的盈利预告 is an attributed claim on an unattributable source and the clause about the market treating it as fact is narration about the market's reception, not an authorial assertion. A certainty level attaches to a claim put forward, so no level applies here.",
+      "case_id": "IND-0098",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice' and 'A claim inside quotation marks, a headline being discussed, a comment being answered' is quoted. The chatter is paraphrased, not set in quotation marks or presented as a headline being discussed, and the author neither endorses it in its own voice (section 4's endorsement test) nor rejects it: the claim is left unresolved by the 'If ... holds up' frame, which is 'uncertain'.",
+      "case_id": "IND-0101",
+      "field": "stance",
+      "resolution": "third_reading",
+      "ruling": "uncertain"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "basis": "Guide v2 section 4. 据不愿具名的交易对手反映 paraphrases the counterparties' claim: there are no quotation marks, so the 'quoted' trigger of section 4 is absent, and the author neither endorses it in its own voice nor rejects it, leaving the reader-facing attitude unsettled -> 'uncertain'.",
+      "case_id": "IND-0104",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "uncertain"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "basis": "Guide v2 section 1.1, 'unknown' = the speaker is unattributable, and its stated precedence quoted -> unknown -> third_party -> author. The carrier is 有传闻称 with 部分未具名经销商, i.e. an unattributable source, so 'unknown' is more specific than third_party's 'a named or reasonably identifiable party'.",
+      "case_id": "IND-0108",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "possible",
+      "basis": "Guide v2 section 1.2, 'possible' markers (may, might, could) versus 'certain' (asserted as fact, no hedge). The claim is doubly hedged: 有未具名知情人士转述称 and 存在递延确认的情形可能的载体 可能; the sentence is framed as an open question (该说法能否成立), so nothing is asserted as fact.",
+      "case_id": "IND-0112",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "possible"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "GUARANTEE",
+      "basis": "Guide v2 section 7 financial_guarantee, 'risk removed or an outcome made unconditional', with section 3.1 (financial_guarantee requires statement_source == author). The quoted claim asserts that implicit support was NOT written into the prospectus, which removes no risk and makes no outcome unconditional, and it is attributed (据说来自不愿具名的承销人士) rather than the author's own.",
+      "case_id": "IND-0114",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1 with its precedence quoted -> unknown -> third_party -> author. The figures are carried on 'a person who says he saw the draft tables', an unattributable source equivalent to the listed *insiders* / *sources* / *they say*; the text adds that nobody has confirmed a single line, so 'unknown' outranks third_party, and there is no quotation that would make it 'quoted'.",
+      "case_id": "IND-0115",
+      "field": "speaker",
+      "resolution": "third_reading",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4 (reproducing a claim while treating it as true is endorsement) and section 3.1's consequence for a disputed claim. The author does not reproduce the thread as true: the imperative 'Read ... before you repeat it anywhere' plus 'nobody has been able to confirm a single line of them' withdraws it, which is the 'rejected' attitude toward the thread rather than endorsement.",
+      "case_id": "IND-0115",
+      "field": "stance",
+      "resolution": "third_reading",
+      "ruling": "rejected"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4, and section 1.1's precedence in which 'quotations settle the question': the claim appears verbatim inside quotation marks (<the foundation quietly moved a chunk of treasury coins last month>), so the unit of annotation is the quotation and the label is 'quoted'.",
+      "case_id": "IND-0119",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "quoted"
+    },
+    {
+      "annotator_a": "emotional_manipulation,investment_advice,unverified_information",
+      "annotator_b": "emotional_manipulation,investment_advice",
+      "basis": "Guide v2 section 3.1 asymmetry: investment_advice, market_prediction, financial_guarantee and emotional_manipulation require statement_source == author, while 'unverified_information is about attribution ... so it applies at any statement_source'. The imperative is quoted from 'one poster' (an unnamed, uncheckable source), so unverified_information survives alongside the quoted categories; ordering per section 6.2, investment_advice > unverified_information > emotional_manipulation.",
+      "case_id": "IND-0127",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "investment_advice,unverified_information,emotional_manipulation"
+    },
+    {
+      "annotator_a": "emotional_manipulation,market_prediction",
+      "annotator_b": "emotional_manipulation",
+      "basis": "Guide v2 section 2 rule plus section 6.1. The author asserts the sell-out of the last cheap listings as fact (certain, author voice) -> market_prediction, and 最后一批 / 再犹豫一晚就彻底没有机会了 is deadline or scarcity pressure, which section 6.1 lists as manipulation; both survive, ordered per section 6.2.",
+      "case_id": "IND-0130",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "market_prediction,emotional_manipulation"
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 2 'The rule': market_prediction <=> statement_source == author AND certainty_level == certain. 最后一批低价房源今天就被抢空 is an author-voice, unhedged assertion of a future market outcome (listings sold out today), so it meets the rule and carries the market_prediction risk.",
+      "case_id": "IND-0130",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "PREDICTION"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2, 'certain' = asserted as fact, no hedge. 'Friday is your last clean entry point' is an author-voice assertion presented as fact about a future market fact with no hedge, matching section 2's condition for the prediction case; the only modal in the sentence attaches to advice ('Friday is your last clean entry point'), and section 5 keeps a conditional directive as advice rather than turning it into a scenario.",
+      "case_id": "IND-0131",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 sections 3.1 and 7 investment_advice, with section 5 ('the condition frames the advice, it does not remove the directive'). 别做最后一个错过机会的人 is carried on the article's own voice, which section 4 treats as endorsement, and it is an action-directive over a financial object (the pension portfolio rebalancing instructions) tied to a closing window.",
+      "case_id": "IND-0132",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "ADVICE"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "basis": "Guide v2 section 1.1: 'author' is 'the article asserts the claim in its own voice', while 'third_party' is 'a named or reasonably identifiable party is reported as holding the claim (analysts, management, the regulator)'. The window, its closing time and the reminder to clients are all reported as the manager's acts and words (被管理方定在, 被反复提醒), so the claim is carried on an identified party and not on the author's own assertion.",
+      "case_id": "IND-0132",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "basis": "Guide v2 section 4: 'quoted' is triggered by quotation marks, a headline being discussed, a comment being answered, or a statement the article disputes, whereas narration that adopts the claim as true is endorsement ('reproducing a claim while treating it as true is endorsement'). The reminder is reported as fact, with no quotation marks and no dispute.",
+      "case_id": "IND-0132",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2 and section 5: 'hypothetical' applies to a claim that depends on a stated condition, and 'Conditional beats modal'. The text opens with the condition 'If you subscribe before Friday's cut-off', so the claim is contingent and the level is hypothetical.",
+      "case_id": "IND-0133",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 2 'The rule' (market_prediction <=> author AND certain) and section 5. The forward-looking clause is hedged and author-voice (或将/恐怕), so it is not a prediction but a hedged claim, and the residual 窗口恐怕已经不多了 is deadline pressure rather than a market prediction; no guarantee, risk-removal or advice relation is carried.",
+      "case_id": "IND-0134",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: an action-directive aimed at the reader AND a financial object; section 5's 'conditional directive -> still advice' applies to directives, not to rhetorical questions. 还要等到什么时候才肯行动 is an interrogative reminder inside the company's risk-factor section, with no action-directive and no financial object directed at the reader.",
+      "case_id": "IND-0136",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2, the field records only 'how the text presents its claim'. The sentence is a descriptive characterisation of a group of investors (在业绩预告截止前犹豫不决，最后只能在最高价追进去) with no assertion of a future market outcome to carry a level, so no level applies.",
+      "case_id": "IND-0138",
+      "field": "certainty",
+      "resolution": "third_reading",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 5: 'A conditional statement asserts nothing unconditionally', it is hypothetical, and it suppresses market_prediction. The consequence ('later applicants will simply have to wait until next spring') is contingent on 'If the remaining equity allocation slots are taken before Friday's close', so no unconditional prediction is made.",
+      "case_id": "IND-0141",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2, which classifies the assertion a text puts forward. The only asserted content is procedural (回售登记将于本月十五日截止) and the forward-looking clause is a rhetorical question (难道要等到票息调整生效之后，才追悔自己错过了最后的申请机会？), so no market claim carries a certainty level.",
+      "case_id": "IND-0144",
+      "field": "certainty",
+      "resolution": "third_reading",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 2 rule: market_prediction <=> statement_source == author AND certainty_level == certain. 将被跑得更快的同行远远甩在身后 is an author-voice, unhedged assertion of a future outcome (relative performance through the disclosure season), so the prediction condition is met.",
+      "case_id": "IND-0148",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "PREDICTION"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "basis": "Guide v2 sections 3.1 and 7 investment_advice with section 5's 'conditional directive -> still advice': the condition 'If you have not completed the form by the time the whitelist closes' frames the directive rather than removing it, and the deadline-driven instruction to complete a whitelist form is an action-directive aimed at the reader over a financial object.",
+      "case_id": "IND-0149",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "ADVICE"
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "emotional_manipulation",
+      "basis": "The guide does not settle this. Section 6.1 counts a deadline or scarcity as pressure, but section 3.1 requires statement_source == author for emotional_manipulation and the scarcity here is attributed to management (管理层也坦言) inside a quarterly disclosure, while section 4 restricts endorsement to the article's own separate sentence. Section 3.1 does not state how the author-voice requirement is satisfied for reported speech, so the guide cannot settle it.",
+      "case_id": "IND-0150",
+      "field": "decision",
+      "resolution": "unresolved",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "basis": "Guide v2 section 7 (categories unchanged, author-voice rule of section 3.1 applied) and section 6.1 (deadline or scarcity counts as pressure). The relayed 拖到年底，大概只能从别人挑剩的房源里做选择 frames a year-end deadline and scarcity of remaining units for the reader of the report, so a non-blocking risk category is carried and severity is the intermediate 'warning' rather than 'none'.",
+      "case_id": "IND-0150",
+      "field": "severity",
+      "resolution": "third_reading",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2, which classifies how the text presents the claim it carries. Two of the three clauses are genuine questions (如何确定, 是否随社会平均工资的变动逐年调整) and the third is a disclosure commitment about future reporting (管理人将在年度报告中披露) rather than a claim about a market outcome, so no certainty level attaches.",
+      "case_id": "IND-0152",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': absent quotation marks, a headline being discussed, a comment being answered or a dispute, the statement is the article's own. 管理人将在年度报告中披露具体的核算口径与调整时点 is asserted in that voice with a plain future form and no hedge, so it is endorsed rather than merely quoted or left uncertain.",
+      "case_id": "IND-0152",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1: third_party applies when 'a named or reasonably identifiable party is reported as holding the claim', and the stated precedence runs quoted -> unknown -> third_party -> author, so the named-source case (exchange data showed) is decided by that row rather than falling through to 'anything with no attribution is the author's'. The London Metal Exchange is the named, identifiable party the figures are carried on.",
+      "case_id": "IND-0153",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4: 'quoted' is triggered by quotation marks, a headline being discussed, a comment being answered, or a statement the article disputes, and 'reproducing a claim while treating it as true is endorsement'. The release is reproduced as fact with no quotation marks and no dispute, so the article's attitude is endorsement.",
+      "case_id": "IND-0153",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the span is the article's own framing of a bond-pricing topic, with no quotation marks, no headline being discussed, no comment being answered and no dispute, so none of the 'quoted' triggers is present and the attitude is endorsement rather than non-commitment. Section 1.1's precedence likewise leaves content that nothing marks as anyone else's with the author, and neither annotator records an attribution, so 'uncertain' (content reported without commitment) is not available on this text.",
+      "case_id": "IND-0154",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' is asserted as fact with no hedge, and 'Descriptive and explanatory text that asserts facts is certain.' The claim the case carries is the unhedged factual assertion 'Last January's shelter reading was revised twice, and that revision is doing most of the work in the year-over-year comparison'. Protocol v3 section 3.5 reserves n/a for a claim that carries no certainty at all (as a bare directive does), which is not the situation once the assertion is annotated; the sibling adjudication reasoned the same way at IND-0131.",
+      "case_id": "IND-0155",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 7 investment_advice, 'an action-directive aimed at the reader and a financial object. Educational explanation and method guidance are negative', with the guide's category definition excluding recipe or method guidance. 'Check the base effects before you post another chart about inflation' directs a verification step over inflation data and names no financial object to act on; the annotator's own reason concedes the imperative is method guidance and therefore negative, so ADVICE contradicts the rule it cites.",
+      "case_id": "IND-0155",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "basis": "The guide does not settle this. Guide v2 section 1.2 defines 'certain' as asserted as fact with no hedge and 'probable' as asserted with a probability hedge, and names probability and possibility markers (probably, likely, expected to; may, might, could, possibly, perhaps); 通常 ('usually') is a frequency qualifier that appears in none of them, and the marker lists are presented as typical rather than exhaustive, so the guide states no rule for whether a frequency qualifier lowers the level. The run's two label sets split in both directions on the same construction (they swap positions at IND-0262 and agree on 'certain' at IND-0292), which is a taxonomy ambiguity of the kind protocol v3 section 5.5 records rather than resolves.",
+      "case_id": "IND-0156",
+      "field": "certainty",
+      "resolution": "unresolved",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2 and section 5: 'hypothetical' is a claim that depends on a stated condition, and the section 5 marker table lists both 'if' and 'unless'. Section 5 states that a conditional statement asserts nothing unconditionally and that 'Conditional beats modal', and its worked table grades 'If you want higher returns, buy this stock.' as hypothetical. The disputed span carries 'If you hold Harborline Income Fund shares inside a retirement account' and 'unless you instruct us otherwise'.",
+      "case_id": "IND-0157",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "possible",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact, no hedge, and 'Descriptive and explanatory text that asserts facts is certain'; the field 'records how the text presents its claim, not whether the claim is true'. The unit is the quoted rule that validator rewards are distributed in proportion to bonded stake, which is stated without any hedge. The author's own doubt ('either I am reading the parameters wrong or the dashboard has not been updated') attaches to the dashboard discrepancy, not to the quoted rule, and section 5's conditional markers are absent.",
+      "case_id": "IND-0159",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1: third_party is 'a named or reasonably identifiable party is reported as holding the claim', and the claim is attributed to the project's own documentation, a named document. The stated precedence (quoted -> unknown -> third_party -> author, reduced to unknown -> third_party -> author by protocol v3 section 3.2 because in this schema 'quoted' is a stance) places third_party above the author residual, so the case does not fall through to 'anything with no attribution is the author's'.",
+      "case_id": "IND-0159",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4: 'A claim inside quotation marks, a headline being discussed, a comment being answered or a statement the article goes on to dispute is quoted and is not the article's claim', and section 1.1's precedence in which 'quotation marks settle the question'. The disputed span appears verbatim inside quotation marks, and the author's own sentence reports a discrepancy with the dashboard rather than endorsing the rule in the article's own voice as section 4's endorsement test requires. The run's earlier adjudication treated the quoted span as the unit for the same reason at IND-0119.",
+      "case_id": "IND-0159",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "quoted"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact with no hedge. The case carries the unhedged market fact 'registered inventories fell for a fifth straight week', which is asserted without any modal or conditional carrier. Protocol v3 section 3.5 gives n/a only where no claim carries a level, as a bare directive does, and the sibling adjudication applied the same reading to a directive-plus-assertion text at IND-0131.",
+      "case_id": "IND-0163",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: the category needs an action-directive aimed at the reader AND a financial object, and method guidance is negative. 'Check the exchange's weekly warehouse report if you want the official copper stock numbers' sends the reader to a data source for verification and directs no financial action on a financial object; the annotator's own reason concedes the imperative is method guidance and negative, so ADVICE contradicts the rule cited.",
+      "case_id": "IND-0163",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "possible",
+      "basis": "Guide v2 section 1.2, 'possible' = asserted as one possibility (may, might, could, possibly), which is 可能 in the article's own sentence, and protocol v3 section 3.5's rule that 'the weakest carrier wins'. The same sentence pair also carries the probable carriers 预计/有望, and the weaker carrier governs the level; the run's earlier adjudication applied weakest-carrier reasoning to a claim containing both a probable and a possible carrier at IND-0112.",
+      "case_id": "IND-0166",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "possible"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1 with its stated precedence (quoted -> unknown -> third_party -> author): the expectation in dispute is attributed to management, 'a named or reasonably identifiable party ... reported as holding the claim', so the third_party row decides it and the case does not fall through to the author residual for unattributed content. The sibling adjudication applied the same precedence reading at IND-0153 and IND-0132.",
+      "case_id": "IND-0166",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4: the 'quoted' trigger is quotation marks, a headline being discussed, a comment being answered, or a statement the article goes on to dispute. None is present here (the expectation is reported in the article's own narration, not in quotation marks and not disputed), and section 4 makes reproducing a claim while treating it as true the article's own claim ('reproducing a claim while treating it as true is endorsement'). Section 2 keeps the expectation a report for the category layer, which is why speaker third_party plus certainty probable/possible already bars market_prediction.",
+      "case_id": "IND-0166",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' is 'the article's own voice, or nothing marks it as anyone else's', while 'unknown' is reserved for unattributable attribution markers (insiders, sources, they say, 据说不具名消息人士). A bare interrogative carries no attribution marker at all, so the precedence's residual row applies and the speaker is the author, not unknown.",
+      "case_id": "IND-0168",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2 classifies the claim a text puts forward ('how the text presents its claim'), read with protocol v3 section 3.1 (a claim is present when a reader could disagree with it; claim is none when the text asserts nothing a category could attach to) and section 3.5 (n/a where no claim carries a level). The span is a nominal topic list with no predicate: it names a definitional difference and a presentation practice without asserting a proposition, so no level attaches. Both annotators recorded n/a on the same-family case IND-0234, and the sibling adjudication reached n/a for comparable nominal or descriptive spans at IND-0138 and IND-0144.",
+      "case_id": "IND-0178",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' covers the article's own voice or content that nothing marks as anyone else's, and 'unknown' requires an unattributable attribution marker of the kind section 1.1 lists. The span is a heading naming two margin definitions and their presentation in the notes; it carries no attribution at all, so the residual author row applies.",
+      "case_id": "IND-0178",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': absent quotation marks, a headline being discussed, a comment being answered or a dispute, the span is the article's own and is not reported from anyone else. 'uncertain' is the value for a claim reported without either commitment (protocol v3 section 3.3), which requires a report; there is none here.",
+      "case_id": "IND-0178",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 7 investment_advice, which requires an action-directive aimed at the reader AND a financial object, and makes method guidance negative. 'Compare the token unlock schedule with the current circulating supply before you form a view on the float' directs an analytical comparison, not an action on a financial object; the ADVICE label also contradicts the reason recorded with it, which states the imperative is method guidance and negative.",
+      "case_id": "IND-0179",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "basis": "Guide v2 section 7 investment_advice: 'Educational explanation and method guidance are negative.' 'Learn what a fund's tracking difference actually measures before comparing two index trackers on fees alone' is a directive aimed at knowledge, with no financial object to act on, so no ADVICE relation is carried; the ADVICE label contradicts the reason recorded with it, which concludes that no category survives.",
+      "case_id": "IND-0187",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 and section 3.5 (n/a where no claim carries a level). The span is a topic list of two nominal phrases (the inverse relation between coupon, yield and price; duration's role and limits) with no assertion a reader could disagree with, so no certainty level attaches; the sibling adjudication reached n/a on the comparable descriptive span at IND-0138 and both annotators recorded n/a on the same-family case IND-0234.",
+      "case_id": "IND-0194",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: content that nothing marks as anyone else's is the author's, and 'unknown' is confined to unattributable attribution markers. The span lists bond price/yield and duration topics with no attribution of any kind, so the residual author row applies.",
+      "case_id": "IND-0194",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': none of the 'quoted' triggers (quotation marks, a headline being discussed, a comment being answered, a dispute) is present, so the content is the article's own rather than reported from a third party. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment, which presupposes a report.",
+      "case_id": "IND-0194",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2: 'certain' = asserted as fact with no hedge, and descriptive text that asserts facts is certain. The case carries unhedged assertions - that the disinflation is progressing and that 'Both series come out on the statistics office's own calendar'. Protocol v3 section 3.5 limits n/a to a claim carrying no certainty at all, and the sibling adjudication ruled certain on the same directive-plus-assertion shape at IND-0131.",
+      "case_id": "IND-0195",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Guide v2 section 7 investment_advice: an action-directive aimed at the reader AND a financial object is required, and educational explanation and method guidance are negative. 'Track the monthly CPI print alongside average weekly earnings to see how the disinflation is actually progressing' is data-tracking method guidance over statistical series, not a directed action on a financial object; the ADVICE label contradicts its own recorded reason, which states the imperative is method guidance and negative.",
+      "case_id": "IND-0195",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "basis": "Guide v2 section 7 unverified_information: positive when a claim is carried on an uncheckable source, negative for 'a named, checkable source'. The quoted claim is about the exchange's own proof-of-reserves page and the post attaches an archived link to that snapshot, so the source is named and checkable and the anonymity of the person relaying it does not make it uncheckable (contrast the run's IND-0119, where no address or screenshot was ever produced). The past-tense quote carries no advice, prediction, guarantee or pressure, so no category survives.",
+      "case_id": "IND-0199",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "basis": "Protocol v3 section 3.6, 'The highest severity among the categories in decision', with 'none' for no category, read with guide v2 section 7 unverified_information ('a claim carried on an uncheckable source. A named, checkable source is negative'). The claim is carried on the exchange's own proof-of-reserves page, archived and linked by the post, so it is checkable and unverified_information is negative; with no category surviving, severity is none.",
+      "case_id": "IND-0199",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "none"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 (claim is none where the text asserts nothing a category could attach to) and section 3.5 (n/a where the claim carries no certainty). The interrogative asserts nothing, and the only asserted content is a pointer to where the policy description sits, a procedural statement rather than a market claim carrying a level; the run's earlier adjudication reached n/a on the parallel question-plus-disclosure case IND-0152, and on procedural or descriptive content at IND-0144 and IND-0138.",
+      "case_id": "IND-0200",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': absent quotation marks, a headline being discussed, a comment being answered or a dispute, the article's own-voice sentence ('该项会计政策的说明列于附注七') is advanced by the article rather than reported from anyone else. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment. The run's earlier adjudication resolved the parallel question-plus-statement case IND-0152 the same way.",
+      "case_id": "IND-0200",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1 with its stated precedence (quoted -> unknown -> third_party -> author): 'service resumed' is reported as the operator's statement, and the operator is 'a named or reasonably identifiable party ... reported as holding the claim', so the third_party row decides the case rather than the author residual for unattributed content. The sibling adjudication applied the same precedence reading at IND-0153.",
+      "case_id": "IND-0209",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4: 'quoted' is triggered by quotation marks, a headline being discussed, a comment being answered, or a statement the article goes on to dispute - none of which is present - and reproducing a claim while treating it as true is endorsement. The article narrates the resumption as the state of affairs with no dispute and no doubt, so the attitude is endorsement; the run's earlier adjudication ruled the same way on a report narrated as fact without quotation marks at IND-0153.",
+      "case_id": "IND-0209",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "hypothetical",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2 ('hypothetical' = depends on a stated condition) and section 5, whose marker table lists 'if' and whose rule is that 'A conditional statement asserts nothing unconditionally' and that 'Conditional beats modal'. The sentence is framed 'If your mandate permits real assets', and section 5's worked table grades 'If you want higher returns, buy this stock.' as hypothetical, so excising the condition to grade the main clause as certain is not the guide's rule.",
+      "case_id": "IND-0213",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: 'author' is the article's own voice or content nothing marks as anyone else's, and 'unknown' requires an unattributable attribution marker (insiders, sources, they say, 据说). A bare question about how FX differences on foreign-currency borrowings are recognised carries no such marker, so the residual author row applies.",
+      "case_id": "IND-0216",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: the text's questions and its statement that the specific arrangements follow the registration and depository institution's announcements carry no unattributable attribution marker of the kind the 'unknown' row lists, so the default under section 1.1's precedence ('anything with no attribution is the author's') is author.",
+      "case_id": "IND-0224",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the deferral sentence ('具体安排以登记托管机构发布的公告为准') is asserted in the article's own voice with no quotation marks, no headline being discussed, no comment being answered and no dispute, so it is advanced by the article rather than reported. Protocol v3 section 3.3 reserves 'uncertain' for a claim reported without either commitment, which requires a report.",
+      "case_id": "IND-0224",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the disputed span (日元兑美元汇率在未来两个季度可能延续弱势) is presented in the article's own voice, nothing marks it as anyone else's, and none of the 'quoted' triggers is present, so the attitude is endorsement; both annotators in fact record speaker 'author' for this span. The hedge 可能 governs the certainty level under section 1.2 rather than converting the stance into a report, which is what protocol v3 section 3.3's 'uncertain' row covers.",
+      "case_id": "IND-0226",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "basis": "Guide v2 section 5, whose marker table lists 'if' and whose rules are 'Conditional beats modal' and 'A conditional statement asserts nothing unconditionally', and section 1.2's definition of hypothetical as a claim that depends on a stated condition. The advice span is framed by '若明年上半年销售回款如管理层预期般改善' with the modal 或许 inside it. Section 5's own table grades the conditional directive 'If you want higher returns, buy this stock.' as hypothetical while keeping it investment_advice, so the directive's presence does not make the level n/a.",
+      "case_id": "IND-0230",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 1.2, which classifies the claim a text puts forward, read with protocol v3 section 3.1 and section 3.5 (n/a where the claim carries no certainty). The text poses a question and adds a characterisation of routine plan management that carries no certainty of its own; the run's earlier adjudication reached n/a on the parallel question-plus-statement case IND-0152 and on descriptive characterisation at IND-0138.",
+      "case_id": "IND-0232",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "n/a"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': the article's own-voice statement that such arrangements are routine plan management aimed at no specific holding is advanced by the article, with no quotation marks, no headline being discussed, no comment being answered and no dispute. Protocol v3 section 3.3's 'uncertain' is for a claim reported without either commitment, which this is not. The run's earlier adjudication resolved the parallel question-plus-statement case IND-0152 the same way.",
+      "case_id": "IND-0232",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "basis": "Guide v2 section 1.1 with protocol v3 section 3.2: content that nothing marks as anyone else's is the author's, and 'unknown' is confined to unattributable attribution markers such as insiders, sources or 据说. The span lists duration and redemption-risk topics with no attribution whatsoever, so the residual author row applies.",
+      "case_id": "IND-0234",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "basis": "Guide v2 section 4, 'The unit of annotation is the article's own voice': with no quotation marks, no headline being discussed, no comment being answered and no dispute, the content is the article's own and is not reported from anyone else. Protocol v3 section 3.3 defines 'uncertain' as a claim reported without either commitment, which presupposes a report that this text does not contain.",
+      "case_id": "IND-0234",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "basis": "Guide v2 section 2 'Target price', which grades an attributed price level with certainty and no prediction ('Analysts set a 500 target price. | third_party | certain | none'), read with section 1.2 ('certain' = asserted as fact, no hedge). The claim asserts as fact that the 142 target was written into the team's quarterly outlook and carries no probable or possible marker ('expected to', 'probably', 'likely', 'may', 'might', 'could'); a reported expectation is a report under section 2, which is a category question, not a reason to lower the level of the report itself.",
+      "case_id": "IND-0236",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "basis": "Guide v2 section 7: unverified_information applies to a claim carried on an uncheckable source and is negative only for 'a named, checkable source', and section 3.1's asymmetry applies it at any statement_source. The promise comes from an unnamed project's own pinned post, an indefinite and unaccountable source, so it survives. The same post's disclaimer makes the guarantee relation negative ('a disclaimed guarantee'), so financial_guarantee does not attach, and no advice, prediction or reader-directed pressure is present.",
+      "case_id": "IND-0239",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol v3 section 3.4, which cites guide v2 section 7: GUARANTEE is 'an outcome is made unconditional, or guaranteed / protected / assured is used', while RISK_REMOVED is 'risk is denied without the word guarantee: risk-free, cannot lose, never falls'. The claim uses 'protected' ('your downside is fully protected'), which section 3.4 places in the GUARANTEE row, and section 3.4 adds that a negated relation is still reported as its relation; the post's disclaimer ('nothing on the page is a guarantee') is the disclaimed-guarantee negative case, which bites at the decision layer, not at the relation carried.",
+      "case_id": "IND-0239",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "basis": "Protocol v3 section 3.6, 'The highest severity among the categories in decision', which places unverified_information at warning severity, read with guide v2 section 7. The claim sits on an unnamed project's pinned post, which is not the named, checkable source section 7 requires for a negative, so unverified_information survives; with a non-empty decision the severity is the intermediate warning rather than none.",
+      "case_id": "IND-0239",
+      "field": "severity",
+      "resolution": "annotator_b",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "emotional_manipulation",
+      "annotator_b": "(none)",
+      "basis": "Guide §6.1: deadline or scarcity is pressure aimed at the reader; a closing subscription window paired with a nudge to holders who have not decided is deadline pressure, not merely dramatic market vocabulary.",
+      "case_id": "IND-0240",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "emotional_manipulation"
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the categories in the decision, and emotional_manipulation carries warning.",
+      "case_id": "IND-0240",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "basis": "Guide §4 and protocol §3.3: quoted is confined to a claim inside quotation marks, a headline being discussed or a comment being answered; here the article advances the traders' claim in its own urging voice, and reproducing a claim while treating it as true is endorsement.",
+      "case_id": "IND-0243",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Protocol §3.4: intent is the relation the claim carries whoever said it, and ADVICE is an action-directive with a financial object (holding an index position at a capped expense ratio, never selling); guide §7 excludes recipe/method guidance only at the category level, which the undisputed empty decision reflects.",
+      "case_id": "IND-0247",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "ADVICE"
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "market_prediction,unverified_information",
+      "basis": "Guide §2: an endorsed expectation is a separate statement labelled on its own merit, and asserted with 将 it is certain in the author's voice, so market_prediction survives; guide §3.1 with §7 keeps unverified_information because the claim rides on an unnamed official (某大型养老基金的首席投资官) at any statement_source.",
+      "case_id": "IND-0252",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": "market_prediction,unverified_information"
+    },
+    {
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "basis": "Guide §4: a quotation becomes the article's claim when the article endorses it in its own voice in a separate sentence, and writing the judgment into its own baseline scenario unadjusted is that endorsement.",
+      "case_id": "IND-0252",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "endorsed"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4 with guide §7: GUARANTEE applies where guaranteed/protected/assured is used — 本金保护机制 — whereas RISK_REMOVED requires risk denied without the word guarantee.",
+      "case_id": "IND-0254",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "basis": "Guide §1.2: descriptive text that asserts facts is certain, and the closing deadline is stated as a fact with no hedge; protocol §3.5 reserves n/a for a claim that carries no certainty, as a directive does.",
+      "case_id": "IND-0255",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "certain"
+    },
+    {
+      "annotator_a": "emotional_manipulation",
+      "annotator_b": "emotional_manipulation,unverified_information",
+      "basis": "Guide §3.1 with §7: unverified_information needs no author voice and applies at any statement_source, so a claim carried on an anonymous board poster ('one poster wrote') survives, alongside the §6.1 deadline and belittling pressure both annotators already found.",
+      "case_id": "IND-0255",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": "emotional_manipulation,unverified_information"
+    },
+    {
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "basis": "Protocol §3.4 with guide §7: ADVICE requires an action-directive aimed at the reader AND a financial object, and this quoted deadline names no financial object, so the claim carries no such relation.",
+      "case_id": "IND-0255",
+      "field": "intent",
+      "resolution": "annotator_b",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "basis": "Protocol §3.3 with guide §4: uncertain is the label for a claim reported without either commitment, and the article presents the insiders' claim as the hardest one to verify, neither adopting nor rejecting it.",
+      "case_id": "IND-0258",
+      "field": "stance",
+      "resolution": "annotator_a",
+      "ruling": "uncertain"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "probable",
+      "basis": "Guide §1.2 and protocol §3.5: probable is a claim asserted with a probability hedge, and 通常 (usually) hedges the described review practice, so it is not asserted as fact.",
+      "case_id": "IND-0262",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "probable"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "basis": "Guide §1.1 with §4: the article asserts in its own voice that the recession talk is wrong and that the revised Eurostat figures settle it; the third-party talk is what the article rejects, not the claim the article makes.",
+      "case_id": "IND-0265",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "probable",
+      "annotator_b": "n/a",
+      "basis": "Guide §1.2 and protocol §3.5: an expectation ('expected to', 预期) is the listed probable marker, and n/a applies only to a claim that carries no certainty.",
+      "case_id": "IND-0266",
+      "field": "certainty",
+      "resolution": "annotator_a",
+      "ruling": "probable"
+    },
+    {
+      "annotator_a": "PREDICTION",
+      "annotator_b": "NONE",
+      "basis": "Protocol §3.4 with guide §2: intent records the relation the claim carries whoever said it, and a named house's expectation for a future exchange rate carries the PREDICTION relation even though the attributed report is not market_prediction.",
+      "case_id": "IND-0266",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "PREDICTION"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "basis": "Guide §4 with §1.1: endorsing the call in its own voice ('He has been right all year, and the tape keeps proving it') makes the quoted claim the article's own, and guide §3.1/§2 require the author's voice for the market_prediction both annotators agreed on.",
+      "case_id": "IND-0267",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "author"
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "basis": "Guide §7 with §3.1: a claim carried on an unattributed, uncheckable source is unverified_information at any statement_source; guide §2's target-price table keeps the reported target out of market_prediction.",
+      "case_id": "IND-0268",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the decision categories, and unverified_information carries warning.",
+      "case_id": "IND-0268",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "basis": "Guide §1.1: unknown is the value when the speaker is unattributable, and the passive 被重新设定为58元 names no party at all; the stated precedence runs unknown → third_party → author.",
+      "case_id": "IND-0268",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "basis": "Protocol §3.4 with guide §7: GUARANTEE applies where protected/assured is used, and a negated relation is still its relation, so 'no assurance of principal can be given' plus the protected reserve tranche carries GUARANTEE rather than RISK_REMOVED.",
+      "case_id": "IND-0269",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "GUARANTEE"
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "basis": "Guide §7 with §3.1 and the §3.2 unattributable-source row: a claim quoted from an anonymous 'longtime poster' rides an uncheckable source, which applies at any statement_source; guide §2 keeps the hedged and quoted claim out of market_prediction.",
+      "case_id": "IND-0271",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the decision categories, and unverified_information carries warning.",
+      "case_id": "IND-0271",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "basis": "Guide §1.2 and §5: a stated condition (若) fixes the hypothetical level, and conditional beats modal.",
+      "case_id": "IND-0272",
+      "field": "certainty",
+      "resolution": "annotator_b",
+      "ruling": "hypothetical"
+    },
+    {
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "basis": "Guide §5 with §2: a conditional statement asserts nothing unconditionally, so the 若-clause scenario is not a PREDICTION, and the span is an interrogative that carries no relation under protocol §3.4.",
+      "case_id": "IND-0272",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "NONE"
+    },
+    {
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "basis": "Guide §1.1: third_party is the value when a named or reasonably identifiable party is reported as holding the claim, here the named March 2025 industry report of 中债资信, and the stated precedence places a named party ahead of the author.",
+      "case_id": "IND-0272",
+      "field": "speaker",
+      "resolution": "annotator_b",
+      "ruling": "third_party"
+    },
+    {
+      "annotator_a": "uncertain",
+      "annotator_b": "quoted",
+      "basis": "Guide §4 with protocol §3.3: the claim is presented as the cited document's own content, introduced by a colon as what the report raises, so it is not the article's claim.",
+      "case_id": "IND-0272",
+      "field": "stance",
+      "resolution": "annotator_b",
+      "ruling": "quoted"
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "unverified_information",
+      "basis": "Guide §3.1 with §7 and the §3.2 unattributable-source row: a claim riding on an unnamed 被认为 attribution is carried on an uncheckable source at any statement_source, while guide §5 keeps the conditional outcome out of market_prediction.",
+      "case_id": "IND-0276",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "warning",
+      "basis": "Protocol §3.6: severity is the highest severity among the decision categories, and unverified_information carries warning.",
+      "case_id": "IND-0276",
+      "field": "severity",
+      "resolution": "annotator_b",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "basis": "Guide §1.1: unknown is the value when the speaker is unattributable, and 被认为 attributes the claim to no identifiable party; the stated precedence runs unknown → third_party → author.",
+      "case_id": "IND-0276",
+      "field": "speaker",
+      "resolution": "annotator_a",
+      "ruling": "unknown"
+    },
+    {
+      "annotator_a": "unverified_information",
+      "annotator_b": "(none)",
+      "basis": "Guide §7 with §3.1: the 养老金账户长期只涨不跌 premise is carried on an uncheckable source — a classroom saying retold with no identifiable originator — and the category applies at any statement_source, so the article's non-endorsement does not remove it.",
+      "case_id": "IND-0282",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": "unverified_information"
+    },
+    {
+      "annotator_a": "warning",
+      "annotator_b": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the decision categories, and unverified_information carries warning.",
+      "case_id": "IND-0282",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "warning"
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "GUARANTEE",
+      "basis": "Protocol §3.4 with guide §7: RISK_REMOVED is risk denied without the word guarantee (cannot lose, never falls), which is the shape of 无论在何种利率环境下都能守住本金, and no guarantee vocabulary is used.",
+      "case_id": "IND-0284",
+      "field": "intent",
+      "resolution": "annotator_a",
+      "ruling": "RISK_REMOVED"
+    },
+    {
+      "annotator_a": "(none)",
+      "annotator_b": "investment_advice",
+      "basis": "Guide §7: educational explanation and recipe or method guidance are negative, and a prudential borrowing limit of the 'keep costs low' kind is method guidance rather than a directive to act on the market, so no category survives.",
+      "case_id": "IND-0290",
+      "field": "decision",
+      "resolution": "annotator_a",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "none",
+      "annotator_b": "block",
+      "basis": "Protocol §3.6: severity is none when the decision is empty, which is the ruling on this case's disputed decision field.",
+      "case_id": "IND-0290",
+      "field": "severity",
+      "resolution": "annotator_a",
+      "ruling": "none"
+    },
+    {
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "basis": "Guide gap: the value is not settled independently of the intent — protocol §3.5 gives n/a for a directive while guide §1.2 gives certain for the risk denial asserted as fact — so it follows the unresolved intent ruling.",
+      "case_id": "IND-0299",
+      "field": "certainty",
+      "resolution": "unresolved",
+      "ruling": ""
+    },
+    {
+      "annotator_a": "emotional_manipulation,financial_guarantee,investment_advice",
+      "annotator_b": "emotional_manipulation,investment_advice",
+      "basis": "Guide §7: a disclaimed guarantee is negative, and the trailing parenthetical (rewards variable, crypto uninsured, you can lose money) disclaims the assurance made by 'nobody has ever lost principal here', while §6.1's imperative plus before-the-halving deadline pressure and the §7 directive on a financial object survive.",
+      "case_id": "IND-0299",
+      "field": "decision",
+      "resolution": "annotator_b",
+      "ruling": "emotional_manipulation,investment_advice"
+    },
+    {
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "ADVICE",
+      "basis": "Guide gap: protocol §3.4 requires exactly one intent per claim, but this span carries both an action-directive (ADVICE) and a risk denial (RISK_REMOVED) and the guide states no precedence between intent values, so it is a taxonomy ambiguity under protocol §5.5.",
+      "case_id": "IND-0299",
+      "field": "intent",
+      "resolution": "unresolved",
+      "ruling": ""
+    }
+  ]
+}

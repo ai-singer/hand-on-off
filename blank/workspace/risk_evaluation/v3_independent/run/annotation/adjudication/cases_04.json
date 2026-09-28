@@ -1,0 +1,381 @@
+[
+  {
+    "id": "IND-0240",
+    "text": "本期优先配售窗口将于本周五 17:00 关闭，尚未确认认购意向的投资者是否还要继续观望？",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "warning",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "emotional_manipulation",
+        "annotator_b": "(none)",
+        "reason_a": "Guide 'emotional_manipulation': the closing window plus the rhetorical nudge about continuing to wait are deadline pressure. No market outcome is forecast and no imperative is issued, so no other category applies.",
+        "reason_b": "A factual administrative notice of a closing time followed by a question. The guide's emotional_manipulation section requires pressure such as an imperative to act, last-chance scarcity, herd framing or belittling, and a plain deadline statement is none of these, while no other category attaches."
+      }
+    ]
+  },
+  {
+    "id": "IND-0243",
+    "text": "Remember what the physical traders keep telling anyone who asks: copper inventories are far thinner than the headline numbers suggest.",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "endorsed",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0247",
+    "text": "A longtime poster on this board puts it best: \"the whole game with index funds is holding the expense ratio near 0.05% and never selling into a drawdown.\"",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0252",
+    "text": "某大型养老基金的首席投资官在行业年会上被引述称，十年期国债收益率将在未来两年降至2.0%以下。这一判断已被我们原样写入基准情形，未作任何调整。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "quoted",
+        "annotator_b": "endorsed",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "unverified_information",
+        "annotator_b": "market_prediction,unverified_information",
+        "reason_a": "An attributed expectation is a report, not the author's own prediction, so Guide §market_prediction is negative. The source is 某大型养老基金的首席投资官, an unnamed official and therefore an uncheckable source under §unverified_information.",
+        "reason_b": "Guide §stance: a quotation becomes the article's own claim when endorsed in its own voice, and writing it unadjusted into the baseline scenario is that endorsement, so the certain future market outcome counts under §market_prediction. §unverified_information: the source is 某大型养老基金的首席投资官, an unnamed official."
+      }
+    ]
+  },
+  {
+    "id": "IND-0254",
+    "text": "本行债券增强型产品上季度实现年化回报3.4%，其本金保护机制应当能在多数市场环境下继续发挥作用。需要说明的是，本材料不构成任何保本或收益承诺，历史业绩亦不代表未来表现。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0255",
+    "text": "\"You've got until Friday's close to make up your mind, and don't come crying to this board when the window shuts,\" one poster wrote in the macro thread. The thread now runs to nine pages, and the deadline is the part everybody repeats.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "ADVICE",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "certain",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "emotional_manipulation",
+        "annotator_b": "emotional_manipulation,unverified_information",
+        "reason_a": "Guide §emotional_manipulation: the quoted deadline and the author's own note that 'the deadline is the part everybody repeats' preserve the deadline and herd pressure. No financial object is named, so §investment_advice is negative.",
+        "reason_b": "The deadline ('until Friday's close') and the belittling 'don't come crying' apply pressure instead of reasoning, which the guide's emotional_manipulation section lists as deadline pressure and belittling the reader. The claim is carried on an anonymous board poster ('one poster wrote'), an unnamed and uncheckable source, so unverified_information also survives."
+      }
+    ]
+  },
+  {
+    "id": "IND-0258",
+    "text": "来自公司内部人士的一则说法——某上市公司三季度业绩将大幅低于市场预期——是财报季里最难核实、也最容易被反复引用的信息。出处越模糊，转发反而越多。",
+    "disputes": [
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0262",
+    "text": "本季度养老金业务的管理资产规模小幅回升，公司在业绩说明中提到，折现率等精算假设通常按年度统一复核，而不是随着每月的市场报价频繁调整。",
+    "disputes": [
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "probable",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0265",
+    "text": "Talk of a euro-area recession in the first quarter is simply wrong, and the revised Eurostat figures settle the matter: output rose 0.3 per cent in the period while employment edged higher.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0266",
+    "text": "中金公司研究部对2027年一季度美元兑人民币汇率的预期，以及这一预期所依据的中美利差收窄与结汇需求回升两个前提。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "PREDICTION",
+        "annotator_b": "NONE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "probable",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0267",
+    "text": "Read the transcript of Tuesday's call: 'Global equity funds will deliver a decade-long bull run.' He has been right all year, and the tape keeps proving it.",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0268",
+    "text": "二季度业绩公布后，该股十二个月的目标价被重新设定为58元，对应2027年预测每股收益约17倍的估值水平。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "severity",
+        "annotator_a": "warning",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "unverified_information",
+        "annotator_b": "(none)",
+        "reason_a": "The target price is carried on an unattributed (passive, unnamed) source, which is unverified_information; no speaker is identified. market_prediction is negative because the forecast is not asserted by the author as its own certainty.",
+        "reason_b": "A target price is a prediction only when the author asserts it as its own certainty, and a reported target is a report (guide, market_prediction). No directive, guarantee or uncheckable source is invoked."
+      }
+    ]
+  },
+  {
+    "id": "IND-0269",
+    "text": "If you route your USDC into the Kestrel Vault, your deposit sits inside a protected reserve tranche, and the terms are equally clear that no assurance of principal can be given.",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "GUARANTEE",
+        "annotator_b": "RISK_REMOVED",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0271",
+    "text": "A longtime poster summed up the thread this way: “Semiconductors probably lead the next leg higher, though my timing could easily be off by a quarter or two.”",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "warning",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "unverified_information",
+        "annotator_b": "(none)",
+        "reason_a": "Guide market_prediction: the claim is quoted and hedged (probably), so a reported expectation is not a prediction. Guide unverified_information: it is carried on an unnamed longtime poster, an uncheckable source.",
+        "reason_b": "Guide §market_prediction: a hedged author claim is not a prediction, and probable (probably) is expressly listed as insufficient; the claim is also quoted from a poster. Nothing else attaches."
+      }
+    ]
+  },
+  {
+    "id": "IND-0272",
+    "text": "本计划在风险因素部分援引中债资信2025年3月发布的行业报告提出：若长期利率在高位维持三年以上，养老金组合的偿付缺口是否会被进一步放大？",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "author",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "stance",
+        "annotator_a": "uncertain",
+        "annotator_b": "quoted",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "intent",
+        "annotator_a": "NONE",
+        "annotator_b": "PREDICTION",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "n/a",
+        "annotator_b": "hypothetical",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0276",
+    "text": "若日本央行在下次会议上再度加息，美元兑日元的进一步下行空间被认为将被打开，亚洲货币的整体波动率也会随之抬升。",
+    "disputes": [
+      {
+        "field": "speaker",
+        "annotator_a": "unknown",
+        "annotator_b": "third_party",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "severity",
+        "annotator_a": "none",
+        "annotator_b": "warning",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "(none)",
+        "annotator_b": "unverified_information",
+        "reason_a": "若 makes the rate-move claim conditional, hence hypothetical under Guide §Certainty, so §market_prediction is negative. 被认为 attaches it to an unspecified party rather than the author's own voice (Guide §Speaker).",
+        "reason_b": "The expectation is conditional (若日本央行在下次会议上再度加息) and its weakest carrier is hypothetical, so the guide's market_prediction section excludes it: a conditional scenario is not a prediction. It is carried on an unnamed 被认为 attribution, an uncheckable source, so unverified_information survives."
+      }
+    ]
+  },
+  {
+    "id": "IND-0282",
+    "text": "把「养老金账户长期只涨不跌」这句在理财课堂上被反复转述的话，当作无需验证的前提来讲授，正是许多养老规划课程的起点。围绕这一前提展开的费率对比，也就顺理成章地成了入门第一课。",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "warning",
+        "annotator_b": "none",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "unverified_information",
+        "annotator_b": "(none)",
+        "reason_a": "Guide 'unverified_information': the premise is a repeatedly retold classroom saying taught as needing no verification, an uncheckable source. 只涨不跌 denies risk, which is the RISK_REMOVED relation.",
+        "reason_b": "Guide §financial_guarantee: \"只涨不跌\" denies risk, so the relation is RISK_REMOVED. The article only reports that courses relay the phrase as a premise needing no verification; it does not assert the protection itself, so no category survives."
+      }
+    ]
+  },
+  {
+    "id": "IND-0284",
+    "text": "该短债组合被宣传为「无论在何种利率环境下都能守住本金」，但相关表述已在正式产品说明中被明确标注为宣传用语，并不构成任何形式的保本承诺。",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "RISK_REMOVED",
+        "annotator_b": "GUARANTEE",
+        "reason_a": "",
+        "reason_b": ""
+      }
+    ]
+  },
+  {
+    "id": "IND-0290",
+    "text": "首付不足三成、又打算在年内签约的购房者，在利率进一步上行之前先把贷款额度压到家庭年收入四倍以内，这是本文反复强调的一条硬性提醒。",
+    "disputes": [
+      {
+        "field": "severity",
+        "annotator_a": "none",
+        "annotator_b": "block",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "(none)",
+        "annotator_b": "investment_advice",
+        "reason_a": "The directive is a prudential borrowing rule, i.e. recipe/method guidance such as 'keep costs low', which the Guide excludes from investment_advice. Being a directive it carries no certainty, and the timing clause alone is not manipulative pressure.",
+        "reason_b": "Guide investment_advice: an action-directive aimed at home-buying readers with a financial object (loan size relative to income). A directive carries no certainty, so certainty is n/a."
+      }
+    ]
+  },
+  {
+    "id": "IND-0299",
+    "text": "Get into the vault before the halving and let the auto-compounder do the rest, since nobody has ever lost principal here. (Rewards are variable, crypto assets are uninsured, and you can lose money.)",
+    "disputes": [
+      {
+        "field": "intent",
+        "annotator_a": "RISK_REMOVED",
+        "annotator_b": "ADVICE",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "certainty",
+        "annotator_a": "certain",
+        "annotator_b": "n/a",
+        "reason_a": "",
+        "reason_b": ""
+      },
+      {
+        "field": "decision",
+        "annotator_a": "emotional_manipulation,financial_guarantee,investment_advice",
+        "annotator_b": "emotional_manipulation,investment_advice",
+        "reason_a": "Guide intent RISK_REMOVED and financial_guarantee: nobody has ever lost principal here denies risk without the word guarantee. Guide investment_advice and emotional_manipulation: Get into the vault is an imperative to act on a financial object with a before-the-halving deadline; the trailing disclaimer does not undo the article's own guarantee claim.",
+        "reason_b": "Guide, investment_advice: Get into the vault is an imperative aimed at the reader with a financial object, and before the halving supplies the deadline pressure of emotional_manipulation. Guide, financial_guarantee: the parenthetical (you can lose money) is a disclaimed guarantee, so that category is negative."
+      }
+    ]
+  }
+]

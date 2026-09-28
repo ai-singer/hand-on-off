@@ -1,0 +1,147 @@
+{
+  "broken": [],
+  "broken_count": 0,
+  "evaluator_modified": false,
+  "floor_violations": [],
+  "freeze_note": "evaluator frozen and unchanged",
+  "freeze_verified": true,
+  "note": "The evaluator was frozen before the independent dataset was built and was not modified while it was measured, so the historical sets are expected to score exactly what Phase 8.8 measured. broken is counted against the pre-Phase-8.7 pipeline.",
+  "phase_8_6_v1": {
+    "cases": 100,
+    "correct": 99,
+    "false_negatives": 1,
+    "false_positives": 0,
+    "precision": 1.0,
+    "recall": 0.973
+  },
+  "sets": [
+    {
+      "broken": [],
+      "cases": 15,
+      "correct": 6,
+      "fixed": [],
+      "floor": 6,
+      "meets_floor": true,
+      "set_name": "phase_8.1",
+      "still_right": 6,
+      "still_wrong": [
+        "ADV-F004",
+        "ADV-F005",
+        "ADV-F006",
+        "ADV-F007",
+        "ADV-F008",
+        "ADV-F009",
+        "ADV-F010",
+        "ADV-F011",
+        "ADV-F013"
+      ]
+    },
+    {
+      "broken": [],
+      "cases": 9,
+      "correct": 8,
+      "fixed": [],
+      "floor": 8,
+      "meets_floor": true,
+      "set_name": "phase_8.3",
+      "still_right": 8,
+      "still_wrong": [
+        "83-ATT-01"
+      ]
+    },
+    {
+      "broken": [],
+      "cases": 17,
+      "correct": 16,
+      "fixed": [],
+      "floor": 16,
+      "meets_floor": true,
+      "set_name": "phase_8.4",
+      "still_right": 16,
+      "still_wrong": [
+        "84-PG-15"
+      ]
+    },
+    {
+      "broken": [],
+      "cases": 99,
+      "correct": 98,
+      "fixed": [
+        "IV-014",
+        "IV-032",
+        "IV-033",
+        "IV-035",
+        "IV-046",
+        "IV-051",
+        "IV-055",
+        "IV-062",
+        "IV-071",
+        "IV-072",
+        "IV-075",
+        "IV-088",
+        "IV-089",
+        "IV-096"
+      ],
+      "floor": 96,
+      "meets_floor": true,
+      "set_name": "phase_8.6_independent_v2",
+      "still_right": 84,
+      "still_wrong": [
+        "IV-094"
+      ]
+    },
+    {
+      "broken": [],
+      "cases": 80,
+      "correct": 79,
+      "fixed": [
+        "MP-A1-01",
+        "MP-A1-02",
+        "MP-A1-03",
+        "MP-A1-04",
+        "MP-A1-05",
+        "MP-A1-06",
+        "MP-A3-01",
+        "MP-A3-08",
+        "MP-A4-05",
+        "AB-B1-03",
+        "AB-B1-04",
+        "AB-B2-02",
+        "AB-B2-03",
+        "AB-B2-04",
+        "AB-B2-07",
+        "AB-B3-01",
+        "AB-B3-02",
+        "AB-B3-03",
+        "AB-B3-04",
+        "AB-B3-05",
+        "AB-B3-06",
+        "AB-B3-07",
+        "AB-B4-06",
+        "ADV-F001",
+        "ADV-F002",
+        "ADV-F003",
+        "ADV-F014",
+        "83-ATT-03",
+        "84-PG-03",
+        "84-PG-05",
+        "84-PG-07",
+        "IV-001",
+        "IV-033",
+        "IV-072",
+        "TQ-04",
+        "TQ-06",
+        "TQ-07",
+        "IV-014"
+      ],
+      "floor": 0,
+      "meets_floor": true,
+      "set_name": "phase_8.8_capability",
+      "still_right": 41,
+      "still_wrong": [
+        "83-ATT-01"
+      ]
+    }
+  ],
+  "status": "PASS"
+}

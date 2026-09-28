@@ -1,0 +1,373 @@
+{
+  "items": [
+    {
+      "id": "IND-0002",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide §7 investment_advice: an action-directive aimed at the reader plus a financial object is required, and method guidance is negative; the text states a product-type preference (low-fee broad index funds over thematic products) with no directive, so no relation is carried.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0002",
+      "field": "severity",
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "ruling": "none",
+      "basis": "Protocol §3.6: severity is the highest severity among the categories in decision; with decision empty the severity is none.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0002",
+      "field": "decision",
+      "annotator_a": "investment_advice",
+      "annotator_b": "(none)",
+      "ruling": "",
+      "basis": "Guide §7 / protocol §3.7: investment_advice needs an action-directive aimed at the reader plus a financial object; preferring low-fee broad index funds to frequently traded thematic products is method guidance, which the guide makes negative.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0007",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "hypothetical",
+      "ruling": "hypothetical",
+      "basis": "Guide §5: a conditional directive keeps its category and takes certainty hypothetical ('If you want higher returns, buy this stock.'), and conditional beats modal (guide §1.2).",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0007",
+      "field": "decision",
+      "annotator_a": "investment_advice",
+      "annotator_b": "investment_advice,unverified_information",
+      "ruling": "unverified_information",
+      "basis": "Guide §3.1 and §4: investment_advice requires statement_source author and a claim inside quotation marks is not the article's claim; unverified_information applies at any statement_source, and 'one poster' is unattributable.",
+      "resolution": "third_reading"
+    },
+    {
+      "id": "IND-0008",
+      "field": "stance",
+      "annotator_a": "uncertain",
+      "annotator_b": "endorsed",
+      "ruling": "uncertain",
+      "basis": "Protocol §3.3: endorsed means the article advances the claim as its own; the text puts the conversion as an open question (股东是否应当) and commits to nothing.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0008",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "n/a",
+      "basis": "Protocol §3.5: n/a applies where the claim carries no certainty; the interrogative asserts no claim, and guide §1.2 records only how a claim is presented.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0014",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "possible",
+      "ruling": "possible",
+      "basis": "Protocol §3.5 marker table / guide §1.2: 或可 ('may') is a possibility modal, so the claim is presented as one possibility.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0016",
+      "field": "certainty",
+      "annotator_a": "possible",
+      "annotator_b": "n/a",
+      "ruling": "possible",
+      "basis": "Protocol §3.5 marker table / guide §1.2: 可考虑 ('may consider') is a possibility modal, so the claim is presented as one possibility.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0018",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Protocol §3.2: author is the article's own voice, or where nothing marks the claim as anyone else's; the text carries no attribution marker.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0018",
+      "field": "stance",
+      "annotator_a": "endorsed",
+      "annotator_b": "uncertain",
+      "ruling": "endorsed",
+      "basis": "Protocol §3.3 with guide §4: the unit of annotation is the article's own voice, and nothing marks the plan as quoted or reported from another party, so the article advances it itself.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0018",
+      "field": "intent",
+      "annotator_a": "ADVICE",
+      "annotator_b": "NONE",
+      "ruling": "NONE",
+      "basis": "Guide §7 / protocol §3.7: a described 建仓方案 (buy in batches during earnings season, cap a single holding at 30%) is method guidance, not an action-directive aimed at the reader.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0028",
+      "field": "speaker",
+      "annotator_a": "unknown",
+      "annotator_b": "third_party",
+      "ruling": "unknown",
+      "basis": "Protocol §3.2: third_party requires attribution to a named person, body or document; 已被上调至增持评级 / 被列为本季度的优先操作 leave the agent unattributable, which is unknown.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0029",
+      "field": "certainty",
+      "annotator_a": "hypothetical",
+      "annotator_b": "n/a",
+      "ruling": "hypothetical",
+      "basis": "Guide §5 / §1.2: conditional beats modal — the directive is framed by 'If digital assets belong in your portfolio at all', and a conditional directive is still hypothetical.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0036",
+      "field": "decision",
+      "annotator_a": "market_prediction",
+      "annotator_b": "market_prediction,unverified_information",
+      "ruling": "market_prediction",
+      "basis": "Guide §2 rule / protocol §3.7: the second clause's 同样被认为 continues the named speaker 本机构, and unverified_information is negative for a named, checkable source.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0040",
+      "field": "speaker",
+      "annotator_a": "unknown",
+      "annotator_b": "author",
+      "ruling": "author",
+      "basis": "Protocol §3.2: nothing marks the question as anyone else's, so it is the article's own voice.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0040",
+      "field": "intent",
+      "annotator_a": "NONE",
+      "annotator_b": "PREDICTION",
+      "ruling": "NONE",
+      "basis": "Guide §2 rule: market_prediction requires the article to assert a future market outcome as its own certainty; a question about whether the company should disclose the proposition asserts nothing.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0040",
+      "field": "certainty",
+      "annotator_a": "n/a",
+      "annotator_b": "certain",
+      "ruling": "n/a",
+      "basis": "Protocol §3.5 / guide §1.2: the text asks whether the company should disclose the proposition rather than asserting it, so no certainty attaches to a claim.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0054",
+      "field": "certainty",
+      "annotator_a": "probable",
+      "annotator_b": "certain",
+      "ruling": "probable",
+      "basis": "Protocol §3.5: 'expected to' is a probable marker and the weakest carrier wins — 管理层预计 together with 将 narrows the claim to probable, not certain.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0062",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol §3.4: GUARANTEE applies where assured/protected wording is used or an outcome is made unconditional (有保障 = assured; 使本金免受市场波动的侵蚀 = protected); RISK_REMOVED is the residual for risk denied without such wording.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0063",
+      "field": "decision",
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "ruling": "unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and the desk's line sits inside quotation marks and is not endorsed; unverified_information survives at any statement_source because the desk/broker is unnamed and uncheckable.",
+      "resolution": "third_reading"
+    },
+    {
+      "id": "IND-0064",
+      "field": "severity",
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "ruling": "none",
+      "basis": "Protocol §3.6: severity follows decision, and no category survives in this text.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0064",
+      "field": "decision",
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "ruling": "",
+      "basis": "Guide §3.1: financial_guarantee requires statement_source author, but the guarantee is the issuer's reported view and is posed as an open question; the issuer and the prospectus are named and checkable, so unverified_information is negative (protocol §3.7).",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0070",
+      "field": "intent",
+      "annotator_a": "RISK_REMOVED",
+      "annotator_b": "PREDICTION",
+      "ruling": "RISK_REMOVED",
+      "basis": "Protocol §3.4: the risk is denied (vacancy losses covered by tenant deposits); guide §2 and protocol §3.7 exclude a hedged author claim (大概率) from market_prediction.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0070",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "probable",
+      "ruling": "probable",
+      "basis": "Protocol §3.5: the weakest carrier wins — 大概率 is a probable marker carried by the text's claim.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0070",
+      "field": "severity",
+      "annotator_a": "block",
+      "annotator_b": "none",
+      "ruling": "block",
+      "basis": "Protocol §3.6: financial_guarantee is a block-severity category and it survives in decision.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0070",
+      "field": "decision",
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "(none)",
+      "ruling": "financial_guarantee",
+      "basis": "Guide §7: risk removed in the article's own voice (空置带来的损失基本被租户保证金完全覆盖); the impairment view is attributed to named management and the hedged rent view is not a prediction, so neither adds a further category.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0071",
+      "field": "decision",
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "ruling": "unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and these words are a quoted thread post the article does not endorse; unverified_information survives at any statement_source because 'one member' is unattributable and uncheckable.",
+      "resolution": "third_reading"
+    },
+    {
+      "id": "IND-0072",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "unknown",
+      "ruling": "author",
+      "basis": "Protocol §3.2: the question is in the article's own voice and nothing marks it as anyone else's.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0074",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol §3.4: 本息的全额刚性兑付 makes the repayment outcome unconditional, which is the GUARANTEE branch (an outcome made unconditional), so RISK_REMOVED — the residual for risk denied without such wording or unconditional outcome — does not govern.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0076",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol §3.4: 得到充分保障 uses assurance/protection wording ('assured'), the GUARANTEE branch; RISK_REMOVED is the residual used only when risk is denied without such wording.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0079",
+      "field": "decision",
+      "annotator_a": "financial_guarantee",
+      "annotator_b": "financial_guarantee,unverified_information",
+      "ruling": "unverified_information",
+      "basis": "Guide §3.1 and §4: financial_guarantee requires the author's voice, and the claim is quoted from the original poster with no endorsement in the article's own voice (replies agreeing is not the article endorsing it); unverified_information survives at any statement_source because the poster is unattributable.",
+      "resolution": "third_reading"
+    },
+    {
+      "id": "IND-0085",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "hypothetical",
+      "ruling": "hypothetical",
+      "basis": "Guide §5 / §1.2: conditional beats modal — 'If you open a Meridian Macro Shield account before quarter-end' frames the guarantee, so the claim is hypothetical.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0086",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol §3.4: 汇兑收益应能得到充分保障 uses assurance/protection wording ('assured'), the GUARANTEE branch; RISK_REMOVED is the residual for risk denied without such wording.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0087",
+      "field": "intent",
+      "annotator_a": "GUARANTEE",
+      "annotator_b": "RISK_REMOVED",
+      "ruling": "GUARANTEE",
+      "basis": "Protocol §3.4: 'the downside is fully protected' uses a GUARANTEE marker word (protected) and 'unit values can never fall below the offer price' makes the outcome unconditional; RISK_REMOVED is the residual category.",
+      "resolution": "annotator_a"
+    },
+    {
+      "id": "IND-0090",
+      "field": "speaker",
+      "annotator_a": "author",
+      "annotator_b": "third_party",
+      "ruling": "third_party",
+      "basis": "Protocol §3.2: the guarantee is attributed to a named body/document — the developer (开发商) promising 全额兜底 in the subscription contract — so it is not the article's own voice.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0090",
+      "field": "stance",
+      "annotator_a": "endorsed",
+      "annotator_b": "quoted",
+      "ruling": "quoted",
+      "basis": "Protocol §3.3 with guide §4: the promise is relayed from the contract and the article does not advance it in its own voice, so it is not endorsed.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0091",
+      "field": "speaker",
+      "annotator_a": "third_party",
+      "annotator_b": "author",
+      "ruling": "author",
+      "basis": "Guide §4 and protocol §3.2: the unit of annotation is the article's own voice, and the imperative claim is unmarked; only the supporting clause is attributed to traders.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0091",
+      "field": "stance",
+      "annotator_a": "quoted",
+      "annotator_b": "endorsed",
+      "ruling": "endorsed",
+      "basis": "Protocol §3.3: the article advances the directive in its own voice rather than relaying it from another party.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0091",
+      "field": "intent",
+      "annotator_a": "NONE",
+      "annotator_b": "ADVICE",
+      "ruling": "ADVICE",
+      "basis": "Guide §7 / protocol §3.7: 'Watch the industrial names this week' is an imperative action-directive aimed at the reader with a financial object, and it is neither educational explanation nor method guidance, the two stated negatives.",
+      "resolution": "annotator_b"
+    },
+    {
+      "id": "IND-0091",
+      "field": "certainty",
+      "annotator_a": "certain",
+      "annotator_b": "n/a",
+      "ruling": "n/a",
+      "basis": "Protocol §3.5: n/a applies where the claim carries no certainty, as a directive does not; no conditional is present, so guide §5 does not make it hypothetical.",
+      "resolution": "annotator_b"
+    }
+  ]
+}

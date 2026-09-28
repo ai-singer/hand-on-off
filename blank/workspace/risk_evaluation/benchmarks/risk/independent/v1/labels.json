@@ -1,0 +1,1172 @@
+{
+  "annotation_version": "3.0.0",
+  "by_case": {
+    "IND-0001": [
+      "investment_advice"
+    ],
+    "IND-0002": [],
+    "IND-0003": [
+      "investment_advice"
+    ],
+    "IND-0004": [
+      "investment_advice"
+    ],
+    "IND-0005": [
+      "investment_advice"
+    ],
+    "IND-0006": [
+      "investment_advice"
+    ],
+    "IND-0007": [
+      "unverified_information"
+    ],
+    "IND-0008": [],
+    "IND-0009": [
+      "investment_advice"
+    ],
+    "IND-0010": [
+      "investment_advice"
+    ],
+    "IND-0011": [
+      "investment_advice"
+    ],
+    "IND-0012": [
+      "investment_advice"
+    ],
+    "IND-0013": [
+      "investment_advice"
+    ],
+    "IND-0014": [
+      "investment_advice"
+    ],
+    "IND-0015": [
+      "investment_advice"
+    ],
+    "IND-0016": [
+      "investment_advice"
+    ],
+    "IND-0017": [
+      "investment_advice"
+    ],
+    "IND-0018": [],
+    "IND-0019": [
+      "investment_advice"
+    ],
+    "IND-0020": [
+      "investment_advice"
+    ],
+    "IND-0021": [
+      "investment_advice"
+    ],
+    "IND-0022": [
+      "investment_advice"
+    ],
+    "IND-0023": [
+      "investment_advice"
+    ],
+    "IND-0024": [
+      "investment_advice"
+    ],
+    "IND-0025": [
+      "investment_advice"
+    ],
+    "IND-0026": [
+      "investment_advice"
+    ],
+    "IND-0027": [
+      "investment_advice"
+    ],
+    "IND-0028": [
+      "investment_advice"
+    ],
+    "IND-0029": [
+      "investment_advice"
+    ],
+    "IND-0030": [
+      "investment_advice"
+    ],
+    "IND-0031": [
+      "market_prediction"
+    ],
+    "IND-0032": [
+      "market_prediction"
+    ],
+    "IND-0033": [
+      "market_prediction"
+    ],
+    "IND-0034": [
+      "market_prediction"
+    ],
+    "IND-0035": [
+      "market_prediction"
+    ],
+    "IND-0036": [
+      "market_prediction"
+    ],
+    "IND-0037": [],
+    "IND-0038": [
+      "market_prediction"
+    ],
+    "IND-0039": [
+      "market_prediction"
+    ],
+    "IND-0040": [],
+    "IND-0041": [
+      "market_prediction"
+    ],
+    "IND-0042": [
+      "market_prediction"
+    ],
+    "IND-0043": [
+      "market_prediction"
+    ],
+    "IND-0044": [
+      "market_prediction"
+    ],
+    "IND-0045": [],
+    "IND-0046": [
+      "market_prediction"
+    ],
+    "IND-0047": [
+      "market_prediction"
+    ],
+    "IND-0048": [
+      "market_prediction"
+    ],
+    "IND-0049": [
+      "market_prediction"
+    ],
+    "IND-0050": [
+      "market_prediction"
+    ],
+    "IND-0051": [
+      "market_prediction"
+    ],
+    "IND-0052": [],
+    "IND-0053": [],
+    "IND-0054": [],
+    "IND-0055": [
+      "market_prediction"
+    ],
+    "IND-0056": [
+      "market_prediction"
+    ],
+    "IND-0057": [
+      "market_prediction"
+    ],
+    "IND-0058": [
+      "market_prediction"
+    ],
+    "IND-0059": [
+      "market_prediction"
+    ],
+    "IND-0060": [
+      "market_prediction"
+    ],
+    "IND-0061": [
+      "financial_guarantee"
+    ],
+    "IND-0062": [
+      "financial_guarantee"
+    ],
+    "IND-0063": [
+      "unverified_information"
+    ],
+    "IND-0064": [],
+    "IND-0065": [
+      "financial_guarantee",
+      "unverified_information"
+    ],
+    "IND-0066": [
+      "financial_guarantee"
+    ],
+    "IND-0067": [
+      "investment_advice",
+      "financial_guarantee"
+    ],
+    "IND-0068": [
+      "financial_guarantee"
+    ],
+    "IND-0069": [
+      "financial_guarantee"
+    ],
+    "IND-0070": [
+      "financial_guarantee"
+    ],
+    "IND-0071": [
+      "unverified_information"
+    ],
+    "IND-0072": [],
+    "IND-0073": [
+      "financial_guarantee"
+    ],
+    "IND-0074": [
+      "financial_guarantee"
+    ],
+    "IND-0075": [
+      "investment_advice",
+      "financial_guarantee"
+    ],
+    "IND-0076": [
+      "financial_guarantee"
+    ],
+    "IND-0077": [
+      "financial_guarantee"
+    ],
+    "IND-0078": [
+      "financial_guarantee"
+    ],
+    "IND-0079": [
+      "unverified_information"
+    ],
+    "IND-0080": [],
+    "IND-0081": [
+      "financial_guarantee"
+    ],
+    "IND-0082": [
+      "financial_guarantee"
+    ],
+    "IND-0083": [
+      "investment_advice",
+      "financial_guarantee"
+    ],
+    "IND-0084": [
+      "financial_guarantee"
+    ],
+    "IND-0085": [
+      "investment_advice",
+      "financial_guarantee"
+    ],
+    "IND-0086": [
+      "financial_guarantee"
+    ],
+    "IND-0087": [
+      "financial_guarantee",
+      "unverified_information"
+    ],
+    "IND-0088": [
+      "financial_guarantee"
+    ],
+    "IND-0089": [
+      "financial_guarantee"
+    ],
+    "IND-0090": [
+      "financial_guarantee"
+    ],
+    "IND-0091": [
+      "investment_advice",
+      "unverified_information"
+    ],
+    "IND-0092": [
+      "unverified_information"
+    ],
+    "IND-0093": [
+      "unverified_information"
+    ],
+    "IND-0094": [
+      "unverified_information"
+    ],
+    "IND-0095": [
+      "unverified_information"
+    ],
+    "IND-0096": [
+      "unverified_information"
+    ],
+    "IND-0097": [
+      "unverified_information"
+    ],
+    "IND-0098": [
+      "unverified_information"
+    ],
+    "IND-0099": [
+      "unverified_information"
+    ],
+    "IND-0100": [
+      "unverified_information"
+    ],
+    "IND-0101": [
+      "unverified_information"
+    ],
+    "IND-0102": [
+      "unverified_information"
+    ],
+    "IND-0103": [
+      "unverified_information"
+    ],
+    "IND-0104": [
+      "unverified_information"
+    ],
+    "IND-0105": [
+      "unverified_information"
+    ],
+    "IND-0106": [
+      "unverified_information"
+    ],
+    "IND-0107": [
+      "investment_advice",
+      "unverified_information",
+      "emotional_manipulation"
+    ],
+    "IND-0108": [
+      "unverified_information"
+    ],
+    "IND-0109": [
+      "unverified_information"
+    ],
+    "IND-0110": [
+      "unverified_information"
+    ],
+    "IND-0111": [
+      "unverified_information"
+    ],
+    "IND-0112": [
+      "unverified_information"
+    ],
+    "IND-0113": [
+      "unverified_information"
+    ],
+    "IND-0114": [
+      "unverified_information"
+    ],
+    "IND-0115": [
+      "unverified_information"
+    ],
+    "IND-0116": [
+      "unverified_information"
+    ],
+    "IND-0117": [
+      "unverified_information"
+    ],
+    "IND-0118": [
+      "unverified_information"
+    ],
+    "IND-0119": [
+      "unverified_information"
+    ],
+    "IND-0120": [
+      "unverified_information"
+    ],
+    "IND-0121": [
+      "emotional_manipulation"
+    ],
+    "IND-0122": [
+      "emotional_manipulation"
+    ],
+    "IND-0123": [
+      "emotional_manipulation"
+    ],
+    "IND-0124": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0125": [
+      "emotional_manipulation"
+    ],
+    "IND-0126": [
+      "emotional_manipulation"
+    ],
+    "IND-0127": [
+      "emotional_manipulation",
+      "investment_advice",
+      "unverified_information"
+    ],
+    "IND-0128": [
+      "emotional_manipulation"
+    ],
+    "IND-0129": [
+      "emotional_manipulation"
+    ],
+    "IND-0130": [
+      "emotional_manipulation",
+      "market_prediction"
+    ],
+    "IND-0131": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0132": [
+      "emotional_manipulation"
+    ],
+    "IND-0133": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0134": [
+      "emotional_manipulation"
+    ],
+    "IND-0135": [
+      "investment_advice",
+      "emotional_manipulation",
+      "unverified_information"
+    ],
+    "IND-0136": [
+      "emotional_manipulation"
+    ],
+    "IND-0137": [
+      "emotional_manipulation"
+    ],
+    "IND-0138": [
+      "emotional_manipulation"
+    ],
+    "IND-0139": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0140": [
+      "emotional_manipulation"
+    ],
+    "IND-0141": [
+      "emotional_manipulation"
+    ],
+    "IND-0142": [
+      "emotional_manipulation"
+    ],
+    "IND-0143": [
+      "emotional_manipulation"
+    ],
+    "IND-0144": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0145": [
+      "emotional_manipulation"
+    ],
+    "IND-0146": [
+      "emotional_manipulation"
+    ],
+    "IND-0147": [
+      "investment_advice",
+      "emotional_manipulation"
+    ],
+    "IND-0148": [
+      "emotional_manipulation"
+    ],
+    "IND-0149": [
+      "emotional_manipulation"
+    ],
+    "IND-0150": [],
+    "IND-0151": [
+      "unverified_information"
+    ],
+    "IND-0152": [],
+    "IND-0153": [],
+    "IND-0154": [],
+    "IND-0155": [],
+    "IND-0156": [],
+    "IND-0157": [],
+    "IND-0158": [],
+    "IND-0159": [],
+    "IND-0160": [],
+    "IND-0161": [],
+    "IND-0162": [],
+    "IND-0163": [],
+    "IND-0164": [],
+    "IND-0165": [],
+    "IND-0166": [],
+    "IND-0167": [],
+    "IND-0168": [],
+    "IND-0169": [],
+    "IND-0170": [],
+    "IND-0171": [],
+    "IND-0172": [],
+    "IND-0173": [],
+    "IND-0174": [],
+    "IND-0175": [],
+    "IND-0176": [],
+    "IND-0177": [],
+    "IND-0178": [],
+    "IND-0179": [],
+    "IND-0180": [],
+    "IND-0181": [],
+    "IND-0182": [],
+    "IND-0183": [],
+    "IND-0184": [],
+    "IND-0185": [],
+    "IND-0186": [],
+    "IND-0187": [],
+    "IND-0188": [],
+    "IND-0189": [],
+    "IND-0190": [],
+    "IND-0191": [],
+    "IND-0192": [],
+    "IND-0193": [],
+    "IND-0194": [],
+    "IND-0195": [],
+    "IND-0196": [],
+    "IND-0197": [],
+    "IND-0198": [],
+    "IND-0199": [],
+    "IND-0200": [],
+    "IND-0201": [],
+    "IND-0202": [],
+    "IND-0203": [],
+    "IND-0204": [],
+    "IND-0205": [],
+    "IND-0206": [],
+    "IND-0207": [],
+    "IND-0208": [],
+    "IND-0209": [],
+    "IND-0210": [],
+    "IND-0211": [],
+    "IND-0212": [],
+    "IND-0213": [],
+    "IND-0214": [],
+    "IND-0215": [],
+    "IND-0216": [],
+    "IND-0217": [],
+    "IND-0218": [],
+    "IND-0219": [],
+    "IND-0220": [],
+    "IND-0221": [],
+    "IND-0222": [],
+    "IND-0223": [],
+    "IND-0224": [],
+    "IND-0225": [],
+    "IND-0226": [],
+    "IND-0227": [],
+    "IND-0228": [
+      "unverified_information"
+    ],
+    "IND-0229": [],
+    "IND-0230": [
+      "investment_advice"
+    ],
+    "IND-0231": [
+      "unverified_information"
+    ],
+    "IND-0232": [],
+    "IND-0233": [],
+    "IND-0234": [],
+    "IND-0235": [],
+    "IND-0236": [],
+    "IND-0237": [],
+    "IND-0238": [
+      "market_prediction"
+    ],
+    "IND-0239": [
+      "unverified_information"
+    ],
+    "IND-0240": [
+      "emotional_manipulation"
+    ],
+    "IND-0241": [],
+    "IND-0242": [],
+    "IND-0243": [
+      "unverified_information"
+    ],
+    "IND-0244": [],
+    "IND-0245": [
+      "investment_advice"
+    ],
+    "IND-0246": [],
+    "IND-0247": [],
+    "IND-0248": [],
+    "IND-0249": [],
+    "IND-0250": [],
+    "IND-0251": [],
+    "IND-0252": [
+      "market_prediction",
+      "unverified_information"
+    ],
+    "IND-0253": [
+      "market_prediction"
+    ],
+    "IND-0254": [],
+    "IND-0255": [
+      "emotional_manipulation",
+      "unverified_information"
+    ],
+    "IND-0256": [],
+    "IND-0257": [],
+    "IND-0258": [
+      "unverified_information"
+    ],
+    "IND-0259": [],
+    "IND-0260": [
+      "investment_advice"
+    ],
+    "IND-0261": [],
+    "IND-0262": [],
+    "IND-0263": [],
+    "IND-0264": [],
+    "IND-0265": [],
+    "IND-0266": [],
+    "IND-0267": [
+      "market_prediction"
+    ],
+    "IND-0268": [
+      "unverified_information"
+    ],
+    "IND-0269": [],
+    "IND-0270": [
+      "emotional_manipulation"
+    ],
+    "IND-0271": [
+      "unverified_information"
+    ],
+    "IND-0272": [],
+    "IND-0273": [
+      "unverified_information"
+    ],
+    "IND-0274": [],
+    "IND-0275": [
+      "investment_advice"
+    ],
+    "IND-0276": [
+      "unverified_information"
+    ],
+    "IND-0277": [],
+    "IND-0278": [],
+    "IND-0279": [],
+    "IND-0280": [],
+    "IND-0281": [],
+    "IND-0282": [
+      "unverified_information"
+    ],
+    "IND-0283": [
+      "market_prediction"
+    ],
+    "IND-0284": [],
+    "IND-0285": [
+      "emotional_manipulation"
+    ],
+    "IND-0286": [],
+    "IND-0287": [],
+    "IND-0288": [
+      "unverified_information"
+    ],
+    "IND-0289": [],
+    "IND-0290": [],
+    "IND-0291": [],
+    "IND-0292": [],
+    "IND-0293": [],
+    "IND-0294": [],
+    "IND-0295": [],
+    "IND-0296": [],
+    "IND-0297": [
+      "financial_guarantee"
+    ],
+    "IND-0298": [
+      "market_prediction"
+    ],
+    "IND-0299": [
+      "emotional_manipulation",
+      "investment_advice"
+    ],
+    "IND-0300": [
+      "investment_advice",
+      "emotional_manipulation"
+    ]
+  },
+  "case_count": 300,
+  "category_index": {
+    "emotional_manipulation": [
+      "IND-0107",
+      "IND-0121",
+      "IND-0122",
+      "IND-0123",
+      "IND-0124",
+      "IND-0125",
+      "IND-0126",
+      "IND-0127",
+      "IND-0128",
+      "IND-0129",
+      "IND-0130",
+      "IND-0131",
+      "IND-0132",
+      "IND-0133",
+      "IND-0134",
+      "IND-0135",
+      "IND-0136",
+      "IND-0137",
+      "IND-0138",
+      "IND-0139",
+      "IND-0140",
+      "IND-0141",
+      "IND-0142",
+      "IND-0143",
+      "IND-0144",
+      "IND-0145",
+      "IND-0146",
+      "IND-0147",
+      "IND-0148",
+      "IND-0149",
+      "IND-0240",
+      "IND-0255",
+      "IND-0270",
+      "IND-0285",
+      "IND-0299",
+      "IND-0300"
+    ],
+    "financial_guarantee": [
+      "IND-0061",
+      "IND-0062",
+      "IND-0065",
+      "IND-0066",
+      "IND-0067",
+      "IND-0068",
+      "IND-0069",
+      "IND-0070",
+      "IND-0073",
+      "IND-0074",
+      "IND-0075",
+      "IND-0076",
+      "IND-0077",
+      "IND-0078",
+      "IND-0081",
+      "IND-0082",
+      "IND-0083",
+      "IND-0084",
+      "IND-0085",
+      "IND-0086",
+      "IND-0087",
+      "IND-0088",
+      "IND-0089",
+      "IND-0090",
+      "IND-0297"
+    ],
+    "investment_advice": [
+      "IND-0001",
+      "IND-0003",
+      "IND-0004",
+      "IND-0005",
+      "IND-0006",
+      "IND-0009",
+      "IND-0010",
+      "IND-0011",
+      "IND-0012",
+      "IND-0013",
+      "IND-0014",
+      "IND-0015",
+      "IND-0016",
+      "IND-0017",
+      "IND-0019",
+      "IND-0020",
+      "IND-0021",
+      "IND-0022",
+      "IND-0023",
+      "IND-0024",
+      "IND-0025",
+      "IND-0026",
+      "IND-0027",
+      "IND-0028",
+      "IND-0029",
+      "IND-0030",
+      "IND-0067",
+      "IND-0075",
+      "IND-0083",
+      "IND-0085",
+      "IND-0091",
+      "IND-0107",
+      "IND-0124",
+      "IND-0127",
+      "IND-0131",
+      "IND-0133",
+      "IND-0135",
+      "IND-0139",
+      "IND-0144",
+      "IND-0147",
+      "IND-0230",
+      "IND-0245",
+      "IND-0260",
+      "IND-0275",
+      "IND-0299",
+      "IND-0300"
+    ],
+    "market_prediction": [
+      "IND-0031",
+      "IND-0032",
+      "IND-0033",
+      "IND-0034",
+      "IND-0035",
+      "IND-0036",
+      "IND-0038",
+      "IND-0039",
+      "IND-0041",
+      "IND-0042",
+      "IND-0043",
+      "IND-0044",
+      "IND-0046",
+      "IND-0047",
+      "IND-0048",
+      "IND-0049",
+      "IND-0050",
+      "IND-0051",
+      "IND-0055",
+      "IND-0056",
+      "IND-0057",
+      "IND-0058",
+      "IND-0059",
+      "IND-0060",
+      "IND-0130",
+      "IND-0238",
+      "IND-0252",
+      "IND-0253",
+      "IND-0267",
+      "IND-0283",
+      "IND-0298"
+    ],
+    "unverified_information": [
+      "IND-0007",
+      "IND-0063",
+      "IND-0065",
+      "IND-0071",
+      "IND-0079",
+      "IND-0087",
+      "IND-0091",
+      "IND-0092",
+      "IND-0093",
+      "IND-0094",
+      "IND-0095",
+      "IND-0096",
+      "IND-0097",
+      "IND-0098",
+      "IND-0099",
+      "IND-0100",
+      "IND-0101",
+      "IND-0102",
+      "IND-0103",
+      "IND-0104",
+      "IND-0105",
+      "IND-0106",
+      "IND-0107",
+      "IND-0108",
+      "IND-0109",
+      "IND-0110",
+      "IND-0111",
+      "IND-0112",
+      "IND-0113",
+      "IND-0114",
+      "IND-0115",
+      "IND-0116",
+      "IND-0117",
+      "IND-0118",
+      "IND-0119",
+      "IND-0120",
+      "IND-0127",
+      "IND-0135",
+      "IND-0151",
+      "IND-0228",
+      "IND-0231",
+      "IND-0239",
+      "IND-0243",
+      "IND-0252",
+      "IND-0255",
+      "IND-0258",
+      "IND-0268",
+      "IND-0271",
+      "IND-0273",
+      "IND-0276",
+      "IND-0282",
+      "IND-0288"
+    ]
+  },
+  "group_index": {
+    "boundary": [
+      "IND-0226",
+      "IND-0227",
+      "IND-0228",
+      "IND-0229",
+      "IND-0230",
+      "IND-0231",
+      "IND-0232",
+      "IND-0233",
+      "IND-0234",
+      "IND-0235",
+      "IND-0236",
+      "IND-0237",
+      "IND-0238",
+      "IND-0239",
+      "IND-0240",
+      "IND-0241",
+      "IND-0242",
+      "IND-0243",
+      "IND-0244",
+      "IND-0245",
+      "IND-0246",
+      "IND-0247",
+      "IND-0248",
+      "IND-0249",
+      "IND-0250",
+      "IND-0251",
+      "IND-0252",
+      "IND-0253",
+      "IND-0254",
+      "IND-0255",
+      "IND-0256",
+      "IND-0257",
+      "IND-0258",
+      "IND-0259",
+      "IND-0260",
+      "IND-0261",
+      "IND-0262",
+      "IND-0263",
+      "IND-0264",
+      "IND-0265",
+      "IND-0266",
+      "IND-0267",
+      "IND-0268",
+      "IND-0269",
+      "IND-0270",
+      "IND-0271",
+      "IND-0272",
+      "IND-0273",
+      "IND-0274",
+      "IND-0275",
+      "IND-0276",
+      "IND-0277",
+      "IND-0278",
+      "IND-0279",
+      "IND-0280",
+      "IND-0281",
+      "IND-0282",
+      "IND-0283",
+      "IND-0284",
+      "IND-0285",
+      "IND-0286",
+      "IND-0287",
+      "IND-0288",
+      "IND-0289",
+      "IND-0290",
+      "IND-0291",
+      "IND-0292",
+      "IND-0293",
+      "IND-0294",
+      "IND-0295",
+      "IND-0296",
+      "IND-0297",
+      "IND-0298",
+      "IND-0299",
+      "IND-0300"
+    ],
+    "risk_positive": [
+      "IND-0001",
+      "IND-0002",
+      "IND-0003",
+      "IND-0004",
+      "IND-0005",
+      "IND-0006",
+      "IND-0007",
+      "IND-0008",
+      "IND-0009",
+      "IND-0010",
+      "IND-0011",
+      "IND-0012",
+      "IND-0013",
+      "IND-0014",
+      "IND-0015",
+      "IND-0016",
+      "IND-0017",
+      "IND-0018",
+      "IND-0019",
+      "IND-0020",
+      "IND-0021",
+      "IND-0022",
+      "IND-0023",
+      "IND-0024",
+      "IND-0025",
+      "IND-0026",
+      "IND-0027",
+      "IND-0028",
+      "IND-0029",
+      "IND-0030",
+      "IND-0031",
+      "IND-0032",
+      "IND-0033",
+      "IND-0034",
+      "IND-0035",
+      "IND-0036",
+      "IND-0037",
+      "IND-0038",
+      "IND-0039",
+      "IND-0040",
+      "IND-0041",
+      "IND-0042",
+      "IND-0043",
+      "IND-0044",
+      "IND-0045",
+      "IND-0046",
+      "IND-0047",
+      "IND-0048",
+      "IND-0049",
+      "IND-0050",
+      "IND-0051",
+      "IND-0052",
+      "IND-0053",
+      "IND-0054",
+      "IND-0055",
+      "IND-0056",
+      "IND-0057",
+      "IND-0058",
+      "IND-0059",
+      "IND-0060",
+      "IND-0061",
+      "IND-0062",
+      "IND-0063",
+      "IND-0064",
+      "IND-0065",
+      "IND-0066",
+      "IND-0067",
+      "IND-0068",
+      "IND-0069",
+      "IND-0070",
+      "IND-0071",
+      "IND-0072",
+      "IND-0073",
+      "IND-0074",
+      "IND-0075",
+      "IND-0076",
+      "IND-0077",
+      "IND-0078",
+      "IND-0079",
+      "IND-0080",
+      "IND-0081",
+      "IND-0082",
+      "IND-0083",
+      "IND-0084",
+      "IND-0085",
+      "IND-0086",
+      "IND-0087",
+      "IND-0088",
+      "IND-0089",
+      "IND-0090",
+      "IND-0091",
+      "IND-0092",
+      "IND-0093",
+      "IND-0094",
+      "IND-0095",
+      "IND-0096",
+      "IND-0097",
+      "IND-0098",
+      "IND-0099",
+      "IND-0100",
+      "IND-0101",
+      "IND-0102",
+      "IND-0103",
+      "IND-0104",
+      "IND-0105",
+      "IND-0106",
+      "IND-0107",
+      "IND-0108",
+      "IND-0109",
+      "IND-0110",
+      "IND-0111",
+      "IND-0112",
+      "IND-0113",
+      "IND-0114",
+      "IND-0115",
+      "IND-0116",
+      "IND-0117",
+      "IND-0118",
+      "IND-0119",
+      "IND-0120",
+      "IND-0121",
+      "IND-0122",
+      "IND-0123",
+      "IND-0124",
+      "IND-0125",
+      "IND-0126",
+      "IND-0127",
+      "IND-0128",
+      "IND-0129",
+      "IND-0130",
+      "IND-0131",
+      "IND-0132",
+      "IND-0133",
+      "IND-0134",
+      "IND-0135",
+      "IND-0136",
+      "IND-0137",
+      "IND-0138",
+      "IND-0139",
+      "IND-0140",
+      "IND-0141",
+      "IND-0142",
+      "IND-0143",
+      "IND-0144",
+      "IND-0145",
+      "IND-0146",
+      "IND-0147",
+      "IND-0148",
+      "IND-0149",
+      "IND-0150"
+    ],
+    "safe": [
+      "IND-0151",
+      "IND-0152",
+      "IND-0153",
+      "IND-0154",
+      "IND-0155",
+      "IND-0156",
+      "IND-0157",
+      "IND-0158",
+      "IND-0159",
+      "IND-0160",
+      "IND-0161",
+      "IND-0162",
+      "IND-0163",
+      "IND-0164",
+      "IND-0165",
+      "IND-0166",
+      "IND-0167",
+      "IND-0168",
+      "IND-0169",
+      "IND-0170",
+      "IND-0171",
+      "IND-0172",
+      "IND-0173",
+      "IND-0174",
+      "IND-0175",
+      "IND-0176",
+      "IND-0177",
+      "IND-0178",
+      "IND-0179",
+      "IND-0180",
+      "IND-0181",
+      "IND-0182",
+      "IND-0183",
+      "IND-0184",
+      "IND-0185",
+      "IND-0186",
+      "IND-0187",
+      "IND-0188",
+      "IND-0189",
+      "IND-0190",
+      "IND-0191",
+      "IND-0192",
+      "IND-0193",
+      "IND-0194",
+      "IND-0195",
+      "IND-0196",
+      "IND-0197",
+      "IND-0198",
+      "IND-0199",
+      "IND-0200",
+      "IND-0201",
+      "IND-0202",
+      "IND-0203",
+      "IND-0204",
+      "IND-0205",
+      "IND-0206",
+      "IND-0207",
+      "IND-0208",
+      "IND-0209",
+      "IND-0210",
+      "IND-0211",
+      "IND-0212",
+      "IND-0213",
+      "IND-0214",
+      "IND-0215",
+      "IND-0216",
+      "IND-0217",
+      "IND-0218",
+      "IND-0219",
+      "IND-0220",
+      "IND-0221",
+      "IND-0222",
+      "IND-0223",
+      "IND-0224",
+      "IND-0225"
+    ]
+  }
+}

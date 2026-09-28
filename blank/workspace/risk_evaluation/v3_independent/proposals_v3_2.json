@@ -1,0 +1,66 @@
+{
+  "evaluator_modified": false,
+  "note": "The phase forbids changing the evaluator in response to these results. Each proposal names what a repair would have to do and what it must not break; none is implemented. `freeze.guard()` raises if one is.",
+  "proposals": [
+    {
+      "blocked_by": "the Phase 8.9 freeze: no evaluator change is permitted this phase",
+      "evidence": "Recall on the independently authored set is far below the author's own benchmark, and the loss is concentrated in one language. The Chinese cases in the frame express the same five categories with the same relations, and the intent layer finds almost none of them.",
+      "id": "P1-language-coverage",
+      "kind": "lexical_gap",
+      "must_not_break": "the 30 English cases the frame marks safe, the Phase 8.6 and 8.8 benchmarks, and the Phase 8.5 relation recall of 1.0",
+      "observed_cases": 106,
+      "proposal": "Add Chinese relation vocabulary to the v3.1 capability layers: movement and comparison outcomes, modal carriers, directive verbs, method guidance markers, and the disclosure and symmetric-pair forms. The morphology layer does not apply to Chinese, so the frames need a separate lexical path rather than an inflection rule.",
+      "title": "The relation vocabulary is effectively English-only"
+    },
+    {
+      "blocked_by": "the Phase 8.9 freeze",
+      "evidence": "The failures classified as a lexical gap are cases where the labelled relation produced no finding at all. The capability layers decide on declared signals and outcome lexicons, and a sentence that expresses the relation with words outside those lists is not seen.",
+      "id": "P2-modality-coverage",
+      "kind": "lexical_gap",
+      "must_not_break": "precision: the layers currently over-flag almost nothing, and widening the lexicon is how a precision-first layer loses that",
+      "observed_cases": 106,
+      "proposal": "Widen the outcome and directive vocabularies from a corpus of the independent text rather than from imagination, and add a coverage test that fails when a relation's lexicon misses a labelled case in a held out set.",
+      "title": "Wording outside the frame's own vocabulary is invisible"
+    },
+    {
+      "blocked_by": "a guide revision is out of scope for a validation phase",
+      "evidence": "The agreement section reports a kappa per field; the lowest ones name the fields the guide under-specifies. The cases classified here failed while the label itself was in dispute, so they measure the guide as much as the evaluator.",
+      "id": "P3-annotation-ambiguity",
+      "kind": "annotation_disagreement",
+      "must_not_break": "the frozen guide version every earlier label cites",
+      "observed_cases": 29,
+      "proposal": "Rule on the disputed fields the adjudicator had to settle with a third reading, in a guide v3. Until then, report these cases separately from the evaluator's own failures rather than counting them as one.",
+      "title": "The guide leaves real cases undecided"
+    },
+    {
+      "blocked_by": "the Phase 8.9 freeze",
+      "evidence": "The attribution classification counts cases where the evaluator resolved a speaker or stance the label does not share, and the extra category follows from that resolution rather than from the wording.",
+      "id": "P4-attribution-boundary",
+      "kind": "attribution_error",
+      "must_not_break": "the Phase 8.3 control case and the Phase 8.6 attribution metrics",
+      "observed_cases": 4,
+      "proposal": "Extend the source lexicon from the independent text, and re-examine the rule that maps a checkable source to a negative verdict against the cases where the label disagreed.",
+      "title": "Speaker resolution differs from the label on quoted material"
+    },
+    {
+      "blocked_by": "the Phase 8.9 freeze",
+      "evidence": "These cases produced at least one relation and still missed or added a category, so the vocabulary was sufficient and the boundary rule was not.",
+      "id": "P5-semantic-boundary",
+      "kind": "semantic_gap",
+      "must_not_break": "the Phase 8.8 modal and advice benchmarks",
+      "observed_cases": 8,
+      "proposal": "Re-derive the certainty and directionality boundaries from the independent cases, and check whether the hedge policy that preserves a matcher hedge is suppressing statements the guide calls asserted.",
+      "title": "A relation is found and the decision goes the wrong way"
+    },
+    {
+      "blocked_by": "a guide revision is out of scope for a validation phase",
+      "evidence": "These are the cases where the adjudicator ruled a third reading that neither annotator proposed, or declined to settle the field at all. The two annotators disagreed, the disagreement survived adjudication, and the reason is that the guide has no rule for the case.",
+      "id": "P6-guide-v3",
+      "kind": "taxonomy_ambiguity",
+      "must_not_break": "the frozen guide version every earlier label cites, and the labels themselves - a guide revision re-labels, it does not overwrite",
+      "observed_cases": 4,
+      "proposal": "Write the missing rules into a guide v3, one per ambiguity the adjudication record names, and re-label the affected cases under it while keeping the v2 labels beside them. A guide revision is the only honest repair for this class: the evaluator is not wrong about a case the standard does not decide.",
+      "title": "The guide does not settle every case the text contains"
+    }
+  ]
+}
