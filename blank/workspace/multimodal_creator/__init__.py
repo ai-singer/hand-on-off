@@ -45,6 +45,12 @@ from .geometry import (
     region_boxes_are_disjoint,
     validate_region,
 )
+from .integration import (
+    INTEGRATION_VERSION,
+    ArtifactIntegration,
+    integrate_samples,
+    validate_integrated_artifact,
+)
 from .roles import (
     MULTI_ROLE_STATEMENT,
     SourceStructure,
@@ -96,6 +102,7 @@ __all__ = [
     "CROSS_MODAL_TYPES",
     "DEFAULT_SIGNALS",
     "DENSITIES",
+    "INTEGRATION_VERSION",
     "LAYER_UNIVERSAL",
     "LEGACY_ROLE_SUCCESSOR",
     "MULTIMODAL_CONTRACT_VERSION",
@@ -117,6 +124,7 @@ __all__ = [
     "VISUAL_PATTERN_TYPES",
     "MultimodalContractError",
     "SignalFamily",
+    "ArtifactIntegration",
     "SourceStructure",
     "StructuralObservation",
     "VisualSignal",
@@ -130,6 +138,7 @@ __all__ = [
     "build_multimodal_envelope",
     "classify_density",
     "grid_columns_are_declared",
+    "integrate_samples",
     "layout_exists_independently",
     "merge_creator_extension",
     "merge_multimodal_artifact",
@@ -141,6 +150,7 @@ __all__ = [
     "sources_holding_role",
     "structure_from_metadata",
     "text_signals_are_not_visual",
+    "validate_integrated_artifact",
     "validate_multimodal_artifact",
     "validate_region",
 ]
