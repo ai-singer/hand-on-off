@@ -1,0 +1,356 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://creator-agent.local/schemas/creator_instance.schema.json",
+  "title": "CreatorInstance",
+  "description": "The frozen composition contract for one Creator Agent instance. An instance is CONFIGURATION, never runtime: it may reference capabilities but may not contain code, model calls, crawling, or publishing. Validated with the project's dependency-free schema subset (type/enum/required/properties/additionalProperties/items/minItems) - no $ref, allOf, oneOf, if/then.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "identity",
+    "source",
+    "text_rules",
+    "visual_rules",
+    "risk_policy",
+    "generation",
+    "publishing",
+    "provenance"
+  ],
+  "properties": {
+    "contract_version": {
+      "type": "string",
+      "enum": ["1.0.0"]
+    },
+
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["creator_id", "name", "domain", "persona", "audience", "tone", "platform", "language"],
+      "properties": {
+        "creator_id": {"type": "string"},
+        "name": {"type": "string"},
+        "domain": {"type": "string", "enum": ["finance", "sports", "tech", "general"]},
+        "persona": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode", "identity_card", "mental_models", "decision_heuristics", "honest_boundaries"],
+          "properties": {
+            "mode": {"type": "string", "enum": ["reasoning_model", "roleplay_persona"]},
+            "identity_card": {"type": "string"},
+            "mental_models": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["model_id", "mechanism", "evidence", "apply_when", "failure_condition"],
+                "properties": {
+                  "model_id": {"type": "string"},
+                  "mechanism": {"type": "string"},
+                  "evidence": {"type": "string"},
+                  "apply_when": {"type": "string"},
+                  "failure_condition": {"type": "string"}
+                }
+              }
+            },
+            "decision_heuristics": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+            "honest_boundaries": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+          }
+        },
+        "audience": {"type": "string"},
+        "tone": {"type": "string"},
+        "platform": {"type": "string", "enum": ["xiaohongshu", "bilibili", "youtube", "douyin", "wechat", "web"]},
+        "language": {"type": "string", "enum": ["zh", "en", "bilingual"]},
+        "reference_creator_name": {"type": "string"}
+      }
+    },
+
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reference_creators", "data_sources", "collection_rules", "keywords"],
+      "properties": {
+        "reference_creators": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "platform", "identity_verified"],
+            "properties": {
+              "name": {"type": "string"},
+              "platform": {"type": "string"},
+              "user_id": {"type": "string"},
+              "identity_verified": {"type": "boolean"},
+              "verification_method": {"type": "string"},
+              "role": {"type": "string"}
+            }
+          }
+        },
+        "data_sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source_id", "layer", "kind"],
+            "properties": {
+              "source_id": {"type": "string"},
+              "layer": {"type": "string", "enum": ["discovery", "evidence"]},
+              "kind": {"type": "string"},
+              "locator": {"type": "string"}
+            }
+          }
+        },
+        "collection_rules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min_notes", "material_tiers", "rate_limit_seconds", "dedupe_by"],
+          "properties": {
+            "min_notes": {"type": "integer"},
+            "material_tiers": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": ["S", "A", "B", "C"]}},
+            "rate_limit_seconds": {"type": "number"},
+            "dedupe_by": {"type": "string"}
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["keyword", "weight"],
+            "properties": {
+              "keyword": {"type": "string"},
+              "weight": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+
+    "text_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title_formula", "structure", "tone", "length", "knowledge_boundary"],
+      "properties": {
+        "title_formula": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "structure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["template_id", "sections"],
+          "properties": {
+            "template_id": {"type": "string"},
+            "sections": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+          }
+        },
+        "tone": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["voice", "certainty", "avoid"],
+          "properties": {
+            "voice": {"type": "string"},
+            "certainty": {"type": "string"},
+            "avoid": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "length": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min_chars", "max_chars"],
+          "properties": {
+            "min_chars": {"type": "integer"},
+            "max_chars": {"type": "integer"}
+          }
+        },
+        "knowledge_boundary": {"type": "array", "minItems": 1, "items": {"type": "string"}}
+      }
+    },
+
+    "visual_rules": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A REFERENCE to an M5 VisualCreatorProfile. Vocabulary and rule values only. Image-generation prompts are prohibited by shape and by the isolation checks.",
+      "required": ["profile_id", "profile_version", "visual_language", "attention_strategy", "composition", "hierarchy", "constraints", "provenance"],
+      "properties": {
+        "profile_id": {"type": "string"},
+        "profile_version": {"type": "string"},
+        "visual_language": {"type": "string"},
+        "attention_strategy": {
+          "type": "object",
+          "additionalProperties": {"type": "string"},
+          "required": ["first"]
+        },
+        "composition": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["preferred_layout", "forbidden_layout"],
+          "properties": {
+            "preferred_layout": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+            "forbidden_layout": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "hierarchy": {
+          "type": "object",
+          "additionalProperties": {"type": "string"},
+          "required": ["primary"]
+        },
+        "constraints": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["must_have", "avoid"],
+          "properties": {
+            "must_have": {"type": "array", "items": {"type": "string"}},
+            "avoid": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "provenance": {"type": "object"}
+      }
+    },
+
+    "risk_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["risk_categories", "review_rules", "blocked_patterns", "evidence_requirement"],
+      "properties": {
+        "risk_categories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["category_id", "severity", "action"],
+            "properties": {
+              "category_id": {"type": "string"},
+              "severity": {"type": "string", "enum": ["info", "warning", "block"]},
+              "action": {"type": "string", "enum": ["downrank", "require_evidence", "require_review", "block"]},
+              "definition": {"type": "string"}
+            }
+          }
+        },
+        "review_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["when", "decision"],
+            "properties": {
+              "when": {"type": "string"},
+              "decision": {"type": "string", "enum": ["pass", "require_review", "block"]}
+            }
+          }
+        },
+        "blocked_patterns": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["pattern", "category_id"],
+            "properties": {
+              "pattern": {"type": "string"},
+              "category_id": {"type": "string"}
+            }
+          }
+        },
+        "evidence_requirement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["require_source_ids", "min_first_party_ratio"],
+          "properties": {
+            "require_source_ids": {"type": "boolean"},
+            "min_first_party_ratio": {"type": "number"},
+            "evidence_layer_only_as_fact": {"type": "boolean"}
+          }
+        }
+      }
+    },
+
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A ROUTING declaration. It names the adapter to inject; it must never contain the model call itself.",
+      "required": ["adapter_ref", "input", "output_format", "quality_gate"],
+      "properties": {
+        "adapter_ref": {"type": "string"},
+        "input": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"type": "string", "enum": ["topic", "structure", "knowledge", "style", "domain_context", "constraints"]}
+        },
+        "output_format": {"type": "string"},
+        "quality_gate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["required_decision", "controller_ref"],
+          "properties": {
+            "required_decision": {"type": "string", "enum": ["PASS"]},
+            "controller_ref": {"type": "string"}
+          }
+        },
+        "enabled": {"type": "boolean"}
+      }
+    },
+
+    "publishing": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A TARGET declaration. Publishing is performed by a deployment adapter; this block only declares platform, media expectations, idempotency key source, and schedule.",
+      "required": ["platform", "image_requirement", "api", "schedule"],
+      "properties": {
+        "platform": {"type": "string", "enum": ["xiaohongshu", "bilibili", "youtube", "douyin", "wechat", "web", "github"]},
+        "image_requirement": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["aspect_ratio", "min_width", "title_safe_area_ratio"],
+          "properties": {
+            "aspect_ratio": {"type": "string", "enum": ["16:9", "4:5", "9:16", "1:1"]},
+            "min_width": {"type": "integer"},
+            "title_safe_area_ratio": {"type": "number"},
+            "count": {"type": "integer"}
+          }
+        },
+        "api": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["adapter_ref", "idempotency_key", "retry_policy"],
+          "properties": {
+            "adapter_ref": {"type": "string"},
+            "idempotency_key": {"type": "string"},
+            "retry_policy": {"type": "string", "enum": ["none", "bounded", "exponential"]}
+          }
+        },
+        "schedule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["mode"],
+          "properties": {
+            "mode": {"type": "string", "enum": ["manual", "scheduled", "continuous"]},
+            "cron": {"type": "string"},
+            "timezone": {"type": "string"}
+          }
+        },
+        "requires_human_approval": {"type": "boolean"}
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Every module records where it came from. No module may be un-sourced.",
+      "required": ["identity", "source", "text_rules", "visual_rules", "risk_policy", "generation", "publishing"],
+      "properties": {
+        "identity": {"type": "object"},
+        "source": {"type": "object"},
+        "text_rules": {"type": "object"},
+        "visual_rules": {"type": "object"},
+        "risk_policy": {"type": "object"},
+        "generation": {"type": "object"},
+        "publishing": {"type": "object"},
+        "generated_by": {"type": "string"},
+        "template_contract": {"type": "object"}
+      }
+    }
+  }
+}

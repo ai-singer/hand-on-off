@@ -15,6 +15,7 @@ packages = [
   "config",
   "config.runtime",
   "core",
+  "creator_contract",
   "distillation_core",
   "evaluation",
   "plugin_interface",
