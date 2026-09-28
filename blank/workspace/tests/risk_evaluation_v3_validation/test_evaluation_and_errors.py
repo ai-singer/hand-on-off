@@ -140,29 +140,37 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(attribution.stance_accuracy, 0.98)
 
     def test_intent_metrics_are_pinned(self) -> None:
-        # Phase 8.6 measured 27/40 (0.6750). Phase 8.7 brought the guarantee
-        # relation to 12/12 and RISK_REMOVED to 8/8; PREDICTION and ADVICE are
-        # unchanged and are listed as still open in the Phase 8.7 report.
+        # Phase 8.6 measured 27/40 (0.6750); Phase 8.7 brought it to 35/40 (0.8750).
+        # Phase 8.8's modal layer added IV-098, a hedged prediction
+        # (`Perhaps the fund will outperform its benchmark.`) that no Phase 8.4
+        # frame could reach. PREDICTION and ADVICE are still the two relations with
+        # misses, listed as open in the Phase 8.8 report.
         intent = self.metrics.intent
 
         self.assertEqual(intent.expected_total, 40)
-        self.assertEqual(intent.recalled, 35)
-        self.assertEqual(intent.recall, 0.875)
+        self.assertEqual(intent.recalled, 36)
+        self.assertEqual(intent.recall, 0.9)
         self.assertGreater(intent.precision, 0.0)
         self.assertLessEqual(intent.precision, 1.0)
 
     def test_decision_metrics_are_pinned(self) -> None:
         # Phase 8.6 measured tp/fp/fn/tn 31/9/6/54, precision 0.7750,
-        # recall 0.8378, fpr 0.1429, fnr 0.1622.
+        # recall 0.8378, fpr 0.1429, fnr 0.1622. Phase 8.7 took it to
+        # 36/2/1/61. Phase 8.8 removed the last two false positives: both were
+        # directive verbs in third person - `Custodians hold assets on behalf of
+        # the fund.` and `Assuming rates hold, income is likely to be stable.` -
+        # which the ADVICE boundary now recognises as statements rather than
+        # directives. One false negative remains: IV-094, the promoter annotation
+        # conflict that Phase 8.7 recorded and deliberately did not resolve.
         decision = self.metrics.decision
 
         self.assertEqual(decision.counts["tp"], 36)
-        self.assertEqual(decision.counts["fp"], 2)
+        self.assertEqual(decision.counts["fp"], 0)
         self.assertEqual(decision.counts["fn"], 1)
-        self.assertEqual(decision.counts["tn"], 61)
-        self.assertEqual(decision.precision, 0.9474)
+        self.assertEqual(decision.counts["tn"], 63)
+        self.assertEqual(decision.precision, 1.0)
         self.assertEqual(decision.recall, 0.973)
-        self.assertEqual(decision.false_positive_rate, 0.0317)
+        self.assertEqual(decision.false_positive_rate, 0.0)
         self.assertEqual(decision.false_negative_rate, 0.027)
 
     def test_trace_metrics_are_complete(self) -> None:

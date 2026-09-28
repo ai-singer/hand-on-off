@@ -1,0 +1,2043 @@
+{
+  "benchmark": "capability_v3_1/v1",
+  "case_count": 80,
+  "cases": [
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-01",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "The share price will rise next year."
+    },
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-02",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "Yields will climb in the coming quarter."
+    },
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-03",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "The index is going to fall this month."
+    },
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-04",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "Earnings will double by 2030."
+    },
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-05",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "The fund's value will recover from here."
+    },
+    {
+      "basis": "guide 2: explicit prediction, author, certain",
+      "case_id": "MP-A1-06",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "Turnover will grow over the next two years."
+    },
+    {
+      "basis": "guide 1.2: `is certain to` is a certain marker",
+      "case_id": "MP-A1-07",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "The sector is certain to decline next quarter."
+    },
+    {
+      "basis": "guide 2 target price: the article asserts the level",
+      "case_id": "MP-A1-08",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "strong_prediction",
+      "text": "The share price is bound to reach 500."
+    },
+    {
+      "basis": "guide 1.2: `may` is possible; guide 2 excludes it",
+      "case_id": "MP-A2-01",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "The index may recover next quarter."
+    },
+    {
+      "basis": "guide 1.2: `could` is possible; guide 2 excludes it",
+      "case_id": "MP-A2-02",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "Yields could double this year."
+    },
+    {
+      "basis": "guide 1.2: `likely` is probable; guide 2 excludes it",
+      "case_id": "MP-A2-03",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "The share price is likely to rise."
+    },
+    {
+      "basis": "guide 1.2: the adverb is probable and the adverb is the weaker carrier",
+      "case_id": "MP-A2-04",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "Earnings will probably decline."
+    },
+    {
+      "basis": "guide 1.2: `might` is possible; relative performance is directional",
+      "case_id": "MP-A2-05",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "The fund might outperform its benchmark next year."
+    },
+    {
+      "basis": "guide 1.2: `expected to` is probable; guide 2 excludes it",
+      "case_id": "MP-A2-06",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "The valuation is expected to increase."
+    },
+    {
+      "basis": "guide 1.2: `could` is possible; guide 2 excludes it",
+      "case_id": "MP-A2-07",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "The payout could grow over the next two years."
+    },
+    {
+      "basis": "guide 1.2: the sentence adverb is possible and the weakest carrier wins",
+      "case_id": "MP-A2-08",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "the first version of this case read `Perhaps the fund will outperform its benchmark.`, which is IV-098 verbatim. The contamination audit caught it before publication and the case was rewritten; both texts and the finding are recorded in risk_evaluation/v3_1/audit_report_v3_1.json",
+      "origin": "phase-8.8/synthetic",
+      "relation": "PREDICTION",
+      "subgroup": "weak_prediction",
+      "text": "Perhaps the share price will double this year."
+    },
+    {
+      "basis": "guide 5: a symmetric pair asserts no direction",
+      "case_id": "MP-A3-01",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "The value of investments may fall as well as rise."
+    },
+    {
+      "basis": "guide 5: a symmetric pair asserts no direction",
+      "case_id": "MP-A3-02",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Fund values can go down as well as up."
+    },
+    {
+      "basis": "guide 5: `depending on` is conditional; `vary` names no direction",
+      "case_id": "MP-A3-03",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Returns may vary depending on market conditions."
+    },
+    {
+      "basis": "guide 2: no market target is named; `change` names no direction",
+      "case_id": "MP-A3-04",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "no_market_entity",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Market conditions may change without notice."
+    },
+    {
+      "basis": "guide 2: `fluctuate` names no direction, so nothing is predicted",
+      "case_id": "MP-A3-05",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "The price of units may fluctuate."
+    },
+    {
+      "basis": "guide 2: no outcome is asserted",
+      "case_id": "MP-A3-06",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "no_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Past performance is not a reliable indicator of future results."
+    },
+    {
+      "basis": "guide 2: `differ` names no direction",
+      "case_id": "MP-A3-07",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Yields may differ between share classes."
+    },
+    {
+      "basis": "guide 5: a symmetric pair, and guide 7 on the disclaimed guarantee",
+      "case_id": "MP-A3-08",
+      "claims": [
+        {
+          "relation": "GUARANTEE",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "expected_verdict": "non_directional",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "the disclaimed guarantee carries the GUARANTEE relation, as IV-081 does",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "educational_uncertainty",
+      "text": "Investment returns are not guaranteed and may go down as well as up."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-01",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "The fee may indicate a higher turnover."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-02",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "This document may include forward-looking statements."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-03",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "The index may refer to a benchmark maintained by the provider."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-04",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "Charges may apply to early redemptions."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-05",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "The fund's holdings may consist of cash and equivalents."
+    },
+    {
+      "basis": "guide 2: the modal explains, it does not predict",
+      "case_id": "MP-A4-06",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "modal_prediction",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "non_financial_modal",
+      "text": "The report may reflect estimates rather than actual results."
+    },
+    {
+      "basis": "guide 3.2: an addressed directive with a financial object",
+      "case_id": "AB-B1-01",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "You should hold this stock."
+    },
+    {
+      "basis": "guide 7: an imperative aimed at the reader",
+      "case_id": "AB-B1-02",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "Buy this stock today."
+    },
+    {
+      "basis": "guide 7: an addressed directive with a financial object",
+      "case_id": "AB-B1-03",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "Investors should allocate more to bonds."
+    },
+    {
+      "basis": "guide 7: an imperative on a held position",
+      "case_id": "AB-B1-04",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "Reduce your exposure to the sector."
+    },
+    {
+      "basis": "guide 7: the author's own recommendation",
+      "case_id": "AB-B1-05",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "We recommend buying this fund."
+    },
+    {
+      "basis": "guide 7: an imperative on a specific instrument",
+      "case_id": "AB-B1-06",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "Avoid this fund until the charges change."
+    },
+    {
+      "basis": "guide 7: `ought to` is constitutive of the directive",
+      "case_id": "AB-B1-07",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "You ought to trim your position."
+    },
+    {
+      "basis": "guide 7: an imperative aimed at the reader",
+      "case_id": "AB-B1-08",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "direct_advice",
+      "text": "Sell these shares now."
+    },
+    {
+      "basis": "guide 5: a conditional directive is still advice",
+      "case_id": "AB-B2-01",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "It would be prudent to trim your holdings."
+    },
+    {
+      "basis": "guide 5: the condition frames the directive, it does not remove it",
+      "case_id": "AB-B2-02",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "A sensible investor would avoid this fund."
+    },
+    {
+      "basis": "guide 7: an advisory frame carrying a directive",
+      "case_id": "AB-B2-03",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "Investors are advised to reduce exposure to the sector."
+    },
+    {
+      "basis": "guide 7: naming the sensible move is a directive",
+      "case_id": "AB-B2-04",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "The sensible move is to shift into shorter-dated bonds."
+    },
+    {
+      "basis": "guide 5: the condition frames the directive, it does not remove it",
+      "case_id": "AB-B2-05",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "Investors would be wise to reduce their holdings."
+    },
+    {
+      "basis": "guide 7: the author's own recommendation",
+      "case_id": "AB-B2-06",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "We would suggest selling the shares."
+    },
+    {
+      "basis": "guide 7: an advisory frame with a market object",
+      "case_id": "AB-B2-07",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false negative",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "Now is the time to buy the dip."
+    },
+    {
+      "basis": "guide 7: naming the obvious choice is a directive",
+      "case_id": "AB-B2-08",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "author",
+          "stance": "endorsed"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "indirect_advice",
+      "text": "The obvious choice for a cautious investor is to hold cash instead of this fund."
+    },
+    {
+      "basis": "guide 7: educational explanation is negative; the gerund heads a subject",
+      "case_id": "AB-B3-01",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "gerund_subject",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "Holding diversified assets reduces risk."
+    },
+    {
+      "basis": "guide 7: method guidance is negative",
+      "case_id": "AB-B3-02",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "method_guidance",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false positive",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "To reduce risk, hold a diversified portfolio."
+    },
+    {
+      "basis": "guide 7: method guidance is negative, however it is addressed",
+      "case_id": "AB-B3-03",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "method_guidance",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false positive",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "Investors should hold a diversified portfolio rather than a single stock."
+    },
+    {
+      "basis": "guide 7: educational explanation is negative",
+      "case_id": "AB-B3-04",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "no_directive",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "Diversification lowers the impact of any single holding."
+    },
+    {
+      "basis": "guide 7: educational explanation is negative",
+      "case_id": "AB-B3-05",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "gerund_subject",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "Rebalancing restores a portfolio to its target allocation."
+    },
+    {
+      "basis": "guide 7: a statement about a third party is not a directive",
+      "case_id": "AB-B3-06",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "third_person_subject",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false positive",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "A custodian holds fund assets in safekeeping."
+    },
+    {
+      "basis": "guide 7: the verb has a subject, so it is a statement",
+      "case_id": "AB-B3-07",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "third_person_subject",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "a Phase 8.8 measured false positive",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "When rates hold steady, bond fund income is unchanged."
+    },
+    {
+      "basis": "guide 7: educational explanation is negative",
+      "case_id": "AB-B3-08",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "no_directive",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "",
+      "subgroup": "education",
+      "text": "An expense ratio expresses a fund's annual costs as a percentage of assets."
+    },
+    {
+      "basis": "guide 3.1: a named checkable source is negative",
+      "case_id": "AB-B4-01",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "The regulator said investors should avoid this fund."
+    },
+    {
+      "basis": "guide 3.1: a named checkable source is negative",
+      "case_id": "AB-B4-02",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "The exchange said traders should reduce their exposure."
+    },
+    {
+      "basis": "guide 3.1: an uncheckable source is the risk",
+      "case_id": "AB-B4-03",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "Analysts say investors should buy the dip."
+    },
+    {
+      "basis": "guide 3.2: `Insiders say` is unknown/unverified",
+      "case_id": "AB-B4-04",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "Insiders say you should buy this stock."
+    },
+    {
+      "basis": "guide 3.1: an uncheckable source is the risk",
+      "case_id": "AB-B4-05",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": true,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "An unnamed official said investors should reduce their holdings."
+    },
+    {
+      "basis": "guide 7: a checkable advert is negative",
+      "case_id": "AB-B4-06",
+      "claims": [
+        {
+          "relation": "ADVICE",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "expects_risk": false,
+      "frozen_phase": "",
+      "group": "advice_boundary",
+      "note": "",
+      "origin": "phase-8.8/synthetic",
+      "relation": "ADVICE",
+      "subgroup": "quoted_advice",
+      "text": "The advert says investors should buy the fund."
+    },
+    {
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "case_id": "ADV-F001",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.1",
+      "group": "regression",
+      "note": "direct_statement: guide v2 sections 3.1 and 7: an author-voice directive, prediction, guarantee, uncheckable claim or reader pressure is the category",
+      "origin": "adversarial failures/ADV-F001.json",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "This return is guaranteed."
+    },
+    {
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "case_id": "ADV-F002",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.1",
+      "group": "regression",
+      "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "origin": "adversarial failures/ADV-F002.json",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Acquire a position in this equity before the quarter closes."
+    },
+    {
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "case_id": "ADV-F003",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.1",
+      "group": "regression",
+      "note": "paraphrase: guide v2 section 7: the category is defined by the claim, not by the words used to make it",
+      "origin": "adversarial failures/ADV-F003.json",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Reallocate your capital towards this venture."
+    },
+    {
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "case_id": "ADV-F014",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.1",
+      "group": "regression",
+      "note": "attribution_confusion: guide v2 sections 3.1 and 4: a claim is attributed only if the attribution covers that claim",
+      "origin": "adversarial failures/ADV-F014.json",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+    },
+    {
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "case_id": "83-ATT-01",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.3",
+      "group": "regression",
+      "note": "ADV-ATT-01, recorded failure ADV-F013",
+      "origin": "attribution_experiment replay ATT-01",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends."
+    },
+    {
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "case_id": "83-ATT-03",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.3",
+      "group": "regression",
+      "note": "ADV-ATT-03, recorded failure ADV-F014",
+      "origin": "attribution_experiment replay ATT-03",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money."
+    },
+    {
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "case_id": "83-CTL-02",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": false,
+      "frozen_phase": "phase-8.3",
+      "group": "regression",
+      "note": "ADV-CTL-02 control",
+      "origin": "attribution_experiment replay CTL-02",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "The newsletter recommends buying this stock."
+    },
+    {
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "case_id": "83-CTL-04",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": false,
+      "frozen_phase": "phase-8.3",
+      "group": "regression",
+      "note": "ADV-CTL-04 control",
+      "origin": "attribution_experiment replay CTL-04",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "The article quotes a promoter saying do not miss this opportunity."
+    },
+    {
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "case_id": "84-PG-01",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.4",
+      "group": "regression",
+      "note": "the form the old rule matched",
+      "origin": "intent_pattern/v1 PG-01",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "This is a guaranteed return."
+    },
+    {
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "case_id": "84-PG-03",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.4",
+      "group": "regression",
+      "note": "Phase 8.1 blind spot",
+      "origin": "intent_pattern/v1 PG-03",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "This return is guaranteed."
+    },
+    {
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "case_id": "84-PG-05",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.4",
+      "group": "regression",
+      "note": "Phase 8.1 blind spot",
+      "origin": "intent_pattern/v1 PG-05",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Your capital is guaranteed."
+    },
+    {
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "case_id": "84-PG-07",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.4",
+      "group": "regression",
+      "note": "object and copula separated by a phrase",
+      "origin": "intent_pattern/v1 PG-07",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "The value of your investment is guaranteed."
+    },
+    {
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "case_id": "IV-001",
+      "claims": [
+        {
+          "relation": "GUARANTEE",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.6",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.6/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Your money is guaranteed to be returned in full."
+    },
+    {
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "case_id": "IV-005",
+      "claims": [
+        {
+          "relation": "RISK_REMOVED",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.6",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.6/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "This product carries zero risk of loss."
+    },
+    {
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "case_id": "IV-033",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.6",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.6/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Traders say the shares are cheap."
+    },
+    {
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "case_id": "IV-072",
+      "claims": [
+        {
+          "relation": "",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "expects_risk": false,
+      "frozen_phase": "phase-8.6",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.6/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Custodians hold assets on behalf of the fund."
+    },
+    {
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "case_id": "TQ-04",
+      "claims": [
+        {
+          "relation": "RISK_REMOVED",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.7",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.7/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "A broker told clients the fund cannot lose money."
+    },
+    {
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "case_id": "TQ-06",
+      "claims": [
+        {
+          "relation": "RISK_REMOVED",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.7",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.7/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Officials said the fund cannot lose money."
+    },
+    {
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "case_id": "TQ-07",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "third_party",
+          "stance": "quoted"
+        }
+      ],
+      "expected_categories": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.7",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.7/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Commentators said the market will certainly crash."
+    },
+    {
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "case_id": "IV-014",
+      "claims": [
+        {
+          "relation": "PREDICTION",
+          "speaker": "unknown",
+          "stance": "uncertain"
+        }
+      ],
+      "expected_categories": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "",
+      "expects_risk": true,
+      "frozen_phase": "phase-8.7",
+      "group": "regression",
+      "note": "",
+      "origin": "phase-8.7/frozen",
+      "relation": "",
+      "subgroup": "frozen",
+      "text": "Turnover expands sharply next quarter."
+    }
+  ],
+  "category_counts": {
+    "financial_guarantee": 9,
+    "investment_advice": 19,
+    "market_prediction": 9,
+    "unverified_information": 7
+  },
+  "frozen_case_ids": {
+    "phase-8.1": [
+      "ADV-F001",
+      "ADV-F002",
+      "ADV-F003",
+      "ADV-F014"
+    ],
+    "phase-8.3": [
+      "83-ATT-01",
+      "83-ATT-03",
+      "83-CTL-02",
+      "83-CTL-04"
+    ],
+    "phase-8.4": [
+      "84-PG-01",
+      "84-PG-03",
+      "84-PG-05",
+      "84-PG-07"
+    ],
+    "phase-8.6": [
+      "IV-001",
+      "IV-005",
+      "IV-033",
+      "IV-072"
+    ],
+    "phase-8.7": [
+      "TQ-04",
+      "TQ-06",
+      "TQ-07",
+      "IV-014"
+    ]
+  },
+  "frozen_quotas": {
+    "phase-8.1": 4,
+    "phase-8.3": 4,
+    "phase-8.4": 4,
+    "phase-8.6": 4,
+    "phase-8.7": 4
+  },
+  "groups": {
+    "advice_boundary": 30,
+    "modal_prediction": 30,
+    "regression": 20
+  },
+  "note": "Groups A and B are synthetic and were written by the same author as the capability they measure; they are not an independence claim. Group C carries labels copied from frozen artifacts.",
+  "provenance": {
+    "annotation": "single-annotator engineering validation only",
+    "author": "ai-singer (the repository's single annotator of record)",
+    "benchmark": "capability_v3_1/v1",
+    "generated_at": "2026-09-28",
+    "generated_by": "automated agent session, Phase 8.8",
+    "guide": "docs/RISK_ANNOTATION_GUIDE_v2.md",
+    "independent": false,
+    "independent_note": "Groups A and B were written by the same author as the capability they measure. Phase 8.6 exists because that arrangement flatters a pipeline: speaker accuracy fell from 96.8% to 74.0% and relation recall from 100% to 67.5% when the same architecture met unseen sentences. No number in this benchmark carries that protection. Group C is a regression set, not an independence claim.",
+    "label_sources": {
+      "A": "guide sections 1.2, 2, 5",
+      "B": "guide sections 3.1, 4, 7",
+      "C": "copied from the source artifacts; not re-annotated"
+    },
+    "protocol": "docs/INDEPENDENT_ANNOTATION_PROTOCOL_V2.md",
+    "source": "authored for this phase against docs/RISK_ANNOTATION_GUIDE_v2.md; group C is copied from five frozen artifacts rather than authored",
+    "synthetic": true
+  },
+  "relation_counts": {
+    "ADVICE": 22,
+    "GUARANTEE": 2,
+    "PREDICTION": 18,
+    "RISK_REMOVED": 3
+  },
+  "subgroups": {
+    "direct_advice": 8,
+    "education": 8,
+    "educational_uncertainty": 8,
+    "frozen": 20,
+    "indirect_advice": 8,
+    "non_financial_modal": 6,
+    "quoted_advice": 6,
+    "strong_prediction": 8,
+    "weak_prediction": 8
+  },
+  "verdict_counts": {
+    "advice": 22,
+    "gerund_subject": 2,
+    "method_guidance": 2,
+    "no_directive": 2,
+    "no_market_entity": 1,
+    "no_modal": 1,
+    "non_directional": 6,
+    "non_prediction_modal": 6,
+    "prediction": 8,
+    "third_person_subject": 2,
+    "weak_prediction": 8
+  }
+}

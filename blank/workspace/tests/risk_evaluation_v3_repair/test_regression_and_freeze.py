@@ -111,26 +111,33 @@ class RegressionShapeTests(unittest.TestCase):
         for item in self.report.records:
             self.assertIn(item.transition, TRANSITIONS)
 
-    def test_fixed_is_not_empty_on_the_two_sets_that_moved(self) -> None:
-        """A regression that reported no fixes would not be reporting the repair."""
+    def test_the_phase_8_7_fixes_are_still_fixed(self) -> None:
+        """The twelve Phase 8.7 repaired, as a subset of what is fixed now.
 
-        self.assertEqual(
-            self.report.summary_for("phase_8.6_independent_v2").fixed,
-            (
-                "IV-014",
-                "IV-032",
-                "IV-033",
-                "IV-035",
-                "IV-046",
-                "IV-051",
-                "IV-055",
-                "IV-062",
-                "IV-071",
-                "IV-075",
-                "IV-088",
-                "IV-096",
-            ),
-        )
+        Asserting the current list would make this a snapshot of whatever the last
+        phase happened to score. Asserting that Phase 8.7's own fixes are still
+        present is the property the phase cared about, and it survives later
+        phases fixing more. Phase 8.8 added `IV-072` and `IV-089`, both of which
+        Phase 8.7's report listed as still open.
+        """
+
+        fixed = set(self.report.summary_for("phase_8.6_independent_v2").fixed)
+        phase_8_7 = {
+            "IV-014",
+            "IV-032",
+            "IV-033",
+            "IV-035",
+            "IV-046",
+            "IV-051",
+            "IV-055",
+            "IV-062",
+            "IV-071",
+            "IV-075",
+            "IV-088",
+            "IV-096",
+        }
+
+        self.assertTrue(phase_8_7 <= fixed, sorted(phase_8_7 - fixed))
         self.assertEqual(
             self.report.summary_for("phase_8.5").fixed, ("TQ-04", "TQ-06", "TQ-07")
         )
@@ -144,12 +151,19 @@ class RegressionShapeTests(unittest.TestCase):
             self.assertEqual(summary.fixed, (), name)
             self.assertEqual(summary.broken, (), name)
 
-    def test_the_phase_8_6_set_gained_twelve_cases(self) -> None:
+    def test_the_phase_8_6_set_never_scores_below_its_phase_8_7_result(self) -> None:
+        """84 before Phase 8.7, 96 after it, 98 after Phase 8.8.
+
+        The pre-repair baseline is frozen at 84 because that is what the recorded
+        measurement says, and a later phase may not revise it. The current score is
+        asserted as a floor rather than a value: a repair may raise it, and nothing
+        may lower it.
+        """
+
         summary = self.report.summary_for("phase_8.6_independent_v2")
 
-        self.assertEqual(
-            (summary.pre_repair_correct, summary.v3_correct), (84, 96)
-        )
+        self.assertEqual(summary.pre_repair_correct, 84)
+        self.assertGreaterEqual(summary.v3_correct, 96)
 
     def test_still_wrong_is_reported_separately_from_unchanged(self) -> None:
         """A defect that survived is not the same finding as a case always right."""

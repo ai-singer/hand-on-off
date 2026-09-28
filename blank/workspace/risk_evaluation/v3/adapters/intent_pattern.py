@@ -16,6 +16,8 @@ from typing import Any
 
 from ...intent_patterns.matcher import RelationMatcher
 from ...intent_patterns.model import PatternMatch
+from ...v3_1.detectors import Detection
+from ...v3_1.detectors import evaluate as evaluate_capabilities
 from ...v3_repair.negation import classify as classify_negation
 from ..model import ClaimInput, IntentEvidence, evidence_strings
 from ..patterns import ENTITIES, PATTERNS
@@ -49,17 +51,34 @@ class IntentPatternAdapter:
 
     name = name
 
-    def __init__(self, *, matcher: RelationMatcher | None = None) -> None:
+    def __init__(
+        self,
+        *,
+        matcher: RelationMatcher | None = None,
+        capabilities: bool = True,
+    ) -> None:
         self._matcher = (
             matcher if matcher is not None else RelationMatcher(PATTERNS)
         )
+        #: Phase 8.8's signal layers. Off makes the adapter the Phase 8.7 one, so
+        #: the capability can be ablated rather than only asserted.
+        self._capabilities = capabilities
 
     @property
     def matcher(self) -> RelationMatcher:
         return self._matcher
 
+    @property
+    def capabilities_enabled(self) -> bool:
+        return self._capabilities
+
     def matches(self, text: str) -> tuple[PatternMatch, ...]:
         return self._matcher.match(text)
+
+    def detect(self, text: str) -> Detection:
+        """The Phase 8.8 layers on their own, for callers that want just those."""
+
+        return evaluate_capabilities(text)
 
     def evaluate(self, claim: ClaimInput) -> AdapterResult:
         if not isinstance(claim, ClaimInput):
@@ -95,6 +114,22 @@ class IntentPatternAdapter:
                 if scope.negated:
                     evidence.append(scope.marker_text)
 
+        # -- Phase 8.8: the two capability layers, applied to what the frames
+        # found. They replace the finding on a span they are authoritative for and
+        # veto the ones they have evidence against; a non-matching verdict does
+        # neither, which is why `Turnover expands sharply next quarter.` keeps the
+        # Phase 8.4 horizon frame's prediction.
+        detection = (
+            evaluate_capabilities(claim.text)
+            if self._capabilities
+            else Detection()
+        )
+        frame_count = len(intents)
+        intents = list(detection.apply(intents))
+        evidence.extend(detection.evidence)
+        for veto in detection.vetoes:
+            evidence.append(veto.marker)
+
         if not intents:
             evidence.append("rule:intent_pattern.no-relation")
 
@@ -108,6 +143,13 @@ class IntentPatternAdapter:
             detail={
                 "patterns": [match.pattern_id for match in matches],
                 "asserted": [item.marker for item in asserted],
+                "capabilities_enabled": self._capabilities,
+                "frame_findings": frame_count,
+                "capability_verdicts": list(detection.verdicts),
+                "capability_findings": len(detection.findings),
+                "vetoes": [veto.verdict for veto in detection.vetoes],
+                "boundary_declined": list(detection.boundary_declined),
+                "detection": detection.as_dict() if self._capabilities else {},
             },
         )
 

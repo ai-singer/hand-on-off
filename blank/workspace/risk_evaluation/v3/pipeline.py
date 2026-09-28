@@ -329,6 +329,12 @@ class RiskEvaluationPipeline:
                 refinement.sourcing_categories if refinement else ()
             ),
             attribution_refinement=refinement.as_dict() if refinement else {},
+            boundary_declined=tuple(
+                intent_result.detail.get("boundary_declined", ())
+            ),
+            capabilities=tuple(
+                intent_result.detail.get("detection", {}).get("capabilities", ())
+            ),
         )
         return claim, stages
 

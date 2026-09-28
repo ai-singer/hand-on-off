@@ -1,0 +1,62 @@
+{
+  "cases": 80,
+  "counts": {
+    "annotation_issue": 1,
+    "attribution_error": 0,
+    "decision_policy_issue": 0,
+    "intent_ambiguity": 0,
+    "lexical_gap": 0,
+    "none": 0
+  },
+  "diagnoses": [
+    {
+      "case_id": "83-ATT-01",
+      "evidence": [
+        "analysts",
+        "say",
+        "rule:attribution.third_party/quoted",
+        "source:professional_group:analysts:uncheckable",
+        "rule:refine.sourcing:unverified_information:professional_group",
+        "capability:modal_prediction:no_modal",
+        "capability:advice_boundary:no_directive",
+        "rule:intent_pattern.no-relation",
+        "unverified_information:semantic-intent-v2:confidence=0.6",
+        "rule:semantic.searched-because:intent-found-nothing",
+        "rule:speaker.no-marker",
+        "rule:stance.no-marker",
+        "rule:attribution.unknown/uncertain",
+        "active_advice_pattern",
+        "capability:advice_boundary:advice",
+        "capability:advice_boundary:structure:imperative",
+        "capability:advice_boundary:addressee:reader",
+        "signal:addressee:imperative",
+        "signal:financial_action_object:specific",
+        "signal:imperative_structure:reader",
+        "signal:position_action:position",
+        "replace:advice_boundary:advice",
+        "rule:semantic.skipped:intent-found-ADVICE"
+      ],
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_verdict": "",
+      "explanation": "the semantic baseline also produces ['unverified_information'], so the label does not name a category two independent layers find",
+      "group": "regression",
+      "kind": "annotation_issue",
+      "mechanism": "label-omits-category",
+      "predicted": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "subgroup": "frozen",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+      "verdict_seen": ""
+    }
+  ],
+  "failure_rate": 0.0125,
+  "failures": 1,
+  "mechanisms": {
+    "label-omits-category": 1
+  },
+  "unclassified": 0
+}

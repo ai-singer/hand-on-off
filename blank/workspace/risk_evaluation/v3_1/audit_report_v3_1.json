@@ -1,0 +1,688 @@
+{
+  "affected_case_count": 0,
+  "benchmark": "capability_v3_1/v1",
+  "blocking": [],
+  "blocking_counts": {
+    "development_overlap": 0,
+    "exact_overlap": 0,
+    "label_incomplete": 0,
+    "near_duplicate": 0,
+    "unverifiable_provenance": 0
+  },
+  "blocking_findings": 0,
+  "case_count": 80,
+  "counts": {
+    "development_overlap": 0,
+    "disclosed_overlap": 0,
+    "exact_overlap": 22,
+    "label_incomplete": 0,
+    "near_duplicate": 10,
+    "unverifiable_provenance": 0
+  },
+  "dataset_hash": "aee706cfd6647171513f6604e7f2a90d25db2d7731cbccae32d84ffa095125f1",
+  "disclosed": [
+    {
+      "case_ids": [
+        "ADV-F001"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F002"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F003"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F014"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-ATT-01"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-ATT-03"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-CTL-02"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-CTL-04"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-03"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-05"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-07"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "IV-001"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-005"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-033"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-072"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "TQ-04"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "TQ-06"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "TQ-07"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "IV-014"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F001",
+        "84-PG-03"
+      ],
+      "detail": "two cases in this benchmark have the same text",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F014",
+        "83-ATT-03"
+      ],
+      "detail": "two cases in this benchmark have the same text",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F001",
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 within the benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01",
+        "84-PG-03"
+      ],
+      "detail": "token Jaccard 0.80 within the benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "ADV-F001"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.83 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8333,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.5/composition"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.1/failure-repository"
+    },
+    {
+      "case_ids": [
+        "84-PG-03"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    }
+  ],
+  "disclosed_overlaps": 32,
+  "findings": [
+    {
+      "case_ids": [
+        "ADV-F001"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F002"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F003"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F014"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-ATT-01"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-ATT-03"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-CTL-02"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "83-CTL-04"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-03"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-05"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-07"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "IV-001"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-005"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-033"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "IV-072"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "TQ-04"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "TQ-06"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "TQ-07"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "IV-014"
+      ],
+      "detail": "text also appears verbatim in an earlier benchmark",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "phase-8.6/independent_v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F001",
+        "84-PG-03"
+      ],
+      "detail": "two cases in this benchmark have the same text",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F014",
+        "83-ATT-03"
+      ],
+      "detail": "two cases in this benchmark have the same text",
+      "kind": "exact_overlap",
+      "similarity": 1.0,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "ADV-F001",
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 within the benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01",
+        "84-PG-03"
+      ],
+      "detail": "token Jaccard 0.80 within the benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "ADV-F001"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "semantic/adversarial/v1"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.3/experiment"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.83 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8333,
+      "source": "phase-8.4/intent-pattern"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.5/composition"
+    },
+    {
+      "case_ids": [
+        "84-PG-01"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.1/failure-repository"
+    },
+    {
+      "case_ids": [
+        "84-PG-03"
+      ],
+      "detail": "token Jaccard 0.80 against an earlier benchmark",
+      "kind": "near_duplicate",
+      "similarity": 0.8,
+      "source": "phase-8.4/intent-pattern"
+    }
+  ],
+  "note": "A blocking finding is a FAIL and nothing is repaired here. Group C is a declared regression set: an overlap with a set its own phase publishes is disclosed rather than blocking, and an overlap with anything else is blocking, because that is either a mislabel or an unrecorded copy. `pre_publication_findings` records what the audit found before publication and what was done about it. The phase forbids deleting a contaminated case, so the finding is kept: the case was rewritten rather than removed, and both texts are recorded.",
+  "phase_sources": {
+    "phase-8.1": [
+      "phase-8.1/failure-repository",
+      "semantic/adversarial/v1"
+    ],
+    "phase-8.3": [
+      "phase-8.3/replay",
+      "phase-8.3/experiment",
+      "phase-8.1/failure-repository",
+      "semantic/adversarial/v1"
+    ],
+    "phase-8.4": [
+      "phase-8.4/intent-pattern",
+      "semantic/adversarial/v1"
+    ],
+    "phase-8.6": [
+      "phase-8.6/independent_v1",
+      "phase-8.6/independent_v2"
+    ],
+    "phase-8.7": [
+      "phase-8.5/composition",
+      "phase-8.3/experiment",
+      "phase-8.6/independent_v1",
+      "phase-8.6/independent_v2"
+    ]
+  },
+  "pre_publication_findings": [
+    {
+      "case_id": "MP-A2-08",
+      "kind": "exact_overlap",
+      "original_text": "Perhaps the fund will outperform its benchmark.",
+      "replacement_text": "Perhaps the share price will double this year.",
+      "resolution": "rewritten before publication",
+      "source": "phase-8.6/independent_v1",
+      "why": "the text is IV-098 verbatim, and IV-098 is one of the cases the Phase 8.8 modal layer was developed against; measuring the capability on it would not be a measurement"
+    }
+  ],
+  "provenance": {
+    "annotation": "single-annotator engineering validation only",
+    "author": "ai-singer (the repository's single annotator of record)",
+    "benchmark": "capability_v3_1/v1",
+    "generated_at": "2026-09-28",
+    "generated_by": "automated agent session, Phase 8.8",
+    "guide": "docs/RISK_ANNOTATION_GUIDE_v2.md",
+    "independent": false,
+    "independent_note": "Groups A and B were written by the same author as the capability they measure. Phase 8.6 exists because that arrangement flatters a pipeline: speaker accuracy fell from 96.8% to 74.0% and relation recall from 100% to 67.5% when the same architecture met unseen sentences. No number in this benchmark carries that protection. Group C is a regression set, not an independence claim.",
+    "label_sources": {
+      "A": "guide sections 1.2, 2, 5",
+      "B": "guide sections 3.1, 4, 7",
+      "C": "copied from the source artifacts; not re-annotated"
+    },
+    "protocol": "docs/INDEPENDENT_ANNOTATION_PROTOCOL_V2.md",
+    "source": "authored for this phase against docs/RISK_ANNOTATION_GUIDE_v2.md; group C is copied from five frozen artifacts rather than authored",
+    "synthetic": true
+  },
+  "sources_checked": [
+    "development/independent",
+    "development/risk-evaluation",
+    "phase-8.1/failure-repository",
+    "phase-8.2/annotation",
+    "phase-8.2/coverage-probe",
+    "phase-8.3/experiment",
+    "phase-8.3/replay",
+    "phase-8.4/intent-pattern",
+    "phase-8.5/composition",
+    "phase-8.6/independent_v1",
+    "phase-8.6/independent_v2",
+    "semantic/adversarial/v1",
+    "semantic/v1",
+    "semantic/v2",
+    "semantic/v3",
+    "semantic/v4"
+  ],
+  "status": "PASS",
+  "threshold": 0.8
+}

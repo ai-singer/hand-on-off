@@ -1,0 +1,2367 @@
+{
+  "benchmark": "capability_v3_1/v1",
+  "cases": [
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-01",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "The share price will rise next year.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-02",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "Yields will climb in the coming quarter.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-03",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "The index is going to fall this month.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-04",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "Earnings will double by 2030.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-05",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "The fund's value will recover from here.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 2: explicit prediction, author, certain",
+      "boundary_declined": [],
+      "case_id": "MP-A1-06",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "Turnover will grow over the next two years.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `is certain to` is a certain marker",
+      "boundary_declined": [],
+      "case_id": "MP-A1-07",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "The sector is certain to decline next quarter.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [
+        "market_prediction"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 2 target price: the article asserts the level",
+      "boundary_declined": [],
+      "case_id": "MP-A1-08",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "strong_prediction",
+      "text": "The share price is bound to reach 500.",
+      "verdict_correct": true,
+      "verdict_seen": "prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `may` is possible; guide 2 excludes it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-01",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "The index may recover next quarter.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `could` is possible; guide 2 excludes it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "Yields could double this year.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `likely` is probable; guide 2 excludes it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-03",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "The share price is likely to rise.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: the adverb is probable and the adverb is the weaker carrier",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-04",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "Earnings will probably decline.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `might` is possible; relative performance is directional",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-05",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "The fund might outperform its benchmark next year.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `expected to` is probable; guide 2 excludes it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-06",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "The valuation is expected to increase.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: `could` is possible; guide 2 excludes it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-07",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "The payout could grow over the next two years.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 1.2: the sentence adverb is possible and the weakest carrier wins",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A2-08",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "weak_prediction",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "weak_prediction",
+      "text": "Perhaps the share price will double this year.",
+      "verdict_correct": true,
+      "verdict_seen": "weak_prediction"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 5: a symmetric pair asserts no direction",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-01",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "The value of investments may fall as well as rise.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 5: a symmetric pair asserts no direction",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Fund values can go down as well as up.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 5: `depending on` is conditional; `vary` names no direction",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-03",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Returns may vary depending on market conditions.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: no market target is named; `change` names no direction",
+      "boundary_declined": [],
+      "case_id": "MP-A3-04",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "no_market_entity",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Market conditions may change without notice.",
+      "verdict_correct": true,
+      "verdict_seen": "no_market_entity"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: `fluctuate` names no direction, so nothing is predicted",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-05",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "The price of units may fluctuate.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: no outcome is asserted",
+      "boundary_declined": [],
+      "case_id": "MP-A3-06",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "no_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Past performance is not a reliable indicator of future results.",
+      "verdict_correct": true,
+      "verdict_seen": "no_modal"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: `differ` names no direction",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-07",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_directional",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Yields may differ between share classes.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 5: a symmetric pair, and guide 7 on the disclaimed guarantee",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A3-08",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "expected_verdict": "non_directional",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "educational_uncertainty",
+      "text": "Investment returns are not guaranteed and may go down as well as up.",
+      "verdict_correct": true,
+      "verdict_seen": "non_directional"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-01",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "The fee may indicate a higher turnover.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "This document may include forward-looking statements.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-03",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "The index may refer to a benchmark maintained by the provider.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-04",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "Charges may apply to early redemptions.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-05",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "The fund's holdings may consist of cash and equivalents.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 2: the modal explains, it does not predict",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "MP-A4-06",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "non_prediction_modal",
+      "found_relations": [],
+      "group": "modal_prediction",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "non_financial_modal",
+      "text": "The report may reflect estimates rather than actual results.",
+      "verdict_correct": true,
+      "verdict_seen": "non_prediction_modal"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 3.2: an addressed directive with a financial object",
+      "boundary_declined": [],
+      "case_id": "AB-B1-01",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "You should hold this stock.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: an imperative aimed at the reader",
+      "boundary_declined": [],
+      "case_id": "AB-B1-02",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "Buy this stock today.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 7: an addressed directive with a financial object",
+      "boundary_declined": [],
+      "case_id": "AB-B1-03",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "Investors should allocate more to bonds.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 7: an imperative on a held position",
+      "boundary_declined": [],
+      "case_id": "AB-B1-04",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "Reduce your exposure to the sector.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: the author's own recommendation",
+      "boundary_declined": [],
+      "case_id": "AB-B1-05",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "We recommend buying this fund.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: an imperative on a specific instrument",
+      "boundary_declined": [],
+      "case_id": "AB-B1-06",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "Avoid this fund until the charges change.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: `ought to` is constitutive of the directive",
+      "boundary_declined": [],
+      "case_id": "AB-B1-07",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "You ought to trim your position.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: an imperative aimed at the reader",
+      "boundary_declined": [],
+      "case_id": "AB-B1-08",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "direct_advice",
+      "text": "Sell these shares now.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 5: a conditional directive is still advice",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "AB-B2-01",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "It would be prudent to trim your holdings.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 5: the condition frames the directive, it does not remove it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "AB-B2-02",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "A sensible investor would avoid this fund.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 7: an advisory frame carrying a directive",
+      "boundary_declined": [],
+      "case_id": "AB-B2-03",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "Investors are advised to reduce exposure to the sector.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 7: naming the sensible move is a directive",
+      "boundary_declined": [],
+      "case_id": "AB-B2-04",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "The sensible move is to shift into shorter-dated bonds.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 5: the condition frames the directive, it does not remove it",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "AB-B2-05",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "Investors would be wise to reduce their holdings.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: the author's own recommendation",
+      "boundary_declined": [
+        "market_prediction"
+      ],
+      "case_id": "AB-B2-06",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "We would suggest selling the shares.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "guide 7: an advisory frame with a market object",
+      "boundary_declined": [],
+      "case_id": "AB-B2-07",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "Now is the time to buy the dip.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 7: naming the obvious choice is a directive",
+      "boundary_declined": [],
+      "case_id": "AB-B2-08",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "indirect_advice",
+      "text": "The obvious choice for a cautious investor is to hold cash instead of this fund.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: educational explanation is negative; the gerund heads a subject",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-01",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "gerund_subject",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "Holding diversified assets reduces risk.",
+      "verdict_correct": true,
+      "verdict_seen": "gerund_subject"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: method guidance is negative",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "method_guidance",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "To reduce risk, hold a diversified portfolio.",
+      "verdict_correct": true,
+      "verdict_seen": "method_guidance"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: method guidance is negative, however it is addressed",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-03",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "method_guidance",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "Investors should hold a diversified portfolio rather than a single stock.",
+      "verdict_correct": true,
+      "verdict_seen": "method_guidance"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: educational explanation is negative",
+      "boundary_declined": [],
+      "case_id": "AB-B3-04",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "no_directive",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "Diversification lowers the impact of any single holding.",
+      "verdict_correct": true,
+      "verdict_seen": "no_directive"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: educational explanation is negative",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-05",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "gerund_subject",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "Rebalancing restores a portfolio to its target allocation.",
+      "verdict_correct": true,
+      "verdict_seen": "gerund_subject"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: a statement about a third party is not a directive",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-06",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "third_person_subject",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "A custodian holds fund assets in safekeeping.",
+      "verdict_correct": true,
+      "verdict_seen": "third_person_subject"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: the verb has a subject, so it is a statement",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "AB-B3-07",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "third_person_subject",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "When rates hold steady, bond fund income is unchanged.",
+      "verdict_correct": true,
+      "verdict_seen": "third_person_subject"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 7: educational explanation is negative",
+      "boundary_declined": [],
+      "case_id": "AB-B3-08",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "no_directive",
+      "found_relations": [],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "education",
+      "text": "An expense ratio expresses a fund's annual costs as a percentage of assets.",
+      "verdict_correct": true,
+      "verdict_seen": "no_directive"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 3.1: a named checkable source is negative",
+      "boundary_declined": [],
+      "case_id": "AB-B4-01",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "The regulator said investors should avoid this fund.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "guide 3.1: a named checkable source is negative",
+      "boundary_declined": [],
+      "case_id": "AB-B4-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "The exchange said traders should reduce their exposure.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 3.1: an uncheckable source is the risk",
+      "boundary_declined": [],
+      "case_id": "AB-B4-03",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "Analysts say investors should buy the dip.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 3.2: `Insiders say` is unknown/unverified",
+      "boundary_declined": [],
+      "case_id": "AB-B4-04",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "Insiders say you should buy this stock.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": true,
+      "basis": "guide 3.1: an uncheckable source is the risk",
+      "boundary_declined": [],
+      "case_id": "AB-B4-05",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "An unnamed official said investors should reduce their holdings.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "guide 7: a checkable advert is negative",
+      "boundary_declined": [],
+      "case_id": "AB-B4-06",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [
+        "ADVICE"
+      ],
+      "expected_verdict": "advice",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "advice_boundary",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "quoted_advice",
+      "text": "The advert says investors should buy the fund.",
+      "verdict_correct": true,
+      "verdict_seen": "advice"
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "ADV-F001",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "This return is guaranteed.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "ADV-F002",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Acquire a position in this equity before the quarter closes.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "ADV-F003",
+      "correct": true,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Reallocate your capital towards this venture.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.1: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "ADV-F014",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "unverified_information"
+      ],
+      "baseline_correct": false,
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "83-ATT-01",
+      "correct": false,
+      "expected": [
+        "investment_advice"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "investment_advice",
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "83-ATT-03",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "83-CTL-02",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "ADVICE"
+      ],
+      "group": "regression",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "The newsletter recommends buying this stock.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": true,
+      "basis": "phase-8.3: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "83-CTL-04",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [],
+      "group": "regression",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "The article quotes a promoter saying do not miss this opportunity.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": true,
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "84-PG-01",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "This is a guaranteed return.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "84-PG-03",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "This return is guaranteed.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "84-PG-05",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Your capital is guaranteed.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "phase-8.4: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "84-PG-07",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "The value of your investment is guaranteed.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "IV-001",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "GUARANTEE"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "GUARANTEE"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Your money is guaranteed to be returned in full.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": true,
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "IV-005",
+      "correct": true,
+      "expected": [
+        "financial_guarantee"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "financial_guarantee"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "This product carries zero risk of loss.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "IV-033",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Traders say the shares are cheap.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "investment_advice"
+      ],
+      "baseline_correct": false,
+      "basis": "phase-8.6: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [
+        "investment_advice"
+      ],
+      "case_id": "IV-072",
+      "correct": true,
+      "expected": [],
+      "expected_relations": [],
+      "expected_verdict": "",
+      "found_relations": [],
+      "group": "regression",
+      "outcome": "tn",
+      "predicted": [],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Custodians hold assets on behalf of the fund.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [
+        "financial_guarantee"
+      ],
+      "baseline_correct": false,
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "TQ-04",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "A broker told clients the fund cannot lose money.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "TQ-06",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "RISK_REMOVED"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "RISK_REMOVED"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Officials said the fund cannot lose money.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "TQ-07",
+      "correct": true,
+      "expected": [
+        "unverified_information"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "unverified_information"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Commentators said the market will certainly crash.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    },
+    {
+      "baseline": [],
+      "baseline_correct": false,
+      "basis": "phase-8.7: label copied from the frozen source, not re-annotated",
+      "boundary_declined": [],
+      "case_id": "IV-014",
+      "correct": true,
+      "expected": [
+        "market_prediction"
+      ],
+      "expected_relations": [
+        "PREDICTION"
+      ],
+      "expected_verdict": "",
+      "found_relations": [
+        "PREDICTION"
+      ],
+      "group": "regression",
+      "outcome": "tp",
+      "predicted": [
+        "market_prediction"
+      ],
+      "relations_correct": true,
+      "subgroup": "frozen",
+      "text": "Turnover expands sharply next quarter.",
+      "verdict_correct": null,
+      "verdict_seen": ""
+    }
+  ],
+  "error_analysis": {
+    "cases": 80,
+    "counts": {
+      "annotation_issue": 1,
+      "attribution_error": 0,
+      "decision_policy_issue": 0,
+      "intent_ambiguity": 0,
+      "lexical_gap": 0,
+      "none": 0
+    },
+    "diagnoses": [
+      {
+        "case_id": "83-ATT-01",
+        "evidence": [
+          "analysts",
+          "say",
+          "rule:attribution.third_party/quoted",
+          "source:professional_group:analysts:uncheckable",
+          "rule:refine.sourcing:unverified_information:professional_group",
+          "capability:modal_prediction:no_modal",
+          "capability:advice_boundary:no_directive",
+          "rule:intent_pattern.no-relation",
+          "unverified_information:semantic-intent-v2:confidence=0.6",
+          "rule:semantic.searched-because:intent-found-nothing",
+          "rule:speaker.no-marker",
+          "rule:stance.no-marker",
+          "rule:attribution.unknown/uncertain",
+          "active_advice_pattern",
+          "capability:advice_boundary:advice",
+          "capability:advice_boundary:structure:imperative",
+          "capability:advice_boundary:addressee:reader",
+          "signal:addressee:imperative",
+          "signal:financial_action_object:specific",
+          "signal:imperative_structure:reader",
+          "signal:position_action:position",
+          "replace:advice_boundary:advice",
+          "rule:semantic.skipped:intent-found-ADVICE"
+        ],
+        "expected": [
+          "investment_advice"
+        ],
+        "expected_verdict": "",
+        "explanation": "the semantic baseline also produces ['unverified_information'], so the label does not name a category two independent layers find",
+        "group": "regression",
+        "kind": "annotation_issue",
+        "mechanism": "label-omits-category",
+        "predicted": [
+          "investment_advice",
+          "unverified_information"
+        ],
+        "subgroup": "frozen",
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+        "verdict_seen": ""
+      }
+    ],
+    "failure_rate": 0.0125,
+    "failures": 1,
+    "mechanisms": {
+      "label-omits-category": 1
+    },
+    "unclassified": 0
+  },
+  "metrics": {
+    "decision": {
+      "accuracy": 0.9875,
+      "cases": 80,
+      "correct": 79,
+      "error_cases": [
+        "83-ATT-01"
+      ],
+      "f1": 1.0,
+      "false_negatives": 0,
+      "false_positives": 0,
+      "per_category": [
+        {
+          "category": "financial_guarantee",
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 9
+        },
+        {
+          "category": "investment_advice",
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 19
+        },
+        {
+          "category": "market_prediction",
+          "f1": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "tp": 9
+        },
+        {
+          "category": "unverified_information",
+          "f1": 0.9333,
+          "fn": 0,
+          "fp": 1,
+          "precision": 0.875,
+          "recall": 1.0,
+          "tp": 7
+        },
+        {
+          "category": "emotional_manipulation",
+          "f1": 0.0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "tp": 0
+        }
+      ],
+      "per_group": {
+        "advice_boundary": {
+          "accuracy": 1.0,
+          "cases": 30,
+          "correct": 30,
+          "fn": 0,
+          "fp": 0,
+          "tn": 11,
+          "tp": 19
+        },
+        "modal_prediction": {
+          "accuracy": 1.0,
+          "cases": 30,
+          "correct": 30,
+          "fn": 0,
+          "fp": 0,
+          "tn": 22,
+          "tp": 8
+        },
+        "regression": {
+          "accuracy": 0.95,
+          "cases": 20,
+          "correct": 19,
+          "fn": 0,
+          "fp": 0,
+          "tn": 3,
+          "tp": 17
+        }
+      },
+      "per_subgroup": {
+        "direct_advice": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        },
+        "education": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        },
+        "educational_uncertainty": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        },
+        "frozen": {
+          "accuracy": 0.95,
+          "cases": 20,
+          "correct": 19,
+          "fn": 0,
+          "fp": 0
+        },
+        "indirect_advice": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        },
+        "non_financial_modal": {
+          "accuracy": 1.0,
+          "cases": 6,
+          "correct": 6,
+          "fn": 0,
+          "fp": 0
+        },
+        "quoted_advice": {
+          "accuracy": 1.0,
+          "cases": 6,
+          "correct": 6,
+          "fn": 0,
+          "fp": 0
+        },
+        "strong_prediction": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        },
+        "weak_prediction": {
+          "accuracy": 1.0,
+          "cases": 8,
+          "correct": 8,
+          "fn": 0,
+          "fp": 0
+        }
+      },
+      "precision": 1.0,
+      "recall": 1.0,
+      "true_negatives": 36,
+      "true_positives": 44
+    },
+    "relation": {
+      "cases": 45,
+      "expected_relations": 45,
+      "miss_cases": [],
+      "precision": 1.0,
+      "predicted_relations": 45,
+      "recall": 1.0,
+      "recalled": 45
+    },
+    "trace": {
+      "claim_evidence_rate": 1.0,
+      "claims": 83,
+      "claims_with_capability_verdicts": 83,
+      "claims_with_evidence": 83,
+      "claims_with_signals": 60
+    },
+    "verdict": {
+      "accuracy": 1.0,
+      "cases": 60,
+      "correct": 60,
+      "error_cases": [],
+      "per_group": {
+        "advice_boundary": {
+          "accuracy": 1.0,
+          "cases": 30,
+          "confusions": {},
+          "correct": 30
+        },
+        "modal_prediction": {
+          "accuracy": 1.0,
+          "cases": 30,
+          "confusions": {},
+          "correct": 30
+        }
+      }
+    }
+  },
+  "note": "Predictions were produced from id and text only. This benchmark is synthetic and was written by the same author as the capability it measures; it is not an independence claim."
+}

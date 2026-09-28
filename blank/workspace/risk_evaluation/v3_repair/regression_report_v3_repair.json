@@ -15,7 +15,7 @@
   },
   "broken_count": 0,
   "cases": 200,
-  "fixed_count": 15,
+  "fixed_count": 17,
   "note": "before/after are reported twice on purpose: against semantic_evaluator_v2, which is what the earlier phases meant by before, and against the pre-Phase-8.7 pipeline, which is the only comparison that can show a repair breaking a case v3 already had right.",
   "pre_repair_correct": 168,
   "records": [
@@ -3270,20 +3270,18 @@
       ],
       "baseline_correct": false,
       "case_id": "IV-072",
-      "correct": false,
+      "correct": true,
       "expected": [],
-      "outcome": "fp",
+      "outcome": "tn",
       "pre_repair": [
         "investment_advice"
       ],
       "pre_repair_correct": false,
       "set": "phase_8.6_independent_v2",
       "text": "Custodians hold assets on behalf of the fund.",
-      "transition": "still_wrong",
-      "transition_vs_baseline": "still_wrong",
-      "v3": [
-        "investment_advice"
-      ]
+      "transition": "fixed",
+      "transition_vs_baseline": "fixed",
+      "v3": []
     },
     {
       "baseline": [],
@@ -3537,20 +3535,18 @@
       "baseline": [],
       "baseline_correct": true,
       "case_id": "IV-089",
-      "correct": false,
+      "correct": true,
       "expected": [],
-      "outcome": "fp",
+      "outcome": "tn",
       "pre_repair": [
         "investment_advice"
       ],
       "pre_repair_correct": false,
       "set": "phase_8.6_independent_v2",
       "text": "Assuming rates hold, income is likely to be stable.",
-      "transition": "still_wrong",
-      "transition_vs_baseline": "broken",
-      "v3": [
-        "investment_advice"
-      ]
+      "transition": "fixed",
+      "transition_vs_baseline": "unchanged",
+      "v3": []
     },
     {
       "baseline": [],
@@ -3819,13 +3815,11 @@
       "baseline_correct": 78,
       "broken": [],
       "broken_count": 0,
-      "broken_vs_baseline": [
-        "IV-089"
-      ],
+      "broken_vs_baseline": [],
       "cases": 99,
-      "delta": 12,
+      "delta": 14,
       "false_negatives": 1,
-      "false_positives": 2,
+      "false_positives": 0,
       "fixed": [
         "IV-014",
         "IV-032",
@@ -3836,21 +3830,21 @@
         "IV-055",
         "IV-062",
         "IV-071",
+        "IV-072",
         "IV-075",
         "IV-088",
+        "IV-089",
         "IV-096"
       ],
-      "fixed_count": 12,
+      "fixed_count": 14,
       "pre_repair_correct": 84,
       "set_name": "phase_8.6_independent_v2",
       "still_wrong": [
-        "IV-072",
-        "IV-089",
         "IV-094"
       ],
-      "v3_correct": 96
+      "v3_correct": 98
     }
   ],
-  "still_wrong_count": 17,
-  "v3_correct": 183
+  "still_wrong_count": 15,
+  "v3_correct": 185
 }

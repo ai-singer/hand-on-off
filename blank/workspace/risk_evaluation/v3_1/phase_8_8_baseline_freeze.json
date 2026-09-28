@@ -1,0 +1,43 @@
+{
+  "baseline_schema_version": "1.0.0",
+  "phase": "8.8",
+  "kind": "pre-change baseline",
+  "taken_on": "git HEAD 8b627c8 (fix: repair the three risk evaluation defects Phase 8.6 confirmed), clean working tree",
+  "harness": "risk_evaluation.v3_validation.freeze.build_freeze + risk_evaluation.v3_repair.freeze",
+  "why": "Phase 8.8 adds capability to the pattern set and the pipeline. This records the five components as they stood before the first change, so the report can name which of them the capability expansion moved and which it did not. Phase 8.7's own freeze records the same values, independently, so the two agree.",
+  "pipeline": "risk-evaluation-v3",
+  "pipeline_version": "3.0.0-experimental",
+  "evaluator_hash": "6768eb66f7e28d2c885e93fa33c60f9a7c9396e02c6180ffc609f1a7149ba87a",
+  "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+  "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+  "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+  "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+  "benchmark": "independent_v1/v1",
+  "case_count": 100,
+  "phase_8_7_repair_hashes": {
+    "attribution": "5e7322a3a619f9eabe112a7d81d42a5b7b3b46233e6b09ab82ab9bcc7f1c07bb",
+    "morphology": "746d5ceef9a953fd579d544e62b3090fec50f54a7c693fa27e723091b46938e8",
+    "negation": "59229d90ab0b591f740efce7ab60a8d35fd91610c280b89736582cd2bc7adbec",
+    "rejection": "b47fed6f23824b577886749f369288d2acb8ecde2336afbfa49cd44bcdd54809",
+    "sources": "e25cf7c0b007d3b67ff51252da19741df496eb70caa371af74e573cf8219b60f"
+  },
+  "phase_8_7_repair_table_hash": "69b29e498a73a39d02de5cc96e187c47120593314e5d2b642916ba1e814b80b1",
+  "phase_8_7_regression": {
+    "sets": 5,
+    "cases": 200,
+    "pre_repair_correct": 168,
+    "v3_correct": 183,
+    "broken": 0,
+    "per_set": {
+      "phase_8.1": {"cases": 15, "pre_repair_correct": 6, "v3_correct": 6, "broken": 0},
+      "phase_8.3": {"cases": 9, "pre_repair_correct": 8, "v3_correct": 8, "broken": 0},
+      "phase_8.4": {"cases": 17, "pre_repair_correct": 16, "v3_correct": 16, "broken": 0},
+      "phase_8.5": {"cases": 60, "pre_repair_correct": 54, "v3_correct": 57, "broken": 0},
+      "phase_8.6_independent_v2": {"cases": 99, "pre_repair_correct": 84, "v3_correct": 96, "broken": 0}
+    },
+    "reproducible": true,
+    "note": "Re-run immediately before the first Phase 8.8 change and reproduced exactly: 200 cases, 168 -> 183 correct, broken 0. The Phase 8.7 repair freeze also verifies MATCH at this commit."
+  },
+  "tests_at_baseline": 1935,
+  "timestamp": "2026-09-28T02:40:00Z"
+}

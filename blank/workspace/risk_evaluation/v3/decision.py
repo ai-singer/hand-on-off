@@ -472,6 +472,14 @@ def decide(
     #: Relations this claim produced a frame for, asserted or not. A frame that
     #: fired and was declined is evidence; a frame that never fired is not.
     relations_seen = {item.relation for item in claim.intents}
+    #: Categories a Phase 8.8 capability layer examined and declined, with the
+    #: boundary verdict that made it decline. This is the same principle as
+    #: `declined` one level up: a layer that looked at the structure and concluded
+    #: the relation is not there has more information than a keyword evaluator, and
+    #: the fallback does not get to overrule it. The evidence and the rule are
+    #: unchanged; what is new is that a *boundary* verdict can supply the evidence,
+    #: not only a suppressed intent.
+    boundary_declined = set(claim.boundary_declined)
     for category in claim.fallback_categories:
         if any(item.category == category and item.kept for item in kept):
             continue
@@ -482,6 +490,19 @@ def decide(
                 f"fallback:declined-by-intent:{category}",
                 keep=False,
                 reason="the intent layer found this relation and the policy declined it",
+            )
+            continue
+        if category in boundary_declined:
+            emit(
+                R_FALLBACK,
+                category,
+                f"fallback:declined-by-boundary:{category}",
+                keep=False,
+                reason=(
+                    "a capability layer examined the structure for this category "
+                    "and declined it, so the fallback matched a keyword rather "
+                    "than a finding"
+                ),
             )
             continue
         # The other half of the same guard: a category a relation defines, offered

@@ -32,6 +32,7 @@ from dataclasses import dataclass, field
 from typing import Any, Mapping, Sequence
 
 from ..attribution.model import SPEAKERS, STANCES
+from ..taxonomy_v2 import CERTAINTY_LEVELS
 
 
 V3_VERSION = "3.0.0-experimental"
@@ -128,6 +129,20 @@ class IntentEvidence:
     #: is denied. Both are `negated`; only the second is a denial *of a claim*.
     #: The Phase 8.4 verdict is unchanged; this refines it.
     negation_scope: str = "positive"
+    #: The named signals a Phase 8.8 capability layer required before it reported
+    #: this relation. A frame either matched or did not; a signal layer has to say
+    #: which conditions it found, because "no prediction" and "a prediction at
+    #: `possible`" are different findings and a bare frame match cannot tell them
+    #: apart. Empty for the Phase 8.4 frames, which decide by matching.
+    signals: tuple[str, ...] = ()
+    #: How strongly the claim is put, in the taxonomy's own vocabulary. Empty
+    #: means the relation does not carry a certainty - a guarantee is not more or
+    #: less certain, it either removes risk or does not.
+    certainty: str = ""
+    #: The boundary verdict a capability layer reached, when it reached one.
+    #: Recorded whether or not a relation was reported, so a trace can show that
+    #: the layer looked and declined rather than never looked.
+    boundary: str = ""
 
     def __post_init__(self) -> None:
         if self.relation not in RELATIONS:
@@ -138,6 +153,12 @@ class IntentEvidence:
             raise ModelError("intent evidence must name the pattern that fired")
         if self.negation_scope not in NEGATION_SCOPES:
             raise ModelError(f"unknown negation scope {self.negation_scope!r}")
+        if self.certainty and self.certainty not in CERTAINTY_LEVELS:
+            raise ModelError(
+                f"certainty must be one of {CERTAINTY_LEVELS} or empty, "
+                f"got {self.certainty!r}"
+            )
+        object.__setattr__(self, "signals", tuple(str(item) for item in self.signals))
 
     @property
     def asserted(self) -> bool:
@@ -166,6 +187,19 @@ class IntentEvidence:
 
         return f"negation:{self.negation_scope}"
 
+    @property
+    def signal_list(self) -> tuple[str, ...]:
+        """The signals, with the certainty appended when there is one.
+
+        The phase's trace example is `[future_marker, market_entity,
+        uncertain_prediction_modal]`. The strength is part of what was found, so
+        it is reported beside the signals rather than folded into one of them.
+        """
+
+        if not self.certainty or "certainty:" in " ".join(self.signals):
+            return self.signals
+        return (*self.signals, f"certainty:{self.certainty}")
+
     def as_dict(self) -> dict[str, Any]:
         return {
             "relation": self.relation,
@@ -178,11 +212,17 @@ class IntentEvidence:
             "negation_scope": self.negation_scope,
             "hedge": self.hedge,
             "asserted": self.asserted,
+            "signals": list(self.signal_list),
         }
 
     def render(self) -> str:
         state = "" if self.asserted else f" ({'negated' if self.negated else 'hedged'})"
-        return f"{self.relation}({self.entity}) [{self.frame}] {self.predicate}{state}"
+        signals = f" {list(self.signal_list)}" if self.signals else ""
+        boundary = f" boundary={self.boundary}" if self.boundary else ""
+        return (
+            f"{self.relation}({self.entity}) [{self.frame}] "
+            f"{self.predicate}{state}{boundary}{signals}"
+        )
 
 
 @dataclass(frozen=True, slots=True)
@@ -207,6 +247,14 @@ class RiskClaim:
     #: did, and a trace that merged them could not say which layer was talking.
     sourcing_categories: tuple[str, ...] = ()
     attribution_refinement: Mapping[str, Any] = field(default_factory=dict)
+    #: Categories a Phase 8.8 capability layer examined and declined, with the
+    #: boundary verdict that made it decline. Kept separate from
+    #: `fallback_categories` for the same reason `sourcing_categories` is: a
+    #: different layer found it, and a trace that merged them could not say which.
+    #: The decision policy treats a declined boundary as evidence against the
+    #: fallback, exactly as it treats a suppressed intent.
+    boundary_declined: tuple[str, ...] = ()
+    capabilities: tuple[dict[str, Any], ...] = ()
 
     def __post_init__(self) -> None:
         if not self.claim_id.strip():
@@ -242,6 +290,12 @@ class RiskClaim:
         )
         object.__setattr__(
             self, "attribution_refinement", dict(self.attribution_refinement)
+        )
+        object.__setattr__(
+            self, "boundary_declined", tuple(str(item) for item in self.boundary_declined)
+        )
+        object.__setattr__(
+            self, "capabilities", tuple(dict(item) for item in self.capabilities)
         )
 
     @property
@@ -299,6 +353,8 @@ class RiskClaim:
             "fallback_evidence": list(self.fallback_evidence),
             "sourcing_categories": list(self.sourcing_categories),
             "attribution_refinement": dict(self.attribution_refinement),
+            "boundary_declined": list(self.boundary_declined),
+            "capabilities": [dict(item) for item in self.capabilities],
             "intent_available": self.intent_available,
         }
 

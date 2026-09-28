@@ -1,0 +1,4618 @@
+{
+  "benchmark": "capability_v3_1/v1",
+  "broken_count": 0,
+  "capability": {
+    "broken": [],
+    "broken_count": 0,
+    "cases": 80,
+    "delta": 38,
+    "fixed": [
+      "MP-A1-01",
+      "MP-A1-02",
+      "MP-A1-03",
+      "MP-A1-04",
+      "MP-A1-05",
+      "MP-A1-06",
+      "MP-A3-01",
+      "MP-A3-08",
+      "MP-A4-05",
+      "AB-B1-03",
+      "AB-B1-04",
+      "AB-B2-02",
+      "AB-B2-03",
+      "AB-B2-04",
+      "AB-B2-07",
+      "AB-B3-01",
+      "AB-B3-02",
+      "AB-B3-03",
+      "AB-B3-04",
+      "AB-B3-05",
+      "AB-B3-06",
+      "AB-B3-07",
+      "AB-B4-06",
+      "ADV-F001",
+      "ADV-F002",
+      "ADV-F003",
+      "ADV-F014",
+      "83-ATT-03",
+      "84-PG-03",
+      "84-PG-05",
+      "84-PG-07",
+      "IV-001",
+      "IV-033",
+      "IV-072",
+      "TQ-04",
+      "TQ-06",
+      "TQ-07",
+      "IV-014"
+    ],
+    "fixed_count": 38,
+    "pre_repair_correct": 41,
+    "set_name": "phase_8.8_capability",
+    "still_right": [
+      "MP-A1-07",
+      "MP-A1-08",
+      "MP-A2-01",
+      "MP-A2-02",
+      "MP-A2-03",
+      "MP-A2-04",
+      "MP-A2-05",
+      "MP-A2-06",
+      "MP-A2-07",
+      "MP-A2-08",
+      "MP-A3-02",
+      "MP-A3-03",
+      "MP-A3-04",
+      "MP-A3-05",
+      "MP-A3-06",
+      "MP-A3-07",
+      "MP-A4-01",
+      "MP-A4-02",
+      "MP-A4-03",
+      "MP-A4-04",
+      "MP-A4-06",
+      "AB-B1-01",
+      "AB-B1-02",
+      "AB-B1-05",
+      "AB-B1-06",
+      "AB-B1-07",
+      "AB-B1-08",
+      "AB-B2-01",
+      "AB-B2-05",
+      "AB-B2-06",
+      "AB-B2-08",
+      "AB-B3-08",
+      "AB-B4-01",
+      "AB-B4-02",
+      "AB-B4-03",
+      "AB-B4-04",
+      "AB-B4-05",
+      "83-CTL-02",
+      "83-CTL-04",
+      "84-PG-01",
+      "IV-005"
+    ],
+    "still_wrong": [
+      "83-ATT-01"
+    ],
+    "unchanged": [
+      "MP-A1-07",
+      "MP-A1-08",
+      "MP-A2-01",
+      "MP-A2-02",
+      "MP-A2-03",
+      "MP-A2-04",
+      "MP-A2-05",
+      "MP-A2-06",
+      "MP-A2-07",
+      "MP-A2-08",
+      "MP-A3-02",
+      "MP-A3-03",
+      "MP-A3-04",
+      "MP-A3-05",
+      "MP-A3-06",
+      "MP-A3-07",
+      "MP-A4-01",
+      "MP-A4-02",
+      "MP-A4-03",
+      "MP-A4-04",
+      "MP-A4-06",
+      "AB-B1-01",
+      "AB-B1-02",
+      "AB-B1-05",
+      "AB-B1-06",
+      "AB-B1-07",
+      "AB-B1-08",
+      "AB-B2-01",
+      "AB-B2-05",
+      "AB-B2-06",
+      "AB-B2-08",
+      "AB-B3-08",
+      "AB-B4-01",
+      "AB-B4-02",
+      "AB-B4-03",
+      "AB-B4-04",
+      "AB-B4-05",
+      "83-CTL-02",
+      "83-CTL-04",
+      "84-PG-01",
+      "IV-005",
+      "83-ATT-01"
+    ],
+    "v3_correct": 79
+  },
+  "dataset_hash": "aee706cfd6647171513f6604e7f2a90d25db2d7731cbccae32d84ffa095125f1",
+  "fixed_count": 55,
+  "floor_violations": {},
+  "floors": {
+    "phase_8.1": 6,
+    "phase_8.3": 8,
+    "phase_8.4": 16,
+    "phase_8.5": 57,
+    "phase_8.6_independent_v2": 96
+  },
+  "note": "The phase stops publication when a case breaks. `broken` is measured against the pre-Phase-8.7 pipeline, so a case Phase 8.7 fixed and Phase 8.8 damaged is caught here rather than hidden behind an unchanged total.",
+  "phase_8_7": {
+    "baseline_correct": 130,
+    "baseline_provenance": {
+      "harness": ".git/p87_snapshot_cases.py, the same harness regression.py runs",
+      "kind": "pre-repair measurement",
+      "sets": {
+        "phase_8.1": 15,
+        "phase_8.3": 9,
+        "phase_8.4": 17,
+        "phase_8.5": 60,
+        "phase_8.6_independent_v2": 99
+      },
+      "taken_on": "git HEAD a6d065d, unmodified working tree (clean git worktree)",
+      "why": "regression.py compares live results against this to report fixed and, more importantly, broken. Without it, fixed/broken could only be measured against semantic_evaluator_v2, which would credit Phase 8.7 for what Phase 8.5 and 8.6 already did and could not see a repair breaking a case v3 already had right."
+    },
+    "broken_count": 0,
+    "cases": 200,
+    "fixed_count": 17,
+    "note": "before/after are reported twice on purpose: against semantic_evaluator_v2, which is what the earlier phases meant by before, and against the pre-Phase-8.7 pipeline, which is the only comparison that can show a repair breaking a case v3 already had right.",
+    "pre_repair_correct": 168,
+    "records": [
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F001",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "This return is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F002",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "Acquire a position in this equity before the quarter closes.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F003",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "Reallocate your capital towards this venture.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F004",
+        "correct": false,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "This equity multiplies in value over the coming year.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F005",
+        "correct": false,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "The share price is destined for 500 by December.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F006",
+        "correct": false,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "Your capital is insulated from any decline.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F007",
+        "correct": false,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "This position carries no downside whatsoever.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F008",
+        "correct": false,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "Word around the trading desks is that the merger is close.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F009",
+        "correct": false,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "A little bird tells me the dividend is going.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F010",
+        "correct": false,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "Hesitate and the gains belong to somebody else.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F011",
+        "correct": false,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "The window is closing on this entry point.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": false,
+        "case_id": "ADV-F013",
+        "correct": false,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice",
+          "unverified_information"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.1",
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": [
+          "investment_advice",
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F014",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F015",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "ADV-F029",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.1",
+        "text": "The company reports its results in March. The quarter closed with revenue in line with guidance. Analysts' coverage of the sector has widened this year. This return is guaranteed. The board meets on the second Tuesday of the month. Operating costs were broadly flat over the period.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": false,
+        "case_id": "83-ATT-01",
+        "correct": false,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice",
+          "unverified_information"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.3",
+        "text": "Analysts say the sector is volatile this year. Buy this stock before the quarter ends.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": [
+          "investment_advice",
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "83-ATT-02",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "The company said costs were flat last quarter. The share price will certainly double next year.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "83-ATT-03",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "Economists forecast slower growth in Europe. This fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "83-ATT-04",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "The board said the timetable is unchanged. Sources say the company will be acquired.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "83-ATT-05",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "Regulators published the revised disclosure rules. Do not miss this opportunity.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "83-CTL-01",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "Analysts say this fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "83-CTL-02",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "The newsletter recommends buying this stock.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "83-CTL-03",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "Management expects the share price to double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "83-CTL-04",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.3",
+        "text": "The article quotes a promoter saying do not miss this opportunity.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "84-PG-01",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "This is a guaranteed return.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "84-PG-02",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "Guaranteed returns are available.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-03",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "This return is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-04",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "Returns are guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-05",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "Your capital is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-06",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "The profit is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "84-PG-07",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "The value of your investment is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-08",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "We guarantee this return.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-09",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "The fund guarantees your capital.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-10",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "We guarantee a profit.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-11",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "Your returns are guaranteed by the scheme.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-12",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "The capital is guaranteed by the issuer.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-13",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "The fund offers a guarantee of returns.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-14",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "This plan comes with a guarantee of income.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "84-PG-15",
+        "correct": false,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.4",
+        "text": "Returns are a guarantee on this product.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "84-PG-16",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "Your capital is risk-free.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "84-PG-17",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.4",
+        "text": "This fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-01",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "This fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "AE-02",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "This return is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "AE-03",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We guarantee this return.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "AE-04",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Your capital is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-05",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We believe this fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-06",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Your capital is risk-free.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-07",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The share price will certainly double next year.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-08",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Revenue will surely grow every quarter.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-09",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "You should buy this stock today.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-10",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Shift your savings into this fund.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-11",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Do not miss this opportunity.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-12",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Everyone is buying and there is no time left.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-13",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Sources say the company will be acquired.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-14",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Insiders say the dividend is about to be cut.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "AE-15",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Rumour has it the merger is close.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "TQ-01",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Analysts say this fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "TQ-02",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The company said the fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "TQ-03",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "According to the report, the fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "TQ-04",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "A broker told clients the fund cannot lose money.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "TQ-05",
+        "correct": false,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "Economists forecast the stock will certainly double.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "TQ-06",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "Officials said the fund cannot lose money.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "TQ-07",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "Commentators said the market will certainly crash.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "TQ-08",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The newsletter recommends buying this stock.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "TQ-09",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Management expects the share price to double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "TQ-10",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The board said returns are guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "TQ-11",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Analysts say you should buy this stock.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": false,
+        "case_id": "TQ-12",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The report states the stock will certainly double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "TQ-13",
+        "correct": false,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "Experts predict the fund cannot lose money.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "TQ-14",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The regulator said capital is guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "TQ-15",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Sources say the fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-01",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We disagree with the view that this fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-02",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We disagree with the claim that the stock will certainly double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-03",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We doubt the fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "AR-04",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Analysts say the fund cannot lose money. However, we disagree.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AR-05",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Experts expect the stock to rise. We are not convinced.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AR-06",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The marketing claims the fund cannot lose money. We do not endorse that.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-07",
+        "correct": false,
+        "expected": [],
+        "outcome": "fp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.5",
+        "text": "This article rejects the idea that the fund cannot lose money.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-08",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The claim that the stock will certainly double is incorrect.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AR-09",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "We are not convinced the fund cannot lose money.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": false,
+        "case_id": "AR-10",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Do not miss this opportunity is what the advert says; we disagree.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-01",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "A price-to-earnings ratio compares price with earnings per share.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-02",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Diversification spreads risk across assets.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-03",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Compounding means returns are earned on earlier returns.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-04",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Interest rate changes affect bond prices inversely.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-05",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The company reports its results in March.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-06",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The prospectus explains how charges are calculated.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-07",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The board meets on the second Tuesday of the month.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-08",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The audit covers the twelve months to December.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-09",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "A benchmark is a standard against which performance is measured.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "NE-10",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Operating costs were broadly flat over the period.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-01",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Returns are not guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-02",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "If markets rise, returns are guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-03",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Returns may be guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-04",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Returns could be guaranteed if the scheme performs.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "AM-05",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "A guaranteed return is not available.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-06",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Past performance does not guarantee future results.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-07",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The fund does not guarantee your capital.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-08",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Whether returns are guaranteed depends on the scheme.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-09",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "Returns are guaranteed, according to the marketing material.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "AM-10",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.5",
+        "text": "The index will probably be rebalanced in June.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-001",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Your money is guaranteed to be returned in full.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-002",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The scheme guarantees the return of your capital.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-003",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Capital protection is guaranteed under this plan.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-004",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A guarantee on your principal is provided.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-005",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "This product carries zero risk of loss.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-006",
+        "correct": true,
+        "expected": [
+          "financial_guarantee"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "You cannot lose your principal here.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "financial_guarantee"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-007",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Put your savings into this fund before the deadline.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-008",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Investors should allocate more to this fund.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-009",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Buy into this fund while units are still available.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-010",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The sensible choice is to hold these bonds for income.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-011",
+        "correct": true,
+        "expected": [
+          "investment_advice"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Consider moving your capital into the equity fund.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "investment_advice"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-012",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The unit price will definitely climb by December.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-013",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Yields are certain to rise over the coming months.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-014",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Turnover expands sharply next quarter.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-015",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The index is going to rally from here.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-016",
+        "correct": true,
+        "expected": [
+          "market_prediction"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Earnings will surely multiply under the new plan.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "market_prediction"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-017",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Word on the street is that the board will resign.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-018",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "An unnamed official confirmed the restatement.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-019",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A source claims the audit was qualified.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-020",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Reportedly the fund has suspended redemptions.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-021",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "I heard the custodian is being replaced.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-022",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Hurry, this window closes tonight.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-023",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Nobody wants to be the one who missed this.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-024",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Act fast or watch others take the gains.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "emotional_manipulation"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-025",
+        "correct": true,
+        "expected": [
+          "emotional_manipulation"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "emotional_manipulation"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "This is a last chance to get in.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "emotional_manipulation"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-026",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Analysts say the fund is about to gate redemptions.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-027",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Insiders say the dividend will be suspended.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-028",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Sources claim the merger talks have stalled.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-029",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Rumour has it the chief executive is leaving.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-030",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Reportedly the fund has changed its mandate.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-031",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Word on the street is that the audit is late.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-032",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "A person familiar with the matter says the deal is off.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-033",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Traders say the shares are cheap.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "unverified_information"
+        ],
+        "baseline_correct": true,
+        "case_id": "IV-034",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [
+          "unverified_information"
+        ],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "An anonymous official confirmed the probe.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-035",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Market chatter suggests the float will be cut.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-036",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The company said the timetable is unchanged.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-038",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The report states that revenue fell.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-039",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Management expects margins to hold.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-040",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The board said the dividend is unchanged.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-041",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The regulator said the review is ongoing.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-042",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The newsletter recommends holding the fund.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-043",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The custodian confirmed the transfer.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-044",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The trustee published the annual statement.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-045",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The exchange said trading was orderly.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-046",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "financial_guarantee"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "We reject the suggestion that returns are guaranteed.",
+        "transition": "fixed",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-047",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "We are unconvinced that capital is protected here.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-048",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The idea that the fund cannot fall is not supported.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-049",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "We dispute the claim that yields will double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-050",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Contrary to the marketing, the return is not guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-051",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "We see no basis for the view that the price will triple.",
+        "transition": "fixed",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-052",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The assertion that losses are impossible is false.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-053",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "We disagree that this is a suitable holding for retirees.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-054",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Claims that the fund is risk-free are overstated.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-055",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "market_prediction"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "We do not accept that the index will recover.",
+        "transition": "fixed",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-056",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The fund cannot lose money, or so the advert claims; we disagree.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-057",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "We doubt the projection that earnings will multiply.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-058",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "That the shares are cheap is not something we accept.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-059",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "We would not describe this as a safe bet.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-060",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "There is no evidence for the claim that capital is protected.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-061",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A bond's duration measures its sensitivity to interest rates.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-062",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "The expense ratio is the annual cost of holding a fund.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-063",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Real returns adjust nominal returns for inflation.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-064",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A limit order sets a maximum or minimum execution price.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-065",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Rebalancing restores a portfolio to its target weights.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-066",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The yield curve plots yields against maturity.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-067",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Credit risk is the chance an issuer fails to pay.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-068",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A tracking error measures deviation from a benchmark.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-069",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The settlement cycle determines when cash changes hands.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-070",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Dollar-cost averaging buys fixed amounts at regular intervals.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-071",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "The prospectus sets out the fund's investment objective.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-072",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Custodians hold assets on behalf of the fund.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-073",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "An index committee reviews the constituents quarterly.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-074",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The audit committee meets four times a year.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-075",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Stamp duty applies to certain share purchases.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-076",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Withholding tax is deducted at source in some jurisdictions.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-077",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "A closed-end fund trades at a premium or a discount.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-078",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The fund's year end is the thirty-first of December.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-079",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Units are priced once a day at the valuation point.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-080",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The manager's report is published with the annual accounts.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-081",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Returns are not guaranteed under any circumstances.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-082",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Capital protection is not offered on this share class.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-083",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The fund does not guarantee income.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-084",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Past performance is no guide to future returns.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-085",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The scheme will not guarantee your principal.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-086",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "No guarantee is given regarding distributions.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-087",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "If inflation subsides, yields may rise.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "investment_advice"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-088",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Should the index fall, the fund would underperform.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-089",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [
+          "investment_advice"
+        ],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Assuming rates hold, income is likely to be stable.",
+        "transition": "fixed",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-090",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The return is guaranteed only if the plan is held for five years.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-091",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Were the issuer to default, capital would be at risk.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-092",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Depending on the outcome, the payout could double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-093",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The marketing material states that returns are guaranteed.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "financial_guarantee"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-094",
+        "correct": false,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "fn",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "A promoter claimed the fund cannot lose money.",
+        "transition": "still_wrong",
+        "transition_vs_baseline": "still_wrong",
+        "v3": []
+      },
+      {
+        "baseline": [
+          "market_prediction"
+        ],
+        "baseline_correct": false,
+        "case_id": "IV-095",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The advert says the price will certainly double.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "fixed",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": false,
+        "case_id": "IV-096",
+        "correct": true,
+        "expected": [
+          "unverified_information"
+        ],
+        "outcome": "tp",
+        "pre_repair": [],
+        "pre_repair_correct": false,
+        "set": "phase_8.6_independent_v2",
+        "text": "Some commentators argue the shares are cheap.",
+        "transition": "fixed",
+        "transition_vs_baseline": "fixed",
+        "v3": [
+          "unverified_information"
+        ]
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-097",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The index might recover later in the year.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-098",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "Perhaps the fund will outperform its benchmark.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-099",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "There is a possibility that yields fall.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      },
+      {
+        "baseline": [],
+        "baseline_correct": true,
+        "case_id": "IV-100",
+        "correct": true,
+        "expected": [],
+        "outcome": "tn",
+        "pre_repair": [],
+        "pre_repair_correct": true,
+        "set": "phase_8.6_independent_v2",
+        "text": "The shares could be cheap at this level.",
+        "transition": "unchanged",
+        "transition_vs_baseline": "unchanged",
+        "v3": []
+      }
+    ],
+    "sets": [
+      {
+        "baseline_correct": 0,
+        "broken": [],
+        "broken_count": 0,
+        "broken_vs_baseline": [],
+        "cases": 15,
+        "delta": 0,
+        "false_negatives": 8,
+        "false_positives": 0,
+        "fixed": [],
+        "fixed_count": 0,
+        "pre_repair_correct": 6,
+        "set_name": "phase_8.1",
+        "still_wrong": [
+          "ADV-F004",
+          "ADV-F005",
+          "ADV-F006",
+          "ADV-F007",
+          "ADV-F008",
+          "ADV-F009",
+          "ADV-F010",
+          "ADV-F011",
+          "ADV-F013"
+        ],
+        "v3_correct": 6
+      },
+      {
+        "baseline_correct": 6,
+        "broken": [],
+        "broken_count": 0,
+        "broken_vs_baseline": [],
+        "cases": 9,
+        "delta": 0,
+        "false_negatives": 0,
+        "false_positives": 0,
+        "fixed": [],
+        "fixed_count": 0,
+        "pre_repair_correct": 8,
+        "set_name": "phase_8.3",
+        "still_wrong": [
+          "83-ATT-01"
+        ],
+        "v3_correct": 8
+      },
+      {
+        "baseline_correct": 4,
+        "broken": [],
+        "broken_count": 0,
+        "broken_vs_baseline": [],
+        "cases": 17,
+        "delta": 0,
+        "false_negatives": 1,
+        "false_positives": 0,
+        "fixed": [],
+        "fixed_count": 0,
+        "pre_repair_correct": 16,
+        "set_name": "phase_8.4",
+        "still_wrong": [
+          "84-PG-15"
+        ],
+        "v3_correct": 16
+      },
+      {
+        "baseline_correct": 42,
+        "broken": [],
+        "broken_count": 0,
+        "broken_vs_baseline": [],
+        "cases": 60,
+        "delta": 3,
+        "false_negatives": 2,
+        "false_positives": 1,
+        "fixed": [
+          "TQ-04",
+          "TQ-06",
+          "TQ-07"
+        ],
+        "fixed_count": 3,
+        "pre_repair_correct": 54,
+        "set_name": "phase_8.5",
+        "still_wrong": [
+          "TQ-05",
+          "TQ-13",
+          "AR-07"
+        ],
+        "v3_correct": 57
+      },
+      {
+        "baseline_correct": 78,
+        "broken": [],
+        "broken_count": 0,
+        "broken_vs_baseline": [],
+        "cases": 99,
+        "delta": 14,
+        "false_negatives": 1,
+        "false_positives": 0,
+        "fixed": [
+          "IV-014",
+          "IV-032",
+          "IV-033",
+          "IV-035",
+          "IV-046",
+          "IV-051",
+          "IV-055",
+          "IV-062",
+          "IV-071",
+          "IV-072",
+          "IV-075",
+          "IV-088",
+          "IV-089",
+          "IV-096"
+        ],
+        "fixed_count": 14,
+        "pre_repair_correct": 84,
+        "set_name": "phase_8.6_independent_v2",
+        "still_wrong": [
+          "IV-094"
+        ],
+        "v3_correct": 98
+      }
+    ],
+    "still_wrong_count": 15,
+    "v3_correct": 185
+  },
+  "sets": [
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 15,
+      "delta": 0,
+      "fixed": [],
+      "fixed_count": 0,
+      "pre_repair_correct": 6,
+      "set_name": "phase_8.1",
+      "still_right": [
+        "ADV-F001",
+        "ADV-F002",
+        "ADV-F003",
+        "ADV-F014",
+        "ADV-F015",
+        "ADV-F029"
+      ],
+      "still_wrong": [
+        "ADV-F004",
+        "ADV-F005",
+        "ADV-F006",
+        "ADV-F007",
+        "ADV-F008",
+        "ADV-F009",
+        "ADV-F010",
+        "ADV-F011",
+        "ADV-F013"
+      ],
+      "unchanged": [
+        "ADV-F001",
+        "ADV-F002",
+        "ADV-F003",
+        "ADV-F014",
+        "ADV-F015",
+        "ADV-F029",
+        "ADV-F004",
+        "ADV-F005",
+        "ADV-F006",
+        "ADV-F007",
+        "ADV-F008",
+        "ADV-F009",
+        "ADV-F010",
+        "ADV-F011",
+        "ADV-F013"
+      ],
+      "v3_correct": 6
+    },
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 9,
+      "delta": 0,
+      "fixed": [],
+      "fixed_count": 0,
+      "pre_repair_correct": 8,
+      "set_name": "phase_8.3",
+      "still_right": [
+        "83-ATT-02",
+        "83-ATT-03",
+        "83-ATT-04",
+        "83-ATT-05",
+        "83-CTL-01",
+        "83-CTL-02",
+        "83-CTL-03",
+        "83-CTL-04"
+      ],
+      "still_wrong": [
+        "83-ATT-01"
+      ],
+      "unchanged": [
+        "83-ATT-02",
+        "83-ATT-03",
+        "83-ATT-04",
+        "83-ATT-05",
+        "83-CTL-01",
+        "83-CTL-02",
+        "83-CTL-03",
+        "83-CTL-04",
+        "83-ATT-01"
+      ],
+      "v3_correct": 8
+    },
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 17,
+      "delta": 0,
+      "fixed": [],
+      "fixed_count": 0,
+      "pre_repair_correct": 16,
+      "set_name": "phase_8.4",
+      "still_right": [
+        "84-PG-01",
+        "84-PG-02",
+        "84-PG-03",
+        "84-PG-04",
+        "84-PG-05",
+        "84-PG-06",
+        "84-PG-07",
+        "84-PG-08",
+        "84-PG-09",
+        "84-PG-10",
+        "84-PG-11",
+        "84-PG-12",
+        "84-PG-13",
+        "84-PG-14",
+        "84-PG-16",
+        "84-PG-17"
+      ],
+      "still_wrong": [
+        "84-PG-15"
+      ],
+      "unchanged": [
+        "84-PG-01",
+        "84-PG-02",
+        "84-PG-03",
+        "84-PG-04",
+        "84-PG-05",
+        "84-PG-06",
+        "84-PG-07",
+        "84-PG-08",
+        "84-PG-09",
+        "84-PG-10",
+        "84-PG-11",
+        "84-PG-12",
+        "84-PG-13",
+        "84-PG-14",
+        "84-PG-16",
+        "84-PG-17",
+        "84-PG-15"
+      ],
+      "v3_correct": 16
+    },
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 60,
+      "delta": 3,
+      "fixed": [
+        "TQ-04",
+        "TQ-06",
+        "TQ-07"
+      ],
+      "fixed_count": 3,
+      "pre_repair_correct": 54,
+      "set_name": "phase_8.5",
+      "still_right": [
+        "AE-01",
+        "AE-02",
+        "AE-03",
+        "AE-04",
+        "AE-05",
+        "AE-06",
+        "AE-07",
+        "AE-08",
+        "AE-09",
+        "AE-10",
+        "AE-11",
+        "AE-12",
+        "AE-13",
+        "AE-14",
+        "AE-15",
+        "TQ-01",
+        "TQ-02",
+        "TQ-03",
+        "TQ-08",
+        "TQ-09",
+        "TQ-10",
+        "TQ-11",
+        "TQ-12",
+        "TQ-14",
+        "TQ-15",
+        "AR-01",
+        "AR-02",
+        "AR-03",
+        "AR-04",
+        "AR-05",
+        "AR-06",
+        "AR-08",
+        "AR-09",
+        "AR-10",
+        "NE-01",
+        "NE-02",
+        "NE-03",
+        "NE-04",
+        "NE-05",
+        "NE-06",
+        "NE-07",
+        "NE-08",
+        "NE-09",
+        "NE-10",
+        "AM-01",
+        "AM-02",
+        "AM-03",
+        "AM-04",
+        "AM-05",
+        "AM-06",
+        "AM-07",
+        "AM-08",
+        "AM-09",
+        "AM-10"
+      ],
+      "still_wrong": [
+        "TQ-05",
+        "TQ-13",
+        "AR-07"
+      ],
+      "unchanged": [
+        "AE-01",
+        "AE-02",
+        "AE-03",
+        "AE-04",
+        "AE-05",
+        "AE-06",
+        "AE-07",
+        "AE-08",
+        "AE-09",
+        "AE-10",
+        "AE-11",
+        "AE-12",
+        "AE-13",
+        "AE-14",
+        "AE-15",
+        "TQ-01",
+        "TQ-02",
+        "TQ-03",
+        "TQ-08",
+        "TQ-09",
+        "TQ-10",
+        "TQ-11",
+        "TQ-12",
+        "TQ-14",
+        "TQ-15",
+        "AR-01",
+        "AR-02",
+        "AR-03",
+        "AR-04",
+        "AR-05",
+        "AR-06",
+        "AR-08",
+        "AR-09",
+        "AR-10",
+        "NE-01",
+        "NE-02",
+        "NE-03",
+        "NE-04",
+        "NE-05",
+        "NE-06",
+        "NE-07",
+        "NE-08",
+        "NE-09",
+        "NE-10",
+        "AM-01",
+        "AM-02",
+        "AM-03",
+        "AM-04",
+        "AM-05",
+        "AM-06",
+        "AM-07",
+        "AM-08",
+        "AM-09",
+        "AM-10",
+        "TQ-05",
+        "TQ-13",
+        "AR-07"
+      ],
+      "v3_correct": 57
+    },
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 99,
+      "delta": 14,
+      "fixed": [
+        "IV-014",
+        "IV-032",
+        "IV-033",
+        "IV-035",
+        "IV-046",
+        "IV-051",
+        "IV-055",
+        "IV-062",
+        "IV-071",
+        "IV-072",
+        "IV-075",
+        "IV-088",
+        "IV-089",
+        "IV-096"
+      ],
+      "fixed_count": 14,
+      "pre_repair_correct": 84,
+      "set_name": "phase_8.6_independent_v2",
+      "still_right": [
+        "IV-001",
+        "IV-002",
+        "IV-003",
+        "IV-004",
+        "IV-005",
+        "IV-006",
+        "IV-007",
+        "IV-008",
+        "IV-009",
+        "IV-010",
+        "IV-011",
+        "IV-012",
+        "IV-013",
+        "IV-015",
+        "IV-016",
+        "IV-017",
+        "IV-018",
+        "IV-019",
+        "IV-020",
+        "IV-021",
+        "IV-022",
+        "IV-023",
+        "IV-024",
+        "IV-025",
+        "IV-026",
+        "IV-027",
+        "IV-028",
+        "IV-029",
+        "IV-030",
+        "IV-031",
+        "IV-034",
+        "IV-036",
+        "IV-038",
+        "IV-039",
+        "IV-040",
+        "IV-041",
+        "IV-042",
+        "IV-043",
+        "IV-044",
+        "IV-045",
+        "IV-047",
+        "IV-048",
+        "IV-049",
+        "IV-050",
+        "IV-052",
+        "IV-053",
+        "IV-054",
+        "IV-056",
+        "IV-057",
+        "IV-058",
+        "IV-059",
+        "IV-060",
+        "IV-061",
+        "IV-063",
+        "IV-064",
+        "IV-065",
+        "IV-066",
+        "IV-067",
+        "IV-068",
+        "IV-069",
+        "IV-070",
+        "IV-073",
+        "IV-074",
+        "IV-076",
+        "IV-077",
+        "IV-078",
+        "IV-079",
+        "IV-080",
+        "IV-081",
+        "IV-082",
+        "IV-083",
+        "IV-084",
+        "IV-085",
+        "IV-086",
+        "IV-087",
+        "IV-090",
+        "IV-091",
+        "IV-092",
+        "IV-093",
+        "IV-095",
+        "IV-097",
+        "IV-098",
+        "IV-099",
+        "IV-100"
+      ],
+      "still_wrong": [
+        "IV-094"
+      ],
+      "unchanged": [
+        "IV-001",
+        "IV-002",
+        "IV-003",
+        "IV-004",
+        "IV-005",
+        "IV-006",
+        "IV-007",
+        "IV-008",
+        "IV-009",
+        "IV-010",
+        "IV-011",
+        "IV-012",
+        "IV-013",
+        "IV-015",
+        "IV-016",
+        "IV-017",
+        "IV-018",
+        "IV-019",
+        "IV-020",
+        "IV-021",
+        "IV-022",
+        "IV-023",
+        "IV-024",
+        "IV-025",
+        "IV-026",
+        "IV-027",
+        "IV-028",
+        "IV-029",
+        "IV-030",
+        "IV-031",
+        "IV-034",
+        "IV-036",
+        "IV-038",
+        "IV-039",
+        "IV-040",
+        "IV-041",
+        "IV-042",
+        "IV-043",
+        "IV-044",
+        "IV-045",
+        "IV-047",
+        "IV-048",
+        "IV-049",
+        "IV-050",
+        "IV-052",
+        "IV-053",
+        "IV-054",
+        "IV-056",
+        "IV-057",
+        "IV-058",
+        "IV-059",
+        "IV-060",
+        "IV-061",
+        "IV-063",
+        "IV-064",
+        "IV-065",
+        "IV-066",
+        "IV-067",
+        "IV-068",
+        "IV-069",
+        "IV-070",
+        "IV-073",
+        "IV-074",
+        "IV-076",
+        "IV-077",
+        "IV-078",
+        "IV-079",
+        "IV-080",
+        "IV-081",
+        "IV-082",
+        "IV-083",
+        "IV-084",
+        "IV-085",
+        "IV-086",
+        "IV-087",
+        "IV-090",
+        "IV-091",
+        "IV-092",
+        "IV-093",
+        "IV-095",
+        "IV-097",
+        "IV-098",
+        "IV-099",
+        "IV-100",
+        "IV-094"
+      ],
+      "v3_correct": 98
+    },
+    {
+      "broken": [],
+      "broken_count": 0,
+      "cases": 80,
+      "delta": 38,
+      "fixed": [
+        "MP-A1-01",
+        "MP-A1-02",
+        "MP-A1-03",
+        "MP-A1-04",
+        "MP-A1-05",
+        "MP-A1-06",
+        "MP-A3-01",
+        "MP-A3-08",
+        "MP-A4-05",
+        "AB-B1-03",
+        "AB-B1-04",
+        "AB-B2-02",
+        "AB-B2-03",
+        "AB-B2-04",
+        "AB-B2-07",
+        "AB-B3-01",
+        "AB-B3-02",
+        "AB-B3-03",
+        "AB-B3-04",
+        "AB-B3-05",
+        "AB-B3-06",
+        "AB-B3-07",
+        "AB-B4-06",
+        "ADV-F001",
+        "ADV-F002",
+        "ADV-F003",
+        "ADV-F014",
+        "83-ATT-03",
+        "84-PG-03",
+        "84-PG-05",
+        "84-PG-07",
+        "IV-001",
+        "IV-033",
+        "IV-072",
+        "TQ-04",
+        "TQ-06",
+        "TQ-07",
+        "IV-014"
+      ],
+      "fixed_count": 38,
+      "pre_repair_correct": 41,
+      "set_name": "phase_8.8_capability",
+      "still_right": [
+        "MP-A1-07",
+        "MP-A1-08",
+        "MP-A2-01",
+        "MP-A2-02",
+        "MP-A2-03",
+        "MP-A2-04",
+        "MP-A2-05",
+        "MP-A2-06",
+        "MP-A2-07",
+        "MP-A2-08",
+        "MP-A3-02",
+        "MP-A3-03",
+        "MP-A3-04",
+        "MP-A3-05",
+        "MP-A3-06",
+        "MP-A3-07",
+        "MP-A4-01",
+        "MP-A4-02",
+        "MP-A4-03",
+        "MP-A4-04",
+        "MP-A4-06",
+        "AB-B1-01",
+        "AB-B1-02",
+        "AB-B1-05",
+        "AB-B1-06",
+        "AB-B1-07",
+        "AB-B1-08",
+        "AB-B2-01",
+        "AB-B2-05",
+        "AB-B2-06",
+        "AB-B2-08",
+        "AB-B3-08",
+        "AB-B4-01",
+        "AB-B4-02",
+        "AB-B4-03",
+        "AB-B4-04",
+        "AB-B4-05",
+        "83-CTL-02",
+        "83-CTL-04",
+        "84-PG-01",
+        "IV-005"
+      ],
+      "still_wrong": [
+        "83-ATT-01"
+      ],
+      "unchanged": [
+        "MP-A1-07",
+        "MP-A1-08",
+        "MP-A2-01",
+        "MP-A2-02",
+        "MP-A2-03",
+        "MP-A2-04",
+        "MP-A2-05",
+        "MP-A2-06",
+        "MP-A2-07",
+        "MP-A2-08",
+        "MP-A3-02",
+        "MP-A3-03",
+        "MP-A3-04",
+        "MP-A3-05",
+        "MP-A3-06",
+        "MP-A3-07",
+        "MP-A4-01",
+        "MP-A4-02",
+        "MP-A4-03",
+        "MP-A4-04",
+        "MP-A4-06",
+        "AB-B1-01",
+        "AB-B1-02",
+        "AB-B1-05",
+        "AB-B1-06",
+        "AB-B1-07",
+        "AB-B1-08",
+        "AB-B2-01",
+        "AB-B2-05",
+        "AB-B2-06",
+        "AB-B2-08",
+        "AB-B3-08",
+        "AB-B4-01",
+        "AB-B4-02",
+        "AB-B4-03",
+        "AB-B4-04",
+        "AB-B4-05",
+        "83-CTL-02",
+        "83-CTL-04",
+        "84-PG-01",
+        "IV-005",
+        "83-ATT-01"
+      ],
+      "v3_correct": 79
+    }
+  ],
+  "status": "PASS"
+}

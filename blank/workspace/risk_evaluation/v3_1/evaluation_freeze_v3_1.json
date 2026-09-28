@@ -1,0 +1,76 @@
+{
+  "baseline_hash": "bfeb733a6c5a42ae4725772ab533dc60eb1f7f9b4b7a674d72f747301428476f",
+  "baseline_verification": {
+    "baseline": {
+      "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+      "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+      "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+      "evaluator_hash": "6768eb66f7e28d2c885e93fa33c60f9a7c9396e02c6180ffc609f1a7149ba87a",
+      "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8"
+    },
+    "current": {
+      "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+      "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+      "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+      "evaluator_hash": "6768eb66f7e28d2c885e93fa33c60f9a7c9396e02c6180ffc609f1a7149ba87a",
+      "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8"
+    },
+    "matches": true,
+    "moved": []
+  },
+  "benchmark_hash": "1bf9c9bdc4a78ed0333af0d99f9707b909cae9fa21aeddd027120942fddc98ad",
+  "benchmark_provenance": {
+    "annotation": "single-annotator engineering validation only",
+    "author": "ai-singer (the repository's single annotator of record)",
+    "benchmark": "capability_v3_1/v1",
+    "generated_at": "2026-09-28",
+    "generated_by": "automated agent session, Phase 8.8",
+    "guide": "docs/RISK_ANNOTATION_GUIDE_v2.md",
+    "independent": false,
+    "independent_note": "Groups A and B were written by the same author as the capability they measure. Phase 8.6 exists because that arrangement flatters a pipeline: speaker accuracy fell from 96.8% to 74.0% and relation recall from 100% to 67.5% when the same architecture met unseen sentences. No number in this benchmark carries that protection. Group C is a regression set, not an independence claim.",
+    "label_sources": {
+      "A": "guide sections 1.2, 2, 5",
+      "B": "guide sections 3.1, 4, 7",
+      "C": "copied from the source artifacts; not re-annotated"
+    },
+    "protocol": "docs/INDEPENDENT_ANNOTATION_PROTOCOL_V2.md",
+    "source": "authored for this phase against docs/RISK_ANNOTATION_GUIDE_v2.md; group C is copied from five frozen artifacts rather than authored",
+    "synthetic": true
+  },
+  "capabilities": [
+    "modal_prediction",
+    "advice_boundary"
+  ],
+  "capability_benchmark": "capability_v3_1/v1",
+  "capability_benchmark_hash": "aee706cfd6647171513f6604e7f2a90d25db2d7731cbccae32d84ffa095125f1",
+  "capability_case_count": 80,
+  "capability_hashes": {
+    "advice": "7c22bdb63fabbb2f41f4dc6d7dc21a160e5d295a648f28aff52b62af5039db6a",
+    "certainty": "e836b31987058f5b7019f90620f7e5b653d5ef08a5413cb421cb4cde12313fc7",
+    "detectors": "15bc4c95fda5ea5c88f7a7bbe0eab235591f7b3753352d58a8d57ae0515068c7",
+    "modal": "054694020beb58ae6c3faa237b1f1ee280593de81026855f43d6fa92420b0ad4",
+    "signals": "9414436a5dde29224a89557fbe0b913ffa63009f9ead370f8911b4b0f45f38da"
+  },
+  "capability_table_hash": "44bee1c0f239d5a793cb6871e269b3213bdba74886ba274f3cfa458f7a6ff9dc",
+  "configuration_hash": "c6aa35c480548563292307559c71f56fc5b37cb8e9c830e6d01a39d6e4e2b0a3",
+  "decision_policy_hash": "28f446e583d1ce776c76fc6065ce249fed25860e3cf01990dda99cf12a8b701e",
+  "evaluator_hash": "6768eb66f7e28d2c885e93fa33c60f9a7c9396e02c6180ffc609f1a7149ba87a",
+  "freeze_kind": "capability-expansion",
+  "freeze_schema_version": "3.2.0",
+  "gate": {
+    "broken": [],
+    "cases": 280,
+    "fixed_count": 55,
+    "sets": 6,
+    "status": "PASS"
+  },
+  "minimum_cases": 80,
+  "pipeline": "risk-evaluation-v3",
+  "pipeline_version": "3.0.0-experimental",
+  "supersedes": {
+    "phase_8_6": "risk_evaluation/v3_validation/evaluation_freeze_v3.json",
+    "phase_8_7": "risk_evaluation/v3_repair/evaluation_freeze_v3_repair.json"
+  },
+  "taxonomy_hash": "a18bfad9f9608a55b2be27c25683a7388db44e934ec3bb71d87c7f62a67646c8",
+  "timestamp": "2026-09-28T03:18:23Z"
+}
