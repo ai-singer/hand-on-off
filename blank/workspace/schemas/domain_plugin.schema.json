@@ -1,0 +1,716 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://creator-agent.local/schemas/domain_plugin.schema.json",
+  "title": "DomainPlugin",
+  "description": "A versioned, declarative domain plugin. A plugin carries what a domain is about - its identity, sources, topics, distillation vocabulary and adaptations - so that the Universal Creator Skills stay domain-free. It carries no runtime code, no prompt and no credential.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "plugin_name",
+    "domain",
+    "version",
+    "format_version",
+    "display_name",
+    "domain_identity",
+    "protocol_stages",
+    "required_core_skills",
+    "provenance",
+    "identity_rules",
+    "source_rules",
+    "topic_rules",
+    "text_distillation_rules",
+    "visual_adaptation_rules",
+    "risk_constraints"
+  ],
+  "properties": {
+    "plugin_name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "format_version": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "domain_identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "domain",
+        "display_name",
+        "reference_sources",
+        "keywords",
+        "persona"
+      ],
+      "properties": {
+        "domain": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "reference_sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "persona": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "available",
+            "source_asset",
+            "reason"
+          ],
+          "properties": {
+            "available": {
+              "type": "boolean"
+            },
+            "source_asset": {
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "protocol_stages": {
+      "type": "array",
+      "minItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "stage",
+          "domain_term",
+          "core_skill",
+          "status",
+          "order"
+        ],
+        "properties": {
+          "stage": {
+            "type": "string",
+            "enum": [
+              "observation",
+              "context",
+              "mechanism",
+              "consequence",
+              "evidence",
+              "boundary"
+            ]
+          },
+          "domain_term": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "order": {
+            "type": "integer"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required_core_skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "generation-interface",
+          "identity-rules",
+          "publishing-interface",
+          "quality-review",
+          "risk-review",
+          "source-discovery",
+          "source-normalization",
+          "template-extraction",
+          "text-distillation",
+          "visual-distillation"
+        ]
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "styles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_contract_version": {
+          "type": "string"
+        },
+        "requires_format_version": {
+          "type": "string"
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generated_by",
+        "generated_at",
+        "domain",
+        "catalog_version",
+        "library_version",
+        "request_digest",
+        "source_assets"
+      ],
+      "properties": {
+        "generated_by": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string"
+        },
+        "domain": {
+          "type": "string"
+        },
+        "catalog_version": {
+          "type": "string"
+        },
+        "library_version": {
+          "type": "string"
+        },
+        "request_digest": {
+          "type": "string"
+        },
+        "source_assets": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "unavailable_assets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "core_skills": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "identity_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "source_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "topic_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "text_distillation_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "visual_adaptation_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "risk_constraints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "slot",
+          "core_skill",
+          "source_asset",
+          "status",
+          "values_source",
+          "values"
+        ],
+        "properties": {
+          "slot": {
+            "type": "string"
+          },
+          "core_skill": {
+            "type": "string",
+            "enum": [
+              "generation-interface",
+              "identity-rules",
+              "publishing-interface",
+              "quality-review",
+              "risk-review",
+              "source-discovery",
+              "source-normalization",
+              "template-extraction",
+              "text-distillation",
+              "visual-distillation"
+            ]
+          },
+          "source_asset": {
+            "type": "string"
+          },
+          "asset_type": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "declared",
+              "unavailable"
+            ]
+          },
+          "available": {
+            "type": "boolean"
+          },
+          "values_source": {
+            "type": "string",
+            "enum": [
+              "asset",
+              "catalog"
+            ]
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "values": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

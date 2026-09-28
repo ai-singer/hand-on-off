@@ -1,0 +1,5 @@
+domain: finance
+platform: xiaohongshu
+reference_sources:
+  - creator_a
+  - creator_b
