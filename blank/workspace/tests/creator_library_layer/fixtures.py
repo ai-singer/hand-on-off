@@ -62,11 +62,20 @@ def package(name: str, version: str = "1.0.0") -> Any:
 
 
 def package_members(name: str, version: str = "1.0.0") -> dict[str, bytes]:
-    """One package's members, read back from its own bytes."""
+    """One archive's members keyed by their readable on-disk path.
 
-    from creator_library import read_package
+    ``<name>/SKILL.md`` and so on — the *directory* form, which is how a person reads
+    the skill. The archive itself is flat; use
+    :attr:`creator_library.SkillPackage.members` for those names.
+    """
 
-    return read_package(package(name, version).payload)
+    from creator_library import directory_members as dirs
+
+    built = package(name, version)
+    return {
+        dirs(name)[filename]: built.members[filename]
+        for filename in built.members
+    }
 
 
 def scratch_dir(name: str) -> Path:

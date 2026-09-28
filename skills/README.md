@@ -1,48 +1,61 @@
-# Creator Skill Library — skills
+# Creator Skill Library — thirteen skill archives
 
-Thirteen skills, one directory each, ready to be read by a Shared Skill Library that
-matches a skill by its description and then **loads `SKILL.md`**.
+Thirteen archives, one skill each, for uploading to a Shared Skill Library that
+ingests skills individually — it matches a skill by the description in SKILL.md's
+front matter and then loads that file.
 
-There are no archives here. A library reads `SKILL.md` from a skill directory, so an
-archive would have to be extracted before anything could see it — these directories
-are the deliverable, and zipping them would package the same thing twice.
+## The one thing that matters about these archives
+
+**They are flat.** SKILL.md, manifest.json and skill.json sit at the **root** of each
+archive:
+
+```text
+creator-text-distillation.zip
+├── SKILL.md          <- at the root, where the library looks
+├── manifest.json
+└── skill.json
+```
+
+Nothing is wrapped in a directory. This is not a stylistic preference — zipping a
+skill *folder* the obvious way produces text-distillation/SKILL.md, one level deeper
+than the library looks. The archive lists correctly in any file browser and still
+fails to load, because there is no entrypoint at the root.
+
+So these were **not** built by zipping a directory. The three files are written
+straight into the archive, and the validator refuses any archive containing a
+directory component at all — the failure is silent otherwise, so it gets a check of
+its own.
 
 ## What is here
 
-| Directory | Skill | Layer |
+| Archive | Skill | Layer |
 | --- | --- | --- |
-| `identity-rules/` | `identity-rules` | universal |
-| `source-discovery/` | `source-discovery` | universal |
-| `source-normalization/` | `source-normalization` | universal |
-| `text-distillation/` | `text-distillation` | universal |
-| `visual-distillation/` | `visual-distillation` | universal |
-| `template-extraction/` | `template-extraction` | universal |
-| `quality-review/` | `quality-review` | universal |
-| `risk-review/` | `risk-review` | universal |
-| `publishing-interface/` | `publishing-interface` | universal |
-| `generation-interface/` | `generation-interface` | universal |
-| `domain-plugin-builder/` | `domain-plugin-builder` | meta |
-| `domain-plugin-validator/` | `domain-plugin-validator` | meta |
-| `skill-composer/` | `skill-composer` | meta |
+| creator-identity-rules.zip | identity-rules | universal |
+| creator-source-discovery.zip | source-discovery | universal |
+| creator-source-normalization.zip | source-normalization | universal |
+| creator-text-distillation.zip | text-distillation | universal |
+| creator-visual-distillation.zip | visual-distillation | universal |
+| creator-template-extraction.zip | template-extraction | universal |
+| creator-quality-review.zip | quality-review | universal |
+| creator-risk-review.zip | risk-review | universal |
+| creator-publishing-interface.zip | publishing-interface | universal |
+| creator-generation-interface.zip | generation-interface | universal |
+| creator-domain-plugin-builder.zip | domain-plugin-builder | meta |
+| creator-domain-plugin-validator.zip | domain-plugin-validator | meta |
+| creator-skill-composer.zip | skill-composer | meta |
 
 Plus two index files:
 
-- **`INDEX.json`** — every skill, its directory, its files and its size.
-- **`CHECKSUMS.json`** — a digest per file, for verifying a copy.
+- **INDEX.json** — every archive, its digest, its entrypoint and its members.
+- **CHECKSUMS.json** — the same digests, for verifying a download.
 
-## Inside one skill
+## The three files
 
-```text
-text-distillation/
-├── SKILL.md          front matter + what the skill does  ← what a library reads
-├── manifest.json     name, version, layer, entrypoint, capabilities
-├── skill.json        the declaration, machine-readable
-└── library.json      which library version it came from, and its companions
-```
-
-`SKILL.md` is at the root of every skill directory, which is named for the skill — the
-same shape as `blank/workspace/skills/<name>/` in this repository. Nothing is nested
-twice.
+| File | What it is | Who reads it |
+| --- | --- | --- |
+| SKILL.md | front matter + what the skill does | the library — it matches on description and loads this |
+| manifest.json | name, version, layer, entrypoint, capabilities | a consumer that needs the capability list machine-readably |
+| skill.json | the declaration, structured | a consumer that wants more than capabilities |
 
 The front matter is the convention this repository's skills already use:
 
@@ -55,23 +68,23 @@ description: Distill normalized material into the text rules an instance carries
 ---
 ```
 
-`library_layer` is an addition; `name`, `version` and `description` are what every
-existing skill carries.
+library_layer is an addition; name, version and description are what every existing
+skill carries, and description is the field the library matches on.
 
 ## Two halves, one library
 
 **Universal Creator Skills** (10) are the same skills for every domain. They carry
-**no domain knowledge** — that is enforced at build time, not merely intended. If a
-domain fact were needed in one, it would belong in a domain plugin instead.
+**no domain knowledge** — enforced at build time, not merely intended. If a domain
+fact were needed in one, it would belong in a domain plugin instead.
 
-**Meta Skills** (3) build and check the plugins. `domain-plugin-builder` turns a
-domain request into a domain plugin; `domain-plugin-validator` checks one before
-anything uses it; `skill-composer` assembles a skill set.
+**Meta Skills** (3) build and check the plugins. domain-plugin-builder turns a domain
+request into a domain plugin; domain-plugin-validator checks one before anything uses
+it; skill-composer assembles a skill set.
 
-A domain plugin is **not** here. It is generated at run time by
-`domain-plugin-builder`, and lives with the creator it configures. Shipping one would
-make it stale the moment a domain is added — which is the failure mode this
-architecture exists to prevent.
+A domain plugin is **not** in these archives. It is generated at run time by
+domain-plugin-builder and lives with the creator it configures. Shipping one would
+make it stale the moment a domain is added — the failure mode this architecture
+exists to prevent.
 
 ## What these skills are not
 
@@ -84,29 +97,36 @@ running it. Binding them to an execution environment is a separate question.
 
 ## Verifying
 
-Every file is byte-for-byte reproducible. To check a copy against `CHECKSUMS.json`:
+Every archive is byte-for-byte reproducible. To check a download against
+CHECKSUMS.json:
 
 ```python
-import hashlib, json, sys
+import hashlib, json, sys, zipfile
 
-ledger = json.load(open("CHECKSUMS.json"))["files"]
-bad = [
-    path
-    for path, entry in ledger.items()
-    if hashlib.sha256(open(path, "rb").read()).hexdigest() != entry["sha256"]
-]
-print("mismatches:", bad or "none")
+ledger = json.load(open("CHECKSUMS.json"))["packages"]
+bad = []
+for name, entry in ledger.items():
+    payload = open(name, "rb").read()
+    if hashlib.sha256(payload).hexdigest() != entry["sha256"]:
+        bad.append(f"{name}: digest")
+        continue
+    with zipfile.ZipFile(name) as archive:
+        names = archive.namelist()
+    if "SKILL.md" not in names or any("/" in n for n in names):
+        bad.append(f"{name}: not flat")
+print("problems:", bad or "none")
 sys.exit(1 if bad else 0)
 ```
 
 ## How these were produced
 
 ```python
-from creator_library import build_skill_packages, unpack_skill_packages
+from creator_library import build_skill_packages, write_skill_packages
 
-unpack_skill_packages(build_skill_packages(), "skills/")
+write_skill_packages(build_skill_packages(), "skills/")
 ```
 
-Each skill is validated on its own, from its own bytes, against five checks:
-structure, manifest, isolation (no runtime, credential or prompt), layer (a universal
-skill carries no domain knowledge), and agreement with the library archive.
+Each archive is validated on its own, from its own bytes, against five checks:
+structure (including flatness), manifest, isolation (no runtime, credential or
+prompt), layer (a universal skill carries no domain knowledge), and agreement with
+creator_skill_library.zip.

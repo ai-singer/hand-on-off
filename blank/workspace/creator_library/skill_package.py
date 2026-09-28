@@ -18,42 +18,46 @@ upload actually takes:
     ...                                ┘
 ```
 
-Each package contains exactly one skill directory:
+Each skill becomes one archive holding three files **at its root**:
 
 ```text
-<skill_name>/
-├── SKILL.md          front matter + prose
-├── manifest.json     name, version, library_layer, entrypoint, capabilities
-├── skill.json        the declaration, machine-readable
-└── library.json      where it came from
+creator-text-distillation.zip
+├── SKILL.md          ← at the root, where the library looks
+├── manifest.json
+└── skill.json
 ```
 
-## Why the layout differs from the library archive
+## The one thing that must not go wrong
 
-Three deliberate differences, each with a reason:
+**No wrapper directory.** A shared skill library matches a skill by the description in
+``SKILL.md``'s front matter and then loads that file from the **archive root**. Zipping
+a skill *directory* by the obvious method produces ``text-distillation/SKILL.md`` —
+one level deeper than the library looks. The archive looks right in a file listing and
+still fails to load, because the library finds no entrypoint at the root.
 
-**No ``creator_skill_library/`` wrapper.** Thirteen packages repeating the library
-name would tell a reader handling one of them nothing they need. The single
-top-level directory is the skill's own name, which also matches ``skills/<name>/``
-in this repository — the convention a skill directory already has here.
+So the members are written flat, and
+:func:`creator_library.skill_package_validation.validate_package_structure` refuses any
+archive with a directory in it at all. The failure is silent otherwise, which is why it
+gets a check of its own rather than a comment.
 
-**A ``library.json`` in each package.** A skill uploaded alone would otherwise lose
-the context that makes it reviewable: which library version it came from, which
-layer it belongs to, what its companions are, and which contract version the
-library was built against. Roughly 500 bytes per package buys that back.
+## Three files
 
-**No per-package ``checksums.json``.** The library archive carries a ledger because
-it has 45 members and a consumer needs to verify all of them. A package has four
-files whose digests are published in ``skills/CHECKSUMS.json`` at the repository
-root — one index a reviewer can check against, instead of thirteen files each
-describing itself.
+``SKILL.md`` is what the library reads. ``manifest.json`` is the convention every skill
+in this repository follows and carries the capability list. ``skill.json`` is the
+declaration, machine-readable.
 
-## What a package still is, and is not
+`library.json` was tried and removed: nothing read it, it duplicated the manifest, and
+its companion list named the other twelve skills — so every skill's file depended on
+every other skill in the library, which is the opposite of standalone. The two facts
+worth keeping from it, ``library_id`` and ``library_version``, moved into
+``manifest.json``.
+
+## What a skill still is, and is not
 
 It is a **declaration**: no prompt, no executable body, no credential. It carries no
-implementation, which is deliberate and carried forward from C0.5 — a skill library
-is a configuration asset. And it is byte-for-byte reproducible, so re-running the
-build yields identical archives.
+implementation, which is deliberate and carried forward from C0.5 — a skill library is
+a configuration asset. And it is byte-for-byte reproducible, so re-running the build
+yields identical archives.
 """
 
 from __future__ import annotations
@@ -68,36 +72,26 @@ from typing import Any, Mapping, Sequence
 
 from creator_package.hashing import (
     ARCHIVE_TIMESTAMP,
-    canonical_bytes,
     digest_bytes,
 )
-from creator_plugin_builder import (
-    META_SKILLS,
-    UNIVERSAL_SKILLS,
-    library_document,
-)
+from creator_plugin_builder import META_SKILLS, UNIVERSAL_SKILLS
 
-from .emitter import (
-    emit_skill,
-    skill_capabilities,
-    validate_emitted_manifest,
-)
+from .emitter import MANIFEST_KEYS, emit_skill
 from .errors import (
-    LibraryError,
     LibraryInputError,
     LibrarySkillMissingError,
-    LibraryStructureError,
 )
 from .manifest import (
     GENERATED_BY,
     LIBRARY_ID,
     LIBRARY_FORMAT_VERSION,
-    MANIFEST_SCHEMA_VERSION,
 )
 from .paths import (
-    LIBRARY_FILE,
     PACKAGE_SUFFIX,
+    SKILL_FILES,
     STANDALONE_FILES,
+    archive_members,
+    directory_members,
     package_classify,
     package_filename,
     package_member_sort_key,
@@ -113,23 +107,9 @@ COMPRESSION = zipfile.ZIP_DEFLATED
 COMPRESS_LEVEL = 9
 EXTERNAL_ATTR = 0o644 << 16
 
-#: The keys a standalone package's own ``manifest.json`` may carry.
-#:
-#: A superset of the skill manifest's keys: a standalone package also records where
-#: in the library it sits and what the archive is called, because a reader holding
-#: one file has no other way to learn those.
-PACKAGE_MANIFEST_KEYS: tuple[str, ...] = (
-    "name",
-    "version",
-    "library_layer",
-    "library_version",
-    "library_id",
-    "package_filename",
-    "entrypoint",
-    "capabilities",
-    "produces",
-    "note",
-)
+#: The keys a skill's ``manifest.json`` carries — the same in a skill directory as in
+#: the library archive, because they are the same document.
+PACKAGE_MANIFEST_KEYS: tuple[str, ...] = MANIFEST_KEYS
 
 
 @dataclass(frozen=True, slots=True)
@@ -162,28 +142,28 @@ class SkillPackage:
 
     @property
     def skill_md(self) -> str:
-        return self.members[package_members(self.name)["SKILL.md"]].decode("utf-8")
+        return self.members["SKILL.md"].decode("utf-8")
 
     @property
     def manifest(self) -> dict[str, Any]:
         return json.loads(
-            self.members[package_members(self.name)["manifest.json"]].decode("utf-8")
+            self.members["manifest.json"].decode("utf-8")
         )
 
     @property
-    def skill_document(self) -> dict[str, Any]:
-        return json.loads(
-            self.members[package_members(self.name)["skill.json"]].decode("utf-8")
-        )
+    def skill_type(self) -> str:
+        """The declaration's skill type, from the entry."""
+
+        return str(self.entry.get("skill_type", ""))
 
     @property
-    def library_metadata(self) -> dict[str, Any]:
-        return json.loads(
-            self.members[package_members(self.name)[LIBRARY_FILE]].decode("utf-8")
-        )
+    def capabilities(self) -> tuple[str, ...]:
+        """What the skill declares it can do — the manifest's capability list."""
+
+        return tuple(self.manifest["capabilities"])
 
     def report(self) -> dict[str, Any]:
-        """The package's entry in an upload index."""
+        """The skill's entry in an upload index."""
 
         return {
             "skill": self.name,
@@ -195,14 +175,16 @@ class SkillPackage:
             "members": self.member_count,
             "root": self.root,
             "entrypoint": f"{self.root}/SKILL.md",
+            "files": sorted(
+                member.rsplit("/", 1)[-1] for member in self.members
+            ),
         }
 
     def as_dict(self) -> dict[str, Any]:
         return {
             "report": self.report(),
             "manifest": self.manifest,
-            "skill": self.skill_document,
-            "library": self.library_metadata,
+            "skill_md": self.skill_md,
         }
 
 
@@ -218,65 +200,6 @@ def skill_layer(name: str) -> str:
         detail="declared skills: "
         + ", ".join(sorted(set(UNIVERSAL_SKILLS) | set(META_SKILLS))),
     )
-
-
-def library_metadata(
-    *,
-    name: str,
-    layer: str,
-    library_version: str,
-    companions: Sequence[str],
-) -> dict[str, Any]:
-    """The ``library.json`` that travels inside one standalone package.
-
-    Records what a skill uploaded alone would otherwise lose: the library it came
-    from, its version, the layer the skill sits on, its companions, and the contract
-    version the library was built against.
-    """
-
-    doc = library_document()
-    return {
-        "library_id": LIBRARY_ID,
-        "library_version": library_version,
-        "format_version": LIBRARY_FORMAT_VERSION,
-        "manifest_schema_version": MANIFEST_SCHEMA_VERSION,
-        "generated_by": GENERATED_BY,
-        "skill": name,
-        "library_layer": layer,
-        "universal_skill_count": doc["universal_skill_count"],
-        "meta_skill_count": doc["meta_skill_count"],
-        "companions": sorted(c for c in companions if c != name),
-        "packaged_alone": True,
-        "partition_note": (
-            "this package is one skill of the library, packaged alone for upload; "
-            "the whole library also ships as creator_skill_library.zip"
-        ),
-    }
-
-
-def package_manifest(
-    *,
-    name: str,
-    layer: str,
-    library_version: str,
-    capabilities: Sequence[str],
-    produces: str,
-    note: str,
-) -> dict[str, Any]:
-    """The standalone package's ``manifest.json``."""
-
-    return {
-        "name": name,
-        "version": library_version,
-        "library_layer": layer,
-        "library_version": library_version,
-        "library_id": LIBRARY_ID,
-        "package_filename": package_filename(name, prefix=FILENAME_PREFIX),
-        "entrypoint": "SKILL.md",
-        "capabilities": list(capabilities),
-        "produces": produces,
-        "note": note,
-    }
 
 
 def _write_zip(members: Mapping[str, bytes]) -> bytes:
@@ -338,34 +261,15 @@ def build_skill_package(
         companions=peers,
     )
 
-    # The library's own emitted files are keyed under creator_skill_library/...;
-    # this package keys them under the skill's own name instead.
+    # Flat: the three files at the archive root, with no wrapper directory. See the
+    # module docstring — a nesting level here makes the skill unloadable.
     members: dict[str, bytes] = {}
-    library_paths = package_members(name)
-    for filename in ("SKILL.md", "manifest.json", "skill.json"):
+    for filename in SKILL_FILES:
         source = next(p for p in emitted if p.endswith("/" + filename))
-        members[library_paths[filename]] = emitted[source]
-
-    manifest = package_manifest(
-        name=name,
-        layer=layer,
-        library_version=library_version,
-        capabilities=skill_capabilities(name, declaration),
-        produces=str(declaration.get("produces", "")),
-        note=_note_from(emitted),
-    )
-    members[library_paths["manifest.json"]] = canonical_bytes(manifest)
-
-    members[library_paths[LIBRARY_FILE]] = canonical_bytes(
-        library_metadata(
-            name=name,
-            layer=layer,
-            library_version=library_version,
-            companions=peers,
-        )
-    )
+        members[filename] = emitted[source]
 
     payload = _write_zip(members)
+    manifest = json.loads(members["manifest.json"].decode("utf-8"))
     package = SkillPackage(
         name=name,
         layer=layer,
@@ -392,13 +296,6 @@ def _declaration(name: str) -> dict[str, Any]:
     from .builder import declaration_for
 
     return declaration_for(name)
-
-
-def _note_from(emitted: Mapping[str, bytes]) -> str:
-    """Read the no-test-command note out of the skill manifest the emitter wrote."""
-
-    path = next(p for p in emitted if p.endswith("/manifest.json"))
-    return str(json.loads(emitted[path].decode("utf-8")).get("note", ""))
 
 
 def build_skill_packages(
@@ -659,11 +556,10 @@ def unpacked_checksum_index(
 
     files: dict[str, Any] = {}
     for package in packages:
-        paths = package_members(package.name)
-        for filename in ("SKILL.md", "manifest.json", "skill.json", LIBRARY_FILE):
-            member = paths[filename]
-            payload = package.members[member]
-            files[member] = {
+        paths = directory_members(package.name)
+        for filename in SKILL_FILES:
+            payload = package.members[filename]
+            files[paths[filename]] = {
                 "sha256": digest_bytes(payload),
                 "bytes": len(payload),
                 "skill": package.name,
@@ -691,8 +587,6 @@ __all__ = [
     "build_skill_package",
     "build_skill_packages",
     "checksum_index",
-    "library_metadata",
-    "package_manifest",
     "skill_layer",
     "unpack_skill_package",
     "unpack_skill_packages",

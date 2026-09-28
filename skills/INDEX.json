@@ -1,197 +1,222 @@
 {
-  "distribution": "unpacked",
+  "filename_prefix": "creator-",
   "format_version": "1.0.0",
   "generated_by": "creator_library.builder c0.5",
   "library_id": "creator_skill_library",
   "library_version": "1.0.0",
   "meta_skill_count": 3,
-  "note": "an archive would have to be extracted before anything could read SKILL.md, so these are written out rather than zipped",
-  "purpose": "one directory per skill, each holding SKILL.md at its root, for a shared skill library that loads SKILL.md from a skills directory",
-  "skill_count": 13,
-  "skills": [
+  "package_count": 13,
+  "packages": [
     {
-      "bytes": 2957,
-      "directory": "identity-rules",
+      "bytes": 1355,
       "entrypoint": "identity-rules/SKILL.md",
+      "filename": "creator-identity-rules.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "identity-rules",
+      "sha256": "fa818a6729192d51b0c017080cdf775657cde97455f68769b15c78c3091c6b99",
       "skill": "identity-rules",
       "version": "1.0.0"
     },
     {
-      "bytes": 2977,
-      "directory": "source-discovery",
+      "bytes": 1394,
       "entrypoint": "source-discovery/SKILL.md",
+      "filename": "creator-source-discovery.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "source-discovery",
+      "sha256": "051d2ac78574401a0788ece61c644269be546d2029dcb70375ce39944be2ea63",
       "skill": "source-discovery",
       "version": "1.0.0"
     },
     {
-      "bytes": 3062,
-      "directory": "source-normalization",
+      "bytes": 1405,
       "entrypoint": "source-normalization/SKILL.md",
+      "filename": "creator-source-normalization.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "source-normalization",
+      "sha256": "4ab3dcd81be55336211252c6c49ae045a95eb629fef04557196305a8c149f6e8",
       "skill": "source-normalization",
       "version": "1.0.0"
     },
     {
-      "bytes": 3005,
-      "directory": "text-distillation",
+      "bytes": 1383,
       "entrypoint": "text-distillation/SKILL.md",
+      "filename": "creator-text-distillation.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "text-distillation",
+      "sha256": "143afe87c068c66f94e6a8f0f1fe7aaad63c61e694a45bc03b7483c7320b32c7",
       "skill": "text-distillation",
       "version": "1.0.0"
     },
     {
-      "bytes": 3027,
-      "directory": "visual-distillation",
+      "bytes": 1376,
       "entrypoint": "visual-distillation/SKILL.md",
+      "filename": "creator-visual-distillation.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "visual-distillation",
+      "sha256": "4c4b5d4ae6c03a11605964a71134e6d05d0dd8c17d1049735b9b336224af807a",
       "skill": "visual-distillation",
       "version": "1.0.0"
     },
     {
-      "bytes": 3008,
-      "directory": "template-extraction",
+      "bytes": 1396,
       "entrypoint": "template-extraction/SKILL.md",
+      "filename": "creator-template-extraction.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "template-extraction",
+      "sha256": "d340c44e3baa2f8a2b92bc34204da3ac2a61acd4c1ef7f520b49de7d8722df0c",
       "skill": "template-extraction",
       "version": "1.0.0"
     },
     {
-      "bytes": 3042,
-      "directory": "quality-review",
+      "bytes": 1415,
       "entrypoint": "quality-review/SKILL.md",
+      "filename": "creator-quality-review.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "quality-review",
+      "sha256": "e6d6562fba6a83f2f6f50dd3f346a15679a8d20b3c1ab7c8a937f407d3fb0900",
       "skill": "quality-review",
       "version": "1.0.0"
     },
     {
-      "bytes": 3020,
-      "directory": "risk-review",
+      "bytes": 1409,
       "entrypoint": "risk-review/SKILL.md",
+      "filename": "creator-risk-review.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "risk-review",
+      "sha256": "91e263c8ab8d139b7c1b0891ad7cff72a15215e852bf2b1c65dbe5d3418ea14f",
       "skill": "risk-review",
       "version": "1.0.0"
     },
     {
-      "bytes": 3038,
-      "directory": "publishing-interface",
+      "bytes": 1383,
       "entrypoint": "publishing-interface/SKILL.md",
+      "filename": "creator-publishing-interface.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "publishing-interface",
+      "sha256": "51164d6c2c41aa0ca138eb6cc13b16739de096f74c4facb2c35b3671931dd3b0",
       "skill": "publishing-interface",
       "version": "1.0.0"
     },
     {
-      "bytes": 3038,
-      "directory": "generation-interface",
+      "bytes": 1379,
       "entrypoint": "generation-interface/SKILL.md",
+      "filename": "creator-generation-interface.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "universal",
+      "members": 3,
+      "root": "generation-interface",
+      "sha256": "45f5df3a6274237cf869f9396a67a9462cbca3c3b9c249a447627571499194f8",
       "skill": "generation-interface",
       "version": "1.0.0"
     },
     {
-      "bytes": 3024,
-      "directory": "domain-plugin-builder",
+      "bytes": 1386,
       "entrypoint": "domain-plugin-builder/SKILL.md",
+      "filename": "creator-domain-plugin-builder.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "meta",
+      "members": 3,
+      "root": "domain-plugin-builder",
+      "sha256": "2cf1cd00a642eb1fa11804bf016882564c80afc0d638b5e1e545e54ab397445b",
       "skill": "domain-plugin-builder",
       "version": "1.0.0"
     },
     {
-      "bytes": 3121,
-      "directory": "domain-plugin-validator",
+      "bytes": 1430,
       "entrypoint": "domain-plugin-validator/SKILL.md",
+      "filename": "creator-domain-plugin-validator.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "meta",
+      "members": 3,
+      "root": "domain-plugin-validator",
+      "sha256": "4d176d1a57e2d6e7b062ad8857a3023cc8deaae3868753b48e1d321ea6d07ff1",
       "skill": "domain-plugin-validator",
       "version": "1.0.0"
     },
     {
-      "bytes": 3026,
-      "directory": "skill-composer",
+      "bytes": 1411,
       "entrypoint": "skill-composer/SKILL.md",
+      "filename": "creator-skill-composer.zip",
       "files": [
         "SKILL.md",
-        "library.json",
         "manifest.json",
         "skill.json"
       ],
       "layer": "meta",
+      "members": 3,
+      "root": "skill-composer",
+      "sha256": "82c9343baced0deabe1df88b447fdf5ab2ff946b4430d03b872d82a24fb0f6d5",
       "skill": "skill-composer",
       "version": "1.0.0"
     }
   ],
-  "total_bytes": 39345,
+  "purpose": "one skill per archive, for upload to a Shared Skill Library that ingests skills individually",
+  "total_bytes": 18122,
   "universal_skill_count": 10
 }

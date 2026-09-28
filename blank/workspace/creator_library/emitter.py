@@ -43,6 +43,7 @@ from typing import Any, Mapping
 from creator_package.hashing import BUILDER_VERSION, canonical_bytes
 
 from .errors import LibrarySkillError
+from .manifest import LIBRARY_ID
 from .paths import skill_members
 
 #: The skill manifest schema version these files are written at.
@@ -54,9 +55,15 @@ NO_TEST_COMMAND_REASON = (
 )
 
 #: Keys the emitted manifest carries.
+#:
+#: ``library_id`` and ``library_version`` are here so a skill document records which
+#: library it came from, in the manifest rather than in a fourth file of its own. A
+#: separate metadata file was tried and removed: nothing read it, and its companion
+#: list coupled every skill's file to every other skill in the library.
 MANIFEST_KEYS: tuple[str, ...] = (
     "name",
     "version",
+    "library_id",
     "library_layer",
     "library_version",
     "entrypoint",
@@ -138,6 +145,7 @@ def skill_manifest(
     manifest: dict[str, Any] = {
         "name": name,
         "version": library_version,
+        "library_id": LIBRARY_ID,
         "library_layer": layer,
         "library_version": library_version,
         "entrypoint": "SKILL.md",

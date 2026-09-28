@@ -64,14 +64,22 @@ META_SKILLS_DIR = f"{LIBRARY_DIR}/meta_skills"
 REGISTRY_MEMBER = f"{LIBRARY_DIR}/domain_plugins/registry.json"
 SCHEMA_MEMBER = f"{LIBRARY_DIR}/schemas/domain_plugin.schema.json"
 
-#: The three files inside one skill directory, in write order.
+#: The three files a skill carries.
+#:
+#: ``SKILL.md`` is what a shared skill library reads: it matches a skill by the
+#: description in the front matter and then loads this file.
+#:
+#: **In an uploaded archive these sit at the archive root, with no wrapper
+#: directory.** That is the whole point of :func:`archive_members` — zipping a skill
+#: *directory* puts the files one level down, and a library looking for ``SKILL.md``
+#: at the root would not find it.
+#:
+#: ``manifest.json`` is the convention every skill in this repository follows and
+#: carries the capability list. ``skill.json`` is the declaration, machine-readable.
 SKILL_FILES: tuple[str, ...] = ("SKILL.md", "manifest.json", "skill.json")
 
-#: The shared-metadata member that accompanies a skill in a standalone package.
-LIBRARY_FILE = "library.json"
-
-#: Every file inside one *standalone* skill package, in write order.
-STANDALONE_FILES: tuple[str, ...] = SKILL_FILES + (LIBRARY_FILE,)
+#: Every file a skill carries.
+STANDALONE_FILES: tuple[str, ...] = SKILL_FILES
 
 #: The top-level directories a member may live under.
 ALLOWED_TOP_LEVEL: tuple[str, ...] = (
@@ -305,38 +313,44 @@ def summarise_members(members: dict[str, bytes]) -> dict[str, Any]:
 
 
 # --------------------------------------------------------------------------
-# Standalone skill packages
+# One skill, one archive
 # --------------------------------------------------------------------------
 #
-# A Shared Skill Library ingests one skill at a time, so each skill also ships as
-# its own small zip. The layout is deliberately flatter than the library's: a single
-# top-level directory named for the skill.
+# A shared skill library ingests one skill at a time. It matches a skill by the
+# description in ``SKILL.md``'s front matter and then loads that file — **from the
+# archive root**.
 #
-#     <skill_name>/
-#     ├── SKILL.md          front matter + prose
-#     ├── manifest.json     name, version, library_layer, entrypoint, capabilities
-#     ├── skill.json        the declaration, machine-readable
-#     └── library.json      where it came from
+#     creator-text-distillation.zip
+#     ├── SKILL.md          ← at the root, where the library looks
+#     ├── manifest.json
+#     └── skill.json
 #
-# **No** ``creator_skill_library/`` wrapper, unlike the library archive. Repetition
-# across thirteen packages is cheap; a reader handling one of them at a time would
-# gain nothing from being told thirteen times which library it belongs to before
-# reaching the skill itself. And the layout matches ``skills/<name>/`` in this
-# repository, which is the convention a skill directory already has here.
+# **Flat. No wrapper directory.** This is the whole subtlety, and getting it wrong is
+# silent: zipping a skill *directory* produces ``text-distillation/SKILL.md``, which
+# is one level deeper than the library looks. The archive looks correct in a file
+# listing and still fails to load, because the library finds no entrypoint at the
+# root. So members are written by :func:`archive_members` at the top level, and
+# :func:`creator_library.skill_package_validation.validate_package_structure`
+# refuses any archive that has a directory in it at all.
+#
+# The on-disk form is still a directory — ``skills/<name>/`` — because that is the
+# convention this repository already uses and it is what a person reads. The
+# directory is the readable form; the flat archive is the uploadable form. Both are
+# built from the same three files.
 
-#: The suffix a standalone package's filename carries.
+#: The suffix an uploaded archive's filename carries.
 PACKAGE_SUFFIX = ".zip"
 
 
 def package_root(name: str) -> str:
-    """The single top-level directory inside a standalone skill package."""
+    """The skill's own directory name, for the readable on-disk form."""
 
     _assert_safe_name(name, what="skill name")
     return name
 
 
 def package_filename(name: str, *, prefix: str = "") -> str:
-    """The filename of a standalone skill package.
+    """The filename of one skill's archive.
 
     ``creator-`` by default, so the thirteen files sort together and are obviously
     one family when they land in an upload directory.
@@ -346,40 +360,62 @@ def package_filename(name: str, *, prefix: str = "") -> str:
     return f"{prefix}{name}{PACKAGE_SUFFIX}"
 
 
-def package_members(name: str) -> dict[str, str]:
-    """``{filename: archive path}`` for one standalone skill package."""
+def archive_members(_name: str = "") -> dict[str, str]:
+    """``{filename: archive path}`` for one skill's archive — **flat**.
+
+    Every file sits at the archive root. The ``_name`` argument is accepted and
+    ignored so a caller cannot make the unwrapper mistake of prefixing a directory:
+    there is deliberately no way to express a nested layout here.
+    """
+
+    return {filename: filename for filename in STANDALONE_FILES}
+
+
+def directory_members(name: str) -> dict[str, str]:
+    """``{filename: path}`` for the readable on-disk form: ``<name>/<file>``."""
 
     root = package_root(name)
     return {filename: f"{root}/{filename}" for filename in STANDALONE_FILES}
 
 
+def package_members(name: str) -> dict[str, str]:
+    """Alias for :func:`directory_members`, the on-disk layout."""
+
+    return directory_members(name)
+
+
+def archive_classify(member: str) -> str:
+    """What kind of member this is inside a skill archive.
+
+    Anything with a directory component is ``nested`` — not merely unexpected, but
+    the specific defect that makes a skill unloadable.
+    """
+
+    if "/" in member:
+        return "nested"
+    if member not in STANDALONE_FILES:
+        return "unknown"
+    return "skill"
+
+
 def package_classify(member: str) -> str:
-    """What kind of member this is inside a standalone package."""
+    """What kind of member this is inside the on-disk skill directory."""
 
     parts = member.split("/")
     if len(parts) != 2:
         return "unknown"
     if parts[1] not in STANDALONE_FILES:
         return "unknown"
-    if parts[1] == LIBRARY_FILE:
-        return "library"
     return "skill"
 
 
 def package_member_sort_key(member: str) -> tuple[str, str]:
-    """The deterministic write order for a standalone package.
-
-    ``SKILL.md`` first — it is the entrypoint a reader opens — then the two machine
-    documents, then the shared metadata.
+    """The deterministic write order: ``SKILL.md`` first, then the manifest, then
+    the declaration.
     """
 
-    order = {
-        "SKILL.md": "0",
-        "manifest.json": "1",
-        "skill.json": "2",
-        LIBRARY_FILE: "3",
-    }
     filename = member.rsplit("/", 1)[-1]
+    order = {"SKILL.md": "0", "manifest.json": "1", "skill.json": "2"}
     return (order.get(filename, "9"), member)
 
 
@@ -394,7 +430,6 @@ __all__ = [
     "LAYERS",
     "LAYER_DIRS",
     "LIBRARY_DIR",
-    "LIBRARY_FILE",
     "MANIFEST_MEMBER",
     "META_SKILLS_DIR",
     "PACKAGE_SUFFIX",
@@ -412,6 +447,9 @@ __all__ = [
     "layer_of",
     "library_root",
     "member_sort_key",
+    "archive_classify",
+    "archive_members",
+    "directory_members",
     "package_classify",
     "package_filename",
     "package_member_sort_key",

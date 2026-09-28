@@ -51,9 +51,10 @@ from .errors import (
 )
 from .manifest import FORBIDDEN_MANIFEST_KEYS
 from .paths import (
-    LIBRARY_FILE,
+    SKILL_FILES,
     STANDALONE_FILES,
-    package_classify,
+    archive_classify,
+    archive_members,
     package_members,
     package_root,
 )
@@ -65,10 +66,10 @@ from .validation import (
     _is_concept_reference,
 )
 
-#: The three files a package shares with the library archive.
+#: The three files a skill archive carries, all at its root.
 SHARED_FILES: tuple[str, ...] = ("SKILL.md", "manifest.json", "skill.json")
 
-#: The shared files that must be **byte-identical** between a package and the library.
+#: The files that must be **byte-identical** between an archive and the library.
 #:
 #: ``SKILL.md`` and ``skill.json`` are context-free by construction. ``SKILL.md``
 #: lists the whole library's skills rather than the subset an archive carries, and
@@ -76,13 +77,14 @@ SHARED_FILES: tuple[str, ...] = ("SKILL.md", "manifest.json", "skill.json")
 #: the same bytes wherever the skill is packaged, and the check can be exact.
 IDENTICAL_FILES: tuple[str, ...] = ("SKILL.md", "skill.json")
 
-#: Keys a standalone package's manifest adds, which the library's does not carry.
+#: Keys an archive's manifest carries that the library's copy does not.
 #:
-#: A package manifest names the archive a reader is holding and the library it came
-#: from; the library's manifest already sits inside the library, so it has no need
-#: of either. The comparison skips exactly these rather than tolerating any
-#: difference, and asserts equality on every other key.
-PACKAGE_ONLY_MANIFEST_KEYS: tuple[str, ...] = ("library_id", "package_filename")
+#: Empty, and deliberately so. The two manifests are the same document: an earlier
+#: version added ``library_id`` and ``package_filename`` to the archive's copy, which
+#: made the two disagree about the same skill. ``library_id`` moved into both;
+#: ``package_filename`` was dropped, because the filename is already visible in the
+#: name of the file a reader is holding.
+PACKAGE_ONLY_MANIFEST_KEYS: tuple[str, ...] = ()
 
 #: Keys a package manifest must never carry.
 FORBIDDEN_PACKAGE_KEYS: tuple[str, ...] = FORBIDDEN_MANIFEST_KEYS + ("adapter",)
@@ -142,37 +144,60 @@ def read_package(payload: bytes) -> dict[str, bytes]:
 
 
 def validate_package_structure(members: Mapping[str, bytes], *, name: str) -> None:
-    """Check 1: the members are the four files, under the skill's own name."""
+    """Check 1: the three files, **flat at the archive root**, and nothing else.
 
-    root = package_root(name)
-    expected = set(package_members(name).values())
+    The nesting check is the important one. A shared skill library loads ``SKILL.md``
+    from the archive root, so an archive that wraps its files in a directory looks
+    perfectly well-formed and still cannot be loaded. That failure is silent, which is
+    why it is checked explicitly rather than left to a comment — a directory component
+    in *any* member is refused, even one that also has the right files at the root.
+    """
 
-    offenders: list[str] = []
-    for member in sorted(members):
-        kind = package_classify(member)
-        if kind == "unknown":
-            offenders.append(f"{member}: not a package member")
-        if not member.startswith(root + "/"):
-            offenders.append(f"{member}: not under {root}/")
+    expected = set(archive_members().keys())
 
-    if offenders:
+    nested = sorted(member for member in members if "/" in member)
+    missing = sorted(expected - set(members))
+
+    # A nested archive is *also* missing all three files at its root, so the plain
+    # "missing members" message would bury the real defect behind a list of names. When
+    # the files are present but one level down, say exactly that.
+    if nested and missing:
         raise LibraryStructureError(
-            f"package {name!r} has {len(offenders)} structural violation(s)",
-            detail="; ".join(offenders[:6]),
+            f"archive {name!r} nests its files in a directory",
+            detail=(
+                "a shared skill library reads SKILL.md from the archive root; the "
+                f"files are at {nested[0]!r} instead"
+            ),
         )
 
-    missing = sorted(expected - set(members))
+    if nested:
+        raise LibraryStructureError(
+            f"archive {name!r} nests its files in a directory",
+            detail=(
+                "a shared skill library reads SKILL.md from the archive root; found: "
+                + ", ".join(nested[:4])
+            ),
+        )
+
+    unknown = sorted(
+        member for member in members if archive_classify(member) == "unknown"
+    )
+    if unknown:
+        raise LibraryStructureError(
+            f"archive {name!r} carries unexpected members",
+            detail=", ".join(unknown),
+        )
+
     if missing:
         raise LibraryStructureError(
-            f"package {name!r} is missing {len(missing)} member(s)",
+            f"archive {name!r} is missing {len(missing)} member(s)",
             detail=", ".join(missing),
         )
 
-    extra = sorted(set(members) - expected)
-    if extra:
+    if "SKILL.md" not in members:
         raise LibraryStructureError(
-            f"package {name!r} carries {len(extra)} unexpected member(s)",
-            detail=", ".join(extra),
+            f"archive {name!r} has no SKILL.md at its root",
+            detail="without it the skill cannot be matched or loaded",
         )
 
 
@@ -186,8 +211,7 @@ def validate_package_manifest(
 ) -> dict[str, Any]:
     """Check 2: the manifest agrees with the skill, and carries no forbidden key."""
 
-    paths = package_members(name)
-    payload = members.get(paths["manifest.json"])
+    payload = members.get("manifest.json")
     if payload is None:
         raise LibraryManifestError(f"package {name!r} carries no manifest.json")
 
@@ -230,7 +254,7 @@ def validate_package_manifest(
         raise LibraryManifestError(f"package {name!r} declares no capabilities")
 
     # The manifest and the declaration must agree about which layer this is.
-    document = _json(members, paths["skill.json"], name, "skill.json")
+    document = _json(members, "skill.json", name, "skill.json")
     if document.get("library_layer") != manifest["library_layer"]:
         raise LibraryManifestError(
             f"package {name!r} manifest and skill.json disagree on the layer"
@@ -360,8 +384,7 @@ def _is_json(text: str) -> bool:
 def validate_package_layer(members: Mapping[str, bytes], *, name: str) -> None:
     """Check 4: a universal skill carries no domain knowledge."""
 
-    paths = package_members(name)
-    manifest = _json(members, paths["manifest.json"], name, "manifest.json")
+    manifest = _json(members, "manifest.json", name, "manifest.json")
     layer = str(manifest["library_layer"])
 
     expected = "universal" if name in UNIVERSAL_SKILLS else "meta"
@@ -375,8 +398,7 @@ def validate_package_layer(members: Mapping[str, bytes], *, name: str) -> None:
 
     offenders: list[str] = []
     for filename in STANDALONE_FILES:
-        path = paths[filename]
-        payload = members.get(path)
+        payload = members.get(filename)
         if payload is None:
             continue
         blob = payload.decode("utf-8").lower()
@@ -398,10 +420,9 @@ def validate_package_layer(members: Mapping[str, bytes], *, name: str) -> None:
 def shared_files(members: Mapping[str, bytes], *, name: str) -> dict[str, bytes]:
     """The three files a package shares with the library, keyed by filename."""
 
-    paths = package_members(name)
     found: dict[str, bytes] = {}
     for filename in SHARED_FILES:
-        payload = members.get(paths[filename])
+        payload = members.get(filename)
         if payload is not None:
             found[filename] = payload
     return found
