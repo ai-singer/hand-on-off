@@ -1,0 +1,21 @@
+# Netscape HTTP Cookie File
+# https://curl.haxx.se/rfc/cookie_spec.html
+# This is a generated file! Do not edit.
+
+.xiaohongshu.com	TRUE	/	FALSE	1816840447	a1	19fac6ff964quwtlghdrywq31sg3j6080c9il4fih50000172299
+.xiaohongshu.com	TRUE	/	FALSE	1816840447	webId	c1a826cf9310ba9ca4e04f1f71a4dbf1
+.xiaohongshu.com	TRUE	/	FALSE	1825225003	gid	yji0SW88K08yyji0SKiijS4iK4A7E91kxfFvj3xEAqyMk328qVK8Y1888yWJJjj8S4dWJj0d
+.xiaohongshu.com	TRUE	/	FALSE	1819891109	abRequestId	c1a826cf9310ba9ca4e04f1f71a4dbf1
+.xiaohongshu.com	TRUE	/	FALSE	1790947109	ets	1788355109408
+.xiaohongshu.com	TRUE	/	FALSE	1822200989	xsecappid	xhs-pc-web
+.xiaohongshu.com	TRUE	/	TRUE	1822201034	x-rednote-datactry	CN
+.xiaohongshu.com	TRUE	/	TRUE	1822201034	x-rednote-holderctry	CN
+www.xiaohongshu.com	FALSE	/	FALSE	1790666789	acw_tc	0a00d10f17906649894177691e66a7849faabcd843d6d8f3db2b8709404595
+.xiaohongshu.com	TRUE	/	FALSE	0	webBuild	6.56.3
+.xiaohongshu.com	TRUE	/	FALSE	1822200989	loadts	1790664989920
+.xiaohongshu.com	TRUE	/	FALSE	1790924190	websectiga	2a3d3ea002e7d92b5c9743590ebd24010cf3710ff3af8029153751e41a6af4a3
+.xiaohongshu.com	TRUE	/	FALSE	1790665595	sec_poison_id	62c6582d-7048-43f3-a6b1-9ef2d30ae5e2
+.xiaohongshu.com	TRUE	/	FALSE	0	last_web_session	040069b64ba0aa2488bc741baa384b97bf12d1
+.xiaohongshu.com	TRUE	/	FALSE	0	unread	{%22ub%22:%226a924d0f0000000021032529%22%2C%22ue%22:%226a7aaa4a000000002203303b%22%2C%22uc%22:22}
+.xiaohongshu.com	TRUE	/	TRUE	1822201034	web_session	040069b64ba0aa2488bc23298e384b951691b1
+.xiaohongshu.com	TRUE	/	TRUE	1822201034	id_token	VjEAAKp/fLq9L4u2j5kxm22MVCmHeDbdBThQbbxzxE97sysPZfgO2a76+mJYYxe0XxzTr4kjCljqOfXEm2EIOgRH9sZ2+bZDBClxbhhq+2U2pE4Cwcp06dy3DZ1UlXegXAwizSgw
