@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎬 短剧推荐 - 精选前100部</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #0f0f1a;
+    color: #fff;
+    min-height: 100vh;
+  }
+  .header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-bottom: 2px solid #e94560;
+  }
+  .header h1 {
+    font-size: 2.2em;
+    background: linear-gradient(90deg, #e94560, #ff6b6b, #feca57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    color: #8892b0;
+    font-size: 1em;
+  }
+  .header .stats {
+    margin-top: 12px;
+    color: #ccd6f6;
+    font-size: 0.9em;
+  }
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+  .card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #fff;
+  }
+  .card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  }
+  .card-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 0;
+  }
+  .card-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.1) 100%);
+    z-index: 1;
+  }
+  .card-content {
+    position: relative;
+    z-index: 2;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .card-number {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #fff;
+    z-index: 3;
+  }
+  .card-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-size: 2.5em;
+    opacity: 0.25;
+    z-index: 1;
+  }
+  .card-title {
+    font-size: 0.95em;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+  .card-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .card-ep {
+    background: rgba(233, 69, 96, 0.9);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.7em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .card-link {
+    font-size: 0.65em;
+    color: rgba(255,255,255,0.6);
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 4px;
+  }
+  .card-actors {
+    font-size: 0.68em;
+    color: rgba(255,255,255,0.55);
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .footer {
+    text-align: center;
+    padding: 30px;
+    color: #555;
+    font-size: 0.85em;
+    border-top: 1px solid #1a1a2e;
+    margin-top: 40px;
+  }
+  @media (max-width: 1200px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (max-width: 900px)  { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px)  { .grid { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🎬 短剧推荐官</h1>
+  <div class="subtitle">精选前 100 部热门短剧 · 5 排展示</div>
+  <div class="stats">共 990 部已入库 | 数据范围 #24001 - #25000 | 更新于 2026-09-30 06:10</div>
+</div>
+<div class="container">
+  <div class="grid">
+    <a class="card" href="https://pan.quark.cn/s/a83f58f48b5a" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #FF6B6B88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24001</span>
+      <span class="card-icon">✨</span>
+      <div class="card-content">
+        <div class="card-title">嗨闺蜜系统逼我做月老王廉栋&甘一为</div>
+        <div class="card-info">
+          <span class="card-ep">52集</span>
+        </div>
+        <div class="card-actors">🎭 王廉栋&甘一为</div>
+        <div class="card-link">https://pan.quark.cn/s/a83f58f48b5a</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/a2f2e66a4c79" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #4ECDC4, #4ECDC488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24002</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">诀别三个青梅后，京圈大小姐狂追我刘言&詹琸</div>
+        <div class="card-info">
+          <span class="card-ep">46集</span>
+        </div>
+        <div class="card-actors">🎭 刘言&詹琸</div>
+        <div class="card-link">https://pan.quark.cn/s/a2f2e66a4c79</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/6991c894dcbc" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #45B7D1, #45B7D188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24003</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">锦衣卫之传国玉玺郑拓疆&宋佳音</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 郑拓疆&宋佳音</div>
+        <div class="card-link">https://pan.quark.cn/s/6991c894dcbc</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/7bf09b4372b2" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #96CEB4, #96CEB488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24004</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">爱，可跨越山海金大钟&旬梓嫣</div>
+        <div class="card-info">
+          <span class="card-ep">55集</span>
+        </div>
+        <div class="card-actors">🎭 金大钟&旬梓嫣</div>
+        <div class="card-link">https://pan.quark.cn/s/7bf09b4372b2</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c14e7915e138" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FFEAA7, #FFEAA788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24005</span>
+      <span class="card-icon">⚔️</span>
+      <div class="card-content">
+        <div class="card-title">你为皇，我为后李智颖&唐书亚</div>
+        <div class="card-info">
+          <span class="card-ep">72集</span>
+        </div>
+        <div class="card-actors">🎭 李智颖&唐书亚</div>
+        <div class="card-link">https://pan.quark.cn/s/c14e7915e138</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e65a9b5b740f" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #DDA0DD, #DDA0DD88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24006</span>
+      <span class="card-icon">⚔️</span>
+      <div class="card-content">
+        <div class="card-title">皇室潜修二十年，开局陆地神仙吴昊＆王佳琪</div>
+        <div class="card-info">
+          <span class="card-ep">81集</span>
+        </div>
+        <div class="card-actors">🎭 吴昊 & 王佳琪</div>
+        <div class="card-link">https://pan.quark.cn/s/e65a9b5b740f</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/dd1eebce7be4" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #98D8C8, #98D8C888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24007</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">陈总别怼了，外面全是小黑子杜培源&喻嘉琳</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 杜培源&喻嘉琳</div>
+        <div class="card-link">https://pan.quark.cn/s/dd1eebce7be4</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/18e9216cc160" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F7DC6F, #F7DC6F88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24008</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">民国小萌宝带着弹幕寻亲许艺燊&葛晓希</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 许艺燊&葛晓希</div>
+        <div class="card-link">https://pan.quark.cn/s/18e9216cc160</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/f69a5714ba93" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #BB8FCE, #BB8FCE88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24009</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">那时爱意正浓刘嘉文＆苏嘉欣</div>
+        <div class="card-info">
+          <span class="card-ep">55集</span>
+        </div>
+        <div class="card-actors">🎭 刘嘉文 & 苏嘉欣</div>
+        <div class="card-link">https://pan.quark.cn/s/f69a5714ba93</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c0f8059c6b24" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #85C1E9, #85C1E988, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24010</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">浪得虚名＆雀影2025朱昕瑶（朱碧漪）&谷笑慧</div>
+        <div class="card-info">
+          <span class="card-ep">64集</span>
+        </div>
+        <div class="card-actors">🎭 朱昕瑶（朱碧漪）&谷笑慧</div>
+        <div class="card-link">https://pan.quark.cn/s/c0f8059c6b24</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c97168a14383" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F8C471, #F8C47188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24011</span>
+      <span class="card-icon">💕</span>
+      <div class="card-content">
+        <div class="card-title">蓄意毁婚罗司纯</div>
+        <div class="card-info">
+          <span class="card-ep">51集</span>
+        </div>
+        <div class="card-actors">🎭 罗司纯</div>
+        <div class="card-link">https://pan.quark.cn/s/c97168a14383</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/952f1d7dd334" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #82E0AA, #82E0AA88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24012</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">重返八四，从收破烂开始致富郑明洋&胡少琛</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 郑明洋&胡少琛</div>
+        <div class="card-link">https://pan.quark.cn/s/952f1d7dd334</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/2d3fa58c4a3d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F1948A, #F1948A88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24013</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">以前我是骗子，但现在叫我厨神于娇</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 于娇</div>
+        <div class="card-link">https://pan.quark.cn/s/2d3fa58c4a3d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/bcbb52b10271" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #AED6F1, #AED6F188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24014</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">极品辣妈好威武，爹地接招吧侯明岩＆王阡惠</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 侯明岩 & 王阡惠</div>
+        <div class="card-link">https://pan.quark.cn/s/bcbb52b10271</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/820bd67f36f1" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D7BDE2, #D7BDE288, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24015</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">玄学千金今天也在线打脸张婉悦</div>
+        <div class="card-info">
+          <span class="card-ep">53集</span>
+        </div>
+        <div class="card-actors">🎭 张婉悦</div>
+        <div class="card-link">https://pan.quark.cn/s/820bd67f36f1</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/9d7c40b9a894" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A3E4D7, #A3E4D788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24016</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">来自镜中的你张思帆＆彭瑶</div>
+        <div class="card-info">
+          <span class="card-ep">70集</span>
+        </div>
+        <div class="card-actors">🎭 张思帆 & 彭瑶</div>
+        <div class="card-link">https://pan.quark.cn/s/9d7c40b9a894</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c8c82d9bddca" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FAD7A0, #FAD7A088, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24017</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">萌宝下乡全村齐齐宠</div>
+        <div class="card-info">
+          <span class="card-ep">50集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/c8c82d9bddca</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/a0597e2544b2" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A9CCE3, #A9CCE388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24018</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">回到被拐前张洪瑜</div>
+        <div class="card-info">
+          <span class="card-ep">53集</span>
+        </div>
+        <div class="card-actors">🎭 张洪瑜</div>
+        <div class="card-link">https://pan.quark.cn/s/a0597e2544b2</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/da9fe31fbe29" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D5F5E3, #D5F5E388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24019</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我的老公失忆了傅潇冉＆孟子皓</div>
+        <div class="card-info">
+          <span class="card-ep">65集</span>
+        </div>
+        <div class="card-actors">🎭 傅潇冉 & 孟子皓</div>
+        <div class="card-link">https://pan.quark.cn/s/da9fe31fbe29</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8042efcba3ce" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FADBD8, #FADBD888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24020</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我，脸盲，把路人钓成翘嘴周体顺＆冯易鑫</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 周体顺 & 冯易鑫</div>
+        <div class="card-link">https://pan.quark.cn/s/8042efcba3ce</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/154423826f65" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #FF6B6B88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24021</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">天医萌宝救亲记</div>
+        <div class="card-info">
+          <span class="card-ep">70集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/154423826f65</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e090b03bb1ff" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #4ECDC4, #4ECDC488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24022</span>
+      <span class="card-icon">⚔️</span>
+      <div class="card-content">
+        <div class="card-title">锦绣权途王彬茗</div>
+        <div class="card-info">
+          <span class="card-ep">66集</span>
+        </div>
+        <div class="card-actors">🎭 王彬茗</div>
+        <div class="card-link">https://pan.quark.cn/s/e090b03bb1ff</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c6299dee94eb" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #45B7D1, #45B7D188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24024</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我靠学人精轻松拿捏校草王典典＆郏元栋</div>
+        <div class="card-info">
+          <span class="card-ep">72集</span>
+        </div>
+        <div class="card-actors">🎭 王典典 & 郏元栋</div>
+        <div class="card-link">https://pan.quark.cn/s/c6299dee94eb</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/23984ca0614d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #96CEB4, #96CEB488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24025</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">烽火良缘再逢君大渊＆黄小再</div>
+        <div class="card-info">
+          <span class="card-ep">59集</span>
+        </div>
+        <div class="card-actors">🎭 大渊 & 黄小再</div>
+        <div class="card-link">https://pan.quark.cn/s/23984ca0614d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e82653db24de" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FFEAA7, #FFEAA788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24026</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">烈爱终结丁紫含＆刘小龙</div>
+        <div class="card-info">
+          <span class="card-ep">44集</span>
+        </div>
+        <div class="card-actors">🎭 丁紫含 & 刘小龙</div>
+        <div class="card-link">https://pan.quark.cn/s/e82653db24de</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/db5b07a4f478" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #DDA0DD, #DDA0DD88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24027</span>
+      <span class="card-icon">✨</span>
+      <div class="card-content">
+        <div class="card-title">下井后，我觉醒武魂真身杨子愉&宣以豪</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        <div class="card-actors">🎭 杨子愉&宣以豪</div>
+        <div class="card-link">https://pan.quark.cn/s/db5b07a4f478</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/ad66fe015652" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #98D8C8, #98D8C888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24028</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">尊爷，你的律政佳妻不好惹杜培源&喻嘉琳</div>
+        <div class="card-info">
+          <span class="card-ep">81集</span>
+        </div>
+        <div class="card-actors">🎭 杜培源&喻嘉琳</div>
+        <div class="card-link">https://pan.quark.cn/s/ad66fe015652</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/9967e9a9bc09" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F7DC6F, #F7DC6F88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24029</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">饥荒古代，开局姐妹求收留刘倩彤&祝昕愿</div>
+        <div class="card-info">
+          <span class="card-ep">87集</span>
+        </div>
+        <div class="card-actors">🎭 刘倩彤&祝昕愿</div>
+        <div class="card-link">https://pan.quark.cn/s/9967e9a9bc09</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8e88879f4891" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #BB8FCE, #BB8FCE88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24030</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">沉舟渡晚晴王子林＆雷笑语</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 王子林 & 雷笑语</div>
+        <div class="card-link">https://pan.quark.cn/s/8e88879f4891</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/1b82d575c28c" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #85C1E9, #85C1E988, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24031</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">绝色美人能哭会演，摄政王甘折腰＆美人攻心马浩东&黎晟萱</div>
+        <div class="card-info">
+          <span class="card-ep">84集</span>
+        </div>
+        <div class="card-actors">🎭 马浩东&黎晟萱</div>
+        <div class="card-link">https://pan.quark.cn/s/1b82d575c28c</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/6ec61eed4c6a" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F8C471, #F8C47188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24032</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">双向欲臣张翅＆岳雨婷</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 张翅 & 岳雨婷</div>
+        <div class="card-link">https://pan.quark.cn/s/6ec61eed4c6a</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e55df58e8753" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #82E0AA, #82E0AA88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24033</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">假冒公主后，我横扫四方厉家兵&郑初晨&魏家乐</div>
+        <div class="card-info">
+          <span class="card-ep">71集</span>
+        </div>
+        <div class="card-actors">🎭 厉家兵&郑初晨&魏家乐</div>
+        <div class="card-link">https://pan.quark.cn/s/e55df58e8753</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/bf252dce8116" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F1948A, #F1948A88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24034</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">温香软玉曹天恺&曹赛亚</div>
+        <div class="card-info">
+          <span class="card-ep">67集</span>
+        </div>
+        <div class="card-actors">🎭 曹天恺&曹赛亚</div>
+        <div class="card-link">https://pan.quark.cn/s/bf252dce8116</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/da0b54b54f13" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #AED6F1, #AED6F188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24035</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">台球天王王幸子&卜萌楠</div>
+        <div class="card-info">
+          <span class="card-ep">62集</span>
+        </div>
+        <div class="card-actors">🎭 王幸子&卜萌楠</div>
+        <div class="card-link">https://pan.quark.cn/s/da0b54b54f13</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/ba420af4dea3" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D7BDE2, #D7BDE288, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24036</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">惊，说好的白月光人设崩了王忻月&吴思君</div>
+        <div class="card-info">
+          <span class="card-ep">50集</span>
+        </div>
+        <div class="card-actors">🎭 王忻月&吴思君</div>
+        <div class="card-link">https://pan.quark.cn/s/ba420af4dea3</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8700e3ed8bb2" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A3E4D7, #A3E4D788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24037</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我不要了金鑫欣&高鸿垲</div>
+        <div class="card-info">
+          <span class="card-ep">55集</span>
+        </div>
+        <div class="card-actors">🎭 金鑫欣&高鸿垲</div>
+        <div class="card-link">https://pan.quark.cn/s/8700e3ed8bb2</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/9257decd0b2b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FAD7A0, #FAD7A088, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24038</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">正义倒计时李启骏&霍奕燃</div>
+        <div class="card-info">
+          <span class="card-ep">50集</span>
+        </div>
+        <div class="card-actors">🎭 李启骏&霍奕燃</div>
+        <div class="card-link">https://pan.quark.cn/s/9257decd0b2b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/009bcc791b30" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A9CCE3, #A9CCE388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24039</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">特朗普爱上在白宫干保洁的我【英语中字】</div>
+        <div class="card-info">
+          <span class="card-ep">71集</span>
+        </div>
+        <div class="card-actors">🎭 【英语中字】</div>
+        <div class="card-link">https://pan.quark.cn/s/009bcc791b30</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/3f24f8ac51b6" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D5F5E3, #D5F5E388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24040</span>
+      <span class="card-icon">😂</span>
+      <div class="card-content">
+        <div class="card-title">幸福太突然：婆婆助我学业有成黄子淇&张乙萌</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 黄子淇&张乙萌</div>
+        <div class="card-link">https://pan.quark.cn/s/3f24f8ac51b6</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8d83d55d99f5" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FADBD8, #FADBD888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24041</span>
+      <span class="card-icon">⚔️</span>
+      <div class="card-content">
+        <div class="card-title">主母爱谁当！纨绔夫君为我争诰命安子杨&权睿</div>
+        <div class="card-info">
+          <span class="card-ep">90集</span>
+        </div>
+        <div class="card-actors">🎭 安子杨&权睿</div>
+        <div class="card-link">https://pan.quark.cn/s/8d83d55d99f5</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/198bc4b4ef7d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #FF6B6B88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24042</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">齐总，夫人的心声藏不住了袁可谦&夏婧苒</div>
+        <div class="card-info">
+          <span class="card-ep">69集</span>
+        </div>
+        <div class="card-actors">🎭 袁可谦&夏婧苒</div>
+        <div class="card-link">https://pan.quark.cn/s/198bc4b4ef7d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/12bf48c6a3ae" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #4ECDC4, #4ECDC488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24043</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">十万次心颤刘梓恒&郑舒环</div>
+        <div class="card-info">
+          <span class="card-ep">82集</span>
+        </div>
+        <div class="card-actors">🎭 刘梓恒&郑舒环</div>
+        <div class="card-link">https://pan.quark.cn/s/12bf48c6a3ae</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/b71cd92566e3" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #45B7D1, #45B7D188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24044</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">你也配剑来张元帅&李汶轩</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        <div class="card-actors">🎭 张元帅&李汶轩</div>
+        <div class="card-link">https://pan.quark.cn/s/b71cd92566e3</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/92fc2b16bbd7" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #96CEB4, #96CEB488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24045</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">偏要你的情衷朱哲人＆李媛菁</div>
+        <div class="card-info">
+          <span class="card-ep">62集</span>
+        </div>
+        <div class="card-actors">🎭 朱哲人 & 李媛菁</div>
+        <div class="card-link">https://pan.quark.cn/s/92fc2b16bbd7</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/3d7003220ac5" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FFEAA7, #FFEAA788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24046</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">予你逃离白一翔&时一</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 白一翔&时一</div>
+        <div class="card-link">https://pan.quark.cn/s/3d7003220ac5</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/46e41b94a66a" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #DDA0DD, #DDA0DD88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24047</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">妙手太医勇闯八零严雯丽&冯思源</div>
+        <div class="card-info">
+          <span class="card-ep">82集</span>
+        </div>
+        <div class="card-actors">🎭 严雯丽&冯思源</div>
+        <div class="card-link">https://pan.quark.cn/s/46e41b94a66a</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/92b2270c2d0a" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #98D8C8, #98D8C888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24048</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">春夜难缠王璐&盛以捷</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 王璐&盛以捷</div>
+        <div class="card-link">https://pan.quark.cn/s/92b2270c2d0a</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/7d5e2458344b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F7DC6F, #F7DC6F88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24049</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">全家打入冷宫，听崽心声后逆天改命</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/7d5e2458344b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/52bd472018c3" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #BB8FCE, #BB8FCE88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24050</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">申城谜案局中局文文</div>
+        <div class="card-info">
+          <span class="card-ep">66集</span>
+        </div>
+        <div class="card-actors">🎭 文文</div>
+        <div class="card-link">https://pan.quark.cn/s/52bd472018c3</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/d196b2808125" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #85C1E9, #85C1E988, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24051</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">全城笑我抱废柴，谁知废柴变龙鳞</div>
+        <div class="card-info">
+          <span class="card-ep">75集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/d196b2808125</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/433497a59c8b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F8C471, #F8C47188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24052</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">猎爱计划董一&刘贾玺</div>
+        <div class="card-info">
+          <span class="card-ep">66集</span>
+        </div>
+        <div class="card-actors">🎭 董一&刘贾玺</div>
+        <div class="card-link">https://pan.quark.cn/s/433497a59c8b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8c52d94403cb" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #82E0AA, #82E0AA88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24053</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我在饥荒年，靠仙葫种田成神仙张元帅＆王新颖&刘欣蕾</div>
+        <div class="card-info">
+          <span class="card-ep">81集</span>
+        </div>
+        <div class="card-actors">🎭 张元帅 & 王新颖&刘欣蕾</div>
+        <div class="card-link">https://pan.quark.cn/s/8c52d94403cb</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/7e5d2eae3321" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F1948A, #F1948A88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24054</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">吾妻尚年少郏元栋＆吕丹妮</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 郏元栋 & 吕丹妮</div>
+        <div class="card-link">https://pan.quark.cn/s/7e5d2eae3321</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/660f91553121" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #AED6F1, #AED6F188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24055</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">他的玫瑰与寒霜闵星翰&林琦婷&李曾</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 闵星翰&林琦婷&李曾</div>
+        <div class="card-link">https://pan.quark.cn/s/660f91553121</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/aefbfa81bda3" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D7BDE2, #D7BDE288, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24056</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">珣爷家的小祖宗又野又飒＆乡下来的真千金，重整家族荣耀张力壬&马佑薇</div>
+        <div class="card-info">
+          <span class="card-ep">66集</span>
+        </div>
+        <div class="card-actors">🎭 张力壬&马佑薇</div>
+        <div class="card-link">https://pan.quark.cn/s/aefbfa81bda3</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8fb0457e61ec" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A3E4D7, #A3E4D788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24057</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">见面不如相恋杨彦光＆王幸子</div>
+        <div class="card-info">
+          <span class="card-ep">71集</span>
+        </div>
+        <div class="card-actors">🎭 杨彦光 & 王幸子</div>
+        <div class="card-link">https://pan.quark.cn/s/8fb0457e61ec</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/7c16bc7c86e8" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FAD7A0, #FAD7A088, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24058</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">恶意深陷曾乙同＆周洋洋</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 曾乙同 & 周洋洋</div>
+        <div class="card-link">https://pan.quark.cn/s/7c16bc7c86e8</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8bc33ac29e7c" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A9CCE3, #A9CCE388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24059</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">废柴出拳我本宗师张乐瑶</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        <div class="card-actors">🎭 张乐瑶</div>
+        <div class="card-link">https://pan.quark.cn/s/8bc33ac29e7c</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/ffb0d39520d5" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D5F5E3, #D5F5E388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24060</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我的恶魔女友闵星翰&郇依心</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        <div class="card-actors">🎭 闵星翰&郇依心</div>
+        <div class="card-link">https://pan.quark.cn/s/ffb0d39520d5</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/ba81b5e71ff5" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FADBD8, #FADBD888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24061</span>
+      <span class="card-icon">💕</span>
+      <div class="card-content">
+        <div class="card-title">踩着前夫嫁竹马夏宁骏＆郭茗苑</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 夏宁骏 & 郭茗苑</div>
+        <div class="card-link">https://pan.quark.cn/s/ba81b5e71ff5</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/bdcc657c3d9d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #FF6B6B88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24062</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">穿越当天，激活背景编辑系统王为洋＆饶熠&宣贻骞</div>
+        <div class="card-info">
+          <span class="card-ep">87集</span>
+        </div>
+        <div class="card-actors">🎭 王为洋 & 饶熠&宣贻骞</div>
+        <div class="card-link">https://pan.quark.cn/s/bdcc657c3d9d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/8ebe150dc6ed" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #4ECDC4, #4ECDC488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24063</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">寒帐锁春深蔡承源＆谭心</div>
+        <div class="card-info">
+          <span class="card-ep">81集</span>
+        </div>
+        <div class="card-actors">🎭 蔡承源 & 谭心</div>
+        <div class="card-link">https://pan.quark.cn/s/8ebe150dc6ed</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/800a4354232c" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #45B7D1, #45B7D188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24064</span>
+      <span class="card-icon">💕</span>
+      <div class="card-content">
+        <div class="card-title">重生后嫁知青前夫傻眼了段平＆戴凤仪</div>
+        <div class="card-info">
+          <span class="card-ep">75集</span>
+        </div>
+        <div class="card-actors">🎭 段平 & 戴凤仪</div>
+        <div class="card-link">https://pan.quark.cn/s/800a4354232c</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/cd55f9a2bef7" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #96CEB4, #96CEB488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24065</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我玄门老祖崽子们宠我怎么了李沛洋＆查祎琛</div>
+        <div class="card-info">
+          <span class="card-ep">91集</span>
+        </div>
+        <div class="card-actors">🎭 李沛洋 & 查祎琛</div>
+        <div class="card-link">https://pan.quark.cn/s/cd55f9a2bef7</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/73eb52a624e0" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FFEAA7, #FFEAA788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24066</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">修无情道五百年的我下山了何善凯&孟娜</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 何善凯&孟娜</div>
+        <div class="card-link">https://pan.quark.cn/s/73eb52a624e0</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/aa0d287426b0" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #DDA0DD, #DDA0DD88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24067</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">年下弟弟他又争又抢闵杰&刘夕语</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 闵杰&刘夕语</div>
+        <div class="card-link">https://pan.quark.cn/s/aa0d287426b0</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/3ef8f1ec907d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #98D8C8, #98D8C888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24068</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">世子无双李钊&马瑞泽&苏格子&何雨桐&王嘉禾</div>
+        <div class="card-info">
+          <span class="card-ep">99集</span>
+        </div>
+        <div class="card-actors">🎭 李钊&马瑞泽&苏格子&何雨桐&王嘉禾</div>
+        <div class="card-link">https://pan.quark.cn/s/3ef8f1ec907d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/25bd9e5cbb16" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F7DC6F, #F7DC6F88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24069</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">重生七零老太拿捏全家任婉晴&王佳琪</div>
+        <div class="card-info">
+          <span class="card-ep">84集</span>
+        </div>
+        <div class="card-actors">🎭 任婉晴&王佳琪</div>
+        <div class="card-link">https://pan.quark.cn/s/25bd9e5cbb16</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/139623fc18d1" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #BB8FCE, #BB8FCE88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24070</span>
+      <span class="card-icon">💕</span>
+      <div class="card-content">
+        <div class="card-title">他的暗恋，蓄谋已久王冰星&李柯翰</div>
+        <div class="card-info">
+          <span class="card-ep">53集</span>
+        </div>
+        <div class="card-actors">🎭 王冰星&李柯翰</div>
+        <div class="card-link">https://pan.quark.cn/s/139623fc18d1</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e2e2ccc5b9a4" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #85C1E9, #85C1E988, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24071</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">君既无情我便休&山河共明月马千欢&杨帆</div>
+        <div class="card-info">
+          <span class="card-ep">57集</span>
+        </div>
+        <div class="card-actors">🎭 马千欢&杨帆</div>
+        <div class="card-link">https://pan.quark.cn/s/e2e2ccc5b9a4</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/f711a28f07e9" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F8C471, #F8C47188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24072</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">偷换数据后妻子悔断肠王言睿&吴帆</div>
+        <div class="card-info">
+          <span class="card-ep">63集</span>
+        </div>
+        <div class="card-actors">🎭 王言睿&吴帆</div>
+        <div class="card-link">https://pan.quark.cn/s/f711a28f07e9</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/eedd818523c5" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #82E0AA, #82E0AA88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24073</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">58岁实习为儿披荆斩棘汪宇</div>
+        <div class="card-info">
+          <span class="card-ep">62集</span>
+        </div>
+        <div class="card-actors">🎭 汪宇</div>
+        <div class="card-link">https://pan.quark.cn/s/eedd818523c5</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c2b26520224f" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F1948A, #F1948A88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24074</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">星河织梦锦书来王幸子&方浩</div>
+        <div class="card-info">
+          <span class="card-ep">56集</span>
+        </div>
+        <div class="card-actors">🎭 王幸子&方浩</div>
+        <div class="card-link">https://pan.quark.cn/s/c2b26520224f</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/a40b317c2660" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #AED6F1, #AED6F188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24075</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">请君入狱刘雪莹&李志一</div>
+        <div class="card-info">
+          <span class="card-ep">31集</span>
+        </div>
+        <div class="card-actors">🎭 刘雪莹&李志一</div>
+        <div class="card-link">https://pan.quark.cn/s/a40b317c2660</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/aeaee2723ee6" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D7BDE2, #D7BDE288, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24076</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">归来一世不负卿王美淇&王鹏</div>
+        <div class="card-info">
+          <span class="card-ep">72集</span>
+        </div>
+        <div class="card-actors">🎭 王美淇&王鹏</div>
+        <div class="card-link">https://pan.quark.cn/s/aeaee2723ee6</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/6f92ebe20d1b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A3E4D7, #A3E4D788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24077</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">囚门开，我斩断了所有阴谋韩熙&杨佳鑫</div>
+        <div class="card-info">
+          <span class="card-ep">70集</span>
+        </div>
+        <div class="card-actors">🎭 韩熙&杨佳鑫</div>
+        <div class="card-link">https://pan.quark.cn/s/6f92ebe20d1b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/79cec74185ee" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FAD7A0, #FAD7A088, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24078</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">穿越女频当男二开局拥兵六十万祈乐&余紫瑄</div>
+        <div class="card-info">
+          <span class="card-ep">76集</span>
+        </div>
+        <div class="card-actors">🎭 祈乐&余紫瑄</div>
+        <div class="card-link">https://pan.quark.cn/s/79cec74185ee</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/3c395e776cd7" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A9CCE3, #A9CCE388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24079</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">以爱为刃逃离深渊王美淇</div>
+        <div class="card-info">
+          <span class="card-ep">61集</span>
+        </div>
+        <div class="card-actors">🎭 王美淇</div>
+        <div class="card-link">https://pan.quark.cn/s/3c395e776cd7</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/ed87f3fc784b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D5F5E3, #D5F5E388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24080</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">七年爱意将就徐凯鑫＆李豪＆金鑫欣&小明</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 徐凯鑫 & 李豪 & 金鑫欣&小明</div>
+        <div class="card-link">https://pan.quark.cn/s/ed87f3fc784b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/c912de0d838c" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FADBD8, #FADBD888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24081</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">沈小姐哄崽追夫忙不停叶庭&孟璐</div>
+        <div class="card-info">
+          <span class="card-ep">84集</span>
+        </div>
+        <div class="card-actors">🎭 叶庭&孟璐</div>
+        <div class="card-link">https://pan.quark.cn/s/c912de0d838c</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/80077740f9e6" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FF6B6B, #FF6B6B88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24082</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">雪融月散终有时史宣洪&房蕾</div>
+        <div class="card-info">
+          <span class="card-ep">33集</span>
+        </div>
+        <div class="card-actors">🎭 史宣洪&房蕾</div>
+        <div class="card-link">https://pan.quark.cn/s/80077740f9e6</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/0135e1caa24a" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #4ECDC4, #4ECDC488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24083</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">裁决之刃叁野&周朕</div>
+        <div class="card-info">
+          <span class="card-ep">62集</span>
+        </div>
+        <div class="card-actors">🎭 叁野&周朕</div>
+        <div class="card-link">https://pan.quark.cn/s/0135e1caa24a</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/2a260b71844d" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #45B7D1, #45B7D188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24084</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">穿书八零，我引领时代潮流李沐珩&宋佳佳</div>
+        <div class="card-info">
+          <span class="card-ep">63集</span>
+        </div>
+        <div class="card-actors">🎭 李沐珩&宋佳佳</div>
+        <div class="card-link">https://pan.quark.cn/s/2a260b71844d</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/6c4e41990a27" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #96CEB4, #96CEB488, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24085</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">赶海赶山娶媳妇，王者打野就是我魏浩然&董子源</div>
+        <div class="card-info">
+          <span class="card-ep">100集</span>
+        </div>
+        <div class="card-actors">🎭 魏浩然&董子源</div>
+        <div class="card-link">https://pan.quark.cn/s/6c4e41990a27</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/182788aac37b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FFEAA7, #FFEAA788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24086</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">乖乖穆太太她说话带刺了辛润莤&张恩浩</div>
+        <div class="card-info">
+          <span class="card-ep">60集</span>
+        </div>
+        <div class="card-actors">🎭 辛润莤&张恩浩</div>
+        <div class="card-link">https://pan.quark.cn/s/182788aac37b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/81a185b43f33" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #DDA0DD, #DDA0DD88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24087</span>
+      <span class="card-icon">⚔️</span>
+      <div class="card-content">
+        <div class="card-title">灵魂互换后美杀四方</div>
+        <div class="card-info">
+          <span class="card-ep">63集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/81a185b43f33</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/457d7aefa057" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #98D8C8, #98D8C888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24088</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">爱在那天星月夜吕奕豪&周莲</div>
+        <div class="card-info">
+          <span class="card-ep">46集</span>
+        </div>
+        <div class="card-actors">🎭 吕奕豪&周莲</div>
+        <div class="card-link">https://pan.quark.cn/s/457d7aefa057</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/9a10c61af48e" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F7DC6F, #F7DC6F88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24089</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">麻将诡影</div>
+        <div class="card-info">
+          <span class="card-ep">30集</span>
+        </div>
+        
+        <div class="card-link">https://pan.quark.cn/s/9a10c61af48e</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/75ae2f035610" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #BB8FCE, #BB8FCE88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24090</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">一朝入梦换新生蔡盈盈&张禹麟</div>
+        <div class="card-info">
+          <span class="card-ep">65集</span>
+        </div>
+        <div class="card-actors">🎭 蔡盈盈&张禹麟</div>
+        <div class="card-link">https://pan.quark.cn/s/75ae2f035610</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/e5ba470bcaff" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #85C1E9, #85C1E988, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24091</span>
+      <span class="card-icon">👑</span>
+      <div class="card-content">
+        <div class="card-title">重生武神冷面校花请留步贾熙宁&陈柄希</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 贾熙宁&陈柄希</div>
+        <div class="card-link">https://pan.quark.cn/s/e5ba470bcaff</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/eacd05348a44" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F8C471, #F8C47188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24092</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">致富路上，男主靠边站&考演技我在行啊马晓伟&喻浩洋</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 马晓伟&喻浩洋</div>
+        <div class="card-link">https://pan.quark.cn/s/eacd05348a44</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/81b89985122b" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #82E0AA, #82E0AA88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24093</span>
+      <span class="card-icon">✨</span>
+      <div class="card-content">
+        <div class="card-title">谁说付费才能修仙，我的宗门全免费郑千亦&杜江山</div>
+        <div class="card-info">
+          <span class="card-ep">76集</span>
+        </div>
+        <div class="card-actors">🎭 郑千亦&杜江山</div>
+        <div class="card-link">https://pan.quark.cn/s/81b89985122b</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/1aca52f8c5ed" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #F1948A, #F1948A88, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24094</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">浪子回头国家请我破大案杨子愉&宣以豪</div>
+        <div class="card-info">
+          <span class="card-ep">82集</span>
+        </div>
+        <div class="card-actors">🎭 杨子愉&宣以豪</div>
+        <div class="card-link">https://pan.quark.cn/s/1aca52f8c5ed</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/7c1dde10ca9e" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #AED6F1, #AED6F188, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24095</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">开局被甩，第一台手术震惊世界董劭辉&王丹</div>
+        <div class="card-info">
+          <span class="card-ep">79集</span>
+        </div>
+        <div class="card-actors">🎭 董劭辉&王丹</div>
+        <div class="card-link">https://pan.quark.cn/s/7c1dde10ca9e</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/81e4f285b7ac" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D7BDE2, #D7BDE288, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24096</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">我有诸子镇全场李明&田辉</div>
+        <div class="card-info">
+          <span class="card-ep">80集</span>
+        </div>
+        <div class="card-actors">🎭 李明&田辉</div>
+        <div class="card-link">https://pan.quark.cn/s/81e4f285b7ac</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/594e7b04fd92" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A3E4D7, #A3E4D788, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24097</span>
+      <span class="card-icon">🔍</span>
+      <div class="card-content">
+        <div class="card-title">偷天换日王梓潇&欧娜</div>
+        <div class="card-info">
+          <span class="card-ep">86集</span>
+        </div>
+        <div class="card-actors">🎭 王梓潇&欧娜</div>
+        <div class="card-link">https://pan.quark.cn/s/594e7b04fd92</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/9a8c54b40964" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FAD7A0, #FAD7A088, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24098</span>
+      <span class="card-icon">✨</span>
+      <div class="card-content">
+        <div class="card-title">觉醒当天，真千金又美又飒申晴&鲍治玥</div>
+        <div class="card-info">
+          <span class="card-ep">77集</span>
+        </div>
+        <div class="card-actors">🎭 申晴&鲍治玥</div>
+        <div class="card-link">https://pan.quark.cn/s/9a8c54b40964</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/f33c8b871c0c" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #A9CCE3, #A9CCE388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24099</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">好一个太奶奶伍怡桥&郭榕声</div>
+        <div class="card-info">
+          <span class="card-ep">69集</span>
+        </div>
+        <div class="card-actors">🎭 伍怡桥&郭榕声</div>
+        <div class="card-link">https://pan.quark.cn/s/f33c8b871c0c</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/afdaa8eaf5cf" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #D5F5E3, #D5F5E388, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24100</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">本是地上霜万喜&李俊辰</div>
+        <div class="card-info">
+          <span class="card-ep">65集</span>
+        </div>
+        <div class="card-actors">🎭 万喜&李俊辰</div>
+        <div class="card-link">https://pan.quark.cn/s/afdaa8eaf5cf</div>
+      </div>
+    </a>
+    <a class="card" href="https://pan.quark.cn/s/90c66c9acb41" target="_blank">
+      <div class="card-bg" style="background: linear-gradient(135deg, #FADBD8, #FADBD888, #1a1a2e);"></div>
+      <div class="card-overlay"></div>
+      <span class="card-number">#24101</span>
+      <span class="card-icon">🎬</span>
+      <div class="card-content">
+        <div class="card-title">养父的爱王妃&罗刚</div>
+        <div class="card-info">
+          <span class="card-ep">31集</span>
+        </div>
+        <div class="card-actors">🎭 王妃&罗刚</div>
+        <div class="card-link">https://pan.quark.cn/s/90c66c9acb41</div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="footer">
+  🎬 短剧推荐官 · 数据更新于 2026-09-30 06:10 · 点击卡片跳转夸克网盘
+</div>
+</body>
+</html>
